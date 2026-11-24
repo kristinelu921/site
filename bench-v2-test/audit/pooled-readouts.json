@@ -1,0 +1,966 @@
+{
+  "checked_arms": 75120,
+  "max_error": 0,
+  "rows": [
+    {
+      "model": "genlv",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.014376539412725412,
+      "pooled_score": 0.011980984709837661
+    },
+    {
+      "model": "genlv",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "genlv",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.1487608476097277,
+      "pooled_score": 0.040241055069234276
+    },
+    {
+      "model": "genlv",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "genlv",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.8513826929181323,
+      "pooled_score": 0.8064196975263577
+    },
+    {
+      "model": "genlv",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "genlv",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7452872102526782,
+      "pooled_score": 0.6595728929841335
+    },
+    {
+      "model": "genlv",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "genlv",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.00972589399483377,
+      "pooled_score": 0.008796827281994067
+    },
+    {
+      "model": "genlv",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "genlv",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.027592640924079863,
+      "pooled_score": 0.023816763771025103
+    },
+    {
+      "model": "genlv",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "genlv",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.40412501774317,
+      "pooled_score": 116.98734975467524
+    },
+    {
+      "model": "genlv",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "genlv",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 108.12192047014118,
+      "pooled_score": 108.0524764246758
+    },
+    {
+      "model": "genlv",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    },
+    {
+      "model": "improv",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.004446223796760811,
+      "pooled_score": 0.00420811136704031
+    },
+    {
+      "model": "improv",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "improv",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.012014581352753205,
+      "pooled_score": 0.008796836170207017
+    },
+    {
+      "model": "improv",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "improv",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7083357571737207,
+      "pooled_score": 0.6127696892679445
+    },
+    {
+      "model": "improv",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "improv",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.6182117085173843,
+      "pooled_score": 0.4842426968958714
+    },
+    {
+      "model": "improv",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "improv",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.01737705223929235,
+      "pooled_score": 0.015840340991798638
+    },
+    {
+      "model": "improv",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "improv",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.0058553155413206695,
+      "pooled_score": 0.00529899787691235
+    },
+    {
+      "model": "improv",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "improv",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 96.09949331844494,
+      "pooled_score": 95.31611211381998
+    },
+    {
+      "model": "improv",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "improv",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 75.25255526407118,
+      "pooled_score": 75.113844855014
+    },
+    {
+      "model": "improv",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    },
+    {
+      "model": "lvm",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.1284970572426088,
+      "pooled_score": 0.11969834628241982
+    },
+    {
+      "model": "lvm",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "lvm",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.18702120644625228,
+      "pooled_score": 0.13406243448056998
+    },
+    {
+      "model": "lvm",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "lvm",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7300253355363573,
+      "pooled_score": 0.6437413683237023
+    },
+    {
+      "model": "lvm",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "lvm",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.6937514107735946,
+      "pooled_score": 0.610921601771136
+    },
+    {
+      "model": "lvm",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "lvm",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.2512954908102041,
+      "pooled_score": 0.2414104723142104
+    },
+    {
+      "model": "lvm",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "lvm",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.23750253798606716,
+      "pooled_score": 0.22093846627874847
+    },
+    {
+      "model": "lvm",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "lvm",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 106.68711833221772,
+      "pooled_score": 106.12804651444053
+    },
+    {
+      "model": "lvm",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "lvm",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 87.95099763314505,
+      "pooled_score": 87.9591074973774
+    },
+    {
+      "model": "lvm",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    },
+    {
+      "model": "painter",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.08761747976802739,
+      "pooled_score": 0.0893746486882626
+    },
+    {
+      "model": "painter",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "painter",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.6791625184817598,
+      "pooled_score": 0.516738370761181
+    },
+    {
+      "model": "painter",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "painter",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7899792550296862,
+      "pooled_score": 0.6981779512515986
+    },
+    {
+      "model": "painter",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "painter",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.8521944501622669,
+      "pooled_score": 0.8423354049628075
+    },
+    {
+      "model": "painter",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "painter",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.2408706063435295,
+      "pooled_score": 0.23819123305553588
+    },
+    {
+      "model": "painter",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "painter",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.16316625835265736,
+      "pooled_score": 0.17029922622590404
+    },
+    {
+      "model": "painter",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "painter",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 147.02606404691744,
+      "pooled_score": 148.0541322321637
+    },
+    {
+      "model": "painter",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "painter",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 116.04934422733004,
+      "pooled_score": 116.25637043596072
+    },
+    {
+      "model": "painter",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.13294639750160303,
+      "pooled_score": 0.11821774302311026
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.07713578982522828,
+      "pooled_score": 0.054652378870535964
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.6012422539182894,
+      "pooled_score": 0.4378181118853943
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.5235777252577672,
+      "pooled_score": 0.3628589712927116
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.274653209629782,
+      "pooled_score": 0.26398565222870746
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.20619409841900924,
+      "pooled_score": 0.19779430373918183
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 91.26751900701264,
+      "pooled_score": 90.79780813644537
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 96.86077242204152,
+      "pooled_score": 96.98735343498252
+    },
+    {
+      "model": "prompt_diffusion",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    },
+    {
+      "model": "visualcloze",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.06056406273686826,
+      "pooled_score": 0.053634009523702716
+    },
+    {
+      "model": "visualcloze",
+      "task": "instance_segmentation",
+      "dataset": "nyuv2_test",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.039939563335961124,
+      "pooled_score": 0.03791913352944913
+    },
+    {
+      "model": "visualcloze",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "model",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.0848990252873097,
+      "pooled_score": 0.03845101867595659
+    },
+    {
+      "model": "visualcloze",
+      "task": "instance_segmentation",
+      "dataset": "voc2012_val",
+      "arm": "copy",
+      "n": 1449,
+      "metric": "pq",
+      "mean_image_score": 0.015160086485896077,
+      "pooled_score": 0.010912473348309136
+    },
+    {
+      "model": "visualcloze",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "model",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7841001248595076,
+      "pooled_score": 0.6523931312610146
+    },
+    {
+      "model": "visualcloze",
+      "task": "saliency_detection",
+      "dataset": "ecssd",
+      "arm": "copy",
+      "n": 1000,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.479341609029448,
+      "pooled_score": 0.3611170926542995
+    },
+    {
+      "model": "visualcloze",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "model",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.7004493145479117,
+      "pooled_score": 0.5642213567427524
+    },
+    {
+      "model": "visualcloze",
+      "task": "saliency_detection",
+      "dataset": "pascal_s",
+      "arm": "copy",
+      "n": 845,
+      "metric": "max_fbeta",
+      "mean_image_score": 0.448386881605197,
+      "pooled_score": 0.36346173344046384
+    },
+    {
+      "model": "visualcloze",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "model",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.0773788574105185,
+      "pooled_score": 0.06708990054976458
+    },
+    {
+      "model": "visualcloze",
+      "task": "semantic_segmentation",
+      "dataset": "camvid_test",
+      "arm": "copy",
+      "n": 233,
+      "metric": "pq",
+      "mean_image_score": 0.12137536547582525,
+      "pooled_score": 0.12223021721335826
+    },
+    {
+      "model": "visualcloze",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "model",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.06332805408960093,
+      "pooled_score": 0.05624185843386552
+    },
+    {
+      "model": "visualcloze",
+      "task": "semantic_segmentation",
+      "dataset": "nyuv2_test_40",
+      "arm": "copy",
+      "n": 654,
+      "metric": "pq",
+      "mean_image_score": 0.05945771718856263,
+      "pooled_score": 0.05442293383412915
+    },
+    {
+      "model": "visualcloze",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "model",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 55.56483130975749,
+      "pooled_score": 54.91342658987252
+    },
+    {
+      "model": "visualcloze",
+      "task": "surface_normals",
+      "dataset": "diode_val",
+      "arm": "copy",
+      "n": 771,
+      "metric": "mean_deg",
+      "mean_image_score": 118.60724253307859,
+      "pooled_score": 118.37677272566216
+    },
+    {
+      "model": "visualcloze",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "model",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 61.56580751978075,
+      "pooled_score": 61.623794612144344
+    },
+    {
+      "model": "visualcloze",
+      "task": "surface_normals",
+      "dataset": "nyuv2_test_geonet",
+      "arm": "copy",
+      "n": 654,
+      "metric": "mean_deg",
+      "mean_image_score": 106.02506080573657,
+      "pooled_score": 106.1034580167587
+    }
+  ]
+}

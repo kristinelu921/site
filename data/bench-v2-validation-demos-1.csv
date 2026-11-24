@@ -1,0 +1,144 @@
+model,demos,task,metric,direction,n,score,copy_score,status,note
+VisualCloze,1,colorization,lpips,lower,17,0.4403217408586951,0.26197738792089853,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,deblurring,lpips,lower,17,0.1758588806671255,0.20889017424162695,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,denoising,lpips,lower,17,0.5622296451645739,0.7446603214039522,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,edge_detection,ois_f,higher,17,0.6752344895560054,0.34398811965422754,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,face_landmarks,nme,lower,17,0.32750113323358754,0.3341401089295341,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,human_pose_2d,pck_torso_0.2,higher,17,0.2068627450980392,0.15735294117647058,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,inpainting,lpips,lower,17,0.0941148135701523,0.1530421016847386,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,instance_segmentation,pq,higher,17,0.07109930349479085,0.054150348883660084,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,relative_depth,delta1,higher,17,0.9022673686216112,0.46488994998791755,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,saliency_detection,max_fbeta,higher,17,0.597899084739553,0.4135276662170504,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,semantic_segmentation,miou,higher,17,0.28212026205894003,0.26335281273431277,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,super_resolution,lpips,lower,17,0.218970668666503,0.4340166712508482,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,1,surface_normals,mean_deg,lower,17,44.99122914330093,113.58410577159289,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+Painter,1,colorization,lpips,lower,17,0.32998670988223133,,PASS phase-gated validation,Native recipe
+Painter,1,deblurring,lpips,lower,17,0.2518609543057049,,PASS phase-gated validation,Native recipe
+Painter,1,denoising,lpips,lower,17,0.20463511084809022,,PASS phase-gated validation,Native recipe
+Painter,1,edge_detection,ois_f,higher,17,0.23849314949352377,,PASS phase-gated validation,Native recipe
+Painter,1,face_landmarks,nme,lower,17,0.43561971811015826,,PASS phase-gated validation,Native recipe
+Painter,1,human_pose_2d,pck_torso_0.2,higher,17,0.08529411764705883,,PASS phase-gated validation,Native recipe
+Painter,1,inpainting,lpips,lower,17,0.14673071047838995,,PASS phase-gated validation,Native recipe
+Painter,1,instance_segmentation,pq,higher,17,0.049660075009624896,,PASS phase-gated validation,Native recipe
+Painter,1,relative_depth,delta1,higher,17,0.4392633112465151,,PASS phase-gated validation,Native recipe
+Painter,1,saliency_detection,max_fbeta,higher,17,0.586200512732342,,PASS phase-gated validation,Native recipe
+Painter,1,semantic_segmentation,miou,higher,17,0.49720730260335294,,PASS phase-gated validation,Native recipe
+Painter,1,super_resolution,lpips,lower,17,0.48190174558583426,,PASS phase-gated validation,Native recipe
+Painter,1,surface_normals,mean_deg,lower,17,135.2659184137341,,PASS phase-gated validation,Native recipe
+VICT,1,colorization,lpips,lower,17,0.26613949589869557,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,deblurring,lpips,lower,17,0.21139398743124568,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,denoising,lpips,lower,17,0.20060360650805867,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,edge_detection,ois_f,higher,17,0.1971193508571535,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,face_landmarks,nme,lower,17,0.3777410385267831,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,human_pose_2d,pck_torso_0.2,higher,17,0.3803921568627451,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,inpainting,lpips,lower,17,0.140712827882346,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,instance_segmentation,pq,higher,17,0.09379696008958978,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,relative_depth,delta1,higher,17,0.4392633112465151,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,saliency_detection,max_fbeta,higher,17,0.6643405450813816,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,semantic_segmentation,miou,higher,17,0.46988132137212457,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,super_resolution,lpips,lower,17,0.40466083235600414,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+VICT,1,surface_normals,mean_deg,lower,17,127.41910470983218,,authoritative corrected-v3 validation complete,60 encoder updates per query; TPU port
+GenLV-101 Huge,1,colorization,lpips,lower,17,0.2087745298357571,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,deblurring,lpips,lower,17,0.1474284632679294,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,denoising,lpips,lower,17,0.5457839886931812,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,edge_detection,ois_f,higher,17,0.6906554677109334,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,face_landmarks,nme,lower,17,0.39131315350095985,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,human_pose_2d,pck_torso_0.2,higher,17,0.1769607843137255,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,inpainting,lpips,lower,17,0.056496632723685575,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,instance_segmentation,pq,higher,17,0.012830160430098403,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,relative_depth,delta1,higher,17,0.4392011305910339,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,saliency_detection,max_fbeta,higher,17,0.7396690821061449,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,semantic_segmentation,miou,higher,17,0.19125298620290307,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,super_resolution,lpips,lower,17,0.32244207227931304,,PASS phase-gated validation,Native recipe
+GenLV-101 Huge,1,surface_normals,mean_deg,lower,17,127.50787176968024,,PASS phase-gated validation,Native recipe
+LaVin-DiT,1,colorization,lpips,lower,17,0.191753089427948,0.26197738792089853,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,deblurring,lpips,lower,17,0.08384917687405558,0.20889017424162695,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,denoising,lpips,lower,17,0.7084910238490385,0.7446603214039522,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,edge_detection,ois_f,higher,17,0.2948803107305064,0.34398811965422754,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,face_landmarks,nme,lower,17,0.43627637547575343,0.3341401089295341,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,human_pose_2d,pck_torso_0.2,higher,17,0.2519607843137255,0.15735294117647058,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,inpainting,lpips,lower,17,0.15561055633075097,0.1530421016847386,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,instance_segmentation,pq,higher,17,0.21499105200621138,0.054150348883660084,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,relative_depth,delta1,higher,17,0.813033749789183,0.46488994998791755,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,saliency_detection,max_fbeta,higher,17,0.43814000583187457,0.4135276662170504,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,semantic_segmentation,miou,higher,17,0.3183507718916153,0.26335281273431277,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,super_resolution,lpips,lower,17,0.39899789585786705,0.4340166712508482,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,1,surface_normals,mean_deg,lower,17,84.11147051928117,113.58410577159289,complete corrected validation,TPU-native; CUDA parity not claimed
+PromptDiffusion,1,colorization,lpips,lower,17,0.6290003762525671,0.26197738792089853,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,deblurring,lpips,lower,17,0.634367988390081,0.20889017424162695,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,denoising,lpips,lower,17,1.1461936761351192,0.7446603214039522,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,edge_detection,ois_f,higher,17,0.6220895226861497,0.34398811965422754,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,face_landmarks,nme,lower,17,0.34092045351335365,0.3341401089295341,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,human_pose_2d,pck_torso_0.2,higher,17,0.10833333333333332,0.15735294117647058,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,inpainting,lpips,lower,17,0.1535830028793391,0.1530421016847386,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,instance_segmentation,pq,higher,17,0.09292980974021398,0.054150348883660084,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,relative_depth,delta1,higher,17,0.6949414755935249,0.46488994998791755,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,saliency_detection,max_fbeta,higher,17,0.5538360243021998,0.4135276662170504,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,semantic_segmentation,miou,higher,17,0.33991547403799316,0.26335281273431277,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,super_resolution,lpips,lower,17,0.8415121471180635,0.4340166712508482,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+PromptDiffusion,1,surface_normals,mean_deg,lower,17,84.32162035719327,113.58410577159289,authoritative corrected-v3 validation complete,Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified
+RelationAdapter,1,colorization,lpips,lower,17,0.2874273850637324,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,deblurring,lpips,lower,17,0.21285451072103836,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,denoising,lpips,lower,17,0.32727708360728097,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,edge_detection,ois_f,higher,17,0.47251306857154524,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,face_landmarks,nme,lower,17,0.3006916560621294,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,human_pose_2d,pck_torso_0.2,higher,17,0.11813725490196078,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,inpainting,lpips,lower,17,0.14731951408526478,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,instance_segmentation,pq,higher,17,0.046302655866613,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,relative_depth,delta1,higher,17,0.5489666924920725,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,saliency_detection,max_fbeta,higher,17,0.48914074753297015,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,semantic_segmentation,miou,higher,17,0.24871834527453132,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,super_resolution,lpips,lower,17,0.44216936388436484,,authoritative corrected-v3 validation complete,Native recipe
+RelationAdapter,1,surface_normals,mean_deg,lower,17,71.11764008469575,,authoritative corrected-v3 validation complete,Native recipe
+InstaManip,1,colorization,lpips,lower,17,0.4690823484869564,0.26197738792089853,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,deblurring,lpips,lower,17,0.4463032852200901,0.20889017424162695,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,denoising,lpips,lower,17,0.6730859174447901,0.7446603214039522,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,edge_detection,ois_f,higher,17,0.3296340614341018,0.34398811965422754,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,face_landmarks,nme,lower,17,0.3405691727184055,0.3341401089295341,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,human_pose_2d,pck_torso_0.2,higher,17,0.13578431372549019,0.15735294117647058,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,inpainting,lpips,lower,17,0.17614024176317103,0.1530421016847386,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,instance_segmentation,pq,higher,17,0.019478922288667985,0.054150348883660084,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,relative_depth,delta1,higher,17,0.4402227064613368,0.46488994998791755,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,saliency_detection,max_fbeta,higher,17,0.4291829835679227,0.4135276662170504,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,semantic_segmentation,miou,higher,17,0.24907606472421862,0.26335281273431277,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,super_resolution,lpips,lower,17,0.5928621940753039,0.4340166712508482,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+InstaManip,1,surface_normals,mean_deg,lower,17,87.61629941428478,113.58410577159289,complete corrected validation,Task-text recipe; released demo-specific checkpoint; TPU port
+IMProv,1,colorization,lpips,lower,17,0.6256856655373293,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,deblurring,lpips,lower,17,0.5815043817548191,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,denoising,lpips,lower,17,0.46420437623472777,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,edge_detection,ois_f,higher,17,0.12978780470367943,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,face_landmarks,nme,lower,17,0.49208302782389135,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,human_pose_2d,pck_torso_0.2,higher,17,0.034313725490196074,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,inpainting,lpips,lower,17,0.11274909403394251,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,instance_segmentation,pq,higher,17,0.0014837343490186603,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,relative_depth,delta1,higher,17,0.4332110365233144,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,saliency_detection,max_fbeta,higher,17,0.5008876338814471,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,semantic_segmentation,miou,higher,17,0.17363533302318143,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,super_resolution,lpips,lower,17,0.60123311772066,,authoritative corrected-v3 validation complete,Native recipe
+IMProv,1,surface_normals,mean_deg,lower,17,86.7299555914386,,authoritative corrected-v3 validation complete,Native recipe
+Analogist,1,colorization,lpips,lower,17,0.41228671119931865,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,deblurring,lpips,lower,17,0.3544120242928757,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,denoising,lpips,lower,17,0.6395768393926761,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,edge_detection,ois_f,higher,17,0.31991367577591406,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,face_landmarks,nme,lower,17,0.2905799777885676,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,human_pose_2d,pck_torso_0.2,higher,17,0.16930147058823528,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,inpainting,lpips,lower,17,0.12106505056897945,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,instance_segmentation,pq,higher,17,0.011644098516430912,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,relative_depth,delta1,higher,17,0.47385618317713396,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,saliency_detection,max_fbeta,higher,17,0.3889184000510166,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,semantic_segmentation,miou,higher,17,0.21858814628481416,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,super_resolution,lpips,lower,17,0.5388024026418433,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+Analogist,1,surface_normals,mean_deg,lower,17,97.20558342902682,,authoritative corrected-v3 validation complete · 8-candidate mean,8-candidate mean; current-vision prompts
+LVM 7B,1,colorization,lpips,lower,17,0.3251379377701703,0.26197738792089853,complete corrected validation,Native recipe
+LVM 7B,1,deblurring,lpips,lower,17,0.3845764617709553,0.20889017424162695,complete corrected validation,Native recipe
+LVM 7B,1,denoising,lpips,lower,17,0.14754890453289538,0.7446603214039522,complete corrected validation,Native recipe
+LVM 7B,1,edge_detection,ois_f,higher,17,0.27325469171903505,0.34398811965422754,complete corrected validation,Native recipe
+LVM 7B,1,face_landmarks,nme,lower,17,0.367760398065314,0.3341401089295341,complete corrected validation,Native recipe
+LVM 7B,1,human_pose_2d,pck_torso_0.2,higher,17,0.3156862745098039,0.15735294117647058,complete corrected validation,Native recipe
+LVM 7B,1,inpainting,lpips,lower,17,0.14269311528872042,0.1530421016847386,complete corrected validation,Native recipe
+LVM 7B,1,instance_segmentation,pq,higher,17,0.10054629224599915,0.054150348883660084,complete corrected validation,Native recipe
+LVM 7B,1,relative_depth,delta1,higher,17,0.8984434624912377,0.46488994998791755,complete corrected validation,Native recipe
+LVM 7B,1,saliency_detection,max_fbeta,higher,17,0.6156105074193077,0.4135276662170504,complete corrected validation,Native recipe
+LVM 7B,1,semantic_segmentation,miou,higher,17,0.3369067915869805,0.26335281273431277,complete corrected validation,Native recipe
+LVM 7B,1,super_resolution,lpips,lower,17,0.5049960700904622,0.4340166712508482,complete corrected validation,Native recipe
+LVM 7B,1,surface_normals,mean_deg,lower,17,94.02014928235607,113.58410577159289,complete corrected validation,Native recipe

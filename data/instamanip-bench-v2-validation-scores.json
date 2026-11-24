@@ -1,0 +1,175 @@
+{
+  "backend_note": "PyTorch/XLA v5litepod-16 four-worker SPMD-FSDP; official CUDA numerical parity is not claimed",
+  "corrected_release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "edge_pooled": {
+    "copy": {
+      "ap": 0.10176946972095509,
+      "ods": 0.31047714258132336,
+      "ois": 0.3537630806605557
+    },
+    "model": {
+      "ap": 0.07730693507901716,
+      "ods": 0.2819808988417877,
+      "ois": 0.34294794645794496
+    }
+  },
+  "episodes": 221,
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "metric_identity_sha256": "ac97fd75cbd8f77441c9b4c98b15df90d1ed4f09ba5ef13a7bb9d0b3c4906862",
+  "model": "InstaManip",
+  "model_revision": "be992025e226211352cbb6c0734f5243fe1972c4",
+  "phase": "validation",
+  "plan_identity": "7b993fc10eb00afc6b4c69dc80b6e252897d19e0a7543b0e175538b032547ea9",
+  "prompt_pairs": 2,
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "queries_per_task": 17,
+  "readout": "InstaManip@native_p2_text_task_v1",
+  "recipe": "P=2 \u00b7 task text \u00b7 released two-demo checkpoint \u00b7 50 steps",
+  "recovery_complete_sha256": "5ac321f17c4648d48c840140882a6f8478eff3dbd9866a5d43126b04e0fe7fc0",
+  "rows": [
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.26197738792089853,
+      "improvement": -0.24829768148415232,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.5102750694050509,
+      "n": 17,
+      "task": "colorization"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.20889017424162695,
+      "improvement": -0.2498978691942552,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.45878804343588214,
+      "n": 17,
+      "task": "deblurring"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.7446603214039522,
+      "improvement": 0.14270949889631834,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.6019508225076339,
+      "n": 17,
+      "task": "denoising"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.34398811965422754,
+      "improvement": -0.01338567292617776,
+      "lower_is_better": false,
+      "metric": "ois_f",
+      "model": 0.3306024467280498,
+      "n": 17,
+      "task": "edge_detection"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.3324706153556117,
+      "improvement": -0.0003326566682658183,
+      "lower_is_better": true,
+      "metric": "nme",
+      "model": 0.33280327202387755,
+      "n": 17,
+      "task": "face_landmarks"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.15735294117647058,
+      "improvement": -0.003921568627450994,
+      "lower_is_better": false,
+      "metric": "pck_torso_0.2",
+      "model": 0.15343137254901962,
+      "n": 17,
+      "task": "human_pose_2d"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.1530421016847386,
+      "improvement": -0.020353497827754308,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.17339559951249292,
+      "n": 17,
+      "task": "inpainting"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.054150348883660084,
+      "improvement": -0.023363105716012345,
+      "lower_is_better": false,
+      "metric": "pq",
+      "model": 0.03078724316764774,
+      "n": 17,
+      "task": "instance_segmentation"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.46488994998791755,
+      "improvement": -0.01861064189371131,
+      "lower_is_better": false,
+      "metric": "delta1",
+      "model": 0.44627930809420624,
+      "n": 17,
+      "task": "relative_depth"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.4135276662170504,
+      "improvement": 0.03382934781664254,
+      "lower_is_better": false,
+      "metric": "max_fbeta",
+      "model": 0.447357014033693,
+      "n": 17,
+      "task": "saliency_detection"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.26335281273431277,
+      "improvement": 0.0010129568974805991,
+      "lower_is_better": false,
+      "metric": "miou",
+      "model": 0.26436576963179337,
+      "n": 17,
+      "task": "semantic_segmentation"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.4340166712508482,
+      "improvement": -0.15376032976543208,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.5877770010162803,
+      "n": 17,
+      "task": "super_resolution"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 113.58410577159289,
+      "improvement": 25.841301393557444,
+      "lower_is_better": true,
+      "metric": "mean_deg",
+      "model": 87.74280437803546,
+      "n": 17,
+      "task": "surface_normals"
+    }
+  ],
+  "schema": "visualcloze_site_instamanip_bench_v2_validation_v2",
+  "scientific_view_sha256": "befac76269f745afd2b6da1dc57aed5b1fbc28868294705838d5509a7e0a4975",
+  "score_manifest_sha256": "0607ac31a1d3e6e1320f5a1c2bc5263b7e0f276042a4cb9d7bda70d2766665be",
+  "scored_pairs_including_copy": 442,
+  "scored_results_sha256": "a1824675363460240ab910d6716306df3f0053c27e103f39087ddeecc6620a9f",
+  "scored_results_uri": "gs://kmh-gcp-us-west4/kristine/eval_runs/2026-10-19/instamanip_bench_v2_native_p2_text_task_v5e16_q46_kristine/validation/runs/20261021T185829Z-272203/score_recovery/canonical_worker0/corrected_v3/validation/units/bench_v2_val/scored_eval_v2/results.json",
+  "scored_utc": "2026-10-22T03:24:41.943060+00:00",
+  "source_run": "gs://kmh-gcp-us-west4/kristine/eval_runs/2026-10-19/instamanip_bench_v2_native_p2_text_task_v5e16_q46_kristine/validation/runs/20261021T185829Z-272203",
+  "status": "PASS_PHASE_GATED_VALIDATION",
+  "tasks": 13,
+  "text_conditioning": "task-specific instructions",
+  "validation_receipt_sha256": "a654dc8eae4dbfb8dc76b6fb57d0a04835c622a54e98cddd7a650de730d7c64f",
+  "validation_receipt_uri": "gs://kmh-gcp-us-west4/kristine/eval_runs/2026-10-19/instamanip_bench_v2_native_p2_text_task_v5e16_q46_kristine/validation/runs/20261021T185829Z-272203/score_recovery/canonical_worker0/corrected_v3/validation/validation_receipt.json",
+  "wins_vs_copy": 4
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bench v2 · InstaManip two-shot versus three-shot</title>
+  <meta name="description" content="All 13 category and 221 query changes for the recovered InstaManip three-shot evaluation, including gains, regressions and recipe differences.">
+  <link rel="stylesheet" href="../styles.css?v=57"><link rel="stylesheet" href="../bench-v2-recovery/styles.css?v=69">
+  <script src="app.js?v=81" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#categories">Skip to category comparison</a>
+  <header class="masthead"><a class="brand" href="../bench-v2-review/">Bench v2 <b>/ InstaManip P3</b></a><nav aria-label="Related views"><a href="../bench-v2-review/">All models &amp; settings</a><a href="../bench-v2-recovery/">Recovery audit</a><a href="#queries">Individual queries</a></nav></header>
+  <main>
+    <section class="recovery-hero">
+      <p class="eyebrow">RECOVERED ARCHIVE / ALL 221 VALIDATION QUERIES</p>
+      <h1>Three demonstrations.<br>Mixed improvements.</h1>
+      <p class="lede">The completed three-shot InstaManip archive was missing from the audit. Its scores are now verified: nine category means improve over two-shot and four worsen.</p>
+      <p class="snapshot" id="snapshot">Loading verified comparison…</p>
+      <aside class="recovery-note"><strong>Different released recipes.</strong> P2 and P3 use different shot-specific checkpoints, demonstrations, query-derived noise and TPU configurations. All query inputs match, but palette-coded targets can change. These differences cannot be attributed solely to demonstration count or a software repair.</aside>
+      <p class="boundary">The archive contains same-TPU repeat checks. The two-shot checkpoint passes separate CPU token and complete 50-step diffusion comparisons on two fixtures. Three-shot reference parity, TPU precision, padded batches and seed-policy checks remain open. This recovery does not establish that either recipe is the most accurate possible setting.</p>
+    </section>
+    <section id="categories">
+      <div class="section-heading"><div><p class="section-number">01 / ALL 13 CATEGORIES</p><h2>Gains and regressions</h2></div></div>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="All category scores, horizontally scrollable"><table class="recovery-table"><thead><tr><th scope="col">Category / metric</th><th scope="col">Two-shot</th><th scope="col">Three-shot</th><th scope="col">Signed improvement</th><th scope="col">Relative change</th><th scope="col">Wins / ties / losses</th><th scope="col">Identical targets</th></tr></thead><tbody id="category-rows"></tbody></table></div>
+      <p class="table-help">↑ Higher is better; ↓ lower is better. Positive signed change means improvement. Each mean uses all 17 queries. Relative change divides by the absolute two-shot score; zero baselines are undefined. Large percentages can reflect small absolute values. Ties use a tolerance of 10⁻¹². Unlike metrics are never averaged.</p>
+      <p class="boundary">Changed targets occur for palette-coded landmarks, pose and segmentation. Their copy-control scores are also supplied in the downloads. Even identical targets do not make this a controlled experiment: the checkpoint, demonstrations, noise and topology still differ.</p>
+    </section>
+    <section id="queries">
+      <div class="section-heading"><div><p class="section-number">02 / EVERY INDIVIDUAL SCORE</p><h2>Where changes are largest</h2></div><label class="control-label">Category<select id="task-select"></select></label></div>
+      <p id="effect-summary" class="recovery-note"></p>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="Individual query scores, horizontally scrollable"><table class="recovery-table"><caption id="query-caption"></caption><thead><tr><th scope="col">Query / record</th><th scope="col">Two-shot</th><th scope="col">Three-shot</th><th scope="col">Signed improvement</th><th scope="col">Relative change</th><th scope="col">Same target</th></tr></thead><tbody id="query-rows"></tbody></table></div>
+    </section>
+    <section id="verification">
+      <h2>What was verified</h2>
+      <div class="evidence-grid">
+        <article><h3>Complete archived result</h3><p>The plan, qualification, terminal receipt, scorer manifest and score files agree on all 221 queries and 442 prediction/copy scoring pairs. All 663 input, target and prediction file hashes and decoded pixel hashes match.</p></article>
+        <article><h3>Correct three-shot condition</h3><p>All queries use three distinct same-source demonstrations with the query excluded. The archive binds the released InstaManip-17B-3shot checkpoint revision, 750-token limit, 50 diffusion steps and guidance 7.5 / 1.5.</p><p class="boundary">Weight identity is established from the archived manifest and receipts; weights were not reloaded during this recovery.</p></article>
+        <article><h3>Comparable metric definitions</h3><p>The numerical scoring dependencies are identical across P2/P3; only three storage-root paths differ. P2 values exactly match the existing viewer. No inference or image-metric computation was rerun.</p><p class="boundary">Historical two-shot results are preserved. Three-shot results are presented as an additional recipe.</p></article>
+      </div>
+      <div class="download-row"><a href="categories.csv" download>All 13 category rows ↓</a><a href="queries.csv" download>All 221 query comparisons ↓</a><a href="data.json" download>Complete comparison and provenance ↓</a></div>
+    </section>
+    <p id="load-error" role="alert" hidden>Comparison data could not be loaded. The downloads remain available above.</p>
+    <noscript><p>Use the category and query downloads above to inspect every score.</p></noscript>
+  </main><footer><p>Bench v2 · <a href="../bench-v2-review/">Return to all-model review</a></p></footer>
+</body>
+</html>

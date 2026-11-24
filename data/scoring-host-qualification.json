@@ -1,0 +1,10 @@
+{
+  "status": "PASS_NATIVE_REPLAY",
+  "native_calls": 1953,
+  "cases": 4,
+  "thresholds_per_case": 99,
+  "certificate_sha256": "53aad9fbfab6775aff136426efc552748373a231c162145cefb4db351587f78a",
+  "host_build_sha256": "2e80921f6bf95af95ecb8485f31efcbd9074c77e6bf60c5ce5a47c448c6509ee",
+  "replay_report_sha256": "642b61136c96d4096e381ce7fb3c2acab3e35e75190c2d3e909c4a2aea44fa7b",
+  "scope": "Current local CPU build of unchanged original metric core. Four authenticated historical GT cases, all99 threshold counts and complete matching pairs/costs/witnesses exactly match retained evidence; independent saved-trace inspection passed. No full251, model-backend, or other-host equivalence claim."
+}

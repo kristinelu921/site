@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bench v2 · all-model review</title>
+  <meta name="description" content="Review all 11 model families and 21 scored recipes, every category and query, published-paper comparisons, and required accurate evaluation settings.">
+  <link rel="stylesheet" href="../styles.css?v=57"><link rel="stylesheet" href="styles.css?v=70">
+  <script src="app.js?v=76" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to model review</a>
+  <header class="masthead"><a class="brand" href="../10-12-validations/">Bench v2 <b>/ all-model review</b></a><nav aria-label="Page sections"><a href="#review">Models &amp; settings</a><a href="#queries">Individual scores</a><a href="#reported">Ours / TA</a><a href="../bench-v2-recovery/">Measured recoveries ↗</a><a href="../bench-v2-cpu-reference/">CPU reference comparisons ↗</a></nav></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">OCTOBER 30, 2026 / COMPLETE PUBLISHED-RECIPE AUDIT</p>
+      <h1>Every model.<br>Every category.</h1>
+      <p class="lede">Review each category and query alongside the authors’ published results. Several evaluation recipes still need correction or stronger validation.</p>
+      <p class="boundary"><strong>Edge-summary correction.</strong> VICT’s supplementary pooled OIS is 0.2176; the previously displayed 0.1087 was ODS under the wrong label. The main-table mean remains 0.1971 and every query score is unchanged. This corrects reporting, not model inference. <a href="../data/vict-edge-aggregation-correction.json">Verified counts and correction →</a></p>
+      <div class="metrics"><article><strong>11</strong><span>model families</span></article><article><strong>21</strong><span>scored recipes</span></article><article><strong>273</strong><span>category means verified</span></article><article><strong>4,641</strong><span>individual query scores</span></article></div>
+      <p class="notice"><b>Accuracy status: not yet fully certified.</b> Native resolution, released sampling settings and checkpoint identity are reviewed below. Pending model-level checks and reruns remain explicit. “More demonstrations” and “more steps” are not automatically more accurate.</p>
+      <p class="boundary"><a href="../bench-v2-recovery/#new-diagnostics">New LVM and VICT diagnostics →</a> Codec reconstruction, the prepared VICT output correction, and their measured limits. Full reruns remain pending.</p>
+      <p class="boundary"><strong>Additional verified recipe:</strong> the recovered <a href="../bench-v2-instamanip-p3/">InstaManip three-shot archive</a> contains all 221 scored queries. Compared with two-shot, nine means improve and four worsen. It is available separately from the 21 original recipes below; reference parity remains open.</p>
+      <p class="snapshot" id="snapshot">Loading review snapshot…</p>
+      <p class="downloads"><a href="category_reviews.csv" download>All category reviews ↓</a><a href="queries.csv" download>All query scores ↓</a><a href="accuracy_contract.json" download>Required evaluation settings ↓</a></p>
+      <p id="load-error" role="alert" hidden>The review could not load. Try refreshing, or use the downloadable files above.</p>
+    </section>
+    <section id="review">
+      <div class="section-heading"><h2>Review one model at a time</h2><label>Model family <select id="model-select" aria-label="Model family"></select></label></div>
+      <article class="model-card">
+        <div class="model-heading"><h3 id="model-title"></h3><label>Scored recipe <select id="recipe-select" aria-label="Scored recipe"></select></label></div>
+        <p id="observation" class="observation"></p>
+        <div class="detail-grid"><div><h4>What the paper reports</h4><p id="paper-facts"></p><a id="paper-link" target="_blank" rel="noopener noreferrer">Open the paper ↗</a></div><div><h4>Current verification</h4><p id="qualification"></p><p id="recipe-status" class="muted"></p></div></div>
+        <details open><summary>Required settings and remaining checks</summary><dl id="settings"></dl><ul id="remaining"></ul></details>
+      </article>
+      <div class="table-wrap" tabindex="0" aria-label="Category scores, scroll horizontally if needed"><table><caption id="category-caption"></caption><thead><tr><th scope="col">Category</th><th scope="col">Metric</th><th scope="col">Mean</th><th scope="col">Query range</th><th scope="col">Copy control</th><th scope="col">Review flags</th></tr></thead><tbody id="category-rows"></tbody></table></div>
+      <p class="muted">Flags identify symptoms for investigation. Losing to the copy control alone is not evidence of a software bug. All displayed means match their archived scorer outputs within 10⁻¹⁰.</p>
+    </section>
+    <section id="queries">
+      <div class="section-heading"><h2>Category and individual scores</h2><label>Category <select id="task-select" aria-label="Category"></select></label></div>
+      <div class="detail-grid category-detail"><div><h4>Published comparison</h4><p id="category-paper"></p></div><div><h4>Exact next method</h4><p id="category-method"></p></div></div>
+      <div class="table-wrap" tabindex="0" aria-label="Individual query scores"><table><caption id="query-caption"></caption><thead><tr><th scope="col">Query</th><th scope="col">Record</th><th scope="col">Score</th><th scope="col">Copy control</th></tr></thead><tbody id="query-rows"></tbody></table></div>
+    </section>
+    <section id="reported">
+      <p class="eyebrow">SEPARATE REPORTED REFERENCE</p><h2>Ours / TA · P16</h2>
+      <p>All 13 displayed values match the supplied table, rounded to two decimal places. The located producer archive has only 32 episodes with deferred scoring, so it does not independently verify the full reported 221-query result.</p>
+      <p class="notice">A complete scored archive with the reported plan identity is required before this row can receive the same verification as the other 21 recipes. The rounded values do not establish unrounded rankings.</p>
+      <div class="table-wrap" tabindex="0" aria-label="Reported Ours TA scores"><table><thead><tr><th scope="col">Category</th><th scope="col">Metric</th><th scope="col">Reported mean</th></tr></thead><tbody id="ours-rows"></tbody></table></div>
+    </section>
+    <section id="method">
+      <h2>What was checked</h2>
+      <p>Every category mean was recomputed from its 17 archived query scores. Analogist retains all eight separately scored candidates before averaging. The audit verifies the data pack, supervision version, scoring release, query identities, demonstration counts and hashes, query exclusion, and merged scoring records. Undefined secondary metrics retain their documented missing-value representation.</p>
+      <p>Bench v2 uses supervision v6 and 256-pixel scoring targets; each model still uses its native internal resolution. Palette targets may differ by demonstration count. These results are transfer evaluations, not direct reproductions of every paper’s dataset, metric or checkpoint.</p>
+      <p>These checks do not rerun every image metric or establish CUDA-to-TPU numerical parity. Corrections require paired controls; hyperparameter selection requires independent development data. Historical baselines and the measured recovery comparisons remain separately available.</p>
+      <p class="downloads"><a href="verification.json" download>Score verification ↓</a><a href="data.json" download>Complete review data ↓</a><a href="../10-12-validations/">Original comparison ↗</a><a href="../bench-v2-recovery/">Completed recoveries ↗</a></p>
+    </section>
+  <p class="table-help"><a href="../bench-v2-painter-semantic/">Painter native semantic adapter: all gains and regressions →</a></p><p class="table-help"><a href="../bench-v2-painter-reference/">Painter: all 13 categories and 221 queries, arithmetic and backend comparisons →</a></p><p class="table-help"><a href="../bench-v2-painter-instance/">Painter native instance recipe: all 17 queries, gains and regressions →</a></p><p class="table-help"><a href="../bench-v2-surface-normals/">Surface-normal evaluation: verified targets, replayed scores and unresolved model failures →</a></p><p class="table-help"><a href="../bench-v2-painter-pose/">Painter native pose recipe: all 17 queries, gains and regressions →</a></p></main><footer>Bench v2 · dated review snapshot · existing scientific scores preserved</footer>
+</body></html>

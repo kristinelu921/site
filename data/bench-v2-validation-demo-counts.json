@@ -1,0 +1,1003 @@
+{
+  "additional_model": "LVM 7B",
+  "aggregation": "Mean per-query primary metric within each task; no cross-task raw-metric average.",
+  "baseline_models": 10,
+  "comparison_boundary": "Shared validation queries. Demo counts and native recipes remain explicit. LVM P7 retains the published diagnostic legacy-plan qualification. TPU ports do not establish CUDA parity. InstaManip P1/P2 use completed task-text runs; the original table retains its earlier P2 recipe. Analogist is the mean of eight candidates, not eight demonstrations. Ours/TA P16 remains in the original table. PromptDiffusion P1 uses the verified task-text rerun: three author labels and ten approved task prompts. VisualCloze P2 uses the completed 221-query task-text rerun with 13 task-specific prompts and empty content captions. Demonstrations, seeds, weights and sampling settings match the original run; the TPU changed from v5e to v6e. Full reference-versus-TPU numerical parity is not established.",
+  "episodes_per_recipe": 221,
+  "groups": [
+    {
+      "csv": "bench-v2-validation-demos-1.csv",
+      "demo_counts": [
+        1
+      ],
+      "key": "1",
+      "models": [
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3341401089295341,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "visualcloze-p1",
+          "label": "VisualCloze",
+          "model": "visualcloze",
+          "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+          "p": 1,
+          "provenance": {
+            "baseline_plan_identity": "6055f2bd6eb7ef5867d80d5edf212a77a091383fbce22940435b345fc1387256",
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "plan_identity": "374305e1628dcb2ca34f37d62dee5445c3747470d12d325ea5e9077afba23b85",
+            "receipt_file": "visualcloze-p1-task-text-validation-scores.json",
+            "receipt_sha256": "38e621aa20804deab38c3f123a2d0418e8e750b8345fdbd70e5798fe575e86c3",
+            "run_id": "visualcloze_bench_v2_p1_p4_p8_task_text_v1/p1",
+            "score_units": 29,
+            "scored_pairs": 442,
+            "scored_results_sha256": "0ca8e8541a88f2e89bd8b9878280fd511a4436fa6a066eaee4ba6b1663b5379f"
+          },
+          "scores": {
+            "colorization": 0.4403217408586951,
+            "deblurring": 0.1758588806671255,
+            "denoising": 0.5622296451645739,
+            "edge_detection": 0.6752344895560054,
+            "face_landmarks": 0.32750113323358754,
+            "human_pose_2d": 0.2068627450980392,
+            "inpainting": 0.0941148135701523,
+            "instance_segmentation": 0.07109930349479085,
+            "relative_depth": 0.9022673686216112,
+            "saliency_detection": 0.597899084739553,
+            "semantic_segmentation": 0.28212026205894003,
+            "super_resolution": 0.218970668666503,
+            "surface_normals": 44.99122914330093
+          },
+          "status": "complete authoritative corrected-v3 validation"
+        },
+        {
+          "key": "painter-p1",
+          "label": "Painter",
+          "model": "painter",
+          "note": "Native recipe",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "3a2ad324c375b72f641c9359a3dc62467f2cb668ee79fb67b47f59addf6a7bed",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "painter_p1"
+          },
+          "scores": {
+            "colorization": 0.32998670988223133,
+            "deblurring": 0.2518609543057049,
+            "denoising": 0.20463511084809022,
+            "edge_detection": 0.23849314949352377,
+            "face_landmarks": 0.43561971811015826,
+            "human_pose_2d": 0.08529411764705883,
+            "inpainting": 0.14673071047838995,
+            "instance_segmentation": 0.049660075009624896,
+            "relative_depth": 0.4392633112465151,
+            "saliency_detection": 0.586200512732342,
+            "semantic_segmentation": 0.49720730260335294,
+            "super_resolution": 0.48190174558583426,
+            "surface_normals": 135.2659184137341
+          },
+          "status": "PASS phase-gated validation"
+        },
+        {
+          "key": "vict-p1",
+          "label": "VICT",
+          "model": "vict",
+          "note": "60 encoder updates per query; TPU port",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "3bd6ccf3a6b3697bd71afffc1a68cf5176c96b0a833f2fd1b28e880ae87480d2",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "vict_p1"
+          },
+          "scores": {
+            "colorization": 0.26613949589869557,
+            "deblurring": 0.21139398743124568,
+            "denoising": 0.20060360650805867,
+            "edge_detection": 0.1971193508571535,
+            "face_landmarks": 0.3777410385267831,
+            "human_pose_2d": 0.3803921568627451,
+            "inpainting": 0.140712827882346,
+            "instance_segmentation": 0.09379696008958978,
+            "relative_depth": 0.4392633112465151,
+            "saliency_detection": 0.6643405450813816,
+            "semantic_segmentation": 0.46988132137212457,
+            "super_resolution": 0.40466083235600414,
+            "surface_normals": 127.41910470983218
+          },
+          "status": "authoritative corrected-v3 validation complete"
+        },
+        {
+          "key": "genlv-p1",
+          "label": "GenLV-101 Huge",
+          "model": "genlv",
+          "note": "Native recipe",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "f5110d7f425dc6e9a1c339f8ed780245c325e5199f099c1dabcc769a3da52e73",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "genlv_p1"
+          },
+          "scores": {
+            "colorization": 0.2087745298357571,
+            "deblurring": 0.1474284632679294,
+            "denoising": 0.5457839886931812,
+            "edge_detection": 0.6906554677109334,
+            "face_landmarks": 0.39131315350095985,
+            "human_pose_2d": 0.1769607843137255,
+            "inpainting": 0.056496632723685575,
+            "instance_segmentation": 0.012830160430098403,
+            "relative_depth": 0.4392011305910339,
+            "saliency_detection": 0.7396690821061449,
+            "semantic_segmentation": 0.19125298620290307,
+            "super_resolution": 0.32244207227931304,
+            "surface_normals": 127.50787176968024
+          },
+          "status": "PASS phase-gated validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3341401089295341,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lavin-dit-p1",
+          "label": "LaVin-DiT",
+          "model": "lavin-dit",
+          "note": "TPU-native; CUDA parity not claimed",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "score_manifest_sha256": "79ee75af239f2408087f8e0b9f6cee5b22bc2a379ce89259f5d97a10a6f35587",
+            "scored_pairs": 442,
+            "scored_results_sha256": "cb7660614c105214b2f007f239ae589cdb68ec60bb38a9024821b659d0b21649"
+          },
+          "scores": {
+            "colorization": 0.191753089427948,
+            "deblurring": 0.08384917687405558,
+            "denoising": 0.7084910238490385,
+            "edge_detection": 0.2948803107305064,
+            "face_landmarks": 0.43627637547575343,
+            "human_pose_2d": 0.2519607843137255,
+            "inpainting": 0.15561055633075097,
+            "instance_segmentation": 0.21499105200621138,
+            "relative_depth": 0.813033749789183,
+            "saliency_detection": 0.43814000583187457,
+            "semantic_segmentation": 0.3183507718916153,
+            "super_resolution": 0.39899789585786705,
+            "surface_normals": 84.11147051928117
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3341401089295341,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "prompt-diffusion-p1",
+          "label": "PromptDiffusion",
+          "model": "prompt-diffusion",
+          "note": "Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "a2019306ed2b9d537ebfd1e63361d1ba07013e399d04fead02055939a5a20bbe",
+            "parent_plan_identity": "e6b456d251980eafd29b9c501d73d7cb05fa5bc08c4e4d2e5fc99ce84a409cbe",
+            "plan_identity": "b32e308c9295b751d99e4b9534b75471941017dbeaf3ddd994f50d1722683d97",
+            "receipt_file": "promptdiffusion-task-text-validation-scores.json",
+            "receipt_sha256": "05c975d851ec90d9ad6c07989914451b568cd6afce92072b736b016e18dc1f59",
+            "run_id": "promptdiffusion_bench_v2_p1_task_text_v1_rerun2",
+            "score_units": 29,
+            "scored_pairs": 442,
+            "scored_results_sha256": "3b60f161dadf1d94558dddead903cd5ff2db77358e487b695fbceb91fd6a5806"
+          },
+          "scores": {
+            "colorization": 0.6290003762525671,
+            "deblurring": 0.634367988390081,
+            "denoising": 1.1461936761351192,
+            "edge_detection": 0.6220895226861497,
+            "face_landmarks": 0.34092045351335365,
+            "human_pose_2d": 0.10833333333333332,
+            "inpainting": 0.1535830028793391,
+            "instance_segmentation": 0.09292980974021398,
+            "relative_depth": 0.6949414755935249,
+            "saliency_detection": 0.5538360243021998,
+            "semantic_segmentation": 0.33991547403799316,
+            "super_resolution": 0.8415121471180635,
+            "surface_normals": 84.32162035719327
+          },
+          "status": "authoritative corrected-v3 validation complete"
+        },
+        {
+          "key": "relation-adapter-p1",
+          "label": "RelationAdapter",
+          "model": "relation-adapter",
+          "note": "Native recipe",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "e1ca22635f2beb7678c64c7a402eca2ff8dd815042263ad4c8d473f9e5d37812",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "relation_adapter_p1"
+          },
+          "scores": {
+            "colorization": 0.2874273850637324,
+            "deblurring": 0.21285451072103836,
+            "denoising": 0.32727708360728097,
+            "edge_detection": 0.47251306857154524,
+            "face_landmarks": 0.3006916560621294,
+            "human_pose_2d": 0.11813725490196078,
+            "inpainting": 0.14731951408526478,
+            "instance_segmentation": 0.046302655866613,
+            "relative_depth": 0.5489666924920725,
+            "saliency_detection": 0.48914074753297015,
+            "semantic_segmentation": 0.24871834527453132,
+            "super_resolution": 0.44216936388436484,
+            "surface_normals": 71.11764008469575
+          },
+          "status": "authoritative corrected-v3 validation complete"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3341401089295341,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "instamanip-p1",
+          "label": "InstaManip",
+          "model": "instamanip",
+          "note": "Task-text recipe; released demo-specific checkpoint; TPU port",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "b6daaddb4b3a7b46ceaba5cdd02747930aed14e494eadafad5c681bd98ee6a27",
+            "score_manifest_sha256": "f859f93baafe9d9d17a7be93f45d6d57393d5386b7aef4ae78a9fda37e8d1224",
+            "scored_pairs": 442,
+            "scored_results_sha256": "4ffccbb6a598569e4403faec82ae7402934e6e9da5dae3f18f107626124a2b6d"
+          },
+          "scores": {
+            "colorization": 0.4690823484869564,
+            "deblurring": 0.4463032852200901,
+            "denoising": 0.6730859174447901,
+            "edge_detection": 0.3296340614341018,
+            "face_landmarks": 0.3405691727184055,
+            "human_pose_2d": 0.13578431372549019,
+            "inpainting": 0.17614024176317103,
+            "instance_segmentation": 0.019478922288667985,
+            "relative_depth": 0.4402227064613368,
+            "saliency_detection": 0.4291829835679227,
+            "semantic_segmentation": 0.24907606472421862,
+            "super_resolution": 0.5928621940753039,
+            "surface_normals": 87.61629941428478
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "key": "improv-p1",
+          "label": "IMProv",
+          "model": "improv",
+          "note": "Native recipe",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "d7b93c10ad7b2db96fbdb6e46df82fc61cacff3f410d5c6de4f7b7ca0b4e9e5c",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "improv_p1"
+          },
+          "scores": {
+            "colorization": 0.6256856655373293,
+            "deblurring": 0.5815043817548191,
+            "denoising": 0.46420437623472777,
+            "edge_detection": 0.12978780470367943,
+            "face_landmarks": 0.49208302782389135,
+            "human_pose_2d": 0.034313725490196074,
+            "inpainting": 0.11274909403394251,
+            "instance_segmentation": 0.0014837343490186603,
+            "relative_depth": 0.4332110365233144,
+            "saliency_detection": 0.5008876338814471,
+            "semantic_segmentation": 0.17363533302318143,
+            "super_resolution": 0.60123311772066,
+            "surface_normals": 86.7299555914386
+          },
+          "status": "authoritative corrected-v3 validation complete"
+        },
+        {
+          "key": "analogist-p1",
+          "label": "Analogist",
+          "model": "analogist",
+          "note": "8-candidate mean; current-vision prompts",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "4ec5c77b046c6daf9eebde53a0004ed357d626c7a647d70e5f312fea550d01e5",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "analogist_p1"
+          },
+          "scores": {
+            "colorization": 0.41228671119931865,
+            "deblurring": 0.3544120242928757,
+            "denoising": 0.6395768393926761,
+            "edge_detection": 0.31991367577591406,
+            "face_landmarks": 0.2905799777885676,
+            "human_pose_2d": 0.16930147058823528,
+            "inpainting": 0.12106505056897945,
+            "instance_segmentation": 0.011644098516430912,
+            "relative_depth": 0.47385618317713396,
+            "saliency_detection": 0.3889184000510166,
+            "semantic_segmentation": 0.21858814628481416,
+            "super_resolution": 0.5388024026418433,
+            "surface_normals": 97.20558342902682
+          },
+          "status": "authoritative corrected-v3 validation complete \u00b7 8-candidate mean"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3341401089295341,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lvm-p1",
+          "label": "LVM 7B",
+          "model": "lvm",
+          "note": "Native recipe",
+          "p": 1,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "a2019306ed2b9d537ebfd1e63361d1ba07013e399d04fead02055939a5a20bbe",
+            "score_manifest_sha256": "9fca046e9c0d114c3a5d67255143a480bff8377c52242979dcc131b551a9791f",
+            "scored_pairs": 442,
+            "scored_results_sha256": "e0873d4b78d6a56ee499b1a7f9de0910e40dbc67aef2650930437103a061bcbf"
+          },
+          "scores": {
+            "colorization": 0.3251379377701703,
+            "deblurring": 0.3845764617709553,
+            "denoising": 0.14754890453289538,
+            "edge_detection": 0.27325469171903505,
+            "face_landmarks": 0.367760398065314,
+            "human_pose_2d": 0.3156862745098039,
+            "inpainting": 0.14269311528872042,
+            "instance_segmentation": 0.10054629224599915,
+            "relative_depth": 0.8984434624912377,
+            "saliency_detection": 0.6156105074193077,
+            "semantic_segmentation": 0.3369067915869805,
+            "super_resolution": 0.5049960700904622,
+            "surface_normals": 94.02014928235607
+          },
+          "status": "complete corrected validation"
+        }
+      ],
+      "title": "1 demo"
+    },
+    {
+      "csv": "bench-v2-validation-demos-2.csv",
+      "demo_counts": [
+        2
+      ],
+      "key": "2",
+      "models": [
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3324706153556117,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "visualcloze-p2",
+          "label": "VisualCloze",
+          "model": "visualcloze",
+          "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+          "p": 2,
+          "provenance": {
+            "baseline_plan_identity": "dc53ea663fe67d183bf290434f53f31ce4f0659c44d5f1e41e9881f5a8617e5b",
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "plan_identity": "511cc284cb65bd182522d7f2a2e92958c3a8c0792507e6b504857fcf88ea1938",
+            "receipt_file": "visualcloze-task-text-validation-scores.json",
+            "receipt_sha256": "d5f966fe7fcfd63ce5f9ed0ee5315bbaa1db2b6fe6d0ec88891d4d2d7d2fc673",
+            "run_id": "visualcloze_bench_v2_p2_task_text_v1",
+            "score_units": 29,
+            "scored_pairs": 442,
+            "scored_results_sha256": "216c3db199400d51be2c4d1798523b9946c1bfe26a9c9553794d6897c303aa04"
+          },
+          "scores": {
+            "colorization": 0.2765399248284452,
+            "deblurring": 0.17029323691830917,
+            "denoising": 0.29495329059222164,
+            "edge_detection": 0.6748856503441056,
+            "face_landmarks": 0.3684182880140934,
+            "human_pose_2d": 0.2946078431372549,
+            "inpainting": 0.09033320323728464,
+            "instance_segmentation": 0.06480372415172311,
+            "relative_depth": 0.9437944418711592,
+            "saliency_detection": 0.46661687576953337,
+            "semantic_segmentation": 0.28920848811604943,
+            "super_resolution": 0.200871525441899,
+            "surface_normals": 49.54843177039548
+          },
+          "status": "complete authoritative corrected-v3 validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3324706153556117,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lavin-dit-p2",
+          "label": "LaVin-DiT",
+          "model": "lavin-dit",
+          "note": "TPU-native; CUDA parity not claimed",
+          "p": 2,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "ec75aded679ef4ca6c6b45e4e32118865d1b8e8900479a62fc97291073cfe764",
+            "score_manifest_sha256": "7d1c89eb94f5265599444134373f378adb1028b796a93a2665ba0e1886cdd8f9",
+            "scored_pairs": 442,
+            "scored_results_sha256": "50762660901801118a4fade8a7679f1b5205751244850f85f2d6b4e4b09c3e2e"
+          },
+          "scores": {
+            "colorization": 0.17880620478707202,
+            "deblurring": 0.08060164289439425,
+            "denoising": 0.6887922339579639,
+            "edge_detection": 0.3349317879567693,
+            "face_landmarks": 0.4380758830019993,
+            "human_pose_2d": 0.2269607843137255,
+            "inpainting": 0.14760972559452057,
+            "instance_segmentation": 0.21004696881955676,
+            "relative_depth": 0.7000440365642382,
+            "saliency_detection": 0.5125530737351291,
+            "semantic_segmentation": 0.4385815769734087,
+            "super_resolution": 0.4072212217485203,
+            "surface_normals": 72.39977466320411
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3324706153556117,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "instamanip-p2",
+          "label": "InstaManip",
+          "model": "instamanip",
+          "note": "Task-text recipe; released demo-specific checkpoint; TPU port",
+          "p": 2,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "ac97fd75cbd8f77441c9b4c98b15df90d1ed4f09ba5ef13a7bb9d0b3c4906862",
+            "score_manifest_sha256": "0607ac31a1d3e6e1320f5a1c2bc5263b7e0f276042a4cb9d7bda70d2766665be",
+            "scored_pairs": 442,
+            "scored_results_sha256": "a1824675363460240ab910d6716306df3f0053c27e103f39087ddeecc6620a9f"
+          },
+          "scores": {
+            "colorization": 0.5102750694050509,
+            "deblurring": 0.45878804343588214,
+            "denoising": 0.6019508225076339,
+            "edge_detection": 0.3306024467280498,
+            "face_landmarks": 0.33280327202387755,
+            "human_pose_2d": 0.15343137254901962,
+            "inpainting": 0.17339559951249292,
+            "instance_segmentation": 0.03078724316764774,
+            "relative_depth": 0.44627930809420624,
+            "saliency_detection": 0.447357014033693,
+            "semantic_segmentation": 0.26436576963179337,
+            "super_resolution": 0.5877770010162803,
+            "surface_normals": 87.74280437803546
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.3324706153556117,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lvm-p2",
+          "label": "LVM 7B",
+          "model": "lvm",
+          "note": "Native recipe",
+          "p": 2,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "a2019306ed2b9d537ebfd1e63361d1ba07013e399d04fead02055939a5a20bbe",
+            "score_manifest_sha256": "4982d08970388bd08b4850840b2575ab11d563ed3b6b0289854bc63935a90c14",
+            "scored_pairs": 442,
+            "scored_results_sha256": "2c19eb005faacb51717372e68dd9112588ed15baa853640a48ecaa089b03ce96"
+          },
+          "scores": {
+            "colorization": 0.33437202695538015,
+            "deblurring": 0.395899260745329,
+            "denoising": 0.1477555869256749,
+            "edge_detection": 0.2535366464445197,
+            "face_landmarks": 0.36681220437733814,
+            "human_pose_2d": 0.33284313725490194,
+            "inpainting": 0.14465909604640567,
+            "instance_segmentation": 0.09065956063317757,
+            "relative_depth": 0.9023388616192148,
+            "saliency_detection": 0.5680108004306389,
+            "semantic_segmentation": 0.3461168961010501,
+            "super_resolution": 0.4977035031599157,
+            "surface_normals": 104.9487263910273
+          },
+          "status": "complete corrected validation"
+        }
+      ],
+      "title": "2 demos"
+    },
+    {
+      "csv": "bench-v2-validation-demos-4.csv",
+      "demo_counts": [
+        4
+      ],
+      "key": "4",
+      "models": [
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.33247227232640914,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "visualcloze-p4",
+          "label": "VisualCloze",
+          "model": "visualcloze",
+          "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+          "p": 4,
+          "provenance": {
+            "baseline_plan_identity": "72fe6548bce763131e2e771c4b81e01f89136cd41af19f1c7b85f1b84352a9a9",
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "plan_identity": "b79fcfcd99f0eceb0e2c88b1a53b6dd9a7e3a19ecfc550f94cf97ceac246c738",
+            "receipt_file": "visualcloze-p4-task-text-validation-scores.json",
+            "receipt_sha256": "6c293e0193c611d0ff6a087633f6d06779214ae9c386dc94199411f9b96e474d",
+            "run_id": "visualcloze_bench_v2_p1_p4_p8_task_text_v1/p4",
+            "score_units": 29,
+            "scored_pairs": 442,
+            "scored_results_sha256": "be44fb8c605c248f71c9296756e550ea8a8f73d381ef8b6f7ed53d697b9ddd4b"
+          },
+          "scores": {
+            "colorization": 0.7216795700437882,
+            "deblurring": 0.4221138752558652,
+            "denoising": 0.5544073923545725,
+            "edge_detection": 0.27986585965333366,
+            "face_landmarks": 0.4442097713142046,
+            "human_pose_2d": 0.1088235294117647,
+            "inpainting": 0.08018572201185367,
+            "instance_segmentation": 0.0035607979598973128,
+            "relative_depth": 0.6656536333101809,
+            "saliency_detection": 0.3878176840691306,
+            "semantic_segmentation": 0.19216537737130238,
+            "super_resolution": 0.4285609178683337,
+            "surface_normals": 59.86677908717991
+          },
+          "status": "complete authoritative corrected-v3 validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.33247227232640914,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lavin-dit-p4",
+          "label": "LaVin-DiT",
+          "model": "lavin-dit",
+          "note": "TPU-native; CUDA parity not claimed",
+          "p": 4,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "437ce0ad566d2ecb9657323aff0dc6c118cf0961c2724b91e7e9f3100b7b18e5",
+            "score_manifest_sha256": "c408e00796e484b5f4b872e5d92c1bfe3c454f6ab0238c8f34ad1c76cf48a59f",
+            "scored_pairs": 442,
+            "scored_results_sha256": "5eb2ecd2d6d79c70d5326b5a604b8e1b8e6233e3fb89166b9fec01831722a117"
+          },
+          "scores": {
+            "colorization": 0.1755120881340083,
+            "deblurring": 0.08128800243139267,
+            "denoising": 0.6871481870903688,
+            "edge_detection": 0.31516171781433316,
+            "face_landmarks": 0.4416839385775303,
+            "human_pose_2d": 0.26225490196078427,
+            "inpainting": 0.14760422838084838,
+            "instance_segmentation": 0.214736584638605,
+            "relative_depth": 0.8337204783325759,
+            "saliency_detection": 0.44094496635602126,
+            "semantic_segmentation": 0.38381027460210404,
+            "super_resolution": 0.40740759933696075,
+            "surface_normals": 62.39630445113923
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.33247227232640914,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lvm-p4",
+          "label": "LVM 7B",
+          "model": "lvm",
+          "note": "Native recipe",
+          "p": 4,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "a2019306ed2b9d537ebfd1e63361d1ba07013e399d04fead02055939a5a20bbe",
+            "score_manifest_sha256": "184ff77ceacc08c21349a874c1c33cde7f6236dc5f16e8e8bb4e345003b41ad1",
+            "scored_pairs": 442,
+            "scored_results_sha256": "a706ba69c7d61e5b2e105b2ad2a9912db52e20fadfcd13da0deaf8ea47a0374f"
+          },
+          "scores": {
+            "colorization": 0.33109352606184345,
+            "deblurring": 0.5044078265919405,
+            "denoising": 0.16360694761661923,
+            "edge_detection": 0.2397518284551497,
+            "face_landmarks": 0.3337672262301157,
+            "human_pose_2d": 0.26225490196078427,
+            "inpainting": 0.13212219187441995,
+            "instance_segmentation": 0.1081913603056553,
+            "relative_depth": 0.8906010314388165,
+            "saliency_detection": 0.5492623865046333,
+            "semantic_segmentation": 0.33052583889764614,
+            "super_resolution": 0.5701173105660606,
+            "surface_normals": 89.22029097852786
+          },
+          "status": "complete corrected validation"
+        }
+      ],
+      "title": "4 demos"
+    },
+    {
+      "csv": "bench-v2-validation-demos-7-8.csv",
+      "demo_counts": [
+        7,
+        8
+      ],
+      "key": "7-8",
+      "models": [
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.33247227232640914,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "visualcloze-p8",
+          "label": "VisualCloze",
+          "model": "visualcloze",
+          "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+          "p": 8,
+          "provenance": {
+            "baseline_plan_identity": "c2b174503afc7a35fcc055758fc09e331dcc74be638ea53bff2f7fff9691aea1",
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "plan_identity": "669a2fb74052331c8834e9da4b19ee03c57b5bf9f33e1ab6e01072edb4c83256",
+            "receipt_file": "visualcloze-p8-task-text-validation-scores.json",
+            "receipt_sha256": "bb689d74101eea3a66265c5c87f5963a9fc6d0208ecd2329747f893ae1642225",
+            "run_id": "visualcloze_bench_v2_p1_p4_p8_task_text_v1/p8",
+            "score_units": 29,
+            "scored_pairs": 442,
+            "scored_results_sha256": "92221f0f1f9f9fc82e327a567216c1345bf7fdea5c316e7590b16a8ae38ec028"
+          },
+          "scores": {
+            "colorization": 0.727963668458602,
+            "deblurring": 0.6102403244551491,
+            "denoising": 0.7484057878746706,
+            "edge_detection": 0.27247576058065426,
+            "face_landmarks": 0.28813266785479263,
+            "human_pose_2d": 0.23676470588235296,
+            "inpainting": 0.0986369933713885,
+            "instance_segmentation": 0.0,
+            "relative_depth": 0.6618791585983621,
+            "saliency_detection": 0.3249624199476559,
+            "semantic_segmentation": 0.13300805733505242,
+            "super_resolution": 0.6403646451585433,
+            "surface_normals": 53.72365524927969
+          },
+          "status": "complete authoritative corrected-v3 validation"
+        },
+        {
+          "copy_scores": {
+            "colorization": 0.26197738792089853,
+            "deblurring": 0.20889017424162695,
+            "denoising": 0.7446603214039522,
+            "edge_detection": 0.34398811965422754,
+            "face_landmarks": 0.33247227232640914,
+            "human_pose_2d": 0.15735294117647058,
+            "inpainting": 0.1530421016847386,
+            "instance_segmentation": 0.054150348883660084,
+            "relative_depth": 0.46488994998791755,
+            "saliency_detection": 0.4135276662170504,
+            "semantic_segmentation": 0.26335281273431277,
+            "super_resolution": 0.4340166712508482,
+            "surface_normals": 113.58410577159289
+          },
+          "key": "lavin-dit-p8",
+          "label": "LaVin-DiT",
+          "model": "lavin-dit",
+          "note": "TPU-native; CUDA parity not claimed",
+          "p": 8,
+          "provenance": {
+            "episodes": 221,
+            "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+            "score_manifest_sha256": "d66bce3f0dbcbbf2f67b7dcee3b82dac195028fe45f6da7cdb8bed91a81c04b0",
+            "scored_pairs": 442,
+            "scored_results_sha256": "35375a70837e4f134a9b4d109420d1e314998bb17dba876f8a3a7512c1f2bf7e"
+          },
+          "scores": {
+            "colorization": 0.17698324647019892,
+            "deblurring": 0.08200799651882228,
+            "denoising": 0.6869426334605497,
+            "edge_detection": 0.29046147115714627,
+            "face_landmarks": 0.43892826875489976,
+            "human_pose_2d": 0.23039215686274508,
+            "inpainting": 0.14755452227066546,
+            "instance_segmentation": 0.21942567854961026,
+            "relative_depth": 0.9444541352540757,
+            "saliency_detection": 0.39236466388509955,
+            "semantic_segmentation": 0.4349701470106961,
+            "super_resolution": 0.39852608302060294,
+            "surface_normals": 57.95507196479726
+          },
+          "status": "complete corrected validation"
+        },
+        {
+          "key": "lvm-p7",
+          "label": "LVM 7B",
+          "model": "lvm",
+          "note": "Diagnostic legacy-plan snapshot",
+          "p": 7,
+          "provenance": {
+            "episodes": 221,
+            "plan_identity": "778ecb37cdb3ca8893a29b961e3471b2f2292406a34e1b47b7e9840db23bca91",
+            "published_data_file": "bench-v2-validation-models.json",
+            "published_data_sha256": "2f3f2694432ed6bedc85291504482177e4eb0da0b3b7d67b60158e0b77d46521",
+            "value_field": "lvm_p7"
+          },
+          "scores": {
+            "colorization": 0.3281887059702593,
+            "deblurring": 0.37514936661019044,
+            "denoising": 0.1648102161638877,
+            "edge_detection": 0.28562757249335063,
+            "face_landmarks": 0.3337153632154548,
+            "human_pose_2d": 0.30686274509803924,
+            "inpainting": 0.13958257853108294,
+            "instance_segmentation": 0.0647661703232646,
+            "relative_depth": 0.876156181157147,
+            "saliency_detection": 0.5376519159448264,
+            "semantic_segmentation": 0.272468983109384,
+            "super_resolution": 0.5359629830893349,
+            "surface_normals": 98.29433675530059
+          },
+          "status": "diagnostic legacy-plan snapshot \u00b7 not a phase gate"
+        }
+      ],
+      "title": "7/8 demos"
+    }
+  ],
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "queries_per_task": 17,
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "schema": "bench_v2_validation_demo_tables_v1",
+  "supervision_version": 6,
+  "tasks": [
+    {
+      "direction": "lower",
+      "metric": "lpips",
+      "n": 17,
+      "task": "colorization"
+    },
+    {
+      "direction": "lower",
+      "metric": "lpips",
+      "n": 17,
+      "task": "deblurring"
+    },
+    {
+      "direction": "lower",
+      "metric": "lpips",
+      "n": 17,
+      "task": "denoising"
+    },
+    {
+      "direction": "higher",
+      "metric": "ois_f",
+      "n": 17,
+      "task": "edge_detection"
+    },
+    {
+      "direction": "lower",
+      "metric": "nme",
+      "n": 17,
+      "task": "face_landmarks"
+    },
+    {
+      "direction": "higher",
+      "metric": "pck_torso_0.2",
+      "n": 17,
+      "task": "human_pose_2d"
+    },
+    {
+      "direction": "lower",
+      "metric": "lpips",
+      "n": 17,
+      "task": "inpainting"
+    },
+    {
+      "direction": "higher",
+      "metric": "pq",
+      "n": 17,
+      "task": "instance_segmentation"
+    },
+    {
+      "direction": "higher",
+      "metric": "delta1",
+      "n": 17,
+      "task": "relative_depth"
+    },
+    {
+      "direction": "higher",
+      "metric": "max_fbeta",
+      "n": 17,
+      "task": "saliency_detection"
+    },
+    {
+      "direction": "higher",
+      "metric": "miou",
+      "n": 17,
+      "task": "semantic_segmentation"
+    },
+    {
+      "direction": "lower",
+      "metric": "lpips",
+      "n": 17,
+      "task": "super_resolution"
+    },
+    {
+      "direction": "lower",
+      "metric": "mean_deg",
+      "n": 17,
+      "task": "surface_normals"
+    }
+  ],
+  "updated": "2026-10-27T03:41:18.307812+00:00"
+}

@@ -1,0 +1,52 @@
+contrast,before_label,after_label,q,query_record,metric,before,after,raw_delta,improvement,relative_improvement_pct
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,0,mpii:084118871,pck_torso_0.2,0.041666666666666664,0.375,0.3333333333333333,0.3333333333333333,799.9999999999999
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,1,mpii:070913699,pck_torso_0.2,0.0,1.0,1.0,1.0,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,2,mpii:071883975,pck_torso_0.2,0.16666666666666666,0.6666666666666666,0.5,0.5,300.0
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,3,mpii:088163535,pck_torso_0.2,0.25,0.9166666666666666,0.6666666666666666,0.6666666666666666,266.66666666666663
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,4,mpii:097011689,pck_torso_0.2,0.08333333333333333,1.0,0.9166666666666666,0.9166666666666666,1100.0
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,5,mpii:070403145,pck_torso_0.2,0.0,0.9166666666666666,0.9166666666666666,0.9166666666666666,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,6,mpii:026665966,pck_torso_0.2,0.0,0.5833333333333334,0.5833333333333334,0.5833333333333334,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,7,mpii:023371208,pck_torso_0.2,0.2,0.8,0.6000000000000001,0.6000000000000001,300.0
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,8,mpii:037047210,pck_torso_0.2,0.125,0.125,0.0,0.0,0.0
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,9,mpii:048018352,pck_torso_0.2,0.0,0.9166666666666666,0.9166666666666666,0.9166666666666666,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,10,mpii:044823885,pck_torso_0.2,0.0,0.5,0.5,0.5,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,11,mpii:063405506,pck_torso_0.2,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,12,mpii:034233408,pck_torso_0.2,0.0,0.0,0.0,0.0,
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,13,mpii:064869504,pck_torso_0.2,0.08333333333333333,0.75,0.6666666666666666,0.6666666666666666,799.9999999999999
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,14,mpii:097607833,pck_torso_0.2,0.16666666666666666,0.8333333333333334,0.6666666666666667,0.6666666666666667,400.00000000000006
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,15,mpii:054163421,pck_torso_0.2,0.16666666666666666,0.5833333333333334,0.41666666666666674,0.41666666666666674,250.00000000000003
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,16,mpii:041119152,pck_torso_0.2,0.16666666666666666,0.4166666666666667,0.25,0.25,150.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,0,mpii:084118871,pck_torso_0.2,0.041666666666666664,0.041666666666666664,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,1,mpii:070913699,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,2,mpii:071883975,pck_torso_0.2,0.16666666666666666,0.16666666666666666,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,3,mpii:088163535,pck_torso_0.2,0.25,0.25,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,4,mpii:097011689,pck_torso_0.2,0.08333333333333333,0.08333333333333333,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,5,mpii:070403145,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,6,mpii:026665966,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,7,mpii:023371208,pck_torso_0.2,0.2,0.2,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,8,mpii:037047210,pck_torso_0.2,0.125,0.125,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,9,mpii:048018352,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,10,mpii:044823885,pck_torso_0.2,0.08333333333333333,0.0,-0.08333333333333333,-0.08333333333333333,-99.99999999999999
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,11,mpii:063405506,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,12,mpii:034233408,pck_torso_0.2,0.0,0.0,0.0,0.0,
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,13,mpii:064869504,pck_torso_0.2,0.08333333333333333,0.08333333333333333,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,14,mpii:097607833,pck_torso_0.2,0.16666666666666666,0.16666666666666666,0.0,0.0,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,15,mpii:054163421,pck_torso_0.2,0.08333333333333333,0.16666666666666666,0.08333333333333333,0.08333333333333333,99.99999999999999
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,16,mpii:041119152,pck_torso_0.2,0.16666666666666666,0.16666666666666666,0.0,0.0,0.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,0,mpii:084118871,pck_torso_0.2,0.041666666666666664,0.375,0.3333333333333333,0.3333333333333333,799.9999999999999
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,1,mpii:070913699,pck_torso_0.2,0.0,1.0,1.0,1.0,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,2,mpii:071883975,pck_torso_0.2,0.16666666666666666,0.6666666666666666,0.5,0.5,300.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,3,mpii:088163535,pck_torso_0.2,0.25,0.9166666666666666,0.6666666666666666,0.6666666666666666,266.66666666666663
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,4,mpii:097011689,pck_torso_0.2,0.08333333333333333,1.0,0.9166666666666666,0.9166666666666666,1100.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,5,mpii:070403145,pck_torso_0.2,0.0,0.9166666666666666,0.9166666666666666,0.9166666666666666,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,6,mpii:026665966,pck_torso_0.2,0.0,0.5833333333333334,0.5833333333333334,0.5833333333333334,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,7,mpii:023371208,pck_torso_0.2,0.2,0.8,0.6000000000000001,0.6000000000000001,300.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,8,mpii:037047210,pck_torso_0.2,0.125,0.125,0.0,0.0,0.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,9,mpii:048018352,pck_torso_0.2,0.0,0.9166666666666666,0.9166666666666666,0.9166666666666666,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,10,mpii:044823885,pck_torso_0.2,0.08333333333333333,0.5,0.4166666666666667,0.4166666666666667,500.00000000000006
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,11,mpii:063405506,pck_torso_0.2,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,12,mpii:034233408,pck_torso_0.2,0.0,0.0,0.0,0.0,
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,13,mpii:064869504,pck_torso_0.2,0.08333333333333333,0.75,0.6666666666666666,0.6666666666666666,799.9999999999999
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,14,mpii:097607833,pck_torso_0.2,0.16666666666666666,0.8333333333333334,0.6666666666666667,0.6666666666666667,400.00000000000006
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,15,mpii:054163421,pck_torso_0.2,0.08333333333333333,0.5833333333333334,0.5,0.5,600.0
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,16,mpii:041119152,pck_torso_0.2,0.16666666666666666,0.4166666666666667,0.25,0.25,150.0

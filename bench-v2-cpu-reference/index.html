@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bench v2 · CPU reference comparisons</title>
+  <meta name="description" content="Every paired category and query difference between faithful CPU references and archived TPU evaluations for GenLV and IMProv.">
+  <link rel="stylesheet" href="../styles.css?v=57"><link rel="stylesheet" href="../bench-v2-recovery/styles.css?v=69">
+  <script src="app.js?v=79" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#categories">Skip to paired scores</a>
+  <header class="masthead"><a class="brand" href="../bench-v2-review/">Bench v2 <b>/ CPU reference</b></a><nav aria-label="Related views"><a href="../bench-v2-review/">All models &amp; settings</a><a href="../bench-v2-recovery/">Recovery audit</a><a href="#queries">Individual queries</a></nav></header>
+  <main>
+    <section class="recovery-hero">
+      <p class="eyebrow">PAIRED BACKEND CHECK / 221 QUERIES PER MODEL</p>
+      <h1>How much does faithful<br>CPU execution change?</h1>
+      <p class="lede">Compare the released CPU implementations with the archived TPU evaluations on the same demonstrations, queries and targets. Every category includes both gains and regressions.</p>
+      <p class="snapshot" id="snapshot">Loading verified comparisons…</p>
+      <aside class="recovery-note">This comparison keeps each model’s native input and output handling fixed. A score difference measures the effect of the execution change; it does not by itself identify its cause or reproduce the paper’s datasets. The original tables remain available.</aside>
+    </section>
+    <section id="categories">
+      <div class="section-heading"><div><p class="section-number">01 / ALL 13 CATEGORIES</p><h2 id="model-title">Paired results</h2></div><label class="control-label">Model<select id="model-select"></select></label></div>
+      <p id="condition" class="table-help"></p>
+      <p id="reference-note" class="recovery-note"></p>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="Paired category scores, horizontally scrollable">
+        <table class="recovery-table"><thead><tr><th scope="col">Category / metric</th><th scope="col">Archived TPU</th><th scope="col">CPU reference</th><th scope="col">Signed improvement</th><th scope="col">Relative improvement</th><th scope="col">Query wins / ties / losses</th></tr></thead><tbody id="category-rows"></tbody></table>
+      </div>
+      <p class="table-help">↑ Higher is better; ↓ lower is better. Positive signed improvement means better. Relative improvement divides the signed change by the absolute archived value; it is undefined for a zero baseline. A large percentage can come from a near-zero baseline, so read the absolute change too. Query ties use a tolerance of 10⁻¹². Category means use all 17 queries. Unlike metrics are never averaged.</p>
+      <p class="boundary" id="edge-note"></p>
+    </section>
+    <section id="queries">
+      <div class="section-heading"><div><p class="section-number">02 / EVERY INDIVIDUAL SCORE</p><h2>Where gains and losses occur</h2></div><label class="control-label">Category<select id="task-select"></select></label></div>
+      <p id="effect-summary" class="recovery-note"></p>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="All 17 paired query scores, horizontally scrollable">
+        <table class="recovery-table"><caption id="query-caption"></caption><thead><tr><th scope="col">Query / record</th><th scope="col">Archived TPU</th><th scope="col">CPU reference</th><th scope="col">Signed improvement</th><th scope="col">Relative improvement</th></tr></thead><tbody id="query-rows"></tbody></table>
+      </div>
+    </section>
+    <section id="verification">
+      <div class="section-heading"><div><p class="section-number">03 / VERIFICATION</p><h2>What makes this comparison valid</h2></div></div>
+      <div class="evidence-grid">
+        <article><h3>Identical episodes</h3><p>All 221 episode bindings match. Query inputs, scoring targets, demonstrations and copy-control scores remain identical. Every CPU output was finite before image conversion.</p></article>
+        <article><h3>Qualified scoring host</h3><p id="host-evidence"></p><p class="boundary">The frozen metric source and policy are unchanged. The new certificate covers this local scoring host.</p></article>
+        <article><h3>Complete effect sizes</h3><p>All 13 categories and 221 queries are reported for each model. Gains and losses contribute to the same category mean. No category-specific recipe selection or combined score is used.</p></article>
+      </div>
+      <div class="download-row"><a href="categories.csv" download>All paired category rows ↓</a><a href="queries.csv" download>All paired query rows ↓</a><a href="data.json" download>Complete comparisons and evidence ↓</a></div>
+    </section>
+    <p id="load-error" role="alert" hidden>Comparison data could not be loaded. The downloadable evidence remains available above.</p>
+    <noscript><p>Download the <a href="categories.csv">category table</a> or <a href="queries.csv">query table</a> to inspect every result without JavaScript.</p></noscript>
+  </main>
+  <footer><p>Bench v2 · <a href="../bench-v2-recovery/">Return to the recovery audit</a></p></footer>
+</body>
+</html>

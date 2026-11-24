@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bench v2 · Upgraded test-group results</title>
+<meta name="description" content="Best available and test-selected ceiling readouts for every Bench v2 test dataset group.">
+<link rel="stylesheet" href="../../visualcloze-v2-p2.css"><link rel="stylesheet" href="../../10-12-validations/styles.css"><link rel="stylesheet" href="../../10-12-validations/best-results.css"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body><header class="masthead"><a class="wordmark" href="../">← Frozen test results</a><nav><a href="#table">Results</a><a href="#rules">Rules</a><a href="../audit/">Metric audit</a></nav></header>
+<main><p class="eyebrow">BENCH V2 · UPGRADED READOUTS · 16 NOVEMBER 2026</p>
+<h1>Best available results<br>on every test group</h1>
+<p class="lead">The same saved model outputs, shown with a consistent upgraded metric policy and a separate test-selected ceiling. The original benchmark remains intact.</p>
+<p class="best-note"><strong>Use “upgraded” for analysis; treat “ceiling” as an oracle.</strong> The ceiling chooses a readout after seeing test results. It is useful for estimating recoverable score, but it is not a held-out result.</p>
+<div class="cards"><article><strong>156</strong><span>model × dataset groups</span></article><article><strong>26</strong><span>test datasets</span></article><article><strong>6</strong><span>complete model runs</span></article></div>
+<section id="table" class="results-section"><header class="section-heading compact-heading"><div><p class="section-index">COLOR-CODED COMPARISON</p><h2>Results by category and test group</h2></div></header><div class="best-controls">
+<label>Readout<select id="policy"><option value="ceiling">Best available ceiling</option><option value="upgraded">Upgraded, consistent</option><option value="frozen">Frozen benchmark</option></select></label>
+<label>Task<select id="task"><option value="all">All tasks</option></select></label>
+<label>Model columns<select id="model"><option value="all">All models</option></select></label></div>
+<div class="table-block"><h3>13 combined category groups</h3><p id="category-caption" class="best-caption" aria-live="polite"></p><div id="category-results"></div></div>
+<div class="table-block dataset-table-block"><h3>26 individual test groups</h3>
+<p id="caption" class="best-caption" aria-live="polite"></p>
+<div class="rank-legend" aria-label="Per-group score rank colors"><span class="rank-key rank-1"><b>1</b> Best</span><span class="rank-key rank-2"><b>2</b> Second</span><span class="rank-key rank-3"><b>3</b> Third</span><span class="rank-key rank-4"><b>4</b> Fourth</span><span class="rank-key rank-5"><b>5</b> Fifth</span><span class="rank-key rank-6"><b>6</b> Worst</span></div>
+<div id="results"></div></div></section>
+<section id="rules"><h2>What was upgraded</h2><div class="metric-grid">
+<article class="metric"><h3>Depth</h3><p><strong>Upgraded:</strong> one robust inverse-depth affine rule for all models and both datasets. <strong>Ceiling:</strong> best whole-dataset transform from nine audited variants.</p></article>
+<article class="metric"><h3>Edges</h3><p><strong>Upgraded:</strong> dataset-pooled OIS from saved native matching counts. <strong>Ceiling:</strong> the better numeric value of pooled OIS and mean image-best F.</p></article>
+<article class="metric"><h3>Saliency, instances, normals</h3><p>Dataset-level reductions: max of the mean Fβ curve, pooled PQ counts, and valid-pixel pooled angular error.</p></article>
+<article class="metric"><h3>All other groups</h3><p>Frozen scores are retained. Facial landmarks remain identity-free NME because the saved scoring contract does not support a defensible labeled-landmark upgrade.</p></article></div>
+<details open><summary>Reporting qualifications</summary><ul id="qualifications"></ul></details>
+<div class="downloads"><a href="dataset-results.csv" download>Dataset groups CSV ↓</a><a href="task-results.csv" download>Task means CSV ↓</a><a href="results.json" download>Results and policies JSON ↓</a></div></section></main>
+<footer>Bench v2 · Upgraded test-group readouts · <a href="../">Frozen results</a> · <a href="../audit/">Audit</a></footer></body></html>

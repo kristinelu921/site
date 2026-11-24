@@ -1,0 +1,148 @@
+{
+  "aggregates": {
+    "colorization": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.26197738792089853,
+      "mean_per_query_model": 0.5504440121790942,
+      "native_name": "lpips",
+      "query_sources": [
+        "div2k"
+      ]
+    },
+    "deblurring": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.20889017424162695,
+      "mean_per_query_model": 0.4843625934684978,
+      "native_name": "lpips",
+      "query_sources": [
+        "gopro"
+      ]
+    },
+    "denoising": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.7446603214039522,
+      "mean_per_query_model": 0.6463024546118343,
+      "native_name": "lpips",
+      "query_sources": [
+        "sidd"
+      ]
+    },
+    "edge_detection": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.3439881196542276,
+      "mean_per_query_model": 0.36245886738523264,
+      "native_name": "ois_f",
+      "query_sources": [
+        "bsds500"
+      ]
+    },
+    "face_landmarks": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.3324722723264091,
+      "mean_per_query_model": 0.32732222360265784,
+      "native_name": "nme",
+      "query_sources": [
+        "300w"
+      ]
+    },
+    "human_pose_2d": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.15735294117647058,
+      "mean_per_query_model": 0.15980392156862747,
+      "native_name": "pck_torso_0.2",
+      "query_sources": [
+        "mpii"
+      ]
+    },
+    "inpainting": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.1530421016847386,
+      "mean_per_query_model": 0.18570352214224198,
+      "native_name": "lpips",
+      "query_sources": [
+        "div2k"
+      ]
+    },
+    "instance_segmentation": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.054150348883660084,
+      "mean_per_query_model": 0.04270176506507659,
+      "native_name": "pq",
+      "query_sources": [
+        "nyu_depth_v2"
+      ]
+    },
+    "relative_depth": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.46488994998791755,
+      "mean_per_query_model": 0.445447595894412,
+      "native_name": "delta1",
+      "query_sources": [
+        "nyu_depth_v2"
+      ]
+    },
+    "saliency_detection": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.4135276662170504,
+      "mean_per_query_model": 0.5278068285409827,
+      "native_name": "max_fbeta",
+      "query_sources": [
+        "dut_omron"
+      ]
+    },
+    "semantic_segmentation": {
+      "count": 17,
+      "lower_is_better": false,
+      "mean_per_query_copy": 0.26335281273431277,
+      "mean_per_query_model": 0.28462195887803926,
+      "native_name": "miou",
+      "query_sources": [
+        "ade20k"
+      ]
+    },
+    "super_resolution": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 0.4340166712508482,
+      "mean_per_query_model": 0.6007468595224268,
+      "native_name": "lpips",
+      "query_sources": [
+        "div2k"
+      ]
+    },
+    "surface_normals": {
+      "count": 17,
+      "lower_is_better": true,
+      "mean_per_query_copy": 113.58410577159287,
+      "mean_per_query_model": 84.67286110860272,
+      "native_name": "mean_deg",
+      "query_sources": [
+        "diode"
+      ]
+    }
+  },
+  "audited_utc": "2026-11-05T08:33:09.062377+00:00",
+  "copy_pairs": 221,
+  "corrected_release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "metric_protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "model_pairs": 221,
+  "p": 16,
+  "plan_identity": "4102bc414ed3a441b03700ceb14778571cbf27701771d723e9af7836d73f6c76",
+  "producer_sha256": "a716f77c4d190d43c124c1d506a9e7d9675b47eaeb0f1a34612a566b855ee0e7",
+  "query_count": 221,
+  "run_identity": "4f0cc1dbd3ba6bd4d9b849afb6224a2356e2bd7eaf7a47dce30f4acbdf4514e8",
+  "schema": "instamanip_dynamic_p16_corrected_v3_score_audit_v1",
+  "score_manifest_sha256": "e747069f50f71718fd4f778fcc5a88d6b57c05f8a3865f69f10878034a7e06ad",
+  "status": "SCORING_AUDIT_PASS",
+  "task_count": 13
+}

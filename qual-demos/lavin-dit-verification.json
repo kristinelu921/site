@@ -1,0 +1,1831 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "queries": 260,
+  "datasets": 26,
+  "demos_per_query": 8,
+  "source_episodes": 17511,
+  "exact_output_claim": false,
+  "numerical_tolerance": "User-approved >=98% identical reference pixels; qualification achieved 98.674%.",
+  "rows": [
+    {
+      "query": "colorization__ade20k_val/q00030",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q00030__P8__real",
+      "episode_pixels_sha256": "a35ddb0cb94ffc21d773d7ea73f79d2f75ebaf4a0b54c3ffa1fee1fb01a022d7",
+      "prediction_sha256": "d242832aebfcd79543ba1f1ad4863a8d61acb81cbdf62db1c308dfa5d2f748ae",
+      "prediction_pixels_sha256": "5db67e2ef599afc3edba87adc2e6168c58fef1ad1a5b745bec57c5aa914fb879"
+    },
+    {
+      "query": "colorization__ade20k_val/q00330",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q00330__P8__real",
+      "episode_pixels_sha256": "29e7c30bf46a7e26c6fbc717c05ab62fad8877fe5346556d94e78a1573d35bb6",
+      "prediction_sha256": "b98f39c46d1bfc070a86b6ace5fcc11dfbe98f66baea0627f9405e04cbd28300",
+      "prediction_pixels_sha256": "3493fb236db6534f295da6015f51b028151e3be7587993766198683a4c69c963"
+    },
+    {
+      "query": "colorization__ade20k_val/q00999",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q00999__P8__real",
+      "episode_pixels_sha256": "e16f5b467369b6607f316576aac3cd6dd479e6ca6bafb6ed286cbca0a8b7d5d8",
+      "prediction_sha256": "2c7e4bc5cb1381557ddc1cf832daf3e1a0ee5edf6d2d35a288a8cf4a771f3177",
+      "prediction_pixels_sha256": "f2032a53881287a57263fce443f7bbae4af92f31ed6f65a787395a52959f558f"
+    },
+    {
+      "query": "colorization__ade20k_val/q01385",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01385__P8__real",
+      "episode_pixels_sha256": "975a55b09ca660d696a38cb49464ea71118dbc26dc37fe9d224a6722eb7da7af",
+      "prediction_sha256": "65c0e30eae4a19922c95e00490be6557ce50cd989a6afc1ccb83ad78031ee5fa",
+      "prediction_pixels_sha256": "55909f40d761abe3e152db88c1e7bd95f8bef6c01076024c9a5c81e21e3d7d16"
+    },
+    {
+      "query": "colorization__ade20k_val/q01439",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01439__P8__real",
+      "episode_pixels_sha256": "c59f0fc26341fed805e68288ec84024cfe246fc8eb83e96745d72e48b83a59c7",
+      "prediction_sha256": "ba20f37c6c5c7544c8b25618c0207f8a477cf5cec232636a0e127a3e194eb6a1",
+      "prediction_pixels_sha256": "7a035fb1d906f5c81d7c063a3eeed0c6eeefe94fcad7b43ed4ab5035837a96ad"
+    },
+    {
+      "query": "colorization__ade20k_val/q01558",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01558__P8__real",
+      "episode_pixels_sha256": "c7c2541b1adf7256f65e8cc748d51d9088143d0ee14a9ec9b8dea53dc486a0b4",
+      "prediction_sha256": "6daf731e3fe8711795ae71c650a6348c0cfd95de9736f00f524ed61bb21d8d1e",
+      "prediction_pixels_sha256": "31c0c2b3923ca4161211e0a31683ef87c5f0e3e50f8ed99e0924f5a70dc536e3"
+    },
+    {
+      "query": "colorization__ade20k_val/q01583",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01583__P8__real",
+      "episode_pixels_sha256": "a0bd6b7c597f13bca4ddd652180eab7608d11011e929799141f605d6e6d8ffad",
+      "prediction_sha256": "7535bfa805be0afd3a671a44b0030e15fd3efb1ac71a7909436237ff6c86e59f",
+      "prediction_pixels_sha256": "430a9a06d8e31d2e71869b65b19be1c8ee9fdb8dbc7b7a63ca79c08eb0e9a10a"
+    },
+    {
+      "query": "colorization__ade20k_val/q01588",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01588__P8__real",
+      "episode_pixels_sha256": "4e16b69b50d35a28e44a72198113da98e9c26a23284bccc51c74ce7ef698904e",
+      "prediction_sha256": "a6a624e06f5c2b97414f015fd6bedcb48a936f0f0144e4b0aa147dc11c8f4d15",
+      "prediction_pixels_sha256": "3733a360291652ee84811f001950feac4f9dc1a62df4700ad3f3e36c3d534cd9"
+    },
+    {
+      "query": "colorization__ade20k_val/q01879",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01879__P8__real",
+      "episode_pixels_sha256": "f33fc823fdb1bc9478696aab6490ff2636e5cc04b329184a763ab90885f41ea7",
+      "prediction_sha256": "2eb1b66b5c1979ceac25ce50c304022b6eb5896b5cd829afb6bb5a9bc6e89f80",
+      "prediction_pixels_sha256": "b4b9b18be411edc21e0b7f68c4f2e3d61336067ec0cf9b42b12caada23de171d"
+    },
+    {
+      "query": "colorization__ade20k_val/q01975",
+      "episode_id": "bench_v2_test__colorization__ade20k_val__colorization__q01975__P8__real",
+      "episode_pixels_sha256": "2f7d410c2860f60aa3820188e1e3a9c3f420ac5f50a9fca96f6c5c62803d00d7",
+      "prediction_sha256": "c2ce25367a1dd4cf295ab55fe24dd5306a0b054fabf16479c2aee1f9d183d745",
+      "prediction_pixels_sha256": "5a978ec292f38564c57b072c85f1e58c4d3a5ec317be965d879339c3f8b84282"
+    },
+    {
+      "query": "colorization__div2k_val/q00008",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00008__P8__real",
+      "episode_pixels_sha256": "f319b6942b88bc28051ea4b36c9cc9441e7110bc50544088f19df0f4b156d5e8",
+      "prediction_sha256": "3e6eab4b8f0bb16d0c550755bd277a733aa48e82294323d2c314a05f833689d9",
+      "prediction_pixels_sha256": "840851ab1db7633e872022fa39f7f5db432a8cc5c22c98a2b37b2d45edf1ca52"
+    },
+    {
+      "query": "colorization__div2k_val/q00020",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00020__P8__real",
+      "episode_pixels_sha256": "f90e7d5771e8217e4805a28acd2bf0bbfaecd50ad3f10618f2c9280986da294c",
+      "prediction_sha256": "40a1efea0190941368ecf03541434fe21c8f295c31ae849ea365024da8554455",
+      "prediction_pixels_sha256": "107a05231a1babd4cf6dd99a8fb0236029d60ae9ff1a7a226bf6e6eaf4e07a99"
+    },
+    {
+      "query": "colorization__div2k_val/q00038",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00038__P8__real",
+      "episode_pixels_sha256": "f12f08a9f7cbc921ac3b6f0541b827c015c966de532d3c45b06bc98c8260cde4",
+      "prediction_sha256": "9ff16cf6f551cc329b52e731d980d50dfc846db4776b38088509381c691d8c45",
+      "prediction_pixels_sha256": "7547d6db9c92ce20566ed88d8874c3a357af79ef15bbf0a268c367bbbcfeb356"
+    },
+    {
+      "query": "colorization__div2k_val/q00041",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00041__P8__real",
+      "episode_pixels_sha256": "614270b1206b7d3e4f8ea824755b39594cc52f3e04c8390c1a8c275e65abdf4f",
+      "prediction_sha256": "dc733c520324c59a9904d41a3747e7848881abf1e86396d76bf580445f022436",
+      "prediction_pixels_sha256": "b1b4e7cdb096c201cf30e057d672ea2214fed6fbdc5f61de2964d288f2eec8d1"
+    },
+    {
+      "query": "colorization__div2k_val/q00078",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00078__P8__real",
+      "episode_pixels_sha256": "068d7c6ec34c1e6a6b4315b6db37af79d63b8d5c01b021ac029b6964af9d11d7",
+      "prediction_sha256": "d4c3cde7ad4d36c785bfbc4a3a5382efd2332dc1bfa2e21e79b9b53022c1b37e",
+      "prediction_pixels_sha256": "544bac2e88d4ef4e11ba987751405ef3c868961618f8e2ab877fdd91c67e6d34"
+    },
+    {
+      "query": "colorization__div2k_val/q00084",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00084__P8__real",
+      "episode_pixels_sha256": "306962237a120fcddab1a5e556518319f81f0898595ea76857fb31c2e7928f07",
+      "prediction_sha256": "b372e51658682433c4e03c52a600a0ed2fd813987f0281759d07d9fd7a092741",
+      "prediction_pixels_sha256": "fc7280fb1348fea2fab2d94c6f09cbac9b9ac0f6f1fe5ee823868accd54da6a6"
+    },
+    {
+      "query": "colorization__div2k_val/q00086",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00086__P8__real",
+      "episode_pixels_sha256": "789c268f559d851a95a860ded9ca5546306601b829a0ac248e0d6542bd24e8d0",
+      "prediction_sha256": "7a09c59b83088258d72e95db852689a4a2408f69c1bd970be7bf9664bd8c0b0b",
+      "prediction_pixels_sha256": "3301ec3262d5ec9ecfa54886c89555a3d96e2008387a7f3580a9c6dfe1ac7509"
+    },
+    {
+      "query": "colorization__div2k_val/q00092",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00092__P8__real",
+      "episode_pixels_sha256": "f4842b4594a2e5c4ad601d4664c04c4fc51e6aa1f40722797f76adc7422d0cdb",
+      "prediction_sha256": "0549c8e5b6e74629b6d017d2a0b8dc4d3b965c96026ea41084343ca454824790",
+      "prediction_pixels_sha256": "5d3582b8847d8bf8c535c65f96eb35ea81a1f8db9123dbb360ff46f317e20ef8"
+    },
+    {
+      "query": "colorization__div2k_val/q00094",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00094__P8__real",
+      "episode_pixels_sha256": "ab9d43fcb8120bc0c8630ce2607bcd8f86faa4bf7c687cf82f6c7ff791c02d0b",
+      "prediction_sha256": "cabbbbcb469bcbb35028b0df1ad7883e40c4b56bf53e1b82d5e3e69c2d80f885",
+      "prediction_pixels_sha256": "24755b877cdf509f7c49a3c66426c7c61f9770747081d48c840219f404008c66"
+    },
+    {
+      "query": "colorization__div2k_val/q00095",
+      "episode_id": "bench_v2_test__colorization__div2k_val__colorization__q00095__P8__real",
+      "episode_pixels_sha256": "4ceacdefd41322bbe0d604c273a86c56c1d10f6332744bf1a33895e767b87a59",
+      "prediction_sha256": "c18be41cdedac9d35f186a80467a6e2368fb9f2adbde2bf5abe71a3b6bc0a8c4",
+      "prediction_pixels_sha256": "7d9a485b38ef41acdda4e6c886937ea1856381dc9ed87d51f97add77152d74e7"
+    },
+    {
+      "query": "deblurring__gopro_test/q00063",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00063__P8__real",
+      "episode_pixels_sha256": "caedd057e39be835cfdd2e067ca1848b6ba748aa3d93b750eaadd79ae647355b",
+      "prediction_sha256": "d989225f83380607d00d2b3cfc39d1537c3fa32e0421e55ff4b0aa55f813a5b5",
+      "prediction_pixels_sha256": "8875ac49145369eaeeb0965728bcab4098ba5a7f05a56c278bfa3ee10e2b1fba"
+    },
+    {
+      "query": "deblurring__gopro_test/q00191",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00191__P8__real",
+      "episode_pixels_sha256": "e5d5a0a2cb5abfae96d9315b49168f388af54468e28f8cacaafcbcf8ddada840",
+      "prediction_sha256": "4413679da92575e8a21696b28b1c2ddc5c62c9702408af4fd547a68e994d09f0",
+      "prediction_pixels_sha256": "84ba4ac0cae7ec724dd8a49be8473fdf847c1e6026e55338815b6a95b7493a30"
+    },
+    {
+      "query": "deblurring__gopro_test/q00235",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00235__P8__real",
+      "episode_pixels_sha256": "40dfadd5883aaf60c4290f06e947913b5ef7088f479638eaa3676623241e5900",
+      "prediction_sha256": "d1a397dfde6f74949d9a2aeb21fae156cca42b759b8db742c56bf070ef0c2c65",
+      "prediction_pixels_sha256": "ff87cc5626b59afd5af36f52c9ae9f97331cb7851659b8175114e29908ce6960"
+    },
+    {
+      "query": "deblurring__gopro_test/q00324",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00324__P8__real",
+      "episode_pixels_sha256": "b8a3c38652791a2e46d9013da90f31372e91a559b27667d2cf4ad5692cb5984a",
+      "prediction_sha256": "809dec276eff7a31a6432f888af17432e73f915a4a7c22c4050e5eaea65a6ae9",
+      "prediction_pixels_sha256": "88097be77ae22126f8a3a714241f3242d54ced187e00afa99b2215898e476b6f"
+    },
+    {
+      "query": "deblurring__gopro_test/q00412",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00412__P8__real",
+      "episode_pixels_sha256": "9fd7dfe71d95020978c477dc477346f1ac477a69f4a3bfda9a4ec76c23e4fcd2",
+      "prediction_sha256": "7b8e187fa691487ce5cb260014daab684900765c7846b2a060108b6657f85d6b",
+      "prediction_pixels_sha256": "b253782d3d1892b9b2f05007943b1dafbea6301c1049802eeb8203ab1ea974cb"
+    },
+    {
+      "query": "deblurring__gopro_test/q00707",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00707__P8__real",
+      "episode_pixels_sha256": "58c402e2ce434c380727898187927e82dbc1a7511f78bbaacfc27167d6626f95",
+      "prediction_sha256": "6466ff436e4652a8fad4376856a2010bf4e3a1d7d4f91c42b00cf3bf9a76937e",
+      "prediction_pixels_sha256": "2fe62ce59ef5e9431d13fe7821e87fbe581899cd0c1e3995c8d07cc350a9598e"
+    },
+    {
+      "query": "deblurring__gopro_test/q00797",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00797__P8__real",
+      "episode_pixels_sha256": "36a7a6562d9850613fd17e5b5c3094526c1c258f1ab4c1bf14a01550bb7784f9",
+      "prediction_sha256": "dae8443656eb820d13519206606c24a6b7360f1db174d19bbc1f97d1443b1272",
+      "prediction_pixels_sha256": "33172846214fcd9033bc3633dca46fde96de90abe58c9ea855bb2c2bfb862f9e"
+    },
+    {
+      "query": "deblurring__gopro_test/q00881",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00881__P8__real",
+      "episode_pixels_sha256": "ac5f34ddb19129b08667719ac8b03aafbc83a80cfe7c505cbddd322fac9401e8",
+      "prediction_sha256": "7296629d10d3a098c844dce1c5ef56cd8486c59e159f1f49df17ca07435ca335",
+      "prediction_pixels_sha256": "e1c39e4b5523424b20e77945e1a370ba9f903c6b1c7091393dddc8a3d9274411"
+    },
+    {
+      "query": "deblurring__gopro_test/q00946",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q00946__P8__real",
+      "episode_pixels_sha256": "7da8ace00b1d7f453248ce0c75cf4edfc3e712b1bad13698c1e5c59b3a26f090",
+      "prediction_sha256": "ee0723e09714b044065b5fff112e7941fb6dfa94b367c06854d5db2845f145e5",
+      "prediction_pixels_sha256": "73fe31fefba604afb7a7e4757af6309765700237ba0296665c4975dc16f74bf7"
+    },
+    {
+      "query": "deblurring__gopro_test/q01089",
+      "episode_id": "bench_v2_test__deblurring__gopro_test__deblurring__q01089__P8__real",
+      "episode_pixels_sha256": "b4ebf56af8e476c40858a98072c9e0a7f7a7655035c3bd134e84deb26b3f304e",
+      "prediction_sha256": "7ba7e2e3410661d2ddaef54eb9cad0eeeed003581fc5f4a306cef8a8ae5f8ff2",
+      "prediction_pixels_sha256": "e981df4b30948971d32b65c3d15443f1cf196c0b857dd7b06f7a79cb00289c05"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00209",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00209__P8__real",
+      "episode_pixels_sha256": "30a689d1e603838bd7f3078eaba94d643a6010db4ba6d2e4bbe1ce22bbbd3969",
+      "prediction_sha256": "5029343772d76440d721e46540684da6582326ac6bb9922bcb8e5a12f3727b32",
+      "prediction_pixels_sha256": "a7847a511af2b0fbd5bb56700327a097025751a409a70bbbccd5e689877fecdf"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00258",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00258__P8__real",
+      "episode_pixels_sha256": "1f27ec7b62ad9e7668806e568e820ef1266556cd6467eccb7c3ccf644a7d5bba",
+      "prediction_sha256": "ff0545e2711fab157d0d5b21a25c8b2b9bd110403e6b2f00fb101462310bd8a2",
+      "prediction_pixels_sha256": "793c18452e0397ae730981ddcdabe2e295dcf87c24e8db078a5c93357316ea6e"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00342",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00342__P8__real",
+      "episode_pixels_sha256": "5658fb8d5943f39a8a2313464d8d2711e9668e74d3381dcb8a195a167527294f",
+      "prediction_sha256": "f9bdf2364706fc73469c6669052b785bb42cecd6f2b580e6d4750ee045378adc",
+      "prediction_pixels_sha256": "c7988016fbd8dafebd69430ae76139691afa2ad82ed60bb9dd140c3d5318e448"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00473",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00473__P8__real",
+      "episode_pixels_sha256": "52e2cd47b1fd2eef7330747010dbf002214ebc14f5383c7b502ffabc575033dc",
+      "prediction_sha256": "ccdfb66488ba97249838c37982ea1311a28b62e594c2d565ff64edc9bc1b65bd",
+      "prediction_pixels_sha256": "9a8076197b67976dd09656b441b056538d8d88846beb5c974aea09e2a118b1b3"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00485",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00485__P8__real",
+      "episode_pixels_sha256": "11cc9ab0901eea61d7cae14135b81296414d92e243a4cacf7f5d4499b84a3fc2",
+      "prediction_sha256": "da73158c7a741411384ba0ba8052733e8cd8da27d9b8eb0cacd83622b7a134ba",
+      "prediction_pixels_sha256": "e4a6b6f08be7600759c05604b1716940bcbf217fcf28b51b704184f1269d12b3"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00644",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00644__P8__real",
+      "episode_pixels_sha256": "e81c59b4d821cecd6cff202ba2e3845bfe9551d3d6d9d844dab08719540535fa",
+      "prediction_sha256": "b48128ed3eac51b44f6534880d1b0431b8741fe1cb9659973c4b579c26e1d0a5",
+      "prediction_pixels_sha256": "83bfa6961e2335399d0220b7a6ac2c7487cb2c263c6f87e6741e984874f83a63"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00665",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00665__P8__real",
+      "episode_pixels_sha256": "2304d0246b1c4bb644441011ac92176897600aaf9d6102b9f038228bb1de7c44",
+      "prediction_sha256": "ca93fa9f25366a3fedd89dac3de914dbf8ddcb56f4d48739ef671afcdca464b0",
+      "prediction_pixels_sha256": "c0ccd8716f0ae0e30fe4031f5bfcec5694277d0630f0094ad196484244f33009"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00722",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00722__P8__real",
+      "episode_pixels_sha256": "a47baeeb14aff87d62b151c199fd73084f0471841ebb92b02f321a186c4b0ad2",
+      "prediction_sha256": "4f067d680decbdc186c079a50f5a5afb84a45482bf1fda52720e3d405e03be5d",
+      "prediction_pixels_sha256": "1b41e4cd4cac118ef3f0be8346784d40a5033fe4979a63225ff81f1447996fa5"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00836",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00836__P8__real",
+      "episode_pixels_sha256": "e2df602b3041fbe8c5359273f4303af6cdb675f7ca76de9162f53f5769c9c9cb",
+      "prediction_sha256": "368af2265c2ff3931b9081b74a5f5facdcacceb0179e3d359855066a23ebeb35",
+      "prediction_pixels_sha256": "76d374315d4e0f062bc6bac9098db57594bb763c498e2d6e3e5269f32e19dd62"
+    },
+    {
+      "query": "deblurring__realblur_j_test/q00889",
+      "episode_id": "bench_v2_test__deblurring__realblur_j_test__deblurring__q00889__P8__real",
+      "episode_pixels_sha256": "452ad3acb5358852479db9358658e7c820f2f3062b39606f24f98d552620cb4c",
+      "prediction_sha256": "12d1dd42a68d81acc03709ed31bd4a166273af31e17beef06226fce4aa178c75",
+      "prediction_pixels_sha256": "be3e7d236b6f21871a44b728df608b0be96d178086be3e7590dc66aef92f118c"
+    },
+    {
+      "query": "denoising__cbsd68/q00003",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00003__P8__real",
+      "episode_pixels_sha256": "97f2a29cec3f9a9de9b38a923dd1080984c5a10ba1ba93374b655d04353708df",
+      "prediction_sha256": "662d4156bec3f1c5c69fb99967cb652c96934623cf72e4948644f06cc09b373f",
+      "prediction_pixels_sha256": "b2e21054847de4be70f8858f394dd2481a3a39526bb6e6e21515f3eb37e77f8b"
+    },
+    {
+      "query": "denoising__cbsd68/q00004",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00004__P8__real",
+      "episode_pixels_sha256": "0545571d18f6283cb77d80e68be1bb18346ccdc38d007e6e4e0c74ad5390f694",
+      "prediction_sha256": "633e43386f3dba645e9cb6ed4c39c5fa39def863f93b3d40a3f43b518a162da9",
+      "prediction_pixels_sha256": "655b4ea91fde6669098f241d373b83ef8b608f7df09cf00c0531ae3a1606ea7b"
+    },
+    {
+      "query": "denoising__cbsd68/q00020",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00020__P8__real",
+      "episode_pixels_sha256": "1d0b72ec66f662815e7d157d9bc00dc4a6c75e27219237a31512eeb407247379",
+      "prediction_sha256": "621a6f3f1911bde40cd76dd91a1c964c518fb92f8d7b3be3b4bf3c025c073d71",
+      "prediction_pixels_sha256": "198f3f09f437b9af5bf3a8618cab9bb97e421c97f13c8da7b21d9dbf97e9d4b0"
+    },
+    {
+      "query": "denoising__cbsd68/q00024",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00024__P8__real",
+      "episode_pixels_sha256": "2b4b285ff1355be3eedbc32e607b9377b6bc8d938d7d738273853412f09b9841",
+      "prediction_sha256": "ead9ea94843a3da8fd958307b7c8e4eb1a2349a2023502b03fc2a95b3f83e30d",
+      "prediction_pixels_sha256": "73d5813b9510f8c88854fa02730476f89b22551551b470df329ebf964d9a1b41"
+    },
+    {
+      "query": "denoising__cbsd68/q00036",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00036__P8__real",
+      "episode_pixels_sha256": "28d29c733236f23cd2a9450f01afba413a1f3d73412faff5178981e93a40fe82",
+      "prediction_sha256": "793b9f3e3de730baef14c08775dd7860d3e45ef69854a88e54e35bc3bd6c317d",
+      "prediction_pixels_sha256": "cdaf29aa0ca7ed67c6066b7c9fb5ed16fbbdad75eb4f7a546548bfee90e119c8"
+    },
+    {
+      "query": "denoising__cbsd68/q00047",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00047__P8__real",
+      "episode_pixels_sha256": "93a35804c4e2ab295f02fe94e1d5e8e5e5eb2ceda28c47082c6bdd12bc9dc665",
+      "prediction_sha256": "56f58ce715599a564cfcec1214f80be7feb39da51022aa709ac67a7a30522583",
+      "prediction_pixels_sha256": "74764cfec54229638f8f93779a99055bb85596d85b61e98ef600369c43331238"
+    },
+    {
+      "query": "denoising__cbsd68/q00051",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00051__P8__real",
+      "episode_pixels_sha256": "55e221cdaef9f3b24fbef242ecbee40d38e661a04d140bf8f86bdb5992cbad08",
+      "prediction_sha256": "34b04e7f354808b7c83ab38b45509334459cfc1aac36c25883d4c1c1b0ff2e09",
+      "prediction_pixels_sha256": "d844e4f40e4f678ee451474e1a7992e2b60b5589a6fa3621e278df4b5c3e545e"
+    },
+    {
+      "query": "denoising__cbsd68/q00059",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00059__P8__real",
+      "episode_pixels_sha256": "1624da031210a36333f3fa8b0e316d1dd23edc0b0e2dd7f23aeded2217d881bb",
+      "prediction_sha256": "07fdd7e888afaa05057bc4a04e5942617a846584f0e6912f10eccfa106a47f19",
+      "prediction_pixels_sha256": "820385acbf87e2a2d0ef581a38e466604f92c463a113cb663213d76886ff9cf6"
+    },
+    {
+      "query": "denoising__cbsd68/q00064",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00064__P8__real",
+      "episode_pixels_sha256": "c2ab67eeffdea04b04a0a99237784d8125a598134c749a2503783a6af66e02f9",
+      "prediction_sha256": "02670f1e05b7aac0ee11c31d9fb6263cde0e8f612471b051c6b1c922c283ded9",
+      "prediction_pixels_sha256": "b7d6c15cdd1e4780824c79fe62d0d89b43d7979f4a43a0c15d7677a07c6d218c"
+    },
+    {
+      "query": "denoising__cbsd68/q00065",
+      "episode_id": "bench_v2_test__denoising__cbsd68__denoising__q00065__P8__real",
+      "episode_pixels_sha256": "35de1698c44683474328de3e58099f46e598636f17f44d04aa324e8e7168b5be",
+      "prediction_sha256": "3db8e8d625486a84663e7b235915839a38b7eb8b19e17ba8dd5dbd59d3feb276",
+      "prediction_pixels_sha256": "a92d10b7070fb51c73d159da44929297b5f82c7922ba87827271947f6ae8fb13"
+    },
+    {
+      "query": "denoising__sidd_val/q00069",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00069__P8__real",
+      "episode_pixels_sha256": "41767cb57da53676455e1589c20fd0946ac6fe4b55e79cfbbda70f931e023f99",
+      "prediction_sha256": "93fa234caf589aeef5b75578fd8512adedc50d46c08006b21f2a319a45f7613f",
+      "prediction_pixels_sha256": "acf4ccfbd5f150785cdda05d504855290de309a56b3f8e5397356fd8078fc157"
+    },
+    {
+      "query": "denoising__sidd_val/q00172",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00172__P8__real",
+      "episode_pixels_sha256": "37bc0ff0b32b5c2d7dedf78f7a9c8abd21b699cb4adeb92f96c0f44e39583748",
+      "prediction_sha256": "bf9b10ccd4bc1d147f558c23105743af8dd08b01d5e52cf028cc6e329be0794c",
+      "prediction_pixels_sha256": "441d5423b6d8ebbe2dd7d59ab6bba3135dbcfc416cd8c642fcc256344ffe0157"
+    },
+    {
+      "query": "denoising__sidd_val/q00406",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00406__P8__real",
+      "episode_pixels_sha256": "fe76468f8ffdf13809acb8bff410e3d0690fbc5f07880e34669a1f6f214a2e77",
+      "prediction_sha256": "2517e515464ca35d446a8954d689cc9fc3069ffc57a0791aa1af91a2f06dfc19",
+      "prediction_pixels_sha256": "49d034e6dbb0e89090da94cf66529a87eab0949d972b8df3398a3f44f6167ac8"
+    },
+    {
+      "query": "denoising__sidd_val/q00542",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00542__P8__real",
+      "episode_pixels_sha256": "67b6225ba0a0f7d639066b0d133588f1fecf1e25de5c6ca415dcea3f7fba9aed",
+      "prediction_sha256": "3fd14eb7f9f0b33090278ea7bb92e7ec8737a02539df89c6415c105dc50709fa",
+      "prediction_pixels_sha256": "cc72adbd256c1c4a969b508ebea6808b1ed092f22e708476f35eb4558212c706"
+    },
+    {
+      "query": "denoising__sidd_val/q00562",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00562__P8__real",
+      "episode_pixels_sha256": "63d891ab3656f4c9aade4af8ef437bae101aa1fe5b030892cb1b97e597b7ef32",
+      "prediction_sha256": "7e61037250ef267f38fa24f4fdcb42d64d86e79d9a3cdb29d0bec9548f20090c",
+      "prediction_pixels_sha256": "0e9ec5aa7d8c4b41040beca91997b9efdbeda26625cf3b8ffb01333ff1cd7adf"
+    },
+    {
+      "query": "denoising__sidd_val/q00587",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00587__P8__real",
+      "episode_pixels_sha256": "745e2f11787048bc7f61a9470f061edb56905105345aa0dc8a674c39e986dd7c",
+      "prediction_sha256": "6cb80d3dad1bb51083031c164e27191fb093f5ce3e69c25ce2fe831f84564940",
+      "prediction_pixels_sha256": "c3505baf52d28f2140a77357848111d55a2736d76d2ab87eba9a8038a84c5702"
+    },
+    {
+      "query": "denoising__sidd_val/q00638",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00638__P8__real",
+      "episode_pixels_sha256": "6c74af2f0acebd9e4d22ef6da4cefa2ea2ff328540f1faddd5cc983b6863ad2d",
+      "prediction_sha256": "270eb7d2d41bfb4c7543af376f3db0621e9b5b1152c1638ec36ad87b238736d0",
+      "prediction_pixels_sha256": "ed3c5407ec94d760cc33c23ce39e15d57b3e91c507b2fb2ab7602099a66ad01d"
+    },
+    {
+      "query": "denoising__sidd_val/q00854",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00854__P8__real",
+      "episode_pixels_sha256": "ad8ce1267680b9418fc159ffa806be2ab6f3694297dada808e1781bee8677998",
+      "prediction_sha256": "ad5501127937a8e8a350b97db6178a7fd8f5d3cbc45e732899cdca500ead0347",
+      "prediction_pixels_sha256": "5eac72048ab5eba73d32dd5afaae01b8e41f54bcd8e74a6d71d1fe7126a8c756"
+    },
+    {
+      "query": "denoising__sidd_val/q00867",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q00867__P8__real",
+      "episode_pixels_sha256": "1a54dc4d0b5f983ee2b46036ce9ca1b4cf8cb16755231e03895de9b2d0a446d1",
+      "prediction_sha256": "857065f8a93dabc20ed0c89df74a60ef7f22c7aa09bebd2e0d89c24e44555cce",
+      "prediction_pixels_sha256": "c6fbe96ae84fee2f6fb0aea99bb764314ca6618169caa6a056a69e808757c11f"
+    },
+    {
+      "query": "denoising__sidd_val/q01184",
+      "episode_id": "bench_v2_test__denoising__sidd_val__denoising__q01184__P8__real",
+      "episode_pixels_sha256": "b0d48107709617189f65b980c9cc3b752d993945335d8939b02d67564813879f",
+      "prediction_sha256": "4c1b91af30e27fa293078c56eaab419bae05f0a604fb5ad9391c5a91e8a74e26",
+      "prediction_pixels_sha256": "02abcbf8e68bf7ce1da003afe00181af5cc7fa8fa6e46e2547842df9061d8180"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00004",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00004__P8__real",
+      "episode_pixels_sha256": "fb4c8ae134ff40ee49cfddeed7115b7e27acb8da7854f4f44e8342ae5260e52b",
+      "prediction_sha256": "2c4c2148cd20cf4e9c825ce378eda4e743c893b379076e4bf4cfb8256c6c9851",
+      "prediction_pixels_sha256": "ca2ce536efb8a4ea430a8e391767dda379170ed4e6c275506023e65e118a2524"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00009",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00009__P8__real",
+      "episode_pixels_sha256": "2013e04cfbf0338c21e892702ebb05dcc5ba301cb87e0657ec6cbbf4c668c1c0",
+      "prediction_sha256": "44c0de8b55ceae225078a64bd51eb71b824c77d0519a62e2c4bc958d3c1a6fee",
+      "prediction_pixels_sha256": "394d883371fd0c5ef56ddf2864f482028c1e9f4e73269d7c1ec15e7812fb8436"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00078",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00078__P8__real",
+      "episode_pixels_sha256": "e00751dba47bfb2157c80de16e42a4bb358c57c043141ee54a6086506592eadb",
+      "prediction_sha256": "baf1e633757e93edbc5e6e9bfd0474c4ebb78a311a1252da58010b3679fe5469",
+      "prediction_pixels_sha256": "3e6d27647306d8657020d956686d8b47d8a489cf5d0d874bf0e9f24e384c1f73"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00089",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00089__P8__real",
+      "episode_pixels_sha256": "4fa0740a5f172e110b8f413e01acfa6b7c79d35f4532084cd6b62cc8f6e59afa",
+      "prediction_sha256": "7ce653f36e9e8376d88b7164fb30cd5bd30c19ff5af0ec3aabb5edda2f2c99e7",
+      "prediction_pixels_sha256": "bebf44becf2b6e781882e33f7c82ac72529483257d0938f93008485952526a62"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00090",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00090__P8__real",
+      "episode_pixels_sha256": "ad6d8569eb84cb9c77a48c53ceebc6dc5f15c1a540f2803d2b4c00ddad11a4a1",
+      "prediction_sha256": "6010d59bd1ee108efbb2d73d3b55205021988a617f27508979ddc8748c2ecee5",
+      "prediction_pixels_sha256": "b8eae810ca04a4edad9959f29b5e94d65bf33081f843ea9719dec5713d693ff3"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00103",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00103__P8__real",
+      "episode_pixels_sha256": "05c31ee6ec923e77bd2aeb98c9ccfe639cf7bf13cc29d32dfb124ab6f328418a",
+      "prediction_sha256": "ecd7a3c5d5ebc6558086c6ad9fd13089b8c97fd719c88c99a3b4cef8c0c618cb",
+      "prediction_pixels_sha256": "036114eec61a4144493bc10d483a7abdccaf8b4c22796cf781b947d55629e036"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00150",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00150__P8__real",
+      "episode_pixels_sha256": "08d2ada1b97a1b1cf18b2a7d0321935cacb3d20175c8c2d6145ee5abfd8717a6",
+      "prediction_sha256": "53a1027b810d4858792d8e534af68b49d9115332f8741035f513edcbcaa487d3",
+      "prediction_pixels_sha256": "9a80ab477a937b4b9688e7418a704a02cd7b69838cc18fa8a16ff6ebeba23805"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00168",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00168__P8__real",
+      "episode_pixels_sha256": "c3018076a4146c5edcd02849143f62bf39cf50355a528602f2a0f1d27f906ac8",
+      "prediction_sha256": "ab719674c168ec87bbb6bdfe131cfef9ba0efebd3e24f48f136dafa2b0df4886",
+      "prediction_pixels_sha256": "d1f0992c5508242ce54d70aa6005477b305c3227821fbce491273d34b928835b"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00198",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00198__P8__real",
+      "episode_pixels_sha256": "c7883187c878b6583ba8137ff0c6b24c2aac62304be3e3139242f107e7f94161",
+      "prediction_sha256": "7fc6fb0d11b1330b877c37765b64c6b6cb0ecfbb0c792d6bd05468b675e26a4a",
+      "prediction_pixels_sha256": "f05da9d1fa516bcd5863a4e5d4cd9381c305b9f4fb02397c4ddc65541f5e3499"
+    },
+    {
+      "query": "edge_detection__bsds500_test/q00199",
+      "episode_id": "bench_v2_test__edge_detection__bsds500_test__edge_detection__q00199__P8__real",
+      "episode_pixels_sha256": "4e4e6d7890306fc280c37ab15e1f1e78f67fb8addd73dd08d6f41fd69cf8cacf",
+      "prediction_sha256": "79a2bab84c26f974840735cdd94d73ee5030364461122c9ae0ecab48c9979104",
+      "prediction_pixels_sha256": "49d7e9f2a23216e8cb4094c1f5ec86183346ca1c79d89893728c4c59815dc955"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00059",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00059__P8__real",
+      "episode_pixels_sha256": "e2b7fb3b41a7658940c65164871be01389e3935e22349936a7130fd5897df40b",
+      "prediction_sha256": "018d2328cd57d7db9a1f579eec94d7bdce8c850cc75186bd7a3b060eb2815759",
+      "prediction_pixels_sha256": "11c8478d7c84cb6ac8a0a8cf2173cc2c71fbf292dc96ccad6eaf50d0a08f39c8"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00088",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00088__P8__real",
+      "episode_pixels_sha256": "9553cab982b22b657778998df8fc575443fd7dc06c45a0f98378c3e0e25c1831",
+      "prediction_sha256": "cb4acab474783a7cef1e17251bc0f631eca640d74c328e05e7dfdef996979179",
+      "prediction_pixels_sha256": "58df7c33fee918b482c11a2ac5b7abed0bf8241fbe912555ac0966fa0dc5ed3f"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00135",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00135__P8__real",
+      "episode_pixels_sha256": "950e9a7f05a9ed0f8c9bcedb879dafc9d5c4f20801221d1d563eca8308b31c63",
+      "prediction_sha256": "51965151c22264e6cfc4d398c0794cd8d0407206213c93b3fa39526fe8ddab9f",
+      "prediction_pixels_sha256": "b79df1e853f2b409c2a5189de3fed883c3f15624905c74e6afed0877cceec1b2"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00210",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00210__P8__real",
+      "episode_pixels_sha256": "62c73e6827ce41a5cbd807f0778e5c421d3a4285ada9279993905d03e3502137",
+      "prediction_sha256": "682ccf8ac8489201898bcbec8ba6818f20f9eccced6ac5642e8d72a3a9ff512c",
+      "prediction_pixels_sha256": "888b50e55b2c531b0383c0afaae3b10424b704bf0e77482f8132a758ae64402b"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00327",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00327__P8__real",
+      "episode_pixels_sha256": "56d46986c907dfa04e117b0d94174ed5580443e878462fef2d2673dcf0d531eb",
+      "prediction_sha256": "411d26a6be4db67d2a93be2048fe7f12e06f77f9efc1d8363d42fb2bde74baf6",
+      "prediction_pixels_sha256": "073557114c55d842a2c4196849b13b25355ac8144ab30cd2f488a83c0e6fe12e"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00338",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00338__P8__real",
+      "episode_pixels_sha256": "42d04cbe47ba5b049c59ce29d9891845c7138ef969ab644334e10dbb0e33e56c",
+      "prediction_sha256": "a67d598b0885682e10c84f535179d6043d0017f7b9b42403db671706ed8d11c1",
+      "prediction_pixels_sha256": "4f6b4cd7bab6361171050bdd7913f65efbe568eb75d893e53e42131f4bfaf206"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00374",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00374__P8__real",
+      "episode_pixels_sha256": "277c6a7922f84cad3077d78bbdaed80f839eca9e52ce08677d597f0a792d276c",
+      "prediction_sha256": "7d080354b9c8017bb4dd7de928bfe2d0dc69f88886f7dde738576975d5426ae8",
+      "prediction_pixels_sha256": "fb96a23666dc74f0bb523ed6a40dbfbac0b698f6b376f3cd89bc64e9824afd21"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00437",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00437__P8__real",
+      "episode_pixels_sha256": "77c95059a44bfd2d788a0090e6ba4217c67f8624351fc686a06dfa9f64b3ecd9",
+      "prediction_sha256": "45e854a9b359393354c41501acd52e87b9b24081d6f8da9ab0f1d27d91808e96",
+      "prediction_pixels_sha256": "ba7005c6d3054f6ed33e09949da1c9473626a1b3fabdd4ad0d143b2919b6042b"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00535",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00535__P8__real",
+      "episode_pixels_sha256": "d925ccfc7d8e19236ff80cf274dc70632283a42181376a92570061c92049c8d7",
+      "prediction_sha256": "7b932c8dcb23ca852d6eef0da5986e55a71c49b4dc33d8651be55c075aff6405",
+      "prediction_pixels_sha256": "b44dce10257a9f574fc1204a0a29a6b82f8c4f8c9252c4dbdfa90b8fef704015"
+    },
+    {
+      "query": "edge_detection__nyudv2_test_hed/q00644",
+      "episode_id": "bench_v2_test__edge_detection__nyudv2_test_hed__edge_detection__q00644__P8__real",
+      "episode_pixels_sha256": "3492b860b3f0170e0d39273e9bf0a851afdbd517abfc213780b89798d3b21ad0",
+      "prediction_sha256": "28c59ede43fd3738676ddfe0f2898090283829a4ffd540d26357c827fdbbdc41",
+      "prediction_pixels_sha256": "e0ca4e61eaf1a3f7370b84419b031981b40c7c321a2b1ee5d279da14c7570b30"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00013",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00013__P8__real",
+      "episode_pixels_sha256": "a3a47c50da9c82066f4e5f5f2409670f884b6d8f06f23501fa547e6a603080e4",
+      "prediction_sha256": "1e388618d433e6a489d8547b7f345a3eb0f09b6063c20ea8950d9d4d76c1b4fa",
+      "prediction_pixels_sha256": "232513879844a82343f317342d13eb54e34420a654c6c769295432eee7c68380"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00024",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00024__P8__real",
+      "episode_pixels_sha256": "e7cf7b940c06f5fab56ec8d9cb2d9f88e97256b7204b6efefe9c57e74ff417c0",
+      "prediction_sha256": "5f2ee8c2b3a466c493268419e08837a23ac5404e89027555c2ee5d2dee9ff57a",
+      "prediction_pixels_sha256": "76aa289018b6af143c262510e696ee056b9b9565db3aa7111cac938b08a6f838"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00085",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00085__P8__real",
+      "episode_pixels_sha256": "16b1a9e3d28f0a97998f15f0e1aa1e650709f6d12e8e2f02a7221433ba41f68d",
+      "prediction_sha256": "fd3277ae337a9919dea6bbdc446aaa95a47117a6463540a085bc5ee2ffe3af37",
+      "prediction_pixels_sha256": "6463107a307b6d2984c4b537999fdd010e83266d545a4e9a5062d0a36bd86d32"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00203",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00203__P8__real",
+      "episode_pixels_sha256": "2a3ff1b6f39d62239122d220d10339e60dc81ce2025c8c1695b67bbcc9fbfec2",
+      "prediction_sha256": "2fae0d29ccd2fab04cd6a6880802d423ede1ae96df7b31b308bc2d7ebb6006a1",
+      "prediction_pixels_sha256": "09300898cf176d36afc2e95ca0a69a4d5acd5021b2d285d446a618ba52106e62"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00255",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00255__P8__real",
+      "episode_pixels_sha256": "9db2f38771d595def71d68384b3f8b02e9369de58e9876d6bf43f90d0c4586d4",
+      "prediction_sha256": "6bc2f2a548c780042e8f34f2ccc398fe37851945baa6a020aaa5d0ce2f16c61e",
+      "prediction_pixels_sha256": "c1d33ce90fc44a9e9434bbd734a094d944a6f518f5109ea42c59b1fdf07968da"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00353",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00353__P8__real",
+      "episode_pixels_sha256": "500e7f19e846333cc7f66fd6fdb8f09d6e17a26a0bc4e8765c49e1ec35002d3c",
+      "prediction_sha256": "c1af2efa5789d3a925dc5921bfe242122dceded40742d123c513019114ba6993",
+      "prediction_pixels_sha256": "5208243554aff4eff46719521c28c3651b228f3cbae7cf48542c9c7cd32c27a0"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00382",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00382__P8__real",
+      "episode_pixels_sha256": "cb45fcaa1628e15b7b5b6048461764ed5dceab9826508f773fbcbaf118d7a5b8",
+      "prediction_sha256": "d0382b7b0bd3adf8bb2765333d8d3b64acc4a2d38a9ae66feeaa3ff4581072d9",
+      "prediction_pixels_sha256": "13bb055296393b6c310a56243a6e5e7b1574bb5cea4f734093a0777b21eee379"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00396",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00396__P8__real",
+      "episode_pixels_sha256": "16ea873234de247d4c1f7c4aba09c714656d6583e6061f05d81250c2977f8ce1",
+      "prediction_sha256": "511beb98d21138caadf22b779733ae37ca35d551cff95dc0e8e30fa214b5a15e",
+      "prediction_pixels_sha256": "671d1b135589ad2a33fc5040fe9ed427383fc1ed5bbcff3ce60031e3dffb388d"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00473",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00473__P8__real",
+      "episode_pixels_sha256": "8bd6555f1aaf34fccb036910c1247e296b9e84ef530d0499fef5429dbb45736a",
+      "prediction_sha256": "38cf79a3fe3f8188fd6f7d47bb1f6412f7814928ff2754d7a92194360f1adabf",
+      "prediction_pixels_sha256": "bb7100acb9a855ec45bab67569380a5313333bd770f7dcbb871686ddc96b3d47"
+    },
+    {
+      "query": "face_landmarks__300w_test/q00516",
+      "episode_id": "bench_v2_test__face_landmarks__300w_test__face_landmarks__q00516__P8__real",
+      "episode_pixels_sha256": "cf891a53e14922cd86a1a77654bfbc5baae9c774f3a5412a6c6b5e710c478786",
+      "prediction_sha256": "081e23698098fd430d1d0e9ffddc8d587651cdfb9f1d18988a614a1fba511d05",
+      "prediction_pixels_sha256": "ae7e79b5788b1a3fde93aad096d0a579ba6d9dbb5a6499aa51f9731eb0d6be82"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00012",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00012__P8__real",
+      "episode_pixels_sha256": "724f938f9ef97b41a2d528653c9af67cab84a72c56c3c9391e2c0e768847caa5",
+      "prediction_sha256": "c8172b5eef6fb0af805c19fedb7508f95afc0ae1b3c5ac9445e76f24bf1f4926",
+      "prediction_pixels_sha256": "b96f51efcab35728e08d27ce2b3f0e2e29be4cac3b80404f012d5b80fe2e1abc"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00098",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00098__P8__real",
+      "episode_pixels_sha256": "90a1aac0ff9012311dfa554f0f1be882a73f833852de42e63fe528eae7f5d7d9",
+      "prediction_sha256": "4437f5d4ae42ad9b150e3716fb98d0cd79e44b895d4ce7494d4fbc04818c09b7",
+      "prediction_pixels_sha256": "0b4dae185b802aa4b4034a145d6c51227a9b55e9d5ab5f65d6500b1b46680b6c"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00219",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00219__P8__real",
+      "episode_pixels_sha256": "316efab8d7f50bbe021ce8e6ec9d5eb253ffb3b5b8d0d10fae1eede3b6128786",
+      "prediction_sha256": "2a1d448679a4bb3b923bd9f9d9add85b9974f3af9f6605a2f8d071957485584f",
+      "prediction_pixels_sha256": "e0a490a115850c578f8590d717b06767f92e634176cd0b817d9ba026bc03e73a"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00256",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00256__P8__real",
+      "episode_pixels_sha256": "406951f669db6b300aef5135e72b8056ce4b8f9df34ae86b697b267553ee5cff",
+      "prediction_sha256": "5b290f45ce1ffb741d55b9cc4d2788d429c4f26ac2dc28692ff22532c452c8e7",
+      "prediction_pixels_sha256": "3657d2f3ed98d86ddae443a81956b812fbbc12a7394987954c443af8456b1214"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00259",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00259__P8__real",
+      "episode_pixels_sha256": "c3c24dd2d9deee0415779afc6302a26729bb57dc0e7d5b88bfaff79eafba6468",
+      "prediction_sha256": "885201e0f77ab2191e573c122a7f21db470e605eb050a7d491bc458621556260",
+      "prediction_pixels_sha256": "bd53ffce3ff4567e75046e6b7eb0df5e9fcdc2c9b1e64896adeb8c0b28406dc0"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00301",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00301__P8__real",
+      "episode_pixels_sha256": "cc979b4acb02b6a54b37eb313b182b85a15ec063d22ae9a1392f771d2e5543cb",
+      "prediction_sha256": "512d7c598e10bd479b1c53a9714376391e1eeaab41637c5e629cb9f730663f39",
+      "prediction_pixels_sha256": "03050d9ed03b5a522bbe89243cf1443e88b407d77a47f07d23de5be970b19341"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00305",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00305__P8__real",
+      "episode_pixels_sha256": "5f781417883fc127ecabded465ac9c28ae1c48c33b18ac2b8c5b81d1fff24876",
+      "prediction_sha256": "2e02c2e0131ba82a18d07abae38f6f820fe5c3f107a6b05edb0922992c548fb9",
+      "prediction_pixels_sha256": "65405e3304fbf3d10a4a5418e8f291a74f96a723582e4241751746bef5d0c76d"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00335",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00335__P8__real",
+      "episode_pixels_sha256": "41a5c3679a7b05adb13cf496ce61fc315929af575bb0d165706c416bd5e54bb0",
+      "prediction_sha256": "8950161e1f76db9e730290987e8e9fe3b9857d4382454341b6b68854014be868",
+      "prediction_pixels_sha256": "e98ef8876bfa08731dfec3dbd78293f7eb4011748eeaab23a36bee0177278288"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00451",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00451__P8__real",
+      "episode_pixels_sha256": "82f89250087eb2aef5476ffaae400ebe3c0c43bd4690827d500860691c200a7b",
+      "prediction_sha256": "d9a5819b7bef4bc1ceac82bc5558ff28c15121f905f479f8601df4030cc49143",
+      "prediction_pixels_sha256": "612caeb93465ff30914590d072e91258c7c3a968008ca595229827d8bc7eff93"
+    },
+    {
+      "query": "face_landmarks__cofw68_test/q00467",
+      "episode_id": "bench_v2_test__face_landmarks__cofw68_test__face_landmarks__q00467__P8__real",
+      "episode_pixels_sha256": "2cd8a247e5d84e4eba9a888a04ed64a200562a28790ac21921ca1106cbafe512",
+      "prediction_sha256": "0b4ab403b7c358ed2a2aff408c2372f709252db42e4408a9fdcda5e69a940834",
+      "prediction_pixels_sha256": "7aa7f6e9221c7a78ebd34984008006492b0f6e327de82ba5ce21a1e38cd9f93e"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00052",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00052__P8__real",
+      "episode_pixels_sha256": "b4ac17807a2ba49df50eec81f761fdbf603e6dd3a30162e889d4fade810d303c",
+      "prediction_sha256": "8dfa53569a3f8fcfc703d0dc763da829ee676c30bae92c0b409af101f7708245",
+      "prediction_pixels_sha256": "d2e12d61b2b4219451ac583547f07c61680ef06e0dddc60dedd74e678c2112b2"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00193",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00193__P8__real",
+      "episode_pixels_sha256": "aba27ee5bb3a58e90a8cec1a4d571d7133e43521bd24218424a7aad9a3b19e05",
+      "prediction_sha256": "12fdd8f7d3cbfc88a7e824e5bd5cd2e49538bc802726613b11529a5a40f65c0c",
+      "prediction_pixels_sha256": "1e0ac2973712bfa66d0b71abcb748cdc28872fe897e71808be517ae50363d96b"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00320",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00320__P8__real",
+      "episode_pixels_sha256": "2c77e0e23540b7055b91630cdb9acfe4ebf1640c5b34ef241fdbde97736d3960",
+      "prediction_sha256": "65529d2f3681ab99d5b654fda747a54380cf59483c47ecf091d50905982d1259",
+      "prediction_pixels_sha256": "515070834257bd3d29afa28cd289c3c3859e631d0f78011693079352d48db60f"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00460",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00460__P8__real",
+      "episode_pixels_sha256": "783658d6078209de309996777afd45c9c656875ebbe401fd83e050fd7b5245bb",
+      "prediction_sha256": "2d0db16c39664a0d3608c9a81e90a5d6c32873fe49bc500cbb37dcb309809d1c",
+      "prediction_pixels_sha256": "0a7be70166b7e8dacc685f91f80d5ffbb704dce6dcc3c45b0d2661416fe2b1cc"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00542",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00542__P8__real",
+      "episode_pixels_sha256": "1460ee04e11a38c3b661e07546d1b9c1be75f5ab511fec6f34e3b50b55f96fb1",
+      "prediction_sha256": "8b21c0c9be49e3207ff1354e1bd5548a2a9276d0acfab1ee4552ca0654c82827",
+      "prediction_pixels_sha256": "172c2477aeff493dead2c6420760387c2e28e19df84f4d0dfe45620669af11e4"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00606",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00606__P8__real",
+      "episode_pixels_sha256": "a63134000b038f29cbea68b36b5cd7afd8ba3e3d24a37f3ad322578797b60cd4",
+      "prediction_sha256": "a89b51c81c9a82467568603d5798a06deb2a7ad44ecabeb9527d37d471430cf8",
+      "prediction_pixels_sha256": "4253e983709235df46109cf0e725addf878e4d0d0d329bbf83ec93d8d97b2331"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00614",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00614__P8__real",
+      "episode_pixels_sha256": "7893cf5c991e2a64c2a02a699a535d8e65ec62b880460f34856509589c9aaa03",
+      "prediction_sha256": "06356149ee7ff20ab5377400250120be16eb792b8137f9ca627debf7378df087",
+      "prediction_pixels_sha256": "71f4d9c37b58b0acef9d3b57f5a2a46bd567c13e1570b0dd45feaf6e0502019f"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00734",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00734__P8__real",
+      "episode_pixels_sha256": "bd3fba464f6f7ef2bebcd045ebfddb5d13e238679cb08ce815eb76071c127601",
+      "prediction_sha256": "75144b40ef63fb312499e386fd9953760dfd084f147214e987e90cf68539f731",
+      "prediction_pixels_sha256": "4c46b350911d8ac567d1c91dc07e438f86c01268549c29584a3c4950a992d322"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00794",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00794__P8__real",
+      "episode_pixels_sha256": "99b43d99d568352b63a346bae7cc227a88055a699315445cb9976b7cfdcf8765",
+      "prediction_sha256": "a3061b67259a12200c83609545e5ca71e1442082ee9cf65ee0790976f9385c1a",
+      "prediction_pixels_sha256": "43da351f66a35f2d2f6668bfd8848b41e74a30b949b7320c949f6750e8e1eea7"
+    },
+    {
+      "query": "human_pose_2d__flic_test/q00860",
+      "episode_id": "bench_v2_test__human_pose_2d__flic_test__human_pose_2d__q00860__P8__real",
+      "episode_pixels_sha256": "22bd3ff859d1c7982e255f86b04005d38aea2f681d0d90cac87c69b7d6e90087",
+      "prediction_sha256": "6f40675798fab36d30f5c3749aa50dd286d70e6d5d19b7700dcebe52d6d58f56",
+      "prediction_pixels_sha256": "011341d1a8065140aa5232b5703d2cb68e24354b63f9e9c09d5cc6aecec7b081"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00256",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00256__P8__real",
+      "episode_pixels_sha256": "33351c2775736c8a82cbc8016adae3509330188709e40bd0c7d167ded07a4ff1",
+      "prediction_sha256": "4c28c1c54609a86bcd4e0b329c223685d087b4b4bbf243adb6d6cfe831d10a72",
+      "prediction_pixels_sha256": "66d1ee7bc4d22f2560f6bbbe06d5dc61d167270aab15bc2f777bfc949ab1feeb"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00299",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00299__P8__real",
+      "episode_pixels_sha256": "a971900a81fba960206bc246490525972596c0e49a27c40c0f0c06a05fe3155d",
+      "prediction_sha256": "ebe1639c38ef1986fb2ff105b6d6ea55cf1167d5de681fb8c418b80529c02009",
+      "prediction_pixels_sha256": "f889f2d98acc485ca7e06ffd5f866189e9053588a4caa05291b037e64c5dcd65"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00346",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00346__P8__real",
+      "episode_pixels_sha256": "9e11ecea53c633e2acb28e447d5f3fb3b5d07e4fb945f3db05b93c9eb7da9fa5",
+      "prediction_sha256": "73e1d9b461825b95769748227a75b1a3086d1e87e4ac66a3e1fd519777543809",
+      "prediction_pixels_sha256": "a9ca9e5cb9b1d574cbc7d9e73d07092cb6496ebd1f7b464ebf99342bc67f0c44"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00435",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00435__P8__real",
+      "episode_pixels_sha256": "5b59a665c08a9ba8f28970be19eca744bb89c1a45a7851cf7bedc28ba5ef0615",
+      "prediction_sha256": "e95b72a491a81b5fade36634065cf083a62c3dde979016c70a39fd8215919619",
+      "prediction_pixels_sha256": "8537d970fddca236098e6ddc62989c35299e6b1e237d68ff94120961048f72e2"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00517",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00517__P8__real",
+      "episode_pixels_sha256": "aa32a47f7abd8ee7eb11024115e51d5f73c5dbd302ef16db7b3d115a380eaa20",
+      "prediction_sha256": "84e89b4a8cf6c2d9f58b60015755c8f47e72374c33601d0ee76da4f837bdd8c6",
+      "prediction_pixels_sha256": "24b7ab6a3936a4b35aa74950c2ca00418e9a34eaf45e5aa422dc927ddce5d595"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00518",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00518__P8__real",
+      "episode_pixels_sha256": "9755d5c6d5f406b3bc84f18d28a002543369e4b137db74ef4c201388ee141820",
+      "prediction_sha256": "e1ad6fab8f1f62499c41f977c2ccc64032342f005cb572f336162e468fb17310",
+      "prediction_pixels_sha256": "a20901b3e351f23ad73e3e1e7c0e33270f483843aa421c880808ecbb21ad5c2f"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00579",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00579__P8__real",
+      "episode_pixels_sha256": "7f75e6d7ea5a08d94b96f82f59e781724cbbe2df405439f20c863a622e8b7ecf",
+      "prediction_sha256": "f82979d39f4c61c6b4db0b15527f9535e0196ead3ac8cfaa7e511cf5c5b2f2a0",
+      "prediction_pixels_sha256": "ab849f76d68cac8cea475b8aed4c557ea52d4587fd905d29d7daf6b38b1d5055"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00592",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00592__P8__real",
+      "episode_pixels_sha256": "b769ce80bb2c85e2a6ac819b5156d0c809e4e3936ad6acc79166dc9f383ed286",
+      "prediction_sha256": "01abd4b6a0a4aef980a1d2fa6ac1e63980f55bdeb58ed83e4b16cdda60b66147",
+      "prediction_pixels_sha256": "4147929e9411a4f75001879695b3bf93e17fec2d4efc3ac0a48fbd961a7a2664"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00657",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00657__P8__real",
+      "episode_pixels_sha256": "0f417f0d1b52cba2139d5e62d2b55f961cee4f88b3189ecb7424a97179f95bd5",
+      "prediction_sha256": "dc179ab57dc5b6c0eb4c1c90a6aacc01db34c76ee7ee6a7890b5cff76bf4e9a0",
+      "prediction_pixels_sha256": "ffa6bb71dfb274b7ab7dbbf714b033b62e1c94220c9601e38383a773b4546d6d"
+    },
+    {
+      "query": "human_pose_2d__lsp_test/q00747",
+      "episode_id": "bench_v2_test__human_pose_2d__lsp_test__human_pose_2d__q00747__P8__real",
+      "episode_pixels_sha256": "fafba6e112637d69ba0a5d76a46a198da29ab66b71c8714c672caf4d6a55e626",
+      "prediction_sha256": "f97ec5c258512f3c480c79ca6b80fc06a56edb7791f2f5c0e921f256cfa37410",
+      "prediction_pixels_sha256": "357a55f7e286e58ef724ad4fc1aa59baa9b46ad4ee8564240ac1272cd7c11ad3"
+    },
+    {
+      "query": "inpainting__div2k_val/q00004",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00004__P8__real",
+      "episode_pixels_sha256": "b67192b868a0618a48a018399bfc42aa4f88cb817c8f9fc213a57d70159a034c",
+      "prediction_sha256": "999ed2a27e1f4e0bda2d2952f88c4950eef042efbfec0272b6246d992c7afa49",
+      "prediction_pixels_sha256": "03a84c26def5771b9d9b609a4f743fec521610590b22bb913350972b6c42acfe"
+    },
+    {
+      "query": "inpainting__div2k_val/q00021",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00021__P8__real",
+      "episode_pixels_sha256": "58ccb7e28e8246284814137f102f77a7e07164fa779cc031ff7b4b9232ac77aa",
+      "prediction_sha256": "ddbd97370baa3e0d38e2539874b9730c4158e4a899292453cece039894bce47f",
+      "prediction_pixels_sha256": "54f598e6f920f28b20cb07041cf8b6bc7573eab9cfe1fb6ffd441e28da6fff88"
+    },
+    {
+      "query": "inpainting__div2k_val/q00022",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00022__P8__real",
+      "episode_pixels_sha256": "f831a8863e38bf1f63c8e6d327c3313e801ab73a7383189513aae2c02d6a9060",
+      "prediction_sha256": "bada8b71dc08dcb38a3b3ba0c17e441e65cb92ffa2c3ba3715133c4ae51c9953",
+      "prediction_pixels_sha256": "1d47ec3fb998df28d08408c49f4dbca01962d60698174e7fa3be1340d1c6a866"
+    },
+    {
+      "query": "inpainting__div2k_val/q00035",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00035__P8__real",
+      "episode_pixels_sha256": "102b643bd69f682ea914864aa13c7f23d4409efd6d58e43ab4d63b2d620f94e7",
+      "prediction_sha256": "9f06b94c47574f9ee605dd39c95c0e200550ffd2c12354b3e00176d9797eed2f",
+      "prediction_pixels_sha256": "a55fb0547c2b0b4071942bd60ca3c6dc39f35b175fb97b8a7180a435be277ec6"
+    },
+    {
+      "query": "inpainting__div2k_val/q00042",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00042__P8__real",
+      "episode_pixels_sha256": "47f7f0190ff9e42377806ef99ca0abbc2c28c2ae1574cba5d5483850870979db",
+      "prediction_sha256": "faf92da3beadfe1c91f452349ddd9f453571938c572969248d4fc87c1456a3e6",
+      "prediction_pixels_sha256": "8a578856bcefe4c148846422f007e433496d73dcb472cf02746d23a3490e2c5c"
+    },
+    {
+      "query": "inpainting__div2k_val/q00058",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00058__P8__real",
+      "episode_pixels_sha256": "dda8864e27f7656ec2db8d649cd6bf84df6eb2e84ac5cd88b8be6204351f8da4",
+      "prediction_sha256": "02ace81da6d5eaf1b169ef3a8a9a9dffc667f86e59cc7424e54f819c01d136d8",
+      "prediction_pixels_sha256": "577f1cbbe5947b6eada03d58d0eb845d601fa8e6e91d2a874d484f806e1e75e9"
+    },
+    {
+      "query": "inpainting__div2k_val/q00061",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00061__P8__real",
+      "episode_pixels_sha256": "5c2ac7e318d035b1756339b0aba814aea7c5e583f3badd938bc5344c7038ed4b",
+      "prediction_sha256": "cca7125a1e2ce4ccb000f10c46a821c70e08cd8eb8d22ea8cce7a9682bde248e",
+      "prediction_pixels_sha256": "299793334ff7a9f73542a646429a44833e2845026c5c1455ba1a3c1727dbb9b8"
+    },
+    {
+      "query": "inpainting__div2k_val/q00067",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00067__P8__real",
+      "episode_pixels_sha256": "2ee9ef75ab9bd1074020eeaa361843b13c4c434cc196a00c8d9678e808f55847",
+      "prediction_sha256": "fd772efbbcb16ed58032cf767c160ba8f9f163c7db31b3b4c3ab06e57a1ca365",
+      "prediction_pixels_sha256": "843af11fb4f0ded8f1bf12526889b4762aa054be2a7995ec02350ab8e51f442f"
+    },
+    {
+      "query": "inpainting__div2k_val/q00086",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00086__P8__real",
+      "episode_pixels_sha256": "05784b0fd28914ffd5a0fd882943894a03daf508952fd543234db02e29b80088",
+      "prediction_sha256": "877e78ca7db681d76c186145a8d913644fbafef1dd315a5f4488ec64c28e232f",
+      "prediction_pixels_sha256": "79372fd325f3067b97f3599fd561059463e0e468b4aeefd5db30a74238646453"
+    },
+    {
+      "query": "inpainting__div2k_val/q00091",
+      "episode_id": "bench_v2_test__inpainting__div2k_val__inpainting__q00091__P8__real",
+      "episode_pixels_sha256": "76fd4b908e55e2c182dd6e37ffbb9ada98603ded5c046349bcbf15f3b6020951",
+      "prediction_sha256": "9a596d6390e8c315d622977a2bf672f873370055450238ba2de5c92a97d22985",
+      "prediction_pixels_sha256": "47a28a1d8f56103a0a2ac6a6239ea18f653c92b74674a1987542a7e830c9031f"
+    },
+    {
+      "query": "inpainting__urban100/q00010",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00010__P8__real",
+      "episode_pixels_sha256": "0e9dec560614a17298d1d6b1309918033127ac11d40f297796d58a7ae67d7840",
+      "prediction_sha256": "5ea3b98c55afdb5dabb955582c744e9b6b37aa1bde8ba583f01281171083c19c",
+      "prediction_pixels_sha256": "4af0327645d0fbb6c0c6428a33db4d2af474e02e1c7ef0dccd2ae131fd7fc6fc"
+    },
+    {
+      "query": "inpainting__urban100/q00012",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00012__P8__real",
+      "episode_pixels_sha256": "44c80b1857422d067c7b723166943e48cfc493b2e20ffc55c91cd0cabe1db223",
+      "prediction_sha256": "88d25a69ed7f811ff919de4166444ac4b8a0cfdb759e185de866f523624b2852",
+      "prediction_pixels_sha256": "3b1218f7046e9116ea6fb0bda3baf000ae83e0da92c20e73e12f6e1789396fd4"
+    },
+    {
+      "query": "inpainting__urban100/q00027",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00027__P8__real",
+      "episode_pixels_sha256": "736daad05143fe47a97d56f390d835105c3e135b7d67b9c1a29193f925674d03",
+      "prediction_sha256": "9063f1f43d0ca362a1f8612c9683f8c477e16c9adf0034802c94430a362bbd29",
+      "prediction_pixels_sha256": "13a797a76bd3c4a63a405954fe17f366644c78eeb25957504e633f9b653fe5ba"
+    },
+    {
+      "query": "inpainting__urban100/q00033",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00033__P8__real",
+      "episode_pixels_sha256": "2cab5f994d59eace89afa4da09c6026e29129d65b5471105920e6a25422175ae",
+      "prediction_sha256": "278bc819a8755de704bc5a80d89f974fbe7b6c621e41dbd30ec0fc23540886ee",
+      "prediction_pixels_sha256": "98f16311ffaf4356e6c42965b0809447356b95a3ddb91cbdba8b7214eb6ce92b"
+    },
+    {
+      "query": "inpainting__urban100/q00039",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00039__P8__real",
+      "episode_pixels_sha256": "b3964e97cab6edde2c4b148ed3c56b960021ea4b5728efc750d3f57dc81b62b9",
+      "prediction_sha256": "0e399c1140a97882a7bbbd7d7ec8bfc52d413360221337ee1722287e2408f2b3",
+      "prediction_pixels_sha256": "442d711169b95af02078b070a6e0087191a49b759b2fc8bf0a8c5e0b977cadfb"
+    },
+    {
+      "query": "inpainting__urban100/q00049",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00049__P8__real",
+      "episode_pixels_sha256": "1ffd2244724ec74d7729c642ff911eae6d1c906f7b8e063878ce877e0f518454",
+      "prediction_sha256": "e4583f0160ab23fa9b271f8f0d4f14c9cf84f19894a689cfdaeffa983424f97d",
+      "prediction_pixels_sha256": "882b7c15187776e2a6bf3b33a61b65d0564595187845e1de2f12c643dbd67634"
+    },
+    {
+      "query": "inpainting__urban100/q00070",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00070__P8__real",
+      "episode_pixels_sha256": "7065452b4d5675964641315e6b54df3ab3be4c9fe22d15c3ae738ad6754c531e",
+      "prediction_sha256": "976ad78435d31ff6c059b1c63f26c483af7675cf97dfa480c9105b2fdb8f222c",
+      "prediction_pixels_sha256": "78106e18b30d962488a7758302ab87050f517b39a859d6d13f772f67f9362ac7"
+    },
+    {
+      "query": "inpainting__urban100/q00079",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00079__P8__real",
+      "episode_pixels_sha256": "51c3e52ea4462b72c53924e7c90032e3fc404ce8316e8b74992aad92d1fe840d",
+      "prediction_sha256": "c0b487911d49482d4c1c9cdf387b4feec2fc4a26430dd88d85e3ac7e8818a91a",
+      "prediction_pixels_sha256": "12d2087c8da26c08d9f01f01788477ec8e5e4f6c485bce7d9293c87d9779c7bc"
+    },
+    {
+      "query": "inpainting__urban100/q00084",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00084__P8__real",
+      "episode_pixels_sha256": "4fd8673bb8f5155907e1825699bd12d123fef09cf1645fd8ee43b6cccddd93d8",
+      "prediction_sha256": "4cd89200095bcc7f2e68b3ebb1cf70b703cd46c882704e43bf15e737920e9534",
+      "prediction_pixels_sha256": "7e495378cb63199989f8109c425ffda7bcf19657bdadb80c826cf141c0d8aafa"
+    },
+    {
+      "query": "inpainting__urban100/q00090",
+      "episode_id": "bench_v2_test__inpainting__urban100__inpainting__q00090__P8__real",
+      "episode_pixels_sha256": "23337f5cbfa65cd5ef99c9531079fe4211bc6fed935f5a6d19fa3f71ce0bb6e1",
+      "prediction_sha256": "87dc65aeeccfc656acff73cdafc6611b6226b50140e77a48ccc8b634efca2630",
+      "prediction_pixels_sha256": "2e927ff02f18f0b1ebd0e5ea63ef75fd69068bdd7f99e6a96769ffaa90eb6f91"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00048",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00048__P8__real",
+      "episode_pixels_sha256": "ee0c6bfee279df490fa81d6e038975c92d8684c4b75d3c68f618d11157a7222a",
+      "prediction_sha256": "04885aa6d0161186df93df61e152108b6d7c6ec4c53867da2c768291079f9a88",
+      "prediction_pixels_sha256": "35ef92b8f3d65857f240b9caa2a41cec4980cffe9df2e27bfde171c300e09c86"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00084",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00084__P8__real",
+      "episode_pixels_sha256": "a6e1449fb843d2bedf8b64fa72eac33a5c1ac41637fbce5bb96596318d7ad2ab",
+      "prediction_sha256": "a2c80a22a3fb3f014ab884e9c769f724791e410b435b8aa666a4bcd64a51dc6f",
+      "prediction_pixels_sha256": "e0899886f8a83c9780671bbcde1f39bc051f708e6f7373e372627e4c93a0cfe6"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00134",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00134__P8__real",
+      "episode_pixels_sha256": "708b9826d836cd71b47f011ead3891397e5b1aac6cc951dfad6040e707d4e79a",
+      "prediction_sha256": "b6203517bc0b1b3e79ccdce91969388a2bd90b2e4772e65828edc38970f4150d",
+      "prediction_pixels_sha256": "ceb561f0ed88e365ef1885795688e6e20a49db4466f1cd35e6d6ea9180fc4b06"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00160",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00160__P8__real",
+      "episode_pixels_sha256": "dfa078a0fae73714c15c152673c3077dd4ad2f6fff61b11cb9809bfc4c1a358a",
+      "prediction_sha256": "d13dff1570262650d3aecc8898264920632fcf4eca8db66a6e1aea30b28e48bd",
+      "prediction_pixels_sha256": "4f5c8342f914ba6643b03dbddefa48f49d988b08df172657489c796a433d3e2d"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00219",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00219__P8__real",
+      "episode_pixels_sha256": "5e587fed7827231c6a12bd712fb870026a4eaac0c1c23fa02f7a1c62b38178bb",
+      "prediction_sha256": "1b2b5e311268461893deca4830f720ca15fe72921989e1386764f6c2cfa76241",
+      "prediction_pixels_sha256": "ef01f40b18a4d3d3ff84cab69054282aa570992fac23609fd3bcdb4039f210c1"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00227",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00227__P8__real",
+      "episode_pixels_sha256": "65df774fe3b23e5c39d980eef2b54c423ce707bb423e8e80796573d794a30ef9",
+      "prediction_sha256": "794d4e2c2f8af4ba1045ae70033a296ff22225fa2cf746498f6f8fc78774a73d",
+      "prediction_pixels_sha256": "9b3cc60dd4b238693644fceabdd742e5b4d19d8eb6d58efb87d1544dbfdc444c"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00324",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00324__P8__real",
+      "episode_pixels_sha256": "4375f31f5656497a230828eaac27931e8a5da71f7e84eea43c056f1017a48a01",
+      "prediction_sha256": "cc0f94aed94f17d4d002cfd6d14d28a20fc1133561f82c3e9a1bc79bf3baa266",
+      "prediction_pixels_sha256": "566638f92e00f7f945a4acb7271ef741b6184f9139864e17a86c8046134da74a"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00349",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00349__P8__real",
+      "episode_pixels_sha256": "1fd40f3ac99a3b06a4d08a68676786662415c8ada099268f727eb8c24701df21",
+      "prediction_sha256": "e2c69ab3ffe937fe1b9b4bf5123c456d9ae3335d8474f17577c66417a943baf5",
+      "prediction_pixels_sha256": "a1e446a4414782ae0681d59dba4b362f8b92cbd3848a9e26e06ff81669fa32a2"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00421",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00421__P8__real",
+      "episode_pixels_sha256": "786585b0d2b3513374050fe49fb8c4270869962b6a44134b828611cc39a01ff1",
+      "prediction_sha256": "620ce5caef3498f1fe103801b58ae41aa79f622b7147fa0caf25eabdb62d641b",
+      "prediction_pixels_sha256": "c790396aeaa74416b2350785419177b442f07a772652b5869e0a007ad046df73"
+    },
+    {
+      "query": "instance_segmentation__nyuv2_test/q00615",
+      "episode_id": "bench_v2_test__instance_segmentation__nyuv2_test__instance_segmentation__q00615__P8__real",
+      "episode_pixels_sha256": "d72f9eb6c716cbc31e337e445ca630b45f564f3ce5f9e3df3e4c49c2ed5deb9f",
+      "prediction_sha256": "6f8433272218bbcc4351b30972ba568e56bc48cb9556a312b4bc9f4520241b4a",
+      "prediction_pixels_sha256": "c27ca5f7d76e2fcb0a9cbdd010435fa731546c608e000f9204db3bce46ace908"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00104",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00104__P8__real",
+      "episode_pixels_sha256": "c6e3316390c5c9b4195cffecba6e25bda712e1bea327606f46fe59ad83ad905e",
+      "prediction_sha256": "3bcc1bb6135c42569d7c2bbe96da6d966ef7de4473780d5ed9e6d6350de5a739",
+      "prediction_pixels_sha256": "b222a9e133bda411e962f798e40a152230ccdf1df38c01d0f8489e69af715dbf"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00111",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00111__P8__real",
+      "episode_pixels_sha256": "0dff9e431d1cdeaeb0693d70e209e2b874c706074cc5cbfd7a013e3512fc0480",
+      "prediction_sha256": "ca1fb76993b0ca760c4b34a452f070aa5db6f692b92a17739ffe43710035264d",
+      "prediction_pixels_sha256": "137c3be7de1431a41c6db39684205a644db6a12dbc3ed36ce3c32184f5d0c228"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00132",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00132__P8__real",
+      "episode_pixels_sha256": "c2643e95bcc1031a0ab5eb0c853f9e080398096c28485d668889f61b299ddfa2",
+      "prediction_sha256": "1a4ab73e7203f0e862166aa745a42e53e66d2a7d7111483bcf2b745ae81d4472",
+      "prediction_pixels_sha256": "4fb6c0c45a2cd30e74326ea981347be555170dcdd88c35de31edf90d1e648570"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00142",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00142__P8__real",
+      "episode_pixels_sha256": "27bfabfbd90c6dd7f577a2bd4d87a04b5a333bb571e5e7b0407e16fef9ccc49d",
+      "prediction_sha256": "38cd6a249a240daec71d1dad8e034e073c4f3e28b30f350d765f28cb8e054d38",
+      "prediction_pixels_sha256": "eb023bd622a7a8ed5c92297d1416367f8bbbaca74550ba5209448628b44b73dd"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00731",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00731__P8__real",
+      "episode_pixels_sha256": "51602c58843e6a577e4ca200402acc4a38c5030812cba0f8b6604c8a681e5d17",
+      "prediction_sha256": "3b93f26267630963185ee67d8020972faee108a7bca80db725817e4680c9955c",
+      "prediction_pixels_sha256": "3381de4ca9f3a477f25989dfc8b744e7916046b7aa369f61a9a2f7dc0963ec9e"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00857",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00857__P8__real",
+      "episode_pixels_sha256": "5f958cdf3efd40126d7f60587b465947e047e716df1fcaa4caf202cc6a0671c2",
+      "prediction_sha256": "f59ef8d4370f7a83b5b73983a174b4483b101ca64397ad0c94ff59819276779e",
+      "prediction_pixels_sha256": "71cb31aae0b665d7d517e81299c267ca4f17940c66e8616871cbd324207282e7"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00866",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00866__P8__real",
+      "episode_pixels_sha256": "68a2cef4594477b7376f21dbc60f94f50bc2a629b8685da0c4c1f03574c7b537",
+      "prediction_sha256": "787312b9cabeecdc1d6d583f415c283b8c14d44c3d98fbd5e48e70d71494dd39",
+      "prediction_pixels_sha256": "1d97629927d59a93edb909a8a7543858c2ac1cf02ff789466d05c061e088f232"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q00969",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q00969__P8__real",
+      "episode_pixels_sha256": "34d4da528b7dbe92146aeaecd2660c3398883d0bb6bd97b484907a6ce008ef26",
+      "prediction_sha256": "3b93f26267630963185ee67d8020972faee108a7bca80db725817e4680c9955c",
+      "prediction_pixels_sha256": "3381de4ca9f3a477f25989dfc8b744e7916046b7aa369f61a9a2f7dc0963ec9e"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q01252",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q01252__P8__real",
+      "episode_pixels_sha256": "a287d138b6174cdaf908cb7294c4951bbe6b44821641e23dbfba1f3a919933f1",
+      "prediction_sha256": "094af4cbb725c13b29538db82a406cf5c0b82d3458e6f29b5cdc419a87adf957",
+      "prediction_pixels_sha256": "ef0a4d79f0a70126deca0e865ef7c61271554745170d8042f3494f89f9bd2137"
+    },
+    {
+      "query": "instance_segmentation__voc2012_val/q01316",
+      "episode_id": "bench_v2_test__instance_segmentation__voc2012_val__instance_segmentation__q01316__P8__real",
+      "episode_pixels_sha256": "8419e649a4811fecd98cddf7eda44d9df7231fecdeada87260b57ea32c6d0ea0",
+      "prediction_sha256": "c31e222b890568d03fbca03d3cc6d58e6f3f0b8cf3abd5ae3913696c4055c5f1",
+      "prediction_pixels_sha256": "d7bd4b65ad33ff5481346810e88ef5c5597a325f44b3cd69e1fbb8ee8535a577"
+    },
+    {
+      "query": "relative_depth__diode_val/q00163",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00163__P8__real",
+      "episode_pixels_sha256": "c8ac351a9155bbca297412d0856eb7b255b6bcc5602df4a65eae603d477206a9",
+      "prediction_sha256": "5bd61492d6ad4bc3788237106fc47112c7a68067c50f6bab03eaefb41e95a455",
+      "prediction_pixels_sha256": "d8dcad2c4290f82e6008bec81e585665d91a3f6e7bcf6c2f453e69635e0e1313"
+    },
+    {
+      "query": "relative_depth__diode_val/q00214",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00214__P8__real",
+      "episode_pixels_sha256": "f86e11f0293d1332a84e3e22755d3ed4db97f1b817d7d034de3f6afe2c2975c8",
+      "prediction_sha256": "e60ed96bd3aeeedd5d6672a285ce7f26803863e12b74982dc8cccc89e9e1dc22",
+      "prediction_pixels_sha256": "6e1e54dcdb8bdc40231609ad18d01137945ef9dc9c25b94d4465755d91620965"
+    },
+    {
+      "query": "relative_depth__diode_val/q00281",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00281__P8__real",
+      "episode_pixels_sha256": "dcd3d52c2636044b127fc6a848f36dccbc7c2027dcbe6d8530123a905159db2f",
+      "prediction_sha256": "01c2682e728ae6bcd6169ade25f2c5963d77470f664647dd64d635e591c27134",
+      "prediction_pixels_sha256": "9502236217ec3f432d2c8145d1d682ac927de59717faf78502e58fa09f494680"
+    },
+    {
+      "query": "relative_depth__diode_val/q00289",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00289__P8__real",
+      "episode_pixels_sha256": "b98d82c400e60179267f25897f2592e03fbf08ed5aeb5bd8cc1b26f1d7ccc594",
+      "prediction_sha256": "6d7ceef48997836cf22e85b27663f9978977ade465ad6f423c2edebfb687bc80",
+      "prediction_pixels_sha256": "89d9a2ffa07e83fd05ab97ac93787c1f98ed916dd9c0221e73fa2c609c323bdc"
+    },
+    {
+      "query": "relative_depth__diode_val/q00416",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00416__P8__real",
+      "episode_pixels_sha256": "d29656066e164f7e77155552b4fdc89ed639a91ee341cb6bbc5c021dbb93fe3b",
+      "prediction_sha256": "d01fd029c7a00264ff654b03de18087c0472844b4d4905bf45de9711284119ef",
+      "prediction_pixels_sha256": "f3a7f273b76bf52e17ebde915cc0a9be1b7f83d650be2d35f034896a5a476a83"
+    },
+    {
+      "query": "relative_depth__diode_val/q00489",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00489__P8__real",
+      "episode_pixels_sha256": "50478a4f71cd3cd06bbcfd7fe3a38dc639657448493ae883fddd52d67ce8479d",
+      "prediction_sha256": "821e92caed885f30b5015dfdaaf06badb90d2dd1e9690ff4489476cf462aac69",
+      "prediction_pixels_sha256": "ebde217b64888997a6f81c547a38802de5c0090dfadd3e4527e93eadd28db983"
+    },
+    {
+      "query": "relative_depth__diode_val/q00605",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00605__P8__real",
+      "episode_pixels_sha256": "5cd87fe1acacfdc89d42fc590bb80ddf517a9f13b4b98b503141153d8b0019ad",
+      "prediction_sha256": "96b3828a253dd7a45257ddd2ec98006cde0fafe5b385d1fbfb977e0f5c7b19c1",
+      "prediction_pixels_sha256": "47aa24e20f979969a91d06f13b5e8cd844bb203178559629ef1af1f7a4c789fe"
+    },
+    {
+      "query": "relative_depth__diode_val/q00638",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00638__P8__real",
+      "episode_pixels_sha256": "a0230d417574f943bf5810ca2140618e0f9cc52a4831c0c0c1716e05982f06cc",
+      "prediction_sha256": "a7ea4fcab00b1d244c3243f574f05c1cb3a3e089bef02f1f2318e9cc6990b84c",
+      "prediction_pixels_sha256": "ce2eb0c065ca9ab6d8fa0255cc8916d9f549154026dd69381bb3c97a70717436"
+    },
+    {
+      "query": "relative_depth__diode_val/q00658",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00658__P8__real",
+      "episode_pixels_sha256": "98d0a2bbb8e183e7385ee8b0ac5b1e0f32e3eba461189b67ea4bf1b761f8ef1d",
+      "prediction_sha256": "ac8f9b0fbc38b458b97b1d7b9ef5e57ce589eb44dee8e14b24f570217e818c01",
+      "prediction_pixels_sha256": "4ffb1533c4926dec2eb397619935ec3a5fb240f803d2c156e196b67d20acda0b"
+    },
+    {
+      "query": "relative_depth__diode_val/q00770",
+      "episode_id": "bench_v2_test__relative_depth__diode_val__relative_depth__q00770__P8__real",
+      "episode_pixels_sha256": "541ce147bcae489669197391d04c5d8303a0ca99eff977cc2c995ed258da66a1",
+      "prediction_sha256": "750ca2215e96ffcc933ae64829831e3127a053039be55b9fdf22d07e7f683d8c",
+      "prediction_pixels_sha256": "54277aebb8bd9a992255cdc73ce16056646ba5091d91931366e90e1a68f34e6f"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00001",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00001__P8__real",
+      "episode_pixels_sha256": "94e375b55c349bbf91334676ee9447c3d79a6e3b3c672dccc9ea41bbf544b202",
+      "prediction_sha256": "cb469023880259b5bc66a53c62130341b2218961a0c78972b6563c58f74dd296",
+      "prediction_pixels_sha256": "bd2125c6d939f81a56785025b43b7f67aefb6d5ab690225bdbcac056b0bd6732"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00038",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00038__P8__real",
+      "episode_pixels_sha256": "3fc7cae71a113f4992839472650052dc6b42a89eff97e55a0361568205ae768e",
+      "prediction_sha256": "0ea50bf37048154a26a3ce3846c694b510ea32d27ad808e009e44dd87630ea36",
+      "prediction_pixels_sha256": "0db494aff63cdc8079f8ef91d440b2be318013f7ee1d06e0857439296b680da4"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00247",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00247__P8__real",
+      "episode_pixels_sha256": "676f533e9adbf59c27b98148563f51f9aeb32303a56e130e3d4e19779a74ef4e",
+      "prediction_sha256": "b87787917d997e91cfb95043c0205ce8302f167da02c56bac6d567c683c31982",
+      "prediction_pixels_sha256": "dc8baa2f3920789e0025cf23e3472b4f4a879c54b8f3fc6981594f9c020c6784"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00268",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00268__P8__real",
+      "episode_pixels_sha256": "89b9d290c3b1deae82314529d8d70d374606961fc7f491a3e98332122997cf25",
+      "prediction_sha256": "94508e736722a160de0f8e43218a6ff453eb36fb9f2fa8f8e421ebc7625ef8e3",
+      "prediction_pixels_sha256": "5da48c1a2a569537b07b4b4028090570f7452df71ef577aecb4e706582c671b3"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00298",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00298__P8__real",
+      "episode_pixels_sha256": "95f7bc869a70283a87dbb5ed40c64f28fb4c638a2f1aa5585275c77cd60448c6",
+      "prediction_sha256": "3031f3451576526df34119062e4ae21b49de3c53f79ba3d203973b3cf6e6befe",
+      "prediction_pixels_sha256": "fe5e712f41fbcbbb2b25a3cbae2d1f489d260aa3f4f5e2dd802389335afc71fb"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00306",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00306__P8__real",
+      "episode_pixels_sha256": "f224b4f00576e0d3753f95fc62a9f493d7d05cdbc9b421bc24f3032e7a0fe1f4",
+      "prediction_sha256": "470b8069e1d8df8e55ff6e2762cd19508d51e0da8b100f255581e5ac86ed457f",
+      "prediction_pixels_sha256": "aebd4f8da34e63a546f00af0467011a876f0e7bb085f68a112be08a90e0ac31c"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00454",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00454__P8__real",
+      "episode_pixels_sha256": "f8c4e06e89ca6421d0a67246188c8149629f830705ba43bc1fe894b24dcf72f0",
+      "prediction_sha256": "35220a394dc9ee3a4dbb158afe7a18124b09b2eef20a75681d28fee77ae6f78c",
+      "prediction_pixels_sha256": "eb1193461ad9715841613d13e3f5cffa33b4f9773567caaf23f5e2f11636ee24"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00525",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00525__P8__real",
+      "episode_pixels_sha256": "c914dfc59f9e15cdcca023a11549bd437f761d5101987cb1cefed21c353a0dee",
+      "prediction_sha256": "71d98cd797a4e837be4af5730a4f25ee28f322ec4c2eb30b2b943bd667fc1ee6",
+      "prediction_pixels_sha256": "8e85d4290c6d4dd29c4e32a4b74714bc5277e0f5b994faf8d88f46eaac0f6aa0"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00553",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00553__P8__real",
+      "episode_pixels_sha256": "f933405a933a8b5f75c81e38f0eb4e567f563d7ab6b9e173cb7b5e9795015ae1",
+      "prediction_sha256": "ddd4a3333d4956daa194ab6e1ebf2ef1e9b0a61aefcfe973b450da4ae99787c8",
+      "prediction_pixels_sha256": "7a98c53da3e453c2acd9cb28a66d9840e1b3ce3b7875dfec22b9588517bc4bdf"
+    },
+    {
+      "query": "relative_depth__nyuv2_test/q00636",
+      "episode_id": "bench_v2_test__relative_depth__nyuv2_test__relative_depth__q00636__P8__real",
+      "episode_pixels_sha256": "b437c82dbdda220aaee20ad378c4ec041388733339ecf69b54a7ff01a2f0cce2",
+      "prediction_sha256": "5ec03fdb8405e3937c228b229be2eded4cdb69d58b4d57c61a872cf8431d04a1",
+      "prediction_pixels_sha256": "23ec93679bd7c71e019393be4964b862f63272ef29cad98047321af89f3b3e76"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00121",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00121__P8__real",
+      "episode_pixels_sha256": "adb69c7a0484d2db87b7a013f69a26b2669f091add96fc163fdb3958d3a8afb5",
+      "prediction_sha256": "7ccd1d61467490c348d0b56159cbd6d655f9b7a937dbf895aa2ce2167dea3763",
+      "prediction_pixels_sha256": "e881a292a47e25f8841045943baf60c71a880ca775f2e02eb56197f9f9a2fe30"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00147",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00147__P8__real",
+      "episode_pixels_sha256": "fced4e1244d09ab616be2c8ec6529446fe1b7152bf05e20cee62477fa3490ca8",
+      "prediction_sha256": "ff2f99b24819b3b108cf75502e8610d868c7292df9c286beb3d98634c5393f29",
+      "prediction_pixels_sha256": "7fd48e3bc702a3e77c79695b4d1fab65012e6af868607c90df016a9b77c48aa1"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00313",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00313__P8__real",
+      "episode_pixels_sha256": "c1d511cb99e185a75d92b07a4f6d1966dc3fe9c50c899ab31e08db2eeb63947b",
+      "prediction_sha256": "6601a5b5531bf60160a083830e11efadeb7549bba0eb703d07c8afc4b92baae4",
+      "prediction_pixels_sha256": "9cd8c7cf5d2c842e7cea900b0d1ecf98a81055e78266849113d1097c06b3dd2a"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00346",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00346__P8__real",
+      "episode_pixels_sha256": "c2d730735d63dae20eb0b78d410545a7c107dbd822bd4f6b0413bba5d6d99c81",
+      "prediction_sha256": "d96147c9e13837a5d4cb8c12c12dd32bec0b012eac10fafc38568955560ba90c",
+      "prediction_pixels_sha256": "25d69224d1f527ec7c39a010b83cfdb136a89b402b3dfbb909a84673630c4194"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00378",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00378__P8__real",
+      "episode_pixels_sha256": "411a674c8f48277c258b6711ade4821a728869e4b67aee57d203f4e7cc23ea72",
+      "prediction_sha256": "d5eec235380a66e1095ce09c7fdaa5f5566f2182e73d2ebd40f90bfc5d4e722c",
+      "prediction_pixels_sha256": "4c8bc7bfc52ca9f67fe17ac45ce2438cec644b39663d22e293e0cd1c1627279b"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00406",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00406__P8__real",
+      "episode_pixels_sha256": "e7975f9329648bd18e6c0c2561cec7b9260398d5c7f08eb077662b4dd4624cb0",
+      "prediction_sha256": "7cf83fd869a4154db55651d91f2accd8b615a7cc79bc6fb21f02d5110b05d75c",
+      "prediction_pixels_sha256": "151274f546b86a7bea6ea2b80189260d1dbf9e1d8bc57270cb061c00d76d8380"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00706",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00706__P8__real",
+      "episode_pixels_sha256": "80253d7fbb0d61ec1f747a5a571e24d9f20c89209696460111005ed8b697c984",
+      "prediction_sha256": "d7ce24440fdcc3e811c91a1b661a56620d6d2d2d09c3ef6edaa30ff7b6d9ca4d",
+      "prediction_pixels_sha256": "8fd0fa27c5641c423248c3330de04f2967bb5c076f5606e4f6fa541c288ba814"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00717",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00717__P8__real",
+      "episode_pixels_sha256": "b5e4986f659c2b513fe47caf12173332d590bdfb2fae193346446ef7c4ba1d9c",
+      "prediction_sha256": "4c18e5a0ef70cc0cc95d3c6576e98c40fb6fbb0b2feef28ed576df148b3bd425",
+      "prediction_pixels_sha256": "3be6e134bb719663573c3c75a17f2284b1dc2269ec2ca64c5c09fcdf7f9653d4"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00993",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00993__P8__real",
+      "episode_pixels_sha256": "1ec19b2ce46e4a96fa6a1381dbe8e1b238badbbf24ae6676a1f38644eb162c53",
+      "prediction_sha256": "e6abdbf4812f927ddd7df64c4e7c2fd817812f129289937f644015ab8f1a4c5f",
+      "prediction_pixels_sha256": "1e767a7ba894910326fbedd1713f67f33a1928279db8fc5d617ce6047f4a23a2"
+    },
+    {
+      "query": "saliency_detection__ecssd/q00999",
+      "episode_id": "bench_v2_test__saliency_detection__ecssd__saliency_detection__q00999__P8__real",
+      "episode_pixels_sha256": "a19e3330ffd268d35c2cd1d3f3f22ff3e9aa8bcbb75c397b6ebdd47770149864",
+      "prediction_sha256": "d0ac549f88fe0eed7aab7b2c7b47243fb444107914e81b74f2d11c6096a0b89d",
+      "prediction_pixels_sha256": "94656a96ac9b81d29b6e09076cbba631d71c88bea923c5f1831afd06c0c0af90"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00066",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00066__P8__real",
+      "episode_pixels_sha256": "0c026be52a5cb215f21d9ad5527edc979fce5c03ad5d2d4acce536b7e3188425",
+      "prediction_sha256": "de13914ab2956942abea7b4184232c34ed03d3e8296c8fb8bf870e0fb1aad42e",
+      "prediction_pixels_sha256": "48c0486155737a8ddc85518eeeeabaf55b1831c1890de560c0e003b8f9715491"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00068",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00068__P8__real",
+      "episode_pixels_sha256": "37339588b6a009021f7c96b3f747b6cf3285d2b1eef32dbf7d5fd3d47d9afb2a",
+      "prediction_sha256": "b03de4438a56d57c90950b4204b9c1e91698001474ee702dcd1955d3c4af46e7",
+      "prediction_pixels_sha256": "3efa02c7e41617e72e73e66200fcf528e3480e9a5b07b9b081448d8cba30dcca"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00120",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00120__P8__real",
+      "episode_pixels_sha256": "32179bd84dfbb42c0ebb5693fc6301986c33cf084b420e6b2c8f6a4effce237b",
+      "prediction_sha256": "f49de50848426600a4793de199c3545d4217136375390aec780a88d171f65ce7",
+      "prediction_pixels_sha256": "6f0efbb734228d75cd50cbf8e10a564b53ecbeba93d7421049c8057b3d7b4bfb"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00185",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00185__P8__real",
+      "episode_pixels_sha256": "649f69df162ee288d401ecf3200b14b9e679fdd60da92c2e8821b866fbb0adb1",
+      "prediction_sha256": "ec044492be8d16196ed34416b3f81605857e7017735838fa4b89e52b61c12253",
+      "prediction_pixels_sha256": "94d4bfe7df50bba46ec4d6e0a8a6bab9ce5750712d62e49a440ffd2e4ce29fda"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00238",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00238__P8__real",
+      "episode_pixels_sha256": "ed88c773e6796edc23a9b38d71bf58eb6b801f3afd27e59a8345eb744cc169cf",
+      "prediction_sha256": "1a302b8d748298e32b361d01827cc2214f3a65938238c2f97226e6602645ad54",
+      "prediction_pixels_sha256": "42ccde0c992c710c271c6e5593c7d2298af86c189e979f5b13f068cb4dc41612"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00393",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00393__P8__real",
+      "episode_pixels_sha256": "89d321b62a19db14ebdfda5d9312170ce7ec7f9cac55d634a1ec63d23e5e384e",
+      "prediction_sha256": "c17e85d4f3511056f318bf4f5a730b4f72af56db1bb4974cf75ff9b60dc9a6ee",
+      "prediction_pixels_sha256": "67317bf84637788a5269523eb5b70c7c1d5fc2b62d33437654470b8c1502ccef"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00597",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00597__P8__real",
+      "episode_pixels_sha256": "b12dac7375a2313fc97f686a22a44bec2d3ae1a89acd64785a8136f4236b0c2c",
+      "prediction_sha256": "19f36c6b50292b31bc4243cff153a6327eda7d64a68d90cfb6275b46bc2cd427",
+      "prediction_pixels_sha256": "e3979b7802dbad65dacf79f8d21d67244501b11efc07513727d3214b41a8aeaa"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00723",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00723__P8__real",
+      "episode_pixels_sha256": "7e2c416dbd678d8ea64b450a19a242dd5e07ef69005118a987747198afb051b2",
+      "prediction_sha256": "45643728597731cc0801b42362c58bdac83753b3df7f1be01f43e025a8e454b6",
+      "prediction_pixels_sha256": "41a4c7f195757bbb41833cdaba3012e17c74ac6fdd992658b9a3481e53e49cc8"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00772",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00772__P8__real",
+      "episode_pixels_sha256": "6da081e45beb3db02299553b35d4366f2c6ea808f34179eaa17672dbdf85374a",
+      "prediction_sha256": "7327bfc2b941b64e98ed6a26ac0e6aa2770c9780605b8fc63a19de4414b49be3",
+      "prediction_pixels_sha256": "b72700b3daacf9478dedcf9fdb3ded7c69aba9256c2fe9b27993b2ff19c9df2e"
+    },
+    {
+      "query": "saliency_detection__pascal_s/q00811",
+      "episode_id": "bench_v2_test__saliency_detection__pascal_s__saliency_detection__q00811__P8__real",
+      "episode_pixels_sha256": "a0a03e8cd3eac1b5d3554a51c2efad56f8bd98244f834dd952b1e9d0f6dbf1be",
+      "prediction_sha256": "1e4eaa73ef13de93b0deed09f5585331dd1f1b2068629ccbac55dacb55ce1276",
+      "prediction_pixels_sha256": "e198b10c19ed696d30e81e6c613a127bfa5ac0f7dc12b07e060a8bb51e12c12f"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00025",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00025__P8__real",
+      "episode_pixels_sha256": "9625af1175894589086578b821c22f4a526657ef6d09b6530fc2dce76f87218d",
+      "prediction_sha256": "34dc99fac91607e1c8533b424271f19b223f1a3c26fd1fb6bf22f3ae3f1d7304",
+      "prediction_pixels_sha256": "6e88f32280a67dc42cac1547752ad998f26d9c14eafe2e8dd6605cbeab6b22f9"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00036",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00036__P8__real",
+      "episode_pixels_sha256": "81e777722661168b6ca8cea524b74e69e566f1e116a6073e75156bb04bed0300",
+      "prediction_sha256": "69ab5b117b07e59f3089b86641ecf4fae6c81610726837896196628fc5f6279e",
+      "prediction_pixels_sha256": "a5191bf2855b28a3a32ad8907918950c64450156bcc67c6460d0328bd66ea9f3"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00059",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00059__P8__real",
+      "episode_pixels_sha256": "d35687ac54c7429219ef54874c4317b1e2b5de001196c57434ad9c33b10fae59",
+      "prediction_sha256": "f9a5b1317963f41f504ca7582d105bf02483b9836d488f8beb3c9b1e3ff88fbd",
+      "prediction_pixels_sha256": "31acddd69e738824f246c4dbd393e235ded59829da263ac08b0294f8372e54d5"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00088",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00088__P8__real",
+      "episode_pixels_sha256": "e458ab8b5b831cde322b7e818d7d141e7d4a78fa465f2dba531e1ffc81690edf",
+      "prediction_sha256": "d7db24dd89d90fad7ecaaf2c18bb68b994beee8ffa4da650c9845bc7411a2688",
+      "prediction_pixels_sha256": "32607e0086020c1cabdf6e29aba2b43d08e3840826c818ac9aa421abb33e0924"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00105",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00105__P8__real",
+      "episode_pixels_sha256": "0d3da570ec20c20c7b29fe76a2b98adff62d09ed69409f679163392198a25a81",
+      "prediction_sha256": "963facbdfdd37d671168a199aa39cd5fcad8af83edf19ed3bad1cb6a74594bec",
+      "prediction_pixels_sha256": "ef3fc4c893dcea9008b7df5c69761c0cbbe81b84380a050cc62d7b0edb6019b2"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00156",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00156__P8__real",
+      "episode_pixels_sha256": "a598a6e4e9a51feb0bb99bc7fdd220b0b5c8ddacededf45ea8a53e9a5c42e0e4",
+      "prediction_sha256": "657c49e1e1c467eaea4fea6f1f4a7c492733cda91167477b27926704582d6a85",
+      "prediction_pixels_sha256": "1344e6a283acef2f9c693c3e8b5dd97fe8619f8f60f3c568668ad4f7615eee86"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00166",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00166__P8__real",
+      "episode_pixels_sha256": "52509a66ee9b82bbb98381650e21b89b7962bc4bab16ac515c8da83d04b7e98c",
+      "prediction_sha256": "aef29902aebca693630ae7af122ef335717d697e3c81f3622a6aba5731adcea3",
+      "prediction_pixels_sha256": "65ba1baa457f14b6d12afb473e785320abdd1c184f529f6bb91c4fb4e4a56679"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00198",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00198__P8__real",
+      "episode_pixels_sha256": "6c3514c019cde5ea180a7669e3a57746318503705f2362cfea2bbadc4810e590",
+      "prediction_sha256": "535f6722250241c7cce0553c878ae9ccf845b48271fd042b453312002ea8cf4a",
+      "prediction_pixels_sha256": "1faf7440606e2af1343b0bf58ffaeca1f390a799affd2f2d5311564dc4cbfd5d"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00222",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00222__P8__real",
+      "episode_pixels_sha256": "696a7aa934527d27ecd1f23f7a728c105a321d93206a206e2deb8ed98db79f86",
+      "prediction_sha256": "9b7f4cffa59bf14ee4b4245d7c294bbd395ce690c3e9a63760d65d385c88e749",
+      "prediction_pixels_sha256": "0a0e60f987e9b9b6b5cd637245c8de88b774854f176ed52a26a10e23aa70fc5a"
+    },
+    {
+      "query": "semantic_segmentation__camvid_test/q00232",
+      "episode_id": "bench_v2_test__semantic_segmentation__camvid_test__semantic_segmentation__q00232__P8__real",
+      "episode_pixels_sha256": "48044dc6965ca603d0e0f324f988f80f30595ba0dca5c3f8b514a9095149a914",
+      "prediction_sha256": "966dda664c94ba64982bf245cc0c0d8f0cbfbb3b6ec064adbc6f24b2654b2e88",
+      "prediction_pixels_sha256": "9e4ba28ad05dc366abdf0833fbf4d05fb6e53f1a7466db433ddc58ed601ff5b4"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00142",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00142__P8__real",
+      "episode_pixels_sha256": "8bb917712d6e8d05e81355df63ac8e70c53b8c48816d633f99dd8cfe826f8628",
+      "prediction_sha256": "c844d34452e04fef55d97f1c2eb3e30b8214ae5d62c9eec602865a26cb61514f",
+      "prediction_pixels_sha256": "91934311d594eef968e4c9e27098a669f5f3587e302075ba68e856a0cadd013b"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00186",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00186__P8__real",
+      "episode_pixels_sha256": "8693c2a075e9f7d6a2076fd4edcf93f13db0bc01ec6cd54521d813f951944739",
+      "prediction_sha256": "3120fdd6fc91f2c18e8e82907b1b72223f4e487e9f6d5864003c114980e8bc8c",
+      "prediction_pixels_sha256": "94b8ea11e5ac358d53d284ac3a352338327339926001aac8301797b350dc90c8"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00195",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00195__P8__real",
+      "episode_pixels_sha256": "9b5318a4849dad664373897cdadaf5ea803c070f3551df40cbae02236d56af1e",
+      "prediction_sha256": "1b542b6a0f00577e906cf1173c87accc343b3eb3c193e1358b5fd1a3345350dd",
+      "prediction_pixels_sha256": "4e9eca0f93e48bc07d76bda5f46dccb1da4a55e2bdf31f9a44059f00ed72d6f2"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00222",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00222__P8__real",
+      "episode_pixels_sha256": "b5e4335883cbdc10379c27ecd2bc1b0b6481a3ac1cd5732c78035d2d39d26b6d",
+      "prediction_sha256": "210ebed51cbe21d09fb2a85ba7c50fc33d078e4f7d417b122b0578d6669424d2",
+      "prediction_pixels_sha256": "97295bd549a4e77e05f2ce589f7b6ed39a9af243dafe28795a5ccc2f2c7b88e9"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00311",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00311__P8__real",
+      "episode_pixels_sha256": "8e2763f730d0940d0ee7de4b5a9e3807392b8638e6d154eba935b8a1abef460e",
+      "prediction_sha256": "d4efeb2ea1db4e13a047f4c2d7d85f11448500c592b905eb65fa6076f3b013f5",
+      "prediction_pixels_sha256": "8486fc01c5551b04ef506084fba1866104a0a1279208664f3568ede53c476129"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00318",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00318__P8__real",
+      "episode_pixels_sha256": "ecbc8dd3c44402d98bea19c0d262bdf68ffeda34ef6df25c59993a54c2507f60",
+      "prediction_sha256": "8cb26a23de531777210b462d9ab23dd04ef15046e61af82b804fe1deb3e7801c",
+      "prediction_pixels_sha256": "47c94dee9279da87a6ec9cfbeefd581da177bcd796e4df931bd5007cc99fda4d"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00434",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00434__P8__real",
+      "episode_pixels_sha256": "49f9b156014d0bbfa797b185c799d649fdb5a3e4072e9da9d664e88a74584431",
+      "prediction_sha256": "50468412570e27b9e16caee6246ca8f7f377c177732fe1a1407415d12e613cd0",
+      "prediction_pixels_sha256": "e7b6416ca6c3c69bd8bef5918505c88b62b42e8dbbb1d0dd60aa4146bc6e6bcd"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00486",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00486__P8__real",
+      "episode_pixels_sha256": "69ab2b49b505be774eecab7ec278fed1a33fb5a2c140e8f5370f0016d54889a7",
+      "prediction_sha256": "c0cd6da69a09de5991a5d4c76ffe15a02212e36fa6713dcbbbf50ca0ae276170",
+      "prediction_pixels_sha256": "d2e411e57a6becf787b136911dff51835f862bdb6eab2bfb11996c8e6d79f5bd"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00603",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00603__P8__real",
+      "episode_pixels_sha256": "f41ec2486f4cbee394011b0c168615844ca6d36521b1b3782dd241cfdaa2b7e9",
+      "prediction_sha256": "b865feed940a2d5c96ceeeca4a7d63fe933d98941440010c6f6506d6667bc2ef",
+      "prediction_pixels_sha256": "c656d94bc27e95cfa9c9403caa0898a9562c6d207bda0a15a56f366b14b3b900"
+    },
+    {
+      "query": "semantic_segmentation__nyuv2_test_40/q00605",
+      "episode_id": "bench_v2_test__semantic_segmentation__nyuv2_test_40__semantic_segmentation__q00605__P8__real",
+      "episode_pixels_sha256": "fa5cf2f2ea0f2c05544cff5ae269eb1e2c3bd27065959395f88a61146fb67108",
+      "prediction_sha256": "4868a1c6d71735e28d8f36571eedf385eef9434fbbb988db29b9991caef19440",
+      "prediction_pixels_sha256": "67cd99e4b8234f4ee592215d72f75ea39fd8dce437ac719e32036b7fc442fc15"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00009",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00009__P8__real",
+      "episode_pixels_sha256": "b58a094ee58dbba0623a32dc387693f60cc770682bf90a9dc9204bac110dad5f",
+      "prediction_sha256": "844a7e9e3bd0a53510e8dc344caf09817af84c56125f7a4b5198b89ebdf1bdf9",
+      "prediction_pixels_sha256": "58f99a4ea5e894d47b995722c8651da26f00f8413073809220861ea985adb294"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00038",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00038__P8__real",
+      "episode_pixels_sha256": "fbd2fe1687ba1b0f5856b591fb728fde3fd18ac7872ecbd031cd617efb9fe35b",
+      "prediction_sha256": "fcc550a7632eac797077437a73b597cb65a0ac1ec7751713707871b9c9838e2d",
+      "prediction_pixels_sha256": "e5d9d448bab8c8b91b7f96a0f454cabd0e4f86aa456d74194af2e8a1639db801"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00041",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00041__P8__real",
+      "episode_pixels_sha256": "b45efae3403ee70b08fcb4bde5b8541b3d56a360fa54eb0049ea15a6120bf890",
+      "prediction_sha256": "e7d8854d3eda7514eca4b3ddf4ee124f0113981a5360448f48cdd4a914192b37",
+      "prediction_pixels_sha256": "70f40eee055e78db13eff0fbfefc2a06dae6ab37f9d68c416d8284571af2353f"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00061",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00061__P8__real",
+      "episode_pixels_sha256": "7ce9c0bf52d5c23911fd399af8e995a1b16a039be42a98d4d0b594bc8ed02580",
+      "prediction_sha256": "aaf472e93f8d1ecb89f7a8fbbd70a89e29fa029067b0cdb146c5dc737d0848b1",
+      "prediction_pixels_sha256": "5162a247b4e00eae2e496b655bc832a77fc93501b654395273330c35067a00a2"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00062",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00062__P8__real",
+      "episode_pixels_sha256": "8a47da81e0524a42d454dbb8299acef6666e15280232e3c72d501708bd9d3b26",
+      "prediction_sha256": "9862e601115e8fdfa82a9bb1b8e7e5e137ae15867219f37c4b288173be28250a",
+      "prediction_pixels_sha256": "cc784b345282dd55a9b6da1dfceeaa76836de463c5d5e8692a58f94f5b948b14"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00067",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00067__P8__real",
+      "episode_pixels_sha256": "5d87f7153664e35010cfb1b8f09856e2001249cac3759c9005deb17dcd1ea214",
+      "prediction_sha256": "bdcb1cabef1a21517b87a16a18d922facae3b5afc3f17a728b43bbe3296e8caf",
+      "prediction_pixels_sha256": "4384f979c841095e2eca6efd8a99ea118b8f16af173a4e2b8ba99634b30ac715"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00077",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00077__P8__real",
+      "episode_pixels_sha256": "b089b1e33dc32020a8b032b0e373ba60179553ccff65369de50e178534b14e79",
+      "prediction_sha256": "4a1f7e8ed7b5925de055b6ec035fcdf8f8765ad384fd5e0d326769f1860282de",
+      "prediction_pixels_sha256": "bda03ba58f0706298e0d7e7ed5f3e63849d84cc2169428b4ad2fe2923ccf4dd8"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00079",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00079__P8__real",
+      "episode_pixels_sha256": "880b57aa788e48581933619d24c9432ea11c4cbfd4dfe35afc8b88fdefd4e792",
+      "prediction_sha256": "fd856857a42f4dd46088b3ea5b33e4a502886b12ea6cc0f7e0f178380ea2a418",
+      "prediction_pixels_sha256": "92867c8954f1f528861c77195527e3130915c230dd68e9198a851d32c7ba7d12"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00091",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00091__P8__real",
+      "episode_pixels_sha256": "c5b34a3a36e9123502e82320f58541031db7698530a754e8bcaf1b58fc36280f",
+      "prediction_sha256": "53b99171033ba308aebf7dbdb972aa607b4c0205b8598b72176fbf4172931a18",
+      "prediction_pixels_sha256": "fb79e6e3e795b997f2fb2c468d562c5b42f37b43a5b0c8144a63dd120097de7d"
+    },
+    {
+      "query": "super_resolution__div2k_val/q00095",
+      "episode_id": "bench_v2_test__super_resolution__div2k_val__super_resolution__q00095__P8__real",
+      "episode_pixels_sha256": "cf8d051ead8104e83cdc96ac9d42ef6b4aacea01993aaa9cdd2b476c19acf2e2",
+      "prediction_sha256": "3ec5d5d1da7d45bfcc351921f6585fb8a9279aea2bf3f6b47d4fb6a7a326c88e",
+      "prediction_pixels_sha256": "34134b71f6db4599b0c3292987f4f5937004c1f1128798de1c70aeeb84cfa29a"
+    },
+    {
+      "query": "super_resolution__urban100/q00023",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00023__P8__real",
+      "episode_pixels_sha256": "de1baae57e790e386cf44e272a1b76023ee3dfc2590f22cc2bf9da3b464fd527",
+      "prediction_sha256": "756268a569e5276d95d8dae7ef801596ba7bfde8c0f8c6a49df1630ba862c906",
+      "prediction_pixels_sha256": "12d9633cc2f72294e0bcb832a37c94730c561e3bb0615ada1a72dac687f430b2"
+    },
+    {
+      "query": "super_resolution__urban100/q00024",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00024__P8__real",
+      "episode_pixels_sha256": "dd3a311447d17523ac7105cc6f6caea26a56d9f19f003aaff0634ebd647c9ac7",
+      "prediction_sha256": "005b88b97b743c2067d57a5ef5050e4edfe22176285c28f5a26114fd19a1d831",
+      "prediction_pixels_sha256": "6806af15658d359ca6fe726814f4f977246c69bc79f537540596ea8a3fbb6da9"
+    },
+    {
+      "query": "super_resolution__urban100/q00040",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00040__P8__real",
+      "episode_pixels_sha256": "01a6db309ac9889ff1ebf33b375ff6e2ced5ee2424529ab1dcea6e4662f73ed0",
+      "prediction_sha256": "80e21632b32c3b2057c5639e777cab51d4298c37f0924c4f3184cd2e266747fb",
+      "prediction_pixels_sha256": "af8d9da9b1e46916d7e1e9cab2e51e14f313a77ada89d86b5bfc1768934166ee"
+    },
+    {
+      "query": "super_resolution__urban100/q00042",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00042__P8__real",
+      "episode_pixels_sha256": "289db5be17adf6b430f9b15f3e8826bf978abf8047a030131b787e9020d1c313",
+      "prediction_sha256": "3afb383e50e699c13c60d1e4bff02ed2245c23432a17625bfd54f47872655874",
+      "prediction_pixels_sha256": "506a48d7238aaf8b61da0f4afdcb28a0354d72278b41ad371f7b084c3cd00c7c"
+    },
+    {
+      "query": "super_resolution__urban100/q00043",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00043__P8__real",
+      "episode_pixels_sha256": "321cfca39f579c46c5d0dd2523cd2379b88331638322b47ea07c486d87a8fefe",
+      "prediction_sha256": "4460546303b04447f797d5ed913f9edcd04bf3c6ce1900dd31f499c6ba2636b8",
+      "prediction_pixels_sha256": "87865b0465553568abea45df0f2f20054a6e93153236ef6eb8291a2f0f2108e8"
+    },
+    {
+      "query": "super_resolution__urban100/q00054",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00054__P8__real",
+      "episode_pixels_sha256": "e17ec129a472dd5265b86714d36f48849df2427a0c54f2c2ac795a7d28c154d8",
+      "prediction_sha256": "af1d7c58ad2520773cb51f3868c8b49dd236517dd851da3fbbb440963f9d6f53",
+      "prediction_pixels_sha256": "d80930854ecb38c6581078bedf3324b8d19640a6b6a4cc58b7fc2ad39f18673c"
+    },
+    {
+      "query": "super_resolution__urban100/q00061",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00061__P8__real",
+      "episode_pixels_sha256": "6ccfd64c23a13f073c4889a75517f3fbd08e41019142deda853f950387abf0d7",
+      "prediction_sha256": "dc064ec0513b2ff87f2739b2b2db423b2c7573fcd3985c81c2bf898e2f2a0367",
+      "prediction_pixels_sha256": "389764bdacbfa3438bba35ba9e26047b31ebe11b050e86b0d8b1dd15fcc5ed7a"
+    },
+    {
+      "query": "super_resolution__urban100/q00062",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00062__P8__real",
+      "episode_pixels_sha256": "1a602d7ef9b1f3a3255fa01fc91f83bdec15bb9203c286c624501b7207d76b51",
+      "prediction_sha256": "c4a958ecff826e8447701840e13bb2cbac805a3b365a4931a3f0dcfece631416",
+      "prediction_pixels_sha256": "af2c6447be8710d1900833266cccc2d439238b2b6b4164898f90f552e1947914"
+    },
+    {
+      "query": "super_resolution__urban100/q00071",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00071__P8__real",
+      "episode_pixels_sha256": "c41d9319475b7ee794eb8003e5ee486b49bc8e4ee133faf1ed999dd6dd451b89",
+      "prediction_sha256": "ed6812d85549fb715a9f4944072e69375908f22e63c6871cacdfb850cdf3c84e",
+      "prediction_pixels_sha256": "29d5f7c32792b7876c6e8a1d00391fa9fa15e1c4a80c0430fac592925d9322fc"
+    },
+    {
+      "query": "super_resolution__urban100/q00099",
+      "episode_id": "bench_v2_test__super_resolution__urban100__super_resolution__q00099__P8__real",
+      "episode_pixels_sha256": "3888ad684e85cc2676c081446f0559a3a41cc171259f67e6b71962498724b363",
+      "prediction_sha256": "89c1318eece79ae2d9753ff38ceb1c132e09528e4cd40f5bd9fc3345fc9e9e08",
+      "prediction_pixels_sha256": "f7d7b4173d5ab435c17fc9b88a7b3ba57436fdf5e3d93c4f56f4aa6dc5e9d47f"
+    },
+    {
+      "query": "surface_normals__diode_val/q00205",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00205__P8__real",
+      "episode_pixels_sha256": "bed49ac9c58b93c044d451aea123b05515ec32f84dbdd74248141d750e40bf74",
+      "prediction_sha256": "3b93f26267630963185ee67d8020972faee108a7bca80db725817e4680c9955c",
+      "prediction_pixels_sha256": "3381de4ca9f3a477f25989dfc8b744e7916046b7aa369f61a9a2f7dc0963ec9e"
+    },
+    {
+      "query": "surface_normals__diode_val/q00236",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00236__P8__real",
+      "episode_pixels_sha256": "f76cd51ce3db0f0dc730d81c2fed9b7cd9a1e0d899b34ad6a8becc388b76cdfc",
+      "prediction_sha256": "0e57247147d79b769e0c958297473b4c04959585bfcde733eb95f042c6cc35ee",
+      "prediction_pixels_sha256": "8163f9e180594340a224a43a2b76c8c5e0c73ff97672e46dfe9caa3ad6036ca6"
+    },
+    {
+      "query": "surface_normals__diode_val/q00271",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00271__P8__real",
+      "episode_pixels_sha256": "0a693600e44582b2baadf8318303de9963b8376f42f87151a145dd4371156930",
+      "prediction_sha256": "6157936e7017461d610f5ffe7246b72cdcffa8cabc17e3bd3da2d7b080a67d44",
+      "prediction_pixels_sha256": "a240d50f9f217110c221dae094dc1dc1fde4a2f9962e62c98145a11ae3ed2e4a"
+    },
+    {
+      "query": "surface_normals__diode_val/q00306",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00306__P8__real",
+      "episode_pixels_sha256": "aad525fd817b6788bd97ca96a987caea9cf2ca0d74da50a3323c29d51955a0b9",
+      "prediction_sha256": "2b41b753c20999993096c1c9ba0bbc3fa63ac36eb762e93b464fd96e3e1fd770",
+      "prediction_pixels_sha256": "f32927b4982fb2c5b7de5a79d4597038ddff965d66dac9403308fb2c4af5eb8b"
+    },
+    {
+      "query": "surface_normals__diode_val/q00383",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00383__P8__real",
+      "episode_pixels_sha256": "07094050aa85f6253787be2f2a0d146cdd410c0edfa6e6b32d2eff8e4b80cc52",
+      "prediction_sha256": "e9daa8d1cb2539b54059cae5135f85a13a9fbfa88c1a1383a21c5bdc85605b5c",
+      "prediction_pixels_sha256": "0da9fc7baaad28efc47388fbe2e098178ff87ffd54e49d092311cdcfc2895b40"
+    },
+    {
+      "query": "surface_normals__diode_val/q00519",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00519__P8__real",
+      "episode_pixels_sha256": "800f31f5438d237375ffedf2550981fcb45230d3f3a1b3590e3fc02f44681545",
+      "prediction_sha256": "3b93f26267630963185ee67d8020972faee108a7bca80db725817e4680c9955c",
+      "prediction_pixels_sha256": "3381de4ca9f3a477f25989dfc8b744e7916046b7aa369f61a9a2f7dc0963ec9e"
+    },
+    {
+      "query": "surface_normals__diode_val/q00576",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00576__P8__real",
+      "episode_pixels_sha256": "83e4fd9914ff871f434cf33db3088f9b40736f14d7844ac9707cfb6353d7c18b",
+      "prediction_sha256": "347a3ca4f1c644387f79f629e1fd10455412101ce87967d5a4362b135dbd4ad3",
+      "prediction_pixels_sha256": "4357292cae990a2cf653865c6dea6cab988f4aa541a146ed29a1361533030ca4"
+    },
+    {
+      "query": "surface_normals__diode_val/q00608",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00608__P8__real",
+      "episode_pixels_sha256": "07368e9fef8507c04dc25b8e52f9a1b6d0d790eef0c121186e884849ecb3d519",
+      "prediction_sha256": "ec9b52f609690da17c2dc5e0205032401795f74110cc2e3f894d2bbe88943e93",
+      "prediction_pixels_sha256": "7adc48ba1ae04226f9edd2cb3d86399d4689332d8e14b1c6f1d2209763fcf693"
+    },
+    {
+      "query": "surface_normals__diode_val/q00635",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00635__P8__real",
+      "episode_pixels_sha256": "770d5789e7a4ba631fbf3debd7b1387762b23b2cdc76b9d7c1cdbc66b587b524",
+      "prediction_sha256": "0e0a6721c37b1949fd43ac7bb666d4034a5e7b381b982e41e14103a6fc773388",
+      "prediction_pixels_sha256": "4305f34a308a04a3ab8dbf3e075a6e5d09be26d78609b6f753e7c25432fdc84b"
+    },
+    {
+      "query": "surface_normals__diode_val/q00735",
+      "episode_id": "bench_v2_test__surface_normals__diode_val__surface_normals__q00735__P8__real",
+      "episode_pixels_sha256": "184cd5804608798dea5180b1d54912a01bbc2f6d218df9a7e72559699a1b1945",
+      "prediction_sha256": "f77a52108bc21645c43b8e6554b2027fcff5bb9e6c96bbfaa467b2e28db62d50",
+      "prediction_pixels_sha256": "6a52646da43b67a0a5fe6123d923499a0dba55a95f67d76c1392fb9acb5af7a4"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00025",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00025__P8__real",
+      "episode_pixels_sha256": "38a1d18966af94d4f5f3e8f43ce97a0b1a69cfd232b2c931336fe9d18210a4f3",
+      "prediction_sha256": "1523a2d82a27e8d8400b7f1aafebe5a47298b330bca62ba8d420f4e62e3caf41",
+      "prediction_pixels_sha256": "ffde69fdd92520cac88bc62cb7d255a1da5ba967ae14b3d21437c936e10fca2b"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00053",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00053__P8__real",
+      "episode_pixels_sha256": "d359b7112427d2aad0b464ce85c1392e7136adb2e27da68fc179013b036c4d0b",
+      "prediction_sha256": "2db7488b3aa1c3c9c33f9cc3a952b2067f11cb2e8e70f007d245637f47d6ef19",
+      "prediction_pixels_sha256": "0d8cacfbce91bbc434ecc6927ae84294013fbc1865abe03e496ef1e1dba60ab9"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00071",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00071__P8__real",
+      "episode_pixels_sha256": "0a41b3668912751dae952c87d9c17e90ed7d6daebdcc31e0abba7fdfcf515c91",
+      "prediction_sha256": "3a3dd7f18e94b5c9bf4eaea46172ef8bf345eee8b02f5b25b5bb820c184cbb3b",
+      "prediction_pixels_sha256": "418862a32182051bc89590baaba6a575cfea4b3e7d60931a60ba016c0f370d70"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00114",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00114__P8__real",
+      "episode_pixels_sha256": "e355c00ca4ee80e299f368f63fde704071704f00a7bbbb9ec51cd89d10255ded",
+      "prediction_sha256": "371ce412f80d6ec2fee063573392b738f9c30bf467d9a25c58ba5243fc3d573c",
+      "prediction_pixels_sha256": "95c6ef1deb0b5c0bfc8b2c6638a0d77840d36fe76f3bfc23c5aa4b63ddeb4f31"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00165",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00165__P8__real",
+      "episode_pixels_sha256": "798392877c62f237518da27de6ba6333818ff03fc858151f66532c4fd5768b7f",
+      "prediction_sha256": "7bdcc054205f99d1ae15116550190f031ed3c1c4ea5ec131e36ae9713039db59",
+      "prediction_pixels_sha256": "3091d85a01f2d6885d6a617cf19dae6cd64f1b6b89325db3dceb322b3fe1bc18"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00338",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00338__P8__real",
+      "episode_pixels_sha256": "e0ab8a96ece7ad68410c5a9d6d34fa9b3fa32de071b5df16b103b5f1caecb18c",
+      "prediction_sha256": "1cc93a314e9587f5a10c5f2681ca2ae3e9f41eacdfd67c4c81d2eeece66870e7",
+      "prediction_pixels_sha256": "f40c4c7378eeaafe1e287be870420bbd383509e005fc751ecd7f321fcf78bede"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00364",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00364__P8__real",
+      "episode_pixels_sha256": "a41a68da2a45d774792101c3ed8aa8afa8591b675c8c33abdd6f1b0687850005",
+      "prediction_sha256": "ae0689ed6730fc5f7fe0c119c7efa44de075631a68677426e2609a186a7151b5",
+      "prediction_pixels_sha256": "7f63d1f80cb58c3615e3dce5d0d5a279441eb4b8c86ddb771698af74cd494d53"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00413",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00413__P8__real",
+      "episode_pixels_sha256": "7b603d1557309c21590194a762542ab608066bbc68636d44484d552a44dfa200",
+      "prediction_sha256": "214e4bb609fb4c9dd8b19709e43b6e4e620b62b16833fe0d24a76f3e3a4132f5",
+      "prediction_pixels_sha256": "cfbeeffb5c81b3ec86361e360391ee904c1893cd936dd5bf171662bc004f65eb"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00615",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00615__P8__real",
+      "episode_pixels_sha256": "b8d8b46a39c8881ad99d8af8c7ca9220792574f40b6287b0f84511a4bb942760",
+      "prediction_sha256": "14112624ecc70aff2d80b87af6576c39474b14407b94af50204c7f4e8405c90e",
+      "prediction_pixels_sha256": "f07eb72945b146efe28baaa6d2a0a24fdd51ae2b2838e7e1fd6cbbf353ddef81"
+    },
+    {
+      "query": "surface_normals__nyuv2_test_geonet/q00620",
+      "episode_id": "bench_v2_test__surface_normals__nyuv2_test_geonet__surface_normals__q00620__P8__real",
+      "episode_pixels_sha256": "fa60b998f1a14987c62feea95e9d1cc603cc93cd45e9e4e7a85a2350956d9f27",
+      "prediction_sha256": "51b118db8d6b3ac54ec0a78ad3880932fafe644623683c386bb9049c807ca44f",
+      "prediction_pixels_sha256": "ee93f7921c7dbe41f76e29a974421ba46c07ec549fb30bc419771a8852e9d59e"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "bench_v2_p16_three_model_comparison_v1",
+  "pack": "bench_v2_val",
+  "tasks": 13,
+  "queries_per_task": 17,
+  "p": 16,
+  "models": {
+    "visualcloze": {
+      "label": "VisualCloze",
+      "wins_vs_copy": 3,
+      "task_wins": 3
+    },
+    "lavin_dit": {
+      "label": "LaVin-DiT",
+      "wins_vs_copy": 2,
+      "task_wins": 0
+    },
+    "instamanip": {
+      "label": "InstaManip",
+      "wins_vs_copy": 7,
+      "task_wins": 10
+    }
+  },
+  "rows": [
+    {
+      "task": "colorization",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.26197738792089853,
+      "visualcloze": 0.9737245720975539,
+      "lavin_dit": 0.8080234282157001,
+      "instamanip": 0.5504440121790942,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "deblurring",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.20889017424162695,
+      "visualcloze": 0.9495708100935992,
+      "lavin_dit": 0.8387510636273552,
+      "instamanip": 0.4843625934684978,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "denoising",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.7446603214039522,
+      "visualcloze": 0.8871681059108061,
+      "lavin_dit": 0.8830177678781397,
+      "instamanip": 0.6463024546118343,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "edge_detection",
+      "metric": "ois_f",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.3439881196542276,
+      "visualcloze": 0.3176912073927916,
+      "lavin_dit": 0.22225734156624566,
+      "instamanip": 0.36245886738523264,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "face_landmarks",
+      "metric": "nme",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.3324722723264091,
+      "visualcloze": 0.3731545866603911,
+      "lavin_dit": 0.5,
+      "instamanip": 0.32732222360265784,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "human_pose_2d",
+      "metric": "pck_torso_0.2",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.15735294117647058,
+      "visualcloze": 0.1122549019607843,
+      "lavin_dit": 0.0,
+      "instamanip": 0.15980392156862747,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "inpainting",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.1530421016847386,
+      "visualcloze": 0.1279671534019358,
+      "lavin_dit": 0.14199500728179426,
+      "instamanip": 0.18570352214224198,
+      "winner": "visualcloze",
+      "visualcloze_beats_copy": true,
+      "lavin_dit_beats_copy": true,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "instance_segmentation",
+      "metric": "pq",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.054150348883660084,
+      "visualcloze": 0.00419217460739952,
+      "lavin_dit": 0.0,
+      "instamanip": 0.04270176506507659,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "relative_depth",
+      "metric": "delta1",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.46488994998791755,
+      "visualcloze": 0.6753405360936207,
+      "lavin_dit": 0.4392633112465151,
+      "instamanip": 0.445447595894412,
+      "winner": "visualcloze",
+      "visualcloze_beats_copy": true,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "saliency_detection",
+      "metric": "max_fbeta",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.4135276662170504,
+      "visualcloze": 0.2878778866766374,
+      "lavin_dit": 0.3399700095809126,
+      "instamanip": 0.5278068285409827,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "semantic_segmentation",
+      "metric": "miou",
+      "direction": "higher",
+      "n": 17,
+      "copy": 0.26335281273431277,
+      "visualcloze": 0.13584257116829543,
+      "lavin_dit": 0.10694587933296382,
+      "instamanip": 0.28462195887803926,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": true
+    },
+    {
+      "task": "super_resolution",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "copy": 0.4340166712508482,
+      "visualcloze": 0.9488286972045898,
+      "lavin_dit": 0.8511383849031785,
+      "instamanip": 0.6007468595224268,
+      "winner": "instamanip",
+      "visualcloze_beats_copy": false,
+      "lavin_dit_beats_copy": false,
+      "instamanip_beats_copy": false
+    },
+    {
+      "task": "surface_normals",
+      "metric": "mean_deg",
+      "direction": "lower",
+      "n": 17,
+      "copy": 113.58410577159287,
+      "visualcloze": 77.53243033181381,
+      "lavin_dit": 77.82782818178302,
+      "instamanip": 84.67286110860272,
+      "winner": "visualcloze",
+      "visualcloze_beats_copy": true,
+      "lavin_dit_beats_copy": true,
+      "instamanip_beats_copy": true
+    }
+  ],
+  "caveats": {
+    "visualcloze": "Scoring audit passes. Mixed-hardware completion: 183 preserved predictions plus 38 continuation predictions; cross-hardware bitwise equivalence is not established.",
+    "lavin_dit": "Scoring audit passes. The saved P=16 generation shows an unresolved quality collapse on several tasks; P=8 was healthier on matched cases.",
+    "instamanip": "Scoring audit passes. Dynamic P=16 task-instruction recipe; fairness audit found no all-black predictions and retained the standard scorer."
+  }
+}

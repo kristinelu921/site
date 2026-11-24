@@ -1,0 +1,440 @@
+{
+  "black_output_check": {
+    "colorization": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.1112518310546875,
+      "mean_exact_black_fraction": 0.0528564453125,
+      "mean_near_black_fraction": 0.08925942813648897
+    },
+    "deblurring": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0270843505859375,
+      "mean_exact_black_fraction": 0.005071303423713236,
+      "mean_near_black_fraction": 0.026241526884191176
+    },
+    "denoising": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0004425048828125,
+      "mean_exact_black_fraction": 3.2312729779411765e-05,
+      "mean_near_black_fraction": 0.00018759334788602942
+    },
+    "edge_detection": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.110992431640625,
+      "mean_exact_black_fraction": 0.03373089958639706,
+      "mean_near_black_fraction": 0.06257988424862132
+    },
+    "face_landmarks": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0237274169921875,
+      "mean_exact_black_fraction": 0.0049662870519301475,
+      "mean_near_black_fraction": 0.017627491670496324
+    },
+    "human_pose_2d": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0871734619140625,
+      "mean_exact_black_fraction": 0.008722641888786764,
+      "mean_near_black_fraction": 0.028672162224264705
+    },
+    "inpainting": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.21392822265625,
+      "mean_exact_black_fraction": 0.06578692267922794,
+      "mean_near_black_fraction": 0.12888111787683823
+    },
+    "instance_segmentation": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.1063995361328125,
+      "mean_exact_black_fraction": 0.015582813936121324,
+      "mean_near_black_fraction": 0.03299847771139706
+    },
+    "relative_depth": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0442352294921875,
+      "mean_exact_black_fraction": 0.01942892635569853,
+      "mean_near_black_fraction": 0.03757342170266544
+    },
+    "saliency_detection": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.05108642578125,
+      "mean_exact_black_fraction": 0.015951717601102942,
+      "mean_near_black_fraction": 0.05322445140165441
+    },
+    "semantic_segmentation": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0736541748046875,
+      "mean_exact_black_fraction": 0.0071500890395220585,
+      "mean_near_black_fraction": 0.013795740464154412
+    },
+    "super_resolution": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.0441741943359375,
+      "mean_exact_black_fraction": 0.010315838982077205,
+      "mean_near_black_fraction": 0.048479865579044115
+    },
+    "surface_normals": {
+      "all_black_images": 0,
+      "images": 17,
+      "majority_black_images": 0,
+      "max_exact_black_fraction": 0.067718505859375,
+      "mean_exact_black_fraction": 0.010282628676470588,
+      "mean_near_black_fraction": 0.01955997242647059
+    }
+  },
+  "conclusion": {
+    "all_black_predictions": 0,
+    "majority_exact_black_predictions": 0,
+    "note": "The weak scores are dominated by format following, hallucination, and spatial errors. No missing or blanket-black prediction set was found.",
+    "rerun_required_for_scoring_fairness": false,
+    "retain_official_scores": true
+  },
+  "official_audit": {
+    "aggregates": {
+      "colorization": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.26197738792089853,
+        "mean_per_query_model": 0.5504440121790942,
+        "native_name": "lpips",
+        "query_sources": [
+          "div2k"
+        ]
+      },
+      "deblurring": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.20889017424162695,
+        "mean_per_query_model": 0.4843625934684978,
+        "native_name": "lpips",
+        "query_sources": [
+          "gopro"
+        ]
+      },
+      "denoising": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.7446603214039522,
+        "mean_per_query_model": 0.6463024546118343,
+        "native_name": "lpips",
+        "query_sources": [
+          "sidd"
+        ]
+      },
+      "edge_detection": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.3439881196542276,
+        "mean_per_query_model": 0.36245886738523264,
+        "native_name": "ois_f",
+        "query_sources": [
+          "bsds500"
+        ]
+      },
+      "face_landmarks": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.3324722723264091,
+        "mean_per_query_model": 0.32732222360265784,
+        "native_name": "nme",
+        "query_sources": [
+          "300w"
+        ]
+      },
+      "human_pose_2d": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.15735294117647058,
+        "mean_per_query_model": 0.15980392156862747,
+        "native_name": "pck_torso_0.2",
+        "query_sources": [
+          "mpii"
+        ]
+      },
+      "inpainting": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.1530421016847386,
+        "mean_per_query_model": 0.18570352214224198,
+        "native_name": "lpips",
+        "query_sources": [
+          "div2k"
+        ]
+      },
+      "instance_segmentation": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.054150348883660084,
+        "mean_per_query_model": 0.04270176506507659,
+        "native_name": "pq",
+        "query_sources": [
+          "nyu_depth_v2"
+        ]
+      },
+      "relative_depth": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.46488994998791755,
+        "mean_per_query_model": 0.445447595894412,
+        "native_name": "delta1",
+        "query_sources": [
+          "nyu_depth_v2"
+        ]
+      },
+      "saliency_detection": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.4135276662170504,
+        "mean_per_query_model": 0.5278068285409827,
+        "native_name": "max_fbeta",
+        "query_sources": [
+          "dut_omron"
+        ]
+      },
+      "semantic_segmentation": {
+        "count": 17,
+        "lower_is_better": false,
+        "mean_per_query_copy": 0.26335281273431277,
+        "mean_per_query_model": 0.28462195887803926,
+        "native_name": "miou",
+        "query_sources": [
+          "ade20k"
+        ]
+      },
+      "super_resolution": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 0.4340166712508482,
+        "mean_per_query_model": 0.6007468595224268,
+        "native_name": "lpips",
+        "query_sources": [
+          "div2k"
+        ]
+      },
+      "surface_normals": {
+        "count": 17,
+        "lower_is_better": true,
+        "mean_per_query_copy": 113.58410577159287,
+        "mean_per_query_model": 84.67286110860272,
+        "native_name": "mean_deg",
+        "query_sources": [
+          "diode"
+        ]
+      }
+    },
+    "audited_utc": "2026-11-05T08:33:09.062377+00:00",
+    "copy_pairs": 221,
+    "corrected_release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+    "metric_protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+    "model_pairs": 221,
+    "p": 16,
+    "plan_identity": "4102bc414ed3a441b03700ceb14778571cbf27701771d723e9af7836d73f6c76",
+    "producer_sha256": "a716f77c4d190d43c124c1d506a9e7d9675b47eaeb0f1a34612a566b855ee0e7",
+    "query_count": 221,
+    "run_identity": "4f0cc1dbd3ba6bd4d9b849afb6224a2356e2bd7eaf7a47dce30f4acbdf4514e8",
+    "schema": "instamanip_dynamic_p16_corrected_v3_score_audit_v1",
+    "score_manifest_sha256": "e747069f50f71718fd4f778fcc5a88d6b57c05f8a3865f69f10878034a7e06ad",
+    "status": "SCORING_AUDIT_PASS",
+    "task_count": 13
+  },
+  "schema": "instamanip_fairness_visual_audit_v1",
+  "scope": {
+    "p": 16,
+    "predictions": 221,
+    "queries_per_task": 17,
+    "tasks": 13
+  },
+  "task_verdicts": {
+    "colorization": {
+      "lower_is_better": true,
+      "native_metric": "lpips",
+      "official_score": 0.5504440121790942,
+      "reason": "Outputs contain color, but often change geometry and detail. LPIPS/CIEDE2000 penalties reflect visible errors.",
+      "secondary": {
+        "ciede2000": 30.1,
+        "psnr": 8.45,
+        "ssim": 0.197
+      },
+      "verdict": "keep"
+    },
+    "deblurring": {
+      "lower_is_better": true,
+      "native_metric": "lpips",
+      "official_score": 0.4843625934684978,
+      "reason": "Some outputs recover structure, while others hallucinate or restyle it. Faithful reconstruction metrics are appropriate.",
+      "secondary": {
+        "psnr": 10.12,
+        "ssim": 0.353
+      },
+      "verdict": "keep"
+    },
+    "denoising": {
+      "lower_is_better": true,
+      "native_metric": "lpips",
+      "official_score": 0.6463024546118343,
+      "reason": "Predictions are valid denoised images and beat the copy control, with inconsistent detail preservation.",
+      "secondary": {
+        "psnr": 16.74,
+        "ssim": 0.492
+      },
+      "verdict": "keep"
+    },
+    "edge_detection": {
+      "lower_is_better": false,
+      "native_metric": "ois_f",
+      "official_score": 0.36245886738523264,
+      "reason": "Luminance threshold sweeping already accommodates grayscale and stylized edge intensity.",
+      "secondary": {
+        "ois_precision": 0.333,
+        "ois_recall": 0.453
+      },
+      "verdict": "keep"
+    },
+    "face_landmarks": {
+      "lower_is_better": true,
+      "native_metric": "nme",
+      "official_score": 0.32732222360265784,
+      "reason": "The decoder is generous: it uses the episode colors, identity-free matching, and caps candidates to one per GT point. Textured photo remnants create many false candidates.",
+      "secondary": {
+        "coverage": 0.559,
+        "gt_points_mean": 66.5,
+        "matched_nme": 0.195,
+        "raw_predicted_points_mean": 935
+      },
+      "verdict": "keep"
+    },
+    "human_pose_2d": {
+      "lower_is_better": false,
+      "native_metric": "pck_torso_0.2",
+      "official_score": 0.15980392156862747,
+      "reason": "The same generous keypoint decoder is used. Low PCK comes from misplaced/extra marks, not missing files.",
+      "secondary": {
+        "coverage": 0.451,
+        "gt_points_mean": 12.1,
+        "raw_predicted_points_mean": 397
+      },
+      "verdict": "keep"
+    },
+    "inpainting": {
+      "lower_is_better": true,
+      "native_metric": "lpips",
+      "official_score": 0.18570352214224198,
+      "reason": "Only the generated hole is scored after restoring known pixels outside the mask, preventing outside-image corruption from dominating.",
+      "secondary": {
+        "composited_lpips": 0.1857,
+        "hole_psnr": 6.77,
+        "outside_leak": 0.35,
+        "uncomposited_lpips": 0.577
+      },
+      "verdict": "keep"
+    },
+    "instance_segmentation": {
+      "lower_is_better": false,
+      "native_metric": "pq",
+      "official_score": 0.04270176506507659,
+      "reason": "Target-independent color clustering and label matching already ignore arbitrary output colors. The predictions visibly over-segment.",
+      "secondary": {
+        "gt_segments_mean": 22.5,
+        "miou": 0.228,
+        "predicted_segments_mean": 58.6
+      },
+      "verdict": "keep"
+    },
+    "relative_depth": {
+      "lower_is_better": false,
+      "native_metric": "delta1",
+      "official_score": 0.445447595894412,
+      "reason": "Standard per-image MiDaS scale-and-shift fitting is already applied. A fixed global polarity flip reduced delta1 from 0.4454 to 0.4357.",
+      "secondary": {
+        "abs_rel": 0.284,
+        "coverage": 0.984,
+        "delta2": 0.8147,
+        "global_invert_delta1": 0.435666,
+        "global_invert_zero_scale_cases": 11,
+        "zero_scale_cases": 4
+      },
+      "verdict": "keep"
+    },
+    "saliency_detection": {
+      "lower_is_better": false,
+      "native_metric": "max_fbeta",
+      "official_score": 0.5278068285409827,
+      "reason": "Max-F optimizes the luminance threshold, accommodating mask intensity and grayscale convention.",
+      "secondary": {
+        "mae": 0.454,
+        "s_measure": 0.4
+      },
+      "verdict": "keep"
+    },
+    "semantic_segmentation": {
+      "lower_is_better": false,
+      "native_metric": "miou",
+      "official_score": 0.28462195887803926,
+      "reason": "Target-independent clustering plus optimal label matching is lenient to palette drift; errors are spatial/over-segmentation.",
+      "secondary": {
+        "gt_segments_mean": 7.5,
+        "pixel_accuracy": 0.347,
+        "predicted_segments_mean": 48.7
+      },
+      "verdict": "keep"
+    },
+    "super_resolution": {
+      "lower_is_better": true,
+      "native_metric": "lpips",
+      "official_score": 0.6007468595224268,
+      "reason": "Outputs visibly hallucinate/restyle details; faithful LPIPS/PSNR scoring is appropriate.",
+      "secondary": {
+        "psnr": 8.07,
+        "psnr_y": 9.79,
+        "ssim_y": 0.149
+      },
+      "verdict": "keep"
+    },
+    "surface_normals": {
+      "lower_is_better": true,
+      "native_metric": "mean_deg",
+      "official_score": 84.67286110860272,
+      "reason": "A query-answer-fitted global axis rotation improves pooled mean angle from 83.13 to 76.88 degrees, still poor. Because it uses validation answers and the prompt asks for the demonstrated convention, it must not replace the baseline score.",
+      "secondary": {
+        "best_rotation_perm_0based": [
+          2,
+          0,
+          1
+        ],
+        "best_rotation_sign": [
+          -1,
+          1,
+          -1
+        ],
+        "best_validation_fitted_global_rotation_pooled_mean_deg": 76.8839,
+        "official_mean_per_query_deg": 84.6729,
+        "pooled_mean_deg": 83.1337,
+        "pooled_within_11_25": 0.00534
+      },
+      "verdict": "keep_with_diagnostic_note"
+    }
+  }
+}

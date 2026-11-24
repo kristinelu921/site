@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VisualCloze test results across 15 tasks and fully rank-colored Bench v2 validation results across 13 tasks.">
+    <meta name="color-scheme" content="light">
+    <title>VisualCloze · evaluation results</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1320'/%3E%3Crect x='12' y='12' width='17' height='17' rx='3' fill='%2355d6be'/%3E%3Crect x='35' y='12' width='17' height='17' rx='3' fill='%23f26b38'/%3E%3Crect x='12' y='35' width='17' height='17' rx='3' fill='%23f4f7fa'/%3E%3Cpath d='M39 43h9M43.5 38.5v9' stroke='%2355d6be' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css?v=57">
+    <script src="app.js" defer></script>
+    <script src="paper-table.js" defer></script>
+    <script src="compare.js" defer></script>
+    <script src="all-scores.js" defer></script>
+    <script src="charts.js" defer></script>
+    <script src="bench-v2-partial.js?v=67" defer></script>
+    <script src="bench-v2-examples.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#results">Skip to results</a>
+
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="VisualCloze evaluation home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>VisualCloze <b>/ evaluations</b></span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#models">Models</a>
+        <a href="bench-v2-recovery/">Recovery audit · Oct 30</a>
+        <a href="#bench-v2-live">Validation ledger</a>
+        <a href="10-12-validations/">Latest validation gallery</a>
+        <a href="bench-v2-test/">Test evaluation results</a>
+        <a href="demos/">12-model demo gallery</a>
+        <a href="qual-demos/">Bench v2 qualitative demos</a>
+        <a href="p16-comparison/">Three-model P=16</a>
+        <a href="visualcloze_v2_p2.html">visualcloze_v2_p2</a>
+        <a href="#bench-v2">bench_v2</a>
+        <a href="#bench-v2-examples">Examples</a>
+        <a href="vict/">VICT</a>
+        <a href="#paper-table">Paper table</a>
+        <a href="#comparison">Exact matrix</a>
+        <a href="#restoration-lpips">LPIPS check</a>
+        <a href="#p2-vs-p4">P=2 vs P=4</a>
+        <a href="#graphs">Graphs</a>
+        <a href="#all-scores">All scores</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#test">Test</a>
+        <a href="#validation">Validation</a>
+        <a href="#method">Method</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="overview" id="test" aria-labelledby="page-title">
+        <div class="overview-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Test evaluation complete</p>
+          <h1 id="page-title">One model. Fifteen visual tasks.</h1>
+          <p class="lede">Open-weight VisualCloze evaluated on every record in the current supervision-v5 test pack, with matched real, scrambled, grey, and oracle conditions.</p>
+        </div>
+        <dl class="run-facts" aria-label="Evaluation summary">
+          <div><dt>Tasks</dt><dd>15</dd></div>
+          <div><dt>Scored episodes</dt><dd>3,840</dd></div>
+          <div><dt>Predictions</dt><dd>7,680</dd></div>
+          <div><dt>Integrity checks</dt><dd>11,520</dd></div>
+        </dl>
+      </section>
+
+      <aside class="caution" aria-label="Bench v2 recovery update">
+        <strong>Bench v2 recovery audit · October 30</strong>
+        <p>The expanded review covers all 11 model families and 21 scored recipes, including VICT, every published demonstration count, and required evaluation settings. <a href="bench-v2-review/">Review all models, 273 categories and 4,641 query scores →</a> <a href="bench-v2-recovery/">Explore measured recoveries and paired examples →</a> The published comparison remains preserved.</p>
+      </aside>
+
+      <section class="model-index" id="models" aria-labelledby="models-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">SCORED MODELS</p>
+            <h2 id="models-title">Twelve scored validation recipes</h2>
+          </div>
+          <p>Open a model for its results, protocol, and provenance. Twelve aligned validation recipes are scored on the shared 221-query pack.</p>
+        </div>
+        <div class="model-card-grid">
+          <a class="model-card featured" href="#test"><span>Native baseline</span><strong>VisualCloze</strong><small>Test + validation on this page</small></a>
+          <a class="model-card" href="lvm/"><span>Native P=2</span><strong>LVM</strong><small>7B visual-token model</small></a>
+          <a class="model-card" href="painter/#bench-v2-validation"><span>bench_v2 native P=1</span><strong>Painter</strong><small>Corrected validation scored · gate PASS</small></a>
+          <a class="model-card" href="genlv/"><span>bench_v2 native P=1</span><strong>GenLV</strong><small>Corrected validation scored · legacy study retained</small></a>
+          <a class="model-card" href="10-12-validations/#lavin-dit"><span>bench_v2 native P=4</span><strong>LaVin-DiT</strong><small>Corrected validation scored · 221/221</small></a>
+          <a class="model-card" href="10-12-validations/#prompt-diffusion"><span>bench_v2 native P=1</span><strong>PromptDiffusion</strong><small>Corrected validation scored · 221/221</small></a>
+          <a class="model-card" href="10-12-validations/#improv"><span>bench_v2 native P=1</span><strong>IMProv</strong><small>Corrected validation scored · 221/221</small></a>
+          <a class="model-card" href="10-12-validations/#relation-adapter"><span>bench_v2 native P=1</span><strong>RelationAdapter</strong><small>Corrected validation scored · 221/221</small></a>
+          <a class="model-card" href="10-12-validations/#instamanip"><span>bench_v2 native P=2</span><strong>InstaManip</strong><small>Task instructions · 221/221 scored</small></a>
+          <a class="model-card" href="p16-comparison/"><span>matched bench_v2 P=16</span><strong>Three-model comparison</strong><small>VisualCloze · LaVin-DiT · InstaManip</small></a>
+          <a class="model-card" href="10-12-validations/#validation"><span>bench_v2 native P=1</span><strong>Analogist</strong><small>Corrected validation scored · eight-candidate mean</small></a>
+          <a class="model-card" href="vict/"><span>bench_v2 native P=1</span><strong>VICT</strong><small>Corrected validation scored · 221/221</small></a>
+        </div>
+      </section>
+
+      <section class="live-runs-section" id="bench-v2-live" aria-labelledby="bench-v2-live-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">BENCH_V2 / VALIDATION LEDGER</p>
+            <h2 id="bench-v2-live-title">VICT joins the completed validation ledger</h2>
+          </div>
+          <p>Status updated <time datetime="2026-10-21">Oct 21, 2026</time>. VICT is now merged with every previously completed validation: twelve aligned recipes over the same 221 queries. Eleven artifacts retain full precision; Ours retains its reported precision. VICT uses the official no-augmentation data setup on a qualified TPU numerical port.</p>
+        </div>
+
+        <div class="live-run-grid">
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>IMProv</h3>
+              </div>
+              <span class="protocol-chip">Native P=1 · visual-only</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="IMProv validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Model/copy pairs</dt><dd>442 / 442</dd></div>
+              <div><dt>Corrected-v3 receipt</dt><dd>Authoritative</dd></div>
+              <div><dt>Inference recipe</dt><dd>1-step argmax</dd></div>
+            </dl>
+            <p class="live-run-note">The official IMProv weights use one frozen same-source demonstration and an empty text prompt. <a href="10-12-validations/#improv">Open all 13 scores and q0 examples →</a></p>
+            <p class="live-run-plan">Plan <code title="d7b93c10ad7b2db96fbdb6e46df82fc61cacff3f410d5c6de4f7b7ca0b4e9e5c">d7b93c10ad7b…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>LaVin-DiT</h3>
+              </div>
+              <span class="protocol-chip">Released default P=4</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="LaVin-DiT validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Model/copy pairs</dt><dd>442 / 442</dd></div>
+              <div><dt>Corrected-v3 score receipt</dt><dd>PASS</dd></div>
+              <div><dt>Inference recipe</dt><dd>20 Euler steps · CFG 1.5</dd></div>
+            </dl>
+            <p class="live-run-note protocol-boundary"><strong>Backend boundary:</strong> the released-default P=4 arm was completed through an authenticated same-plan recovery on v5litepod-4. Official CUDA numerical parity has not been established. <a href="10-12-validations/#lavin-dit">Open all 13 task scores →</a></p>
+            <p class="live-run-plan">Plan <code title="5f936fa67b747ae550dab2fdca1be771533f98b926a023fc22294ae219ae69f0">5f936fa67b74…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>InstaManip</h3>
+              </div>
+              <span class="protocol-chip">P=2 · task instructions</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="InstaManip validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Model/copy pairs</dt><dd>442 / 442</dd></div>
+              <div><dt>Validation gate</dt><dd>PASS · 4 replicas</dd></div>
+              <div><dt>Test phase</dt><dd>Not launched</dd></div>
+            </dl>
+            <p class="live-run-note protocol-boundary"><strong>Backend boundary:</strong> the qualified PyTorch/XLA v5litepod-16 port is reported at full stored precision; official CUDA numerical parity is not claimed. <a href="#bench-v2">View all 13 task scores →</a></p>
+            <p class="live-run-plan">Plan <code title="7b993fc10eb00afc6b4c69dc80b6e252897d19e0a7543b0e175538b032547ea9">7b993fc10eb00…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>RelationAdapter</h3>
+              </div>
+              <span class="protocol-chip">Native P=1 · FLUX</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="RelationAdapter validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families</dt><dd>13 / 13</dd></div>
+              <div><dt>Determinism gate</dt><dd>PASS · two smoke runs</dd></div>
+              <div><dt>Corrected-v3 score receipt</dt><dd>PASS</dd></div>
+              <div><dt>Backend</dt><dd>TPU v5p-16</dd></div>
+            </dl>
+            <p class="live-run-note protocol-boundary"><strong>Backend boundary:</strong> the qualified PyTorch/XLA v5p-16 port beats copy input on 7 of 13 task primaries; official CUDA numerical parity has not been established. <a href="10-12-validations/#relation-adapter">Open scores and all 13 q0 episodes →</a></p>
+            <p class="live-run-plan">Plan <code title="e1ca22635f2beb7678c64c7a402eca2ff8dd815042263ad4c8d473f9e5d37812">e1ca22635f2b…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>PromptDiffusion</h3>
+              </div>
+              <span class="protocol-chip">Native P=1 · diffusion</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="PromptDiffusion validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Model/copy pairs</dt><dd>442 / 442</dd></div>
+              <div><dt>Corrected-v3 score receipt</dt><dd>PASS</dd></div>
+              <div><dt>Inference recipe</dt><dd>50 steps · CFG 7.5</dd></div>
+            </dl>
+            <p class="live-run-note">The native P=1 checkpoint is now included at full stored precision, with 13 hash-verified q0 examples. <a href="10-12-validations/#prompt-diffusion">Open scores and examples →</a></p>
+            <p class="live-run-plan">Plan <code title="73a8ecdd4dbaff04c7e0836c5da5503dfb1af5817798315145f92376cdb718ff">73a8ecdd4dba…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>GenLV-101 Huge</h3>
+              </div>
+              <span class="protocol-chip">Native P=1</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="GenLV validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Phase</dt><dd>Corrected-v3 validation</dd></div>
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Score receipt</dt><dd>PASS</dd></div>
+              <div><dt>Test phase</dt><dd>Not launched</dd></div>
+            </dl>
+            <p class="live-run-note">The phase gate passed with 221 episodes and 442 scored model/copy pairs. <a href="genlv/#bench-v2-validation">Open all 13 task scores and pooled edge readouts →</a></p>
+            <p class="live-run-plan">Plan <code title="f5110d7f425dc6e9a1c339f8ed780245c325e5199f099c1dabcc769a3da52e73">f5110d7f425d…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored</span>
+                <h3>Painter</h3>
+              </div>
+              <span class="protocol-chip">Native P=1</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="Painter validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Phase</dt><dd>Corrected-v3 validation</dd></div>
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Score receipt</dt><dd>PASS</dd></div>
+              <div><dt>Test phase</dt><dd>0 / 17,511</dd></div>
+            </dl>
+            <p class="live-run-note">The phase gate passed with 221 episodes and 442 scored model/copy pairs. Spot preemption occurred before test inference. <a href="painter/#bench-v2-validation">Open all 13 task scores and pooled edge readouts →</a></p>
+            <p class="live-run-plan">Plan <code title="3a2ad324c375b72f641c9359a3dc62467f2cb668ee79fb67b47f59addf6a7bed">3a2ad324c375…</code></p>
+          </article>
+
+          <article class="live-run-card legacy-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored · diagnostic</span>
+                <h3>LVM-7B</h3>
+              </div>
+              <span class="protocol-chip">Native P=7</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="LVM diagnostic validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Validation episodes</dt><dd>221</dd></div>
+              <div><dt>Prompt pairs</dt><dd>P=7</dd></div>
+              <div><dt>Receipt</dt><dd>Diagnostic snapshot</dd></div>
+            </dl>
+            <p class="live-run-note protocol-boundary"><strong>Protocol boundary:</strong> all 221 validation episodes have corrected scores, but this combined-plan snapshot is diagnostic only and is not a formal phase-gate result.</p>
+            <p class="live-run-plan">Plan <code title="778ecb37cdb3ca8893a29b961e3471b2f2292406a34e1b47b7e9840db23bca91">778ecb37cdb3…</code></p>
+          </article>
+
+          <article class="live-run-card validation-run">
+            <header class="live-run-header">
+              <div>
+                <span class="live-run-state"><i aria-hidden="true"></i> Validation scored · reported</span>
+                <h3>Ours (TA)</h3>
+              </div>
+              <span class="protocol-chip">P=16 · TA@f3</span>
+            </header>
+            <div class="live-run-progress-copy">
+              <strong>221 / 221</strong>
+              <span>validation queries scored · 100%</span>
+            </div>
+            <progress value="221" max="221" aria-label="Ours validation scoring complete">221 of 221</progress>
+            <dl class="live-run-facts">
+              <div><dt>Task families scored</dt><dd>13 / 13</dd></div>
+              <div><dt>Prompt pairs</dt><dd>P=16</dd></div>
+              <div><dt>Input</dt><dd>256 px</dd></div>
+              <div><dt>Adaptation</dt><dd>200 steps / query</dd></div>
+            </dl>
+            <p class="live-run-note protocol-boundary"><strong>Precision boundary:</strong> scores are transcribed at the two-decimal precision displayed in the supplied source report. Its original ranking used unrounded source values.</p>
+            <p class="live-run-plan">Plan <code title="3449c9f4e495be25b94aa765092424a2417e201a96be969298db2c7e23707b37">3449c9f4e495…</code></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bench-v2-section" id="bench-v2" aria-labelledby="bench-v2-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">BENCH_V2 / SHARED VALIDATION</p>
+            <h2 id="bench-v2-title">One validation set, twelve scored recipes</h2>
+          </div>
+          <p>VisualCloze, Painter, GenLV, LaVin-DiT, PromptDiffusion, RelationAdapter, InstaManip, IMProv, VICT, Analogist, LVM, and Ours are aligned on the same 221-query validation pack.</p>
+        </div>
+
+        <aside class="bench-v2-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <div><strong>Shared validation complete</strong><p>All twelve recipes cover all 13 tasks and all 17 queries per task. Eleven stored artifacts retain full precision; Ours retains the two-decimal precision of the supplied source report.</p></div>
+        </aside>
+
+        <dl class="run-facts bench-v2-facts" id="bench-v2-validation-facts" aria-label="bench_v2 validation comparison">
+          <div><dt>Models</dt><dd>Loading…</dd></div>
+          <div><dt>Tasks</dt><dd>Loading…</dd></div>
+          <div><dt>Queries / task</dt><dd>17</dd></div>
+          <div><dt>Episodes / model</dt><dd>221</dd></div>
+        </dl>
+
+        <div class="bench-v2-alignment-grid" aria-label="Alignment checks">
+          <article>
+            <p class="chart-kicker">SAME VALIDATION RECORDS</p>
+            <h3>221 queries, aligned task by task</h3>
+            <p>Every row covers the same 17 validation queries from pack <code>8e139f91…</code>. Eleven model columns are exact scored artifacts; Ours uses the matching reported metric family and disclosed source precision.</p>
+          </article>
+          <article>
+            <p class="chart-kicker">FROZEN MODEL RECIPES</p>
+            <h3>Two native P=2 models · seven native P=1 models · P=4 LaVin-DiT · P=7 LVM · P=16 Ours</h3>
+            <p>The comparison preserves each model’s evaluated context and frozen same-source episode draw. Ours uses the source-report TA recipe: 256 px and 200 adaptation steps per query.</p>
+          </article>
+          <article>
+            <p class="chart-kicker">EXACT EPISODES</p>
+            <h3>The gallery switches the whole prompt</h3>
+            <p>Changing models below swaps the actual demonstration pair set, prediction, and convention-coded target—not just the output image. The displayed q0 query is fixed before scoring for every task.</p>
+          </article>
+        </div>
+
+        <div class="table-shell bench-v2-table-shell bench-v2-validation-shell">
+          <table class="bench-v2-table bench-v2-validation-table">
+            <thead>
+              <tr><th scope="col">Validation task / metric</th><th scope="col">VisualCloze · native P=2</th><th scope="col">Painter · native P=1</th><th scope="col">GenLV-101 Huge · native P=1</th><th scope="col">LaVin-DiT · native P=4</th><th scope="col">PromptDiffusion · native P=1</th><th scope="col">RelationAdapter · native P=1</th><th scope="col">InstaManip · native P=2</th><th scope="col">IMProv · native P=1</th><th scope="col">LVM 7B · native P=7</th><th scope="col">Ours (TA) · P=16</th><th scope="col">Best score</th></tr>
+            </thead>
+            <tbody id="bench-v2-validation-body"><tr><td colspan="14" class="loading-cell">Loading shared validation scores…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Values are mean per-query primary scores over the same 17 validation queries per task; edge uses mean per-query OIS F. A highlighted cell marks the best displayed score for that task only—metrics are not averaged across tasks. Eleven model artifacts retain full stored precision. Ours is transcribed at the two-decimal precision shown in the supplied source report. LVM remains diagnostic rather than a formal phase gate; VICT, LaVin-DiT, RelationAdapter, and InstaManip retain their TPU-port CUDA-parity qualifications. <a href="data/bench-v2-validation-models.json">Open exact comparison JSON ↗</a></p>
+
+        <div class="subsection-heading bench-v2-test-heading">
+          <div>
+            <p class="chart-kicker">VISUALCLOZE / COMPLETE TEST LEDGER</p>
+            <h3>All 26 test packs plus validation</h3>
+          </div>
+          <p>The full VisualCloze P=2 run remains below as a separate production ledger. GenLV test was not launched, so it is not implied or backfilled here.</p>
+        </div>
+
+        <dl class="run-facts bench-v2-facts" id="bench-v2-facts" aria-label="VisualCloze bench_v2 progress">
+          <div><dt>Scored packs</dt><dd>Loading…</dd></div>
+          <div><dt>Scored queries</dt><dd>Loading…</dd></div>
+          <div><dt>Generated queries</dt><dd>17,732</dd></div>
+          <div><dt>Prompt count</dt><dd>P=2</dd></div>
+        </dl>
+
+        <div class="table-shell bench-v2-table-shell">
+          <table class="bench-v2-table">
+            <thead>
+              <tr><th scope="col">Task / dataset</th><th scope="col">bench_v2 corrected P=2</th><th scope="col">Earlier site P=2 reference</th><th scope="col">Comparison boundary</th></tr>
+            </thead>
+            <tbody id="bench-v2-results-body"><tr><td colspan="4" class="loading-cell">Loading completed bench_v2 packs…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Pack means use each task’s corrected primary metric and direction. Earlier-site values come from the existing 15-task supervision-v5 evaluation. They are shown only to expose scale and continuity; different datasets, GT bindings, normalizers, or metric definitions are never highlighted as wins. Edge rows show mean per-query OIS F. <a href="data/bench-v2-visualcloze-p2-complete.json" download>Download exact complete JSON ↓</a></p>
+
+        <section class="bench-v2-own-models" aria-labelledby="bench-v2-own-models-title">
+          <div class="subsection-heading">
+            <div>
+              <p class="chart-kicker">OUR MODELS / SITE REFERENCES</p>
+              <h3 id="bench-v2-own-models-title">LVM and JFlux results on the established site pack</h3>
+            </div>
+            <p>Task-aligned results from our archived supervision-v5 evaluations, plus the supplied paper-table “Ours” row. These give context beside the completed <code>bench_v2</code> tasks without pretending they were scored on the new full-dataset packs.</p>
+          </div>
+          <div class="table-shell bench-v2-our-models-shell">
+            <table class="bench-v2-our-models-table">
+              <thead>
+                <tr><th scope="col">Task / established-site metric</th><th scope="col">LVM · P=2</th><th scope="col">LVM · P=4</th><th scope="col">JFlux T3EZ · P=16</th><th scope="col">Paper table · “Ours”</th></tr>
+              </thead>
+              <tbody id="bench-v2-our-models-body"><tr><td colspan="5" class="loading-cell">Loading our model references…</td></tr></tbody>
+            </table>
+          </div>
+          <p class="table-footnote">LVM P=2 and P=4 use the 15 × 64 supervision-v5 test pack. JFlux T3EZ is the archived single-query-per-task q0 subset and is explicitly labeled as such. The paper-table “Ours” values retain their supplied precision. None of these columns is ranked against <code>bench_v2</code>, whose datasets and corrected scoring contracts differ. <a href="data/all-eval-scores.csv" download>Download exact site score ledger ↓</a></p>
+        </section>
+
+        <section class="bench-v2-examples" id="bench-v2-examples" aria-labelledby="bench-v2-examples-title">
+          <div class="subsection-heading">
+            <div>
+              <p class="chart-kicker">VALIDATION DEMOS / MODEL SWITCHER</p>
+              <h3 id="bench-v2-examples-title">Switch the full frozen episode between models</h3>
+            </div>
+            <p>The score table above includes Painter. This episode gallery currently preserves the four previously archived prompt views—VisualCloze, GenLV, LVM, and Ours—across three shared q0 tasks with no score-based selection.</p>
+          </div>
+          <div class="bench-v2-example-viewer">
+            <div class="bench-v2-example-model-bar">
+              <div>
+                <span class="sheet-kicker">MODEL</span>
+                <p id="bench-v2-example-model-detail">Released P=2 baseline · CFG 30 · 30 steps · seed 0</p>
+              </div>
+              <div class="bench-v2-example-models" id="bench-v2-example-models" role="tablist" aria-label="bench_v2 validation model"></div>
+            </div>
+            <div class="viewer-bar">
+              <div>
+                <span class="sheet-kicker" id="bench-v2-example-dataset">bench_v2 validation · shared q0 · VisualCloze</span>
+                <h3 id="bench-v2-example-task">Semantic segmentation</h3>
+              </div>
+              <div class="viewer-actions">
+                <button class="icon-button" id="bench-v2-example-previous" type="button" aria-label="Previous bench_v2 task">←</button>
+                <span class="sheet-count" id="bench-v2-example-count" aria-live="polite">1 / 3</span>
+                <button class="icon-button" id="bench-v2-example-next" type="button" aria-label="Next bench_v2 task">→</button>
+              </div>
+            </div>
+            <div class="bench-v2-example-stage" id="bench-v2-example-stage" aria-live="polite"></div>
+            <div class="bench-v2-example-tabs" id="bench-v2-example-tabs" role="tablist" aria-label="bench_v2 example tasks"></div>
+          </div>
+          <p class="table-footnote">Every displayed prompt pair was reconstructed from the model’s frozen validation episode and hash-checked against its saved inference journal. VisualCloze uses P=2, GenLV P=1, LVM P=7, and Ours P=16 with 200 TA steps per query. <a href="data/bench-v2-validation-model-examples.json">Open the exact model-switch manifest ↗</a></p>
+        </section>
+
+        <div class="provenance bench-v2-provenance">
+          <div><p class="provenance-label">Snapshot</p><p id="bench-v2-captured">Loading timestamp…</p><code id="bench-v2-provenance-packs">Loading pack manifests…</code></div>
+          <div><p class="provenance-label">Model revision</p><p>VisualClozePipeline-384</p><code id="bench-v2-model-revision">59c469d2772d…</code></div>
+          <div><p class="provenance-label">Corrected scorer release</p><p>PP2 / CSA seed 1 / AP FIRST</p><code id="bench-v2-release">bd08e05f1d0e…</code></div>
+        </div>
+
+        <aside class="caution bench-v2-caution">
+          <strong>Paper comparison boundary</strong>
+          <p>This run matches the released VisualCloze inference recipe, but it does not recreate the paper’s quantitative tables: the paper uses different task datasets and metrics. No paper number is copied into this table or treated as directly comparable.</p>
+        </aside>
+      </section>
+
+      <section class="comparison-section paper-table-section" id="paper-table" aria-labelledby="paper-table-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">PAPER TABLE / CORRECTED PRIMARY METRICS</p>
+            <h2 id="paper-table-title">Method × task score table</h2>
+          </div>
+          <p>The supplied table layout, rebuilt from the latest stored P=2 test scores. Restoration columns now use LPIPS—not the obsolete PSNR-like values.</p>
+        </div>
+        <p class="comparison-caption">15-task test pack · real condition · exact task-native scores</p>
+        <div class="table-shell paper-table-shell">
+          <table class="paper-score-table">
+            <thead id="paper-score-head"><tr><th>Method</th><th colspan="14">Loading corrected scores…</th></tr></thead>
+            <tbody id="paper-score-body"><tr><td colspan="15" class="loading-cell">Loading corrected scores…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="paper-table-legend" aria-label="Table highlighting legend">
+          <span><i class="paper-best-swatch" aria-hidden="true"></i>Best</span>
+          <span><i class="paper-second-swatch" aria-hidden="true"></i>Second best</span>
+        </div>
+        <p class="table-footnote">Highlights use the unrounded stored means and each metric’s direction (↑/↓). The seven evaluated-model rows come from the archived full-pack score artifacts. VICT shows only available cells; † marks an incomplete task and is excluded from highlighting. The supplied “Ours” row is retained from the reference table and was available only at its displayed precision. VICT’s instance-segmentation PQ is not relabeled as panoptic PQ. <a href="data/all-eval-scores.csv" download>Download exact score data</a>.</p>
+      </section>
+
+      <section class="comparison-section" id="comparison" aria-labelledby="comparison-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">ALL MODELS / EXACT SCORES</p>
+            <h2 id="comparison-title">Task × model score matrix</h2>
+          </div>
+          <p>Tasks are rows and evaluated models are columns. Every cell is the exact full-pack mean in that task’s native primary metric—without normalization, relative scoring, or a cross-task aggregate.</p>
+        </div>
+        <div class="comparison-controls" aria-label="Combined table controls">
+          <label class="sort-field">
+            <span>Evaluation split</span>
+            <select id="comparison-split">
+              <option value="test">15-task test · 960 records</option>
+              <option value="validation">Four-task validation · 128 records</option>
+            </select>
+          </label>
+          <fieldset class="condition-switch">
+            <legend>Condition</legend>
+            <button type="button" data-comparison-condition="real" aria-pressed="true">Real</button>
+            <button type="button" data-comparison-condition="scrambled" aria-pressed="false">Scrambled</button>
+            <button type="button" data-comparison-condition="grey" aria-pressed="false">Grey</button>
+            <button type="button" data-comparison-condition="oracle" aria-pressed="false">Oracle</button>
+          </fieldset>
+        </div>
+        <p class="comparison-caption" id="comparison-caption">15-task test · real condition</p>
+        <div class="table-shell comparison-table-shell">
+          <table class="comparison-table">
+            <thead id="comparison-head"><tr><th>Task / primary metric</th><th colspan="7">Loading models…</th></tr></thead>
+            <tbody id="comparison-body"><tr><td colspan="8" class="loading-cell">Loading combined scores…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Exact values are full-pack means. Primary metrics are displayed as δ₁, MAE (degrees), mIoU, PQ, OIS F-score, Max Fβ, PCK, NME, and LPIPS. Instance segmentation retains PQ. Arrows indicate direction. Scores are comparable only when the row uses the same displayed metric; otherwise each cell names its metric and no “Best” marker is assigned.</p>
+      </section>
+
+      <section class="prompt-count-section" id="restoration-lpips" aria-labelledby="restoration-lpips-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">CORRECTED RESTORATION METRIC / EXACT SCORES</p>
+            <h2 id="restoration-lpips-title">Clean LVM P=1 vs VisualCloze P=2</h2>
+          </div>
+          <p>The five image-restoration tasks are compared with the same perceptual metric: LPIPS, where lower is better.</p>
+        </div>
+        <p class="comparison-caption">Test · 64 queries per task · real condition · full stored precision</p>
+        <div class="table-shell prompt-count-table-shell">
+          <table class="prompt-count-table">
+            <thead>
+              <tr><th>Task / metric</th><th>VisualCloze · Native P=2</th><th>LVM · Native P=1</th></tr>
+            </thead>
+            <tbody id="restoration-lpips-body"><tr><td colspan="3" class="loading-cell">Loading corrected LPIPS scores…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">These are exact full-pack means from the archived LPIPS-Alex implementation, not converted PSNR values. The prompt counts differ, so this is a model-and-protocol comparison—not a controlled prompt-count ablation. <a href="data/visualcloze-p2-perceptual-scores.json">VisualCloze score artifact</a> · <a href="data/lvm-p1-real-scores.json">LVM score artifact</a> · <a href="scripts/lvm-p1/evaluation-scripts.zip" download>LVM P=1 scripts</a></p>
+      </section>
+
+      <section class="prompt-count-section" id="p2-vs-p4" aria-labelledby="prompt-count-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">PROMPT COUNT / EXACT SCORES</p>
+            <h2 id="prompt-count-title">VisualCloze and LVM: P=2 vs P=4</h2>
+          </div>
+          <p>Exact primary-metric means on the 15-task test pack under the real condition. Every row preserves its own metric and direction.</p>
+        </div>
+        <p class="comparison-caption">Test · 960 queries · real condition · full stored precision</p>
+        <div class="table-shell prompt-count-table-shell">
+          <table class="prompt-count-table">
+            <thead>
+              <tr><th>Task</th><th>VisualCloze · P=2</th><th>VisualCloze · P=4</th><th>LVM · P=2</th><th>LVM · P=4</th></tr>
+            </thead>
+            <tbody id="prompt-count-body"><tr><td colspan="5" class="loading-cell">Loading P=2 and P=4 scores…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Values are the complete decimal strings stored in the score artifacts—no display rounding, normalization, or cross-task averaging. Each cell names its metric and direction so unlike metrics are never presented as directly comparable. Hover a score for the equally unrounded 95% confidence interval. P=4 uses the project’s frozen P=4 episode seed <code>[42, task_seed, q, 4]</code>; it is not a prefix extension of the P=2 demonstrations.</p>
+      </section>
+
+      <section class="charts-section" id="graphs" aria-labelledby="graphs-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">VISUAL SUMMARY</p>
+            <h2 id="graphs-title">Prompt use across models</h2>
+          </div>
+          <p>Task counts and outcome matrices retain each task’s own primary metric and direction. They summarize comparisons without averaging incompatible depth, segmentation, landmark, and restoration units.</p>
+        </div>
+
+        <div class="chart-grid">
+          <article class="chart-card chart-card-wide">
+            <div class="chart-card-heading">
+              <div><p class="chart-kicker">P=2 · 15-task test</p><h3>Where real prompts beat controls</h3></div>
+              <span>Task wins / 15</span>
+            </div>
+            <div class="chart-stage" id="prompt-benefit-chart" aria-live="polite">Loading chart…</div>
+          </article>
+
+          <article class="chart-card chart-card-wide">
+            <div class="chart-card-heading">
+              <div><p class="chart-kicker">P=2 · REAL VS SCRAMBLED</p><h3>Which tasks use the true pairing?</h3></div>
+              <span>Metric-aware outcome</span>
+            </div>
+            <div class="chart-stage matrix-stage" id="task-outcome-matrix" aria-live="polite">Loading chart…</div>
+          </article>
+
+          <article class="chart-card chart-card-wide prompt-scaling-card">
+            <div class="chart-card-heading">
+              <div><p class="chart-kicker">PROMPT SCALING · TEST</p><h3>VisualCloze and LVM at P=1, P=2, and P=4</h3></div>
+              <span>P=2 normalized to 100</span>
+            </div>
+            <p class="chart-explainer" id="prompt-scaling-summary">Checking which prompt counts have completed scores…</p>
+            <div class="chart-stage" id="prompt-scaling-chart" aria-live="polite">Loading chart…</div>
+            <div class="scaling-notes">
+              <p><strong>How the index works.</strong> Every task is direction-adjusted and normalized to its own P=2 score. The plotted point is the median across 15 tasks; whiskers show the middle 50% of tasks.</p>
+              <p><strong>P=1 status.</strong> No completed P=1 score artifact exists for either VisualCloze or LVM, so P=1 is shown as missing—not estimated.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="all-scores-section" id="all-scores" aria-labelledby="all-scores-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">COMPLETE SCORE LEDGER</p>
+            <h2 id="all-scores-title">Every completed evaluation score</h2>
+          </div>
+          <p>One filterable ledger covering the full P=2 evaluations, completed P=4 runs, and the JFlux T3EZ test-time-training benchmark. Each row keeps its native metric and evaluation protocol.</p>
+        </div>
+        <aside class="score-boundary">
+          <strong>Comparison boundary</strong>
+          <p>Full-pack rows use all queries in their split. T3EZ rows are the completed q0-only, 15-task diagnostic and are labeled separately. P=1 mean adapters are retained as their own protocols—not treated as native multi-prompt inference.</p>
+        </aside>
+        <div class="all-score-controls" aria-label="All score table controls">
+          <label class="search-field"><span>Search</span><input id="all-score-search" type="search" placeholder="model, task, or metric" autocomplete="off"></label>
+          <label class="sort-field"><span>Model</span><select id="all-score-model"><option value="">All models</option></select></label>
+          <label class="sort-field"><span>Protocol</span><select id="all-score-protocol"><option value="">All protocols</option></select></label>
+          <label class="sort-field"><span>Split</span><select id="all-score-split"><option value="">All splits</option></select></label>
+          <label class="sort-field"><span>Condition</span><select id="all-score-condition"><option value="">All conditions</option></select></label>
+          <a class="download-link" href="data/all-eval-scores.csv" download>Download all CSV ↓</a>
+        </div>
+        <p class="all-score-summary" id="all-score-count">Loading complete score ledger…</p>
+        <div class="table-shell all-scores-shell">
+          <table class="all-scores-table">
+            <thead><tr><th>Model / protocol</th><th>Prompt handling</th><th>Split / scope</th><th>Task / metric</th><th>Condition</th><th>Score</th><th>95% CI</th><th>N</th><th>Code</th></tr></thead>
+            <tbody id="all-scores-body"><tr><td colspan="9" class="loading-cell">Loading all scores…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="table-footnote">There is intentionally no grand average across tasks: depth, segmentation, restoration, pose, and landmark rows use different metrics and directions. Filter by task or protocol before comparing values.</p>
+      </section>
+
+      <section class="script-library" id="scripts" aria-labelledby="scripts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">REPRODUCIBILITY / CODE</p>
+            <h2 id="scripts-title">Evaluation scripts</h2>
+          </div>
+          <p>Exact inference runners, pack scorers, and supporting audit code from each completed evaluation. Open an individual file or download its compact bundle.</p>
+        </div>
+        <div class="table-shell script-table-shell">
+          <table class="script-table">
+            <thead><tr><th>Model</th><th>Prompt handling</th><th>Inference runner</th><th>Scorer</th><th>Bundle</th></tr></thead>
+            <tbody>
+              <tr><td><a href="#test">VisualCloze</a></td><td>Native P=2</td><td><a href="scripts/visualcloze/eval_multi_task_checkpoint.py">Evaluator</a></td><td><a href="scripts/visualcloze/metrics_v3.py">Pack scorer</a></td><td><a href="scripts/visualcloze/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="lvm/">LVM</a></td><td>Native P=2</td><td><a href="scripts/lvm/lvm_tpu_eval.py">TPU runner</a></td><td><a href="scripts/lvm/score_outputs.py">Pack scorer</a></td><td><a href="scripts/lvm/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="painter/">Painter</a></td><td>P=1 ensemble</td><td><a href="scripts/painter/painter_xla_infer.py">TPU runner</a></td><td><a href="scripts/painter/score_outputs.py">Pack scorer</a></td><td><a href="scripts/painter/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="genlv/">GenLV</a></td><td>P=1 ensemble</td><td><a href="scripts/genlv/genlv_xla_infer.py">TPU runner</a></td><td><a href="scripts/genlv/score_outputs.py">Pack scorer</a></td><td><a href="scripts/genlv/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="prompt-diffusion/">Prompt Diffusion</a></td><td>P=1 ensemble</td><td><a href="scripts/prompt-diffusion/prompt_diffusion_xla_infer.py">TPU runner</a></td><td><a href="scripts/prompt-diffusion/score_outputs.py">Pack scorer</a></td><td><a href="scripts/prompt-diffusion/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="improv/">IMProv</a></td><td>P=1 ensemble</td><td><a href="scripts/improv/improv_xla_infer.py">TPU runner</a></td><td><a href="scripts/improv/score_outputs.py">Pack scorer</a></td><td><a href="scripts/improv/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="relation-adapter/">RelationAdapter</a></td><td>P=1 ensemble</td><td><a href="scripts/relation-adapter/relation_adapter_xla_infer.py">TPU runner</a></td><td><a href="scripts/relation-adapter/score_outputs.py">Pack scorer</a></td><td><a href="scripts/relation-adapter/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="vict/">VICT</a></td><td>Native P=1 · 60-step encoder TTT · no augmentation</td><td><a href="https://github.com/Jiahao000/VICT">Official source ↗</a></td><td><a href="vict/#reproducibility">Corrected-v3 contract</a></td><td><a href="data/vict-bench-v2-validation-scores.json" download>Exact score summary</a></td></tr>
+              <tr><td><a href="#all-scores">VisualCloze P=4</a></td><td>Native P=4</td><td><a href="scripts/visualcloze-p4/visualcloze_v5_eval.py">TPU runner</a></td><td><a href="scripts/visualcloze-p4/score_completed_p4.sh">Pack scorer</a></td><td><a href="scripts/visualcloze-p4/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="#all-scores">LVM P=4</a></td><td>Native P=4</td><td><a href="scripts/lvm-p4/lvm_tpu_eval.py">TPU runner</a></td><td><a href="scripts/lvm-p4/score_outputs.py">Pack scorer</a></td><td><a href="scripts/lvm-p4/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="#all-scores">Painter P=4</a></td><td>P=1 ×4 mean</td><td><a href="scripts/painter-p4/painter_xla_infer.py">TPU runner</a></td><td><a href="scripts/painter-p4/score_outputs.py">Pack scorer</a></td><td><a href="scripts/painter-p4/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+              <tr><td><a href="#all-scores">JFlux T3EZ</a></td><td>TTT · native P=16</td><td><a href="scripts/jflux-ttt/start_attached.sh">Launch runner</a></td><td><a href="scripts/jflux-ttt/README.md">Run contract</a></td><td><a href="scripts/jflux-ttt/evaluation-scripts.zip" download>Download ZIP</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-footnote">These are archived run artifacts, not simplified examples. Environment-specific paths and immutable model revisions are intentionally preserved. The common offline restoration correction is archived as <a href="scripts/shared/rescore_saved_outputs_lpips.py">the exact LPIPS rescorer</a>.</p>
+      </section>
+
+      <section class="sample-workbench" id="samples" aria-labelledby="samples-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">01 / TEST OUTPUTS</p>
+            <h2 id="samples-title">Representative predictions</h2>
+          </div>
+          <p>One median-difficulty query per task. Compare the input and target with all four evaluation arms.</p>
+        </div>
+
+        <div class="viewer">
+          <div class="viewer-bar">
+            <div>
+              <span class="sheet-kicker" id="sheet-kicker">Sheet 01 · 3 tasks</span>
+              <h3 id="sheet-title">Geometry &amp; parsing</h3>
+            </div>
+            <div class="viewer-actions">
+              <button class="icon-button" id="previous-sheet" type="button" aria-label="Previous sample sheet">←</button>
+              <span class="sheet-count" id="sheet-count" aria-live="polite">1 / 5</span>
+              <button class="icon-button" id="next-sheet" type="button" aria-label="Next sample sheet">→</button>
+            </div>
+          </div>
+          <button class="image-frame" id="open-image" type="button" aria-label="Open sample sheet at full size">
+            <img id="sample-image" src="assets/samples-01.png" alt="Sample outputs for Relative Depth, Surface Normals, and Semantic Segmentation">
+            <span class="zoom-hint">Open full size ↗</span>
+          </button>
+          <div class="sheet-tabs" id="sheet-tabs" role="tablist" aria-label="Sample sheets"></div>
+        </div>
+      </section>
+
+      <section class="results-section" id="results" aria-labelledby="results-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">02 / TEST SCORES</p>
+            <h2 id="results-title">Task-level results</h2>
+          </div>
+          <p>Primary metric per task. Arrows indicate whether higher or lower is better; positive Δ means the real condition beat scrambled.</p>
+        </div>
+
+        <div class="finding-grid" aria-label="Headline findings">
+          <article>
+            <span class="finding-value">12 / 15</span>
+            <p>Real beats copying the query input.</p>
+          </article>
+          <article>
+            <span class="finding-value">9 / 15</span>
+            <p>Real is directionally better than corrected scrambled.</p>
+          </article>
+          <article class="finding-note">
+            <span class="finding-value">Control note</span>
+            <p>Palette-task scrambled outputs were re-coded before this comparison.</p>
+          </article>
+        </div>
+
+        <div class="table-toolbar">
+          <label class="search-field">
+            <span>Find a task</span>
+            <input id="task-search" type="search" placeholder="e.g. depth or segmentation" autocomplete="off">
+          </label>
+          <label class="sort-field">
+            <span>Order by</span>
+            <select id="sort-results">
+              <option value="task">Task</option>
+              <option value="gap-desc">Real advantage</option>
+              <option value="real-desc">Real score, high to low</option>
+            </select>
+          </label>
+          <a class="download-link" href="data/results.csv" download>Download CSV ↓</a>
+        </div>
+
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Task / primary metric</th>
+                <th scope="col">Real</th>
+                <th scope="col">Scrambled</th>
+                <th scope="col">Grey</th>
+                <th scope="col">Oracle</th>
+                <th scope="col">Copy input</th>
+                <th scope="col">Real Δ</th>
+              </tr>
+            </thead>
+            <tbody id="results-body">
+              <tr><td colspan="7" class="loading-cell">Loading results…</td></tr>
+            </tbody>
+          </table>
+          <p class="empty-state" id="empty-state" hidden>No tasks match that search.</p>
+        </div>
+        <p class="table-footnote">Means over 64 queries unless noted. Hover or focus a score to see its 95% bootstrap confidence interval. Face-landmark valid counts vary by arm.</p>
+      </section>
+
+      <section class="validation-section" id="validation" aria-labelledby="validation-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">03 / VALIDATION</p>
+            <h2 id="validation-title">Four-task validation</h2>
+          </div>
+          <p>VisualCloze evaluated on the four-task validation split. Its native supervision and task metrics are preserved, so these scores are not pooled with the 15-task test table above.</p>
+        </div>
+
+        <dl class="run-facts validation-facts" aria-label="Validation evaluation summary">
+          <div><dt>Tasks</dt><dd>4</dd></div>
+          <div><dt>Queries per task</dt><dd>32</dd></div>
+          <div><dt>Scored episodes</dt><dd>512</dd></div>
+          <div><dt>Conditions</dt><dd>4</dd></div>
+        </dl>
+
+        <div class="viewer validation-viewer">
+          <div class="viewer-bar">
+            <div>
+              <span class="sheet-kicker">Validation · representative queries</span>
+              <h3>Depth, normals, segmentation &amp; panoptic</h3>
+            </div>
+            <span class="sheet-count">1 / 1</span>
+          </div>
+          <button class="image-frame" id="open-validation-image" type="button" aria-label="Open validation sample sheet at full size">
+            <img src="assets/lineage-a-samples.png" alt="Representative VisualCloze outputs for depth, normals, binary segmentation, and panoptic tasks">
+            <span class="zoom-hint">Open full size ↗</span>
+          </button>
+        </div>
+
+        <div class="finding-grid validation-findings" aria-label="Validation headline findings">
+          <article>
+            <span class="finding-value">3 / 4</span>
+            <p>Real beats copying the query input.</p>
+          </article>
+          <article>
+            <span class="finding-value">3 / 4</span>
+            <p>Real is directionally better than scrambled.</p>
+          </article>
+          <article class="finding-note validation-oracle">
+            <span class="finding-value">4 / 4</span>
+            <p>Oracle is the best arm on every task.</p>
+          </article>
+        </div>
+
+        <div class="validation-table-heading">
+          <div>
+            <h3>Native primary metrics</h3>
+            <p>Arrows show whether lower or higher values are better. Confidence intervals are 20,000-sample bootstrap intervals.</p>
+          </div>
+          <a class="download-link" href="data/lineage-a-results.csv" download="visualcloze-validation-results.csv">Download CSV ↓</a>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Task / primary metric</th>
+                <th scope="col">Real</th>
+                <th scope="col">Scrambled</th>
+                <th scope="col">Grey</th>
+                <th scope="col">Oracle</th>
+                <th scope="col">Copy input</th>
+                <th scope="col">Real Δ</th>
+              </tr>
+            </thead>
+            <tbody id="validation-results-body">
+              <tr><td colspan="7" class="loading-cell">Loading validation results…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Means over 32 queries per arm. Twelve of 512 outputs were all-black generations and remain included: depth real 1, depth oracle 3; segmentation real 2, scrambled 3, oracle 3.</p>
+
+        <div class="provenance validation-provenance">
+          <div>
+            <p class="provenance-label">Evaluation pack</p>
+            <p>Four-task validation split</p>
+            <code>9e77a92f82d0…</code>
+          </div>
+          <div>
+            <p class="provenance-label">Supervision</p>
+            <p>Native validation supervision</p>
+            <code>native masks preserved</code>
+          </div>
+          <div>
+            <p class="provenance-label">Primary metrics</p>
+            <p>MAE · mean angle · F1 · PQ</p>
+            <code>strict native scorer</code>
+          </div>
+        </div>
+
+        <aside class="caution validation-caution">
+          <strong>Validation scope</strong>
+          <p>This four-task validation split is separate from the 15-task test pack above. It uses the same VisualCloze weights and four conditions, but a different supervision contract.</p>
+        </aside>
+      </section>
+
+      <section class="method-section" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">04 / METHOD</p>
+            <h2 id="method-title">How to read the comparison</h2>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <article>
+            <span class="condition-tag real">Real</span>
+            <h3>True demonstrations</h3>
+            <p>The query is paired with demonstrations drawn from the same source and coded together for that episode.</p>
+          </article>
+          <article>
+            <span class="condition-tag scrambled">Scrambled</span>
+            <h3>Broken pairing</h3>
+            <p>Demonstration relationships are disrupted. Palette outputs are re-coded under the corrected E26 control.</p>
+          </article>
+          <article>
+            <span class="condition-tag grey">Grey</span>
+            <h3>Content removed</h3>
+            <p>A low-information negative control that checks whether the model is using the visual prompt.</p>
+          </article>
+          <article>
+            <span class="condition-tag oracle">Oracle</span>
+            <h3>Upper-bound context</h3>
+            <p>A positive control that exposes the target structure and tests whether the evaluation path can recover it.</p>
+          </article>
+        </div>
+
+        <div class="provenance">
+          <div>
+            <p class="provenance-label">Model</p>
+            <p>VisualCloze/VisualClozePipeline-384</p>
+            <code>59c469d2772d…</code>
+          </div>
+          <div>
+            <p class="provenance-label">Test pack</p>
+            <p>test_s64_px256_v5</p>
+            <code>48e062452574…</code>
+          </div>
+          <div>
+            <p class="provenance-label">Test contract</p>
+            <p>15 tasks × 64 queries × 4 arms</p>
+            <code>seed [42, task, q, P]</code>
+          </div>
+        </div>
+
+        <aside class="caution">
+          <strong>Interpretation boundary</strong>
+          <p>The 9/15 real-over-scrambled count is directional from raw task means, not a paired-significance result. The corrected palette control supersedes the earlier E25a parity framing.</p>
+        </aside>
+      </section>
+    <p class="table-help"><a href="bench-v2-painter-semantic/">Painter native semantic adapter: all gains and regressions →</a></p><p class="table-help"><a href="bench-v2-painter-reference/">Painter: all 13 categories and 221 queries, arithmetic and backend comparisons →</a></p><p class="table-help"><a href="bench-v2-painter-instance/">Painter native instance recipe: all 17 queries, gains and regressions →</a></p><p class="table-help"><a href="bench-v2-painter-pose/">Painter native pose recipe: all 17 queries, gains and regressions →</a></p></main>
+
+    <footer>
+      <p>VisualCloze evaluation ledger · updated 19 October 2026</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <dialog id="image-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-bar">
+        <h2 id="dialog-title">Sample outputs</h2>
+        <button id="close-dialog" type="button" aria-label="Close full-size sample">Close ×</button>
+      </div>
+      <img id="dialog-image" src="assets/samples-01.png" alt="">
+    </dialog>
+  </body>
+</html>

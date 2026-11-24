@@ -1,0 +1,775 @@
+{
+  "schema": "relationadapter_prompt_comparison_gallery_v1",
+  "total_examples": 13,
+  "total_outputs": 26,
+  "n_per_task": 1,
+  "scope": "q0 diagnostic; separate from the full 221-query validation",
+  "variants": [
+    {
+      "key": "generic",
+      "label": "Generic prompt",
+      "subtitle": "Matched control, rerun October 26"
+    },
+    {
+      "key": "demo_instruction",
+      "label": "New demo instruction",
+      "subtitle": "Instruction inferred from this demonstration"
+    }
+  ],
+  "rows": [
+    {
+      "task": "colorization",
+      "label": "Colorization",
+      "q": 0,
+      "n": 1,
+      "metric": "lpips",
+      "lower_is_better": true,
+      "change": 0.0482153594493866,
+      "verdict": "Worse",
+      "query_record": "div2k:val:0852",
+      "demo_record": "div2k:val:0851",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/6dc52097a016bee9b0dd1d7551086dba8dcf28a36a88604a1e1833ff6e9ebf58.png",
+          "sha256": "6dc52097a016bee9b0dd1d7551086dba8dcf28a36a88604a1e1833ff6e9ebf58",
+          "pixels_sha256": "29aba4e36adc57510af37fd733f8f44e3de50141fd5af973c9ffd3fab40b6267"
+        },
+        "demo_target": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_1_target.png",
+          "sha256": "dbe76f2fddf07452996b70904b41488ecca9d837300fa731b105a0df1b787f73",
+          "pixels_sha256": "b14c0dc30acab83b8bf55fc0a4a5ea70b610878d8545a1b76faf49dcf481b4f2"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/dc21f2328d55ad56aa22192da4bc403793ee8d1099c602b2957bb452350a8aea.png",
+          "sha256": "dc21f2328d55ad56aa22192da4bc403793ee8d1099c602b2957bb452350a8aea",
+          "pixels_sha256": "a34ee4dff21ea553ac601e86fb4f1531d76962e0e2ca8281c663b3c39e6fe64f"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/de9b8215ae0721a619a33e7235363209edb41884f0ac3210bf7b67d1e6946fb4.png",
+          "sha256": "de9b8215ae0721a619a33e7235363209edb41884f0ac3210bf7b67d1e6946fb4",
+          "pixels_sha256": "cb8bd9e8ac389b6619c90a7290c8698e4e4dd9c9f4ecb024336ae0bb13c90360"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/6e591cbbabb46078eefc49fda3049ae93cd0f3f011083c4805424ce9056ffadd.png",
+            "sha256": "6e591cbbabb46078eefc49fda3049ae93cd0f3f011083c4805424ce9056ffadd",
+            "pixels_sha256": "fa7bcef8578c8b4a98aa68a2cd0108407fd41dc44ea1a7bf143be11288d067d6"
+          },
+          "score": 0.37691614031791687,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/f312095c5a16746baa4f3102bd2521f694a6dcaa0c2f788283f0afc205eec171.png",
+            "sha256": "f312095c5a16746baa4f3102bd2521f694a6dcaa0c2f788283f0afc205eec171",
+            "pixels_sha256": "e19284007332218465b86005031b8803bde2a2ffa69acebb01f07c3b04d94f6a"
+          },
+          "score": 0.42513149976730347,
+          "prompt": "Colorize the grayscale image with natural colors while preserving its structure, shading, and lighting."
+        }
+      },
+      "score_manifest_sha256": "1cce6ffb4722449b8b7aa7b8469cd43c5efa5820ba5ea530c555335b8aca960e",
+      "scored_results_sha256": "d972582aa92fe6f28db1c00e8c63c4adae5bc50b45363f19892ffb7e46194b08"
+    },
+    {
+      "task": "deblurring",
+      "label": "Deblurring",
+      "q": 0,
+      "n": 1,
+      "metric": "lpips",
+      "lower_is_better": true,
+      "change": 0.012821584939956665,
+      "verdict": "Worse",
+      "query_record": "gopro:train:GOPR0881_11_00:000077",
+      "demo_record": "gopro:train:GOPR0372_07_00:000068",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/06db11bf61959f8338730d8eff7d4100dbf51e00875161848813c57d2b9fbe67.png",
+          "sha256": "06db11bf61959f8338730d8eff7d4100dbf51e00875161848813c57d2b9fbe67",
+          "pixels_sha256": "9208e4a8ee7cb31e331ee5ae26e621c601dac268180bfbaa9888e4491b736dd2"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/a0f7344f63ee56c560c054e78e8b94e281559fc8a9b1f6cab941af6ceaad97dd.png",
+          "sha256": "a0f7344f63ee56c560c054e78e8b94e281559fc8a9b1f6cab941af6ceaad97dd",
+          "pixels_sha256": "80ad8ef20ea781bc22dfd5bfc8c12891887023974c1fb6ee6cfc7e18ecbc63e5"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/7ed76eb47fc21149c63745f1fcaa265d81be8ca3e2421f21e6237671fd8aac0e.png",
+          "sha256": "7ed76eb47fc21149c63745f1fcaa265d81be8ca3e2421f21e6237671fd8aac0e",
+          "pixels_sha256": "c3e6e7be17450cbcedbd2e38d8841cdeb437a384a1ffc51e7e3c10693a6562f4"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/1f900b9713715de4feb539fe3b274b346c9d4daf8578168fef2307f665347a41.png",
+          "sha256": "1f900b9713715de4feb539fe3b274b346c9d4daf8578168fef2307f665347a41",
+          "pixels_sha256": "a6d45e538a58f16836bab5c7ec75178707f218d6283aee5c4b3575836f0481ae"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/ca72fea037f0e3f4ab2f6d7e3249ce6c53fe17d85461a2bcc3cea635d7e3c9a1.png",
+            "sha256": "ca72fea037f0e3f4ab2f6d7e3249ce6c53fe17d85461a2bcc3cea635d7e3c9a1",
+            "pixels_sha256": "10097eebae0ea2d6303e860dbbb35320cfb017bd6e0df0d13eb3b0c849db89d0"
+          },
+          "score": 0.2876095473766327,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/6d225a5e93e44fdd87f25e091d43668e386e07de8adfb2f8611c329354e4fb50.png",
+            "sha256": "6d225a5e93e44fdd87f25e091d43668e386e07de8adfb2f8611c329354e4fb50",
+            "pixels_sha256": "f795c09c11dde50cb8e2d7a9717a0808fb8b80c5cfc16bc6ed9c7a7e1cbe25ba"
+          },
+          "score": 0.30043113231658936,
+          "prompt": "Remove the blur and restore clear edges and details while preserving the image's content and colors."
+        }
+      },
+      "score_manifest_sha256": "770e520fa6f36b1d079fccc9affc32c517d3fa21e8f66239e808fd43a879eaa4",
+      "scored_results_sha256": "2aecd30f7bb33e613063b11bd41a81e076167ddbee08406d5c814e28e9f353dc"
+    },
+    {
+      "task": "denoising",
+      "label": "Denoising",
+      "q": 0,
+      "n": 1,
+      "metric": "lpips",
+      "lower_is_better": true,
+      "change": 0.0065290480852127075,
+      "verdict": "Worse",
+      "query_record": "sidd:validation:02_05",
+      "demo_record": "sidd:validation:09_28",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/a36394c47cf2f82404b2b75174b6396d24e630cb949d543437b2be0e21729e9c.png",
+          "sha256": "a36394c47cf2f82404b2b75174b6396d24e630cb949d543437b2be0e21729e9c",
+          "pixels_sha256": "c9572367a9a49710853ccde0cbfe30898c3090ab05f908229a226d373efe7bb7"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/955faa7e6edae2770ef609717fb759d11bca33a8c1b23e486f0069cdbeca75be.png",
+          "sha256": "955faa7e6edae2770ef609717fb759d11bca33a8c1b23e486f0069cdbeca75be",
+          "pixels_sha256": "c6f10c931b90437e7865b944994b79f1c74e5236ca1276bfd7c61608aeec0ba1"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/bc3d4e21891e13d334a6e18c42d7995a4e61e82bc74b9f7c83013dfd1bac1ee2.png",
+          "sha256": "bc3d4e21891e13d334a6e18c42d7995a4e61e82bc74b9f7c83013dfd1bac1ee2",
+          "pixels_sha256": "3747bbbd89f71d72d6996a002b85797a18971cec6555539d723cd8d10bcaa0bf"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/91b582892591a604a6fcf1f070b8b6dcb7a3e95a3da30afdc7eb54263d277384.png",
+          "sha256": "91b582892591a604a6fcf1f070b8b6dcb7a3e95a3da30afdc7eb54263d277384",
+          "pixels_sha256": "846839e0b090c970918d47e1dfd72c4f608c438962e5f2181de109d82e97ba76"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/c0aa3639ff6bf8589fd45d0966d5c2b88d3207ee644614a6c2432ba9c44e982f.png",
+            "sha256": "c0aa3639ff6bf8589fd45d0966d5c2b88d3207ee644614a6c2432ba9c44e982f",
+            "pixels_sha256": "096d5c79ea9ae7b3a59f31505f6dd6f2c81ceb1a2fbd2aaf9c99cbbc46460d8c"
+          },
+          "score": 0.19888028502464294,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/948e395c4a87fbbb99acfef03e9cd1135c5805b5dcc0d3e7889d96ab8de07035.png",
+            "sha256": "948e395c4a87fbbb99acfef03e9cd1135c5805b5dcc0d3e7889d96ab8de07035",
+            "pixels_sha256": "5486cce201abab6455603b9c23b2a162909014dfa6ef9b6c9644b037f72655be"
+          },
+          "score": 0.20540933310985565,
+          "prompt": "Remove the colored speckle noise while preserving the image's content, colors, and details."
+        }
+      },
+      "score_manifest_sha256": "69130e3c0030d50e7bf03199345acc436f2d8058b327ef735d06b0ac5922a4c9",
+      "scored_results_sha256": "dddeb5a51b5d9085e99700a302e167776d80c5074569898bb30c50ee4608d84f"
+    },
+    {
+      "task": "edge_detection",
+      "label": "Edge detection",
+      "q": 0,
+      "n": 1,
+      "metric": "ois_f",
+      "lower_is_better": false,
+      "change": 0.04479879070712239,
+      "verdict": "Improved",
+      "query_record": "bsds500:78098",
+      "demo_record": "bsds500:346016",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/bf4b7bb404115472627044d817f749584991b7b9cfbc234c85190669087764f7.png",
+          "sha256": "bf4b7bb404115472627044d817f749584991b7b9cfbc234c85190669087764f7",
+          "pixels_sha256": "430bc0c26733fa50d1a00180670a09dccc3ada9c07565f396dbed8523ea17e76"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/c920d92cb622bbc6231795b1f94807cf8e8e8a33c68a742f6322db7af4fa7b47.png",
+          "sha256": "c920d92cb622bbc6231795b1f94807cf8e8e8a33c68a742f6322db7af4fa7b47",
+          "pixels_sha256": "8280d7a1ab6927c6766125240f1edd0615f39a8f361b0d9cb2224992d89f8b6f"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/82d0bfbf53d41f7e533f44703c85e3b35bec0ce6a5bdf406bb5244773b448f7e.png",
+          "sha256": "82d0bfbf53d41f7e533f44703c85e3b35bec0ce6a5bdf406bb5244773b448f7e",
+          "pixels_sha256": "f6e22189bf348f97d7f404b13d97339e7faa9d595c543d1b2443bde60b5516e4"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/0f75a0dcb63822aabad269a6d5ad5ca65722556984272aab1dbf861cec19ac16.png",
+          "sha256": "0f75a0dcb63822aabad269a6d5ad5ca65722556984272aab1dbf861cec19ac16",
+          "pixels_sha256": "5c14a8c5efb0bd6696539415ce8ccee17043c6c57b19b19561c93cbc69315a38"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/17a3fe417dfca08d46fa391cf1835b680c7a04fecf0fafdaae18c92c7055e669.png",
+            "sha256": "17a3fe417dfca08d46fa391cf1835b680c7a04fecf0fafdaae18c92c7055e669",
+            "pixels_sha256": "e80fe4e32466f8d9c7ced76fed5f02564eeeaeec3af4e1ffc7572e50d624f518"
+          },
+          "score": 0.495198764341709,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/2bc38c6e680a9543f929fecb9f1eb548549f760fd396deb236f5e004ba28e6ac.png",
+            "sha256": "2bc38c6e680a9543f929fecb9f1eb548549f760fd396deb236f5e004ba28e6ac",
+            "pixels_sha256": "ce0648ee43e3eed71962604b252986fd07e3779b3516d09235c1d10379f3b6f3"
+          },
+          "score": 0.5399975550488314,
+          "prompt": "Extract the prominent object and surface boundaries as thin white and gray contours on a black background."
+        }
+      },
+      "score_manifest_sha256": "9aae3e37f9acec392a3de2e90509e742580bab63ab8ecb674efd2971ce62b3b9",
+      "scored_results_sha256": "9ee6b619d139a91e3036d16341de83a12ba2b739f5f8e1626024bbe0e37ba3a0"
+    },
+    {
+      "task": "face_landmarks",
+      "label": "Face landmarks",
+      "q": 0,
+      "n": 1,
+      "metric": "nme",
+      "lower_is_better": true,
+      "change": -0.035167522861997896,
+      "verdict": "Improved",
+      "query_record": "300w:indoor_253",
+      "demo_record": "300w:outdoor_182",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/b9abdb491874688ec8ca52eeca54d10b0ca1fa0d3c2bd1a83c026a09b1bbdfba.png",
+          "sha256": "b9abdb491874688ec8ca52eeca54d10b0ca1fa0d3c2bd1a83c026a09b1bbdfba",
+          "pixels_sha256": "133f2a67dff04013e950338750107c9fe8929bae65b8158049d3965978c00be3"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/529b8cde2104197d721ef9f337536f9600db198f8f4846c1cd0ebc4b44e21504.png",
+          "sha256": "529b8cde2104197d721ef9f337536f9600db198f8f4846c1cd0ebc4b44e21504",
+          "pixels_sha256": "b05d1e6cfe324a1294a17dd66256f28befc7a882b529a1bccfcffd38d10b0507"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/e984eba0a92115b78bdadb4219b8805d96267582cf6e56ebe020c7ed666e3548.png",
+          "sha256": "e984eba0a92115b78bdadb4219b8805d96267582cf6e56ebe020c7ed666e3548",
+          "pixels_sha256": "8c08c3577cecae15779f72108f0a6c202390022b16b45507afe2d31fe873463a"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/a62568fb45cad88c686102574bba99068867a2b6e75a406223e5124c043e9c9f.png",
+          "sha256": "a62568fb45cad88c686102574bba99068867a2b6e75a406223e5124c043e9c9f",
+          "pixels_sha256": "7f6dc9ed203d1e4851e96e1dd142a615d5e8402e9d2b1c2cc910582d0ea068ed"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/e46472d490a21686a4a3d00d29202ff9011b8c098e3a055b86b4bdda5f9a71c0.png",
+            "sha256": "e46472d490a21686a4a3d00d29202ff9011b8c098e3a055b86b4bdda5f9a71c0",
+            "pixels_sha256": "5ba4a4f2c772245d5940d3ca75eee54d4cc46025245c87625d441c53626413cb"
+          },
+          "score": 0.21898584250317293,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/12da793dcdefe8e1e6d929bcfbe34024c46ba46966bf8fdd38b6c1bbf10fd215.png",
+            "sha256": "12da793dcdefe8e1e6d929bcfbe34024c46ba46966bf8fdd38b6c1bbf10fd215",
+            "pixels_sha256": "c427fc7159d19bb250437f3c2dc75a086c336462d76b2f11a373cc9390b63b68"
+          },
+          "score": 0.18381831964117504,
+          "prompt": "Replace the photograph with colored dots marking facial landmarks on a black background, following the demonstrated landmark-color encoding."
+        }
+      },
+      "score_manifest_sha256": "f47748778aab4daddb1a4049fddd29639064655c5baf3f2d3969984192acd13d",
+      "scored_results_sha256": "37d0c365bd578cdf5c0fae634df5624349aa2c23f644a6d69efc8019dabb4a78"
+    },
+    {
+      "task": "human_pose_2d",
+      "label": "Human pose",
+      "q": 0,
+      "n": 1,
+      "metric": "pck_torso_0.2",
+      "lower_is_better": false,
+      "change": 0.041666666666666664,
+      "verdict": "Improved",
+      "query_record": "mpii:084118871",
+      "demo_record": "mpii:026665966",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/bb8867030ed0d35d723bc302b646deededbafda4d0d593dbb1bf2268d9a554be.png",
+          "sha256": "bb8867030ed0d35d723bc302b646deededbafda4d0d593dbb1bf2268d9a554be",
+          "pixels_sha256": "4b963d7f291925658d0ec7ed7e237354798a066c1ddeac04e7033886b3351cdc"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/203a6fc532253d8f9123b63474ce4a98422d380093838a696db5087940338c71.png",
+          "sha256": "203a6fc532253d8f9123b63474ce4a98422d380093838a696db5087940338c71",
+          "pixels_sha256": "389661768c04fd687e1fbf1382219678102da4cf4ce6ea7f2f4cfd6235ccaaff"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/d513129f7cd5806ee49263997c935a4bc504c16947b713960f8d636fdb3869e0.png",
+          "sha256": "d513129f7cd5806ee49263997c935a4bc504c16947b713960f8d636fdb3869e0",
+          "pixels_sha256": "bdf0102f6d1786e0326633e0b6646e99f152fe59c659c53c843813c6b3baaa99"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/ce2ed8e034dbf472c9cdea261f474b5775b39ebc98444d2eacb882069a16fd39.png",
+          "sha256": "ce2ed8e034dbf472c9cdea261f474b5775b39ebc98444d2eacb882069a16fd39",
+          "pixels_sha256": "572853ff37250b9118597653fb58da4e26a6dfcabcfa86284f3750709f69ee2d"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/509802f485501f87a70a0d6f29df2812b253106f84101fd826d9483bc91ce21d.png",
+            "sha256": "509802f485501f87a70a0d6f29df2812b253106f84101fd826d9483bc91ce21d",
+            "pixels_sha256": "fc8093efe9d414b2628595bce065e0a7e3b4f379c6e478865ea9c3f5ee242e2f"
+          },
+          "score": 0.041666666666666664,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/4351cdfd5c3f95e133b6b49c20262a5001bf2bd4a372c3185a57be59c3ff38b6.png",
+            "sha256": "4351cdfd5c3f95e133b6b49c20262a5001bf2bd4a372c3185a57be59c3ff38b6",
+            "pixels_sha256": "f7fac0dea2808505f21287091717ce0e1dd8d345bde1118c0d5fd66e6d4df4e4"
+          },
+          "score": 0.08333333333333333,
+          "prompt": "Mark human body keypoints as colored dots on a black background, following the demonstrated joint-color encoding and drawing no connecting lines."
+        }
+      },
+      "score_manifest_sha256": "9dcbf3ab3f55b698c771078fed5edbf802aef670a8260e0561b449f5c70b334e",
+      "scored_results_sha256": "918e2952c30df407a05b091fb1c928aed4812ba9a4dfc2014f617d9f5d574b0d"
+    },
+    {
+      "task": "inpainting",
+      "label": "Inpainting",
+      "q": 0,
+      "n": 1,
+      "metric": "lpips",
+      "lower_is_better": true,
+      "change": 0.0015582293272018433,
+      "verdict": "Worse",
+      "query_record": "div2k:val:0846",
+      "demo_record": "div2k:val:0802",
+      "images": {
+        "demo_input": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/query_input.png",
+          "sha256": "0a15d0ff168a83c49c77a28647d2b05705ce6bbafe3c2b3c40bc5a017309d0e9",
+          "pixels_sha256": "da3065d7d60912c755690c3a41f34820d7351f5a87c86850e8bc6ad977813eef"
+        },
+        "demo_target": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/query_target.png",
+          "sha256": "2419930a74deec9394b7223013f1e06e0afbdf1f8f69fdbb4549bce0bc1d82ec",
+          "pixels_sha256": "74e801596f96f68ffe8e181994a63442b43e575570e58960d50644817fa47331"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/218e54809b2845bf8cc34ba3a2d571702273b85163161dd71175c20c912d5ded.png",
+          "sha256": "218e54809b2845bf8cc34ba3a2d571702273b85163161dd71175c20c912d5ded",
+          "pixels_sha256": "f2d56c486c418f8a4990df36f21e5e85fbacc50696e49b55f73ad2ac2c779480"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/3806f9fec0ed9258744779176e2cd56e6d60f8d52bcf19ce0605b71bcb88f45b.png",
+          "sha256": "3806f9fec0ed9258744779176e2cd56e6d60f8d52bcf19ce0605b71bcb88f45b",
+          "pixels_sha256": "254b94f780cde2a66f7c702bdb0301058492fd2477aa9f89aa353d373fe63618"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/c464eb9bd5b27f5ac58fb9d12c519b3f60ab1836502104c3006b32b1de3d15be.png",
+            "sha256": "c464eb9bd5b27f5ac58fb9d12c519b3f60ab1836502104c3006b32b1de3d15be",
+            "pixels_sha256": "ff1511bd04d705bc9b0da523a146fd209591ccb81d8d00ca86d60124431eb7bd"
+          },
+          "score": 0.21326766908168793,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/9ca6f282d2f38171703f1bacca51fc5d2561b4c5d9ad3dd25bf45de112883d1c.png",
+            "sha256": "9ca6f282d2f38171703f1bacca51fc5d2561b4c5d9ad3dd25bf45de112883d1c",
+            "pixels_sha256": "4e99a75297a93a96c4ac3196631425e84697dc4ae49d1aaf0513fab03dc743a0"
+          },
+          "score": 0.21482589840888977,
+          "prompt": "Fill the solid black masked regions with plausible content that blends with the surrounding image, preserving the visible areas."
+        }
+      },
+      "score_manifest_sha256": "dcc08572b3b9d4aa69ec78e596ad864182e14ac0fc9ec603634238e2295a0adf",
+      "scored_results_sha256": "c3eafdfe617e8c1f17773a49c19b2b0d01d30b75189e11bdd2fe56904baf7808"
+    },
+    {
+      "task": "instance_segmentation",
+      "label": "Instance segmentation",
+      "q": 0,
+      "n": 1,
+      "metric": "pq",
+      "lower_is_better": false,
+      "change": 0.0659934421494016,
+      "verdict": "Improved",
+      "query_record": "nyu_depth_v2:1154",
+      "demo_record": "nyu_depth_v2:1093",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/8ab659d02e89a2b8c9d4a4597234401437994f053d7a1cd9c38e953e04a1c356.png",
+          "sha256": "8ab659d02e89a2b8c9d4a4597234401437994f053d7a1cd9c38e953e04a1c356",
+          "pixels_sha256": "81db8c8ceeb31ccb236c8a01e5d448bfd7c708f3a0568c35305da78f5a832609"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/8892851918f0f5ea9f4573d5977a8e09b67a21dc5eb47354293d9bc0e0bfeabf.png",
+          "sha256": "8892851918f0f5ea9f4573d5977a8e09b67a21dc5eb47354293d9bc0e0bfeabf",
+          "pixels_sha256": "72f41819545c27391fbbc6892ee839ae0b33ddff29613de9e252ed22f713d554"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/c3a3336e0dae8226aa014b5bcbe8c98d7dc8b58f85c4644a738dc2396ab42645.png",
+          "sha256": "c3a3336e0dae8226aa014b5bcbe8c98d7dc8b58f85c4644a738dc2396ab42645",
+          "pixels_sha256": "4096f88c9e6a0f2ec0d475211d48ba3aaedaef1b532c771baa18554d2a4ca654"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/82a4b975f5c417170dc6634d29aa5885c52d1465a82210719c14e63f24b93433.png",
+          "sha256": "82a4b975f5c417170dc6634d29aa5885c52d1465a82210719c14e63f24b93433",
+          "pixels_sha256": "5964d49cbb2b734397a3a6deed77737478b22c371354118f8e7b87944aac0e3b"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/694f64490b4d66f805b5cd5330849f16ce548005420065a3b0c91da304e463c1.png",
+            "sha256": "694f64490b4d66f805b5cd5330849f16ce548005420065a3b0c91da304e463c1",
+            "pixels_sha256": "ede91f5540eefb3663b98d3ff03534473ad7bafd5056385751cde6ed5895d892"
+          },
+          "score": 0.0,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/a20c7cca6a311c0605da24a605c739b1ce959dd7d9c37cf351d5a36e6da40669.png",
+            "sha256": "a20c7cca6a311c0605da24a605c739b1ce959dd7d9c37cf351d5a36e6da40669",
+            "pixels_sha256": "c0c59d19fc6dbec10ae94f157540189f07c7a971a49a032a1f58ab1cd308b9c8"
+          },
+          "score": 0.0659934421494016,
+          "prompt": "Replace each object instance with a distinct solid-color silhouette, leaving unsegmented regions black and following the demonstrated segmentation convention."
+        }
+      },
+      "score_manifest_sha256": "29854edfbb582ab574ee78f6eb66804e5d0e7b97226fdf13dc50cf3705aef6af",
+      "scored_results_sha256": "9c25cb0e5958b0c77f4a41c998ad6d5a1054f117c90ca1184420a42dac13cd43"
+    },
+    {
+      "task": "relative_depth",
+      "label": "Relative depth",
+      "q": 0,
+      "n": 1,
+      "metric": "delta1",
+      "lower_is_better": false,
+      "change": 0.09170069549327814,
+      "verdict": "Improved",
+      "query_record": "nyu_depth_v2:0396",
+      "demo_record": "nyu_depth_v2:1146",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/d2f2b6bd23ded142f0fe68d2fa06f5147fd78a79385ee5f2b47863275d3f6c71.png",
+          "sha256": "d2f2b6bd23ded142f0fe68d2fa06f5147fd78a79385ee5f2b47863275d3f6c71",
+          "pixels_sha256": "9ae6e705e8cba5cbaaa9d96acad73eb736e2009ddf877720077e2cc6d12a8ff4"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/b8a116b0ca206123b09267fc1a78bb6a9581ce069b01f932f7236b6c3433f208.png",
+          "sha256": "b8a116b0ca206123b09267fc1a78bb6a9581ce069b01f932f7236b6c3433f208",
+          "pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/727563b272da7ce961fc41e944a82dfeeb36ea75566bba0b4d906b7eb39aaf9c.png",
+          "sha256": "727563b272da7ce961fc41e944a82dfeeb36ea75566bba0b4d906b7eb39aaf9c",
+          "pixels_sha256": "9344f5d50677fb436d375eb7c34fa3c4b829db3a7d6dc6700d8d5528dccae413"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/501db7c46b9d886673ebf0acc1a2af4458e892eb5dccac01292191b01567585a.png",
+          "sha256": "501db7c46b9d886673ebf0acc1a2af4458e892eb5dccac01292191b01567585a",
+          "pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/a2e19797c6cc88efd274c534e4df3859923a70db6b94b624c9ff02a41a2750dc.png",
+            "sha256": "a2e19797c6cc88efd274c534e4df3859923a70db6b94b624c9ff02a41a2750dc",
+            "pixels_sha256": "4cc83a8384882ed40ae226b10c0cb6ffc5cc25e4ee3914e508ce96a264f32eb9"
+          },
+          "score": 0.36512464805802614,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/562aca09dc0b464e0476c9856aa12f45a3999e9052aefaa98f45049948c5fcee.png",
+            "sha256": "562aca09dc0b464e0476c9856aa12f45a3999e9052aefaa98f45049948c5fcee",
+            "pixels_sha256": "c2c748a70a8416ae4d9b39fdb47dfc524e01e56f417fb992f43c8c09a99a072b"
+          },
+          "score": 0.4568253435513043,
+          "prompt": "Convert the image into a grayscale relative-depth map, showing nearer surfaces in lighter shades and farther surfaces in darker shades."
+        }
+      },
+      "score_manifest_sha256": "b5fe69023870d55ace992fa020a76b04d5ede265d32f5b5eae273e3065a889ed",
+      "scored_results_sha256": "c4ac0d8398d5dfc519e2c17a4adcbf5941dd564835c7cbb5d6e8207f987d4773"
+    },
+    {
+      "task": "saliency_detection",
+      "label": "Saliency detection",
+      "q": 0,
+      "n": 1,
+      "metric": "max_fbeta",
+      "lower_is_better": false,
+      "change": 0.1464411276267197,
+      "verdict": "Improved",
+      "query_record": "dut_omron:sun_bgruczgdxsknninj",
+      "demo_record": "dut_omron:sun_amtcnaryvbagsatb",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/d51c541e14520e6b0ac9d1d3aa6a7ab3abab64d01a90f6c4ae625455d8eb8e3b.png",
+          "sha256": "d51c541e14520e6b0ac9d1d3aa6a7ab3abab64d01a90f6c4ae625455d8eb8e3b",
+          "pixels_sha256": "58c0548f898f301dc5f6541c1ffdf77a8a1a16ad5f65b63618f4539ea10290c9"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/2d0d4a1a12d483e55220348de0f3197a76f51555b5505988a0ef335d1f3d665e.png",
+          "sha256": "2d0d4a1a12d483e55220348de0f3197a76f51555b5505988a0ef335d1f3d665e",
+          "pixels_sha256": "999deac3220b4e7d71226a3fdaab3a37eb51d8ee805581a75873e3e7c8fa30e0"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/9155382f87fa1875d58f3849aacf7df7de28f426f7f0e5c4fed7c29bf34eaea8.png",
+          "sha256": "9155382f87fa1875d58f3849aacf7df7de28f426f7f0e5c4fed7c29bf34eaea8",
+          "pixels_sha256": "d7991ad2454b87d2aee3d26a6277518333664c8a93e980a724c686993d0d7111"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/41a959c6d11b9babb90201868e202dbf30d966a4105e07bce584266bb6f7c3a8.png",
+          "sha256": "41a959c6d11b9babb90201868e202dbf30d966a4105e07bce584266bb6f7c3a8",
+          "pixels_sha256": "df89b0c4162376cb50f88ad669aa292fd093cac2ecfec2e1da00f85354b88a01"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/993c1af76577b0cb1fa857d571b3a26c9781f07dc6f3526a88104e911f32ebb8.png",
+            "sha256": "993c1af76577b0cb1fa857d571b3a26c9781f07dc6f3526a88104e911f32ebb8",
+            "pixels_sha256": "7996f7e4d1fddb9bce106c0fa0553b332af69dbc5d4e095ae6195771cd88f776"
+          },
+          "score": 0.07945450001785012,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/f02b8c5716fc709aada4eee30c3e5c737f52a0e29a3adfb980f8feca8ef4da90.png",
+            "sha256": "f02b8c5716fc709aada4eee30c3e5c737f52a0e29a3adfb980f8feca8ef4da90",
+            "pixels_sha256": "c68a79a7e996ea03b1c648be601f7721a92b7e27f005f4f0bf1cf38d56b5fa41"
+          },
+          "score": 0.22589562764456983,
+          "prompt": "Create a binary saliency mask with the salient foreground subject in solid white and the background in solid black."
+        }
+      },
+      "score_manifest_sha256": "d9270940fbcfe8a60bfaf68efa4b07fd8442013c0e074c055b3b80a4e27cbb11",
+      "scored_results_sha256": "eb2936b91aa2dff96ede5cff8bfecad2de88cda43b42280d6490e5bbdcbdb837"
+    },
+    {
+      "task": "semantic_segmentation",
+      "label": "Semantic segmentation",
+      "q": 0,
+      "n": 1,
+      "metric": "miou",
+      "lower_is_better": false,
+      "change": -0.002773406766325759,
+      "verdict": "Worse",
+      "query_record": "ade20k:ADE_val_00000606",
+      "demo_record": "ade20k:ADE_val_00001441",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/f3743dd5c289eb61a2240158b8db158dfdd4405828f91e538b2c8907f9c2a61a.png",
+          "sha256": "f3743dd5c289eb61a2240158b8db158dfdd4405828f91e538b2c8907f9c2a61a",
+          "pixels_sha256": "ad3409b52ec3c961bc0cef9b73f55d31d7302e38374792857573583992d0ae0b"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/0bb844143e34ad0a8ac8ae14e61c794bf915df4dc9c3df0576433b9d60b9a325.png",
+          "sha256": "0bb844143e34ad0a8ac8ae14e61c794bf915df4dc9c3df0576433b9d60b9a325",
+          "pixels_sha256": "7e690668b50750f14fc437edf4dad0b8dfaed55eeb307581b182b1a38eedf9d1"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/05f702ed0aae9678d48bb223785a9a1bec3f291b0f633c3c479da84f10e45664.png",
+          "sha256": "05f702ed0aae9678d48bb223785a9a1bec3f291b0f633c3c479da84f10e45664",
+          "pixels_sha256": "ea1ec92dbc8ef5acb7c2beaa7f7331f62c54196f9b0024305ccab948b743e917"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/4bed6d6998f2f1bc291b7499afed36e351477d8db40f6e1d3e98b0f141e022c4.png",
+          "sha256": "4bed6d6998f2f1bc291b7499afed36e351477d8db40f6e1d3e98b0f141e022c4",
+          "pixels_sha256": "59d5d665f3def39ccb886634aed44108c5a7419053c4fb576f0c3c2563e6ef9e"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/ff4e1590b230c403537870d868b3c3f740435852e87e3788a304e63853378e1e.png",
+            "sha256": "ff4e1590b230c403537870d868b3c3f740435852e87e3788a304e63853378e1e",
+            "pixels_sha256": "25cac1c5329929c7b689b6ab6e89794b90f50d5da772677cfec3281a0205d99e"
+          },
+          "score": 0.2974232887490165,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/e2362cd630a2cf757e8cf857432ed0d50d4f4ad9cab24eac3cc700f6785b60d4.png",
+            "sha256": "e2362cd630a2cf757e8cf857432ed0d50d4f4ad9cab24eac3cc700f6785b60d4",
+            "pixels_sha256": "a836ea3678b787c992dcb2e35e6b6bfa4c6bcb9bd0800e22d06cb27cab552da2"
+          },
+          "score": 0.29464988198269076,
+          "prompt": "Replace the image with a flat semantic segmentation mask, coloring each region according to its category using the demonstrated palette."
+        }
+      },
+      "score_manifest_sha256": "cc6aa9fe11b88159c9101229c895f186740f51cedd5200b584232ffaff803676",
+      "scored_results_sha256": "88e9250cbc38e6484e08ffa11cf61c026eae2739f193065d4e3aa5fb66243e12"
+    },
+    {
+      "task": "super_resolution",
+      "label": "Super-resolution",
+      "q": 0,
+      "n": 1,
+      "metric": "lpips",
+      "lower_is_better": true,
+      "change": 0.021785199642181396,
+      "verdict": "Worse",
+      "query_record": "div2k:val:0858",
+      "demo_record": "div2k:val:0888",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/28f654d7dc8b30d13526bb56fe4e64e006b624d7be8b0e109116309a10ca6258.png",
+          "sha256": "28f654d7dc8b30d13526bb56fe4e64e006b624d7be8b0e109116309a10ca6258",
+          "pixels_sha256": "96a2bc5d6ca0a72d8a5fe99eb722ef8651901f43f4ffd36be595e65e53147992"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/b1ef7c76d77715b567f787d16be6a6548ffe3eea29eb4495c4fdd311ce10eaef.png",
+          "sha256": "b1ef7c76d77715b567f787d16be6a6548ffe3eea29eb4495c4fdd311ce10eaef",
+          "pixels_sha256": "050e38df9e3a0712397caddd65183da83de09b5953d4e6507cc13be7efcdcbdb"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/15175dc326aa54ea4de79e032a7f1409fd41f437fb3b697ce9e7e628af7e4332.png",
+          "sha256": "15175dc326aa54ea4de79e032a7f1409fd41f437fb3b697ce9e7e628af7e4332",
+          "pixels_sha256": "3aa9d3685e4e0eeae8464b3c0aee0fa0043f1163e05b0d44189626e1a241913e"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/d255fb22a099e69d2f6daf636f893cb4115f4ec2ed52b3c0f2ce623b24cf787a.png",
+          "sha256": "d255fb22a099e69d2f6daf636f893cb4115f4ec2ed52b3c0f2ce623b24cf787a",
+          "pixels_sha256": "fd5ea70dbcd6f6082b631084c143cf77ad27f763a76899cc21d47a631760f258"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/44fd5bad4fdc1226cadac7558ae8d16152b2eb58aca53123fd5928c94124ffb7.png",
+            "sha256": "44fd5bad4fdc1226cadac7558ae8d16152b2eb58aca53123fd5928c94124ffb7",
+            "pixels_sha256": "08cda2b0ee335cd30ed6a1f51d16f337e437e3fea7050849e366ed72b5a1b5ec"
+          },
+          "score": 0.47352030873298645,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/1c2ba0f3395e7feb880152be7c8fde9ab2a70e743b71507a172f535ad1df7195.png",
+            "sha256": "1c2ba0f3395e7feb880152be7c8fde9ab2a70e743b71507a172f535ad1df7195",
+            "pixels_sha256": "abd954324b0a207bce42893668add93cfd6ec2fc33dd5f4a8b9e5f0d1331151c"
+          },
+          "score": 0.49530550837516785,
+          "prompt": "Restore fine detail and clean edges in the low-resolution image while preserving its composition and colors."
+        }
+      },
+      "score_manifest_sha256": "dc0bf423c10297614545c767c6e4b0803fbfd2e7a125853e213aba7e07012c0c",
+      "scored_results_sha256": "5ea8800a67ebc2c0c3094eafd1221f488e21a88efb3209572ef3f74053c9bdf7"
+    },
+    {
+      "task": "surface_normals",
+      "label": "Surface normals",
+      "q": 0,
+      "n": 1,
+      "metric": "mean_deg",
+      "lower_is_better": true,
+      "change": -19.518688698668164,
+      "verdict": "Improved",
+      "query_record": "diode:00023_00200_outdoor_020_030",
+      "demo_record": "diode:00020_00186_indoors_040_020",
+      "images": {
+        "demo_input": {
+          "path": "assets/promptdiffusion-task-text/3a90cf5405a11ffb8ea206d976c82bbec014c6e225e3922b9a1252f51e54d75a.png",
+          "sha256": "3a90cf5405a11ffb8ea206d976c82bbec014c6e225e3922b9a1252f51e54d75a",
+          "pixels_sha256": "5923af1fc16fc68467ac70f3069f21736bbc85272c4059c0c9ceab08a6e30acb"
+        },
+        "demo_target": {
+          "path": "assets/promptdiffusion-task-text/4233967d73ee86a5ab48decaa7b61bacbf2e5dc5ba620f567f8c300ff53f0584.png",
+          "sha256": "4233967d73ee86a5ab48decaa7b61bacbf2e5dc5ba620f567f8c300ff53f0584",
+          "pixels_sha256": "db186954ce478d6a8a8685ce1980a96429155fc6c70f542ab15ab359026bca5a"
+        },
+        "query_input": {
+          "path": "assets/promptdiffusion-task-text/5956daa51819fe9428d5680440551596c9fe3847e6b8f8af35414cf2b2de06fb.png",
+          "sha256": "5956daa51819fe9428d5680440551596c9fe3847e6b8f8af35414cf2b2de06fb",
+          "pixels_sha256": "8c47ba27f8d8823c247518501e028bb32304be66106491713c485274dc79600e"
+        },
+        "query_target": {
+          "path": "assets/promptdiffusion-task-text/1e1a72af6dafe371c908408b18c5ca90f496fd6531e027042fc4bd3e96605a5a.png",
+          "sha256": "1e1a72af6dafe371c908408b18c5ca90f496fd6531e027042fc4bd3e96605a5a",
+          "pixels_sha256": "4a2b19a2ce2567b4d601b19e9a921cfd657599c3d0f9c903e2155a24a7e60fc1"
+        }
+      },
+      "outputs": {
+        "generic": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/e15d1c8a4c29da84f96ef989b6758ca4d1e6d6ef904314afd71d09a2d64833ad.png",
+            "sha256": "e15d1c8a4c29da84f96ef989b6758ca4d1e6d6ef904314afd71d09a2d64833ad",
+            "pixels_sha256": "c39d9cc05ce70a6348255523a174a94bfb404b59d01d62ddaaeeca8ac8630d24"
+          },
+          "score": 76.62574702149006,
+          "prompt": "Apply the demonstrated image transformation."
+        },
+        "demo_instruction": {
+          "image": {
+            "path": "assets/relationadapter-prompt-comparison/6ef02c94e1e83161c5ee15ca4b8a1a9fc4bd7f7915cd5431365e6fb6ffa0d4b9.png",
+            "sha256": "6ef02c94e1e83161c5ee15ca4b8a1a9fc4bd7f7915cd5431365e6fb6ffa0d4b9",
+            "pixels_sha256": "8bf7e8dc3b747eea759a4bf96e245c119da2fc786c87c36705d7aca67c08567f"
+          },
+          "score": 57.10705832282189,
+          "prompt": "Convert the photograph into a surface-normal map using the demonstrated color encoding for surface orientations."
+        }
+      },
+      "score_manifest_sha256": "44a4d6ddad12b4a38de9554b5271927f901b955a50c3bd247b6a78aa84375669",
+      "scored_results_sha256": "00810daea122045fb0bc77246dc658e41e8d2f3b4fda4bd5864235ee9312eb61"
+    }
+  ],
+  "completed_utc": "2026-10-26T21:05:21Z",
+  "provenance": {
+    "inference_run_identity": "aae38a38ce3b1d5569ddd7c4e41cc580f63244cc74ca9327985caa9110182ab1",
+    "source_results_sha256": "01811e5dff571bdba2741237a5a719608e8867533b483a0cf1827552ab0dd059",
+    "score_summary_sha256": "e7585c362d8ee3a274b3897c96935b8e1aa3c182f453c359bcc6ac5784896a94",
+    "original_plan_identity": "e1ca22635f2beb7678c64c7a402eca2ff8dd815042263ad4c8d473f9e5d37812",
+    "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+    "supervision_version": 6,
+    "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+    "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+    "metric_identity_sha256": "a2019306ed2b9d537ebfd1e63361d1ba07013e399d04fead02055939a5a20bbe",
+    "native_demonstrations": 1,
+    "model_seed": 1000,
+    "steps": 24,
+    "guidance_scale": 3.5,
+    "relation_scale": 1.0,
+    "dtype": "bfloat16",
+    "backend": "same v6e TPU for both arms",
+    "prompt_source": "Human-approved instructions from Codex subagents inspecting the demonstrations; not actual GPT-4o outputs.",
+    "qualifications": [
+      "One query per task; not a 17-query category mean or a full-validation replacement.",
+      "The generic column was rerun on the same v6e TPU; original validation used v5p.",
+      "Existing TPU numerical-port qualifications still apply."
+    ],
+    "archive": "gs://kmh-gcp-us-east5/kristine/eval_runs/2026-10-26/relation_adapter_prompted_q0_v6e8_131619"
+  }
+}

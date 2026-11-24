@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bench v2 recovery audit: ten models, all category and query scores, paired PromptDiffusion results, qualified Painter depth results, and correction status.">
+  <title>Bench v2 · recovery audit</title>
+  <link rel="stylesheet" href="../styles.css?v=57">
+  <link rel="stylesheet" href="styles.css?v=69">
+  <script src="app.js?v=76" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#explorer">Skip to score explorer</a>
+  <header class="masthead">
+    <a class="brand" href="../10-12-validations/">Bench v2 <b>/ recovery audit</b></a>
+    <nav aria-label="Page sections"><a href="../bench-v2-review/">All models &amp; settings ↗</a><a href="../bench-v2-cpu-reference/">CPU reference comparisons ↗</a><a href="#explorer">Ten recovery models</a><a href="#query-view">Individual queries</a><a href="#evidence">Evidence</a><a href="../10-12-validations/#validation">Original tables ↗</a></nav>
+  </header>
+  <main>
+    <section class="recovery-hero">
+      <p class="eyebrow">ONGOING / VALIDATION AUDIT</p>
+      <h1>Corrections and<br>measured results.</h1>
+      <p class="lede">Follow each model from the published scores to the latest verified measurements. Explore every category and query, with each experimental condition kept explicit.</p>
+      <aside class="recovery-note"><strong>InstaManip three-shot archive recovered.</strong> All 221 queries are scored and verified. Nine category means improve over two-shot and four worsen; the checkpoint, demonstrations, noise and topology differ. <a href="../bench-v2-instamanip-p3/">Explore every change →</a></aside>
+      <aside class="recovery-note"><strong>VICT edge-summary correction.</strong> Supplementary pooled OIS is 0.2176, replacing 0.1087, which was ODS under the wrong label. The main-table mean remains 0.1971; all query scores are unchanged. <a href="../data/vict-edge-aggregation-correction.json">Verified evidence →</a></aside>
+      <p class="snapshot" id="snapshot">Loading the dated snapshot…</p>
+      <aside id="numerical-failure" class="recovery-note" aria-live="polite"></aside>
+      <div class="summary-grid">
+        <article><span class="summary-label">PromptDiffusion · 221 paired queries</span><strong><span class="good">6 better</span> / <span class="bad">7 worse</span></strong><p>The input-range change has mixed effects across the 13 categories. Both complete conditions are retained.</p><button type="button" data-select-model="prompt_diffusion">Explore the paired results →</button></article>
+        <article><span class="summary-label">Painter · 17 depth queries</span><strong>0.4393 → 0.9813 <small>δ1 ↑</small></strong><p>The depth bridge improves all 17 queries. It uses extra demonstration depth metadata and an approximate native representation.</p><button type="button" data-select-model="painter">Inspect the qualified adaptation →</button></article>
+        <article><span class="summary-label">Active resolution goal</span><strong>11 models tracked</strong><p>Each model needs a verified fix or an evidence-backed limitation. Required reruns must quantify gains and regressions before a model is marked resolved.</p><a href="#completion">Review the remaining work →</a></article>
+      </div>
+      <aside class="recovery-note"><strong>Baseline distinction.</strong> The October 26 main-table and query scores are preserved; the VICT pooled supplement is corrected above. PromptDiffusion’s fresh S1 control exactly matches the October 30 same-hardware control, but differs slightly from the October 26 scores. Improvements below compare A1 with its paired S1 control. No category-by-category mixture or average across unlike metrics is reported.</aside>
+    </section>
+
+    <section id="completion" aria-labelledby="completion-title">
+      <div class="section-heading"><div><p class="section-number">ONGOING GOAL</p><h2 id="completion-title">What remains to resolve</h2></div><p id="completion-summary"></p></div>
+      <p class="table-help">Ten comparison models plus VICT. A completed run or a passing local test alone does not close an issue. Each model requires supporting numerical evidence and any necessary complete paired evaluation.</p>
+      <div id="completion-models" class="evidence-grid"></div>
+    </section>
+
+<!-- LOCAL-DIAGNOSTICS:START -->
+    <section id="new-diagnostics" aria-labelledby="diagnostics-title">
+      <div class="section-heading"><div><p class="section-number">NEW DIAGNOSTICS / OCTOBER 31</p><h2 id="diagnostics-title">What the latest checks establish</h2></div></div>
+      <p class="table-help">Dated snapshot: 2026-10-31T07:08:24.354677+00:00. These measurements are separate from benchmark accuracy; all historical category and query scores are preserved.</p>
+      <div class="detail-grid">
+        <article class="model-detail"><h3>LVM: fine-detail loss</h3>
+          <p>The released image codec reconstructs smooth normal fields with <strong>2.73°</strong> mean error, but alternating two-pixel normal stripes with <strong>91.78°</strong>. All 15 synthetic tests produce finite values.</p>
+          <p>Of 16 isolated points, <strong>15/16</strong> remain within the 12.8-pixel tolerance at radius one pixel; <strong>16/16</strong> do at radii two, three, five and eight.</p>
+          <p class="boundary">Fine-detail loss is measured. These fixtures do not establish why generated benchmark normals or landmarks fail, or justify replacing the authors’ codec.</p>
+          <p><strong>Native P7:</strong> all 221 contexts are prepared, all 221 original P1 episodes replay exactly, and one complete 15-frame context tokenizes correctly. Full 7B inference and scoring remain pending. The legacy P7 row remains diagnostic.</p>
+        </article>
+        <article class="model-detail"><h3>VICT: output conversion repaired locally</h3>
+          <p>The archived restoration path clips before bicubic resizing. Resizing can push values outside the byte range, causing them to wrap during conversion. The prepared correction follows released processing: resize, then clip and convert.</p>
+          <p>Eight synthetic cases match the released result; <strong>64 other-task checks</strong> remain pixel-identical. Synthetic overshoot can change a channel by up to <strong>255</strong> byte levels. In the trained one-update probe, only <strong>10 of 196,608</strong> channel values change, each by <strong>one</strong> level.</p>
+          <p class="boundary">A large benchmark improvement is not established. The original exact comparison stopped after 240 of 360 planned updates. After the first 60-update pair, only 7 of 196,608 output channel values differ, each by one level; the random state matches. Repeating the released code also gives slightly different gradients in all 48 relative-position tables. An isolated check traces this to gradient accumulation and makes all 40 repeats exact with deterministic CPU algorithms. The original exact gate remains failed; these measurements do not establish a large quality defect. With deterministic algorithms, the full-model first update also matches exactly across two released repeats and the port, including all gradients and updated parameters. The full deterministic CPU comparison has now passed all three sequential 60-update cases. Every loss, final model and optimizer state, raw output, pixel image and continuing random state matches exactly across the released and prepared paths. TPU precision and optimizer behavior remain unqualified.</p>
+          <p>Native-depth checks, appendix settings and complete paired benchmark results remain open.</p>
+        </article>
+      </div>
+      <figure style="margin:1.5rem 0"><a href="lvm-codec-examples.png"><img src="lvm-codec-examples.png" alt="LVM codec inputs and reconstructions for a smooth normal field, two-pixel normal stripes and isolated one-pixel-radius points" loading="lazy" style="width:100%;max-width:1100px;height:auto"></a><figcaption class="table-help">Synthetic inputs and codec reconstructions. No language-model generation or benchmark targets are used. Open the image for full resolution.</figcaption></figure>
+      <p><a href="diagnostics.json" download>Download the measured diagnostic summary ↓</a></p>
+    </section>
+    <!-- LOCAL-DIAGNOSTICS:END -->
+
+<!-- MODEL-FOLLOWUPS:START --><section id="model-followups"><h2>Completed reference checks</h2><div class="detail-grid"><article class="model-detail"><h3>Painter: native semantic adapter</h3><p>Mean benchmark mIoU rises 0.496 → 0.594 (19.9% relative). Thirteen queries improve and four worsen; the largest regression is −0.102.</p><p>This uses extra class metadata from demonstrations and remains a separate condition. Other categories are untouched by this semantic-only test.</p><p><a href="../bench-v2-painter-semantic/">Inspect all 17 paired scores and both extremes →</a></p></article>
+<article class="model-detail" id="instamanip-cpu"><h3>InstaManip: full checkpoint CPU tokens pass</h3><p>Two independent two-shot fixtures produce identical 72-token sequences and text. All 64 image-token hidden states, resampled features and 160 key/value-cache tensors pass the preset absolute and relative tolerances of 10⁻⁴. All checked values are finite.</p><p>The five-image CLIP grouping check also passes on both fixtures. The token checks alone do not qualify the padded 80-image TPU batch, TPU precision/sharding or three-shot checkpoint. The completed CPU diffusion check is reported below.</p><table class="recovery-table"><caption>Single observed generation times · CPU FP32</caption><thead><tr><th>Fixture</th><th>Released</th><th>Optimized</th><th>Ratio</th></tr></thead><tbody><tr><th scope="row">edge_detection</th><td>244.3s</td><td>65.9s</td><td>3.71×</td></tr><tr><th scope="row">human_pose_2d</th><td>295.2s</td><td>77.3s</td><td>3.82×</td></tr></tbody></table><p>Generation calls fall from 72 to 8 per case. These are two observations, not a throughput benchmark.</p><p>The successful qualification took 16.8 minutes, including both paths and comparisons; full language-model loading took 47.5 seconds. Two earlier attempts failed because of diagnostic observation bugs, now corrected. Those failures do not establish model defects.</p><p><a href="instamanip-cpu.json" download>Download scope, timings and numerical checks ↓</a></p></article></div></section><!-- MODEL-FOLLOWUPS:END -->
+<!-- INSTAMANIP-DIFFUSION:START -->
+<section id="instamanip-diffusion" aria-labelledby="instamanip-diffusion-title">
+  <h2 id="instamanip-diffusion-title">InstaManip: complete CPU diffusion matches exactly</h2>
+  <p>Both independent two-shot fixtures complete all <strong>50 sampling steps</strong> in both implementations at the native <strong>1024 × 1024</strong> resolution. All <strong>404 saved tensor pairs</strong> match exactly: sampling inputs, timesteps, predictions, updated latents, encoded query images and raw decoded outputs. Both final images are pixel-identical. Every checked value is finite.</p>
+  <p>The checks use real full-checkpoint conditioning from the qualified token comparison and common supplied noise. They establish CPU FP32 agreement for these two fixtures. TPU BF16, sharding, padded batches, three-shot checkpoint parity and the per-call versus per-query random-seed policy remain open.</p>
+  <div class="recovery-table-wrap"><table class="recovery-table"><caption>Observed full diffusion times, including diagnostic capture</caption><thead><tr><th scope="col">Fixture</th><th scope="col">Released</th><th scope="col">Candidate</th><th scope="col">Runtime change</th></tr></thead><tbody><tr><th scope="row">edge_detection</th><td>46.05 min</td><td>49.94 min</td><td>+8.43%</td></tr><tr><th scope="row">human_pose_2d</th><td>44.15 min</td><td>47.89 min</td><td>+8.49%</td></tr></tbody></table></div>
+  <p>The candidate took <strong>8.4–8.5% longer</strong> on CPU. These single observations do not establish a throughput gain or TPU speedup. The earlier token-generation timing improvement is a separate measurement.</p>
+  <p class="boundary">No benchmark scores changed. The main comparison retains one complete recipe per model; InstaManip P3 still shows all nine improved and four worsened category means.</p>
+  <p><a href="instamanip-diffusion.json" download>Download numerical checks, timings and scope ↓</a></p>
+</section>
+<!-- INSTAMANIP-DIFFUSION:END -->
+<!-- COMPLETED-CHECKS:START -->
+<section id="completed-checks" aria-labelledby="completed-checks-title"><h2 id="completed-checks-title">Completed checks and measured limits</h2>
+<div class="detail-grid"><article class="model-detail"><h3>VICT: all three full CPU cases match</h3><p>Both implementations complete three sequential 60-update cases: <strong>360 updates total</strong>. Losses, final model and optimizer states, raw predictions, pixels and continuing random state match exactly with deterministic CPU algorithms.</p><p>TPU precision and optimizer checks remain open. This is numerical agreement; no new benchmark improvement is claimed.</p></article>
+<article class="model-detail"><h3>RelationAdapter: CPU BF16 is too slow for the cap</h3><p>Setup took <strong>111.2 seconds</strong>. A subsequent sampling step took <strong>232.18 seconds</strong>, projecting <strong>24.64 hours</strong> for the remaining work against a four-hour total cap. The local diagnostic was stopped after two finite reference steps.</p><p>This CPU lacks native BF16 support. Representative matrix-operation checks were 4.5–5.6 times slower than FP32. This helps explain the CPU delay; TPU compilation is a separate issue. Full-model parity remains open.</p></article>
+<article class="model-detail"><h3>Painter: all 17 native pose queries scored</h3><p>Native pose changes mean PCK from 0.085294 to 0.620588 (+0.535294; +627.6%): 15 queries improve, 0 worsen and 2 tie. This separate condition uses demonstration joint metadata and an external image-only person detector. All 17 fresh generic controls match the earlier CPU outputs exactly. The other 12 categories were not rerun. Surface-normal model failures and TPU numerical qualification remain unresolved.</p><p><a href="../bench-v2-painter-pose/">All three contrasts and every query gain or regression →</a> · <a href="../bench-v2-surface-normals/">Actual surface-normal evaluation audit →</a></p></article></div>
+<p class="boundary">The full-table scores and selected recipes are unchanged. Native pose is reported separately with its extra inputs labeled. One complete recipe per model remains selected across all 13 categories.</p><p><a href="completed-checks.json" download>Download measured checks and limitations ↓</a></p></section>
+<!-- COMPLETED-CHECKS:END -->
+    <section id="runtime" aria-labelledby="runtime-title">
+      <div class="section-heading"><div><p class="section-number">RUNTIME DIAGNOSIS</p><h2 id="runtime-title">Where the waiting time goes</h2></div></div>
+      <p id="runtime-scope" class="table-help"></p>
+      <p id="runtime-mechanism" class="table-help"></p>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="Setup and inference timing comparison">
+        <table class="recovery-table"><thead><tr><th scope="col">Model</th><th scope="col">Recorded setup</th><th scope="col">Main delay</th><th scope="col">After warm-up</th></tr></thead><tbody id="runtime-rows"></tbody></table>
+      </div>
+      <p class="table-help">Warm timings preserve the evaluated sampling settings and candidate counts. Historical speed does not clear numerical failures, and an estimate is not a measured full benchmark.</p>
+    </section>
+
+    <section id="explorer" aria-labelledby="explorer-title">
+      <div class="section-heading"><div><p class="section-number">01 / TEN-MODEL REVIEW</p><h2 id="explorer-title">One model at a time</h2></div><p>Supervision v6 · 13 categories × 17 queries.<br>Select a model, then a category to inspect every query.</p></div>
+      <div id="model-list" class="model-picker" aria-label="Choose a model"></div>
+      <article class="model-detail" aria-live="polite">
+        <header><div><p id="model-status" class="status-label"></p><h3 id="model-title">Loading…</h3></div><span id="baseline-demos" class="recipe-tag"></span></header>
+        <div class="detail-grid"><div><h4>Method</h4><p id="model-change"></p></div><div><h4>Evidence and limits</h4><p id="model-evidence"></p><p id="model-limit" class="boundary"></p></div></div>
+      </article>
+      <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="Category scores, horizontally scrollable">
+        <table class="recovery-table"><caption id="category-caption">Category scores</caption><thead><tr><th scope="col">Category / metric</th><th scope="col">Published baseline</th><th scope="col">Fresh paired control</th><th scope="col" id="variant-heading">Measured variant</th><th scope="col">Change vs paired control</th><th scope="col">Relative change</th><th scope="col">Query wins / ties / losses</th></tr></thead><tbody id="category-rows"></tbody></table>
+      </div>
+      <aside id="magnitude-summary" class="boundary" hidden></aside>
+      <details id="historical-text" hidden></details>
+      <p class="table-help">↑ Higher is better; ↓ lower is better. “Pending” and “Not rerun” are not scores. Means use all 17 queries; hover a value for full stored precision. Positive signed change always means improvement.</p>
+      <div id="alternatives" hidden></div>
+    </section>
+
+    <section id="query-view" aria-labelledby="query-title">
+      <div class="section-heading"><div><p class="section-number">02 / EVERY INDIVIDUAL SCORE</p><h2 id="query-title">Inspect a category</h2></div><label class="control-label">Category<select id="task-select"></select></label></div>
+      <p id="query-context" class="table-help"></p>
+      <aside id="query-magnitude" class="boundary" hidden></aside>
+      <details class="query-scores" open><summary>All 17 query scores</summary>
+        <div class="recovery-table-wrap" tabindex="0" role="region" aria-label="Individual query scores, horizontally scrollable"><table class="recovery-table"><thead><tr><th scope="col">Query</th><th scope="col">Published baseline</th><th scope="col">Fresh paired control</th><th scope="col">Measured variant</th><th scope="col">Signed improvement</th><th scope="col">Relative change</th></tr></thead><tbody id="query-rows"></tbody></table></div>
+      </details>
+      <div id="paired-images" hidden>
+        <div class="image-heading"><div><h3>Actual paired PromptDiffusion episode</h3><p>Lossless 256 × 256 exports, verified against the inference receipts. Browse all 221 examples in fixed query order.</p></div><label class="control-label">Query<select id="query-select"></select></label></div>
+        <div id="image-grid" class="image-grid"></div>
+        <p class="table-help">Demonstration input and output, query input, S1 control and A1 output belong to the same frozen episode. The ground truth is not shown here. Click an image to view it at its original size.</p>
+      </div>
+      <div id="painter-secondary" class="recovery-note" hidden></div>
+    </section>
+
+    <section id="evidence" aria-labelledby="evidence-title">
+      <div class="section-heading"><div><p class="section-number">03 / VERIFICATION</p><h2 id="evidence-title">What the checks establish</h2></div></div>
+      <div class="evidence-grid">
+        <article><h3>PromptDiffusion reference checks</h3><p>All <strong>1,486 weight tensors</strong> exactly match the authors’ checkpoint. Original and converted CPU implementations also pass the complete 50-step sampling comparison on independent fixtures under both conditioning ranges.</p><p class="boundary">This establishes CPU reference agreement for the tested settings. TPU BF16 parity and reproduction of the paper’s datasets remain open. The measured input-range change improves six categories and worsens seven.</p></article>
+        <article><h3>Fixed benchmark contract</h3><p>All original category scores use the existing Bench-v2 validation table. New paired PromptDiffusion results use the frozen v6 pack and unchanged corrected-v3 scorer. Painter’s native-depth bridge uses unchanged depth-scoring mathematics with a different input representation.</p><p class="boundary">Painter’s 17-query CPU depth result is a separate adaptation. The remaining 12 categories were not rerun. Native LVM alternatives remain separate by demonstration count.</p></article>
+        <article><h3>Qualification versus quality</h3><p>The retained local checks cover correction logic, numerical behavior and integration. Analogist’s latest full-checkpoint qualification timed out on synthetic fixtures; it produced no new benchmark score. Model quality changes require complete scored benchmark results.</p><p class="boundary">VICT is included in the resolution goal above. Its existing results remain available in the <a href="../vict/">VICT view</a>, <a href="../bench-v2-review/">all-model review</a> and original tables.</p></article>
+      </div>
+      <div class="download-row"><a href="categories.csv" download>All 130 category rows ↓</a><a href="queries.csv" download>All individual scores ↓</a><a href="data.json" download>Full snapshot and provenance ↓</a></div>
+      <details class="provenance-details"><summary>Pack and scoring identity</summary><dl id="provenance"></dl></details>
+    </section>
+    <noscript><p>This explorer uses JavaScript. Download the <a href="categories.csv">category scores</a>, <a href="queries.csv">individual scores</a>, or <a href="data.json">complete snapshot</a>.</p></noscript>
+    <p id="load-error" role="alert" hidden></p>
+  <p class="table-help"><a href="../bench-v2-painter-reference/">Painter: all 13 categories and 221 queries, arithmetic and backend comparisons →</a></p><p class="table-help"><a href="../bench-v2-painter-instance/">Painter native instance recipe: all 17 queries, gains and regressions →</a></p><p class="table-help"><a href="../bench-v2-surface-normals/">Surface-normal evaluation: verified targets, replayed scores and unresolved model failures →</a></p><p class="table-help"><a href="../bench-v2-painter-pose/">Painter native pose recipe: all 17 queries, gains and regressions →</a></p></main>
+  <footer><p>Bench v2 · Recovery audit · <a href="../10-12-validations/">Return to the original comparison</a></p></footer>
+</body>
+</html>

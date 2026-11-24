@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bench v2 October 12 comparison, updated October 31: one complete recipe per model, exact settings, all query scores, gains and regressions.">
+  <title>Bench v2 · 10/12 · Consistent model recipes</title>
+  <link rel="stylesheet" href="../visualcloze-v2-p2.css">
+  <link rel="stylesheet" href="styles.css?v=65">
+  <link rel="stylesheet" href="best-results.css?v=93">
+  <script src="app.js?v=68" defer></script>
+  <script src="best-results.js?v=106" defer></script>
+  <script src="promptdiffusion-examples.js?v=64" defer></script>
+  <script src="relationadapter-prompts.js?v=65" defer></script>
+  <script src="p16-demos.js?v=111" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="#top">Bench v2 validations</a>
+    <nav aria-label="Page sections">
+      <a href="../bench-v2-test/">Test evaluation results</a>
+      <a href="#best-results">Latest results</a>
+      <a href="#p16-comparison">Three-model P=16</a>
+      <a href="../demos/">Full 12-model gallery ↗</a>
+      <a href="../bench-v2-review/">All-model audit</a>
+      <a href="../bench-v2-recovery/">Measured recoveries</a>
+      <a href="#archived-validation">Archived comparison</a>
+      <a href="#demos-1">1 demo</a>
+      <a href="#demos-2">2 demos</a>
+      <a href="#demos-4">4 demos</a>
+      <a href="#demos-7-8">7/8 demos</a>
+      <a href="#relationadapter-prompts">RelationAdapter prompts</a>
+      <a href="#promptdiffusion-examples">PromptDiffusion examples</a>
+      <a href="#demos">Examples</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero compact-hero" aria-labelledby="page-title">
+      <p class="eyebrow">OCTOBER 12 COMPILATION · UPDATED OCTOBER 31</p>
+      <h1 id="page-title">Bench v2 <span>validations</span></h1>
+      <p class="compilation-summary">Updated results for ten baseline models plus LVM, with one fixed recipe per model across all 13 categories. Ours/TA remains a reported reference. Change a model’s recipe in its column header; all category scores change together.</p>
+    </section>
+
+    <section class="results-section" id="best-results" aria-labelledby="best-title">
+      <span id="validation" class="anchor-target" aria-hidden="true"></span>
+      <header class="section-heading compact-heading"><div><p class="section-index">LATEST / OCTOBER 31</p><h2 id="best-title">Full comparison · selected recipes</h2></div></header>
+      <p id="best-updated" class="best-updated" aria-live="polite">Loading the latest completed comparisons…</p>
+      <p class="best-note"><strong>Updated depth rule: negative scales allowed.</strong> All 12 model depth entries are now checked across 204 query means, including JFLUX/Ours. The answer key determines depth direction as part of alignment. This is an evaluation change, not target-free postprocessing. No extra metadata enters model inference. <a href="../bench-v2-signed-depth/">Before/after results and checks ↗</a></p>
+      <p class="best-note"><strong>Depth decoding corrected.</strong> Painter and VICT now read their saved outputs as native depth before inverse-depth scoring. No extra inference metadata was used. The other 12 task scores are unchanged. <a href="../bench-v2-depth-rescore/">Before/after scores and checks ↗</a></p>
+      <p class="best-note"><strong>Edge audit: IMProv contrast experiment.</strong> Fixed brightness adjustment raises OIS from 0.130808 to 0.327224, improving all 17 queries. The selected recipe is explicitly experimental; the original CPU recipe remains available. No extra inference metadata or new model run. <a href="../bench-v2-edge-audit/">Five-model audit and all predictions ↗</a></p>
+      <p class="best-note"><strong>IMProv and InstaManip checked category by category.</strong> All 26 model-category scores replay exactly from 442 authenticated saved predictions. The scorer is working as declared. IMProv face landmarks and human pose are mostly blank, while several InstaManip appearance outputs are stylized or do not match the target; these are output failures. <a href="../bench-v2-improv-instamanip-audit/">All categories, diagnostics, and contact sheets ↗</a></p>
+      <p class="best-note"><strong>Complete demo folders.</strong> Browse every frozen query, demonstration, input, target, and saved recipe output in the <a href="../demos/">12-model demo gallery ↗</a>.</p>
+      <p class="best-note"><strong>Three completed P=16 runs.</strong> VisualCloze, LaVin-DiT, and InstaManip are aligned on all 221 validation queries and 13 task metrics. Their P=16 results remain separate from the released-checkpoint recipes in the main baseline table. <a href="../p16-comparison/">Open the full P=16 comparison and saved score audits ↗</a></p>
+      <p class="best-note"><strong>JFLUX/Ours depth verified.</strong> All 17 saved predictions score <strong>0.924809</strong> under the shared depth rule and now receive a task rank. All fitted scales are positive, so the previous and signed-scale scores agree. <a href="../bench-v2-jflux-depth/">Query scores and verification ↗</a></p>
+      <div class="best-controls">
+        <label>Depth scoring rule<select id="best-protocol" disabled><option value="signed" selected>Updated · negative scales allowed</option><option value="previous">Previous rule · all recipe alternatives</option></select></label>
+        <label>Model<select id="best-model" disabled><option value="all">All models</option></select></label>
+        <label>Category<select id="best-task" disabled><option value="all">All categories</option></select></label>
+      </div>
+      <p id="best-caption" class="best-caption" aria-live="polite"></p>
+      <div class="rank-legend" aria-label="Per-task score rank colors">
+        <span class="rank-key rank-1"><b>1</b> Best</span>
+        <span class="rank-key rank-2"><b>2</b> Second</span>
+        <span class="rank-key rank-3"><b>3</b> Third</span>
+        <span class="rank-key rank-4"><b>4</b> Fourth</span>
+        <span class="rank-key rank-5"><b>5</b> Fifth</span>
+        <span class="rank-key rank-6"><b>6</b> Sixth</span>
+        <span class="rank-key rank-7"><b>7</b> Seventh</span>
+        <span class="rank-key rank-8"><b>8</b> Eighth</span>
+        <span class="rank-key rank-9"><b>9</b> Ninth</span>
+        <span class="rank-key rank-10"><b>10</b> Tenth</span>
+        <span class="rank-key rank-11"><b>11</b> Eleventh</span>
+        <span class="rank-key rank-12"><b>12</b> Worst</span>
+      </div>
+
+      <div class="best-table-wrap" role="region" tabindex="0" aria-label="One recipe per model; scroll horizontally to compare all models">
+        <table id="best-table" class="best-table validation-comparison-table focused-validation-table" aria-describedby="best-caption"><thead><tr id="best-head"><th>Category / metric</th><th>Loading results…</th></tr></thead><tbody id="best-body"><tr><td colspan="13">Loading results…</td></tr></tbody></table>
+      </div>
+      <details class="best-method"><summary>Recipe selection, reference and evaluation limits</summary>
+      <p class="best-intro">Each model uses <strong>one complete recipe across all 13 categories</strong>. The updated view keeps the recipes selected under the previous rule and changes only depth scoring. It does not claim to reselect the best recipes under the new metric. Switch to the previous rule to inspect all completed recipe alternatives; each recipe dropdown changes the entire model column. Those earlier defaults used all categories with correct metric directions and normal errors normalized by 180 degrees. These validation-selected settings use the source-rounded JFLUX reference and are not an unseen-test estimate.</p>
+      <aside class="best-note"><strong>Current evidence and limits.</strong> Demonstration counts, checkpoints, backends and target palettes can differ between recipes. VisualCloze’s archived scores have unresolved numerical reliability. LVM’s legacy P7 diagnostic, one-query trials, unfinished reruns and category-only adapters cannot enter a full-model column. Painter’s metadata-assisted depth and semantic results remain separate experiments below. Full model certification is still open.</aside>
+      </details>
+      <p class="best-compact">Colors and rank numbers compare scores within each row; arrows show the better direction. Click a score for query details. The updated depth row includes previous-rule scores for comparison; all recipe alternatives remain under the previous rule. LVM’s old table used the excluded legacy P7 diagnostic. Scores display six decimal places; downloads retain full precision. Ours/TA is source-rounded and its full raw validation is unverified. Its depth value is shown only under the previous rule and is excluded from the new depth ranking.</p>
+      <div class="best-downloads"><a id="best-download" href="best-results.csv" download>Default complete recipes (CSV) ↓</a><a id="recipes-download" href="all-recipes.csv" download>Current view · recipes (CSV) ↓</a><a id="queries-download" href="all-query-scores.csv" download>Current view · query scores (CSV) ↓</a><a id="json-download" href="best-results.json" download>Scores, source checksums and selection rules (JSON) ↓</a></div>
+      <noscript><p>The interactive table requires JavaScript. All selected scores and alternatives are available in the CSV downloads above.</p></noscript>
+      <section id="best-detail" class="best-detail" hidden aria-labelledby="best-detail-title">
+        <h3 id="best-detail-title" tabindex="-1"></h3><p id="best-detail-summary" class="best-intro"></p>
+        <div class="table-shell"><table><caption>Current scoring rule and comparison details</caption><thead><tr><th scope="col">Setting / eligibility</th><th scope="col">Category mean</th><th scope="col">Scope and evidence</th></tr></thead><tbody id="best-recipes"></tbody></table></div>
+        <h4>All 17 query scores</h4><p class="best-compact">The same full-model setting is used for every category above. The previous-rule view also includes separate category experiments, which cannot replace individual cells in the main table.</p>
+        <div class="table-shell" tabindex="0" role="region" aria-label="Individual query scores by setting; scroll horizontally"><table><thead><tr id="best-query-head"></tr></thead><tbody id="best-query-body"></tbody></table></div>
+      </section>
+      <details class="best-status"><summary>Default choices and status of all 11 evaluated models</summary><div id="best-model-status" class="best-grid"></div><p><a href="../bench-v2-review/">Full paper and settings audit ↗</a> · <a href="../bench-v2-recovery/">All measured recoveries ↗</a></p></details>
+      <h3>Separate experiments and measured tradeoffs</h3>
+      <p class="best-intro">The Painter adapters below have not been evaluated as one complete 13-category recipe, so their gains do not replace individual cells above. PromptDiffusion’s paired range comparison shows both the gains and losses of the fixed recipe.</p>
+      <div class="best-grid" aria-label="Major measured gains and regressions">
+        <article><h3>Painter · depth with extra metadata</h3><p class="best-big">0.981256</p><p>δ₁ ↑ · separate native-support experiment.</p><small>Uses demonstration depth-scale metadata. Its historical 0.439263 control used the old decoder; the main table now reports the corrected RGB-only result.</small><a href="../bench-v2-recovery/#painter/relative_depth">Historical paired results ↗</a> · <a href="../bench-v2-depth-rescore/">Decoder correction ↗</a></article>
+        <article><h3>Painter · semantic</h3><p class="best-big">0.495922 → 0.594409</p><p>mIoU ↑ · <strong>+19.9%</strong> · 13 wins, 4 losses.</p><small>Extra native demonstration class labels. Other categories were not rerun with this adapter.</small><a href="../bench-v2-painter-semantic/">Every gain and loss ↗</a></article>
+        <article><h3>Painter · instance</h3><p class="best-big">0.049618 → 0.029679</p><p>PQ ↑ · <strong>−40.2%</strong> · 3 wins, 8 losses, 6 ties.</p><small>Generic 448 → native 560 on the same CPU. This new recipe does not replace the stronger result.</small><a href="../bench-v2-painter-instance/">Recipe and resolution effects ↗</a></article>
+        <article><h3>PromptDiffusion · range</h3><p class="best-big">6 better · 7 worse</p><p>The released input range improves some categories and regresses others.</p><small>Example: instance PQ 0.087001 → 0.132211; pose PCK 0.118137 → 0.057353. Both gains and regressions remain available in the recipe comparison; the selected recipe uses the released input range.</small><a href="../bench-v2-recovery/#prompt_diffusion">All paired category changes ↗</a></article>
+      </div>
+    </section>
+
+
+    <!-- P16_TABLE_START -->
+    <section class="results-section p16-comparison-section" id="p16-comparison" aria-labelledby="p16-comparison-title">
+      <header class="section-heading compact-heading"><div><p class="section-index">P=16 / MATCHED COMPARISON</p><h2 id="p16-comparison-title">VisualCloze · LaVin-DiT · InstaManip</h2></div></header>
+      <p class="table-description">Three completed P=16 runs on the same 221 validation queries. Cell colors and rank numbers use the same best-to-worst palette as the main 10/12 table. “Beats copy” compares that model with copying the query input. This block preserves the corrected-v3 scoring used by the saved P=16 audits and stays separate from the signed-depth selected-recipe table above.</p>
+      <div class="p16-summary" aria-label="P=16 task wins"><article><strong>3</strong><span>VisualCloze task wins</span><small>3 beat copy</small></article><article><strong>0</strong><span>LaVin-DiT task wins</span><small>2 beat copy</small></article><article><strong>10</strong><span>InstaManip task wins</span><small>7 beat copy</small></article></div>
+      <div class="rank-legend" aria-label="P=16 per-task rank colors"><span class="rank-key rank-1"><b>1</b> Best</span><span class="rank-key rank-2"><b>2</b> Second</span><span class="rank-key rank-3"><b>3</b> Third</span></div>
+      <div class="table-shell p16-embedded-table" role="region" tabindex="0" aria-label="P=16 comparison; scroll horizontally to compare all models"><table class="focused-validation-table"><thead><tr><th scope="col">Task / metric</th><th scope="col">VisualCloze · P=16</th><th scope="col">LaVin-DiT · P=16</th><th scope="col">InstaManip · P=16</th><th scope="col">Copy input</th><th scope="col">Best P=16 model</th></tr></thead><tbody><tr><td><span class="task-name">Colorization</span><span class="metric-name">LPIPS ↓</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.973725</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.808023</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.550444</strong></td><td>0.261977</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Deblurring</span><span class="metric-name">LPIPS ↓</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.949571</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.838751</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.484363</strong></td><td>0.208890</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Denoising</span><span class="metric-name">LPIPS ↓</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.887168</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.883018</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.646302</strong><span>beats copy</span></td><td>0.744660</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Edge detection</span><span class="metric-name">OIS-F ↑</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.317691</strong></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.222257</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.362459</strong><span>beats copy</span></td><td>0.343988</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Face landmarks</span><span class="metric-name">NME ↓</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.373155</strong></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.500000</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.327322</strong><span>beats copy</span></td><td>0.332472</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Human pose 2D</span><span class="metric-name">PCK torso 0.2 ↑</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.112255</strong></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.000000</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.159804</strong><span>beats copy</span></td><td>0.157353</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Inpainting</span><span class="metric-name">LPIPS ↓</span></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.127967</strong><span>beats copy</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.141995</strong><span>beats copy</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.185704</strong></td><td>0.153042</td><td><span class="p16-winner">VisualCloze</span></td></tr><tr><td><span class="task-name">Instance segmentation</span><span class="metric-name">PQ ↑</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.004192</strong></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.000000</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.042702</strong></td><td>0.054150</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Relative depth</span><span class="metric-name">δ1 ↑</span></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.675341</strong><span>beats copy</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.439263</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.445448</strong></td><td>0.464890</td><td><span class="p16-winner">VisualCloze</span></td></tr><tr><td><span class="task-name">Saliency detection</span><span class="metric-name">Max-Fβ ↑</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.287878</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.339970</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.527807</strong><span>beats copy</span></td><td>0.413528</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Semantic segmentation</span><span class="metric-name">mIoU ↑</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.135843</strong></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.106946</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.284622</strong><span>beats copy</span></td><td>0.263353</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Super-resolution</span><span class="metric-name">LPIPS ↓</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>0.948829</strong></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>0.851138</strong></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>0.600747</strong></td><td>0.434017</td><td><span class="p16-winner">InstaManip</span></td></tr><tr><td><span class="task-name">Surface normals</span><span class="metric-name">Mean angular error ↓</span></td><td class="validation-score p16-score rank-1"><span class="rank-label"><b>1</b> First</span><strong>77.532430°</strong><span>beats copy</span></td><td class="validation-score p16-score rank-2"><span class="rank-label"><b>2</b> Second</span><strong>77.827828°</strong><span>beats copy</span></td><td class="validation-score p16-score rank-3"><span class="rank-label"><b>3</b> Third</span><strong>84.672861°</strong><span>beats copy</span></td><td>113.584106°</td><td><span class="p16-winner">VisualCloze</span></td></tr></tbody></table></div>
+      <p class="table-footnote">Means over 17 queries per task. Metrics are not averaged across rows. <a href="../p16-comparison/">Open the dedicated comparison, exact CSV, and all three score audits ↗</a></p>
+      <p class="p16-inline-help">Open any task row to see its saved query, all three model outputs, ground truth, and the exact 16 demonstrations inside the table.</p>
+    </section>
+    <!-- P16_TABLE_END -->
+
+    <details class="results-section archived-comparison" id="archived-validation">
+      <summary>Archived comparison · previous recipes and scores</summary>
+      <span id="lavin-dit" class="anchor-target" aria-hidden="true"></span>
+      <span id="instamanip" class="anchor-target" aria-hidden="true"></span>
+      <span id="improv" class="anchor-target" aria-hidden="true"></span>
+      <span id="vict" class="anchor-target" aria-hidden="true"></span>
+      <header class="section-heading compact-heading">
+        <div>
+          <p class="section-index">01 / VALIDATION</p>
+          <h2 id="validation-title">Original comparison · preserved</h2>
+        </div>
+      </header>
+      <p class="table-description">The original twelve-model comparison, now using InstaManip’s completed 2-demo task-text results across all 221 queries, matching the <a href="#demos-2">2-demo table</a>. <a href="../data/instamanip-bench-v2-validation-scores.json">InstaManip scores and provenance ↗</a></p>
+      <p class="table-description"><strong>VisualCloze updated October 26:</strong> all 13 scores now use the completed 2-demo rerun with task-specific prompts across all 221 queries, matching the <a href="#demos-2">2-demo table</a>. <a href="../data/visualcloze-task-text-validation-scores.json">Exact scores, task prompts, previous scores, and provenance ↗</a></p>
+      <p class="table-description">PromptDiffusion is updated to the verified task-prompt rerun across all 221 queries. Its scores match the <a href="#demos-1">1-demo table</a>. <a href="#promptdiffusion-examples">View the demonstration pairs, prompts, and answers ↗</a> · <a href="../data/promptdiffusion-task-text-validation-scores.json">PromptDiffusion scores and provenance ↗</a></p>
+
+      <p class="table-description"><strong>New RelationAdapter prompt results:</strong> <a href="#relationadapter-prompts">compare all 13 paired examples and scores below ↗</a>. This q0 diagnostic is separate from the 221-query averages in the main tables.</p>
+
+      <div class="rank-legend" aria-label="Per-task score rank colors">
+        <span class="rank-key rank-1"><b>1</b> Best</span>
+        <span class="rank-key rank-2"><b>2</b> Second</span>
+        <span class="rank-key rank-3"><b>3</b> Third</span>
+        <span class="rank-key rank-4"><b>4</b> Fourth</span>
+        <span class="rank-key rank-5"><b>5</b> Fifth</span>
+        <span class="rank-key rank-6"><b>6</b> Sixth</span>
+        <span class="rank-key rank-7"><b>7</b> Seventh</span>
+        <span class="rank-key rank-8"><b>8</b> Eighth</span>
+        <span class="rank-key rank-9"><b>9</b> Ninth</span>
+        <span class="rank-key rank-10"><b>10</b> Tenth</span>
+        <span class="rank-key rank-11"><b>11</b> Eleventh</span>
+        <span class="rank-key rank-12"><b>12</b> Worst</span>
+      </div>
+
+      <div class="table-shell validation-table-shell">
+        <table class="validation-comparison-table focused-validation-table">
+          <thead>
+            <tr id="validation-head">
+              <th scope="col">Task / metric</th>
+              <th scope="col" colspan="12">Loading validation scores…</th>
+            </tr>
+          </thead>
+          <tbody id="validation-body">
+            <tr><td colspan="13" class="loading-cell">Loading validation scores…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <section class="results-section demo-count-section" id="demo-counts" aria-labelledby="demo-counts-title">
+      <header class="section-heading compact-heading">
+        <div>
+          <p class="section-index">02 / SCORES BY DEMONSTRATION COUNT</p>
+          <h2 id="demo-counts-title">One table per demo count</h2>
+        </div>
+      </header>
+      <p class="table-description">Archived tables on the same 221 validation queries: 13 tasks, 17 queries per task. Arrows show the better direction; ranks compare models within each task and table. New CPU results and InstaManip’s completed P3 results are included in the latest consistent-recipe table above; these earlier tables are preserved.</p>
+      <div class="demo-count-links" aria-label="Jump to a demo-count table">
+        <a href="#demos-1">1 demo · 11 models</a>
+        <a href="#demos-2">2 demos · 4 models</a>
+        <a href="#demos-4">4 demos · 3 models</a>
+        <a href="#demos-7-8">7/8 demos · 3 models</a>
+      </div>
+      <div id="demo-count-tables" aria-live="polite"><p>Loading demo-count tables…</p></div>
+      <noscript><p>Enable JavaScript to view the tables, or download the <a href="../data/bench-v2-validation-demos-1.csv">1-demo</a>, <a href="../data/bench-v2-validation-demos-2.csv">2-demo</a>, <a href="../data/bench-v2-validation-demos-4.csv">4-demo</a>, and <a href="../data/bench-v2-validation-demos-7-8.csv">7/8-demo CSV files</a>.</p></noscript>
+      <aside class="run-notice demo-count-notes">
+        <strong>Reading these comparisons</strong>
+        <p>The 7/8 table groups LVM at 7 demos with VisualCloze and LaVin-DiT at 8. LVM’s 7-demo scores retain their diagnostic legacy-plan qualification. Ours/TA used 16 demos and remains in the original comparison.</p>
+        <p>InstaManip’s 1- and 2-demo tables use the completed task-text runs and their demo-specific released checkpoints; the original comparison now uses the same 2-demo task-text scores. InstaManip has no released 4- or 8-demo checkpoint.</p>
+        <p><strong>VisualCloze updated October 27:</strong> all four demo tables now use the same 13 task-specific prompts with empty content captions, with 221 completed and scored queries at each count. The original comparison continues to use the 2-demo results. Exact prompts, previous scores, and provenance: <a href="../data/visualcloze-p1-task-text-validation-scores.json">1 demo ↗</a> · <a href="../data/visualcloze-task-text-validation-scores.json">2 demos ↗</a> · <a href="../data/visualcloze-p4-task-text-validation-scores.json">4 demos ↗</a> · <a href="../data/visualcloze-p8-task-text-validation-scores.json">8 demos ↗</a>.</p>
+        <p>VisualCloze demonstrations, queries, seeds, weights, steps, and guidance match each original run. TPU hardware and model sharding changed, so differences cannot be attributed solely to text. The demo gallery retains the labeled original generic-text outputs. <a href="../data/visualcloze-multidemo-task-text-completion.json">1-, 4-, and 8-demo verification receipt ↗</a></p>
+        <p><strong>PromptDiffusion updated October 26:</strong> the 1-demo table uses three task labels from the authors’ released code and ten agreed task prompts. All 221 examples were rerun and rescored; every image and primary score matched the first task-prompt run exactly. <a href="#promptdiffusion-examples">Explore every example ↗</a> · <a href="../data/promptdiffusion-task-text-validation-scores.json">Scores, task prompts, and provenance ↗</a></p>
+        <p><strong>RelationAdapter updated October 26:</strong> <a href="#relationadapter-prompts">new demo instructions versus the generic prompt, with scores and outputs for all 13 q0 examples ↗</a>. Each task has one query in this diagnostic; the full-validation tables retain their 17-query means.</p>
+        <p>Analogist’s eight candidates are averaged within each episode; they are not eight demonstrations. Its frozen current-vision prompts differ from the paper’s GPT-4V route. VICT uses 60 encoder updates per query. TPU ports retain their existing numerical-parity qualifications.</p>
+        <p>Scores are means of the named metric within each task; there is no average across unlike metrics. <a href="../data/bench-v2-validation-demo-counts.json">Download scores and provenance ↗</a></p>
+      </aside>
+    </section>
+
+    <section class="results-section ra-prompts" id="relationadapter-prompts" aria-labelledby="ra-title">
+      <header class="section-heading compact-heading">
+        <div>
+          <p class="section-index">03 / RELATIONADAPTER · NEW PROMPT RESULTS</p>
+          <h2 id="ra-title">Do the demo instructions help?</h2>
+        </div>
+      </header>
+      <p class="table-description">The October 26 rerun: <strong>13 paired examples, one query per task, one demonstration per query.</strong> Both columns use the same demos, query images, targets, model seed, sampling settings, and v6e TPU. Only the text instruction changes. Arrows indicate the better metric direction.</p>
+      <aside class="run-notice"><strong>One-example diagnostic · N = 1 per task</strong><p>These scores use the same corrected Bench v2 metrics, but each is a single q0 example rather than the 17-query mean used in the full-validation tables above. The generic column is a fresh matched control. This table does not enter the full-validation model rankings.</p></aside>
+      <p id="ra-score-summary" class="table-description" aria-live="polite">Loading the paired scores…</p>
+      <div class="table-shell ra-table-shell" tabindex="0" role="region" aria-label="RelationAdapter paired prompt scores; scroll horizontally on narrow screens">
+        <table class="ra-score-table">
+          <caption>RelationAdapter · q0 only · 1 query per task · October 26</caption>
+          <thead><tr><th scope="col">Task / metric</th><th scope="col">Generic prompt<br><small>N = 1</small></th><th scope="col">New instruction<br><small>N = 1</small></th><th scope="col">Change<br><small>new − generic</small></th><th scope="col">Result</th></tr></thead>
+          <tbody id="ra-score-body"><tr><td colspan="5">Loading scores…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="pd-footnote">Select a task name in the table to inspect its images. <a href="../data/relationadapter-prompt-comparison.csv">Download scores (CSV) ↗</a> · <a href="../data/relationadapter-prompt-comparison.json">Prompts, scores, and provenance (JSON) ↗</a></p>
+      <div class="pd-viewer" id="ra-viewer">
+        <div class="pd-controls">
+          <label>Task <select id="ra-category" disabled><option>Loading tasks…</option></select></label>
+          <div class="pd-navigation"><button id="ra-previous" type="button" disabled>← Previous task</button><button id="ra-next" type="button" disabled>Next task →</button></div>
+        </div>
+        <p id="ra-example-status" class="pd-status" aria-live="polite">Loading the verified examples…</p>
+        <div id="ra-example-stage" aria-live="polite"></div>
+      </div>
+      <p class="pd-footnote">Instructions were inferred from each demonstration by Codex subagents and approved for this rerun; these are not outputs from an actual GPT-4o call. Settings: native P=1, 24 steps, guidance 3.5, relation scale 1, seed 1000, bfloat16, 256 × 256. Existing TPU numerical-port qualifications still apply. Click any image to enlarge it.</p>
+      <noscript><p>Enable JavaScript to browse the examples, or download the score CSV above.</p></noscript>
+    </section>
+
+    <section class="demos-section pd-examples" id="promptdiffusion-examples" aria-labelledby="pd-examples-title">
+      <header class="section-heading compact-heading">
+        <div>
+          <p class="section-index">04 / PROMPTDIFFUSION · THREE TEXT RECIPES</p>
+          <h2 id="pd-examples-title">Compare the prompts and outputs</h2>
+        </div>
+      </header>
+      <p class="table-description">All 221 examples across 13 categories: original generic text, previous short task text, and detailed text in three columns. The same demonstration pair, query, and ground truth appear above; each output has its exact prompt and score. Click any image to enlarge it.</p>
+      <aside class="run-notice"><strong>The original run had generic text.</strong><p>Its prompt was “A high quality image.” It had no task-specific instruction, but it was not a genuinely empty prompt. No empty-prompt run is included here.</p></aside>
+      <div class="pd-viewer">
+        <div class="pd-controls">
+          <label>Category <select id="pd-category" disabled><option>Loading categories…</option></select></label>
+          <label>Example <select id="pd-query" disabled><option>Loading examples…</option></select></label>
+          <div class="pd-navigation">
+            <button id="pd-previous" type="button" disabled aria-label="Previous PromptDiffusion example">← Previous</button>
+            <button id="pd-next" type="button" disabled aria-label="Next PromptDiffusion example">Next →</button>
+          </div>
+        </div>
+        <p id="pd-example-status" class="pd-status" aria-live="polite">Loading the verified examples…</p>
+        <div id="pd-example-stage" aria-live="polite"></div>
+      </div>
+      <p class="pd-footnote">All three runs share the exact demonstration pairs, queries, targets, noise seeds, weights, and sampling settings. The original ran on v5p; the previous and detailed runs used the same v6e TPU. The previous column contains three author-released labels and ten agreed prompts; the detailed prompts are experimental. Benchmark tables use the previous short-prompt run. <a href="../data/promptdiffusion-prompt-comparison.json">Prompts, scores, and image checksums ↗</a></p>
+      <noscript><p>Enable JavaScript to browse the examples.</p></noscript>
+    </section>
+
+    <section class="demos-section" id="demos" aria-labelledby="demos-title">
+      <span id="prompt-diffusion" class="anchor-target" aria-hidden="true"></span>
+      <span id="relation-adapter" class="anchor-target" aria-hidden="true"></span>
+      <header class="section-heading compact-heading">
+        <div>
+          <p class="section-index">05 / ORIGINAL COMPARISON EXAMPLES</p>
+          <h2 id="demos-title">Examples</h2>
+        </div>
+      </header>
+
+      <aside class="run-notice">
+        <strong>Archived examples from the earlier recipes</strong>
+        <p>PromptDiffusion’s updated table scores correspond to the <a href="#promptdiffusion-examples">verified task-prompt examples above</a>. The older PromptDiffusion examples in this historical viewer used the generic text prompt.</p>
+        <p>Twelve recipes now cover the same 221 queries: eleven full-precision scored artifacts plus the source-rounded Ours/TA report. VICT uses P=1, 60 encoder updates per query, and the official no-augmentation data setup on a TPU port whose full numerical parity remains under review. Analogist reports the arithmetic mean of eight independently scored candidates per episode. <a href="../data/vict-bench-v2-validation-scores.json">VICT receipt ↗</a> · <a href="../data/analogist-current-vision-bench-v2-validation-scores.json">Analogist receipt ↗</a> · <a href="../data/improv-bench-v2-validation-scores.json">IMProv receipt ↗</a> · <a href="../data/lavin-dit-bench-v2-validation-scores.json">LaVin-DiT receipt ↗</a> · <a href="../data/promptdiffusion-bench-v2-validation-scores.json">PromptDiffusion receipt ↗</a> · <a href="../data/relationadapter-bench-v2-validation-scores.json">RelationAdapter receipt ↗</a> · <a href="../data/instamanip-bench-v2-validation-scores.json">InstaManip receipt ↗</a></p>
+      </aside>
+
+      <div class="bench-v2-example-viewer">
+        <div class="viewer-bar">
+          <div>
+            <span class="viewer-kicker" id="bench-v2-example-dataset">bench_v2 validation · shared q0 · Painter</span>
+            <h3 id="bench-v2-example-task">Colorization</h3>
+          </div>
+          <div class="viewer-actions">
+            <button class="icon-button" id="bench-v2-example-previous" type="button" aria-label="Previous demo task">←</button>
+            <span id="bench-v2-example-count" aria-live="polite">1 / 13</span>
+            <button class="icon-button" id="bench-v2-example-next" type="button" aria-label="Next demo task">→</button>
+          </div>
+        </div>
+        <div class="model-example-tabs" id="model-example-tabs" role="tablist" aria-label="Demo models"></div>
+        <div class="bench-v2-example-stage" id="bench-v2-example-stage" aria-live="polite"></div>
+        <div class="bench-v2-example-tabs" id="bench-v2-example-tabs" role="tablist" aria-label="Demo task families"></div>
+      </div>
+    </section>
+  <p class="table-help"><a href="../bench-v2-painter-semantic/">Painter native semantic adapter: all gains and regressions →</a></p><p class="table-help"><a href="../bench-v2-painter-reference/">Painter: all 13 categories and 221 queries, arithmetic and backend comparisons →</a></p><p class="table-help"><a href="../bench-v2-surface-normals/">Surface-normal evaluation: verified targets, replayed scores and unresolved model failures →</a></p><p class="table-help"><a href="../bench-v2-painter-pose/">Painter native pose recipe: all 17 queries, gains and regressions →</a></p></main>
+
+  <dialog id="image-dialog">
+    <div class="dialog-bar">
+      <h2 id="dialog-title">Demo image</h2>
+      <button id="dialog-close" type="button">Close</button>
+    </div>
+    <img id="dialog-image" alt="">
+  </dialog>
+</body>
+</html>

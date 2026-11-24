@@ -1,0 +1,49 @@
+{
+  "schema": "instamanip_complete_cpu_diffusion_verification_v1",
+  "updated_utc": "2026-10-31T06:46:14.460639+00:00",
+  "status": "PASS_BOTH_FULL50_CPU_TRAJECTORIES_EXACT",
+  "backend": "CPU_FP32",
+  "cases": [
+    {
+      "case": 0,
+      "task_fixture": "edge_detection",
+      "steps_per_arm": 50,
+      "all_step_tensors_exact": true,
+      "raw_decode_exact": true,
+      "pixels_exact": true,
+      "max_abs_difference": 0.0,
+      "wall_seconds": 5772.500163155957,
+      "released_seconds": 2763.2292423880426,
+      "candidate_seconds": 2996.150755673065,
+      "candidate_runtime_increase_pct": 8.429322826785324
+    },
+    {
+      "case": 1,
+      "task_fixture": "human_pose_2d",
+      "steps_per_arm": 50,
+      "all_step_tensors_exact": true,
+      "raw_decode_exact": true,
+      "pixels_exact": true,
+      "max_abs_difference": 0.0,
+      "wall_seconds": 5535.091136208968,
+      "released_seconds": 2648.8060044329613,
+      "candidate_seconds": 2873.5946342739044,
+      "candidate_runtime_increase_pct": 8.486413480819044
+    }
+  ],
+  "compared_step_pairs": 100,
+  "sampling_calls": 4,
+  "total_denoising_steps": 200,
+  "rechecked_tensor_pairs": 404,
+  "benchmark_scores_changed": false,
+  "tpu_qualified": false,
+  "timing_interpretation": "Single observed runs with diagnostic capture. The candidate is slower on CPU in both cases; no throughput gain or TPU speedup is established.",
+  "limits": [
+    "Two frozen synthetic input fixtures generate real full-checkpoint conditioning; no benchmark accuracy result.",
+    "Common supplied noise isolates the scheduler/pipeline optimization; per-query versus per-call RNG policy is not tested.",
+    "CPUFP32 does not qualify CUDAFP16, TPU BF16/SPMD, padded16-way diffusion or padded80-image CLIP."
+  ],
+  "plan_sha256": "8cdb240680168a194d3c1044801f786a956e0b1572e427ceca895e84ed047892",
+  "source_receipt_sha256": "e05a88e53713dc8cd0b0647c94585aab19f3230d79f124f29c5c2de0a308adab",
+  "scope": "Two synthetic two-shot fixtures using full-checkpoint conditioning, native 1024 resolution and common supplied noise. This is numerical verification; no new benchmark accuracy score."
+}

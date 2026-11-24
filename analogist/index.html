@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Analogist Bench v2 validation outputs: 221 complete episodes and all eight retained candidates across 13 tasks.">
+  <title>Analogist · Bench v2 validation</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="analogist.css?v=52">
+  <script src="app.js?v=52" defer></script>
+</head>
+<body>
+  <header class="analogist-nav">
+    <a class="analogist-wordmark" href="../">VisualCloze evals</a>
+    <nav aria-label="Page sections">
+      <a href="#results">Results</a>
+      <a href="#protocol">Protocol</a>
+      <a href="../10-12-validations/">All validations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="analogist-hero" aria-labelledby="page-title">
+      <div>
+        <p class="analogist-kicker">BENCH V2 · VALIDATION · P=1</p>
+        <h1 id="page-title">Analogist <span>results</span></h1>
+        <p class="analogist-lede">Complete inference outputs for all 221 validation queries, with every independently seeded candidate retained.</p>
+      </div>
+      <span class="analogist-status">Inference complete · scores pending</span>
+    </section>
+
+    <dl class="analogist-facts" aria-label="Analogist validation summary">
+      <div><dt>Episodes</dt><dd>221 / 221</dd></div>
+      <div><dt>Tasks</dt><dd>13</dd></div>
+      <div><dt>Candidates</dt><dd>1,768</dd></div>
+      <div><dt>Cross-worker check</dt><dd>Pixel exact</dd></div>
+    </dl>
+
+    <aside class="analogist-boundary">
+      <strong>Why there is no ranked score column yet</strong>
+      <p>Inference is complete, but corrected-V3 metrics have not been receipt-bound. These outputs are published for direct inspection and Analogist remains outside the ranked validation table until scoring is authoritative.</p>
+    </aside>
+
+    <section class="analogist-results" id="results" aria-labelledby="results-title">
+      <header class="analogist-section-heading">
+        <div>
+          <p>Q0 OUTPUT GALLERY</p>
+          <h2 id="results-title">All eight candidates, task by task</h2>
+        </div>
+        <div class="analogist-pager">
+          <button id="previous-task" type="button" aria-label="Previous task">←</button>
+          <span id="task-count" aria-live="polite">1 / 13</span>
+          <button id="next-task" type="button" aria-label="Next task">→</button>
+        </div>
+      </header>
+      <div class="analogist-task-tabs" id="task-tabs" role="tablist" aria-label="Analogist task results"></div>
+      <div class="analogist-stage" id="analogist-stage" aria-live="polite">
+        <p class="analogist-loading">Loading Analogist outputs…</p>
+      </div>
+    </section>
+
+    <section class="analogist-protocol" id="protocol" aria-labelledby="protocol-title">
+      <p class="analogist-kicker">PROTOCOL BOUNDARY</p>
+      <h2 id="protocol-title">Native geometry, current-vision prompts</h2>
+      <div class="analogist-protocol-grid">
+        <article><strong>Matched to the release</strong><p>2×2 grid, 253 px element resizing inside 256 px cells, bottom-right mask, 50 DDIM steps, and eight retained candidates.</p></article>
+        <article><strong>Deliberate evaluation difference</strong><p>Bench v2 covers 13 tasks, and prompt descriptions use a frozen Codex current-vision cache rather than the paper’s GPT-4V route over 10 tasks.</p></article>
+        <article><strong>Execution</strong><p>Two-worker v5p-16 PyTorch/XLA run. Every candidate’s decoded pixels matched across workers.</p></article>
+      </div>
+      <a class="analogist-download" href="../data/analogist-current-vision-bench-v2-validation.json?v=52">Download run provenance JSON ↓</a>
+    </section>
+  </main>
+
+  <dialog id="image-dialog">
+    <div class="analogist-dialog-bar">
+      <h2 id="dialog-title">Analogist output</h2>
+      <button id="dialog-close" type="button">Close</button>
+    </div>
+    <img id="dialog-image" alt="">
+  </dialog>
+
+  <footer><span>Analogist · Bench v2 validation</span><a href="#page-title">Back to top ↑</a></footer>
+</body>
+</html>

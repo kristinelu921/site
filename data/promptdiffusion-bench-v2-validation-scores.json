@@ -1,0 +1,173 @@
+{
+  "backend_note": "Native PromptDiffusion diffusers checkpoint on TPU",
+  "corrected_release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "edge_pooled": {
+    "copy": {
+      "ap": 0.10176946972095509,
+      "ap_frozen": 0.10363938842014207,
+      "ap_last_diagnostic": 0.10176946972095509,
+      "ods": 0.31047714258132336,
+      "ois": 0.3537630806605557
+    },
+    "model": {
+      "ap": 0.1201013350139338,
+      "ap_frozen": 0.12959708228003344,
+      "ap_last_diagnostic": 0.1201013350139338,
+      "ods": 0.31820281314782217,
+      "ois": 0.34761630199198157
+    }
+  },
+  "episodes": 221,
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "metric_identity_sha256": "82438b7a2b7178b760dcc136c65c40e4895f9c72db5d2eb313ad6c029e851cf3",
+  "model": "PromptDiffusion",
+  "model_revision": "60ea7b6cc48d08487f95d06ba6ce59e15b619efd",
+  "phase": "validation",
+  "plan_identity": "73a8ecdd4dbaff04c7e0836c5da5503dfb1af5817798315145f92376cdb718ff",
+  "prompt_pairs": 1,
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "queries_per_task": 17,
+  "readout": "PromptDiffusion@native_p1",
+  "rows": [
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.26197738792089853,
+      "improvement": -0.37605242584558096,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.6380298137664795,
+      "n": 17,
+      "task": "colorization"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.20889017424162695,
+      "improvement": -0.41472597946138945,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.6236161537030164,
+      "n": 17,
+      "task": "deblurring"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.7446603214039522,
+      "improvement": -0.28920759523616124,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 1.0338679166401135,
+      "n": 17,
+      "task": "denoising"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.34398811965422754,
+      "improvement": -0.0064335276180725876,
+      "lower_is_better": false,
+      "metric": "ois_f",
+      "model": 0.33755459203615495,
+      "n": 17,
+      "task": "edge_detection"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.3341401089295341,
+      "improvement": -0.007247896179686131,
+      "lower_is_better": true,
+      "metric": "nme",
+      "model": 0.34138800510922024,
+      "n": 17,
+      "task": "face_landmarks"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.15735294117647058,
+      "improvement": -0.0607843137254902,
+      "lower_is_better": false,
+      "metric": "pck_torso_0.2",
+      "model": 0.09656862745098038,
+      "n": 17,
+      "task": "human_pose_2d"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.1530421016847386,
+      "improvement": -0.014600576285053707,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.16764267796979232,
+      "n": 17,
+      "task": "inpainting"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.054150348883660084,
+      "improvement": -0.051981739504424515,
+      "lower_is_better": false,
+      "metric": "pq",
+      "model": 0.002168609379235565,
+      "n": 17,
+      "task": "instance_segmentation"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.46488994998791755,
+      "improvement": -0.03233428960075152,
+      "lower_is_better": false,
+      "metric": "delta1",
+      "model": 0.43255566038716603,
+      "n": 17,
+      "task": "relative_depth"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.4135276662170504,
+      "improvement": -0.05975042222151972,
+      "lower_is_better": false,
+      "metric": "max_fbeta",
+      "model": 0.3537772439955307,
+      "n": 17,
+      "task": "saliency_detection"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.26335281273431277,
+      "improvement": -0.09222961889671003,
+      "lower_is_better": false,
+      "metric": "miou",
+      "model": 0.17112319383760274,
+      "n": 17,
+      "task": "semantic_segmentation"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 0.4340166712508482,
+      "improvement": -0.2779757783693426,
+      "lower_is_better": true,
+      "metric": "lpips",
+      "model": 0.7119924496201908,
+      "n": 17,
+      "task": "super_resolution"
+    },
+    {
+      "aggregation": "mean_per_query",
+      "copy": 113.58410577159289,
+      "improvement": 7.396053009936622,
+      "lower_is_better": true,
+      "metric": "mean_deg",
+      "model": 106.18805276165627,
+      "n": 17,
+      "task": "surface_normals"
+    }
+  ],
+  "schema": "visualcloze_site_prompt_diffusion_bench_v2_validation_v1",
+  "score_manifest_sha256": "9527196926e5374a9ae831386f646f3805f725ff814c26ef2ba0f1c3fbf26722",
+  "scored_pairs_including_copy": 442,
+  "scored_results_sha256": "14109088a0596d0c566c8c18d02213e3f5695d903c020a629bbfe3c09eb85893",
+  "scored_utc": "2026-10-14T17:26:09.093264+00:00",
+  "source_run": "gs://kmh-gcp-us-east5/kristine/eval_runs/2026-10-14/prompt_diffusion_bench_v2_native_p1_v5p8_q1_awd",
+  "status": "AUTHORITATIVE_CORRECTED_V3_VALIDATION_COMPLETE",
+  "tasks": 13,
+  "validation_receipt_sha256": "691fd0ed86b45d603023ab13ee433c0af7b7389f5aecd5d72c812af3f8189087",
+  "wins_vs_copy": 1
+}

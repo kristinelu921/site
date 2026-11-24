@@ -1,0 +1,3088 @@
+{
+  "status": "PASS_ALL_COMPLETE_PAINTER_VICT_RECIPES",
+  "contract": "bench_v2_painter_vict_native_depth_decode_v1",
+  "created_utc": "2026-10-31T14:51:24.292530+00:00",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "supervision_version": 6,
+  "metric_release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "decoder_sha256": "b7283b8e45263fb6952fcbb0673d3578173f88db155c5329ff43f02d38398b8d",
+  "recipes": [
+    {
+      "model": "painter",
+      "base_recipe": "painter-p1",
+      "recipe": "painter-p1-depth-decoded",
+      "label": "P=1 \u00b7 archived TPU \u00b7 depth decoded",
+      "before": 0.4392633112465151,
+      "after": 0.9844780292478293,
+      "queries": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "before": 0.19246331412802298,
+          "after": 0.944509705207809,
+          "before_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.19246331412802298,
+            "delta2": 0.453525013518301,
+            "delta3": 0.8613861386138614,
+            "abs_rel": 0.4304840120765908,
+            "rmse": 1.0812457520523577,
+            "scale": 0.0,
+            "shift": 0.5196302979507421
+          },
+          "after_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.944509705207809,
+            "delta2": 0.9826406369450504,
+            "delta3": 0.9996830191493725,
+            "abs_rel": 0.06567377153926535,
+            "rmse": 0.2772220871954596,
+            "scale": 0.13509193199583822,
+            "shift": -0.06388650943953662
+          },
+          "independent_delta1": 0.944509705207809,
+          "prediction_sha256": "3b5c065d73fabccb8f0e61d96216c3b63a59323b6f5a3a584a2a29128000dd21",
+          "prediction_pixels_sha256": "2ca632dae57e6b7d4a5de157a9bf5588bb15ece93ceb8f47eb4d37bd88c03235",
+          "target_pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "before": 0.3886355277675616,
+          "after": 0.9778411180581096,
+          "before_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.3886355277675616,
+            "delta2": 0.9739242368517838,
+            "delta3": 0.9888561971312982,
+            "abs_rel": 0.2574555535477683,
+            "rmse": 0.7620169770377069,
+            "scale": 0.0,
+            "shift": 0.4013215159785751
+          },
+          "after_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.9778411180581096,
+            "delta2": 0.9873666789260758,
+            "delta3": 0.9953475542478852,
+            "abs_rel": 0.053043518528877634,
+            "rmse": 0.18220583863990758,
+            "scale": 0.11990149855974415,
+            "shift": -0.03174650215287768
+          },
+          "independent_delta1": 0.9778411180581096,
+          "prediction_sha256": "16540f577f91c6318aeb327c24ca59ad3438d6197cb2a4dced43d169123faa94",
+          "prediction_pixels_sha256": "b987ef24f9581724a5c8979c2e2c72e285a15f57b01f8bfe2e04e59d0eb94753",
+          "target_pixels_sha256": "b26d7f605c6c9591c5159c85d03e0c56b65c46ffbde95dc7ea2e172b7ed75ba7"
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.3749747321609056,
+          "after": 0.9994670783027363,
+          "before_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.3749747321609056,
+            "delta2": 0.931142841391477,
+            "delta3": 1.0,
+            "abs_rel": 0.26371340305018176,
+            "rmse": 0.8614992321967596,
+            "scale": 0.0,
+            "shift": 0.3626787330890617
+          },
+          "after_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.9994670783027363,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.0311569514680098,
+            "rmse": 0.11653497341969726,
+            "scale": 0.10855856598364114,
+            "shift": 0.0040449822644754475
+          },
+          "independent_delta1": 0.9994670783027363,
+          "prediction_sha256": "188771f1b7aa92332b9586024f0021ed133fdf13bf9d15b65902765ea8e9a5ba",
+          "prediction_pixels_sha256": "2c4d72111d1d2aeabd7baf1229e5340e6e618d8bfd951521504192bd93758656",
+          "target_pixels_sha256": "23b90b59ee525e3d9f356a0c5a82eb736a7bcf9cdd24913039bb55eaa0173bd1"
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.7261513157894737,
+          "after": 0.9932839912280702,
+          "before_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.7261513157894737,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.12790727691953138,
+            "rmse": 0.4020438033510509,
+            "scale": 0.0,
+            "shift": 0.40981948842701993
+          },
+          "after_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.9932839912280702,
+            "delta2": 0.9992632949561403,
+            "delta3": 1.0,
+            "abs_rel": 0.03397226652836446,
+            "rmse": 0.12243621240309967,
+            "scale": 0.11733679999775472,
+            "shift": 0.007093491482463809
+          },
+          "independent_delta1": 0.9932839912280702,
+          "prediction_sha256": "1d85f199ccdcb244221db57765202d0d4138a2675346ee19f2974c1df2b61681",
+          "prediction_pixels_sha256": "ca2195606927acd04dc74b0d92bbfa78b19a6917554a3d5102015db3235dc853",
+          "target_pixels_sha256": "4c005b175258aedc53d56d92b37277a3dbb45064e8a629a85a3a5de848a52e2c"
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.5396477341605163,
+          "after": 0.9872178842656969,
+          "before_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.5396477341605163,
+            "delta2": 0.9098121011159839,
+            "delta3": 0.979124327022498,
+            "abs_rel": 0.23272674533572038,
+            "rmse": 0.9508559013767393,
+            "scale": 0.0,
+            "shift": 0.3143266088222607
+          },
+          "after_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.9872178842656969,
+            "delta2": 0.9979320426427069,
+            "delta3": 0.9995543195350661,
+            "abs_rel": 0.04635996044877775,
+            "rmse": 0.24086777077676677,
+            "scale": 0.11886503264486396,
+            "shift": -0.0031645792961473096
+          },
+          "independent_delta1": 0.9872178842656969,
+          "prediction_sha256": "8b88326298bffae11141b4cfb64fbc99ea5e76bed8336b1b7a95b2562c86ed34",
+          "prediction_pixels_sha256": "3a00379f8aa510184066721bcce15e31df5465b3ee7563c5ec054ea418c10df9",
+          "target_pixels_sha256": "ee193f97d01bc95d6f6d6e46802720e4e4e57844284989ce3eb6c7eb17709968"
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "before": 0.4591568883094307,
+          "after": 0.9966623207301173,
+          "before_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.4591568883094307,
+            "delta2": 0.8955063016079965,
+            "delta3": 1.0,
+            "abs_rel": 0.2618564773633927,
+            "rmse": 0.9462682458542371,
+            "scale": 0.0,
+            "shift": 0.3057606319225027
+          },
+          "after_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.9966623207301173,
+            "delta2": 0.9990265102129509,
+            "delta3": 1.0,
+            "abs_rel": 0.050109505575122074,
+            "rmse": 0.19033759866781724,
+            "scale": 0.12325219076518112,
+            "shift": -0.04666190684685932
+          },
+          "independent_delta1": 0.9966623207301173,
+          "prediction_sha256": "14b3b626ee9c5a3e5a769086cdd9c0c5df4f5b8181d5b12bfa630a9526717b29",
+          "prediction_pixels_sha256": "2546d3d7087c1a27cfad44babd8ae2f8a515092904f9f652aec08c7f517d5d36",
+          "target_pixels_sha256": "6a26f88a5dd8f9e0790083d82aa5d31c4fd58ec8a89347ac65fc27d1fb48e02c"
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "before": 0.5333617036367183,
+          "after": 0.9774101459297481,
+          "before_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.5333617036367183,
+            "delta2": 0.8953135805096015,
+            "delta3": 0.9888114616025675,
+            "abs_rel": 0.23080599906423083,
+            "rmse": 0.6407703742911866,
+            "scale": 0.0,
+            "shift": 0.5184662829823308
+          },
+          "after_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.9774101459297481,
+            "delta2": 0.999574445449226,
+            "delta3": 1.0,
+            "abs_rel": 0.06196961092977022,
+            "rmse": 0.21271329660895122,
+            "scale": 0.06482356567696217,
+            "shift": 0.15657183802861677
+          },
+          "independent_delta1": 0.9774101459297481,
+          "prediction_sha256": "e61c4264b976980d0bbb2d41fa11a2bc18fdc0d3f6664fbdb613248c38ce2fee",
+          "prediction_pixels_sha256": "652faa1dc807f0a632f6e5dcc686943838912a8a02b23b1901365558379bc256",
+          "target_pixels_sha256": "fc8c737a041830582a26c15b13493876b61d7d162f42a599c28b6613f7aa52cc"
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "before": 0.4362365183458891,
+          "after": 0.9998374071866023,
+          "before_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.4362365183458891,
+            "delta2": 0.991960688670894,
+            "delta3": 1.0,
+            "abs_rel": 0.24057753636803916,
+            "rmse": 0.7960691905748116,
+            "scale": 0.0,
+            "shift": 0.34819807141563225
+          },
+          "after_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.9998374071866023,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.02405049009984527,
+            "rmse": 0.09480957207303277,
+            "scale": 0.13608317642254067,
+            "shift": -0.06984190347810265
+          },
+          "independent_delta1": 0.9998374071866023,
+          "prediction_sha256": "702f1b424cf8fb3a1ad031a2c9bf9df16e95387c3fc15c70c9847375775db161",
+          "prediction_pixels_sha256": "1769a0f04f3027717c375d205016545ac7b463dfb6a95863276d1ff3e9e47406",
+          "target_pixels_sha256": "3b0952e35a36437cfa63556d288cd5364a3b2a76795bb2a1634eb3089545cc4a"
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.38438885995941896,
+          "after": 0.9898726903808515,
+          "before_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.38438885995941896,
+            "delta2": 0.863335188809682,
+            "delta3": 0.986568745398718,
+            "abs_rel": 0.29089753534372575,
+            "rmse": 0.6661121896634892,
+            "scale": 0.0,
+            "shift": 0.45337960159533747
+          },
+          "after_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.9898726903808515,
+            "delta2": 0.9988328455226159,
+            "delta3": 1.0,
+            "abs_rel": 0.034620928248272946,
+            "rmse": 0.11296321203745505,
+            "scale": 0.11449858081168499,
+            "shift": -0.027934862633401707
+          },
+          "independent_delta1": 0.9898726903808515,
+          "prediction_sha256": "0f855a21743f4d77de3a6faea6f9173c4f37165d1909799bbca39fcb6e0e6960",
+          "prediction_pixels_sha256": "5adcb30ba171581dc951485ff2badacd9c17d1f11bb7c349f83c8fec0266231e",
+          "target_pixels_sha256": "755d29d71c9312b62b98a33798c18843de85042f9c46637ba36244b80993a112"
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "before": 0.38382818754568554,
+          "after": 0.9647394618677991,
+          "before_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.38382818754568554,
+            "delta2": 0.6901214800375927,
+            "delta3": 0.9429148247415503,
+            "abs_rel": 0.3205255823369351,
+            "rmse": 1.816596532768458,
+            "scale": 0.0,
+            "shift": 0.24380846583231186
+          },
+          "after_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.9647394618677991,
+            "delta2": 0.9927251209579171,
+            "delta3": 0.9997737477809878,
+            "abs_rel": 0.06030911798313316,
+            "rmse": 0.46287127307253584,
+            "scale": 0.12619330293298836,
+            "shift": -0.03322401577246229
+          },
+          "independent_delta1": 0.9647394618677991,
+          "prediction_sha256": "42d0734ba7cd5bc228e4f4bcbf434ca8fca082ed5f73e6ebed164c18f74b6d19",
+          "prediction_pixels_sha256": "590b2efcac246f75c776169e106ba6df5460fb58492d7d0d35cdce2f0a448e57",
+          "target_pixels_sha256": "658652c9ef5649475f03049344f5ff85ae3eb997b7cc87b8c71e7055c7ad38b5"
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.6217661046646761,
+          "after": 0.990524038547496,
+          "before_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.6217661046646761,
+            "delta2": 0.9116411292485384,
+            "delta3": 0.9641165006883481,
+            "abs_rel": 0.22678203067703948,
+            "rmse": 0.4435178657960041,
+            "scale": 0.0,
+            "shift": 0.6200274876008908
+          },
+          "after_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.990524038547496,
+            "delta2": 0.9991060413724053,
+            "delta3": 0.9997318124117216,
+            "abs_rel": 0.04430909946785172,
+            "rmse": 0.1250836926076435,
+            "scale": 0.12641716547102647,
+            "shift": -0.11250588288256105
+          },
+          "independent_delta1": 0.990524038547496,
+          "prediction_sha256": "4a35880a405823d264d1af3f041b2cc53e6b09a8c656fe5ad3781cdb207275e4",
+          "prediction_pixels_sha256": "8b3974cbcb287004d70ccb4349705918075f21209ad601badb80f7bf56368573",
+          "target_pixels_sha256": "7e6b4f68948a841a88959ba036f0d72f82c8646b8b445ae86727430a3bcbbc41"
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "before": 0.31298483471940736,
+          "after": 0.9820043329373122,
+          "before_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.31298483471940736,
+            "delta2": 0.641187364595709,
+            "delta3": 0.7950241106995597,
+            "abs_rel": 0.38470861717253857,
+            "rmse": 1.2854776527907008,
+            "scale": 0.0,
+            "shift": 0.4319621819262409
+          },
+          "after_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.9820043329373122,
+            "delta2": 0.9999650569571599,
+            "delta3": 1.0,
+            "abs_rel": 0.06651442639900482,
+            "rmse": 0.30630239139776644,
+            "scale": 0.09681811289794147,
+            "shift": 0.07923896444052966
+          },
+          "independent_delta1": 0.9820043329373122,
+          "prediction_sha256": "0c6862a3f278738f6b8e84abb114d1900a25b6bf51413d10518ee4909443c638",
+          "prediction_pixels_sha256": "8fb5da579f473ff964153aa13824845a24ed89d600534364ae820f9d79233065",
+          "target_pixels_sha256": "32ca1fdda26487070f90d9805b04ea81dcc43257244c651e1c46b749ac03e0f0"
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.591612492933861,
+          "after": 0.9959723007348784,
+          "before_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.591612492933861,
+            "delta2": 0.8666266252119842,
+            "delta3": 0.8939549180327869,
+            "abs_rel": 0.2365964657022709,
+            "rmse": 1.148996329878349,
+            "scale": 0.0,
+            "shift": 0.449882124069272
+          },
+          "after_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.9959723007348784,
+            "delta2": 0.9995583663086489,
+            "delta3": 1.0,
+            "abs_rel": 0.02265051175657756,
+            "rmse": 0.17227263771744927,
+            "scale": 0.1114367708751539,
+            "shift": -0.02206314816255063
+          },
+          "independent_delta1": 0.9959723007348784,
+          "prediction_sha256": "137ca5a83b90bbf03451ccea26c60f79eb300e3bddcb2339238b995ab90c0649",
+          "prediction_pixels_sha256": "a0b10ed63aa3cd77d5a83424d42e41f5cd36c636f303f8efa87ca6f729f45812",
+          "target_pixels_sha256": "76a242deda6344538ace90854806574cdb67590ba6ddbfadf3e98759341e684f"
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "before": 0.27187945791726104,
+          "after": 0.9695435092724679,
+          "before_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.27187945791726104,
+            "delta2": 0.6484308131241084,
+            "delta3": 0.857614122681883,
+            "abs_rel": 0.3823672170871665,
+            "rmse": 1.2857605464556259,
+            "scale": 0.0,
+            "shift": 0.3995960579884696
+          },
+          "after_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.9695435092724679,
+            "delta2": 0.991583452211127,
+            "delta3": 0.998234664764622,
+            "abs_rel": 0.05507757531883716,
+            "rmse": 0.3546476858639675,
+            "scale": 0.13614256635533176,
+            "shift": -0.06452655517660884
+          },
+          "independent_delta1": 0.9695435092724679,
+          "prediction_sha256": "9245f20f78ecdad75f01f2ac544703848a4f1cd91d07454b5efd3130fbf2ce48",
+          "prediction_pixels_sha256": "b2d5a32c4f8919606e640e26ee773025b2a5c17e3bbc9672e9fe2eaffec673e2",
+          "target_pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "before": 0.5958123892525223,
+          "after": 0.9983546089031932,
+          "before_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.5958123892525223,
+            "delta2": 0.8972625031642136,
+            "delta3": 0.9598054460637182,
+            "abs_rel": 0.24664899686972813,
+            "rmse": 0.48109378248192114,
+            "scale": 0.0,
+            "shift": 0.5482516510504197
+          },
+          "after_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.9983546089031932,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03736262641588069,
+            "rmse": 0.09546551427624593,
+            "scale": 0.11238625537399144,
+            "shift": 0.014168717760235098
+          },
+          "independent_delta1": 0.9983546089031932,
+          "prediction_sha256": "e23b190174370c49f23f5997ba8ff8c3ef39bae33bf3b368e2443fe600f75595",
+          "prediction_pixels_sha256": "100437601220ad8584831be2c61497c4b3df0547dec542e6ef445af12d94ae0f",
+          "target_pixels_sha256": "cbc7c6fdb9e60736b6ea08fcc20e0a3cd94a94cdc735dc06451c6f7d62558d7a"
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "before": 0.4029708592047182,
+          "after": 0.9700899316812279,
+          "before_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.4029708592047182,
+            "delta2": 0.6743960290858472,
+            "delta3": 0.9528545524479367,
+            "abs_rel": 0.30673756402749125,
+            "rmse": 1.1180983667146083,
+            "scale": 0.0,
+            "shift": 0.42410436406920393
+          },
+          "after_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.9700899316812279,
+            "delta2": 0.9952195175559096,
+            "delta3": 0.9986629301976299,
+            "abs_rel": 0.04273971188825142,
+            "rmse": 0.23446720283170203,
+            "scale": 0.11389867878344292,
+            "shift": -0.0038736821373924622
+          },
+          "independent_delta1": 0.9700899316812279,
+          "prediction_sha256": "e17d3e1726a6770f78dbf0605c052ce303f65948a5f7bc782af09ab2a60da5be",
+          "prediction_pixels_sha256": "1700597da88d063a7e802ea1356df2b35e1e7e272dda838245ac363be0748a7c",
+          "target_pixels_sha256": "610877b364bdf33a79fcad4ac41ba4cbe871e1a648700ff60dc0247ad8d056d1"
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.2516053706946877,
+          "after": 0.9987959719789843,
+          "before_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.2516053706946877,
+            "delta2": 0.6269154991243433,
+            "delta3": 1.0,
+            "abs_rel": 0.35399928701388883,
+            "rmse": 0.7798187871740084,
+            "scale": 0.0,
+            "shift": 0.5955624254351948
+          },
+          "after_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.9987959719789843,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03311769219741742,
+            "rmse": 0.09415428548461995,
+            "scale": 0.14770016260479354,
+            "shift": -0.1388783074064844
+          },
+          "independent_delta1": 0.9987959719789843,
+          "prediction_sha256": "8bf4e6b35954e11abdbb64f499f8de0d685d4585f108f81f52e43abfa5827179",
+          "prediction_pixels_sha256": "a540555b3625a8d8753dbcf3cc52af9a22629de32873b4d68636fdea41a76996",
+          "target_pixels_sha256": "cbce3e969004e4817df382c0365bc089afc67b310337e4c877f7896875f5a331"
+        }
+      ],
+      "zero_scale_before": 17,
+      "zero_scale_after": 0,
+      "source_results_sha256": "f68d8d4ef3e64a1ab77a6c29032998b3ff838c47694d9c8ef5a10a7a9a6138a4",
+      "source_manifest_sha256": "7beef6a83e9fe1b2c708da21ec169279d3ed4a317664babb4202381afa691c5f"
+    },
+    {
+      "model": "painter",
+      "base_recipe": "painter-tpu-rescored",
+      "recipe": "painter-tpu-rescored-depth-decoded",
+      "label": "P=1 \u00b7 archived TPU, rescored \u00b7 depth decoded",
+      "before": 0.4392633112465151,
+      "after": 0.9844780292478293,
+      "queries": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "before": 0.19246331412802298,
+          "after": 0.944509705207809,
+          "before_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.19246331412802298,
+            "delta2": 0.453525013518301,
+            "delta3": 0.8613861386138614,
+            "abs_rel": 0.4304840120765908,
+            "rmse": 1.0812457520523577,
+            "scale": 0.0,
+            "shift": 0.5196302979507421
+          },
+          "after_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.944509705207809,
+            "delta2": 0.9826406369450504,
+            "delta3": 0.9996830191493725,
+            "abs_rel": 0.06567377153926535,
+            "rmse": 0.2772220871954596,
+            "scale": 0.13509193199583822,
+            "shift": -0.06388650943953662
+          },
+          "independent_delta1": 0.944509705207809,
+          "prediction_sha256": "3b5c065d73fabccb8f0e61d96216c3b63a59323b6f5a3a584a2a29128000dd21",
+          "prediction_pixels_sha256": "2ca632dae57e6b7d4a5de157a9bf5588bb15ece93ceb8f47eb4d37bd88c03235",
+          "target_pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "before": 0.3886355277675616,
+          "after": 0.9778411180581096,
+          "before_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.3886355277675616,
+            "delta2": 0.9739242368517838,
+            "delta3": 0.9888561971312982,
+            "abs_rel": 0.2574555535477683,
+            "rmse": 0.7620169770377069,
+            "scale": 0.0,
+            "shift": 0.4013215159785751
+          },
+          "after_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.9778411180581096,
+            "delta2": 0.9873666789260758,
+            "delta3": 0.9953475542478852,
+            "abs_rel": 0.053043518528877634,
+            "rmse": 0.18220583863990758,
+            "scale": 0.11990149855974415,
+            "shift": -0.03174650215287768
+          },
+          "independent_delta1": 0.9778411180581096,
+          "prediction_sha256": "16540f577f91c6318aeb327c24ca59ad3438d6197cb2a4dced43d169123faa94",
+          "prediction_pixels_sha256": "b987ef24f9581724a5c8979c2e2c72e285a15f57b01f8bfe2e04e59d0eb94753",
+          "target_pixels_sha256": "b26d7f605c6c9591c5159c85d03e0c56b65c46ffbde95dc7ea2e172b7ed75ba7"
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.3749747321609056,
+          "after": 0.9994670783027363,
+          "before_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.3749747321609056,
+            "delta2": 0.931142841391477,
+            "delta3": 1.0,
+            "abs_rel": 0.26371340305018176,
+            "rmse": 0.8614992321967596,
+            "scale": 0.0,
+            "shift": 0.3626787330890617
+          },
+          "after_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.9994670783027363,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.0311569514680098,
+            "rmse": 0.11653497341969726,
+            "scale": 0.10855856598364114,
+            "shift": 0.0040449822644754475
+          },
+          "independent_delta1": 0.9994670783027363,
+          "prediction_sha256": "188771f1b7aa92332b9586024f0021ed133fdf13bf9d15b65902765ea8e9a5ba",
+          "prediction_pixels_sha256": "2c4d72111d1d2aeabd7baf1229e5340e6e618d8bfd951521504192bd93758656",
+          "target_pixels_sha256": "23b90b59ee525e3d9f356a0c5a82eb736a7bcf9cdd24913039bb55eaa0173bd1"
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.7261513157894737,
+          "after": 0.9932839912280702,
+          "before_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.7261513157894737,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.12790727691953138,
+            "rmse": 0.4020438033510509,
+            "scale": 0.0,
+            "shift": 0.40981948842701993
+          },
+          "after_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.9932839912280702,
+            "delta2": 0.9992632949561403,
+            "delta3": 1.0,
+            "abs_rel": 0.03397226652836446,
+            "rmse": 0.12243621240309967,
+            "scale": 0.11733679999775472,
+            "shift": 0.007093491482463809
+          },
+          "independent_delta1": 0.9932839912280702,
+          "prediction_sha256": "1d85f199ccdcb244221db57765202d0d4138a2675346ee19f2974c1df2b61681",
+          "prediction_pixels_sha256": "ca2195606927acd04dc74b0d92bbfa78b19a6917554a3d5102015db3235dc853",
+          "target_pixels_sha256": "4c005b175258aedc53d56d92b37277a3dbb45064e8a629a85a3a5de848a52e2c"
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.5396477341605163,
+          "after": 0.9872178842656969,
+          "before_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.5396477341605163,
+            "delta2": 0.9098121011159839,
+            "delta3": 0.979124327022498,
+            "abs_rel": 0.23272674533572038,
+            "rmse": 0.9508559013767393,
+            "scale": 0.0,
+            "shift": 0.3143266088222607
+          },
+          "after_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.9872178842656969,
+            "delta2": 0.9979320426427069,
+            "delta3": 0.9995543195350661,
+            "abs_rel": 0.04635996044877775,
+            "rmse": 0.24086777077676677,
+            "scale": 0.11886503264486396,
+            "shift": -0.0031645792961473096
+          },
+          "independent_delta1": 0.9872178842656969,
+          "prediction_sha256": "8b88326298bffae11141b4cfb64fbc99ea5e76bed8336b1b7a95b2562c86ed34",
+          "prediction_pixels_sha256": "3a00379f8aa510184066721bcce15e31df5465b3ee7563c5ec054ea418c10df9",
+          "target_pixels_sha256": "ee193f97d01bc95d6f6d6e46802720e4e4e57844284989ce3eb6c7eb17709968"
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "before": 0.4591568883094307,
+          "after": 0.9966623207301173,
+          "before_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.4591568883094307,
+            "delta2": 0.8955063016079965,
+            "delta3": 1.0,
+            "abs_rel": 0.2618564773633927,
+            "rmse": 0.9462682458542371,
+            "scale": 0.0,
+            "shift": 0.3057606319225027
+          },
+          "after_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.9966623207301173,
+            "delta2": 0.9990265102129509,
+            "delta3": 1.0,
+            "abs_rel": 0.050109505575122074,
+            "rmse": 0.19033759866781724,
+            "scale": 0.12325219076518112,
+            "shift": -0.04666190684685932
+          },
+          "independent_delta1": 0.9966623207301173,
+          "prediction_sha256": "14b3b626ee9c5a3e5a769086cdd9c0c5df4f5b8181d5b12bfa630a9526717b29",
+          "prediction_pixels_sha256": "2546d3d7087c1a27cfad44babd8ae2f8a515092904f9f652aec08c7f517d5d36",
+          "target_pixels_sha256": "6a26f88a5dd8f9e0790083d82aa5d31c4fd58ec8a89347ac65fc27d1fb48e02c"
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "before": 0.5333617036367183,
+          "after": 0.9774101459297481,
+          "before_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.5333617036367183,
+            "delta2": 0.8953135805096015,
+            "delta3": 0.9888114616025675,
+            "abs_rel": 0.23080599906423083,
+            "rmse": 0.6407703742911866,
+            "scale": 0.0,
+            "shift": 0.5184662829823308
+          },
+          "after_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.9774101459297481,
+            "delta2": 0.999574445449226,
+            "delta3": 1.0,
+            "abs_rel": 0.06196961092977022,
+            "rmse": 0.21271329660895122,
+            "scale": 0.06482356567696217,
+            "shift": 0.15657183802861677
+          },
+          "independent_delta1": 0.9774101459297481,
+          "prediction_sha256": "e61c4264b976980d0bbb2d41fa11a2bc18fdc0d3f6664fbdb613248c38ce2fee",
+          "prediction_pixels_sha256": "652faa1dc807f0a632f6e5dcc686943838912a8a02b23b1901365558379bc256",
+          "target_pixels_sha256": "fc8c737a041830582a26c15b13493876b61d7d162f42a599c28b6613f7aa52cc"
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "before": 0.4362365183458891,
+          "after": 0.9998374071866023,
+          "before_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.4362365183458891,
+            "delta2": 0.991960688670894,
+            "delta3": 1.0,
+            "abs_rel": 0.24057753636803916,
+            "rmse": 0.7960691905748116,
+            "scale": 0.0,
+            "shift": 0.34819807141563225
+          },
+          "after_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.9998374071866023,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.02405049009984527,
+            "rmse": 0.09480957207303277,
+            "scale": 0.13608317642254067,
+            "shift": -0.06984190347810265
+          },
+          "independent_delta1": 0.9998374071866023,
+          "prediction_sha256": "702f1b424cf8fb3a1ad031a2c9bf9df16e95387c3fc15c70c9847375775db161",
+          "prediction_pixels_sha256": "1769a0f04f3027717c375d205016545ac7b463dfb6a95863276d1ff3e9e47406",
+          "target_pixels_sha256": "3b0952e35a36437cfa63556d288cd5364a3b2a76795bb2a1634eb3089545cc4a"
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.38438885995941896,
+          "after": 0.9898726903808515,
+          "before_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.38438885995941896,
+            "delta2": 0.863335188809682,
+            "delta3": 0.986568745398718,
+            "abs_rel": 0.29089753534372575,
+            "rmse": 0.6661121896634892,
+            "scale": 0.0,
+            "shift": 0.45337960159533747
+          },
+          "after_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.9898726903808515,
+            "delta2": 0.9988328455226159,
+            "delta3": 1.0,
+            "abs_rel": 0.034620928248272946,
+            "rmse": 0.11296321203745505,
+            "scale": 0.11449858081168499,
+            "shift": -0.027934862633401707
+          },
+          "independent_delta1": 0.9898726903808515,
+          "prediction_sha256": "0f855a21743f4d77de3a6faea6f9173c4f37165d1909799bbca39fcb6e0e6960",
+          "prediction_pixels_sha256": "5adcb30ba171581dc951485ff2badacd9c17d1f11bb7c349f83c8fec0266231e",
+          "target_pixels_sha256": "755d29d71c9312b62b98a33798c18843de85042f9c46637ba36244b80993a112"
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "before": 0.38382818754568554,
+          "after": 0.9647394618677991,
+          "before_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.38382818754568554,
+            "delta2": 0.6901214800375927,
+            "delta3": 0.9429148247415503,
+            "abs_rel": 0.3205255823369351,
+            "rmse": 1.816596532768458,
+            "scale": 0.0,
+            "shift": 0.24380846583231186
+          },
+          "after_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.9647394618677991,
+            "delta2": 0.9927251209579171,
+            "delta3": 0.9997737477809878,
+            "abs_rel": 0.06030911798313316,
+            "rmse": 0.46287127307253584,
+            "scale": 0.12619330293298836,
+            "shift": -0.03322401577246229
+          },
+          "independent_delta1": 0.9647394618677991,
+          "prediction_sha256": "42d0734ba7cd5bc228e4f4bcbf434ca8fca082ed5f73e6ebed164c18f74b6d19",
+          "prediction_pixels_sha256": "590b2efcac246f75c776169e106ba6df5460fb58492d7d0d35cdce2f0a448e57",
+          "target_pixels_sha256": "658652c9ef5649475f03049344f5ff85ae3eb997b7cc87b8c71e7055c7ad38b5"
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.6217661046646761,
+          "after": 0.990524038547496,
+          "before_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.6217661046646761,
+            "delta2": 0.9116411292485384,
+            "delta3": 0.9641165006883481,
+            "abs_rel": 0.22678203067703948,
+            "rmse": 0.4435178657960041,
+            "scale": 0.0,
+            "shift": 0.6200274876008908
+          },
+          "after_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.990524038547496,
+            "delta2": 0.9991060413724053,
+            "delta3": 0.9997318124117216,
+            "abs_rel": 0.04430909946785172,
+            "rmse": 0.1250836926076435,
+            "scale": 0.12641716547102647,
+            "shift": -0.11250588288256105
+          },
+          "independent_delta1": 0.990524038547496,
+          "prediction_sha256": "4a35880a405823d264d1af3f041b2cc53e6b09a8c656fe5ad3781cdb207275e4",
+          "prediction_pixels_sha256": "8b3974cbcb287004d70ccb4349705918075f21209ad601badb80f7bf56368573",
+          "target_pixels_sha256": "7e6b4f68948a841a88959ba036f0d72f82c8646b8b445ae86727430a3bcbbc41"
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "before": 0.31298483471940736,
+          "after": 0.9820043329373122,
+          "before_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.31298483471940736,
+            "delta2": 0.641187364595709,
+            "delta3": 0.7950241106995597,
+            "abs_rel": 0.38470861717253857,
+            "rmse": 1.2854776527907008,
+            "scale": 0.0,
+            "shift": 0.4319621819262409
+          },
+          "after_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.9820043329373122,
+            "delta2": 0.9999650569571599,
+            "delta3": 1.0,
+            "abs_rel": 0.06651442639900482,
+            "rmse": 0.30630239139776644,
+            "scale": 0.09681811289794147,
+            "shift": 0.07923896444052966
+          },
+          "independent_delta1": 0.9820043329373122,
+          "prediction_sha256": "0c6862a3f278738f6b8e84abb114d1900a25b6bf51413d10518ee4909443c638",
+          "prediction_pixels_sha256": "8fb5da579f473ff964153aa13824845a24ed89d600534364ae820f9d79233065",
+          "target_pixels_sha256": "32ca1fdda26487070f90d9805b04ea81dcc43257244c651e1c46b749ac03e0f0"
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.591612492933861,
+          "after": 0.9959723007348784,
+          "before_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.591612492933861,
+            "delta2": 0.8666266252119842,
+            "delta3": 0.8939549180327869,
+            "abs_rel": 0.2365964657022709,
+            "rmse": 1.148996329878349,
+            "scale": 0.0,
+            "shift": 0.449882124069272
+          },
+          "after_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.9959723007348784,
+            "delta2": 0.9995583663086489,
+            "delta3": 1.0,
+            "abs_rel": 0.02265051175657756,
+            "rmse": 0.17227263771744927,
+            "scale": 0.1114367708751539,
+            "shift": -0.02206314816255063
+          },
+          "independent_delta1": 0.9959723007348784,
+          "prediction_sha256": "137ca5a83b90bbf03451ccea26c60f79eb300e3bddcb2339238b995ab90c0649",
+          "prediction_pixels_sha256": "a0b10ed63aa3cd77d5a83424d42e41f5cd36c636f303f8efa87ca6f729f45812",
+          "target_pixels_sha256": "76a242deda6344538ace90854806574cdb67590ba6ddbfadf3e98759341e684f"
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "before": 0.27187945791726104,
+          "after": 0.9695435092724679,
+          "before_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.27187945791726104,
+            "delta2": 0.6484308131241084,
+            "delta3": 0.857614122681883,
+            "abs_rel": 0.3823672170871665,
+            "rmse": 1.2857605464556259,
+            "scale": 0.0,
+            "shift": 0.3995960579884696
+          },
+          "after_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.9695435092724679,
+            "delta2": 0.991583452211127,
+            "delta3": 0.998234664764622,
+            "abs_rel": 0.05507757531883716,
+            "rmse": 0.3546476858639675,
+            "scale": 0.13614256635533176,
+            "shift": -0.06452655517660884
+          },
+          "independent_delta1": 0.9695435092724679,
+          "prediction_sha256": "9245f20f78ecdad75f01f2ac544703848a4f1cd91d07454b5efd3130fbf2ce48",
+          "prediction_pixels_sha256": "b2d5a32c4f8919606e640e26ee773025b2a5c17e3bbc9672e9fe2eaffec673e2",
+          "target_pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "before": 0.5958123892525223,
+          "after": 0.9983546089031932,
+          "before_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.5958123892525223,
+            "delta2": 0.8972625031642136,
+            "delta3": 0.9598054460637182,
+            "abs_rel": 0.24664899686972813,
+            "rmse": 0.48109378248192114,
+            "scale": 0.0,
+            "shift": 0.5482516510504197
+          },
+          "after_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.9983546089031932,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03736262641588069,
+            "rmse": 0.09546551427624593,
+            "scale": 0.11238625537399144,
+            "shift": 0.014168717760235098
+          },
+          "independent_delta1": 0.9983546089031932,
+          "prediction_sha256": "e23b190174370c49f23f5997ba8ff8c3ef39bae33bf3b368e2443fe600f75595",
+          "prediction_pixels_sha256": "100437601220ad8584831be2c61497c4b3df0547dec542e6ef445af12d94ae0f",
+          "target_pixels_sha256": "cbc7c6fdb9e60736b6ea08fcc20e0a3cd94a94cdc735dc06451c6f7d62558d7a"
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "before": 0.4029708592047182,
+          "after": 0.9700899316812279,
+          "before_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.4029708592047182,
+            "delta2": 0.6743960290858472,
+            "delta3": 0.9528545524479367,
+            "abs_rel": 0.30673756402749125,
+            "rmse": 1.1180983667146083,
+            "scale": 0.0,
+            "shift": 0.42410436406920393
+          },
+          "after_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.9700899316812279,
+            "delta2": 0.9952195175559096,
+            "delta3": 0.9986629301976299,
+            "abs_rel": 0.04273971188825142,
+            "rmse": 0.23446720283170203,
+            "scale": 0.11389867878344292,
+            "shift": -0.0038736821373924622
+          },
+          "independent_delta1": 0.9700899316812279,
+          "prediction_sha256": "e17d3e1726a6770f78dbf0605c052ce303f65948a5f7bc782af09ab2a60da5be",
+          "prediction_pixels_sha256": "1700597da88d063a7e802ea1356df2b35e1e7e272dda838245ac363be0748a7c",
+          "target_pixels_sha256": "610877b364bdf33a79fcad4ac41ba4cbe871e1a648700ff60dc0247ad8d056d1"
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.2516053706946877,
+          "after": 0.9987959719789843,
+          "before_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.2516053706946877,
+            "delta2": 0.6269154991243433,
+            "delta3": 1.0,
+            "abs_rel": 0.35399928701388883,
+            "rmse": 0.7798187871740084,
+            "scale": 0.0,
+            "shift": 0.5955624254351948
+          },
+          "after_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.9987959719789843,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03311769219741742,
+            "rmse": 0.09415428548461995,
+            "scale": 0.14770016260479354,
+            "shift": -0.1388783074064844
+          },
+          "independent_delta1": 0.9987959719789843,
+          "prediction_sha256": "8bf4e6b35954e11abdbb64f499f8de0d685d4585f108f81f52e43abfa5827179",
+          "prediction_pixels_sha256": "a540555b3625a8d8753dbcf3cc52af9a22629de32873b4d68636fdea41a76996",
+          "target_pixels_sha256": "cbce3e969004e4817df382c0365bc089afc67b310337e4c877f7896875f5a331"
+        }
+      ],
+      "zero_scale_before": 17,
+      "zero_scale_after": 0,
+      "source_results_sha256": "f68d8d4ef3e64a1ab77a6c29032998b3ff838c47694d9c8ef5a10a7a9a6138a4",
+      "source_manifest_sha256": "7beef6a83e9fe1b2c708da21ec169279d3ed4a317664babb4202381afa691c5f"
+    },
+    {
+      "model": "painter",
+      "base_recipe": "painter-cpu-f32",
+      "recipe": "painter-cpu-f32-depth-decoded",
+      "label": "P=1 \u00b7 CPU FP32 boundaries \u00b7 depth decoded",
+      "before": 0.4392633112465151,
+      "after": 0.9844336672814556,
+      "queries": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "before": 0.19246331412802298,
+          "after": 0.9443605377486901,
+          "before_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.19246331412802298,
+            "delta2": 0.453525013518301,
+            "delta3": 0.8613861386138614,
+            "abs_rel": 0.4304840120765908,
+            "rmse": 1.0812457520523577,
+            "scale": 0.0,
+            "shift": 0.5196302979507421
+          },
+          "after_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.9443605377486901,
+            "delta2": 0.9822677182972535,
+            "delta3": 0.9996830191493725,
+            "abs_rel": 0.06584842219323388,
+            "rmse": 0.2783579433783741,
+            "scale": 0.1351903949470979,
+            "shift": -0.06423774301613651
+          },
+          "independent_delta1": 0.9443605377486901,
+          "prediction_sha256": "87142151138936e8f0283a5754945846d416147f8149a7b6603ab0878316b3ff",
+          "prediction_pixels_sha256": "ec94552566d889eeda78da579992db804fb5836126b82417c4c47338590d5ccc",
+          "target_pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "before": 0.3886355277675616,
+          "after": 0.9778411180581096,
+          "before_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.3886355277675616,
+            "delta2": 0.9739242368517838,
+            "delta3": 0.9888561971312982,
+            "abs_rel": 0.2574555535477683,
+            "rmse": 0.7620169770377069,
+            "scale": 0.0,
+            "shift": 0.4013215159785751
+          },
+          "after_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.9778411180581096,
+            "delta2": 0.9873299006987863,
+            "delta3": 0.9953475542478852,
+            "abs_rel": 0.05314725734201098,
+            "rmse": 0.18244242872585398,
+            "scale": 0.11989050140541918,
+            "shift": -0.031716246573339005
+          },
+          "independent_delta1": 0.9778411180581096,
+          "prediction_sha256": "93dc9976188696d2e258c489349309c4916ac5341dabda093b698b3f947bb87e",
+          "prediction_pixels_sha256": "ba8106c85aac6213a31c6c3c359a0a549a55dbfe616d95f28639fc682abff021",
+          "target_pixels_sha256": "b26d7f605c6c9591c5159c85d03e0c56b65c46ffbde95dc7ea2e172b7ed75ba7"
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.3749747321609056,
+          "after": 0.9994670783027363,
+          "before_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.3749747321609056,
+            "delta2": 0.931142841391477,
+            "delta3": 1.0,
+            "abs_rel": 0.26371340305018176,
+            "rmse": 0.8614992321967596,
+            "scale": 0.0,
+            "shift": 0.3626787330890617
+          },
+          "after_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.9994670783027363,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.031150111523473096,
+            "rmse": 0.11648717602070086,
+            "scale": 0.1086158865514943,
+            "shift": 0.003964196774880743
+          },
+          "independent_delta1": 0.9994670783027363,
+          "prediction_sha256": "d0638db0d09c869159428cdb56567f9c11c558675d9cffee2da86496b012b4f6",
+          "prediction_pixels_sha256": "90f1f80a1f2efe40a8af805e2e64bd586630396f85195f77fa3cb5a929f05f14",
+          "target_pixels_sha256": "23b90b59ee525e3d9f356a0c5a82eb736a7bcf9cdd24913039bb55eaa0173bd1"
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.7261513157894737,
+          "after": 0.9929584703947368,
+          "before_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.7261513157894737,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.12790727691953138,
+            "rmse": 0.4020438033510509,
+            "scale": 0.0,
+            "shift": 0.40981948842701993
+          },
+          "after_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.9929584703947368,
+            "delta2": 0.9992290296052632,
+            "delta3": 1.0,
+            "abs_rel": 0.03405814378264837,
+            "rmse": 0.12275792061687324,
+            "scale": 0.11744887847417014,
+            "shift": 0.006942716737095218
+          },
+          "independent_delta1": 0.9929584703947368,
+          "prediction_sha256": "58cb4de931c9b8240af9213808f43d120a89f66cfc38128cd8b707cbce9bb311",
+          "prediction_pixels_sha256": "d66059265e309fc84789255f7e362c09ca1ec12e190fac216d8eea44d1ca8d42",
+          "target_pixels_sha256": "4c005b175258aedc53d56d92b37277a3dbb45064e8a629a85a3a5de848a52e2c"
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.5396477341605163,
+          "after": 0.9872000570470996,
+          "before_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.5396477341605163,
+            "delta2": 0.9098121011159839,
+            "delta3": 0.979124327022498,
+            "abs_rel": 0.23272674533572038,
+            "rmse": 0.9508559013767393,
+            "scale": 0.0,
+            "shift": 0.3143266088222607
+          },
+          "after_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.9872000570470996,
+            "delta2": 0.9978785609869149,
+            "delta3": 0.9995721467536635,
+            "abs_rel": 0.046249960383003684,
+            "rmse": 0.24096534237721937,
+            "scale": 0.11872559358342993,
+            "shift": -0.002733342418267511
+          },
+          "independent_delta1": 0.9872000570470996,
+          "prediction_sha256": "c110a304f6345c1abca8c650b5e600ecb4a3efc16a036c5ecee542fd75bb396e",
+          "prediction_pixels_sha256": "ab885dd8aeb655f9752b071376e5253ad8939a38efc6efce020a183e71b5a28f",
+          "target_pixels_sha256": "ee193f97d01bc95d6f6d6e46802720e4e4e57844284989ce3eb6c7eb17709968"
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "before": 0.4591568883094307,
+          "after": 0.9967144719687092,
+          "before_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.4591568883094307,
+            "delta2": 0.8955063016079965,
+            "delta3": 1.0,
+            "abs_rel": 0.2618564773633927,
+            "rmse": 0.9462682458542371,
+            "scale": 0.0,
+            "shift": 0.3057606319225027
+          },
+          "after_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.9967144719687092,
+            "delta2": 0.9990091264667535,
+            "delta3": 1.0,
+            "abs_rel": 0.05021524299570365,
+            "rmse": 0.19049038535060706,
+            "scale": 0.12346378915458103,
+            "shift": -0.047215632179770914
+          },
+          "independent_delta1": 0.9967144719687092,
+          "prediction_sha256": "9f338f9da13f2ec8f11c8dd60581ac1dd6d45c67b939bd4638dcea6cea8a89fd",
+          "prediction_pixels_sha256": "b0b3504d7818980941a982547dd4b0dc755ffea009ba983a296cac7774a0af90",
+          "target_pixels_sha256": "6a26f88a5dd8f9e0790083d82aa5d31c4fd58ec8a89347ac65fc27d1fb48e02c"
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "before": 0.5333617036367183,
+          "after": 0.9772328315335922,
+          "before_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.5333617036367183,
+            "delta2": 0.8953135805096015,
+            "delta3": 0.9888114616025675,
+            "abs_rel": 0.23080599906423083,
+            "rmse": 0.6407703742911866,
+            "scale": 0.0,
+            "shift": 0.5184662829823308
+          },
+          "after_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.9772328315335922,
+            "delta2": 0.999574445449226,
+            "delta3": 1.0,
+            "abs_rel": 0.062013956929155095,
+            "rmse": 0.21282564346437033,
+            "scale": 0.06483581364557323,
+            "shift": 0.1565644242024111
+          },
+          "independent_delta1": 0.9772328315335922,
+          "prediction_sha256": "044d1a6af6a9737560639a8d96f5637ccebba3f4cdd71b171c1f1c030dab5108",
+          "prediction_pixels_sha256": "b26deabafb1fa1d007f8c6d96b08b2a446b3f7fe938220d179f32a69bb8d6c31",
+          "target_pixels_sha256": "fc8c737a041830582a26c15b13493876b61d7d162f42a599c28b6613f7aa52cc"
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "before": 0.4362365183458891,
+          "after": 0.9998554730547576,
+          "before_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.4362365183458891,
+            "delta2": 0.991960688670894,
+            "delta3": 1.0,
+            "abs_rel": 0.24057753636803916,
+            "rmse": 0.7960691905748116,
+            "scale": 0.0,
+            "shift": 0.34819807141563225
+          },
+          "after_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.9998554730547576,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.024090193430343868,
+            "rmse": 0.0949369233734458,
+            "scale": 0.1361072224268891,
+            "shift": -0.06985399283920175
+          },
+          "independent_delta1": 0.9998554730547576,
+          "prediction_sha256": "b0e2e3f5efba2d9392a23ba7607a64fa08f670d6b07ef380ebde7b3c8c5140a0",
+          "prediction_pixels_sha256": "9a62db153c97c156d618a9fefbfc89c23b24b99378c2960f3230e2d045f10416",
+          "target_pixels_sha256": "3b0952e35a36437cfa63556d288cd5364a3b2a76795bb2a1634eb3089545cc4a"
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.38438885995941896,
+          "after": 0.9898008654899355,
+          "before_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.38438885995941896,
+            "delta2": 0.863335188809682,
+            "delta3": 0.986568745398718,
+            "abs_rel": 0.29089753534372575,
+            "rmse": 0.6661121896634892,
+            "scale": 0.0,
+            "shift": 0.45337960159533747
+          },
+          "after_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.9898008654899355,
+            "delta2": 0.9987610206316999,
+            "delta3": 1.0,
+            "abs_rel": 0.03451688719983378,
+            "rmse": 0.1129612770349051,
+            "scale": 0.11474968709415863,
+            "shift": -0.0286156711324508
+          },
+          "independent_delta1": 0.9898008654899355,
+          "prediction_sha256": "72f7fdf33247c510e8e6f9e07455971d98f0dddaf22d9fe6f92e5ae859e2f23e",
+          "prediction_pixels_sha256": "fa8e511c4cbbd2645e2c311eff43d5def955f8870970c46f37b1757c679c47b4",
+          "target_pixels_sha256": "755d29d71c9312b62b98a33798c18843de85042f9c46637ba36244b80993a112"
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "before": 0.38382818754568554,
+          "after": 0.9646002297330224,
+          "before_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.38382818754568554,
+            "delta2": 0.6901214800375927,
+            "delta3": 0.9429148247415503,
+            "abs_rel": 0.3205255823369351,
+            "rmse": 1.816596532768458,
+            "scale": 0.0,
+            "shift": 0.24380846583231186
+          },
+          "after_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.9646002297330224,
+            "delta2": 0.9927425249747642,
+            "delta3": 0.9997737477809878,
+            "abs_rel": 0.060383184990055704,
+            "rmse": 0.4631061499137553,
+            "scale": 0.12616366150213834,
+            "shift": -0.033244407967441526
+          },
+          "independent_delta1": 0.9646002297330224,
+          "prediction_sha256": "8ec2f270fc3337260d13cd0a683b78de2da65aa77d05c07035ff9a9444dcbc8f",
+          "prediction_pixels_sha256": "fdceb372af7b54118ef30dd9cdb27572b2da93ae167088176eaf69826d30d516",
+          "target_pixels_sha256": "658652c9ef5649475f03049344f5ff85ae3eb997b7cc87b8c71e7055c7ad38b5"
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.6217661046646761,
+          "after": 0.990541917720048,
+          "before_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.6217661046646761,
+            "delta2": 0.9116411292485384,
+            "delta3": 0.9641165006883481,
+            "abs_rel": 0.22678203067703948,
+            "rmse": 0.4435178657960041,
+            "scale": 0.0,
+            "shift": 0.6200274876008908
+          },
+          "after_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.990541917720048,
+            "delta2": 0.9990881621998534,
+            "delta3": 0.9997675707568253,
+            "abs_rel": 0.044337016440230914,
+            "rmse": 0.1251690037648845,
+            "scale": 0.1266753390182324,
+            "shift": -0.11331131666665788
+          },
+          "independent_delta1": 0.990541917720048,
+          "prediction_sha256": "ed1dc2a2555deee5d1882e9b8e70b73b39d87ef6dc8cc5bc4460bb28c8f61753",
+          "prediction_pixels_sha256": "83140a56ba414130e7087e8e23517910153f60752899dbbf3c8e18919e902e49",
+          "target_pixels_sha256": "7e6b4f68948a841a88959ba036f0d72f82c8646b8b445ae86727430a3bcbbc41"
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "before": 0.31298483471940736,
+          "after": 0.982598364665595,
+          "before_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.31298483471940736,
+            "delta2": 0.641187364595709,
+            "delta3": 0.7950241106995597,
+            "abs_rel": 0.38470861717253857,
+            "rmse": 1.2854776527907008,
+            "scale": 0.0,
+            "shift": 0.4319621819262409
+          },
+          "after_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.982598364665595,
+            "delta2": 0.9999650569571599,
+            "delta3": 1.0,
+            "abs_rel": 0.066257471766571,
+            "rmse": 0.30495648703673406,
+            "scale": 0.0969049855544233,
+            "shift": 0.07904128169478825
+          },
+          "independent_delta1": 0.982598364665595,
+          "prediction_sha256": "58db94cfa26650a2914dca2ff430888f8f993d8336a5056540e4593dff21bd4e",
+          "prediction_pixels_sha256": "2f691c241e60ea005f18e9ac88facdfc4d7418a712fd8b259da840b85476b4a5",
+          "target_pixels_sha256": "32ca1fdda26487070f90d9805b04ea81dcc43257244c651e1c46b749ac03e0f0"
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.591612492933861,
+          "after": 0.9960252967778406,
+          "before_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.591612492933861,
+            "delta2": 0.8666266252119842,
+            "delta3": 0.8939549180327869,
+            "abs_rel": 0.2365964657022709,
+            "rmse": 1.148996329878349,
+            "scale": 0.0,
+            "shift": 0.449882124069272
+          },
+          "after_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.9960252967778406,
+            "delta2": 0.9995583663086489,
+            "delta3": 1.0,
+            "abs_rel": 0.022746143738617827,
+            "rmse": 0.17250768706965477,
+            "scale": 0.11156251819606912,
+            "shift": -0.022413415743615182
+          },
+          "independent_delta1": 0.9960252967778406,
+          "prediction_sha256": "09cbba795b91887678ff36d3d06b80230e5bb8114914e5dc065fb5b64c2c0b31",
+          "prediction_pixels_sha256": "175abc92e4ab63dd17f1351158777870f902710f4595e6ce17f8d3f531777238",
+          "target_pixels_sha256": "76a242deda6344538ace90854806574cdb67590ba6ddbfadf3e98759341e684f"
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "before": 0.27187945791726104,
+          "after": 0.9690263908701855,
+          "before_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.27187945791726104,
+            "delta2": 0.6484308131241084,
+            "delta3": 0.857614122681883,
+            "abs_rel": 0.3823672170871665,
+            "rmse": 1.2857605464556259,
+            "scale": 0.0,
+            "shift": 0.3995960579884696
+          },
+          "after_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.9690263908701855,
+            "delta2": 0.991583452211127,
+            "delta3": 0.998234664764622,
+            "abs_rel": 0.05528333976716714,
+            "rmse": 0.35563189190209554,
+            "scale": 0.13627854554767457,
+            "shift": -0.06473491894653476
+          },
+          "independent_delta1": 0.9690263908701855,
+          "prediction_sha256": "8406b0ea098bb895c8e1cee8870b5b94bf2f469b16de14d9c19b30d9968ee6a2",
+          "prediction_pixels_sha256": "3666d708ee76f0c72410da701dec2f317edb11eea5540b78418993e6fa613ad0",
+          "target_pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "before": 0.5958123892525223,
+          "after": 0.9983365276823492,
+          "before_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.5958123892525223,
+            "delta2": 0.8972625031642136,
+            "delta3": 0.9598054460637182,
+            "abs_rel": 0.24664899686972813,
+            "rmse": 0.48109378248192114,
+            "scale": 0.0,
+            "shift": 0.5482516510504197
+          },
+          "after_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.9983365276823492,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.0374172133648125,
+            "rmse": 0.09545666309415488,
+            "scale": 0.11261475416209114,
+            "shift": 0.013414410302825142
+          },
+          "independent_delta1": 0.9983365276823492,
+          "prediction_sha256": "fc361601f5dc969e5d7b6cf73822c2468deefe5160f0caa7e412f3581ecf0368",
+          "prediction_pixels_sha256": "562f1fd3e34a4264034084eba06690ff7688a05b2210b7cfa0903037f46db486",
+          "target_pixels_sha256": "cbc7c6fdb9e60736b6ea08fcc20e0a3cd94a94cdc735dc06451c6f7d62558d7a"
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "before": 0.4029708592047182,
+          "after": 0.9700349836071579,
+          "before_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.4029708592047182,
+            "delta2": 0.6743960290858472,
+            "delta3": 0.9528545524479367,
+            "abs_rel": 0.30673756402749125,
+            "rmse": 1.1180983667146083,
+            "scale": 0.0,
+            "shift": 0.42410436406920393
+          },
+          "after_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.9700349836071579,
+            "delta2": 0.9952012015312197,
+            "delta3": 0.9986446141729399,
+            "abs_rel": 0.04283480806928888,
+            "rmse": 0.2346434708975716,
+            "scale": 0.11395881292424172,
+            "shift": -0.003994817108326297
+          },
+          "independent_delta1": 0.9700349836071579,
+          "prediction_sha256": "2d41e06e7c61a896b0b91744879d2492c41c068b0b953d23634f5982994077b4",
+          "prediction_pixels_sha256": "f7b6a9fcb0689b61fac912318dc6362c59e782762219c9a3f7fe45ce0b2e30dc",
+          "target_pixels_sha256": "610877b364bdf33a79fcad4ac41ba4cbe871e1a648700ff60dc0247ad8d056d1"
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.2516053706946877,
+          "after": 0.9987777291301809,
+          "before_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.2516053706946877,
+            "delta2": 0.6269154991243433,
+            "delta3": 1.0,
+            "abs_rel": 0.35399928701388883,
+            "rmse": 0.7798187871740084,
+            "scale": 0.0,
+            "shift": 0.5955624254351948
+          },
+          "after_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.9987777291301809,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03309532149872612,
+            "rmse": 0.09415742690663524,
+            "scale": 0.14770633824288404,
+            "shift": -0.13899992482704
+          },
+          "independent_delta1": 0.9987777291301809,
+          "prediction_sha256": "780c89aa852861ea56b29ee7620b1cc46c4353e1d9f307d5872ab1e3871cc466",
+          "prediction_pixels_sha256": "46271a3241dbe6b222bb295fdb1ce7ffb13e1486f8cfc58798844f6c2000e666",
+          "target_pixels_sha256": "cbce3e969004e4817df382c0365bc089afc67b310337e4c877f7896875f5a331"
+        }
+      ],
+      "zero_scale_before": 17,
+      "zero_scale_after": 0,
+      "source_results_sha256": "2b338b61d99a10996fad08d2ea7a57405912679b8e3beea5a88c65d5d4ccbf21",
+      "source_manifest_sha256": "3280277ba4d97e4799e791d590154b7e2e603d6ae5d3af5eb7cd555f60e0d633"
+    },
+    {
+      "model": "painter",
+      "base_recipe": "painter-cpu-released",
+      "recipe": "painter-cpu-released-depth-decoded",
+      "label": "P=1 \u00b7 CPU released boundaries \u00b7 depth decoded",
+      "before": 0.4392633112465151,
+      "after": 0.9844336672814556,
+      "queries": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "before": 0.19246331412802298,
+          "after": 0.9443605377486901,
+          "before_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.19246331412802298,
+            "delta2": 0.453525013518301,
+            "delta3": 0.8613861386138614,
+            "abs_rel": 0.4304840120765908,
+            "rmse": 1.0812457520523577,
+            "scale": 0.0,
+            "shift": 0.5196302979507421
+          },
+          "after_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.9443605377486901,
+            "delta2": 0.9822677182972535,
+            "delta3": 0.9996830191493725,
+            "abs_rel": 0.06584864612869887,
+            "rmse": 0.2783579302882073,
+            "scale": 0.13519045996053372,
+            "shift": -0.06423783880957817
+          },
+          "independent_delta1": 0.9443605377486901,
+          "prediction_sha256": "7a64cca64dfca1d74d494d12543506d322480cc7f327f663dc1952aa9b2f3245",
+          "prediction_pixels_sha256": "3edbb9a29a5306322ade4fe11b6c4ab07117cbfd1a99b6cb3ca5993188ab0edc",
+          "target_pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "before": 0.3886355277675616,
+          "after": 0.9778411180581096,
+          "before_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.3886355277675616,
+            "delta2": 0.9739242368517838,
+            "delta3": 0.9888561971312982,
+            "abs_rel": 0.2574555535477683,
+            "rmse": 0.7620169770377069,
+            "scale": 0.0,
+            "shift": 0.4013215159785751
+          },
+          "after_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.9778411180581096,
+            "delta2": 0.9873299006987863,
+            "delta3": 0.9953475542478852,
+            "abs_rel": 0.0531473467565783,
+            "rmse": 0.18244279619129095,
+            "scale": 0.11989056470052825,
+            "shift": -0.03171651605818286
+          },
+          "independent_delta1": 0.9778411180581096,
+          "prediction_sha256": "7f0ea0e4b555f2d8195658dc4984c8ac6887ffb22f2fe30d69ea5747a9c9159f",
+          "prediction_pixels_sha256": "0d99bb5ede2e136a74bd03f9d88c21fbbe1a219a1ddc338fa8d1851cae9705fa",
+          "target_pixels_sha256": "b26d7f605c6c9591c5159c85d03e0c56b65c46ffbde95dc7ea2e172b7ed75ba7"
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.3749747321609056,
+          "after": 0.9994670783027363,
+          "before_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.3749747321609056,
+            "delta2": 0.931142841391477,
+            "delta3": 1.0,
+            "abs_rel": 0.26371340305018176,
+            "rmse": 0.8614992321967596,
+            "scale": 0.0,
+            "shift": 0.3626787330890617
+          },
+          "after_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.9994670783027363,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.031150321018309265,
+            "rmse": 0.11648828323510417,
+            "scale": 0.10861602654314775,
+            "shift": 0.003963853842453734
+          },
+          "independent_delta1": 0.9994670783027363,
+          "prediction_sha256": "ab6e8f4e0728cc7fddef5e7b7e46d69170f75ae0656485199cb3cd604fb38528",
+          "prediction_pixels_sha256": "4231952e6e461b6b4924db4e8f95ebbfdf74123b7e6bcf943264d86b59016a57",
+          "target_pixels_sha256": "23b90b59ee525e3d9f356a0c5a82eb736a7bcf9cdd24913039bb55eaa0173bd1"
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.7261513157894737,
+          "after": 0.9929584703947368,
+          "before_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.7261513157894737,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.12790727691953138,
+            "rmse": 0.4020438033510509,
+            "scale": 0.0,
+            "shift": 0.40981948842701993
+          },
+          "after_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.9929584703947368,
+            "delta2": 0.9992290296052632,
+            "delta3": 1.0,
+            "abs_rel": 0.03405817227212916,
+            "rmse": 0.12275793829102269,
+            "scale": 0.11744887351682837,
+            "shift": 0.00694273372911633
+          },
+          "independent_delta1": 0.9929584703947368,
+          "prediction_sha256": "4d48d15c54b27144f46b11ef50da139fe116bdf3afeec2fa701445e05db69e1a",
+          "prediction_pixels_sha256": "50adb191eb5cd1ba72d6df51c2f944bb276a288cb9824e66c1ff7c261742e498",
+          "target_pixels_sha256": "4c005b175258aedc53d56d92b37277a3dbb45064e8a629a85a3a5de848a52e2c"
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.5396477341605163,
+          "after": 0.9872000570470996,
+          "before_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.5396477341605163,
+            "delta2": 0.9098121011159839,
+            "delta3": 0.979124327022498,
+            "abs_rel": 0.23272674533572038,
+            "rmse": 0.9508559013767393,
+            "scale": 0.0,
+            "shift": 0.3143266088222607
+          },
+          "after_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.9872000570470996,
+            "delta2": 0.9978785609869149,
+            "delta3": 0.9995721467536635,
+            "abs_rel": 0.04625010833989426,
+            "rmse": 0.24096568938940843,
+            "scale": 0.11872562805265835,
+            "shift": -0.0027333857536868105
+          },
+          "independent_delta1": 0.9872000570470996,
+          "prediction_sha256": "7598f992ef19de1b899646d63730952f8516937943c81241133c740445971575",
+          "prediction_pixels_sha256": "560e2b57a73ab1fe7e225ee53a9bce92580dbbb0d2b9ee1dff6a4027fbfdfe3f",
+          "target_pixels_sha256": "ee193f97d01bc95d6f6d6e46802720e4e4e57844284989ce3eb6c7eb17709968"
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "before": 0.4591568883094307,
+          "after": 0.9967144719687092,
+          "before_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.4591568883094307,
+            "delta2": 0.8955063016079965,
+            "delta3": 1.0,
+            "abs_rel": 0.2618564773633927,
+            "rmse": 0.9462682458542371,
+            "scale": 0.0,
+            "shift": 0.3057606319225027
+          },
+          "after_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.9967144719687092,
+            "delta2": 0.9990091264667535,
+            "delta3": 1.0,
+            "abs_rel": 0.050215335023752104,
+            "rmse": 0.19049079056598497,
+            "scale": 0.12346377154439016,
+            "shift": -0.04721553959681004
+          },
+          "independent_delta1": 0.9967144719687092,
+          "prediction_sha256": "6f7439ee21ff91ac1cd826c77e6488915ca6703bc89ad3e3781974d5b51709a3",
+          "prediction_pixels_sha256": "1c779158045aaac37fa846ca6da98d4b21c95123dfd3bb111ff13242024b6c51",
+          "target_pixels_sha256": "6a26f88a5dd8f9e0790083d82aa5d31c4fd58ec8a89347ac65fc27d1fb48e02c"
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "before": 0.5333617036367183,
+          "after": 0.9772328315335922,
+          "before_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.5333617036367183,
+            "delta2": 0.8953135805096015,
+            "delta3": 0.9888114616025675,
+            "abs_rel": 0.23080599906423083,
+            "rmse": 0.6407703742911866,
+            "scale": 0.0,
+            "shift": 0.5184662829823308
+          },
+          "after_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.9772328315335922,
+            "delta2": 0.999574445449226,
+            "delta3": 1.0,
+            "abs_rel": 0.062014065048123,
+            "rmse": 0.21282588997637247,
+            "scale": 0.06483574077882787,
+            "shift": 0.15656475644757684
+          },
+          "independent_delta1": 0.9772328315335922,
+          "prediction_sha256": "1c275e1eb038f3f38b0ec3202db135a0ee8a9942d87d48f80e10b9990e03c68e",
+          "prediction_pixels_sha256": "a77d484dc9569ace6bc2d387e7ce92ee81c9d6c789f97ea36ec2eeefde4c9a3b",
+          "target_pixels_sha256": "fc8c737a041830582a26c15b13493876b61d7d162f42a599c28b6613f7aa52cc"
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "before": 0.4362365183458891,
+          "after": 0.9998554730547576,
+          "before_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.4362365183458891,
+            "delta2": 0.991960688670894,
+            "delta3": 1.0,
+            "abs_rel": 0.24057753636803916,
+            "rmse": 0.7960691905748116,
+            "scale": 0.0,
+            "shift": 0.34819807141563225
+          },
+          "after_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.9998554730547576,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.024090276754730033,
+            "rmse": 0.09493702853856095,
+            "scale": 0.13610733311555862,
+            "shift": -0.06985427815243953
+          },
+          "independent_delta1": 0.9998554730547576,
+          "prediction_sha256": "7687e7f271e9105ca61d8b391936841467771550e4326397b1e9ae46c0bc3f36",
+          "prediction_pixels_sha256": "3c8c1f70292928ec9b10bcfddac707269f53898733d894705b3000051b19cd08",
+          "target_pixels_sha256": "3b0952e35a36437cfa63556d288cd5364a3b2a76795bb2a1634eb3089545cc4a"
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.38438885995941896,
+          "after": 0.9898008654899355,
+          "before_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.38438885995941896,
+            "delta2": 0.863335188809682,
+            "delta3": 0.986568745398718,
+            "abs_rel": 0.29089753534372575,
+            "rmse": 0.6661121896634892,
+            "scale": 0.0,
+            "shift": 0.45337960159533747
+          },
+          "after_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.9898008654899355,
+            "delta2": 0.9987610206316999,
+            "delta3": 1.0,
+            "abs_rel": 0.0345170461908427,
+            "rmse": 0.1129617242031242,
+            "scale": 0.11474964134644385,
+            "shift": -0.0286155825806026
+          },
+          "independent_delta1": 0.9898008654899355,
+          "prediction_sha256": "919955e1e4431e4d1546ee0e27e37361bd7edebe1a519f4289e87e2aeb2fcef4",
+          "prediction_pixels_sha256": "55c2410ec77fcdc4e9ad6cd783f2e10cf4aec4cf6dceff2ab82c982b314ae2e6",
+          "target_pixels_sha256": "755d29d71c9312b62b98a33798c18843de85042f9c46637ba36244b80993a112"
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "before": 0.38382818754568554,
+          "after": 0.9646002297330224,
+          "before_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.38382818754568554,
+            "delta2": 0.6901214800375927,
+            "delta3": 0.9429148247415503,
+            "abs_rel": 0.3205255823369351,
+            "rmse": 1.816596532768458,
+            "scale": 0.0,
+            "shift": 0.24380846583231186
+          },
+          "after_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.9646002297330224,
+            "delta2": 0.9927425249747642,
+            "delta3": 0.9997737477809878,
+            "abs_rel": 0.060383167421853186,
+            "rmse": 0.46310488601962535,
+            "scale": 0.12616365088524625,
+            "shift": -0.03324444977677883
+          },
+          "independent_delta1": 0.9646002297330224,
+          "prediction_sha256": "416213d073b171ffe7a1e9cf73b245cb217effd7e62e54b81abad307eeb5ee09",
+          "prediction_pixels_sha256": "29f7d9036d34fdd43cc4faaf45144a9ed2b386d9859b94b4c0c4f2bc6b1a339f",
+          "target_pixels_sha256": "658652c9ef5649475f03049344f5ff85ae3eb997b7cc87b8c71e7055c7ad38b5"
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.6217661046646761,
+          "after": 0.990541917720048,
+          "before_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.6217661046646761,
+            "delta2": 0.9116411292485384,
+            "delta3": 0.9641165006883481,
+            "abs_rel": 0.22678203067703948,
+            "rmse": 0.4435178657960041,
+            "scale": 0.0,
+            "shift": 0.6200274876008908
+          },
+          "after_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.990541917720048,
+            "delta2": 0.9990881621998534,
+            "delta3": 0.9997675707568253,
+            "abs_rel": 0.044337328704083495,
+            "rmse": 0.1251692269363958,
+            "scale": 0.1266752714349713,
+            "shift": -0.11331107935671744
+          },
+          "independent_delta1": 0.990541917720048,
+          "prediction_sha256": "49ec8143b1e9f661a37d475599744bd3e229a1af17b98dc679e15538cc7e0b7b",
+          "prediction_pixels_sha256": "529c5198f691d2abf4403f25296bc11a4c9cb3db64873cca49c7b3c9b5d5fa78",
+          "target_pixels_sha256": "7e6b4f68948a841a88959ba036f0d72f82c8646b8b445ae86727430a3bcbbc41"
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "before": 0.31298483471940736,
+          "after": 0.982598364665595,
+          "before_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.31298483471940736,
+            "delta2": 0.641187364595709,
+            "delta3": 0.7950241106995597,
+            "abs_rel": 0.38470861717253857,
+            "rmse": 1.2854776527907008,
+            "scale": 0.0,
+            "shift": 0.4319621819262409
+          },
+          "after_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.982598364665595,
+            "delta2": 0.9999650569571599,
+            "delta3": 1.0,
+            "abs_rel": 0.06625745537508189,
+            "rmse": 0.304956375882236,
+            "scale": 0.09690499085860022,
+            "shift": 0.07904125163386073
+          },
+          "independent_delta1": 0.982598364665595,
+          "prediction_sha256": "0321c0d2d37a0e846639072bfd98cc879ae0437dfe958ecb615189fea8e4fa72",
+          "prediction_pixels_sha256": "0553b31f603465b7bf98e6e58bff117784af517db25c75281f3f73391b61b6b5",
+          "target_pixels_sha256": "32ca1fdda26487070f90d9805b04ea81dcc43257244c651e1c46b749ac03e0f0"
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.591612492933861,
+          "after": 0.9960252967778406,
+          "before_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.591612492933861,
+            "delta2": 0.8666266252119842,
+            "delta3": 0.8939549180327869,
+            "abs_rel": 0.2365964657022709,
+            "rmse": 1.148996329878349,
+            "scale": 0.0,
+            "shift": 0.449882124069272
+          },
+          "after_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.9960252967778406,
+            "delta2": 0.9995583663086489,
+            "delta3": 1.0,
+            "abs_rel": 0.02274608974355871,
+            "rmse": 0.17250659654447004,
+            "scale": 0.11156253320652344,
+            "shift": -0.022413486886171875
+          },
+          "independent_delta1": 0.9960252967778406,
+          "prediction_sha256": "476076bb45ba9f832bc1102c30bcce87637234806d0f0862b31d75234909de23",
+          "prediction_pixels_sha256": "1340a9dbf95156b92290594e4e109898a0d41b1ef19a6e8cef588e86eb00865d",
+          "target_pixels_sha256": "76a242deda6344538ace90854806574cdb67590ba6ddbfadf3e98759341e684f"
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "before": 0.27187945791726104,
+          "after": 0.9690263908701855,
+          "before_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.27187945791726104,
+            "delta2": 0.6484308131241084,
+            "delta3": 0.857614122681883,
+            "abs_rel": 0.3823672170871665,
+            "rmse": 1.2857605464556259,
+            "scale": 0.0,
+            "shift": 0.3995960579884696
+          },
+          "after_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.9690263908701855,
+            "delta2": 0.991583452211127,
+            "delta3": 0.998234664764622,
+            "abs_rel": 0.055282921785224495,
+            "rmse": 0.35563158330588357,
+            "scale": 0.13627845363215274,
+            "shift": -0.06473470516931223
+          },
+          "independent_delta1": 0.9690263908701855,
+          "prediction_sha256": "886d3bd45594fc4db9a1e7623cdd91531779a0761b96170f6c517dfb25a417f2",
+          "prediction_pixels_sha256": "5964a586711cac55e133c3da6ba68cce6aabbf60e502debab7cbeea7da4f971c",
+          "target_pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "before": 0.5958123892525223,
+          "after": 0.9983365276823492,
+          "before_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.5958123892525223,
+            "delta2": 0.8972625031642136,
+            "delta3": 0.9598054460637182,
+            "abs_rel": 0.24664899686972813,
+            "rmse": 0.48109378248192114,
+            "scale": 0.0,
+            "shift": 0.5482516510504197
+          },
+          "after_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.9983365276823492,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.0374172360128867,
+            "rmse": 0.0954571737348737,
+            "scale": 0.11261446042511046,
+            "shift": 0.013415528356218289
+          },
+          "independent_delta1": 0.9983365276823492,
+          "prediction_sha256": "af18c6fac0ff39f2dc730ba81502615789e0a62ec1f9fd295fa1b10b5499d178",
+          "prediction_pixels_sha256": "36078d43c1c1be45b085c72e7007c3097aef265dd795bf6bdeffb8fd6536684f",
+          "target_pixels_sha256": "cbc7c6fdb9e60736b6ea08fcc20e0a3cd94a94cdc735dc06451c6f7d62558d7a"
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "before": 0.4029708592047182,
+          "after": 0.9700349836071579,
+          "before_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.4029708592047182,
+            "delta2": 0.6743960290858472,
+            "delta3": 0.9528545524479367,
+            "abs_rel": 0.30673756402749125,
+            "rmse": 1.1180983667146083,
+            "scale": 0.0,
+            "shift": 0.42410436406920393
+          },
+          "after_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.9700349836071579,
+            "delta2": 0.9952012015312197,
+            "delta3": 0.9986446141729399,
+            "abs_rel": 0.04283535842030039,
+            "rmse": 0.23464449303224008,
+            "scale": 0.11395854750137292,
+            "shift": -0.0039939543879745475
+          },
+          "independent_delta1": 0.9700349836071579,
+          "prediction_sha256": "47cc147cb261afc15d8d7f0a6dbe995f3ea8b7ebe954ba2691cb46725fc58cc2",
+          "prediction_pixels_sha256": "fe8ac2be67e7e75612f762f5a91d90cb101ecbbd5cef6ba4dae4e1116fef02dd",
+          "target_pixels_sha256": "610877b364bdf33a79fcad4ac41ba4cbe871e1a648700ff60dc0247ad8d056d1"
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.2516053706946877,
+          "after": 0.9987777291301809,
+          "before_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.2516053706946877,
+            "delta2": 0.6269154991243433,
+            "delta3": 1.0,
+            "abs_rel": 0.35399928701388883,
+            "rmse": 0.7798187871740084,
+            "scale": 0.0,
+            "shift": 0.5955624254351948
+          },
+          "after_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.9987777291301809,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03309538745364922,
+            "rmse": 0.09415733023348338,
+            "scale": 0.1477063329927813,
+            "shift": -0.1389997307006653
+          },
+          "independent_delta1": 0.9987777291301809,
+          "prediction_sha256": "6024cd051a2cca4abad7baad16e04b25761425b8478805597f61863aef14fd7a",
+          "prediction_pixels_sha256": "4f9c938635010cf05d3b3dde4d4216fa3bf3daee00432642847b37b298636e49",
+          "target_pixels_sha256": "cbce3e969004e4817df382c0365bc089afc67b310337e4c877f7896875f5a331"
+        }
+      ],
+      "zero_scale_before": 17,
+      "zero_scale_after": 0,
+      "source_results_sha256": "7025e98ca3de794acee18d19cf45c1f82327de337bef20139c56095e3839ab82",
+      "source_manifest_sha256": "3fc8b0a771cebfd5b38a96acab2a1e1f368e006b326ccae681d3af97405d0de5"
+    },
+    {
+      "model": "vict",
+      "base_recipe": "vict-p1",
+      "recipe": "vict-p1-depth-decoded",
+      "label": "P=1 \u00b7 archived TPU \u00b7 depth decoded",
+      "before": 0.4392633112465151,
+      "after": 0.9642513873343117,
+      "queries": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "before": 0.19246331412802298,
+          "after": 0.9066025246592456,
+          "before_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.19246331412802298,
+            "delta2": 0.453525013518301,
+            "delta3": 0.8613861386138614,
+            "abs_rel": 0.4304840120765908,
+            "rmse": 1.0812457520523577,
+            "scale": 0.0,
+            "shift": 0.5196302979507421
+          },
+          "after_metrics": {
+            "n_valid": 53631,
+            "coverage": 1.0,
+            "delta1": 0.9066025246592456,
+            "delta2": 0.9553243459939215,
+            "delta3": 0.997650612518879,
+            "abs_rel": 0.10835805656297054,
+            "rmse": 0.3827362258044415,
+            "scale": 0.1188002291853224,
+            "shift": -0.1472529432120126
+          },
+          "independent_delta1": 0.9066025246592456,
+          "prediction_sha256": "e066763758ccaf09f927ea1d5c2093d8d9c9b838a8801daf8df78bc1bfa2c354",
+          "prediction_pixels_sha256": "8004542f927a3647b177b968afdd1e4c2c117073c8b6ba396e70e427441926f5",
+          "target_pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38"
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "before": 0.3886355277675616,
+          "after": 0.9801949246046341,
+          "before_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.3886355277675616,
+            "delta2": 0.9739242368517838,
+            "delta3": 0.9888561971312982,
+            "abs_rel": 0.2574555535477683,
+            "rmse": 0.7620169770377069,
+            "scale": 0.0,
+            "shift": 0.4013215159785751
+          },
+          "after_metrics": {
+            "n_valid": 54380,
+            "coverage": 1.0,
+            "delta1": 0.9801949246046341,
+            "delta2": 0.9910812798823097,
+            "delta3": 0.998804707613093,
+            "abs_rel": 0.0488671446584271,
+            "rmse": 0.1583045609610568,
+            "scale": 0.07528224053138777,
+            "shift": -0.018133801900854188
+          },
+          "independent_delta1": 0.9801949246046341,
+          "prediction_sha256": "3ab134543d828c3059ad9f32e88970c040a4e439f0b4da2063e3cc35926ad0a0",
+          "prediction_pixels_sha256": "5ce97c7473d9138ac9c438c591ba660a418975e03ffcbcb3810ad722d1c2bd61",
+          "target_pixels_sha256": "b26d7f605c6c9591c5159c85d03e0c56b65c46ffbde95dc7ea2e172b7ed75ba7"
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.3749747321609056,
+          "after": 0.9986217542312145,
+          "before_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.3749747321609056,
+            "delta2": 0.931142841391477,
+            "delta3": 1.0,
+            "abs_rel": 0.26371340305018176,
+            "rmse": 0.8614992321967596,
+            "scale": 0.0,
+            "shift": 0.3626787330890617
+          },
+          "after_metrics": {
+            "n_valid": 54417,
+            "coverage": 1.0,
+            "delta1": 0.9986217542312145,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.04389369278485089,
+            "rmse": 0.16735171589920123,
+            "scale": 0.07452107523221602,
+            "shift": -0.017506936847632607
+          },
+          "independent_delta1": 0.9986217542312145,
+          "prediction_sha256": "7eff5126b70196b3f96788b4df6c16c9e29673fca26f09fb0bb21505342bbbf1",
+          "prediction_pixels_sha256": "0600be809db254b0dd02b8d42926b3937728f1413b9c2880224502ba96b976e5",
+          "target_pixels_sha256": "23b90b59ee525e3d9f356a0c5a82eb736a7bcf9cdd24913039bb55eaa0173bd1"
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.7261513157894737,
+          "after": 0.9964021381578947,
+          "before_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.7261513157894737,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.12790727691953138,
+            "rmse": 0.4020438033510509,
+            "scale": 0.0,
+            "shift": 0.40981948842701993
+          },
+          "after_metrics": {
+            "n_valid": 58368,
+            "coverage": 1.0,
+            "delta1": 0.9964021381578947,
+            "delta2": 0.9964706688596491,
+            "delta3": 0.9981496710526315,
+            "abs_rel": 0.03916068355856071,
+            "rmse": 0.13404473295103392,
+            "scale": 0.06942277860970415,
+            "shift": 0.05356721388989991
+          },
+          "independent_delta1": 0.9964021381578947,
+          "prediction_sha256": "09e3292b4a0d84c8af423bae01dfb47b3d9a9d6a6e51bc399e31624bbbc3faff",
+          "prediction_pixels_sha256": "78b7123d2450128e11f755518af8d5632ed02f27b796e1e748207622762526dd",
+          "target_pixels_sha256": "4c005b175258aedc53d56d92b37277a3dbb45064e8a629a85a3a5de848a52e2c"
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.5396477341605163,
+          "after": 0.9595856954397974,
+          "before_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.5396477341605163,
+            "delta2": 0.9098121011159839,
+            "delta3": 0.979124327022498,
+            "abs_rel": 0.23272674533572038,
+            "rmse": 0.9508559013767393,
+            "scale": 0.0,
+            "shift": 0.3143266088222607
+          },
+          "after_metrics": {
+            "n_valid": 56094,
+            "coverage": 1.0,
+            "delta1": 0.9595856954397974,
+            "delta2": 0.9920668877241773,
+            "delta3": 0.998948194102756,
+            "abs_rel": 0.07007611174744159,
+            "rmse": 0.3796270520269112,
+            "scale": 0.0927225282668176,
+            "shift": -0.1122894698230878
+          },
+          "independent_delta1": 0.9595856954397974,
+          "prediction_sha256": "1161292172f74bb13e420cf2dbccc8bcd2c17f02fa698a9e028450c488ed7f91",
+          "prediction_pixels_sha256": "07714a2f621eb35fd210ce32eddb0253bfe7f322e0cbf646476968b7a0fbcf40",
+          "target_pixels_sha256": "ee193f97d01bc95d6f6d6e46802720e4e4e57844284989ce3eb6c7eb17709968"
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "before": 0.4591568883094307,
+          "after": 0.9971316818774446,
+          "before_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.4591568883094307,
+            "delta2": 0.8955063016079965,
+            "delta3": 1.0,
+            "abs_rel": 0.2618564773633927,
+            "rmse": 0.9462682458542371,
+            "scale": 0.0,
+            "shift": 0.3057606319225027
+          },
+          "after_metrics": {
+            "n_valid": 57525,
+            "coverage": 1.0,
+            "delta1": 0.9971316818774446,
+            "delta2": 0.9998087787918296,
+            "delta3": 1.0,
+            "abs_rel": 0.04772886914467002,
+            "rmse": 0.1910801941735651,
+            "scale": 0.23352039062319682,
+            "shift": -0.1899974499060147
+          },
+          "independent_delta1": 0.9971316818774446,
+          "prediction_sha256": "eab011a65ee9675ecc062b70ddc866428cdaf8075d3486feecf8b27dca51e045",
+          "prediction_pixels_sha256": "ac422214c4f501701cb58ceb8730135878dfc5b1aee460cd665c5acbb6321e57",
+          "target_pixels_sha256": "6a26f88a5dd8f9e0790083d82aa5d31c4fd58ec8a89347ac65fc27d1fb48e02c"
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "before": 0.5333617036367183,
+          "after": 0.9956557972941823,
+          "before_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.5333617036367183,
+            "delta2": 0.8953135805096015,
+            "delta3": 0.9888114616025675,
+            "abs_rel": 0.23080599906423083,
+            "rmse": 0.6407703742911866,
+            "scale": 0.0,
+            "shift": 0.5184662829823308
+          },
+          "after_metrics": {
+            "n_valid": 56397,
+            "coverage": 1.0,
+            "delta1": 0.9956557972941823,
+            "delta2": 0.9995389825699948,
+            "delta3": 0.9999468056811532,
+            "abs_rel": 0.07519928080445278,
+            "rmse": 0.1998330253054017,
+            "scale": 0.06205690169307538,
+            "shift": 0.03230378781001344
+          },
+          "independent_delta1": 0.9956557972941823,
+          "prediction_sha256": "4805b407f4cac640fb280fcb9e506fa9342ead4eb56dad77609255ffde5fac94",
+          "prediction_pixels_sha256": "30a62d61849643a70d297b959cacf34d858b5b2f2e05b92a84a32eded5e53187",
+          "target_pixels_sha256": "fc8c737a041830582a26c15b13493876b61d7d162f42a599c28b6613f7aa52cc"
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "before": 0.4362365183458891,
+          "after": 0.9992051018011671,
+          "before_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.4362365183458891,
+            "delta2": 0.991960688670894,
+            "delta3": 1.0,
+            "abs_rel": 0.24057753636803916,
+            "rmse": 0.7960691905748116,
+            "scale": 0.0,
+            "shift": 0.34819807141563225
+          },
+          "after_metrics": {
+            "n_valid": 55353,
+            "coverage": 1.0,
+            "delta1": 0.9992051018011671,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.02856403621336527,
+            "rmse": 0.11111096055656916,
+            "scale": 0.10552935588899169,
+            "shift": -0.09578033828919087
+          },
+          "independent_delta1": 0.9992051018011671,
+          "prediction_sha256": "ad5c6f8decf6a4bc1fd4ce33724ba2e94c0a24fabb3b4c87c00d06d2121359f2",
+          "prediction_pixels_sha256": "639a87d65179a2b4330e76827f919c3a8fd2bbaaa76e586649ebaafab6100386",
+          "target_pixels_sha256": "3b0952e35a36437cfa63556d288cd5364a3b2a76795bb2a1634eb3089545cc4a"
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "before": 0.38438885995941896,
+          "after": 0.9896572157081036,
+          "before_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.38438885995941896,
+            "delta2": 0.863335188809682,
+            "delta3": 0.986568745398718,
+            "abs_rel": 0.29089753534372575,
+            "rmse": 0.6661121896634892,
+            "scale": 0.0,
+            "shift": 0.45337960159533747
+          },
+          "after_metrics": {
+            "n_valid": 55691,
+            "coverage": 1.0,
+            "delta1": 0.9896572157081036,
+            "delta2": 0.9975040850406709,
+            "delta3": 1.0,
+            "abs_rel": 0.04372963001856757,
+            "rmse": 0.1351225903955658,
+            "scale": 0.10093901463978569,
+            "shift": -0.12550189825929886
+          },
+          "independent_delta1": 0.9896572157081036,
+          "prediction_sha256": "996d5e56b7c97689d91776a5b6b3708356da3850cf91b1af05498cf481aca4d5",
+          "prediction_pixels_sha256": "22dec4c911cae5b8e53dcbab59e49e26bedc0769db5452aa3f956e8a918b04d9",
+          "target_pixels_sha256": "755d29d71c9312b62b98a33798c18843de85042f9c46637ba36244b80993a112"
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "before": 0.38382818754568554,
+          "after": 0.8298235232691705,
+          "before_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.38382818754568554,
+            "delta2": 0.6901214800375927,
+            "delta3": 0.9429148247415503,
+            "abs_rel": 0.3205255823369351,
+            "rmse": 1.816596532768458,
+            "scale": 0.0,
+            "shift": 0.24380846583231186
+          },
+          "after_metrics": {
+            "n_valid": 57458,
+            "coverage": 1.0,
+            "delta1": 0.8298235232691705,
+            "delta2": 0.9936475338508127,
+            "delta3": 0.9999129799157646,
+            "abs_rel": 0.1303165897829711,
+            "rmse": 0.9091449677502796,
+            "scale": 0.10552327972130236,
+            "shift": -0.1038268787500825
+          },
+          "independent_delta1": 0.8298235232691705,
+          "prediction_sha256": "b791b83b775cf1f10416ab25f12cf647fd4bb0cb55d68defbcc674782681645c",
+          "prediction_pixels_sha256": "e56a68e57e525a03571e7cf274c88cdf05428ee457e543c571988cfba6ed0e10",
+          "target_pixels_sha256": "658652c9ef5649475f03049344f5ff85ae3eb997b7cc87b8c71e7055c7ad38b5"
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.6217661046646761,
+          "after": 0.9903988843396327,
+          "before_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.6217661046646761,
+            "delta2": 0.9116411292485384,
+            "delta3": 0.9641165006883481,
+            "abs_rel": 0.22678203067703948,
+            "rmse": 0.4435178657960041,
+            "scale": 0.0,
+            "shift": 0.6200274876008908
+          },
+          "after_metrics": {
+            "n_valid": 55931,
+            "coverage": 1.0,
+            "delta1": 0.9903988843396327,
+            "delta2": 0.9994636248234432,
+            "delta3": 1.0,
+            "abs_rel": 0.07584703936908317,
+            "rmse": 0.172842466648304,
+            "scale": 0.2940847306613386,
+            "shift": -0.3864386142418211
+          },
+          "independent_delta1": 0.9903988843396327,
+          "prediction_sha256": "fcaef8e833dc49cc1e736dce13d4ab04a437b5e8977a940a97522f53242e40df",
+          "prediction_pixels_sha256": "47a350e1019959343af3adeb423bc99ea434ea91462dd6c1d1a0ecc3f2d11cde",
+          "target_pixels_sha256": "7e6b4f68948a841a88959ba036f0d72f82c8646b8b445ae86727430a3bcbbc41"
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "before": 0.31298483471940736,
+          "after": 0.9751729680620589,
+          "before_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.31298483471940736,
+            "delta2": 0.641187364595709,
+            "delta3": 0.7950241106995597,
+            "abs_rel": 0.38470861717253857,
+            "rmse": 1.2854776527907008,
+            "scale": 0.0,
+            "shift": 0.4319621819262409
+          },
+          "after_metrics": {
+            "n_valid": 57236,
+            "coverage": 1.0,
+            "delta1": 0.9751729680620589,
+            "delta2": 0.9949157872667552,
+            "delta3": 0.9999825284785799,
+            "abs_rel": 0.08232636008696047,
+            "rmse": 0.3924792973015373,
+            "scale": 0.10975447472581408,
+            "shift": -0.04027929659664914
+          },
+          "independent_delta1": 0.9751729680620589,
+          "prediction_sha256": "8f568f0b734809f2838b4afd7750f27f59baaa22f83d37cbe54a62090e8ac4fd",
+          "prediction_pixels_sha256": "11b3e6f0ca746f21931936ae0ba33d687f405c4071d429df11244fc21e121653",
+          "target_pixels_sha256": "32ca1fdda26487070f90d9805b04ea81dcc43257244c651e1c46b749ac03e0f0"
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "before": 0.591612492933861,
+          "after": 0.9948063877897118,
+          "before_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.591612492933861,
+            "delta2": 0.8666266252119842,
+            "delta3": 0.8939549180327869,
+            "abs_rel": 0.2365964657022709,
+            "rmse": 1.148996329878349,
+            "scale": 0.0,
+            "shift": 0.449882124069272
+          },
+          "after_metrics": {
+            "n_valid": 56608,
+            "coverage": 1.0,
+            "delta1": 0.9948063877897118,
+            "delta2": 0.9993817128321085,
+            "delta3": 0.999964669304692,
+            "abs_rel": 0.04530729030181256,
+            "rmse": 0.2328218803219673,
+            "scale": 0.06779967243062963,
+            "shift": -0.02718609227105051
+          },
+          "independent_delta1": 0.9948063877897118,
+          "prediction_sha256": "53122b2de07dfeab9dc4baee83ec45fb7618c3cebc1ab66ba13dbca497f07ab5",
+          "prediction_pixels_sha256": "a51a3e41a7d3cbe654f51162f6353fdec80f1de6d8f13246104d5f4efd24e4b7",
+          "target_pixels_sha256": "76a242deda6344538ace90854806574cdb67590ba6ddbfadf3e98759341e684f"
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "before": 0.27187945791726104,
+          "after": 0.817064907275321,
+          "before_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.27187945791726104,
+            "delta2": 0.6484308131241084,
+            "delta3": 0.857614122681883,
+            "abs_rel": 0.3823672170871665,
+            "rmse": 1.2857605464556259,
+            "scale": 0.0,
+            "shift": 0.3995960579884696
+          },
+          "after_metrics": {
+            "n_valid": 56080,
+            "coverage": 1.0,
+            "delta1": 0.817064907275321,
+            "delta2": 0.9882667617689016,
+            "delta3": 0.9978067047075606,
+            "abs_rel": 0.15338114178424406,
+            "rmse": 0.5960916542477877,
+            "scale": 0.6125024193795545,
+            "shift": -1.2052968978019556
+          },
+          "independent_delta1": 0.817064907275321,
+          "prediction_sha256": "8cfd17d07f262a726f1ade77e931bb5a60e6a9b47d597e9a4dcd0d12e6878118",
+          "prediction_pixels_sha256": "bc7ea0e74ed36d78a9dd1b913790767576541df225c9de69e71550330278855a",
+          "target_pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e"
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "before": 0.5958123892525223,
+          "after": 0.9962571872852855,
+          "before_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.5958123892525223,
+            "delta2": 0.8972625031642136,
+            "delta3": 0.9598054460637182,
+            "abs_rel": 0.24664899686972813,
+            "rmse": 0.48109378248192114,
+            "scale": 0.0,
+            "shift": 0.5482516510504197
+          },
+          "after_metrics": {
+            "n_valid": 55306,
+            "coverage": 1.0,
+            "delta1": 0.9962571872852855,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.03793381852055305,
+            "rmse": 0.09387797116539559,
+            "scale": 0.09748172996931122,
+            "shift": 0.013337533048750197
+          },
+          "independent_delta1": 0.9962571872852855,
+          "prediction_sha256": "ab161161de3dce357cb4f39eb7797b861e08824c8c9464e993560b2f95c925b4",
+          "prediction_pixels_sha256": "8a3f979d99226cc77f8ae69d1f302988712ffd3db779a6cb910117cd19506a84",
+          "target_pixels_sha256": "cbc7c6fdb9e60736b6ea08fcc20e0a3cd94a94cdc735dc06451c6f7d62558d7a"
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "before": 0.4029708592047182,
+          "after": 0.9699617195083979,
+          "before_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.4029708592047182,
+            "delta2": 0.6743960290858472,
+            "delta3": 0.9528545524479367,
+            "abs_rel": 0.30673756402749125,
+            "rmse": 1.1180983667146083,
+            "scale": 0.0,
+            "shift": 0.42410436406920393
+          },
+          "after_metrics": {
+            "n_valid": 54597,
+            "coverage": 1.0,
+            "delta1": 0.9699617195083979,
+            "delta2": 0.9926735901239995,
+            "delta3": 0.99906588274081,
+            "abs_rel": 0.054796930137642315,
+            "rmse": 0.258731749613709,
+            "scale": 0.09275440611245253,
+            "shift": -0.018008367398584833
+          },
+          "independent_delta1": 0.9699617195083979,
+          "prediction_sha256": "5086b8d69ad7be9cbaac58bd7b4016995af38160dfdbee7e9a666f61cccfecd2",
+          "prediction_pixels_sha256": "a0db4a5ff614ad2b6072f293784e57cbd59c0db5a06752fb21f8e4d8bf76ef6f",
+          "target_pixels_sha256": "610877b364bdf33a79fcad4ac41ba4cbe871e1a648700ff60dc0247ad8d056d1"
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "before": 0.2516053706946877,
+          "after": 0.995731173380035,
+          "before_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.2516053706946877,
+            "delta2": 0.6269154991243433,
+            "delta3": 1.0,
+            "abs_rel": 0.35399928701388883,
+            "rmse": 0.7798187871740084,
+            "scale": 0.0,
+            "shift": 0.5955624254351948
+          },
+          "after_metrics": {
+            "n_valid": 54816,
+            "coverage": 1.0,
+            "delta1": 0.995731173380035,
+            "delta2": 1.0,
+            "delta3": 1.0,
+            "abs_rel": 0.06823667286003793,
+            "rmse": 0.18034846773712995,
+            "scale": 0.3032295330109844,
+            "shift": -0.5066823951406686
+          },
+          "independent_delta1": 0.995731173380035,
+          "prediction_sha256": "09ea2d18b67b422f512b3839c81e56e3b948892315644e3a354c236e359d6be3",
+          "prediction_pixels_sha256": "98537367603817bf6aea2c5b9e3fa201c42f1f71d35c14dd491c0f8642ad18c6",
+          "target_pixels_sha256": "cbce3e969004e4817df382c0365bc089afc67b310337e4c877f7896875f5a331"
+        }
+      ],
+      "zero_scale_before": 17,
+      "zero_scale_after": 0,
+      "source_results_sha256": "020b20c7a688b54a9254f8e0d0104358ae6796cd70fecac21208d740924919f6",
+      "source_manifest_sha256": "a470feb43c0c4102d1d2ef4c8d25416da0297ddc54fc708100d9f361192fbc42"
+    }
+  ],
+  "unique_predictions": 68,
+  "recipe_query_scores": 85,
+  "unchanged": [
+    "prediction pixels",
+    "demonstrations",
+    "query targets",
+    "metric mathematics",
+    "evaluation crop",
+    "depth range",
+    "invalid-pixel mask and penalty",
+    "nonnegative scale/shift alignment"
+  ],
+  "original_scores_replay_exactly": true,
+  "independent_alignment_check": true,
+  "new_inference_runs": 0,
+  "inference_metadata_added": false,
+  "limitation": "Versioned model-specific decoding of saved 8-bit RGB outputs. Not a native-resolution rerun or proof of full inference parity.",
+  "upstream_sources": [
+    {
+      "model": "painter",
+      "url": "https://github.com/baaivision/Painter/blob/main/Painter/eval/nyuv2_depth/painter_inference_depth.py",
+      "sha256": "39042078a47a839d0f9b3ca6071fef54bc22e9fec485c15a20fec3973849baad"
+    },
+    {
+      "model": "vict",
+      "url": "https://github.com/Jiahao000/VICT/blob/main/eval/nyuv2_depth/painter_inference_depth.py",
+      "sha256": "d388f8d7d2b8bef78405dad72d7ecb13df6f0d31afbfb4c8a4e8d49b2ca49686"
+    }
+  ],
+  "receipt_sha256": "8cc27f220fc9a28281beffdb937c1f587d6c48f596e174cf93bcf98c236fa838",
+  "rescore_script_sha256": "d97db460214423c28dee2546ba2309c4215e9841f9f30e0bbbc6814fb88cfd9c",
+  "evaluation_scope": "Model-specific native-output decoding of existing RGB-only inference. Supersedes generic inverse-brightness interpretation for Painter/VICT; other model families retain their existing decoders."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_CPU_FLOAT32_FULL_SAMPLING",
+  "created_utc": "2026-10-31T01:57:54.564421+00:00",
+  "learned_tensors_exact": 1486,
+  "fixtures": 2,
+  "ranges": [
+    "zero_one",
+    "minus_one_one"
+  ],
+  "complete_sampling_cases": 4,
+  "denoising_steps_checked": 200,
+  "sampling": {
+    "image_size": 256,
+    "steps": 50,
+    "eta": 0,
+    "guidance": 7.5
+  },
+  "max_decoded_absolute_difference": 7.05718994140625e-05,
+  "max_common_rounding_pixel_mae_uint8": 0.00030517578125,
+  "native_quantization_mae_range": [
+    0.4551900227864583,
+    0.500732421875
+  ],
+  "quantization_difference": "Original notebook truncates; converted pipeline rounds. Native and common-rounding comparisons retained separately.",
+  "range_effect_pixel_mae_uint8": [
+    31.727147420247395,
+    4.8408203125
+  ],
+  "limits": "CPU FP32, native 256-pixel Bench-v2-sized inputs, DDIM 50 and guidance 7.5. Not the notebook 512-pixel/100-step/guidance-9 example, not TPU BF16 parity, and not benchmark quality scoring.",
+  "artifacts": {
+    "result.json": "d97abace442f64bdbd07bb309dd3db38dd7e2f2386932bf4ef7bc4dede410eb7",
+    "identity.json": "0a0beb8038ab8d7427586beb50473cf518a7ceaf909c3175390dada4b3b639a0",
+    "plan.json": "c4d8f6083e686399967759597b9486ebaf31e822c3380a1a04e5b53c2fc16b87",
+    "schedule_comparison.json": "6e3da3a1ebdd89b95ade335de73399b420ae9117387154ed24e68116957103ed",
+    "progress.json": "48c4cde966780cc8a71aa8cf87fd2f0ed42dc4cc4eb6dd95109afd9e59c01997"
+  }
+}

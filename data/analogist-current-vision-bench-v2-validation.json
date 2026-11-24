@@ -1,0 +1,2153 @@
+{
+  "candidates": 1768,
+  "candidates_per_episode": 8,
+  "cross_worker_output_pixels_exact": true,
+  "episodes": 221,
+  "gallery": "q0 for all 13 tasks; all eight candidates retained",
+  "model": "Analogist",
+  "phase": "validation",
+  "plan_identity": "4ec5c77b046c6daf9eebde53a0004ed357d626c7a647d70e5f312fea550d01e5",
+  "prompt_cache_identity": "1a4a19c801c230be7d6954ac4ee3e9dd1361a81e3ffa7781229483d6154ce37c",
+  "protocol_boundary": "Released Analogist grid geometry, 253 px element resizing, bottom-right mask, and eight-candidate/50-step generation are preserved. This Bench-v2 run uses 13 tasks and Codex current-vision prompts, so it is not an exact reproduction of the paper's 10-task GPT-4V evaluation.",
+  "rows": [
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_00.png",
+          "pixels_sha256": "3bfca72fafea5d42a84c75f80c49218123b6178ed1babe6986ec54d32b84cd93",
+          "sha256": "8b622eb0854a3007cf669601a1cdfe08ffe87e538b9127841a79c2e4606e0428",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_01.png",
+          "pixels_sha256": "9fe37cfd46671a0bcd79866b9a71cc7d5c6c6c20ecb7ca195b1768443e33fb87",
+          "sha256": "7165c57fe8e666fa91f43813adbf26e1b56c08ac09f191ce4a5d7b17e1fc36c7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_02.png",
+          "pixels_sha256": "65f1e49e8b1d785f15d89e79d06d3036525f6e8656d7da4da709e7726730bea0",
+          "sha256": "503d3b4ccd4906ccc80de198899279256555b4e214c528c5a410bb969952c45d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_03.png",
+          "pixels_sha256": "1b16b8093686a1abb7076c4ba74a58fee9f14d8456c3690d4878e1824270b559",
+          "sha256": "b743a48a692ef0602771f412a8641585b7c23b891f0e23b9ea3d4412ae95b2cc",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_04.png",
+          "pixels_sha256": "4997737abca93adfe274f019ba8c43abcc4a04244228df03be46a15189196022",
+          "sha256": "0cc087f38b07cafc35c8ea27bc0e1cfb069d541f9cb1df76331082f82a53b452",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_05.png",
+          "pixels_sha256": "06fe5e89af1e425a5a3310bb0a55d1cd3fd3a33183d9fb287a97529a50a76b8a",
+          "sha256": "f8f2a7baed63ea79a4120782d1b4038ac9f72f0a4cca6c9a16fd125dcb9deaec",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_06.png",
+          "pixels_sha256": "f123d3ed7ef6af4436c5582fdc6390ba2698b6322b49df5f3f1369b03f3a0398",
+          "sha256": "0aed0a6469b2aa1744d64a45758d6decac130a4fab155b76cfa88cfab84b76ff",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_07.png",
+          "pixels_sha256": "1464b6608c81821e5f538a9047ce471e66c627d6e7786c40cd5845a539edc1af",
+          "sha256": "0b49148922a9be80c2528f67f72f6d4c414d8ef35373a91e41df3db1d3192b2d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "color forest waterfall photograph, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/6dc52097a016bee9b0dd1d7551086dba8dcf28a36a88604a1e1833ff6e9ebf58.png",
+            "pixels_sha256": "29aba4e36adc57510af37fd733f8f44e3de50141fd5af973c9ffd3fab40b6267",
+            "sha256": "6dc52097a016bee9b0dd1d7551086dba8dcf28a36a88604a1e1833ff6e9ebf58",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "div2k:val:0851",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_1_target.png",
+            "pixels_sha256": "b14c0dc30acab83b8bf55fc0a4a5ea70b610878d8545a1b76faf49dcf481b4f2",
+            "sha256": "dbe76f2fddf07452996b70904b41488ecca9d837300fa731b105a0df1b787f73",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/dc21f2328d55ad56aa22192da4bc403793ee8d1099c602b2957bb452350a8aea.png",
+          "pixels_sha256": "a34ee4dff21ea553ac601e86fb4f1531d76962e0e2ca8281c663b3c39e6fe64f",
+          "sha256": "dc21f2328d55ad56aa22192da4bc403793ee8d1099c602b2957bb452350a8aea",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/colorization_q00/candidate_00.png",
+          "pixels_sha256": "3bfca72fafea5d42a84c75f80c49218123b6178ed1babe6986ec54d32b84cd93",
+          "sha256": "8b622eb0854a3007cf669601a1cdfe08ffe87e538b9127841a79c2e4606e0428",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "div2k:val:0852",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/de9b8215ae0721a619a33e7235363209edb41884f0ac3210bf7b67d1e6946fb4.png",
+          "pixels_sha256": "cb8bd9e8ac389b6619c90a7290c8698e4e4dd9c9f4ecb024336ae0bb13c90360",
+          "sha256": "de9b8215ae0721a619a33e7235363209edb41884f0ac3210bf7b67d1e6946fb4",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "colorization"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_00.png",
+          "pixels_sha256": "0e51ece540026738c72f27132ab26b6226ead25b6a6343e60fb6d251f2f59ecd",
+          "sha256": "966f729f194cbfd5c1e0fa2d6e5820ba50f5d6de6b6ac8a93e16d07d2774d947",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_01.png",
+          "pixels_sha256": "b197cfedbad9d9843fbd2c2a2bc8825ed4b3152503f19ed678aea0462c6eb011",
+          "sha256": "28d490ad068ee5535aada77c04dee47a6b4df7b8d97e276d7044abdbb9d4497e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_02.png",
+          "pixels_sha256": "6b04522a10a8d807939eaa0ebba01b163578af06c3fba6372a97896eaf8204af",
+          "sha256": "3d51d569dede61d26e5e05af07489ded736fdb7043de07afc59f2c9f9d7d6274",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_03.png",
+          "pixels_sha256": "eab8f1cafc6b92af15ec7fff7860f162b2fcc5cb6407dd8f1579bf7865b63467",
+          "sha256": "351e637d82b12af2bd92ec3ad198a979dc2147f6125c493e6c38ae4bef95f57a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_04.png",
+          "pixels_sha256": "92d03c03bc1fdf7b5e23e2ca4a282e09c3c14f623c2a44b71a2ff35e24c30950",
+          "sha256": "a0d3faa7b7c05ac0b90e42ae5d90b54349f3eb40e4222e7ab0d3f100aae58292",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_05.png",
+          "pixels_sha256": "08976cfa16b3e7f423a426ad0d49d4ff73857a9e1c42246608bd89223b842cde",
+          "sha256": "0d8f83e1d50c5939add926f131979434303e9198aec7af3f421dbbf7525fd155",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_06.png",
+          "pixels_sha256": "3c93c7171326eb33664ed460241f6832a153499a534a92a58cc3d9ad680e2b32",
+          "sha256": "21a5b16f23753c712c3f36ff5cd1921339a094f6f76845fe3f40d2f812e73a50",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_07.png",
+          "pixels_sha256": "f714acc21af99c5eaa7184006131909fd4d9933af0411498e954f8e9da3893dc",
+          "sha256": "130f219a2a1da7d34d6b37babf005e1899bf742adac3219ed80786d7acfc204c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "sharp walking people street, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/06db11bf61959f8338730d8eff7d4100dbf51e00875161848813c57d2b9fbe67.png",
+            "pixels_sha256": "9208e4a8ee7cb31e331ee5ae26e621c601dac268180bfbaa9888e4491b736dd2",
+            "sha256": "06db11bf61959f8338730d8eff7d4100dbf51e00875161848813c57d2b9fbe67",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "gopro:train:GOPR0372_07_00:000068",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/a0f7344f63ee56c560c054e78e8b94e281559fc8a9b1f6cab941af6ceaad97dd.png",
+            "pixels_sha256": "80ad8ef20ea781bc22dfd5bfc8c12891887023974c1fb6ee6cfc7e18ecbc63e5",
+            "sha256": "a0f7344f63ee56c560c054e78e8b94e281559fc8a9b1f6cab941af6ceaad97dd",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/7ed76eb47fc21149c63745f1fcaa265d81be8ca3e2421f21e6237671fd8aac0e.png",
+          "pixels_sha256": "c3e6e7be17450cbcedbd2e38d8841cdeb437a384a1ffc51e7e3c10693a6562f4",
+          "sha256": "7ed76eb47fc21149c63745f1fcaa265d81be8ca3e2421f21e6237671fd8aac0e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/deblurring_q00/candidate_00.png",
+          "pixels_sha256": "0e51ece540026738c72f27132ab26b6226ead25b6a6343e60fb6d251f2f59ecd",
+          "sha256": "966f729f194cbfd5c1e0fa2d6e5820ba50f5d6de6b6ac8a93e16d07d2774d947",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "gopro:train:GOPR0881_11_00:000077",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/1f900b9713715de4feb539fe3b274b346c9d4daf8578168fef2307f665347a41.png",
+          "pixels_sha256": "a6d45e538a58f16836bab5c7ec75178707f218d6283aee5c4b3575836f0481ae",
+          "sha256": "1f900b9713715de4feb539fe3b274b346c9d4daf8578168fef2307f665347a41",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "deblurring"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_00.png",
+          "pixels_sha256": "842ee0d7f871b711b0834ca702e97f04ac8ff7d228ffa0e770b10bece777e4db",
+          "sha256": "4acc5ee132a266d692031aab36bcdea3e23e197d535d4d677641dd6434fc281b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_01.png",
+          "pixels_sha256": "2f55eb72aaed6344d103b19a0dbfc9ef829f92c454e64b8f40618ffff0217cbd",
+          "sha256": "068190717f28373ea0924084cf9867732d6ac6965bb53d11a3f28adeb99a0a45",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_02.png",
+          "pixels_sha256": "29e8b82c63de2636d0e766352af7b5545d60e0c192217b9d3cd49ee54ec2c346",
+          "sha256": "23a1508bbf5f5db0e4f4d6c427fae99d1c581aaf5a7ae647f0a837086609879a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_03.png",
+          "pixels_sha256": "a054846e053964a004d9cb051a9e34a2ccae3fc7976f0f133cb1fcdfc54e948f",
+          "sha256": "a0c8fb0db3f4163b92e7020e4b2d5998862fd09898e800a8af1f5c9fed9ba5d2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_04.png",
+          "pixels_sha256": "0d15919a7a61dcc8f880aa42309e29508ab285a2d1fb441c4f606db6362492a2",
+          "sha256": "faff92e026b39a8d3bc89eefc15fcf285acef5669ba22855447d41652931106b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_05.png",
+          "pixels_sha256": "f3107eea98308407c9fb0edc3909af4684df0103541d99a8c65a711b8c9c6c2a",
+          "sha256": "a676a96ee6644df95afb5dbd7f7640ae98a1635180b2f05cd865c8306efba67c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_06.png",
+          "pixels_sha256": "41c52802f8bcf8b8d37f554b81422e02168bd802f075ce02b620e8e4635edf86",
+          "sha256": "4835eca9feaf8f0cc700a5cb2d9044aa0b57165f6d76e22b11f1e6447bb510fe",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_07.png",
+          "pixels_sha256": "c6757af74d1ef89d4f0e42c3b5c6feb41fb872dbb2bbe625652568e9c1bf5495",
+          "sha256": "106ac8c5516ef2da26d041d26d0e0e6ce3027f29e2c823838b318781986fd20e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "clean gray black pink blocks, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/a36394c47cf2f82404b2b75174b6396d24e630cb949d543437b2be0e21729e9c.png",
+            "pixels_sha256": "c9572367a9a49710853ccde0cbfe30898c3090ab05f908229a226d373efe7bb7",
+            "sha256": "a36394c47cf2f82404b2b75174b6396d24e630cb949d543437b2be0e21729e9c",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "sidd:validation:09_28",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/955faa7e6edae2770ef609717fb759d11bca33a8c1b23e486f0069cdbeca75be.png",
+            "pixels_sha256": "c6f10c931b90437e7865b944994b79f1c74e5236ca1276bfd7c61608aeec0ba1",
+            "sha256": "955faa7e6edae2770ef609717fb759d11bca33a8c1b23e486f0069cdbeca75be",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/bc3d4e21891e13d334a6e18c42d7995a4e61e82bc74b9f7c83013dfd1bac1ee2.png",
+          "pixels_sha256": "3747bbbd89f71d72d6996a002b85797a18971cec6555539d723cd8d10bcaa0bf",
+          "sha256": "bc3d4e21891e13d334a6e18c42d7995a4e61e82bc74b9f7c83013dfd1bac1ee2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/denoising_q00/candidate_00.png",
+          "pixels_sha256": "842ee0d7f871b711b0834ca702e97f04ac8ff7d228ffa0e770b10bece777e4db",
+          "sha256": "4acc5ee132a266d692031aab36bcdea3e23e197d535d4d677641dd6434fc281b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "sidd:validation:02_05",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/91b582892591a604a6fcf1f070b8b6dcb7a3e95a3da30afdc7eb54263d277384.png",
+          "pixels_sha256": "846839e0b090c970918d47e1dfd72c4f608c438962e5f2181de109d82e97ba76",
+          "sha256": "91b582892591a604a6fcf1f070b8b6dcb7a3e95a3da30afdc7eb54263d277384",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "denoising"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_00.png",
+          "pixels_sha256": "79d5a6ce11d9bded67b558e020b8672d13798bf532d615fdeb799c9f54994b5c",
+          "sha256": "5f0eb537b428c19defecbe29db5098d8921c68f1db837c6cb6de9143f12b46da",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_01.png",
+          "pixels_sha256": "a91d78a885b6a8dbd0b9028251fbee882de95fa2ea770fa808a1d5af434f11c5",
+          "sha256": "20ca942b96860fb508547aa4ba7c78d9abffd3c905de819cc7246ecfbbdefb59",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_02.png",
+          "pixels_sha256": "8e94b5d620555ec21e1ac20624a81844e9a4a95176f1542fed7d94c9285dac21",
+          "sha256": "08e72e0458b7ff6aec71918cfa7e8c5e44d85d4306160bb4e22d9bb8ef495677",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_03.png",
+          "pixels_sha256": "e02e5fd340c855ba4bf43cdfc82c49116bc770219226281c8f465d226b1c3c29",
+          "sha256": "64b4433ce08eee995e617089306bdfc1bcd2033d2724e232d543020c7322f797",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_04.png",
+          "pixels_sha256": "fe8f030b5deab26b9b936a5b1d0ad4d9cdc075dd7c6e69efdf78b10d3241d333",
+          "sha256": "97a18ef57f015b184b2e7bdc7e52471b302d35a1b62e4bb9c0af992aa86f9191",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_05.png",
+          "pixels_sha256": "7fa1902ad11886afaab691f231da4789768b3c6f8b1312517315339046416cb7",
+          "sha256": "38bf6f6462dd5ac1cf861abc51554a5b5ea8b52934a9175a92e9086db022568b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_06.png",
+          "pixels_sha256": "c48630e2e972ca22386cddd24b873fe7234e1430f61fb3e44708399515c2b847",
+          "sha256": "fa401d06b7c4332dd0f63a476e9b8924b05c841d67b8ada7d2a625e9531ee16d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_07.png",
+          "pixels_sha256": "a9588ea5517eab79e1caa59476ea2b98cf29c04311708e10e70e75f5224f1e6d",
+          "sha256": "346e17a9cb0715d1f2fb6388441ad46d211e2a582e3bb17bfbac46990c9b847f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "white harbor building contours, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/bf4b7bb404115472627044d817f749584991b7b9cfbc234c85190669087764f7.png",
+            "pixels_sha256": "430bc0c26733fa50d1a00180670a09dccc3ada9c07565f396dbed8523ea17e76",
+            "sha256": "bf4b7bb404115472627044d817f749584991b7b9cfbc234c85190669087764f7",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "bsds500:346016",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/c920d92cb622bbc6231795b1f94807cf8e8e8a33c68a742f6322db7af4fa7b47.png",
+            "pixels_sha256": "8280d7a1ab6927c6766125240f1edd0615f39a8f361b0d9cb2224992d89f8b6f",
+            "sha256": "c920d92cb622bbc6231795b1f94807cf8e8e8a33c68a742f6322db7af4fa7b47",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/82d0bfbf53d41f7e533f44703c85e3b35bec0ce6a5bdf406bb5244773b448f7e.png",
+          "pixels_sha256": "f6e22189bf348f97d7f404b13d97339e7faa9d595c543d1b2443bde60b5516e4",
+          "sha256": "82d0bfbf53d41f7e533f44703c85e3b35bec0ce6a5bdf406bb5244773b448f7e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/edge_detection_q00/candidate_00.png",
+          "pixels_sha256": "79d5a6ce11d9bded67b558e020b8672d13798bf532d615fdeb799c9f54994b5c",
+          "sha256": "5f0eb537b428c19defecbe29db5098d8921c68f1db837c6cb6de9143f12b46da",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "bsds500:78098",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/0f75a0dcb63822aabad269a6d5ad5ca65722556984272aab1dbf861cec19ac16.png",
+          "pixels_sha256": "5c14a8c5efb0bd6696539415ce8ccee17043c6c57b19b19561c93cbc69315a38",
+          "sha256": "0f75a0dcb63822aabad269a6d5ad5ca65722556984272aab1dbf861cec19ac16",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "edge_detection"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_00.png",
+          "pixels_sha256": "c4a730b7d061d99d99915860bf8a29d2313f51a724f3eeb839e96ff559897cca",
+          "sha256": "853dbaa6117e0d20ec91ea5f09f4356c26f75b6157da64800a541603fc41853a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_01.png",
+          "pixels_sha256": "167568f8152911e70069e21637e067104dff020fe9817c95f304fd8d06d4f2ac",
+          "sha256": "1e73c930a19c45399b7e06a23ae8907d5f86395beb32e830b4b45e42665d4d69",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_02.png",
+          "pixels_sha256": "a1139021063d2238eccc53f3ef411eea16fcd92fa12974160b74b5cfa73195c6",
+          "sha256": "d1195f5ce75373176d7e43eb4852ed251bddf0939c29bfdd7207eca6fe14a1ef",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_03.png",
+          "pixels_sha256": "42c80e3fcaa21f54f49d1e7602793f0ded45496bc1f302d3063c9ca445f008f9",
+          "sha256": "b32899e48ea21b93ffe18f358b29fd39cf775b935a71d3530b0be7baac904756",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_04.png",
+          "pixels_sha256": "401d5d4aa788668499a57a88c90c899cacd60c38f2c1ee89da29db401f9def87",
+          "sha256": "aa04ddaabcd9487f9224660d90d07542b311da4f4b01395168d9b2b272ce6c08",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_05.png",
+          "pixels_sha256": "73a1033de17c78839bbf8cd0fd96fb4299e2b4b9e913e304ca4a7a026ea5d708",
+          "sha256": "72676c6418276b7d9afb5bae1527f8b40cb2cd06d20d31bd1a327b5032ea2370",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_06.png",
+          "pixels_sha256": "d1ebfd20d705f8bbed246b168be69cb8072313c673b3ee1c04bf4606849f8c73",
+          "sha256": "44a51157393ecfddc8799d1afba451986c1258716b6948572fe7341dee79436a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_07.png",
+          "pixels_sha256": "d355c0e0c426bcb8d19094bdba387e3bc5b11c094e56de9ce46061e4ac7bda61",
+          "sha256": "2ddb805ed5dbde2a747994e89aee48d19541b30d77faa59a216fa82b2a9bd0a7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "colored angry man facial landmarks, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/b9abdb491874688ec8ca52eeca54d10b0ca1fa0d3c2bd1a83c026a09b1bbdfba.png",
+            "pixels_sha256": "133f2a67dff04013e950338750107c9fe8929bae65b8158049d3965978c00be3",
+            "sha256": "b9abdb491874688ec8ca52eeca54d10b0ca1fa0d3c2bd1a83c026a09b1bbdfba",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "300w:outdoor_182",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/529b8cde2104197d721ef9f337536f9600db198f8f4846c1cd0ebc4b44e21504.png",
+            "pixels_sha256": "b05d1e6cfe324a1294a17dd66256f28befc7a882b529a1bccfcffd38d10b0507",
+            "sha256": "529b8cde2104197d721ef9f337536f9600db198f8f4846c1cd0ebc4b44e21504",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/e984eba0a92115b78bdadb4219b8805d96267582cf6e56ebe020c7ed666e3548.png",
+          "pixels_sha256": "8c08c3577cecae15779f72108f0a6c202390022b16b45507afe2d31fe873463a",
+          "sha256": "e984eba0a92115b78bdadb4219b8805d96267582cf6e56ebe020c7ed666e3548",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/face_landmarks_q00/candidate_00.png",
+          "pixels_sha256": "c4a730b7d061d99d99915860bf8a29d2313f51a724f3eeb839e96ff559897cca",
+          "sha256": "853dbaa6117e0d20ec91ea5f09f4356c26f75b6157da64800a541603fc41853a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "300w:indoor_253",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/a62568fb45cad88c686102574bba99068867a2b6e75a406223e5124c043e9c9f.png",
+          "pixels_sha256": "7f6dc9ed203d1e4851e96e1dd142a615d5e8402e9d2b1c2cc910582d0ea068ed",
+          "sha256": "a62568fb45cad88c686102574bba99068867a2b6e75a406223e5124c043e9c9f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "face_landmarks"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_00.png",
+          "pixels_sha256": "d01a6ad3608617c752a0e15e7f822269dd4cafe4f374b76a7dcdc0d730a9d3ba",
+          "sha256": "7367f5366c575e667c8ca149f431e18ac9fe09e15c7a89ece0f16349c578369f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_01.png",
+          "pixels_sha256": "81fa9e7d8bf7abf002cdc4f5bdc2c69ac71b8c8932d5d79083ccd6e3eb526388",
+          "sha256": "4770feca21bbba444e9650c23f12363c77ef32009f6e75ec807c3f616e636c69",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_02.png",
+          "pixels_sha256": "3988aca0774aa6eb4d33165b07ceee9511595fa662d2277995024faa49dd159d",
+          "sha256": "869fe1d9d87164d446e462fc4897ce79b211644ef04bf8560e5b5435e85b4ebf",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_03.png",
+          "pixels_sha256": "2b624749a752ffd76e61123281928f306f37d0ef51ac4c7e89170605bb426b4b",
+          "sha256": "bf0cf08f8163f032cfd19f302c7133687e8437d10490ba0af573c43203be2e0d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_04.png",
+          "pixels_sha256": "53394e23b1a37a74dd0fa77a8656241cf8922227a9a87c4518da63ab6f4aba98",
+          "sha256": "d371f154deafe78547c762ae38bf79b8cf70e3a67bc7a171d78bbaf0dd9a0fba",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_05.png",
+          "pixels_sha256": "591fcee8ebff9994b28aa9ee33c5f0bc7dee31d657608ceec0963d126eaf6795",
+          "sha256": "ad71a0e8820aeaed2c3ed634955374b857959d2e4cf442f191c16c5b4982958e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_06.png",
+          "pixels_sha256": "86d3a70028378a3f8e2d66c4f02b2868e4f5dd03f5b7873035201b8367bb0785",
+          "sha256": "816561ad8e28823176172deb2436b53b1f4e6585ce4bd56b7c71d70504088357",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_07.png",
+          "pixels_sha256": "9b0629be0ac96d5a0da6c9b7f4470ad82c1e13bbc330b230b117b0afa0f3b6f6",
+          "sha256": "069f89b067470ee7872feb0c8bc75a6cfddf4af2ec2f163a9306a01c36f607e9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "colored basketball player pose keypoints, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/bb8867030ed0d35d723bc302b646deededbafda4d0d593dbb1bf2268d9a554be.png",
+            "pixels_sha256": "4b963d7f291925658d0ec7ed7e237354798a066c1ddeac04e7033886b3351cdc",
+            "sha256": "bb8867030ed0d35d723bc302b646deededbafda4d0d593dbb1bf2268d9a554be",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "mpii:026665966",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/203a6fc532253d8f9123b63474ce4a98422d380093838a696db5087940338c71.png",
+            "pixels_sha256": "389661768c04fd687e1fbf1382219678102da4cf4ce6ea7f2f4cfd6235ccaaff",
+            "sha256": "203a6fc532253d8f9123b63474ce4a98422d380093838a696db5087940338c71",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/d513129f7cd5806ee49263997c935a4bc504c16947b713960f8d636fdb3869e0.png",
+          "pixels_sha256": "bdf0102f6d1786e0326633e0b6646e99f152fe59c659c53c843813c6b3baaa99",
+          "sha256": "d513129f7cd5806ee49263997c935a4bc504c16947b713960f8d636fdb3869e0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/human_pose_2d_q00/candidate_00.png",
+          "pixels_sha256": "d01a6ad3608617c752a0e15e7f822269dd4cafe4f374b76a7dcdc0d730a9d3ba",
+          "sha256": "7367f5366c575e667c8ca149f431e18ac9fe09e15c7a89ece0f16349c578369f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "mpii:084118871",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/ce2ed8e034dbf472c9cdea261f474b5775b39ebc98444d2eacb882069a16fd39.png",
+          "pixels_sha256": "572853ff37250b9118597653fb58da4e26a6dfcabcfa86284f3750709f69ee2d",
+          "sha256": "ce2ed8e034dbf472c9cdea261f474b5775b39ebc98444d2eacb882069a16fd39",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "human_pose_2d"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_00.png",
+          "pixels_sha256": "d7bd9b62109aec45c73d2340abf6ced5ac8d40ca788ac19a69d3489cacd7eb6a",
+          "sha256": "84885884a9c88b96ad36575c84777d505ff54e95e4da604a4bcf15c022282958",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_01.png",
+          "pixels_sha256": "ba9e05eada80e913c11772e94b31b59758a955cc25b00dc6185bb9e6b6692312",
+          "sha256": "69c5a33545ca19ac00ccd36b69f10a5522fd26c46e93e3393f3bb6303e91b49e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_02.png",
+          "pixels_sha256": "de68e959affb36b361c3b3f2be1e162811f3f51f83b11dcefc572529e5416cb7",
+          "sha256": "9352976c7e62f55189b453161be992d8d89318d409c13fda6edaf676b6c0757f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_03.png",
+          "pixels_sha256": "5f872da5879fb7678232b3b154dc516721f6075a03aa66e04d029e86761e3c28",
+          "sha256": "e577ffc7de579614391a9281990e2e0fe04f07e58d674efb1bcd794cbb988b73",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_04.png",
+          "pixels_sha256": "20b20ed8b9ebf147f5f72325b68546fd2d50100ff495026cac90b0f0f2366983",
+          "sha256": "7fffcaaf56929e4945a37c716ab026372d982b6664462f945a0965156f3dbecd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_05.png",
+          "pixels_sha256": "c27077e35455c8ee645ece54265a7c05e6848fd097013649fd8523967ff50305",
+          "sha256": "09327d37fc250c34988b2b2871377682beb8b2ef5e2f1d3f0a43f985769f12de",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_06.png",
+          "pixels_sha256": "e043c81c6c34cfba40386712b72df394571aeeed38f3e0246cf24b1563eebb36",
+          "sha256": "94135ff69ab756953af99048c5e8118e8c46c0aa029268c23504a99ed97f854c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_07.png",
+          "pixels_sha256": "e57c4d9136cd82ee60f22824b00ce00b4a55a4baf6d8245f57d57741953bfb88",
+          "sha256": "bccf6672ce136a075e936cc7d87e073046a1204c20c03bb1345cb63e878c885f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "complete skyscraper view, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/query_input.png",
+            "pixels_sha256": "da3065d7d60912c755690c3a41f34820d7351f5a87c86850e8bc6ad977813eef",
+            "sha256": "0a15d0ff168a83c49c77a28647d2b05705ce6bbafe3c2b3c40bc5a017309d0e9",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "div2k:val:0802",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/query_target.png",
+            "pixels_sha256": "74e801596f96f68ffe8e181994a63442b43e575570e58960d50644817fa47331",
+            "sha256": "2419930a74deec9394b7223013f1e06e0afbdf1f8f69fdbb4549bce0bc1d82ec",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/218e54809b2845bf8cc34ba3a2d571702273b85163161dd71175c20c912d5ded.png",
+          "pixels_sha256": "f2d56c486c418f8a4990df36f21e5e85fbacc50696e49b55f73ad2ac2c779480",
+          "sha256": "218e54809b2845bf8cc34ba3a2d571702273b85163161dd71175c20c912d5ded",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/inpainting_q00/candidate_00.png",
+          "pixels_sha256": "d7bd9b62109aec45c73d2340abf6ced5ac8d40ca788ac19a69d3489cacd7eb6a",
+          "sha256": "84885884a9c88b96ad36575c84777d505ff54e95e4da604a4bcf15c022282958",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "div2k:val:0846",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/3806f9fec0ed9258744779176e2cd56e6d60f8d52bcf19ce0605b71bcb88f45b.png",
+          "pixels_sha256": "254b94f780cde2a66f7c702bdb0301058492fd2477aa9f89aa353d373fe63618",
+          "sha256": "3806f9fec0ed9258744779176e2cd56e6d60f8d52bcf19ce0605b71bcb88f45b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "inpainting"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_00.png",
+          "pixels_sha256": "9072c38e0893a84a7f91dbdd3046625aea9ba076797d148df4dcb32b84c0b545",
+          "sha256": "01b5afe16939708d2eee6f245c0df7d53cf667346b09edfd36cc0566c4c353c2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_01.png",
+          "pixels_sha256": "3b56e37995b9f8d0ba2860c1f4df145771102ff5550c4be4ca7e2ece71dfc93f",
+          "sha256": "7ce9b0392a716bf629bbf0124d250b9a26059ddd1bc969bfe05af0b903d49ba7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_02.png",
+          "pixels_sha256": "0128a2a9a56e94c4295463cd0263d5efa622fe96b7a4b6f6ec785d5f3ce7f4a2",
+          "sha256": "d6d9ff3953743d9362d23f12838ee17b846d2fabe82b89355817370c9c5212ad",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_03.png",
+          "pixels_sha256": "e9bec9a2ab7a3206af5edf4f66f0d1967b5ffcdedc552c36505947a2516d021e",
+          "sha256": "c085f1f7508c976334257b41ac6c36c9a37b26993996c7de59981f76f294b4d2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_04.png",
+          "pixels_sha256": "0d2a124a165a89f4d69ba81d8c40e5a5deb3be455fb41e0d308f16ad9f875df3",
+          "sha256": "a2300e2db2af4dfabc00a9d20ee63f49a696ad35ba267e178a5d119de5cf7159",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_05.png",
+          "pixels_sha256": "db5f38193b98d31494e4a56d15fc8518c1c546b4e5b44c8fdba9ce5de8ac6fd3",
+          "sha256": "46538decefb4ad6735863a938ef8ba804f3eb4227961e780471d01da938a7292",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_06.png",
+          "pixels_sha256": "8b61e8a44f23bb7126dea97134feebb6b4399b953dbb0b4554193d45f58ab911",
+          "sha256": "524ed06b97e4d42952c7985a9ab492dfaf3ca31957dff95e1941d0ac70dc6796",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_07.png",
+          "pixels_sha256": "e21a69c4caf288e8907d3f6b7071b4dff38f89b0193697b39de7d68132bfd338",
+          "sha256": "e18b81db3fedf763c283227ebbfc602893dc1ebab69a9968d95c392067e2fa46",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "color-coded cluttered bedroom instances, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/8ab659d02e89a2b8c9d4a4597234401437994f053d7a1cd9c38e953e04a1c356.png",
+            "pixels_sha256": "81db8c8ceeb31ccb236c8a01e5d448bfd7c708f3a0568c35305da78f5a832609",
+            "sha256": "8ab659d02e89a2b8c9d4a4597234401437994f053d7a1cd9c38e953e04a1c356",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "nyu_depth_v2:1093",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/8892851918f0f5ea9f4573d5977a8e09b67a21dc5eb47354293d9bc0e0bfeabf.png",
+            "pixels_sha256": "72f41819545c27391fbbc6892ee839ae0b33ddff29613de9e252ed22f713d554",
+            "sha256": "8892851918f0f5ea9f4573d5977a8e09b67a21dc5eb47354293d9bc0e0bfeabf",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/c3a3336e0dae8226aa014b5bcbe8c98d7dc8b58f85c4644a738dc2396ab42645.png",
+          "pixels_sha256": "4096f88c9e6a0f2ec0d475211d48ba3aaedaef1b532c771baa18554d2a4ca654",
+          "sha256": "c3a3336e0dae8226aa014b5bcbe8c98d7dc8b58f85c4644a738dc2396ab42645",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/instance_segmentation_q00/candidate_00.png",
+          "pixels_sha256": "9072c38e0893a84a7f91dbdd3046625aea9ba076797d148df4dcb32b84c0b545",
+          "sha256": "01b5afe16939708d2eee6f245c0df7d53cf667346b09edfd36cc0566c4c353c2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "nyu_depth_v2:1154",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/82a4b975f5c417170dc6634d29aa5885c52d1465a82210719c14e63f24b93433.png",
+          "pixels_sha256": "5964d49cbb2b734397a3a6deed77737478b22c371354118f8e7b87944aac0e3b",
+          "sha256": "82a4b975f5c417170dc6634d29aa5885c52d1465a82210719c14e63f24b93433",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "instance_segmentation"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_00.png",
+          "pixels_sha256": "ab26991f28573468ccf9d68781b8a62306406aae5324e58add0dc232f6f48308",
+          "sha256": "074bc3f8dc8fb2ba8276ecd1b8dc0a246b46c5b43fd7c9517276e0a0ca8b9f4f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_01.png",
+          "pixels_sha256": "5a57870a4781ebb8be5f57763e5780bee86daf25d24338dd7fd5d72270648c1c",
+          "sha256": "3c5ae9241ab76d117ec269aef255d06ec4891a5fe01d2d14d5072369cc197aa4",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_02.png",
+          "pixels_sha256": "cd06f9be5678c6d3b95bda083437ba577af3878afd8b52b0d22a888d703958eb",
+          "sha256": "a4f40fcb058f7b9c6e742931fe2aefd52bedce49f538c6147042ff51b15f1e68",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_03.png",
+          "pixels_sha256": "658a69e7cb0d27e49680a153088615cc538d8df84cfac4d89458495d06439d34",
+          "sha256": "7d89cf9a6577e8d4c6b858a3c96e0897731017b2967807743eab664cbe13f65a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_04.png",
+          "pixels_sha256": "5406b443de7be20653acedfbaf4c7ddab76a8415b3d3e427c743eac2908468ad",
+          "sha256": "40c56f096cb4135256045f62f902f12fe8d0919f04866c95ee33e80d6197c21c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_05.png",
+          "pixels_sha256": "64a81b9ae8b3f9ac113105f335324aa3935fb578c6be5f7d5a5f6341f982153c",
+          "sha256": "b7b9c7d3e7f922bd845057278334aa5f561b0ded0e6f751c008055148984a479",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_06.png",
+          "pixels_sha256": "91a3d15955f9a22c906ed69bf11ba03aba41c2e98da1a137d0365789e8d95cdd",
+          "sha256": "e591779dc348d9bbfcfdbe59e455f9dbdb0774b92f8846e41cec108ac53eaf35",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_07.png",
+          "pixels_sha256": "b612f1548060be52c2218eb244fb7b3448e51915deb5dcea4124de388c3605ef",
+          "sha256": "4b72d4164c48dd64637c4450e22a32e11531d2d83205752a0dfc530ffc13d4e2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "grayscale home office depth map, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/d2f2b6bd23ded142f0fe68d2fa06f5147fd78a79385ee5f2b47863275d3f6c71.png",
+            "pixels_sha256": "9ae6e705e8cba5cbaaa9d96acad73eb736e2009ddf877720077e2cc6d12a8ff4",
+            "sha256": "d2f2b6bd23ded142f0fe68d2fa06f5147fd78a79385ee5f2b47863275d3f6c71",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "nyu_depth_v2:1146",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/b8a116b0ca206123b09267fc1a78bb6a9581ce069b01f932f7236b6c3433f208.png",
+            "pixels_sha256": "d70f66809876ebca94cf94b3b5db6328eba276aa54470c76f1d44d8dc667ac9e",
+            "sha256": "b8a116b0ca206123b09267fc1a78bb6a9581ce069b01f932f7236b6c3433f208",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/727563b272da7ce961fc41e944a82dfeeb36ea75566bba0b4d906b7eb39aaf9c.png",
+          "pixels_sha256": "9344f5d50677fb436d375eb7c34fa3c4b829db3a7d6dc6700d8d5528dccae413",
+          "sha256": "727563b272da7ce961fc41e944a82dfeeb36ea75566bba0b4d906b7eb39aaf9c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/relative_depth_q00/candidate_00.png",
+          "pixels_sha256": "ab26991f28573468ccf9d68781b8a62306406aae5324e58add0dc232f6f48308",
+          "sha256": "074bc3f8dc8fb2ba8276ecd1b8dc0a246b46c5b43fd7c9517276e0a0ca8b9f4f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "nyu_depth_v2:0396",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/501db7c46b9d886673ebf0acc1a2af4458e892eb5dccac01292191b01567585a.png",
+          "pixels_sha256": "e052952471af7fbe38d56cfe2f8d88a66b8d2fa3348e83cce26b4dbf143e0c38",
+          "sha256": "501db7c46b9d886673ebf0acc1a2af4458e892eb5dccac01292191b01567585a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "relative_depth"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_00.png",
+          "pixels_sha256": "ce2749068fd9cf810e129e114bc0adc274a0653601df58cdaf415ebbf0f8e06a",
+          "sha256": "2eadd5c2d5050adce2924e27e378d59735671727f4fd5de789a4ec927b9bfe73",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_01.png",
+          "pixels_sha256": "01e14d15c409e369e307a2060111c9fc07de7624d6e5733aed248d1d1495a59f",
+          "sha256": "806f657cc9bbc4d4c32238617f070567300e4269fa5032a414e5110b8042cf04",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_02.png",
+          "pixels_sha256": "c7835f99bda26644bfa9f3f9e8c0f5ce9d2215dbc657f5e89d935ee2c66a9dcd",
+          "sha256": "ad47b96febcb6072819fc0f2e26f46bf5050ac3a031c4e722e963108181175db",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_03.png",
+          "pixels_sha256": "deafe77e9f50f0d115254e8ab8c680a6b9c001b3797857786e47900234985baf",
+          "sha256": "d2cd2e97f723464dd3228c815028ef1dc03b09eed4847240c2d2340613e78072",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_04.png",
+          "pixels_sha256": "65c9421fe66f0ddda47045c18f4fe7798f719bfbd6f8988f31ee1bcd416fa203",
+          "sha256": "4a03b526af1892985dcf0926356b1fc5d92f132de64b41fe5789c8e799dc7cad",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_05.png",
+          "pixels_sha256": "f99a1f9ef999e6ec344b827fa8457131a856cc5264d51f4be356012cf4e69cb0",
+          "sha256": "834f9707980e68379239584b4cf235ea59e586df7ce448b1991264282882666d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_06.png",
+          "pixels_sha256": "f797212edd35a22d714ea04e04866df0783b16d2fcb18d767029dd225be8ec37",
+          "sha256": "928cd554b3afadd43847a938e61d45e050fd4b9e9e339e0fc203504ee422b973",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_07.png",
+          "pixels_sha256": "13088f7d1bfcb05c559098822a23e76f4aeab35b737a6c23097a2ba59522d336",
+          "sha256": "795838fb7b9efddc1053cc4e2c5c03cedeaa91ccba5956555ee53d3d4862a51a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "white cyclist silhouette on black, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/d51c541e14520e6b0ac9d1d3aa6a7ab3abab64d01a90f6c4ae625455d8eb8e3b.png",
+            "pixels_sha256": "58c0548f898f301dc5f6541c1ffdf77a8a1a16ad5f65b63618f4539ea10290c9",
+            "sha256": "d51c541e14520e6b0ac9d1d3aa6a7ab3abab64d01a90f6c4ae625455d8eb8e3b",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "dut_omron:sun_amtcnaryvbagsatb",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/2d0d4a1a12d483e55220348de0f3197a76f51555b5505988a0ef335d1f3d665e.png",
+            "pixels_sha256": "999deac3220b4e7d71226a3fdaab3a37eb51d8ee805581a75873e3e7c8fa30e0",
+            "sha256": "2d0d4a1a12d483e55220348de0f3197a76f51555b5505988a0ef335d1f3d665e",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/9155382f87fa1875d58f3849aacf7df7de28f426f7f0e5c4fed7c29bf34eaea8.png",
+          "pixels_sha256": "d7991ad2454b87d2aee3d26a6277518333664c8a93e980a724c686993d0d7111",
+          "sha256": "9155382f87fa1875d58f3849aacf7df7de28f426f7f0e5c4fed7c29bf34eaea8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/saliency_detection_q00/candidate_00.png",
+          "pixels_sha256": "ce2749068fd9cf810e129e114bc0adc274a0653601df58cdaf415ebbf0f8e06a",
+          "sha256": "2eadd5c2d5050adce2924e27e378d59735671727f4fd5de789a4ec927b9bfe73",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "dut_omron:sun_bgruczgdxsknninj",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/41a959c6d11b9babb90201868e202dbf30d966a4105e07bce584266bb6f7c3a8.png",
+          "pixels_sha256": "df89b0c4162376cb50f88ad669aa292fd093cac2ecfec2e1da00f85354b88a01",
+          "sha256": "41a959c6d11b9babb90201868e202dbf30d966a4105e07bce584266bb6f7c3a8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "saliency_detection"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_00.png",
+          "pixels_sha256": "19d3bc617223b57675c484fd4d2ab4a3d9f41bc916f0db0fbe17d3e9455288c2",
+          "sha256": "06079778f47d28d89123ce473505a6489c10a61d87ed1e8235c76beda5d13a2a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_01.png",
+          "pixels_sha256": "8bcab984c9758f90c42906856dc7a6203c80aaf4fb56210017b83a423aa9e920",
+          "sha256": "9ba6d1bc3b169b12e3dd53ff98c5de647eac4ef068f4dfdacb53908f28c36162",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_02.png",
+          "pixels_sha256": "723ec7ae377cae0c227c3a4fdf9d76addc6f2d784174322d11976aa295a45d21",
+          "sha256": "9a98385fa5cac0e6630434a577d51b7216818328a1540208a4a08107c9c6cf10",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_03.png",
+          "pixels_sha256": "e64d587943ed69d3002064b63eadc2882ec4cdbab747bf2a54b1e789396a7c74",
+          "sha256": "ab9917cc40d358ef9f8613c7f0a021765b92877f65361acecd4f8e44308f3657",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_04.png",
+          "pixels_sha256": "bc68128a8cfacf55cbf857b9f888f5e282f1c065ce7fd2d6032469941f589e52",
+          "sha256": "1111d60f300a3f250edfb81610ea4be4fa51be4b03b3f04349c34bb30f1c2209",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_05.png",
+          "pixels_sha256": "0a73a769f28bb762b767f1e2579dd350592e231368a343813a3c903a94e20de6",
+          "sha256": "3f63cd0f2befc1006961c4ce4d33b5954915f37ae6baf6d81ce0f779c96df9d8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_06.png",
+          "pixels_sha256": "829e5f1aba49777c2d38a6289a0d2fa24b26721c57c105da2ea5a957425f6113",
+          "sha256": "1b66efeadd66c43d5dd516cbb78692c7008035a15449307138c16bc864554e0e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_07.png",
+          "pixels_sha256": "9094245d9d047d88a0c66b14b24c80e2007ba8d34aed5b8202f8144ae8fa6b8f",
+          "sha256": "f69297b7e6686a774e1aa6ec17b79cebd7473fa5774ff6c01bc909642bb8b41b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "color-coded ornate church segmentation, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/f3743dd5c289eb61a2240158b8db158dfdd4405828f91e538b2c8907f9c2a61a.png",
+            "pixels_sha256": "ad3409b52ec3c961bc0cef9b73f55d31d7302e38374792857573583992d0ae0b",
+            "sha256": "f3743dd5c289eb61a2240158b8db158dfdd4405828f91e538b2c8907f9c2a61a",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "ade20k:ADE_val_00001441",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/0bb844143e34ad0a8ac8ae14e61c794bf915df4dc9c3df0576433b9d60b9a325.png",
+            "pixels_sha256": "7e690668b50750f14fc437edf4dad0b8dfaed55eeb307581b182b1a38eedf9d1",
+            "sha256": "0bb844143e34ad0a8ac8ae14e61c794bf915df4dc9c3df0576433b9d60b9a325",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/05f702ed0aae9678d48bb223785a9a1bec3f291b0f633c3c479da84f10e45664.png",
+          "pixels_sha256": "ea1ec92dbc8ef5acb7c2beaa7f7331f62c54196f9b0024305ccab948b743e917",
+          "sha256": "05f702ed0aae9678d48bb223785a9a1bec3f291b0f633c3c479da84f10e45664",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/semantic_segmentation_q00/candidate_00.png",
+          "pixels_sha256": "19d3bc617223b57675c484fd4d2ab4a3d9f41bc916f0db0fbe17d3e9455288c2",
+          "sha256": "06079778f47d28d89123ce473505a6489c10a61d87ed1e8235c76beda5d13a2a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "ade20k:ADE_val_00000606",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/4bed6d6998f2f1bc291b7499afed36e351477d8db40f6e1d3e98b0f141e022c4.png",
+          "pixels_sha256": "59d5d665f3def39ccb886634aed44108c5a7419053c4fb576f0c3c2563e6ef9e",
+          "sha256": "4bed6d6998f2f1bc291b7499afed36e351477d8db40f6e1d3e98b0f141e022c4",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "semantic_segmentation"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_00.png",
+          "pixels_sha256": "ed486e7a6f1ede3c12e906589922ec658d9d305764190cd9f05eb99f75c4ebc5",
+          "sha256": "24e1aa0c04b0aabb48d9bc564b2bd7f9e67840526581b6023b84cb784f74f8b7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_01.png",
+          "pixels_sha256": "423c9bc00e384ad8f80414770d0855f4ba5e567f8f1ecd68dfbdf5b2369d1daa",
+          "sha256": "c1a498e69e70b3253dec087c2b8b2bba17b4cdfe4bd13b0dd455c6c2961270d1",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_02.png",
+          "pixels_sha256": "48aa4db3193b7e21760bb984e02da345365172d452fdabddeabfbc3b8c7720d4",
+          "sha256": "e9617e72b5a42927306eefc7f41fb65f0edbae28a5e7a58c294d5df8056b2061",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_03.png",
+          "pixels_sha256": "33cc12abe88bd5e5fee13eed50ba29967b9a7e04c00b6314450c401c8724e6e9",
+          "sha256": "6b188875cd50ce8d77c24ec8850c95798629e9f0d5bb7e25068a74903d79c637",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_04.png",
+          "pixels_sha256": "60843df35d46617629cbb37ac2100bdb4491478b1a9c1e55f1198a4bec3e1f19",
+          "sha256": "eef3cf1eb402f28b44dc36574335ee53c10a00a45683614dcba883334ca61b55",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_05.png",
+          "pixels_sha256": "b2e531be2e4cb75a9c6eed06a134b587aa8ad9b1b367b237397d96280e600092",
+          "sha256": "8ed9133f225798affc3b1168dce306d13816d898f3dab4f95c79183c9be88c68",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_06.png",
+          "pixels_sha256": "a32d0f84e1a9462f98b25be989ac12d40bc184af3f3bd2433885e5cea8910368",
+          "sha256": "f6deae46d8f17b56dc592febfc7c99fca6856ad1ef95ca3166fc9ecd09a1c450",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_07.png",
+          "pixels_sha256": "91a42701cf1cacff9b1e0b19040e85e527f2fd214054de0c3f74ea2d6722a944",
+          "sha256": "311cab65282fb9e776d4e2be9c4c31933b3ba473d0ae1834db81994ef5b9d1de",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "high resolution orange fungus, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/28f654d7dc8b30d13526bb56fe4e64e006b624d7be8b0e109116309a10ca6258.png",
+            "pixels_sha256": "96a2bc5d6ca0a72d8a5fe99eb722ef8651901f43f4ffd36be595e65e53147992",
+            "sha256": "28f654d7dc8b30d13526bb56fe4e64e006b624d7be8b0e109116309a10ca6258",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "div2k:val:0888",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/b1ef7c76d77715b567f787d16be6a6548ffe3eea29eb4495c4fdd311ce10eaef.png",
+            "pixels_sha256": "050e38df9e3a0712397caddd65183da83de09b5953d4e6507cc13be7efcdcbdb",
+            "sha256": "b1ef7c76d77715b567f787d16be6a6548ffe3eea29eb4495c4fdd311ce10eaef",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/15175dc326aa54ea4de79e032a7f1409fd41f437fb3b697ce9e7e628af7e4332.png",
+          "pixels_sha256": "3aa9d3685e4e0eeae8464b3c0aee0fa0043f1163e05b0d44189626e1a241913e",
+          "sha256": "15175dc326aa54ea4de79e032a7f1409fd41f437fb3b697ce9e7e628af7e4332",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/super_resolution_q00/candidate_00.png",
+          "pixels_sha256": "ed486e7a6f1ede3c12e906589922ec658d9d305764190cd9f05eb99f75c4ebc5",
+          "sha256": "24e1aa0c04b0aabb48d9bc564b2bd7f9e67840526581b6023b84cb784f74f8b7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "div2k:val:0858",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/d255fb22a099e69d2f6daf636f893cb4115f4ec2ed52b3c0f2ce623b24cf787a.png",
+          "pixels_sha256": "fd5ea70dbcd6f6082b631084c143cf77ad27f763a76899cc21d47a631760f258",
+          "sha256": "d255fb22a099e69d2f6daf636f893cb4115f4ec2ed52b3c0f2ce623b24cf787a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "super_resolution"
+    },
+    {
+      "candidates": [
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_00.png",
+          "pixels_sha256": "d59a581064fc98a675faa5a99fc5294054e5977d9b1bec301e10b0301cd2a1e0",
+          "sha256": "d9a255788c59db895a681daa61aade9c0360af1f19dc0b7e9d6226419763c65c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_01.png",
+          "pixels_sha256": "914bc30194d8eb0769a481ecc21cc9a9b1cb130c09769c585b813fc3403cb52c",
+          "sha256": "fc8771f9d8406bac96f47db9641b706ef1d967922ea0bc981b72db9c4b62a588",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_02.png",
+          "pixels_sha256": "0e33df3ce3d25f15c3f780ff10f094683cc66769550fd44867885aee31513e06",
+          "sha256": "860c456d26fb5567e8a19d4459f4e8d20ecd4c833787b31a9f0182477236a794",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_03.png",
+          "pixels_sha256": "efcaecb4e62f6bd2da9c69acbb10d9c162ce207bbef4549f1641bf920ab7f4f8",
+          "sha256": "86d89d49fcccec8062d0a6821e2ce8fdb105d8734bb06e642fcf6ecbca7380fe",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_04.png",
+          "pixels_sha256": "7fc9cb414c1e36e399ce972938b994a053fb00bc14dd77735d8f39b63328fae1",
+          "sha256": "5bc38fd705e0fbe9442a4cd78e1c5fe2e5b6960ae7e767e1454a325e49e6d67e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_05.png",
+          "pixels_sha256": "265db3bc75c89c98150109ece37c241853024a79bfc5a17778d59fe1d597a3c6",
+          "sha256": "28a86d7d0ba0cd007cb55fa9e33847d03d10f01e13613599257e9b0e13c4b576",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_06.png",
+          "pixels_sha256": "45cd4a00a070787f9e91e0ab5d0a4098459855d022398b9f3c078006436403eb",
+          "sha256": "e7447b26907231470c923e525978d7cc48be32c71d7d435a58d7d725095eb5d6",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_07.png",
+          "pixels_sha256": "fba1b51865bb95ff38e1090e29067d0b07d89bb5cf9a132123cc7404d19b9bd9",
+          "sha256": "375a16412e131cdd36697f121c427b3b6c417c16ddcff772787cb4a9e181bb73",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      ],
+      "cid": 0,
+      "conditioned_prompt": "colored brick wall normal map, best quality, extremely detailed",
+      "demos": [
+        {
+          "input": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/3a90cf5405a11ffb8ea206d976c82bbec014c6e225e3922b9a1252f51e54d75a.png",
+            "pixels_sha256": "5923af1fc16fc68467ac70f3069f21736bbc85272c4059c0c9ceab08a6e30acb",
+            "sha256": "3a90cf5405a11ffb8ea206d976c82bbec014c6e225e3922b9a1252f51e54d75a",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          },
+          "position": 1,
+          "record_id": "diode:00020_00186_indoors_040_020",
+          "target": {
+            "dtype": "uint8",
+            "path": "assets/promptdiffusion-task-text/4233967d73ee86a5ab48decaa7b61bacbf2e5dc5ba620f567f8c300ff53f0584.png",
+            "pixels_sha256": "db186954ce478d6a8a8685ce1980a96429155fc6c70f542ab15ab359026bca5a",
+            "sha256": "4233967d73ee86a5ab48decaa7b61bacbf2e5dc5ba620f567f8c300ff53f0584",
+            "shape": [
+              256,
+              256,
+              3
+            ]
+          }
+        }
+      ],
+      "model": "analogist",
+      "p": 1,
+      "prompt_source": "Codex current vision cache",
+      "query": {
+        "input": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/5956daa51819fe9428d5680440551596c9fe3847e6b8f8af35414cf2b2de06fb.png",
+          "pixels_sha256": "8c47ba27f8d8823c247518501e028bb32304be66106491713c485274dc79600e",
+          "sha256": "5956daa51819fe9428d5680440551596c9fe3847e6b8f8af35414cf2b2de06fb",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "output": {
+          "dtype": "uint8",
+          "path": "assets/bench-v2-validation-examples/analogist-current-vision/surface_normals_q00/candidate_00.png",
+          "pixels_sha256": "d59a581064fc98a675faa5a99fc5294054e5977d9b1bec301e10b0301cd2a1e0",
+          "sha256": "d9a255788c59db895a681daa61aade9c0360af1f19dc0b7e9d6226419763c65c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "record_id": "diode:00023_00200_outdoor_020_030",
+        "target": {
+          "dtype": "uint8",
+          "path": "assets/promptdiffusion-task-text/1e1a72af6dafe371c908408b18c5ca90f496fd6531e027042fc4bd3e96605a5a.png",
+          "pixels_sha256": "4a2b19a2ce2567b4d601b19e9a921cfd657599c3d0f9c903e2155a24a7e60fc1",
+          "sha256": "1e1a72af6dafe371c908408b18c5ca90f496fd6531e027042fc4bd3e96605a5a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "recipe": "P=1 · 50 DDIM steps · 8 retained candidates",
+      "status": "complete inference · metrics pending",
+      "task": "surface_normals"
+    }
+  ],
+  "run_id": "20261019T223755Z-2101716",
+  "schema": "visualcloze_site_analogist_current_vision_validation_v1",
+  "score_status": "pending; omitted from ranked validation table",
+  "source": "gs://kmh-gcp-us-east5/kristine/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/validation/runs/20261019T223755Z-2101716",
+  "status": "INFERENCE_COMPLETE_SCORES_PENDING",
+  "worker0_results_sha256": "ae463caef2dbaa4c8089a840770a9d276d9b0c99f4e62421d90416c389f08678",
+  "worker1_results_sha256": "0aaf0fa3beb73c097c87e691115c2cc94e0b9e62a58fede7955a3e7191f81aee"
+}

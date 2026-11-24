@@ -1,0 +1,171 @@
+{
+  "schema": "bench_v2_accuracy_review_contract_v1",
+  "updated_utc": "2026-10-31T12:54:50.337143+00:00",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "supervision_version": 6,
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "all_models_certified_most_accurate": false,
+  "meaning": "Release-faithful inference settings and explicit benchmark adaptations; no claim of globally optimal hyperparameters.",
+  "required_before_new_accuracy_claim": [
+    "Pinned released checkpoint and source; strict key/shape and weight integrity checks.",
+    "Native model resolution, released sampler steps and candidate count; no quality-reducing shortcut without measured equivalence.",
+    "Fixed same-source demonstrations with query excluded; query targets used only in scoring.",
+    "Geometry/label adapters justified independently and identified as additional supervision where applicable.",
+    "Checkpoint-level same-backend checks for optimizations, and explicit precision/backend differences; CPU component tests alone are insufficient.",
+    "Fresh paired controls for changed stochastic recipes; all 221 queries/13 tasks unless explicitly task-specific.",
+    "Keep common RGB, native-adapter and added-text conditions distinct; no best-of-category/seed/candidate selection.",
+    "Use only independent development data for tuning; these inspected validation scores cannot serve as an untouched confirmation set."
+  ],
+  "models": {
+    "visualcloze": {
+      "checkpoint": "VisualClozePipeline-384 @ 59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+      "demonstrations": "P2 primary release comparison; P1/P4/P8 remain separate variants",
+      "native_size": "384 pixels per tile",
+      "sampling": "30 FlowMatch Euler steps, guidance 30, one output, BF16",
+      "required": "Plain layout sentence; absent caption represented by None; invalidate old text embeddings. Preserve task text, per-query seed 0 and mask.",
+      "qualification": "Both 221-query conditions completed, but both inference logs contain invalid float-to-uint8 conversion warnings. Edge q2 jumps 0 \u2192 0.831 while q16 drops 0.775 \u2192 0; the failed predictions are completely black before scoring. Small category-mean changes hide these failures. Archived scores are retained as diagnostics; the prompt change is not yet a validated quality comparison. A separately authorized replay with a pre-conversion finite-value guard started; last verified progress 2026-10-31T00:05:20.880339+00:00. No repair or new quality result is claimed.",
+      "remaining": [
+        "Finish fresh P2 control/correction scoring.",
+        "P4/P8 are outside the paper table\u2019s P0\u2013P2 study; do not call more demonstrations more accurate.",
+        "Full cross-backend activation parity remains unverified."
+      ]
+    },
+    "painter": {
+      "checkpoint": "Painter ViT-L @ 97200aa029bab2e61ea5b4ce627534e35f152b23; weight SHA 1bdd60ce013e82253e2a031726f36d07587947438b0e561d4338d6f0c1113f44",
+      "demonstrations": "P1",
+      "native_size": "448-pixel tiles; 896 \u00d7 448 canvas",
+      "sampling": "Deterministic single forward; full checkpoint; float32 CPU recovery",
+      "required": "Official float64 boundary constants then float32 model input. Depth needs metric-depth support encoding and native float depth decoding before inverse-meter scoring. Keep the generic RGB and native-depth conditions separate.",
+      "qualification": "All 221 generic CPU reference queries and the separate native depth, semantic, instance and pose comparisons are complete. Native instance decreases mean PQ by 40.2% versus the archived 448-pixel setting. Native pose changes mean PCK from 0.085294 to 0.620588 (+0.535294; +627.6%): 15 queries improve, 0 worsen and 2 tie. This separate condition uses demonstration joint metadata and an external image-only person detector. All 17 fresh generic controls match the earlier CPU outputs exactly. The other 12 categories were not rerun. Surface-normal model failures and TPU numerical qualification remain unresolved.",
+      "remaining": [
+        "All 221 generic CPU reference queries and the separate native depth, semantic, instance and pose comparisons are complete. Native instance decreases mean PQ by 40.2% versus the archived 448-pixel setting. Native pose changes mean PCK from 0.085294 to 0.620588 (+0.535294; +627.6%): 15 queries improve, 0 worsen and 2 tie. This separate condition uses demonstration joint metadata and an external image-only person detector. All 17 fresh generic controls match the earlier CPU outputs exactly. The other 12 categories were not rerun. Surface-normal model failures and TPU numerical qualification remain unresolved.",
+        "Native semantic palette, pose flip/decoder and panoptic pipelines are separate task adapters; no blanket paper-parity claim.",
+        "Unseen normal/landmark tasks have no established inference-only repair."
+      ]
+    },
+    "vict": {
+      "checkpoint": "Official VICT @ 56c395244223ae464d754cae1ef2cad073cd48ac with the same verified Painter ViT-L weights",
+      "demonstrations": "P1",
+      "native_size": "448-pixel tiles; 896 \u00d7 448 canvas",
+      "sampling": "Main recipe: 60 encoder updates/query, AdamW lr 1e-6, betas .9/.999, eps 1e-8, weight decay 0, batch 1; reset model and optimizer per query",
+      "required": "Restore the original device execution boundary before returning predictions; official restoration order is denormalize \u2192 resize \u2192 clip \u2192 quantize. Require exact 60-step synthetic state/output checks before validation. Depth needs an independently tested native-depth adapter.",
+      "qualification": "Three sequential 60-update CPU FP32 cases pass exact losses, final model and optimizer states, raw outputs, pixels and continuing random state with deterministic algorithms. The earlier failed comparison is preserved. TPU precision, optimizer and device checks, native depth, appendix settings and a paired corrected-output benchmark remain open.",
+      "remaining": [
+        "Three sequential 60-update CPU FP32 cases pass exact losses, final model and optimizer states, raw outputs, pixels and continuing random state with deterministic algorithms. The earlier failed comparison is preserved. TPU precision, optimizer and device checks, native depth, appendix settings and a paired corrected-output benchmark remain open.",
+        "Use a fresh paired 221-query control/correction, not a resumed global-RNG history.",
+        "Appendix-B unseen-task comparison requires 100 steps and task-specific learning rates selected on independent development data. Those exact rates are not established here."
+      ]
+    },
+    "genlv": {
+      "checkpoint": "Extended 101-task Huge, huge-checkpoint-49.pth; strict 1,586-tensor released checkpoint",
+      "demonstrations": "P1",
+      "native_size": "256 pixels",
+      "sampling": "Released deterministic single forward; FP32 reference required for parity control",
+      "required": "Preserve BGR [0,1] input and BGR-to-RGB output, released width-32/204,592,220-parameter architecture. Establish depth and normal conventions on independent examples before one fixed bidirectional adapter.",
+      "qualification": "Checkpoint/source checks support the release. No verified normal-frame or depth-encoding correction; no fresh geometry recovery.",
+      "remaining": [
+        "Compare official FP32 activations/output with the port on fixed development inputs.",
+        "Do not replace zero-shot weights with SIDD-fine-tuned weights or change architecture to a paper table\u2019s parameter count.",
+        "No per-query channel/sign selection using evaluation targets."
+      ]
+    },
+    "lavin_dit": {
+      "checkpoint": "LaVinDiT_3B_2 @ weights 908f27447c65a95ba480ead9ef30f59965817593; source f3728580115a4efbcd38d2279f1dbd868297b05e",
+      "demonstrations": "P8 release generate()/latency condition; P4 CLI default and P1/P2 retained separately",
+      "native_size": "512 pixels per frame",
+      "sampling": "Released nonuniform 20 time points = 19 Euler intervals; guidance 1.5; one output; BF16",
+      "required": "Single advancing CPU RNG stream: VAE posterior sample followed by flow noise. Preserve alternating frames, STVAE shift .032470703125 and scale 1.08936170213, full attention and separate conditional/null forwards.",
+      "qualification": "The replacement v5p-8 was explicitly authorized, but the latest read-only check at 2026-10-30T23:57:17.867679+00:00 found it occupied by a foreign workload. No process was started there. Four-chip model runners and finite-output admission checks are prepared locally; launch requires a fresh all-worker AVAILABLE result.",
+      "remaining": [
+        "Pass full-checkpoint same-backend qualification and paired P8 scoring.",
+        "Existing P8 improves depth over P4 but worsens other tasks; not an isolated causal count experiment.",
+        "Historical cross-port equivalence failed; CUDA/TPU activation parity remains unverified."
+      ]
+    },
+    "prompt_diffusion": {
+      "checkpoint": "Original released Prompt Diffusion; 1,486 learned tensors exactly match the converted checkpoint",
+      "demonstrations": "P1",
+      "native_size": "256 pixels",
+      "sampling": "DDIM 50, eta 0, guidance 7.5, conditioning strength 1, one output",
+      "required": "Keep both conditioning-range recipes explicit: adopted pipeline [0,1] and original loader/notebook [-1,1]. Preserve prompt, pair order, noise and output normalization. Resolve original forward-path activation parity before declaring either universally correct.",
+      "qualification": "Paired 221-query range comparison completed: 6 categories improve, 7 worsen. Exact weight conversion verified; activation parity not tested.",
+      "remaining": [
+        "Original and adopted inference interfaces disagree on range; tensor equality alone does not resolve forward semantics.",
+        "No global replacement by the corrected-range row or best-per-category mixture.",
+        "Restoration remains outside the six trained directions."
+      ]
+    },
+    "relation_adapter": {
+      "checkpoint": "Adapter @ 7f65ecd6c7718c6de92782dade849a4872aa986a plus FLUX.1-dev @ 3de623fc3c33e44ffbe2bad470d0f45bccf2eb21 and SigLIP @ 9fdffc58afc957d1a03a25b10dba0329ab15c2a3",
+      "demonstrations": "P1",
+      "native_size": "Released query-size handling; preserve benchmark square input",
+      "sampling": "24 steps, guidance 3.5, alpha 1, seed 1000, one output; BF16",
+      "required": "Load both ip_adapter-100000.bin and pytorch_lora_weights.safetensors; fuse LoRA once. Use frozen directional task instructions consistently in qualification, inference and metadata.",
+      "qualification": "The CPU BF16 comparison stopped after two finite reference steps. Setup took 111.2 seconds; the next sampling step took 232.18 seconds. At that rate, 382 remaining steps would take 24.64 hours, exceeding the four-hour total cap. This CPU lacks native BF16 support; two representative matrix-operation probes ran 4.5\u20135.6 times slower in BF16 than FP32. Full reference parity and TPU runtime qualification remain open. No precision substitution or speedup is claimed.",
+      "remaining": [
+        "The CPU BF16 comparison stopped after two finite reference steps. Setup took 111.2 seconds; the next sampling step took 232.18 seconds. At that rate, 382 remaining steps would take 24.64 hours, exceeding the four-hour total cap. This CPU lacks native BF16 support; two representative matrix-operation probes ran 4.5\u20135.6 times slower in BF16 than FP32. Full reference parity and TPU runtime qualification remain open. No precision substitution or speedup is claimed.",
+        "Task text is a declared benchmark adaptation; alpha sweeps require independent development data."
+      ]
+    },
+    "instamanip": {
+      "checkpoint": "InstaManip-17B-1shot / 2shot / 3shot @ c63e249238beba8cc09342782a63322f0833d282; code be992025e226211352cbb6c0734f5243fe1972c4 is not the weight revision",
+      "demonstrations": "Released P1, P2 and P3 all have complete scored archives with their shot-specific checkpoints. The P3 archive was recovered and verified on October31; historical missing-archive statements were incorrect.",
+      "native_size": "448 CLIP encoder; 1024 SDXL output; preserve demo-only intermediate 1024 resize",
+      "sampling": "Greedy agent, one beam, max tokens = 450 + 100 \u00d7 P (550/650/750); 50 Euler steps; guidance 7.5, image guidance 1.5; first output only",
+      "required": "Verify sequential token path and group mask against the fused TPU block. Official seed is reset to 42 per call; current hashed per-episode seed is a separate benchmark condition. Do not assume CUDA FP16 equals TPU BF16.",
+      "qualification": "P1/P2/P3 archives are complete; P3 improves nine category means and worsens four versus P2, with 66 changed targets and multiple recipe differences. The full two-shot CPU token comparison passes. Both independent native1024 diffusion cases now match exactly across all50steps, raw decoded images and final pixels (404 saved tensor pairs rechecked). The dynamic Euler path took 8.4\u20138.5% longer on CPU; no diffusion speedup is established. TPU BF16, sharding, padded batches, three-shot reference parity and per-call versus per-query seed policy remain open.",
+      "remaining": [
+        "CPU token and full50-step diffusion comparisons are complete; do not repeat them. Qualify TPU BF16, sharding, padded16-way diffusion and padded80-image CLIP; compare official per-call seed42 with the archived query-derived seed policy. Three-shot checkpoint reference parity remains open.",
+        "Two CPU FP32 fixtures match at every diffusion step and in final pixels. This does not qualify TPU execution or the three-shot checkpoint.",
+        "Keep official per-call seed 42 and archived query-derived seeds explicit."
+      ]
+    },
+    "improv": {
+      "checkpoint": "IMProv-v1-0 @ bc9d733ae2fc403600f87f8374b2eb544e6bd6dd; VQ @ f61ca369a6ac0fc3f45f335395320dee65b5a296",
+      "demonstrations": "P1",
+      "native_size": "224 white canvas, 111-pixel tiles, 2-pixel gap",
+      "sampling": "One step, guidance 1, temperature 0, argmax; full VQ decode",
+      "required": "Preserve ImageNet encoder normalization and .5 decoder normalization, mask construction and float-to-PIL truncation. Empty text is the vision-only ablation; report full image+text as a separately declared condition.",
+      "qualification": "Same-backend uint8 equality passed on four retained admission fixtures after reference repair. Text experiments did not establish a broad recovery.",
+      "remaining": [
+        "111-pixel codec loses tiny landmarks: synthetic red markers 25 \u2192 3. Raising resolution changes the released model interface.",
+        "Use independent development data if selecting a text policy; do not optimize against this validation table.",
+        "This is not proof of cross-backend parity or paper-table checkpoint identity."
+      ]
+    },
+    "analogist": {
+      "checkpoint": "Pinned official Analogist @ 3d7b485691ff50090af55caffb4bc7802990e5ca; SD inpainting mirror @ 8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+      "demonstrations": "P1",
+      "native_size": "512 canvas with 253-pixel tiles and padding 2",
+      "sampling": "All 8 candidates; nominal DDIM 50; strength .98 = 49 steps, deblur/denoise .7 = 35 steps; CFG 15 except inpainting 7.5",
+      "required": "Sample each VAE conditioning latent once and share across candidates; use released tensor DDIM arithmetic. Retain independent candidate diffusion noise and score every candidate before averaging.",
+      "qualification": "The two-hour qualification reached its deadline after 10 of 18 calls. All six completed repeat checks matched exactly, but the qualification is incomplete. The archive step also ran out of deadline allowance; retained controller logs establish the timeout. Repair archival headroom and use measured call time to budget the next attempt. No new benchmark score.",
+      "remaining": [
+        "Pass the full model equality checks with supplied tensors/noise before scoring.",
+        "No best-of-8 selection and no pixel averaging.",
+        "Historical author checkpoint bytes and original GPT-4V prompt cache are not completely recoverable; current prompt cache remains labeled."
+      ]
+    },
+    "lvm": {
+      "checkpoint": "Official released LVM-7B @ aa5a9039273bd4221a0f69f5c943de1c56c39d89; improved VQ @ e4b5f5f83d9588ed52b6d1b65b91262f9f2d804b",
+      "demonstrations": "P7 released visual-analogy structure; native P1/P2/P4 are complete separate comparisons",
+      "native_size": "256 pixels; 256 VQ tokens/image; 4096-token window",
+      "sampling": "One output, temperature 1, top-p .9, top-k 50, seed 0; exactly 256 generated visual tokens",
+      "required": "Alternate support input/target frames, no BOS, suppress invalid vocabulary IDs and use unreachable EOS to avoid early termination at valid visual code 2. Rebuild authenticated P7 plan before removing the diagnostic label.",
+      "qualification": "Native P1/P2/P4 score archives verified. Existing P7 has corrected metrics but legacy-plan diagnostic status.",
+      "remaining": [
+        "Run an authenticated native P7 condition if publishing it as authoritative.",
+        "Paper main analysis uses 3B; released 7B/improved VQ is a different published-release condition.",
+        "Test codec distortion on independent normal/point fixtures before sampling changes."
+      ]
+    }
+  },
+  "ours_reference": {
+    "transcription": "All 13 displayed rounded cells match the pinned supplied table.",
+    "raw_archive": "Located 32 producer episodes: 6 edge, 17 depth, 9 normals. Scoring is deferred and score_complete is false. This does not verify the full 221-query reported row.",
+    "required": "Obtain the full authenticated scored 221-query archive for the reported plan, with pack/release/episode identities, then recompute all means. Until then retain the reported/rounded label and do not infer unrounded ranks.",
+    "source_sha256": "0f98ead1bf24f6372f6d7ec8c96e608d11d22f8e99c1bc0a3a306a40c5096cdb",
+    "partial_archive_sha256": "4db7b1564d28d335b1127ee13510ccc9598799bc9005f645e6c6cacdd5d584c4",
+    "fully_verified": false
+  }
+}

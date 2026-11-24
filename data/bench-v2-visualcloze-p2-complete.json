@@ -1,0 +1,437 @@
+{
+  "schema": "visualcloze_bench_v2_complete_summary_v1",
+  "status": "complete_authoritative_pack_scores",
+  "captured_at_utc": "2026-10-10T05:45:19+00:00",
+  "model": {
+    "name": "VisualCloze/VisualClozePipeline-384",
+    "revision": "59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+    "prompt_count": 2,
+    "guidance_scale": 30.0,
+    "num_inference_steps": 30,
+    "seed": 0
+  },
+  "paper_alignment": {
+    "status": "inference_recipe_aligned",
+    "paper_url": "https://arxiv.org/abs/2504.07960",
+    "official_release_url": "https://github.com/lzyhha/VisualCloze",
+    "matched": [
+      "two in-context examples",
+      "released 384-pixel pipeline",
+      "guidance scale 30",
+      "30 inference steps",
+      "seed 0"
+    ],
+    "numeric_comparison": "not_direct",
+    "numeric_comparison_reason": "The paper's quantitative tables use different tasks, datasets, and metric definitions. This benchmark reproduces the released P=2 inference recipe, not the paper's evaluation table."
+  },
+  "site_alignment": {
+    "reference_file": "data/results.csv",
+    "status": "same_model_and_prompt_count_different_pack",
+    "note": "The earlier site evaluation uses the same model revision and native P=2 inference on a 15-task, 64-query supervision-v5 pack. The bench_v2 rows use full public datasets and corrected v3 metrics. Values are shown together only as a directional sanity check."
+  },
+  "scoring": {
+    "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+    "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+    "metric_identity_sha256": "34ed640d556d9abf2e1ae73ef6203b1de2252cdea864ac33193c4ebb2b9dce3b",
+    "aggregation": "mean of each pack's per-query primary values",
+    "edge_note": "Displayed edge values are mean per-query OIS F. Corrected pooled ODS/OIS/AP are available in the finalized source aggregate.",
+    "validation_note": "The 221-row mixed-task validation pack is score-complete and is included in the progress totals, but it is not shown as a single aggregate metric row because its task-native primary metrics are heterogeneous."
+  },
+  "source": {
+    "aggregate_summary_sha256": "9bf19ec0176212bf33bc5b48859001b09db5d184ca44dfc9ea5178bdb5c698c3",
+    "publication_manifest_sha256": "0514a04ae623b24b22903d610650cc04d02c1643ab049a93a34c9e278753c85e",
+    "episodes": 17732,
+    "scored_pairs_including_copy": 35464,
+    "published_at_utc": "2026-10-10T05:45:19Z"
+  },
+  "progress": {
+    "completed_packs": 27,
+    "total_packs": 27,
+    "completed_test_packs": 26,
+    "validation_pack_complete": true,
+    "completed_queries": 17732,
+    "total_queries": 17732,
+    "inference_queries_complete": 17732
+  },
+  "rows": [
+    {
+      "pack_rel": "bench_v2_test/colorization/div2k_val",
+      "task": "colorization",
+      "dataset": "DIV2K val",
+      "n": 100,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.31733054522424936,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.3011171722318977, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/deblurring/gopro_test",
+      "task": "deblurring",
+      "dataset": "GoPro test",
+      "n": 1111,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.1733720367229489,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.1778924346435815, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/denoising/cbsd68",
+      "task": "denoising",
+      "dataset": "CBSD68",
+      "n": 68,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.19220350167768843,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.2617360650910996, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/denoising/sidd_val",
+      "task": "denoising",
+      "dataset": "SIDD val",
+      "n": 1280,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.3397739314081264,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.2617360650910996, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/edge_detection/bsds500_test",
+      "task": "edge_detection",
+      "dataset": "BSDS500 test",
+      "n": 200,
+      "primary_metric": "ois_f",
+      "direction": "higher",
+      "mean": 0.6712241929146572,
+      "site_reference": {"metric": "ois_f", "mean": 0.717729953514733, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/edge_detection/nyudv2_test_hed",
+      "task": "edge_detection",
+      "dataset": "NYUDv2 test HED",
+      "n": 654,
+      "primary_metric": "ois_f",
+      "direction": "higher",
+      "mean": 0.5304947684036678,
+      "site_reference": {"metric": "ois_f", "mean": 0.717729953514733, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/face_landmarks/300w_test",
+      "task": "face_landmarks",
+      "dataset": "300W test",
+      "n": 600,
+      "primary_metric": "nme",
+      "direction": "lower",
+      "mean": 0.34384719247449236,
+      "site_reference": {"metric": "nme_bbox_matched", "mean": 0.46049261133872427, "relation": "metric_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/face_landmarks/cofw68_test",
+      "task": "face_landmarks",
+      "dataset": "COFW-68 test",
+      "n": 507,
+      "primary_metric": "nme",
+      "direction": "lower",
+      "mean": 0.3800920672750154,
+      "site_reference": {"metric": "nme_bbox_matched", "mean": 0.46049261133872427, "relation": "metric_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/human_pose_2d/flic_test",
+      "task": "human_pose_2d",
+      "dataset": "FLIC test",
+      "n": 926,
+      "primary_metric": "pck_torso_0.2",
+      "direction": "higher",
+      "mean": 0.1101511879049676,
+      "site_reference": {"metric": "pck_bbox_reject", "mean": 0.015625, "relation": "metric_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/human_pose_2d/lsp_test",
+      "task": "human_pose_2d",
+      "dataset": "LSP test",
+      "n": 1000,
+      "primary_metric": "pck_torso_0.2",
+      "direction": "higher",
+      "mean": 0.1902818181818182,
+      "site_reference": {"metric": "pck_bbox_reject", "mean": 0.015625, "relation": "metric_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/inpainting/div2k_val",
+      "task": "inpainting",
+      "dataset": "DIV2K val",
+      "n": 100,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.0818979992927052,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.12062469593365677, "relation": "same_metric_family_corrected_composite"}
+    },
+    {
+      "pack_rel": "bench_v2_test/inpainting/urban100",
+      "task": "inpainting",
+      "dataset": "Urban100",
+      "n": 100,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.08432367276982404,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.12062469593365677, "relation": "same_metric_family_corrected_composite"}
+    },
+    {
+      "pack_rel": "bench_v2_test/instance_segmentation/nyuv2_test",
+      "task": "instance_segmentation",
+      "dataset": "NYUv2 test",
+      "n": 654,
+      "primary_metric": "pq",
+      "direction": "higher",
+      "mean": 0.07096569618247262,
+      "site_reference": {"metric": "pq_novoid", "mean": 0.06432114033531419, "relation": "protocol_changed_similar_scale"}
+    },
+    {
+      "pack_rel": "bench_v2_test/relative_depth/nyuv2_test",
+      "task": "relative_depth",
+      "dataset": "NYUv2 test",
+      "n": 654,
+      "primary_metric": "delta1",
+      "direction": "higher",
+      "mean": 0.9039688157845249,
+      "site_reference": {"metric": "delta1_aligned_ssc", "mean": 0.52897161, "relation": "alignment_protocol_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/colorization/ade20k_val",
+      "task": "colorization",
+      "dataset": "ADE20K val",
+      "n": 2000,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.30904305990599096,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.30111717, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/relative_depth/diode_val",
+      "task": "relative_depth",
+      "dataset": "DIODE val",
+      "n": 771,
+      "primary_metric": "delta1",
+      "direction": "higher",
+      "mean": 0.6611405377702402,
+      "site_reference": {"metric": "delta1_aligned_ssc", "mean": 0.52897161, "relation": "alignment_protocol_changed_not_comparable"}
+    },
+    {
+      "pack_rel": "bench_v2_test/semantic_segmentation/camvid_test",
+      "task": "semantic_segmentation",
+      "dataset": "CamVid test",
+      "n": 233,
+      "primary_metric": "miou",
+      "direction": "higher",
+      "mean": 0.253815360506663,
+      "site_reference": {"metric": "miou", "mean": 0.04549376, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/super_resolution/div2k_val",
+      "task": "super_resolution",
+      "dataset": "DIV2K val",
+      "n": 100,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.20239323906600476,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.21530343, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/super_resolution/urban100",
+      "task": "super_resolution",
+      "dataset": "Urban100",
+      "n": 100,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.1798158885911107,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.21530343, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/saliency_detection/ecssd",
+      "task": "saliency_detection",
+      "dataset": "ECSSD",
+      "n": 1000,
+      "primary_metric": "max_fbeta",
+      "direction": "higher",
+      "mean": 0.7633645891235775,
+      "site_reference": {"metric": "max_fbeta", "mean": 0.5814422637054124, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/saliency_detection/pascal_s",
+      "task": "saliency_detection",
+      "dataset": "PASCAL-S",
+      "n": 845,
+      "primary_metric": "max_fbeta",
+      "direction": "higher",
+      "mean": 0.6802213576118289,
+      "site_reference": {"metric": "max_fbeta", "mean": 0.5814422637054124, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "task": "deblurring",
+      "dataset": "RealBlur-J test",
+      "n": 980,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.15006352435721426,
+      "site_reference": {"metric": "lpips_alex", "mean": 0.1778924346435815, "relation": "same_metric_family"}
+    },
+    {
+      "pack_rel": "bench_v2_test/instance_segmentation/voc2012_val",
+      "task": "instance_segmentation",
+      "dataset": "VOC2012 val",
+      "n": 1449,
+      "primary_metric": "pq",
+      "direction": "higher",
+      "mean": 0.10066078250295266,
+      "site_reference": {"metric": "pq_novoid", "mean": 0.06432114033531419, "relation": "protocol_changed_similar_scale"}
+    },
+    {
+      "pack_rel": "bench_v2_test/semantic_segmentation/nyuv2_test_40",
+      "task": "semantic_segmentation",
+      "dataset": "NYUv2 test 40",
+      "n": 654,
+      "primary_metric": "miou",
+      "direction": "higher",
+      "mean": 0.2890911904159371,
+      "site_reference": {"metric": "miou", "mean": 0.04549376, "relation": "same_metric_different_protocol"}
+    },
+    {
+      "pack_rel": "bench_v2_test/surface_normals/diode_val",
+      "task": "surface_normals",
+      "dataset": "DIODE val",
+      "n": 771,
+      "primary_metric": "mean_deg",
+      "direction": "lower",
+      "mean": 59.2531540189286,
+      "site_reference": {"metric": "mean_deg", "mean": 59.443392440001645, "relation": "same_metric_different_datasets"}
+    },
+    {
+      "pack_rel": "bench_v2_test/surface_normals/nyuv2_test_geonet",
+      "task": "surface_normals",
+      "dataset": "NYUv2 test GeoNet",
+      "n": 654,
+      "primary_metric": "mean_deg",
+      "direction": "lower",
+      "mean": 62.138070903548474,
+      "site_reference": {"metric": "mean_deg", "mean": 59.443392440001645, "relation": "same_metric_different_datasets"}
+    }
+  ],
+  "validation_rows": [
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "colorization",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.27830371918047175
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "deblurring",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.17415655842598746
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "denoising",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.2975901869290015
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "edge_detection",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "ois_f",
+      "direction": "higher",
+      "mean": 0.6736053088696248
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "face_landmarks",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "nme",
+      "direction": "lower",
+      "mean": 0.3989191462989101
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "human_pose_2d",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "pck_torso_0.2",
+      "direction": "higher",
+      "mean": 0.14950980392156862
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "inpainting",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.08864702623994912
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "instance_segmentation",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "pq",
+      "direction": "higher",
+      "mean": 0.08619441768957607
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "relative_depth",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "delta1",
+      "direction": "higher",
+      "mean": 0.9304884208036771
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "saliency_detection",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "max_fbeta",
+      "direction": "higher",
+      "mean": 0.5241488615166139
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "semantic_segmentation",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "miou",
+      "direction": "higher",
+      "mean": 0.2701419967970047
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "super_resolution",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "lpips",
+      "direction": "lower",
+      "mean": 0.19678178517257466
+    },
+    {
+      "pack_rel": "bench_v2_val",
+      "task": "surface_normals",
+      "dataset": "Validation",
+      "n": 17,
+      "primary_metric": "mean_deg",
+      "direction": "lower",
+      "mean": 55.47284666186515
+    }
+  ]
+}

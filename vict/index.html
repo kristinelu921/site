@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete VICT corrected-v3 results on the shared 221-query Bench v2 validation set.">
+  <title>VICT · complete Bench v2 validation</title>
+  <link rel="stylesheet" href="../styles.css?v=56">
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+  <header class="masthead">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>VisualCloze <b>/ model evals</b></span></a>
+    <nav><a href="../10-12-validations/#vict">Validation table</a><a href="#results">Scores</a><a href="#method">Method</a><a href="#reproducibility">Provenance</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="overview model-overview">
+      <div class="overview-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Validation complete · corrected-v3 · 21 October 2026</p>
+        <h1>VICT</h1>
+        <p class="lede">Per-query test-time training evaluated across every task and query in the shared Bench v2 validation set. This is the official VICT single-crop, no-augmentation data setup on a qualified TPU numerical port.</p>
+        <p class="model-badge">Native P=1 · 60 encoder updates/query · no augmentation</p>
+        <a class="model-script-link" href="../data/vict-bench-v2-validation-scores.json" download>Download exact score summary</a>
+      </div>
+      <dl class="run-facts">
+        <div><dt>Scored queries</dt><dd>221 / 221</dd></div>
+        <div><dt>Tasks</dt><dd>13 / 13</dd></div>
+        <div><dt>Scored pairs</dt><dd>442</dd></div>
+        <div><dt>Beats copy margin</dt><dd>5 / 13</dd></div>
+      </dl>
+    </section>
+
+    <section class="results-section" id="results">
+      <div class="section-heading">
+        <div><p class="section-number">01 / VALIDATION SCORES</p><h2>Exact corrected-v3 metrics</h2></div>
+        <p>Mean primary score over the same 17 validation queries per task. Improvement is direction-aware versus copying the query input.</p>
+      </div>
+      <aside class="score-boundary">
+        <strong>Authoritative validation result</strong>
+        <p>All 221 predictions and 221 copy controls passed the released corrected scoring contract. A margin win requires the preregistered task threshold, not merely a positive raw difference.</p>
+      </aside>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Task / primary metric</th><th>VICT · P=1 TTT</th><th>Copy input</th><th>Improvement</th><th>Registered margin</th></tr></thead>
+          <tbody>
+            <tr><td><span class="task-name">Colorization</span><span class="metric-name">LPIPS ↓</span></td><td>0.266139495899</td><td>0.261977387921</td><td>−0.004162107978</td><td>—</td></tr>
+            <tr><td><span class="task-name">Deblurring</span><span class="metric-name">LPIPS ↓</span></td><td>0.211393987431</td><td>0.208890174242</td><td>−0.002503813190</td><td>—</td></tr>
+            <tr><td><span class="task-name">Denoising</span><span class="metric-name">LPIPS ↓</span></td><td>0.200603606508</td><td>0.744660321404</td><td>+0.544056714896</td><td><span class="condition-pill real">Pass</span></td></tr>
+            <tr><td><span class="task-name">Edge detection</span><span class="metric-name">mean per-query OIS F ↑</span></td><td>0.197119350857</td><td>0.343988119654</td><td>−0.146868768797</td><td>—</td></tr>
+            <tr><td><span class="task-name">Face landmarks</span><span class="metric-name">NME ↓</span></td><td>0.377741038527</td><td>0.334140108930</td><td>−0.043600929597</td><td>—</td></tr>
+            <tr><td><span class="task-name">Human pose 2D</span><span class="metric-name">PCK torso @ 0.2 ↑</span></td><td>0.380392156863</td><td>0.157352941176</td><td>+0.223039215686</td><td><span class="condition-pill real">Pass</span></td></tr>
+            <tr><td><span class="task-name">Inpainting</span><span class="metric-name">LPIPS ↓</span></td><td>0.140712827882</td><td>0.153042101685</td><td>+0.012329273802</td><td>—</td></tr>
+            <tr><td><span class="task-name">Instance segmentation</span><span class="metric-name">PQ ↑</span></td><td>0.093796960090</td><td>0.054150348884</td><td>+0.039646611206</td><td><span class="condition-pill real">Pass</span></td></tr>
+            <tr><td><span class="task-name">Relative depth</span><span class="metric-name">δ1 ↑</span></td><td>0.439263311247</td><td>0.464889949988</td><td>−0.025626638741</td><td>—</td></tr>
+            <tr><td><span class="task-name">Saliency detection</span><span class="metric-name">max Fβ ↑</span></td><td>0.664340545081</td><td>0.413527666217</td><td>+0.250812878864</td><td><span class="condition-pill real">Pass</span></td></tr>
+            <tr><td><span class="task-name">Semantic segmentation</span><span class="metric-name">mIoU ↑</span></td><td>0.469881321372</td><td>0.263352812734</td><td>+0.206528508638</td><td><span class="condition-pill real">Pass</span></td></tr>
+            <tr><td><span class="task-name">Super-resolution</span><span class="metric-name">LPIPS ↓</span></td><td>0.404660832356</td><td>0.434016671251</td><td>+0.029355838895</td><td>—</td></tr>
+            <tr><td><span class="task-name">Surface normals</span><span class="metric-name">mean degrees ↓</span></td><td>127.419104709832</td><td>113.584105771593</td><td>−13.834998938239</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-footnote">The shared comparison uses mean per-query OIS F for edge detection. The separately computed pooled edge OIS supplement is 0.108697846425. Open the <a href="../10-12-validations/#vict">twelve-model comparison and q0 gallery ↗</a>.</p>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-heading">
+        <div><p class="section-number">02 / TEST-TIME TRAINING</p><h2>What happens per query</h2></div>
+        <p>VICT adapts the encoder independently for each query, predicts once, then resets. Learned state never carries between queries.</p>
+      </div>
+      <div class="method-grid">
+        <article><span class="condition-tag real">Prompt</span><h3>One demonstration</h3><p>One labeled example from the query’s task and source forms the test-time training pair.</p></article>
+        <article><span class="condition-tag grey">Optimize</span><h3>60 updates</h3><p>AdamW at 1e-6 updates the Painter encoder; the decoder remains frozen.</p></article>
+        <article><span class="condition-tag oracle">Predict</span><h3>One output</h3><p>The adapted model predicts the hidden-target query once, with bicubic output interpolation.</p></article>
+        <article><span class="condition-tag scrambled">Reset</span><h3>Fresh each query</h3><p>Model weights and optimizer state reset before the next of the 221 episodes.</p></article>
+      </div>
+      <aside class="score-boundary"><strong>No random adaptation crops</strong><p>Every adaptation step sees the same complete demonstration image pair, resized to 448 × 448. There is no random crop, flip, or other augmentation. “Single crop” in the official loader denotes this one full-image view.</p></aside>
+      <aside class="caution"><strong>Backend qualification</strong><p>Inference used a PyTorch/XLA v5litepod-4 numerical port with bfloat16, activation checkpointing, and sync-free AdamW. The official data setup and pinned weights are preserved; official CUDA numerical parity is not established.</p></aside>
+    </section>
+
+    <section class="validation-section" id="reproducibility">
+      <div class="section-heading">
+        <div><p class="section-number">03 / REPRODUCIBILITY</p><h2>Frozen evaluation contract</h2></div>
+        <p>The published summary is cryptographically bound to the full prediction result, score manifest, inference receipt, validation pack, and released metric identity.</p>
+      </div>
+      <div class="provenance">
+        <div><p class="provenance-label">Validation pack</p><p>bench_v2_val · 221 queries</p><code>8e139f91b083e0ae73b2ed81d8e235460ac2f37d</code></div>
+        <div><p class="provenance-label">Plan identity</p><p>P=1 · 60-step encoder · no augmentation</p><code>3bd6ccf3a6b3697bd71afffc1a68cf5176c96b0a833f2fd1b28e880ae87480d2</code></div>
+        <div><p class="provenance-label">Metric identity</p><p>corrected-v3 · eval_v2</p><code>25b74e3a1bf9e4d74630e097ea73b68c3e217ed98067f601e6c067e8c546c5fd</code></div>
+      </div>
+      <p><a class="model-script-link" href="https://github.com/Jiahao000/VICT">Official VICT source ↗</a> <a class="model-script-link" href="https://arxiv.org/abs/2503.21777">VICT paper ↗</a> <a class="model-script-link" href="../data/vict-bench-v2-validation-scores.json" download>Download exact score summary</a></p>
+      <p class="table-footnote">This is a complete pack-native Bench v2 validation evaluation, not a reproduction of the paper’s corruption benchmarks. It uses Painter revision <code>97200aa…</code>, VICT revision <code>56c3952…</code>, and the frozen corrected protocol <code>bench_v2_PP2_CSA_seed1_AP_FIRST_v1</code>.</p>
+    </section>
+  </main>
+  <footer><p>VICT · complete corrected-v3 validation</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

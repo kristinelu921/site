@@ -1,0 +1,185 @@
+{
+  "updated_utc": "2026-10-31T07:08:24.354677+00:00",
+  "scope": "Synthetic and CPU diagnostics. No benchmark scores changed. No TPU qualification established.",
+  "lvm": {
+    "status": "CODEC_DIAGNOSTIC_COMPLETE_NATIVE_P7_PREPARED_NOT_GENERATED",
+    "sources": {
+      "official_repository": "https://github.com/ytongbai/LVM",
+      "official_commit": "b6de939ef0eb1ee6593445a7f5268145f338749b",
+      "vq_revision": "e4b5f5f83d9588ed52b6d1b65b91262f9f2d804b",
+      "vq_sha256": "fed960b9b88968dcaab28fd0cb28b786693b83b21fa93b1a1ad1177b3f7e9fd1",
+      "native_p1_plan_identity": "e1e597965f27131f2fb10fb5c904d55817e102c9ed47ef6dfe77dadf9d666b0a"
+    },
+    "codec": {
+      "fixed_fixtures": 15,
+      "all_finite": true,
+      "exact_codebook_lookup": true,
+      "smooth_normals_mean_deg": 2.7300981733002754,
+      "constant_normals_mean_deg_range": [
+        2.1921465333633816,
+        12.46849343455047
+      ],
+      "two_pixel_stripes_mean_deg": 91.78127044658326,
+      "point_radius1_pck": 0.9375,
+      "point_radii2_3_5_8_pck": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "point_norm_pixels": 256,
+      "point_tolerance_pixels": 12.8,
+      "point_ground_truth_count_each": 16,
+      "elapsed_seconds": 27.395162105560303,
+      "conclusion": "The authentic tokenizer has measurable geometric distortion and loses very fine normal changes. Smooth normals and isolated points survive much better; these fixtures do not establish the cause of broad generated normal/landmark failures. No replacement codec or sampling change is justified by this test alone."
+    },
+    "native_p7": {
+      "plan_identity": "8d7dee339d4e8cd9834f588da0b8025bff23bc8a21c00ed00e4fa1272da282aa",
+      "original_p1_episodes_reproduced_exactly": 221,
+      "p7_episodes": 221,
+      "all_same_source_and_query_excluded": true,
+      "all_numpy_replays_exact": true,
+      "native_contexts_checked": 221,
+      "tokenized_contexts": 1,
+      "context_frames": 15,
+      "context_tokens": 3840,
+      "new_tokens": 256,
+      "total_window": 4096,
+      "default_include_test": false,
+      "source_gate_negative_checks": 13,
+      "inference_launched": false,
+      "legacy_publication_label_unchanged": true
+    },
+    "scope": "Independent synthetic codec tests and native P7 episode preparation. No generated benchmark accuracy change, no 7B forward or cache check, no TPU execution, and no test-split use."
+  },
+  "vict": {
+    "confirmed_defect": "Original restoration processing clips before bicubic resize and casts to uint8 without a final clip; interpolation can exceed [0,255], causing wrapped bytes. Released restoration uses float64 denormalization, resize, then clip and quantize.",
+    "repair": "Prepared restoration-only output module; archived source unchanged and original CPU transfer/synchronization order preserved. Reject nonfinite raw output in all tasks.",
+    "synthetic_checks": {
+      "cases": 8,
+      "released_reference_exact": true,
+      "other_task_exact_checks": 64,
+      "nonfinite_rejections": 39,
+      "max_observed_byte_difference": 255
+    },
+    "trained_probe": {
+      "steps": 1,
+      "parameter_count": 370721155,
+      "checkpoint_load_seconds": 7.510140385944396,
+      "one_update_seconds": 26.781480172998272,
+      "before_update_changed_channels": 5,
+      "after_update_changed_channels": 10,
+      "channel_count": 196608,
+      "max_byte_difference": 1,
+      "raw_finite": true,
+      "public_forward_exact": true,
+      "target_use": false
+    },
+    "cpu_trajectory": {
+      "status": "PASS_THREE_SEQUENTIAL_DETERMINISTIC_CPU_TRAJECTORIES",
+      "steps_completed": 360,
+      "planned_updates": 360,
+      "scope": "Three sequential cases, 60 updates per case in each implementation; CPU FP32 with deterministic algorithms."
+    },
+    "limitations": [
+      "Synthetic and one-update changes are not benchmark gains.",
+      "CPU comparison does not qualify TPU BF16, sync-free AdamW, XLA GradScaler, recomputation or device boundaries.",
+      "Native-depth adapter, appendix settings and complete paired benchmark remain open."
+    ],
+    "failed_exact_check_measurements": {
+      "status": "EXACT_GATE_FAILED_FINITE_SMALL_OUTPUT_DIFFERENCES",
+      "source_result_sha256": "33e6d69a28922818c21691358d8259a359a0684688eb1d3f2892bbd377767fbf",
+      "observed_utc": "2026-10-31T05:17:37.150087+00:00",
+      "completed_updates": 240,
+      "required_updates": 360,
+      "first_different_loss_step_one_based": 2,
+      "max_absolute_loss_difference": 1.862645149230957e-08,
+      "rng_exact": true,
+      "limits": "These are descriptive measurements after a failed exact gate, not a relaxed acceptance decision or benchmark gain.",
+      "raw": {
+        "max_absolute_difference": 1.049041748046875e-05,
+        "mean_absolute_difference": 4.293367553388592e-07,
+        "changed_elements": 554619,
+        "element_count": 602112,
+        "both_finite": true
+      },
+      "pixels": {
+        "max_absolute_difference": 1.0,
+        "mean_absolute_difference": 3.5603841145833336e-05,
+        "changed_elements": 7,
+        "element_count": 196608,
+        "both_finite": true
+      }
+    },
+    "repeatability_finding": "The original exact comparison stopped after 240 of 360 planned updates. After the first 60-update pair, only 7 of 196,608 output channel values differ, each by one level; the random state matches. Repeating the released code also gives slightly different gradients in all 48 relative-position tables. An isolated check traces this to gradient accumulation and makes all 40 repeats exact with deterministic CPU algorithms. The original exact gate remains failed; these measurements do not establish a large quality defect. With deterministic algorithms, the full-model first update also matches exactly across two released repeats and the port, including all gradients and updated parameters. The full deterministic CPU comparison has now passed all three sequential 60-update cases. Every loss, final model and optimizer state, raw output, pixel image and continuing random state matches exactly across the released and prepared paths.",
+    "original_cpu_trajectory": {
+      "status": "FAILED_OR_INCOMPLETE",
+      "steps_completed": 240,
+      "planned_updates": 360,
+      "scope": "CPU FP32 only; three cases, 60 updates each, two implementations."
+    },
+    "deterministic_comparison": {
+      "status": "PASS_THREE_SEQUENTIAL_DETERMINISTIC_CPU_TRAJECTORIES",
+      "plan_sha256": "61ccbc93461a35a6cb79212449bfb70fd9ea3081ff27725caa3210492e735de7",
+      "completed_updates": 360,
+      "cases": [
+        {
+          "case": 0,
+          "steps_per_arm": 60,
+          "exact_checks": {
+            "losses": true,
+            "model_state_hashes": true,
+            "optimizer_state_hashes": true,
+            "raw_sha256": true,
+            "pixels_sha256": true,
+            "rng_sha256": true
+          },
+          "model_state_tensors": 352,
+          "optimizer_state_parameters": 344,
+          "result_sha256": {
+            "released": "2106f19b726fb9f7c661543b3ccf281f3b8c8e145a5862c25b6d764bdcea8698",
+            "port": "e25b0e5f073157e62897ae01c41be99a72defd29a4eb63051b0a6e3401e8c01a"
+          }
+        },
+        {
+          "case": 1,
+          "steps_per_arm": 60,
+          "exact_checks": {
+            "losses": true,
+            "model_state_hashes": true,
+            "optimizer_state_hashes": true,
+            "raw_sha256": true,
+            "pixels_sha256": true,
+            "rng_sha256": true
+          },
+          "model_state_tensors": 352,
+          "optimizer_state_parameters": 344,
+          "result_sha256": {
+            "released": "095df5899b4a8e29e1fd9b04bacb2e735f20bdb096fa231568f68c75faeebe85",
+            "port": "774215ef8c8ecf6d4927be9d48f79e76c84da4e1b2b928c5773fa5eaad23b943"
+          }
+        },
+        {
+          "case": 2,
+          "steps_per_arm": 60,
+          "exact_checks": {
+            "losses": true,
+            "model_state_hashes": true,
+            "optimizer_state_hashes": true,
+            "raw_sha256": true,
+            "pixels_sha256": true,
+            "rng_sha256": true
+          },
+          "model_state_tensors": 352,
+          "optimizer_state_parameters": 344,
+          "result_sha256": {
+            "released": "657044e29e87f08d75177937dd0456e57190864d60f9781be0ccae641e9e5ed3",
+            "port": "3af6f2fdef8d8a7a4b36810e9998330adbbde92d82988aa5b1abcf2cfeb22d95"
+          }
+        }
+      ],
+      "limits": "CPU mathematical/reset control only. Does not qualify TPU BF16, XLA GradScaler/sync-free AdamW, activation checkpointing, lazy device execution, or benchmark quality. No benchmark inference is automatically launched on a pass."
+    },
+    "deterministic_comparison_sha256": "e0a4d9ae98eba8fd7cd212c0bb6ee2ed3aae4171b5e622c4bd1c0ad05adae920"
+  }
+}

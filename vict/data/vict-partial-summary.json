@@ -1,0 +1,36 @@
+{
+  "schema": "vict_painter_partial_comparison_v1",
+  "scored_utc": "2026-10-02T16:40:58Z",
+  "status": "preliminary",
+  "pack_id": "48e062452574ff0ded61c72664445d687ecd1c02",
+  "condition": "real",
+  "vict_prompt_count": 1,
+  "ensemble": false,
+  "test_time_training": {
+    "steps_per_query": 60,
+    "optimizer": "AdamW",
+    "learning_rate": 0.000001,
+    "updated": "full encoder",
+    "frozen": "decoder",
+    "reset_between_queries": true
+  },
+  "scorer_sha256": "a82740a2aefc59062210dc0fadf3199c7fc1a624629f6c0154020f05dd8b4787",
+  "cells": {
+    "relative_depth": {"primary_metric":"delta1_aligned_ssc","primary_lower_is_better":false,"vict_mean":0.2392348580423676,"painter_matched_mean":0.2342312700321228,"copy_input_mean":0.24317922346592968,"n":64,"expected_n":64,"complete":true},
+    "semantic_segmentation": {"primary_metric":"miou","primary_lower_is_better":false,"vict_mean":0.030181472556504017,"painter_matched_mean":0.02695791342182016,"copy_input_mean":0.028541747644772904,"n":64,"expected_n":64,"complete":true},
+    "instance_segmentation": {"primary_metric":"pq_novoid","primary_lower_is_better":false,"vict_mean":0.04410686355318175,"painter_matched_mean":0.0754913043788984,"copy_input_mean":0.03179411865633346,"n":64,"expected_n":64,"complete":true},
+    "colorization": {"primary_metric":"lpips_alex","primary_lower_is_better":true,"vict_mean":0.28443488345614504,"painter_matched_mean":0.35062674060463905,"copy_input_mean":0.25513439252972603,"n":28,"expected_n":64,"complete":false},
+    "object_keypoints": {"primary_metric":"pck_bbox_reject","primary_lower_is_better":false,"vict_mean":0.0,"painter_matched_mean":0.013333333333333332,"copy_input_mean":0.04666666666666666,"n":25,"expected_n":64,"complete":false}
+  },
+  "painter_comparison": {
+    "protocol": "P=2 mean of two native P=1 Painter forwards",
+    "query_matching": "Painter re-scored on the exact VICT query indices",
+    "controlled_baseline": false
+  },
+  "caveats": [
+    "Only three tasks are complete; two tasks are partial and ten are not started.",
+    "The adapter currently uses nearest-neighbor output resizing for every task rather than VICT's task-specific interpolation policy.",
+    "The single demonstration is demo 0 from a frozen P=2 episode, not a native P=1 draw.",
+    "The existing Painter evaluation uses a two-forward mean and is not a controlled baseline for this one-prompt VICT run."
+  ]
+}

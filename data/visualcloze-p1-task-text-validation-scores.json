@@ -1,0 +1,2239 @@
+{
+  "baseline_plan_identity": "6055f2bd6eb7ef5867d80d5edf212a77a091383fbce22940435b345fc1387256",
+  "completed_utc": "2026-10-27T02:27:16Z",
+  "demonstrations": 1,
+  "episodes": 221,
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+  "model_revision": "59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+  "note": "Same 13 task-specific prompts as the P2 rerun; empty content captions. Demo pairs, queries, seeds, weights, steps and guidance match the original run at this demo count. TPU hardware and model sharding changed; numerical parity with the CUDA reference is not established.",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "plan_identity": "374305e1628dcb2ca34f37d62dee5445c3747470d12d325ea5e9077afba23b85",
+  "previous_run": {
+    "copy_scores": {
+      "colorization": 0.26197738792089853,
+      "deblurring": 0.20889017424162695,
+      "denoising": 0.7446603214039522,
+      "edge_detection": 0.34398811965422754,
+      "face_landmarks": 0.3341401089295341,
+      "human_pose_2d": 0.15735294117647058,
+      "inpainting": 0.1530421016847386,
+      "instance_segmentation": 0.054150348883660084,
+      "relative_depth": 0.46488994998791755,
+      "saliency_detection": 0.4135276662170504,
+      "semantic_segmentation": 0.26335281273431277,
+      "super_resolution": 0.4340166712508482,
+      "surface_normals": 113.58410577159289
+    },
+    "key": "visualcloze-p1",
+    "label": "VisualCloze",
+    "model": "visualcloze",
+    "note": "TPU-native; CUDA parity not claimed",
+    "p": 1,
+    "provenance": {
+      "episodes": 221,
+      "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+      "score_manifest_sha256": "0e6e06aba227cf0af2eeeb1a50b12da129bd90fcfef980a4fa91f84c65ab4530",
+      "scored_pairs": 442,
+      "scored_results_sha256": "35121190c7f00f0ca646d17db808cce9a6124af2301f471307d29bc280bc8cb1"
+    },
+    "scores": {
+      "colorization": 0.43974435329437256,
+      "deblurring": 0.1777898239738801,
+      "denoising": 0.5333762856967309,
+      "edge_detection": 0.601112169891409,
+      "face_landmarks": 0.3088813345397093,
+      "human_pose_2d": 0.18480392156862746,
+      "inpainting": 0.09152299943653976,
+      "instance_segmentation": 0.08612155866838578,
+      "relative_depth": 0.859791801911011,
+      "saliency_detection": 0.5442325805384406,
+      "semantic_segmentation": 0.2627800609609592,
+      "super_resolution": 0.19916554321261012,
+      "surface_normals": 52.49851218705808
+    },
+    "status": "complete corrected validation"
+  },
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "readout": "VC@f30",
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "run_id": "visualcloze_bench_v2_p1_p4_p8_task_text_v1/p1",
+  "schema": "visualcloze_task_text_validation_receipt_v1",
+  "scored_pairs": 442,
+  "scored_results_sha256": "0ca8e8541a88f2e89bd8b9878280fd511a4436fa6a066eaee4ba6b1663b5379f",
+  "status": "complete authoritative corrected-v3 validation",
+  "supervision_version": 6,
+  "tasks": [
+    {
+      "content_prompt": "",
+      "copy_score": 0.26197738792089853,
+      "direction": "lower",
+      "generic_text_score": 0.43974435329437256,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0851"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0852",
+          "score": 0.40462368726730347
+        },
+        {
+          "demo_records": [
+            "div2k:val:0826"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0815",
+          "score": 0.33642691373825073
+        },
+        {
+          "demo_records": [
+            "div2k:val:0815"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0891",
+          "score": 0.22999422252178192
+        },
+        {
+          "demo_records": [
+            "div2k:val:0866"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0806",
+          "score": 0.373561829328537
+        },
+        {
+          "demo_records": [
+            "div2k:val:0869"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0801",
+          "score": 0.41643211245536804
+        },
+        {
+          "demo_records": [
+            "div2k:val:0868"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0866",
+          "score": 0.21446344256401062
+        },
+        {
+          "demo_records": [
+            "div2k:val:0812"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0869",
+          "score": 0.7769244313240051
+        },
+        {
+          "demo_records": [
+            "div2k:val:0865"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0868",
+          "score": 0.5869236588478088
+        },
+        {
+          "demo_records": [
+            "div2k:val:0812"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0854",
+          "score": 0.1631358563899994
+        },
+        {
+          "demo_records": [
+            "div2k:val:0898"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0826",
+          "score": 0.6593043804168701
+        },
+        {
+          "demo_records": [
+            "div2k:val:0826"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0898",
+          "score": 0.6392051577568054
+        },
+        {
+          "demo_records": [
+            "div2k:val:0817"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0846",
+          "score": 0.6921790838241577
+        },
+        {
+          "demo_records": [
+            "div2k:val:0812"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0851",
+          "score": 0.4623435139656067
+        },
+        {
+          "demo_records": [
+            "div2k:val:0851"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0817",
+          "score": 0.3198796212673187
+        },
+        {
+          "demo_records": [
+            "div2k:val:0815"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0856",
+          "score": 0.41471025347709656
+        },
+        {
+          "demo_records": [
+            "div2k:val:0869"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0865",
+          "score": 0.24616339802742004
+        },
+        {
+          "demo_records": [
+            "div2k:val:0851"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0812",
+          "score": 0.5491980314254761
+        }
+      ],
+      "score": 0.4403217408586951,
+      "task": "colorization",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a grayscale photograph to [IMAGE2] a naturally colored photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.20889017424162695,
+      "direction": "lower",
+      "generic_text_score": 0.1777898239738801,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "gopro:train:GOPR0372_07_00:000068"
+          ],
+          "q": 0,
+          "query_record": "gopro:train:GOPR0881_11_00:000077",
+          "score": 0.19837155938148499
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0372_07_00:000068"
+          ],
+          "q": 1,
+          "query_record": "gopro:train:GOPR0857_11_00:000008",
+          "score": 0.3139270544052124
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_01:000970"
+          ],
+          "q": 2,
+          "query_record": "gopro:train:GOPR0871_11_01:000235",
+          "score": 0.06373263895511627
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0477_11_00:000021"
+          ],
+          "q": 3,
+          "query_record": "gopro:train:GOPR0384_11_01:000970",
+          "score": 0.16027867794036865
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_02:001354"
+          ],
+          "q": 4,
+          "query_record": "gopro:train:GOPR0884_11_00:000230",
+          "score": 0.21096280217170715
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0477_11_00:000021"
+          ],
+          "q": 5,
+          "query_record": "gopro:train:GOPR0385_11_00:000171",
+          "score": 0.11949096620082855
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0884_11_00:000230"
+          ],
+          "q": 6,
+          "query_record": "gopro:train:GOPR0868_11_02:000721",
+          "score": 0.3772541582584381
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0868_11_01:000285"
+          ],
+          "q": 7,
+          "query_record": "gopro:train:GOPR0386_11_00:000297",
+          "score": 0.1008002758026123
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0477_11_00:000021"
+          ],
+          "q": 8,
+          "query_record": "gopro:train:GOPR0374_11_02:000633",
+          "score": 0.08925884962081909
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_01:000970"
+          ],
+          "q": 9,
+          "query_record": "gopro:train:GOPR0372_07_00:000068",
+          "score": 0.12029200792312622
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0372_07_00:000068"
+          ],
+          "q": 10,
+          "query_record": "gopro:train:GOPR0378_13_00:000088",
+          "score": 0.17140357196331024
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_02:001354"
+          ],
+          "q": 11,
+          "query_record": "gopro:train:GOPR0379_11_00:000224",
+          "score": 0.11410316824913025
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_03:002116"
+          ],
+          "q": 12,
+          "query_record": "gopro:train:GOPR0380_11_00:000177",
+          "score": 0.3428614139556885
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0868_11_01:000285"
+          ],
+          "q": 13,
+          "query_record": "gopro:train:GOPR0477_11_00:000021",
+          "score": 0.18574991822242737
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0374_11_02:000633"
+          ],
+          "q": 14,
+          "query_record": "gopro:train:GOPR0384_11_03:002116",
+          "score": 0.10059621185064316
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0374_11_02:000633"
+          ],
+          "q": 15,
+          "query_record": "gopro:train:GOPR0384_11_02:001354",
+          "score": 0.11421584337949753
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0868_11_02:000721"
+          ],
+          "q": 16,
+          "query_record": "gopro:train:GOPR0868_11_01:000285",
+          "score": 0.20630185306072235
+        }
+      ],
+      "score": 0.1758588806671255,
+      "task": "deblurring",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a blurred photograph to [IMAGE2] a sharp photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.7446603214039522,
+      "direction": "lower",
+      "generic_text_score": 0.5333762856967309,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "sidd:validation:09_28"
+          ],
+          "q": 0,
+          "query_record": "sidd:validation:02_05",
+          "score": 0.24329057335853577
+        },
+        {
+          "demo_records": [
+            "sidd:validation:19_15"
+          ],
+          "q": 1,
+          "query_record": "sidd:validation:06_21",
+          "score": 0.7524568438529968
+        },
+        {
+          "demo_records": [
+            "sidd:validation:02_05"
+          ],
+          "q": 2,
+          "query_record": "sidd:validation:20_20",
+          "score": 0.8587549924850464
+        },
+        {
+          "demo_records": [
+            "sidd:validation:37_15"
+          ],
+          "q": 3,
+          "query_record": "sidd:validation:32_10",
+          "score": 0.7784146070480347
+        },
+        {
+          "demo_records": [
+            "sidd:validation:32_10"
+          ],
+          "q": 4,
+          "query_record": "sidd:validation:21_22",
+          "score": 0.21844005584716797
+        },
+        {
+          "demo_records": [
+            "sidd:validation:09_28"
+          ],
+          "q": 5,
+          "query_record": "sidd:validation:26_17",
+          "score": 0.1194247379899025
+        },
+        {
+          "demo_records": [
+            "sidd:validation:31_11"
+          ],
+          "q": 6,
+          "query_record": "sidd:validation:27_01",
+          "score": 0.9105075001716614
+        },
+        {
+          "demo_records": [
+            "sidd:validation:00_12"
+          ],
+          "q": 7,
+          "query_record": "sidd:validation:01_02",
+          "score": 0.5929868817329407
+        },
+        {
+          "demo_records": [
+            "sidd:validation:19_15"
+          ],
+          "q": 8,
+          "query_record": "sidd:validation:00_12",
+          "score": 1.031123161315918
+        },
+        {
+          "demo_records": [
+            "sidd:validation:20_20"
+          ],
+          "q": 9,
+          "query_record": "sidd:validation:25_28",
+          "score": 0.14173036813735962
+        },
+        {
+          "demo_records": [
+            "sidd:validation:00_12"
+          ],
+          "q": 10,
+          "query_record": "sidd:validation:28_26",
+          "score": 0.23527930676937103
+        },
+        {
+          "demo_records": [
+            "sidd:validation:01_02"
+          ],
+          "q": 11,
+          "query_record": "sidd:validation:37_15",
+          "score": 0.446797639131546
+        },
+        {
+          "demo_records": [
+            "sidd:validation:00_12"
+          ],
+          "q": 12,
+          "query_record": "sidd:validation:03_14",
+          "score": 0.7578616142272949
+        },
+        {
+          "demo_records": [
+            "sidd:validation:01_02"
+          ],
+          "q": 13,
+          "query_record": "sidd:validation:31_11",
+          "score": 0.4077604413032532
+        },
+        {
+          "demo_records": [
+            "sidd:validation:31_11"
+          ],
+          "q": 14,
+          "query_record": "sidd:validation:09_28",
+          "score": 0.3668787479400635
+        },
+        {
+          "demo_records": [
+            "sidd:validation:27_01"
+          ],
+          "q": 15,
+          "query_record": "sidd:validation:16_25",
+          "score": 0.9796686172485352
+        },
+        {
+          "demo_records": [
+            "sidd:validation:03_14"
+          ],
+          "q": 16,
+          "query_record": "sidd:validation:19_15",
+          "score": 0.7165278792381287
+        }
+      ],
+      "score": 0.5622296451645739,
+      "task": "denoising",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a noisy photograph to [IMAGE2] a clean photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.34398811965422754,
+      "direction": "higher",
+      "generic_text_score": 0.601112169891409,
+      "metric": "ois_f",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "bsds500:346016"
+          ],
+          "q": 0,
+          "query_record": "bsds500:78098",
+          "score": 0.635771917285585
+        },
+        {
+          "demo_records": [
+            "bsds500:105027"
+          ],
+          "q": 1,
+          "query_record": "bsds500:14085",
+          "score": 0.4194035301644047
+        },
+        {
+          "demo_records": [
+            "bsds500:145059"
+          ],
+          "q": 2,
+          "query_record": "bsds500:71076",
+          "score": 0.81216640944842
+        },
+        {
+          "demo_records": [
+            "bsds500:43033"
+          ],
+          "q": 3,
+          "query_record": "bsds500:250087",
+          "score": 0.7768260039278697
+        },
+        {
+          "demo_records": [
+            "bsds500:145059"
+          ],
+          "q": 4,
+          "query_record": "bsds500:258089",
+          "score": 0.7518941332550575
+        },
+        {
+          "demo_records": [
+            "bsds500:71076"
+          ],
+          "q": 5,
+          "query_record": "bsds500:196062",
+          "score": 0.8550015801923202
+        },
+        {
+          "demo_records": [
+            "bsds500:384022"
+          ],
+          "q": 6,
+          "query_record": "bsds500:302022",
+          "score": 0.7833853691339641
+        },
+        {
+          "demo_records": [
+            "bsds500:14085"
+          ],
+          "q": 7,
+          "query_record": "bsds500:217090",
+          "score": 0.8225151427384114
+        },
+        {
+          "demo_records": [
+            "bsds500:14085"
+          ],
+          "q": 8,
+          "query_record": "bsds500:105027",
+          "score": 0.8027441602951018
+        },
+        {
+          "demo_records": [
+            "bsds500:196062"
+          ],
+          "q": 9,
+          "query_record": "bsds500:346016",
+          "score": 0.7056940756091091
+        },
+        {
+          "demo_records": [
+            "bsds500:250087"
+          ],
+          "q": 10,
+          "query_record": "bsds500:103029",
+          "score": 0.7523508568714943
+        },
+        {
+          "demo_records": [
+            "bsds500:226043"
+          ],
+          "q": 11,
+          "query_record": "bsds500:384022",
+          "score": 0.8397619530861582
+        },
+        {
+          "demo_records": [
+            "bsds500:43033"
+          ],
+          "q": 12,
+          "query_record": "bsds500:226043",
+          "score": 0.7835209838628036
+        },
+        {
+          "demo_records": [
+            "bsds500:226043"
+          ],
+          "q": 13,
+          "query_record": "bsds500:51084",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "bsds500:384022"
+          ],
+          "q": 14,
+          "query_record": "bsds500:207038",
+          "score": 0.4566098942881276
+        },
+        {
+          "demo_records": [
+            "bsds500:71076"
+          ],
+          "q": 15,
+          "query_record": "bsds500:43033",
+          "score": 0.5382250003768897
+        },
+        {
+          "demo_records": [
+            "bsds500:346016"
+          ],
+          "q": 16,
+          "query_record": "bsds500:145059",
+          "score": 0.7431153119163757
+        }
+      ],
+      "score": 0.6752344895560054,
+      "task": "edge_detection",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an edge map showing object and region boundaries."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.3341401089295341,
+      "direction": "lower",
+      "generic_text_score": 0.3088813345397093,
+      "metric": "nme",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "300w:outdoor_182"
+          ],
+          "q": 0,
+          "query_record": "300w:indoor_253",
+          "score": 0.24091794207034198
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_291"
+          ],
+          "q": 1,
+          "query_record": "300w:outdoor_242",
+          "score": 0.3767482642787734
+        },
+        {
+          "demo_records": [
+            "300w:indoor_116"
+          ],
+          "q": 2,
+          "query_record": "300w:indoor_115",
+          "score": 0.32452743677603296
+        },
+        {
+          "demo_records": [
+            "300w:indoor_237"
+          ],
+          "q": 3,
+          "query_record": "300w:indoor_050",
+          "score": 0.2904218327181804
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_187"
+          ],
+          "q": 4,
+          "query_record": "300w:outdoor_252",
+          "score": 0.4001880263486223
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_242"
+          ],
+          "q": 5,
+          "query_record": "300w:outdoor_082",
+          "score": 0.18571812645323874
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_252"
+          ],
+          "q": 6,
+          "query_record": "300w:outdoor_291",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:indoor_237"
+          ],
+          "q": 7,
+          "query_record": "300w:outdoor_182",
+          "score": 0.25012248111069996
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_182"
+          ],
+          "q": 8,
+          "query_record": "300w:outdoor_187",
+          "score": 0.3591307478261558
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_171"
+          ],
+          "q": 9,
+          "query_record": "300w:indoor_237",
+          "score": 0.366140429239713
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_109"
+          ],
+          "q": 10,
+          "query_record": "300w:indoor_158",
+          "score": 0.3477166592839435
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_109"
+          ],
+          "q": 11,
+          "query_record": "300w:indoor_116",
+          "score": 0.24449575963151235
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_007"
+          ],
+          "q": 12,
+          "query_record": "300w:outdoor_171",
+          "score": 0.3297502514419598
+        },
+        {
+          "demo_records": [
+            "300w:indoor_116"
+          ],
+          "q": 13,
+          "query_record": "300w:outdoor_007",
+          "score": 0.3250614685606778
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_187"
+          ],
+          "q": 14,
+          "query_record": "300w:outdoor_109",
+          "score": 0.33329275059237884
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_252"
+          ],
+          "q": 15,
+          "query_record": "300w:indoor_084",
+          "score": 0.3640388618275214
+        },
+        {
+          "demo_records": [
+            "300w:indoor_084"
+          ],
+          "q": 16,
+          "query_record": "300w:outdoor_115",
+          "score": 0.3292482268112356
+        }
+      ],
+      "score": 0.32750113323358754,
+      "task": "face_landmarks",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a face photograph to [IMAGE2] a facial-landmark point map using the examples' landmark and color convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.15735294117647058,
+      "direction": "higher",
+      "generic_text_score": 0.18480392156862746,
+      "metric": "pck_torso_0.2",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "mpii:026665966"
+          ],
+          "q": 0,
+          "query_record": "mpii:084118871",
+          "score": 0.20833333333333334
+        },
+        {
+          "demo_records": [
+            "mpii:054163421"
+          ],
+          "q": 1,
+          "query_record": "mpii:070913699",
+          "score": 0.375
+        },
+        {
+          "demo_records": [
+            "mpii:048018352"
+          ],
+          "q": 2,
+          "query_record": "mpii:071883975",
+          "score": 0.25
+        },
+        {
+          "demo_records": [
+            "mpii:037047210"
+          ],
+          "q": 3,
+          "query_record": "mpii:088163535",
+          "score": 0.4166666666666667
+        },
+        {
+          "demo_records": [
+            "mpii:037047210"
+          ],
+          "q": 4,
+          "query_record": "mpii:097011689",
+          "score": 0.3333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:063405506"
+          ],
+          "q": 5,
+          "query_record": "mpii:070403145",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:023371208"
+          ],
+          "q": 6,
+          "query_record": "mpii:026665966",
+          "score": 0.3333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:097011689"
+          ],
+          "q": 7,
+          "query_record": "mpii:023371208",
+          "score": 0.1
+        },
+        {
+          "demo_records": [
+            "mpii:084118871"
+          ],
+          "q": 8,
+          "query_record": "mpii:037047210",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "mpii:070403145"
+          ],
+          "q": 9,
+          "query_record": "mpii:048018352",
+          "score": 0.08333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:070913699"
+          ],
+          "q": 10,
+          "query_record": "mpii:044823885",
+          "score": 0.3333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:088163535"
+          ],
+          "q": 11,
+          "query_record": "mpii:063405506",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "mpii:097011689"
+          ],
+          "q": 12,
+          "query_record": "mpii:034233408",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:063405506"
+          ],
+          "q": 13,
+          "query_record": "mpii:064869504",
+          "score": 0.3333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:034233408"
+          ],
+          "q": 14,
+          "query_record": "mpii:097607833",
+          "score": 0.25
+        },
+        {
+          "demo_records": [
+            "mpii:071883975"
+          ],
+          "q": 15,
+          "query_record": "mpii:054163421",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "mpii:084118871"
+          ],
+          "q": 16,
+          "query_record": "mpii:041119152",
+          "score": 0.16666666666666666
+        }
+      ],
+      "score": 0.2068627450980392,
+      "task": "human_pose_2d",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph of a person to [IMAGE2] a body-joint marker map using the examples' joint and color convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.1530421016847386,
+      "direction": "lower",
+      "generic_text_score": 0.09152299943653976,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0802"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0846",
+          "score": 0.19836807250976562
+        },
+        {
+          "demo_records": [
+            "div2k:val:0888"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0841",
+          "score": 0.12962606549263
+        },
+        {
+          "demo_records": [
+            "div2k:val:0841"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0843",
+          "score": 0.20253773033618927
+        },
+        {
+          "demo_records": [
+            "div2k:val:0888"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0813",
+          "score": 0.03436695411801338
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0871",
+          "score": 0.05700146034359932
+        },
+        {
+          "demo_records": [
+            "div2k:val:0871"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0812",
+          "score": 0.054096516221761703
+        },
+        {
+          "demo_records": [
+            "div2k:val:0847"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0860",
+          "score": 0.12536048889160156
+        },
+        {
+          "demo_records": [
+            "div2k:val:0864"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0888",
+          "score": 0.17608843743801117
+        },
+        {
+          "demo_records": [
+            "div2k:val:0846"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0802",
+          "score": 0.1434401273727417
+        },
+        {
+          "demo_records": [
+            "div2k:val:0860"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0847",
+          "score": 0.055387988686561584
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0863",
+          "score": 0.0459289476275444
+        },
+        {
+          "demo_records": [
+            "div2k:val:0863"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0857",
+          "score": 0.017588486894965172
+        },
+        {
+          "demo_records": [
+            "div2k:val:0843"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0811",
+          "score": 0.02968304231762886
+        },
+        {
+          "demo_records": [
+            "div2k:val:0871"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0899",
+          "score": 0.01036419253796339
+        },
+        {
+          "demo_records": [
+            "div2k:val:0864"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0837",
+          "score": 0.07498391717672348
+        },
+        {
+          "demo_records": [
+            "div2k:val:0899"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0864",
+          "score": 0.22912544012069702
+        },
+        {
+          "demo_records": [
+            "div2k:val:0843"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0853",
+          "score": 0.016003962606191635
+        }
+      ],
+      "score": 0.0941148135701523,
+      "task": "inpainting",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph with missing regions to [IMAGE2] a complete photograph with those regions filled consistently with the surrounding scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.054150348883660084,
+      "direction": "higher",
+      "generic_text_score": 0.08612155866838578,
+      "metric": "pq",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "nyu_depth_v2:1093"
+          ],
+          "q": 0,
+          "query_record": "nyu_depth_v2:1154",
+          "score": 0.057369872715125066
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0844"
+          ],
+          "q": 1,
+          "query_record": "nyu_depth_v2:0770",
+          "score": 0.031824137914351236
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1093"
+          ],
+          "q": 2,
+          "query_record": "nyu_depth_v2:1129",
+          "score": 0.07901325862222162
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1129"
+          ],
+          "q": 3,
+          "query_record": "nyu_depth_v2:1409",
+          "score": 0.012363588407899508
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0298"
+          ],
+          "q": 4,
+          "query_record": "nyu_depth_v2:0852",
+          "score": 0.05231258675328431
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1390"
+          ],
+          "q": 5,
+          "query_record": "nyu_depth_v2:1353",
+          "score": 0.06349503499122014
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1390"
+          ],
+          "q": 6,
+          "query_record": "nyu_depth_v2:0211",
+          "score": 0.11000672223606281
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1154"
+          ],
+          "q": 7,
+          "query_record": "nyu_depth_v2:0762",
+          "score": 0.15018410599080698
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0852"
+          ],
+          "q": 8,
+          "query_record": "nyu_depth_v2:0965",
+          "score": 0.11952516311692624
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0844"
+          ],
+          "q": 9,
+          "query_record": "nyu_depth_v2:0592",
+          "score": 0.1207390809524424
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0770"
+          ],
+          "q": 10,
+          "query_record": "nyu_depth_v2:0537",
+          "score": 0.05840079849173783
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0517"
+          ],
+          "q": 11,
+          "query_record": "nyu_depth_v2:1390",
+          "score": 0.03526027730012905
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0965"
+          ],
+          "q": 12,
+          "query_record": "nyu_depth_v2:1287",
+          "score": 0.04777160831207835
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0592"
+          ],
+          "q": 13,
+          "query_record": "nyu_depth_v2:0844",
+          "score": 0.14444608270104653
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1390"
+          ],
+          "q": 14,
+          "query_record": "nyu_depth_v2:0517",
+          "score": 0.04679378771762804
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1287"
+          ],
+          "q": 15,
+          "query_record": "nyu_depth_v2:1093",
+          "score": 0.02808181315644002
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0770"
+          ],
+          "q": 16,
+          "query_record": "nyu_depth_v2:0298",
+          "score": 0.05110024003204427
+        }
+      ],
+      "score": 0.07109930349479085,
+      "task": "instance_segmentation",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an instance segmentation map with separate object regions using the examples' colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.46488994998791755,
+      "direction": "higher",
+      "generic_text_score": 0.859791801911011,
+      "metric": "delta1",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "nyu_depth_v2:1146"
+          ],
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "score": 0.2929275978445302
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0569"
+          ],
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "score": 0.9513791835233542
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "score": 0.9999816233897495
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "score": 0.9733072916666666
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "score": 0.9655221592327166
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0043"
+          ],
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "score": 0.9968361581920904
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1082"
+          ],
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "score": 0.988917850240261
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1247"
+          ],
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "score": 0.9928097844741929
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0220"
+          ],
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "score": 0.993284372699359
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1166"
+          ],
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "score": 0.8841762678826273
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "score": 0.7248574135988987
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1076"
+          ],
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "score": 0.9206268781885527
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0396"
+          ],
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "score": 0.9403617863199548
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1424"
+          ],
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "score": 0.9173323823109844
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1096"
+          ],
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "score": 0.917621957834593
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0272"
+          ],
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "score": 0.8788944447497116
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1314"
+          ],
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "score": 0.9997081144191476
+        }
+      ],
+      "score": 0.9022673686216112,
+      "task": "relative_depth",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a grayscale relative-depth map using the examples' depth direction and intensity convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.4135276662170504,
+      "direction": "higher",
+      "generic_text_score": 0.5442325805384406,
+      "metric": "max_fbeta",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "dut_omron:sun_amtcnaryvbagsatb"
+          ],
+          "q": 0,
+          "query_record": "dut_omron:sun_bgruczgdxsknninj",
+          "score": 0.1909692956050572
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_anrkwvcheoerbhqm"
+          ],
+          "q": 1,
+          "query_record": "dut_omron:sun_axdlpjguznudiftw",
+          "score": 0.96567524224088
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bvobxesquwowokjh"
+          ],
+          "q": 2,
+          "query_record": "dut_omron:sun_aaooosasuiphyaqx",
+          "score": 0.5123641668673959
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aemjuwgxmiyllqkw"
+          ],
+          "q": 3,
+          "query_record": "dut_omron:sun_anaelgmijldqnhvh",
+          "score": 0.9891208312671639
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aaooosasuiphyaqx"
+          ],
+          "q": 4,
+          "query_record": "dut_omron:sun_ahmagclbyykethra",
+          "score": 0.5322951668095691
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bfjlxzoixszyvmpf"
+          ],
+          "q": 5,
+          "query_record": "dut_omron:sun_anrkwvcheoerbhqm",
+          "score": 0.48016297087897414
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aepjhziukqmxktip"
+          ],
+          "q": 6,
+          "query_record": "dut_omron:sun_bvobxesquwowokjh",
+          "score": 0.9567201858022821
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_apcmzwzlwlaifwlo"
+          ],
+          "q": 7,
+          "query_record": "dut_omron:sun_amtcnaryvbagsatb",
+          "score": 0.9381195985360303
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_apcmzwzlwlaifwlo"
+          ],
+          "q": 8,
+          "query_record": "dut_omron:sun_aqhjqnnzsawxvvvd",
+          "score": 0.6421457495486594
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_apcmzwzlwlaifwlo"
+          ],
+          "q": 9,
+          "query_record": "dut_omron:sun_adbdqzigzwipuipr",
+          "score": 0.43303846278474456
+        },
+        {
+          "demo_records": [
+            "dut_omron:img_812503560"
+          ],
+          "q": 10,
+          "query_record": "dut_omron:sun_aemjuwgxmiyllqkw",
+          "score": 0.5510840766927431
+        },
+        {
+          "demo_records": [
+            "dut_omron:img_812503560"
+          ],
+          "q": 11,
+          "query_record": "dut_omron:sun_bcdlvrkvodarohwm",
+          "score": 0.18936581928836566
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aemjuwgxmiyllqkw"
+          ],
+          "q": 12,
+          "query_record": "dut_omron:sun_bfjlxzoixszyvmpf",
+          "score": 0.20563539139749626
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_amtcnaryvbagsatb"
+          ],
+          "q": 13,
+          "query_record": "dut_omron:sun_apcmzwzlwlaifwlo",
+          "score": 0.23515923566878985
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bcdlvrkvodarohwm"
+          ],
+          "q": 14,
+          "query_record": "dut_omron:img_812503560",
+          "score": 0.8778022267922561
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bcdlvrkvodarohwm"
+          ],
+          "q": 15,
+          "query_record": "dut_omron:sun_aipfmfdoxumqmjxg",
+          "score": 0.946833073152626
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_anaelgmijldqnhvh"
+          ],
+          "q": 16,
+          "query_record": "dut_omron:sun_aepjhziukqmxktip",
+          "score": 0.5177929472393659
+        }
+      ],
+      "score": 0.597899084739553,
+      "task": "saliency_detection",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a salient-foreground mask using the examples' foreground and background colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.26335281273431277,
+      "direction": "higher",
+      "generic_text_score": 0.2627800609609592,
+      "metric": "miou",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001441"
+          ],
+          "q": 0,
+          "query_record": "ade20k:ADE_val_00000606",
+          "score": 0.18721842520410323
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001256"
+          ],
+          "q": 1,
+          "query_record": "ade20k:ADE_val_00000895",
+          "score": 0.1897243648275197
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000302"
+          ],
+          "q": 2,
+          "query_record": "ade20k:ADE_val_00000361",
+          "score": 0.5715736121498436
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001243"
+          ],
+          "q": 3,
+          "query_record": "ade20k:ADE_val_00001441",
+          "score": 0.19429157836907388
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001441"
+          ],
+          "q": 4,
+          "query_record": "ade20k:ADE_val_00000992",
+          "score": 0.25356364325630454
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000895"
+          ],
+          "q": 5,
+          "query_record": "ade20k:ADE_val_00000735",
+          "score": 0.25502799016014116
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000934"
+          ],
+          "q": 6,
+          "query_record": "ade20k:ADE_val_00000212",
+          "score": 0.5348314218136428
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001065"
+          ],
+          "q": 7,
+          "query_record": "ade20k:ADE_val_00001256",
+          "score": 0.45897193254954166
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001256"
+          ],
+          "q": 8,
+          "query_record": "ade20k:ADE_val_00001243",
+          "score": 0.21924979553056437
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001081"
+          ],
+          "q": 9,
+          "query_record": "ade20k:ADE_val_00000199",
+          "score": 0.2503647190630633
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000600"
+          ],
+          "q": 10,
+          "query_record": "ade20k:ADE_val_00000302",
+          "score": 0.36547339130280276
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000361"
+          ],
+          "q": 11,
+          "query_record": "ade20k:ADE_val_00001065",
+          "score": 0.19493169592368303
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000302"
+          ],
+          "q": 12,
+          "query_record": "ade20k:ADE_val_00000600",
+          "score": 0.2963242748107734
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001243"
+          ],
+          "q": 13,
+          "query_record": "ade20k:ADE_val_00001677",
+          "score": 0.20226149262003773
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000934"
+          ],
+          "q": 14,
+          "query_record": "ade20k:ADE_val_00001081",
+          "score": 0.2369513755316516
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000606"
+          ],
+          "q": 15,
+          "query_record": "ade20k:ADE_val_00000934",
+          "score": 0.23618287485817452
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001243"
+          ],
+          "q": 16,
+          "query_record": "ade20k:ADE_val_00000623",
+          "score": 0.14910186703105874
+        }
+      ],
+      "score": 0.28212026205894003,
+      "task": "semantic_segmentation",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a semantic segmentation map using the examples' class colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.4340166712508482,
+      "direction": "lower",
+      "generic_text_score": 0.19916554321261012,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0888"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0858",
+          "score": 0.20414401590824127
+        },
+        {
+          "demo_records": [
+            "div2k:val:0834"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0889",
+          "score": 0.1818559169769287
+        },
+        {
+          "demo_records": [
+            "div2k:val:0840"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0872",
+          "score": 0.27907365560531616
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0888",
+          "score": 0.1683756411075592
+        },
+        {
+          "demo_records": [
+            "div2k:val:0841"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0851",
+          "score": 0.09317617863416672
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0868",
+          "score": 0.44798749685287476
+        },
+        {
+          "demo_records": [
+            "div2k:val:0858"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0864",
+          "score": 0.22113239765167236
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0840",
+          "score": 0.3358533978462219
+        },
+        {
+          "demo_records": [
+            "div2k:val:0834"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0881",
+          "score": 0.19523952901363373
+        },
+        {
+          "demo_records": [
+            "div2k:val:0881"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0827",
+          "score": 0.2105705440044403
+        },
+        {
+          "demo_records": [
+            "div2k:val:0868"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0838",
+          "score": 0.17109385132789612
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0805",
+          "score": 0.2864431142807007
+        },
+        {
+          "demo_records": [
+            "div2k:val:0840"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0853",
+          "score": 0.1130714938044548
+        },
+        {
+          "demo_records": [
+            "div2k:val:0868"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0856",
+          "score": 0.30445021390914917
+        },
+        {
+          "demo_records": [
+            "div2k:val:0838"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0834",
+          "score": 0.12449347972869873
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0841",
+          "score": 0.22486227750778198
+        },
+        {
+          "demo_records": [
+            "div2k:val:0888"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0850",
+          "score": 0.16067816317081451
+        }
+      ],
+      "score": 0.218970668666503,
+      "task": "super_resolution",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a low-resolution photograph to [IMAGE2] a higher-resolution photograph of the same scene with faithful fine detail."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 113.58410577159289,
+      "direction": "lower",
+      "generic_text_score": 52.49851218705808,
+      "metric": "mean_deg",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "diode:00020_00186_indoors_040_020"
+          ],
+          "q": 0,
+          "query_record": "diode:00023_00200_outdoor_020_030",
+          "score": 35.28968334204593
+        },
+        {
+          "demo_records": [
+            "diode:00023_00200_outdoor_020_030"
+          ],
+          "q": 1,
+          "query_record": "diode:00022_00194_outdoor_180_010",
+          "score": 26.53474191676187
+        },
+        {
+          "demo_records": [
+            "diode:00022_00193_outdoor_070_030"
+          ],
+          "q": 2,
+          "query_record": "diode:00019_00183_indoors_180_030",
+          "score": 62.04319928980079
+        },
+        {
+          "demo_records": [
+            "diode:00020_00187_indoors_240_010"
+          ],
+          "q": 3,
+          "query_record": "diode:00020_00186_indoors_040_020",
+          "score": 56.56128903280328
+        },
+        {
+          "demo_records": [
+            "diode:00022_00193_outdoor_070_030"
+          ],
+          "q": 4,
+          "query_record": "diode:00024_00202_outdoor_140_000",
+          "score": 36.3890727822905
+        },
+        {
+          "demo_records": [
+            "diode:00021_00189_indoors_000_000"
+          ],
+          "q": 5,
+          "query_record": "diode:00021_00188_indoors_130_020",
+          "score": 33.91294139348089
+        },
+        {
+          "demo_records": [
+            "diode:00020_00185_indoors_080_010"
+          ],
+          "q": 6,
+          "query_record": "diode:00023_00199_outdoor_010_000",
+          "score": 33.84041308666362
+        },
+        {
+          "demo_records": [
+            "diode:00021_00191_indoors_220_000"
+          ],
+          "q": 7,
+          "query_record": "diode:00022_00196_outdoor_250_010",
+          "score": 42.160284164240736
+        },
+        {
+          "demo_records": [
+            "diode:00021_00189_indoors_000_000"
+          ],
+          "q": 8,
+          "query_record": "diode:00020_00185_indoors_080_010",
+          "score": 57.04242836909988
+        },
+        {
+          "demo_records": [
+            "diode:00023_00200_outdoor_020_030"
+          ],
+          "q": 9,
+          "query_record": "diode:00024_00201_outdoor_340_000",
+          "score": 27.85112909920944
+        },
+        {
+          "demo_records": [
+            "diode:00023_00200_outdoor_020_030"
+          ],
+          "q": 10,
+          "query_record": "diode:00022_00197_outdoor_290_000",
+          "score": 32.90622073629626
+        },
+        {
+          "demo_records": [
+            "diode:00023_00199_outdoor_010_000"
+          ],
+          "q": 11,
+          "query_record": "diode:00021_00189_indoors_000_000",
+          "score": 65.06382319316208
+        },
+        {
+          "demo_records": [
+            "diode:00023_00199_outdoor_010_000"
+          ],
+          "q": 12,
+          "query_record": "diode:00022_00195_outdoor_270_000",
+          "score": 43.3488022751736
+        },
+        {
+          "demo_records": [
+            "diode:00020_00187_indoors_240_010"
+          ],
+          "q": 13,
+          "query_record": "diode:00021_00192_indoors_010_010",
+          "score": 45.79146861777796
+        },
+        {
+          "demo_records": [
+            "diode:00022_00194_outdoor_180_010"
+          ],
+          "q": 14,
+          "query_record": "diode:00022_00193_outdoor_070_030",
+          "score": 55.354082846214475
+        },
+        {
+          "demo_records": [
+            "diode:00023_00199_outdoor_010_000"
+          ],
+          "q": 15,
+          "query_record": "diode:00020_00187_indoors_240_010",
+          "score": 30.182182146050913
+        },
+        {
+          "demo_records": [
+            "diode:00021_00192_indoors_010_010"
+          ],
+          "q": 16,
+          "query_record": "diode:00021_00191_indoors_220_000",
+          "score": 80.5791331450436
+        }
+      ],
+      "score": 44.99122914330093,
+      "task": "surface_normals",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an RGB surface-normal map using the examples' coordinate and color convention."
+    }
+  ],
+  "units": [
+    {
+      "episodes": 1,
+      "group": "edge_q01",
+      "producer_sha256": "c192dfec7b7bcdb7d2cb73141c8e8517355be4eb6f3bcbfb003d6877c9bedb1b",
+      "run_identity": "4e93b55e5d57ce2614cee3f0e47ef3a0162de98e08ae474be264e823e1d00b83",
+      "score_manifest_sha256": "837f02b19f09b2bce0ea581f41d1809f523fa8e77808be7515e0a8c344a96e6f",
+      "scored_results_sha256": "4f2d691f1f0b591fc38888bfaac25dc381bcca519faad1bdfd007e398a5571b4"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q06",
+      "producer_sha256": "8543c7dc936f7729b0bafb271dcd6fe526d1ca20d28ba3ebfc9b2fdec1d371f0",
+      "run_identity": "27552a71c24b1fdcfdfae2f5f7c9690ee4bc9e6ac6023530b66319eb8d5c0190",
+      "score_manifest_sha256": "10afe6eea7554967a499540625795eb4a09fe5c88a011b9345945d08f1366607",
+      "scored_results_sha256": "09ad08afd88e950b4e9288f6a45c75b0834f161e9ea6e2f0529bba92511fac50"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q07",
+      "producer_sha256": "3c2bc5477790fc6fe817a1310018960bf3230d6f8b2cf8ae36d03750f91e1198",
+      "run_identity": "77a3fc9b67946ab19f816f6e6faae0464676f978fd11e3e5e37b17918ddd86da",
+      "score_manifest_sha256": "51bef7720826394b309137a189c1df419de461b48d3929ab28d3025503d72333",
+      "scored_results_sha256": "d13f09e10df3a3eb37301191112a69194ec946424b3bc748bfbab363e1a86993"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q05",
+      "producer_sha256": "f9f631e2acb5b86ff369b9c53fa004fe732cc543c8a9d15a1bf0d161e7c22bfa",
+      "run_identity": "c30099a97e7537b9041445f4508bd4ef01f1ba8b68a8714b4a3467600df074b7",
+      "score_manifest_sha256": "5f393ee642711be18ebb7a8388e9d1abd4d6ed5b3b7a84ce8779c0dbd1d43b64",
+      "scored_results_sha256": "1b4c770ae785b142205dec2ca5f7ae5012dbd88ea0368e90282ee90b2f05146e"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q08",
+      "producer_sha256": "10592d4dbfebe14ec0e9d6d2ea5081b0b66f9bdd37386fbdddb7f23968413929",
+      "run_identity": "b43d537ad2cad7dc17678767b991ac56891e4f5707fa5121beec1e628204adb0",
+      "score_manifest_sha256": "7b13b4de9693b98b0bdcc2e12883fa739d3e0569cc292b6210bb902372804524",
+      "scored_results_sha256": "5897ecee0a1edf29f025b08b05cd833ba6848d7aaa965c41ec35bee0f6963762"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q02",
+      "producer_sha256": "37de83ff1914e58a27b36eea7749fc41935916a492163b2a9038bee4d89008bd",
+      "run_identity": "a6934f18c71a8ffb1547faac8695480bb3176d7eef0c8f80f6ef86818ee57afb",
+      "score_manifest_sha256": "834a52a0cb4b607200e4104633913cb47dc16a00130e064b4b25767a06ef9f96",
+      "scored_results_sha256": "c0eb13611279610506842fd2bca5439c540e84ecaa7effb23c1f498c241efba1"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q00",
+      "producer_sha256": "c98501ffdf333fc93a9cff79155188ddf5f8074e213e811a6d566b7c92ee89a9",
+      "run_identity": "8c230d4f4206e052572ca85071093a1b6ce3f9772301384693656b027d7029e4",
+      "score_manifest_sha256": "0553e6961a46fa69cbb78a538f385771d0b6cfefdd0b43427f7267f9869eddd9",
+      "scored_results_sha256": "562f9b20cf18d78fadb12655d9b576b120d211be5d8c60e827e9eade8ddc7658"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q09",
+      "producer_sha256": "82285e671a4c480ce0f970e777c23d6876c4d27f2996c65b4b759f9d6993a05d",
+      "run_identity": "e00eb87315235c9c2e5428be2bed8b3a0b921ffe8eacb864532e587e07d4aab3",
+      "score_manifest_sha256": "bdd029a4eafc4379d5d9cda2893bfbea8a65756ca3becf342b6c1bc94c7b103a",
+      "scored_results_sha256": "3625cd9f0c18b08fcccae2e83ce1afdb3ee5ee24051d4f62a69b65b6e82f3eac"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q04",
+      "producer_sha256": "2fbbcea0bea2e68b38a64946c7545d0abf8cc32c2c27fb5db474df77a15ef16b",
+      "run_identity": "82e3095c8d94eb2da0c0147547751577e000b3d6fda77347c314b6746049f5bb",
+      "score_manifest_sha256": "92e3c69c6fe66fb8884ac216e08a51a004d1382b6d1ca944ad1dc30c7270c481",
+      "scored_results_sha256": "c48eda049b4ec19b05a677c09f34743c63c3e167b686ddf1baf15ede9c31b799"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q03",
+      "producer_sha256": "0f3eed23dfe593583e815c7e6df085d09360c60f0e019c1d18d2b654da5002d1",
+      "run_identity": "f73281c16543074a55a89c9b57a8b4b88f78acbab53dd8569f6460e744914ad8",
+      "score_manifest_sha256": "42fb8847f2c0a82543c6811d071f36a29932404e556fdfd119df8c6568b09018",
+      "scored_results_sha256": "cfcd4d975fcd151075f9c147087a2dae243d4988647865102d15f32e1419392d"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q13",
+      "producer_sha256": "af9b2e05ae85dcaf0b5a391309904c077ab346cc21819c26b9da7eb64418d96e",
+      "run_identity": "6876f4cac888e8fe6c64178ab5ec3feab12e2ea2bbf5432473a30402c4f1539b",
+      "score_manifest_sha256": "8f139f260a793ad4fab1cbfba6a49f15726756ef17a714c777c43d86ff585e94",
+      "scored_results_sha256": "2afeb1e0fff09f954d0afbb0afeb706b65e5758462decb6040b9c4bc0183efd1"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q10",
+      "producer_sha256": "af63e53789e9646d8ee1c45be3ef7cc1228d0e784cd93e43a8b4abd9c8f444e8",
+      "run_identity": "f249a728aac4a26d8792455aecc86cb0469f6a728277e74c2fb8a02f7b57fd69",
+      "score_manifest_sha256": "4527b7a756e59a0de949fed9da5bc274ffe0b3e8a6fbf06c00742fb6aa1ae66c",
+      "scored_results_sha256": "eed242c9aaf88fd7e832c50f021f037e3be6bfa21322b5380922eb87987cc8c6"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q15",
+      "producer_sha256": "7b5fcb75c82622d9205a3c533861bd837490358a7d07f74b3b5f92ef55d0db0a",
+      "run_identity": "b9402597e6e75c9b9d7e4e0cdc33067fcb5ae6c290c5ba0143182bb82e7800f4",
+      "score_manifest_sha256": "91c999ce0a4f9c37825b11e1338e270e941b0829822d45a96cf07f270bb5a7e9",
+      "scored_results_sha256": "896ace4895024952d70d7280ec522e2f5c2f8487853f4cb8016359722b9066ac"
+    },
+    {
+      "episodes": 17,
+      "group": "deblurring",
+      "producer_sha256": "aaa7b9de45da1b733a5f073450b9f6bcd314ee7e8ed5da8c6080919bca89271f",
+      "run_identity": "71811a0f79882a0336689f577db5446e65dd84d599be8128849484e72a8bb28f",
+      "score_manifest_sha256": "0a1aa1d78066b53429ec1ed1b9039be12da026fa7a0ff8264ce5edcba99a6b80",
+      "scored_results_sha256": "5c9f4384ad2a94181c0febb88899c44c3c85ab8df3ec48b02f9c23fa0f82c648"
+    },
+    {
+      "episodes": 17,
+      "group": "colorization",
+      "producer_sha256": "9b04aafa845ac6cc3cb20edb2082916803f1739ed3cfc15db05249bbf92ca9af",
+      "run_identity": "c19c2a08d0dffb8d451ba061350fe88fbc3731afd2d2644b7f9cabd8b455e4be",
+      "score_manifest_sha256": "902742e5934e4aedd9ac205b6b9d95f8dbadbf06ff939556a21595d08adce1d7",
+      "scored_results_sha256": "76a945dce444231431de183523395c2ac25746dec93f8d3b7c11c45336d34818"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q14",
+      "producer_sha256": "d36f343e08b70ba43ed6eeb4161ee670e450ad7b3622e8ca551c6f38e8065d4a",
+      "run_identity": "2dd2bd4137e47416d29ea1a807ceda764326345847733e112dfc5544572fe7cc",
+      "score_manifest_sha256": "01c2eb32505df23ac93003c944803279601e201d4dea3cc15d88d6a6d4254151",
+      "scored_results_sha256": "aaec676b78729aec1255556bbcbf59ece329c65367cb2699b62cd1ff35038d0b"
+    },
+    {
+      "episodes": 17,
+      "group": "denoising",
+      "producer_sha256": "fb49415b43b625f941ff96242d99ab93a0ee891c4ac98eecf9785ce85d341b29",
+      "run_identity": "9946141a0bd4bb6f09af4a557837495af1a744d9e3b76099fcbefbbcbc9e2349",
+      "score_manifest_sha256": "226830050f6866a71db2deed3804314ac8d04f40799506f367eaaae4dbf63e4a",
+      "scored_results_sha256": "b327a25759ece8c66ecefb255f4b595d7617477af73cd03872f9c35973baf2c9"
+    },
+    {
+      "episodes": 17,
+      "group": "human_pose_2d",
+      "producer_sha256": "45169bfed6b5a49f446ef255f3bcad253752848e7ccf46c58cfcbd944d7022f0",
+      "run_identity": "d6debbb7908a3a4b46c5e0e15b23a34563808ede9ef80bff1fc4358aa3ed20db",
+      "score_manifest_sha256": "818603a96265bbfa96916f6d7bf7d2018613b478469738f8be745a4b1ab7a233",
+      "scored_results_sha256": "22e67b8130ff265ee857b9395a4cc42d22bf7402b85508ac22061b6ee8fb8d49"
+    },
+    {
+      "episodes": 17,
+      "group": "face_landmarks",
+      "producer_sha256": "c7a5c812a63d12e6eb2edd101ee5004eb0d55109ac2176fe8da0c55db588cb8c",
+      "run_identity": "94242b62ca74a1479faf18a55ad1f23eae84c9708d69e5cd723c86d5da93eeb1",
+      "score_manifest_sha256": "c8c0f6040ddd21c64c73cbd778ce8d39acfb87b8de2c22289c3ef7a9a5ab013b",
+      "scored_results_sha256": "a0c7b663c42b5fdd75a52b1df9d4bdac34951caf3797e8396a816f40ebb00e96"
+    },
+    {
+      "episodes": 17,
+      "group": "relative_depth",
+      "producer_sha256": "cc6e18e18b0beb157ddfa3037ac3f406a965d76164ca2b8685bf01ce9dd1c3fb",
+      "run_identity": "1d0f666bb8eaca0515d9192f45b993b9a651e4cd66a25ca22902a5959b292d6f",
+      "score_manifest_sha256": "d0aeae98c11692e56e547fabc77ad4a22ae0261fa7e04ce81e4583b6e03cd8af",
+      "scored_results_sha256": "97838e63df5dca90cb1c609ce40a5c49325da29442ca0a74fd3cd1faae1dbdb2"
+    },
+    {
+      "episodes": 17,
+      "group": "inpainting",
+      "producer_sha256": "f0ca00ea41fb009c09aaaa5eeeec6595f282c2a1ab17d14c0f31cfb9a292feea",
+      "run_identity": "6034ece25136dfeda8110081a94e57a1bfa03bfc4d89a89f76e092f61438ba3a",
+      "score_manifest_sha256": "8f2ea8711837d5613c11e8d6f45c2c9e774175316e02069f466c587ecbc27e40",
+      "scored_results_sha256": "2d50dbcc76d03c403725e56ce84b80cf0e5c16db9fe3f1c964096d984edcbfed"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q11",
+      "producer_sha256": "3c4a1922da239fb92425eb85fd715e369c92e4b209cb12d05d18d067b8bb6127",
+      "run_identity": "2fd7bfdef8a83c758a6fd8e0698168990a9d0ffb16e80455598ea45597a1dc62",
+      "score_manifest_sha256": "6c12cd9ddcc70e0ed2d7b57d5fadf213ae226dd4701ccff7f1fa2f88561b49d4",
+      "scored_results_sha256": "8b448d59af4f9e5ab81a7946652bb4000c25df6455b82e027a4d557483ad518e"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q12",
+      "producer_sha256": "0176c27e9d41d76f2c3296c8f9c75f034e72bced97f2e9264ebf0be6c5508855",
+      "run_identity": "1f65496e103ca88a717ecd1690333ddb38b7ee9769bc90a9a507b3ba31fa64a0",
+      "score_manifest_sha256": "98c1d4a71f547a93bb3dfd76f79ab308b8acc0558b1a4a145378c4cab5d03009",
+      "scored_results_sha256": "2a3d4d485c455eccc81de0783be944e0f48833de135d750b8669ce764488ff72"
+    },
+    {
+      "episodes": 17,
+      "group": "surface_normals",
+      "producer_sha256": "239c19cb0f79ef532c7b17e3c83dee3816d2e39ee9622c2df46ffcc4cf68fad1",
+      "run_identity": "02b97a38ef61f5ba3913efdb56a03547c4157c0a191d0b2ea77af963f29acaa7",
+      "score_manifest_sha256": "677f8fe21b8f77f7221eecaf7431bfca13f3060e74d6b03d00c5028548de5f69",
+      "scored_results_sha256": "c10fd16b944c1cfbd37602913bae524bb8314d29075a8a2c5acc1753c1cf55fe"
+    },
+    {
+      "episodes": 17,
+      "group": "super_resolution",
+      "producer_sha256": "57d751e03af78b69847209652762a0d77e401f70ffac93132095e631123957fc",
+      "run_identity": "77abd6f2ec4c922f472d5a2ab0dfff3cf7c5c79e939f5f46e4decb6dabc11390",
+      "score_manifest_sha256": "9402c4fc6b657a713bee6108031a18c22596f1f1d404039472ca6f0dfb567ce9",
+      "scored_results_sha256": "ef94d60429440ec1385a3ccfea527c5dcad48d1d979031580c23199e3850a832"
+    },
+    {
+      "episodes": 17,
+      "group": "saliency_detection",
+      "producer_sha256": "d885f29c91a9816a643a3f8e8e10d3ee3dcf4e51e507184f45919441e70e5b05",
+      "run_identity": "45d3695acb0d179d46858b06f780898ea84804b35e48543281537f93fceb755d",
+      "score_manifest_sha256": "6af1e3313a89def505edc4ff42f887a1d82a8bea718b55f636e5a73cefbac360",
+      "scored_results_sha256": "e44abeccf0c4f88d71d250578317f3d1e14ef3b5e9713ea41d94361c274695e5"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q16",
+      "producer_sha256": "d40fc53a4f66c42e5a7f26debb49613cb9588143351e2b0290bcf39efedce479",
+      "run_identity": "70195a7ee79b9ac650dcacf64db03db01a1cdc5708d678a8cc2abd3b98824245",
+      "score_manifest_sha256": "82d12f091514ddc7094b070fc2c4b57880ebf6775899d116630d55d9f43bd51b",
+      "scored_results_sha256": "c879b986e7b0115c046ae5372d5dfa080b3be633c8184545b60ca146755ddcfc"
+    },
+    {
+      "episodes": 17,
+      "group": "instance_segmentation",
+      "producer_sha256": "fc22353c1ecfbe5a6083df5a3a23b0e69797411b16b1b65dfe0c5da92d46eb60",
+      "run_identity": "bb23fc67c8b89e307d9a51c8b197ed6e82e45f53bbdd875cdf383072c3c87c42",
+      "score_manifest_sha256": "be4af09874af715a24c73a11d50c3095fc274c4d9262e5407bf2c369d33e3ed4",
+      "scored_results_sha256": "da8b31fb89a01a8aea1e12b4dcb017e227961b7ac393a7b4375ae04c8654e251"
+    },
+    {
+      "episodes": 17,
+      "group": "semantic_segmentation",
+      "producer_sha256": "671999fde7f61c61529698c66ba4e827ce14259e34537c189702770bae7a5791",
+      "run_identity": "8f73258b518877b752b3c842dd5a8759dd7b2dfe8a08ad8856be959ed4cd6961",
+      "score_manifest_sha256": "5521504a9c61e30d26c6ffd048721d265b68e7792d20347ccf830673829b8759",
+      "scored_results_sha256": "23df875350da4eb94208978910316572426498e84233681c74edf111a947a329"
+    }
+  ]
+}

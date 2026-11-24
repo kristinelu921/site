@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IMProv and InstaManip category audit · Bench v2</title>
+<style>
+:root{--ink:#182018;--muted:#5e685f;--paper:#fbfaf4;--panel:#fff;--line:#d9ddd4;--green:#17683b;--red:#a43b32;--gold:#f1d26f}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{width:min(1440px,calc(100% - 32px));margin:auto;padding:40px 0 72px} a{color:#0a5b41} .back{display:inline-block;margin-bottom:24px}
+h1{font:700 clamp(2.2rem,6vw,5rem)/.96 Georgia,serif;max-width:1000px;margin:.2rem 0 1rem} h2{font:700 1.7rem/1.2 Georgia,serif;margin:0 0 12px}
+.lede{font-size:1.18rem;max-width:920px;color:#364138} .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:800;color:#526254}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px;margin:28px 0} .card,.section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card strong{display:block;font-size:2rem;line-height:1} .card span{color:var(--muted)} .section{margin:18px 0} .callout{border-left:5px solid var(--gold)}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px} table{border-collapse:collapse;width:100%;min-width:1050px;background:white} th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} thead th{position:sticky;top:0;background:#eef1e9;z-index:1} .num{font-variant-numeric:tabular-nums;text-align:right} .bad{color:var(--red);font-weight:700} .good{color:var(--green);font-weight:700}
+.model-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px} .model-grid article{background:#f6f4ea;border-radius:12px;padding:16px} .model-grid ul{padding-left:20px}
+figure{margin:18px 0} figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#111} figcaption{color:var(--muted);margin-top:8px}
+.downloads a{display:inline-block;margin:4px 10px 4px 0;padding:8px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:white}
+small,.muted{color:var(--muted)} code{overflow-wrap:anywhere} @media(max-width:620px){main{width:min(100% - 20px,1440px);padding-top:22px}.section,.card{padding:15px}}
+</style></head><body><main>
+<a class="back" href="../10-12-validations/#best-results">← Back to the full comparison</a>
+<p class="eyebrow">Bench v2 · independent replay · October 31</p>
+<h1>IMProv and InstaManip, category by category</h1>
+<p class="lede">Every selected score was recomputed from its saved predictions. All 26 model-category cells match the published values exactly. The weak cells are explained by the images themselves, especially IMProv’s nearly blank landmark and pose outputs, rather than a hidden scorer failure.</p>
+<div class="cards">
+  <div class="card"><strong>26 / 26</strong><span>category cells replay exactly</span></div>
+  <div class="card"><strong>442</strong><span>authenticated, unique prediction PNGs</span></div>
+  <div class="card"><strong>0</strong><span>scoring errors found</span></div>
+  <div class="card"><strong>0</strong><span>target-copy artifacts found</span></div>
+</div>
+<section class="section callout"><h2>What is actually wrong</h2><div class="model-grid">
+<article><h3>IMProv</h3><ul>
+<li>Face landmarks decode only <strong>2.4%</strong> of expected points on average; pose decodes <strong>15.2%</strong>. The images are mostly blank or near-constant.</li>
+<li>Colorization, deblurring, instance/semantic segmentation, and super-resolution visibly miss the target and score worse than copying the input.</li>
+<li>The edge contrast experiment improves the raw result from 0.130808 to 0.327224, but remains slightly below the copy baseline.</li>
+</ul></article>
+<article><h3>InstaManip</h3><ul>
+<li>Appearance outputs are often stylized or hallucinated; colorization, deblurring, inpainting, and super-resolution score worse than copying the input.</li>
+<li>Segmentation outputs are noisy or over-segmented. The released fallback palette decoder replays correctly.</li>
+<li>Edge, denoising, saliency, landmarks, pose, and normals are finite and behave as the images suggest.</li>
+</ul></article></div></section>
+<section class="section"><h2>All 26 category checks</h2><p>“Copy” is the deterministic copy-input baseline under the same task metric. Better/tied accounts for whether higher or lower is better.</p>
+<div class="table-wrap"><table><thead><tr><th>Model</th><th>Category</th><th>Metric</th><th>Selected</th><th>Copy</th><th>vs copy</th><th>Audit finding</th></tr></thead><tbody><tr>
+          <th scope="row">IMPROV</th>
+          <td>Colorization</td>
+          <td>lpips ↓</td>
+          <td class="num">0.623601</td>
+          <td class="num">0.261977</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Deblurring</td>
+          <td>lpips ↓</td>
+          <td class="num">0.581584</td>
+          <td class="num">0.20889</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Denoising</td>
+          <td>lpips ↓</td>
+          <td class="num">0.463756</td>
+          <td class="num">0.74466</td>
+          <td class="good">Better / tied</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Edge detection</td>
+          <td>ois_f ↑</td>
+          <td class="num">0.327224</td>
+          <td class="num">0.343988</td>
+          <td class="bad">Worse</td>
+          <td>fixed sqrt-contrast experiment; 0.130808 raw</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Face landmarks</td>
+          <td>nme ↓</td>
+          <td class="num">0.492393</td>
+          <td class="num">0.33414</td>
+          <td class="bad">Worse</td>
+          <td>mostly blank / near-constant output; 2.4% decoded coverage</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Human pose 2D</td>
+          <td>pck_torso_0.2 ↑</td>
+          <td class="num">0.036765</td>
+          <td class="num">0.157353</td>
+          <td class="bad">Worse</td>
+          <td>mostly blank / near-constant output; 15.2% decoded coverage</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Inpainting</td>
+          <td>lpips ↓</td>
+          <td class="num">0.112096</td>
+          <td class="num">0.153042</td>
+          <td class="good">Better / tied</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Instance segmentation</td>
+          <td>pq ↑</td>
+          <td class="num">0.00405</td>
+          <td class="num">0.05415</td>
+          <td class="bad">Worse</td>
+          <td>released fallback palette decoder replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Relative depth</td>
+          <td>delta1_signed_scale ↑</td>
+          <td class="num">0.442348</td>
+          <td class="num">0.46489</td>
+          <td class="bad">Worse</td>
+          <td>85.6% decoded coverage; signed-scale rule replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Saliency detection</td>
+          <td>max_fbeta ↑</td>
+          <td class="num">0.489306</td>
+          <td class="num">0.413528</td>
+          <td class="good">Better / tied</td>
+          <td>polarity reversal tested and worse</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Semantic segmentation</td>
+          <td>miou ↑</td>
+          <td class="num">0.171746</td>
+          <td class="num">0.263353</td>
+          <td class="bad">Worse</td>
+          <td>released fallback palette decoder replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Super-resolution</td>
+          <td>lpips ↓</td>
+          <td class="num">0.601276</td>
+          <td class="num">0.434017</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">IMPROV</th>
+          <td>Surface normals</td>
+          <td>mean_deg ↓</td>
+          <td class="num">86.885756</td>
+          <td class="num">113.584106</td>
+          <td class="good">Better / tied</td>
+          <td>84.6% decoded coverage; 48 fixed axis/sign transforms checked; validation-only alternatives not promoted</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Colorization</td>
+          <td>lpips ↓</td>
+          <td class="num">0.548073</td>
+          <td class="num">0.261977</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Deblurring</td>
+          <td>lpips ↓</td>
+          <td class="num">0.452015</td>
+          <td class="num">0.20889</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Denoising</td>
+          <td>lpips ↓</td>
+          <td class="num">0.644153</td>
+          <td class="num">0.74466</td>
+          <td class="good">Better / tied</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Edge detection</td>
+          <td>ois_f ↑</td>
+          <td class="num">0.396074</td>
+          <td class="num">0.343988</td>
+          <td class="good">Better / tied</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Face landmarks</td>
+          <td>nme ↓</td>
+          <td class="num">0.320664</td>
+          <td class="num">0.332472</td>
+          <td class="good">Better / tied</td>
+          <td>57.3% decoded coverage</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Human pose 2D</td>
+          <td>pck_torso_0.2 ↑</td>
+          <td class="num">0.158824</td>
+          <td class="num">0.157353</td>
+          <td class="good">Better / tied</td>
+          <td>52.2% decoded coverage</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Inpainting</td>
+          <td>lpips ↓</td>
+          <td class="num">0.177424</td>
+          <td class="num">0.153042</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Instance segmentation</td>
+          <td>pq ↑</td>
+          <td class="num">0.047076</td>
+          <td class="num">0.05415</td>
+          <td class="bad">Worse</td>
+          <td>released fallback palette decoder replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Relative depth</td>
+          <td>delta1_signed_scale ↑</td>
+          <td class="num">0.462784</td>
+          <td class="num">0.46489</td>
+          <td class="bad">Worse</td>
+          <td>97.4% decoded coverage; signed-scale rule replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Saliency detection</td>
+          <td>max_fbeta ↑</td>
+          <td class="num">0.521609</td>
+          <td class="num">0.413528</td>
+          <td class="good">Better / tied</td>
+          <td>polarity reversal tested and worse</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Semantic segmentation</td>
+          <td>miou ↑</td>
+          <td class="num">0.250994</td>
+          <td class="num">0.263353</td>
+          <td class="bad">Worse</td>
+          <td>released fallback palette decoder replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Super-resolution</td>
+          <td>lpips ↓</td>
+          <td class="num">0.573612</td>
+          <td class="num">0.434017</td>
+          <td class="bad">Worse</td>
+          <td>saved outputs and declared metric replayed</td>
+        </tr><tr>
+          <th scope="row">INSTAMANIP</th>
+          <td>Surface normals</td>
+          <td>mean_deg ↓</td>
+          <td class="num">82.206325</td>
+          <td class="num">113.584106</td>
+          <td class="good">Better / tied</td>
+          <td>99.3% decoded coverage; 48 fixed axis/sign transforms checked; validation-only alternatives not promoted</td>
+        </tr></tbody></table></div></section>
+<section class="section"><h2>Alternative-setting checks</h2><div class="model-grid">
+<article><h3>Surface-normal convention</h3><p>All 48 fixed axis/sign transforms were checked as a sensitivity test. IMProv moves from 86.89° to 84.74°; InstaManip moves from 82.21° to 77.24°. These small validation-selected gains do not establish a different released convention, so they are not promoted.</p></article>
+<article><h3>Saliency polarity</h3><p>Reversing every prediction hurts both models: IMProv 0.489306 → 0.282926; InstaManip 0.521609 → 0.398993. The displayed polarity is correct.</p></article>
+<article><h3>Relative depth</h3><p>The signed-scale rule already used by the main table was replayed. It changes IMProv and InstaManip only slightly; their remaining errors are visible prediction mismatches, not negative-scale zeroing.</p></article>
+<article><h3>Segmentation decoding</h3><p>Neither model emits exact public-palette colors on these queries, so the declared released fallback decoder is used. Replaying it gives the published PQ and mIoU values exactly.</p></article>
+</div></section>
+<section class="section"><h2>Visual review</h2><p>The sheets show the worst query in each category by the declared metric. Each strip includes input, target, and prediction.</p>
+<figure><img src="improv_worst_queries.webp" alt="IMProv worst-query contact sheet across all 13 categories" loading="lazy"><figcaption>IMProv: weak appearance matches, dark edge maps, and nearly empty landmark/pose predictions are plainly visible.</figcaption></figure>
+<figure><img src="instamanip_worst_queries.webp" alt="InstaManip worst-query contact sheet across all 13 categories" loading="lazy"><figcaption>InstaManip: appearance predictions are frequently stylized, segmentation is noisy, and depth/normal geometry often differs from the target.</figcaption></figure></section>
+<section class="section"><h2>Evidence downloads</h2><p class="downloads"><a href="categories.csv">Category summary CSV</a><a href="results.json">Audit result JSON</a><a href="query_diagnostics.json">All query diagnostics JSON</a></p>
+<p class="muted">Pack <code>8e139f91b083e0ae73b2ed81d8e235460ac2f37d</code> · supervision v6. This audit authenticates and replays saved validation predictions; it does not rerun either model. Validation-selected normal transforms remain sensitivity tests.</p></section>
+</main></body></html>

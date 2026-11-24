@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bench v2 · Qualitative demos</title>
+  <meta name="description" content="Explore all 260 selected Bench v2 test queries across seven completed baselines, with saved predictions, matching targets, and the actual context demos.">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="#top">Bench v2 <span>/ qualitative demos</span></a><nav aria-label="Main navigation"><a href="#explore">Explore images</a><a href="#about">About this selection</a><a href="../bench-v2-test/" target="_blank" rel="noopener">Test scores</a></nav></header>
+<main id="top">
+  <section class="hero"><p class="eyebrow">TEST SPLIT · SELECTED EXAMPLES</p><h1>Bench v2<br><span>qualitative demos</span></h1><p class="dek">Every selected input. Every completed baseline.<br>Explore the predictions, their matching targets, and the examples each model saw.</p><div class="stats"><div><strong>260</strong><span>selected queries</span></div><div><strong>7</strong><span>completed baselines</span></div><div><strong>1,820</strong><span>saved predictions</span></div><div><strong>2,080</strong><span>context demo pairs</span></div></div></section>
+  <section class="explorer" id="explore">
+    <div class="section-heading"><div><p class="eyebrow">13 TASKS · 26 DATASETS</p><h2>Look closer.</h2></div><p>Outputs, targets, and demos are shown together.<br>Select any image to enlarge it or download its original PNG.</p></div>
+    <div class="controls" aria-label="Gallery filters">
+      <label>Task<select id="task"><option value="all">All tasks</option></select></label>
+      <label>Dataset<select id="dataset"><option value="all">All datasets</option></select></label>
+      <label>Model<select id="model"><option value="all">All seven models</option></select></label>
+      <label class="search-label">Find a query<input id="search" type="search" placeholder="Query ID or source record" autocomplete="off"></label>
+    </div>
+    <div class="options"><label><input id="show-targets" type="checkbox" checked> Show matching targets</label><label><input id="show-demos" type="checkbox" checked> Show context demos</label><button id="reset" class="text-button" type="button">Reset filters</button><a href="image-index.csv" download>Download image index</a></div>
+    <p class="note"><strong>Targets follow the episode.</strong> Color-coded tasks can use different colors with different demo sets. The target beside each output is the one for that model’s run.</p>
+    <div class="gallery-status"><p id="caption" role="status">Loading selected examples…</p><div class="pager"><button id="previous" type="button" disabled>Previous</button><span id="page-count"></span><button id="next" type="button" disabled>Next</button></div></div>
+    <div id="gallery" aria-busy="true"></div>
+    <div class="gallery-status bottom-pager"><p id="bottom-caption"></p><div class="pager"><button id="previous-bottom" type="button" disabled>Previous</button><span id="page-count-bottom"></span><button id="next-bottom" type="button" disabled>Next</button></div></div>
+    <noscript><p>This gallery needs JavaScript to show its filters and images. The <a href="image-index.csv">complete image index</a> is also available to download.</p></noscript>
+  </section>
+  <section class="about" id="about"><p class="eyebrow">SAVED RESULTS · VERIFIED IMAGE MATCHES</p><h2>What you’re looking at.</h2><div class="about-grid"><article><h3>All of your selections</h3><p>Ten queries from each of the 26 datasets in <code>qual_picks_v1_inputs</code>. Seven completed baselines are included: GenLV, IMProv, LVM, Painter, Prompt Diffusion, VisualCloze, and Analogist.</p></article><article><h3>The demos actually used</h3><p>GenLV, IMProv, LVM, Painter, Prompt Diffusion, and Analogist each use one context pair per query. VisualCloze uses two. These run-specific pairs are shown on every model card. The original eight reference pairs remain available under each dataset heading.</p></article><article><h3>Original images</h3><p>Query inputs, predictions, and matching targets are unchanged saved PNGs. Demo tiles were recovered from the original benchmark packs and checked against the saved episode hashes. The images are the 256 × 256 benchmark tiles.</p></article><article><h3>A qualitative selection</h3><p>These 260 images are a selected subset of the completed Bench v2 test campaign, using supervision v6. Visit <a href="../bench-v2-test/">the full test results</a> for quantitative comparisons and their qualifications.</p></article></div><p class="downloads"><a href="image-index.csv" download>Image index CSV</a><a href="verification.json" download>Verification summary</a></p></section>
+</main>
+<footer>Bench v2 · 260 selected queries · All seven completed baselines</footer>
+<dialog id="lightbox" aria-labelledby="lightbox-title"><div class="lightbox-bar"><h2 id="lightbox-title"></h2><button id="close-lightbox" type="button" aria-label="Close image">Close</button></div><img id="lightbox-image" alt=""><div class="lightbox-footer"><span>Original 256 × 256 PNG</span><a id="download-image" download>Download image</a></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

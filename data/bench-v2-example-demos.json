@@ -1,0 +1,2274 @@
+{
+  "demonstrations_per_query": 2,
+  "plan_identity": "dc53ea663fe67d183bf290434f53f31ce4f0659c44d5f1e41e9881f5a8617e5b",
+  "protocol": "visualcloze_bench_v2_p2_paper_baseline_v1",
+  "queries": 39,
+  "rows": [
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        39,
+        70
+      ],
+      "demo_records": [
+        "div2k:val:0840",
+        "div2k:val:0871"
+      ],
+      "episode_pixels_sha256": "9deb35f432acfba522510966e4943e1adb0f7de0d385b0971fbf8e1f07907665",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q0/demo_1_input.png",
+          "pixels_sha256": "149b3cc3bf88964341610bad572c003e5009c03a271eb9f9a736470340511409",
+          "sha256": "8004b31a1a25c5d9e0a65faf0c686b79d3952f8ddaab5b42309640f9de7ef5dd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q0/demo_1_target.png",
+          "pixels_sha256": "17d7ae1239495659c6916f20fba1ac513846bcaa7172c7b01b7d61e3fdb3a6b2",
+          "sha256": "fd5237bd58bead8087094ce549930140206a8d8a5bfe9e5b015f5a72f565419d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q0/demo_2_input.png",
+          "pixels_sha256": "4e984517743f839edbf42cc9524b7d51a5bcbf9c96add1f03727d754291ae046",
+          "sha256": "724cdf6ba803011014a05ac90c632e2a9866a0886c44b2e01b915d833c26df6d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q0/demo_2_target.png",
+          "pixels_sha256": "58c8429cc8479fcf4e5725617cd23b2a3fa97f0fda20618c2656c0972870cbeb",
+          "sha256": "c72ce99e30e1529535b9a8bccc9c13a131b989aba977ec027ce9e02af36cfaf0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "div2k:val:0801",
+      "task": "colorization"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        9,
+        39
+      ],
+      "demo_records": [
+        "div2k:val:0810",
+        "div2k:val:0840"
+      ],
+      "episode_pixels_sha256": "290faa786962adb98ea5a5d0b8932e6a09a4278f1370e3676d843742e5748bb1",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/demo_1_input.png",
+          "pixels_sha256": "90e6788c5010afc69004ade05a9014b27539244fab6f3db95bf10f84138ef2c0",
+          "sha256": "c93fb0f6a183822f93fad47a5a036854bcf4b38ed7d5d8f2d8e1eb9b1e2e9e68",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/demo_1_target.png",
+          "pixels_sha256": "afbdf38301f63a5e73e10eb2780d09777d555b81d1df28bbb9b7446b8f5cc227",
+          "sha256": "4360bc44e907a5d5907e5091ab08beffb3f2d211587ce6465421059ae7688ea3",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/demo_2_input.png",
+          "pixels_sha256": "149b3cc3bf88964341610bad572c003e5009c03a271eb9f9a736470340511409",
+          "sha256": "8004b31a1a25c5d9e0a65faf0c686b79d3952f8ddaab5b42309640f9de7ef5dd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q1/demo_2_target.png",
+          "pixels_sha256": "17d7ae1239495659c6916f20fba1ac513846bcaa7172c7b01b7d61e3fdb3a6b2",
+          "sha256": "fd5237bd58bead8087094ce549930140206a8d8a5bfe9e5b015f5a72f565419d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "div2k:val:0802",
+      "task": "colorization"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        4,
+        67
+      ],
+      "demo_records": [
+        "div2k:val:0805",
+        "div2k:val:0868"
+      ],
+      "episode_pixels_sha256": "1fe66d928af8cf973e3b2c470862985d7de26812bc775cbed8a52cad31991736",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q2/demo_1_input.png",
+          "pixels_sha256": "e4fa158d014526a28ea11df61d71ccea3f1010ead8658c25c24c66f8b045dce9",
+          "sha256": "001b1e96748933b918ef56ebf68f6b78541eedcc545f76249fcd366384378d23",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q2/demo_1_target.png",
+          "pixels_sha256": "a7cce88d85ae5978c8ec8fad49470dbc5362d8005cbd62d2059d4f15ef4ba33e",
+          "sha256": "5e0ff74cb20799ce761e5262abc58f14166c2ca11b8906e1318d0348ed2682a0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q2/demo_2_input.png",
+          "pixels_sha256": "17590eb68dc30df5faf5f4ee1c856c25e6f8e9d28e2cba8db16d435237fc16f3",
+          "sha256": "925772799aacd8d1a1e36a52bc3406d58566532aa8dfaadde9ee54ea690e148b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/colorization/div2k_val/colorization_q2/demo_2_target.png",
+          "pixels_sha256": "a008bba78c9b317f93849fa77b30141c6a437dd9a267ed3e3e3b7f080896f696",
+          "sha256": "db5ffa43f8fdc21f6c68915b4b045b2b7bc80a171b0756e5b8fc244bfc5cdafd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "div2k:val:0803",
+      "task": "colorization"
+    },
+    {
+      "cid": 0,
+      "dataset": "gopro_test",
+      "demo_global_indices": [
+        692,
+        1101
+      ],
+      "demo_records": [
+        "gopro:test:GOPR0862_11_00:000059",
+        "gopro:test:GOPR0881_11_01:000291"
+      ],
+      "episode_pixels_sha256": "7f9de55526a9d603a896c1087b9699ce40e8e00fe3b617de95d6b0af94006cbc",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q0/demo_1_input.png",
+          "pixels_sha256": "bbf8311f15a16967fe7b7f4f34155f1e9fdb78f4ec0d3d919fd89b3cf97d3d41",
+          "sha256": "8ed6f756759462d34f0244985f7104047e9a2e6d6383e4194f146cd3774987d0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q0/demo_1_target.png",
+          "pixels_sha256": "0b1f99f9d8336c3dc7d871ba1fce4ad696d40ca515280ef6634e094ad66ddabf",
+          "sha256": "218fc243eb35b936f6ae59e9a908873c7b18649bdb6a3fa212485fd3ed680a6b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q0/demo_2_input.png",
+          "pixels_sha256": "5387e7b2f80548248993848c381f59ed9a1c53ea04d460eccd6bb5ddd7f20636",
+          "sha256": "1b53f426a48a7cbab33c11368721cc6975a4439490bac3b7c94faf95b16094ec",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q0/demo_2_target.png",
+          "pixels_sha256": "3a369760eabc6066cc2e00605ec8c9de09dee15cad789117164aab3a841b7e24",
+          "sha256": "444b901f83730d09d3321285d2df16fafb3a53e35151d131d6c09308f9a85478",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "gopro:test:GOPR0384_11_00:000001",
+      "task": "deblurring"
+    },
+    {
+      "cid": 0,
+      "dataset": "gopro_test",
+      "demo_global_indices": [
+        37,
+        358
+      ],
+      "demo_records": [
+        "gopro:test:GOPR0384_11_00:000038",
+        "gopro:test:GOPR0396_11_00:000059"
+      ],
+      "episode_pixels_sha256": "f18df86c9a4492b9a8227575bf5525dea105c614077bcc31e56a544b91882446",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q1/demo_1_input.png",
+          "pixels_sha256": "37f01ec050e597e84b950a985eb67106d98d9c77a579bbb0c58d5788331c3971",
+          "sha256": "7650459b29cdfa0c7b1909fa4959e8f38c7b0d675bf18e6d9d7a0c3df1dc23e2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q1/demo_1_target.png",
+          "pixels_sha256": "f04f038d0eb9d509c868d66bd70ef56e4af175ffd78191b15997eab9214dd83a",
+          "sha256": "84371cfaf4d3a32c802b206265497509c681baa9fb046cf183ea2a80660c4a9d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q1/demo_2_input.png",
+          "pixels_sha256": "84db9b2c6e1426e6ef8dc7dbdecaf813e5a09780db7c94f17799ba8be2f12845",
+          "sha256": "8d52bdf0b92c1d4c6ed495affd9272ba029c8d23333d25dfd4b816371e32b600",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q1/demo_2_target.png",
+          "pixels_sha256": "891f844200fb07bf56b01b3f3048cfab39f3d21fa038bc3de4c90fab58671e1f",
+          "sha256": "bc467c48f33fa04d1d44151a63cac4fb10f885349171d5b78e325bffec3f9702",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "gopro:test:GOPR0384_11_00:000002",
+      "task": "deblurring"
+    },
+    {
+      "cid": 0,
+      "dataset": "gopro_test",
+      "demo_global_indices": [
+        22,
+        592
+      ],
+      "demo_records": [
+        "gopro:test:GOPR0384_11_00:000023",
+        "gopro:test:GOPR0854_11_00:000059"
+      ],
+      "episode_pixels_sha256": "6c186a04fe8eb65295863ec2717e19b5fee3338f705a8e057ccc598ed9f5191f",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q2/demo_1_input.png",
+          "pixels_sha256": "c417532601c89a1b5049d1fcddf97ce4c776906f0eb290a4c4252e2c940db1b5",
+          "sha256": "897918fe86680f94ab124cc1ea6b8a07fca783993d4b7e1995a02aae32aa8458",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q2/demo_1_target.png",
+          "pixels_sha256": "528623141cb583f1694768b4f358f816c781e17a774d9b34ea07de24a2e9e059",
+          "sha256": "dca926b8e67776a75b9925b1871dbae72d31d6de2a4b6ebaba58dbe4ff6e3050",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q2/demo_2_input.png",
+          "pixels_sha256": "0d6714c209087471c9e79602d45efd03ce12a2b73fa3d7da40eb2ff5b93bb6c4",
+          "sha256": "741ba7b76a99134e118aae3b447e00fc9abe58394ecfbbc476d886362564cc22",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/deblurring/gopro_test/deblurring_q2/demo_2_target.png",
+          "pixels_sha256": "c774ceca1de1f6dc2c7993ce1e545ed6c96b8d5aa5330d28b5c174a004097ad8",
+          "sha256": "115172d71b50f436a36319b38de1078b0ecbb1ed8b1adbdd62e80afe506bd498",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "gopro:test:GOPR0384_11_00:000003",
+      "task": "deblurring"
+    },
+    {
+      "cid": 0,
+      "dataset": "cbsd68",
+      "demo_global_indices": [
+        38,
+        28
+      ],
+      "demo_records": [
+        "cbsd68:whole:210088",
+        "cbsd68:whole:167083"
+      ],
+      "episode_pixels_sha256": "33fc008e4a2b2900306c359bde45adf3994a04a4932f659b45c83899f10dc73f",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q0/demo_1_input.png",
+          "pixels_sha256": "f402e1a2f426b067882c14482df02d1984806f8956dd75b08b72b8449f75d081",
+          "sha256": "ea1b5a8f2940da5739ed1b257f1e3767629d64fbb3dd4df7bfae5bfe670ee8dd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q0/demo_1_target.png",
+          "pixels_sha256": "8c3472f6409ec770ef640b2560408295cff8d12b6d7295615181c95bc4d98550",
+          "sha256": "fc9ac5f7bd1477c0930284253103cd7eef522c569d18a857035764feb5ff2bdb",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q0/demo_2_input.png",
+          "pixels_sha256": "3b1ca5c7e0b0db649e07cb89ac317262d3c357c4553a58922fac2a2f9eeb982d",
+          "sha256": "f11c0c8d56d05362b0de827cd4a54a61f942b16bf054b4af418f9e514d832475",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q0/demo_2_target.png",
+          "pixels_sha256": "867b9e8dd4c53cb082ba65cba2452b481f2b6a59b3ecc2ab8c5bc3baf91910f1",
+          "sha256": "ee4a5c346946e65084a0e4eb0d77aeb3fb4b0d8a5fc876939bf9d90b30adeaa2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "cbsd68:whole:101085",
+      "task": "denoising"
+    },
+    {
+      "cid": 0,
+      "dataset": "cbsd68",
+      "demo_global_indices": [
+        65,
+        8
+      ],
+      "demo_records": [
+        "cbsd68:whole:3096",
+        "cbsd68:whole:108082"
+      ],
+      "episode_pixels_sha256": "45ea657eedecf5dc30ee26d70eec5e27babc1471d3db302e935ca77b41ceed87",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q1/demo_1_input.png",
+          "pixels_sha256": "c579106156d6f0fdcccd348e05dc4fe3575744d7e342ec8bb776a4ab90b474e9",
+          "sha256": "f6c308c1ad7b1954f3eeb0f23f9af24268c87a8570e9615e57b51dbf9c9121b4",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q1/demo_1_target.png",
+          "pixels_sha256": "c2dc3974609d7ed1068bc55ef506e3abdc30ef2a23c44592c39c9e96e12f84af",
+          "sha256": "fd15d259d8c3ce31f84ad29da9be86ce342c9ae2e7d2c4fa06cb41501cb71155",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q1/demo_2_input.png",
+          "pixels_sha256": "a3884de9251e35e6c425571a48fcb2fba821d52fd0c6f1ab2068f4740eee9230",
+          "sha256": "4fdc4950a67e52b9e6d7049d78e6e44b293268b6a39fe887a01a8611969db72e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q1/demo_2_target.png",
+          "pixels_sha256": "ae6c014c008d2464aaafb46e390fd13ad0ce5803bf2cca40942dbc958bf6a760",
+          "sha256": "03a711ae0cb55f8c893c09c6469ac048efa88457b0cc8b070c79b5ddc85ca666",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "cbsd68:whole:101087",
+      "task": "denoising"
+    },
+    {
+      "cid": 0,
+      "dataset": "cbsd68",
+      "demo_global_indices": [
+        5,
+        31
+      ],
+      "demo_records": [
+        "cbsd68:whole:106024",
+        "cbsd68:whole:175043"
+      ],
+      "episode_pixels_sha256": "323f29c527964f8498cc3b54d9f8f349c74a843febdef3e86b4e4a27f8254221",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q2/demo_1_input.png",
+          "pixels_sha256": "d600abfb30436fe0da7570bece05273bcbaaa32a59c9bff1c51cd30f2120498a",
+          "sha256": "cdccd13cc99345cb813b1e79d2e6c1d92a944b4431897cb365c130bcad70db1e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q2/demo_1_target.png",
+          "pixels_sha256": "26f46f770b3ca3a50892d94e0df8251bf755fa6794c50945c299e898a41d88d8",
+          "sha256": "6bb7f5b67aebef8b019c1f5c79d982c1d467da7380b92f0565d1fc5492658ec7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q2/demo_2_input.png",
+          "pixels_sha256": "2f2161de251105c486a610f3e0312346f8e5a02c1a3fb238ad649c8d3ae80a37",
+          "sha256": "8cdf8e7a79616cb4da5bcd7519c0c4c029f1fe3c7ccfa155adf2163c533842e9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/denoising/cbsd68/denoising_q2/demo_2_target.png",
+          "pixels_sha256": "7e18d4e8123fdad642c8e112b19f7cacc7a30dc94ea2cf3686aa5ca280f82646",
+          "sha256": "d401552edbe3ad57149f0548167f08c97e0108dad8bc91225864e6cfcfd557a7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "cbsd68:whole:102061",
+      "task": "denoising"
+    },
+    {
+      "cid": 0,
+      "dataset": "bsds500_test",
+      "demo_global_indices": [
+        140,
+        120
+      ],
+      "demo_records": [
+        "bsds500:317043",
+        "bsds500:259060"
+      ],
+      "episode_pixels_sha256": "c6c813e113a55ed21ecebdeefa09bbfcca88ff2b1eceed5dcec1538492494c64",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q0/demo_1_input.png",
+          "pixels_sha256": "08cdd0fce8113c69e6c956253c2d26c0fce6ad8082ca0e6a201ac469a9dc911a",
+          "sha256": "4f147a71b0f33467d32d8316060f69480302eb6b7bd2fbff1b53a89c78697b1a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q0/demo_1_target.png",
+          "pixels_sha256": "47ae7742f00f47ea94aff5871b215679ee28698e29ad105fc0db3a2fdff06513",
+          "sha256": "4daeda3f2fb5db17f191ba1d1b988a241f6c7831f8de58c50a2a454d12768508",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q0/demo_2_input.png",
+          "pixels_sha256": "e136c73b369f8fe2a381123a0c95027cd518ecdb4e29addea19a9b7872aa7e30",
+          "sha256": "6001ab0e13aa2f6c7cb758667e51b1fba69714bc9d4fd587fea98c09857450c7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q0/demo_2_target.png",
+          "pixels_sha256": "e3d6d74cb1e790da54f9a2c27532938d06a837cc212463ddc9038d1aff05bbcb",
+          "sha256": "5cae0af3760d210e6fe41acba49d563086d786eed15b2871f89e269943826423",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "bsds500:100007",
+      "task": "edge_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "bsds500_test",
+      "demo_global_indices": [
+        123,
+        164
+      ],
+      "demo_records": [
+        "bsds500:268074",
+        "bsds500:41006"
+      ],
+      "episode_pixels_sha256": "806290cc5e5318068163a3b05dc799528917ee7d83676b9592b8434e1754cb45",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q1/demo_1_input.png",
+          "pixels_sha256": "256313281fa85ceb589ce09cbb90b163f64c683835c05c093ad7a56f6796ce30",
+          "sha256": "f18a16a62f7ede7e355aa39dd1a621b3a5cbbac1f63b755c677a56dd2f2e5602",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q1/demo_1_target.png",
+          "pixels_sha256": "d3422dfa878d72770a024e021ee3d175dc57c458d38a94590ed4a21f5bc9f9fa",
+          "sha256": "c38539013b63795fbdb9fad68fcdc6568da2783b1a74420097ba52a5a09eb6ea",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q1/demo_2_input.png",
+          "pixels_sha256": "555803bf98cd65ab32dc260d9772fbc37ab5d074be836c8c64d28ffcfb0f308d",
+          "sha256": "bc14fb5d71adb1bbc0e1fa4c2576cf3ceaa68f06494528c4cac501732fb9eea1",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q1/demo_2_target.png",
+          "pixels_sha256": "6960e0557cf3bc52931fa3ae54d9da83b0bad08a36edb428df27953f8a83802a",
+          "sha256": "9ea417c62cb112caf5a5f6890c8421b9ae606dfe778db17a4c757c6e45934d12",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "bsds500:100039",
+      "task": "edge_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "bsds500_test",
+      "demo_global_indices": [
+        130,
+        111
+      ],
+      "demo_records": [
+        "bsds500:289011",
+        "bsds500:247003"
+      ],
+      "episode_pixels_sha256": "c9375e8c512dcf1036cdcea9d10441c78e8de00de11f5570de54b1fab9fd90e9",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q2/demo_1_input.png",
+          "pixels_sha256": "5ac2462197626d22fda2a119e94dc915175965fee94c06f004c350d37a5d9b21",
+          "sha256": "1ccddeffb31e24bd1ecf2586ad28ff230ccbd365fb96a7a0474d6df287c7d0d9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q2/demo_1_target.png",
+          "pixels_sha256": "d7f47880b9287fe96ade1c27162424953eb495b2f161193372f5e74be441c6c5",
+          "sha256": "c738a0ab07cb4ae39f736bb709f11feaef1df63b7cb578d0184aee07c17cd044",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q2/demo_2_input.png",
+          "pixels_sha256": "8bf1a48f522ee8e0ee39d6c2cb349179fb7b857a7d9bdb49928a8e8261cb3e59",
+          "sha256": "93cdaed9a25dd09694e32cbcda25778e56351a949f3a833cfb737d83f42a5c76",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/edge_detection/bsds500_test/edge_detection_q2/demo_2_target.png",
+          "pixels_sha256": "27c1dadef2210d7e651dc090a7df83e6e890aedb4f17f9eeac651978cd732331",
+          "sha256": "1fd8b1327714ab1de4365e0b02f345e322a078443fde1252c0e6d452d699905e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "bsds500:100099",
+      "task": "edge_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "300w_test",
+      "demo_global_indices": [
+        152,
+        73
+      ],
+      "demo_records": [
+        "300w:indoor_153",
+        "300w:indoor_074"
+      ],
+      "episode_pixels_sha256": "61a56d5803aa80c30a247f46749b6755937943660a963503debff300492c6a6d",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q0/demo_1_input.png",
+          "pixels_sha256": "a16694f4f81f892919f9dd640ec1ab1abe2e0cf133d0646739f3ce4f33aa06f7",
+          "sha256": "a7bf603acba367b53da8f185d872db490c10a50cbc0ba59e4b048b7d45d718bd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q0/demo_1_target.png",
+          "pixels_sha256": "1aeba090971920089a73eee3ce2e2e09173da950bd6826212e1529263d379a7b",
+          "sha256": "a9703794953a1358b3765487ce8bb6776c71d5e612ef5d3ab3a74f058f1ea86d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q0/demo_2_input.png",
+          "pixels_sha256": "bd0565b096aab6a677b280ba129e0cee062a5e2db1d5c244f77a6a4e306cb8fd",
+          "sha256": "ba3144e99fd848ed5810d751bab4152a441e73b90fcafa801dcbfb83cbc96651",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q0/demo_2_target.png",
+          "pixels_sha256": "949b717ff8a234fd2e76475c6cd763944fa470a81eae29e21c70cef1014b74b9",
+          "sha256": "badb780acad0bfb0aadb1adc3f98b72bd1c90a44af362d3fdac0d8a9edde75c5",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "300w:indoor_001",
+      "task": "face_landmarks"
+    },
+    {
+      "cid": 0,
+      "dataset": "300w_test",
+      "demo_global_indices": [
+        50,
+        87
+      ],
+      "demo_records": [
+        "300w:indoor_051",
+        "300w:indoor_088"
+      ],
+      "episode_pixels_sha256": "699b73a1246fe512099d5367d4b7400ef8b8e6cd961fe3b07a040c91871a6d7a",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q1/demo_1_input.png",
+          "pixels_sha256": "18e3f2acb044237a0666d2dd8b6ebc61e084fc40e8eb4001634f36007d8cb733",
+          "sha256": "2cf0feb932abab38e703d37675adc19128cc90b5187947f0a7af36cf3a8a70e2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q1/demo_1_target.png",
+          "pixels_sha256": "11342b64aede1c13a91b0302dd818dc2d663aec1cae8ef106089c162d88aec27",
+          "sha256": "cefe98eea99df2e5f241a51233368a13d76f5b656d0e1997b52c1077da2379f9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q1/demo_2_input.png",
+          "pixels_sha256": "948d24472802baa7b5fac345c86cf970d3fc539bce382a405bcc768c9666533d",
+          "sha256": "3244cb720a4be5c2e28fb189ad53b2299fe53232ba7e4b67ee6921f898f57dce",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q1/demo_2_target.png",
+          "pixels_sha256": "809d48fe933463a55e630fb9d0f81c15744749b763d32727230ce1d8f7e45e78",
+          "sha256": "a2f3dc734089aeb4ee873f0cb6bd7df2cb4c83d7a9361348572778694f094d63",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "300w:indoor_002",
+      "task": "face_landmarks"
+    },
+    {
+      "cid": 0,
+      "dataset": "300w_test",
+      "demo_global_indices": [
+        573,
+        108
+      ],
+      "demo_records": [
+        "300w:outdoor_274",
+        "300w:indoor_109"
+      ],
+      "episode_pixels_sha256": "0b51ebf7a062624696dc319ca490025ad0466b237359512548f7197f60846168",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q2/demo_1_input.png",
+          "pixels_sha256": "c741cdd7b78f59022e064b72f116c1b1b0e56140d16c073f9b2b028e2f64ebfe",
+          "sha256": "4251507c0e8ba90febdadf1c78fc47c771744779a370f8eadf8da1a16a6a6a85",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q2/demo_1_target.png",
+          "pixels_sha256": "0cb91c4dcfa21736790a90cd4acbd9484625bcd87dc9c0818cd9c3a3341a201d",
+          "sha256": "bd09c794978b2b1aa9a7b1911a712ab98609bf6980b60278efc720f5e688989c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q2/demo_2_input.png",
+          "pixels_sha256": "a60546e8f576522810ad5a734e0c62d033ca29819a63d7cc09a3f3e586e8879e",
+          "sha256": "a75d448cef73df1f69b2d9c6ce7f7e3de74b239b28283df5e5f017ae29ff09b0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/face_landmarks/300w_test/face_landmarks_q2/demo_2_target.png",
+          "pixels_sha256": "0481a4d10ef1dc4de4757ae39cb332c31fbf15f30a28915d298014a197b972f2",
+          "sha256": "e05e7151ece1cb575938a584cc6696d9e7590906c8bb2edfb3523c20de1b6cb2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "300w:indoor_003",
+      "task": "face_landmarks"
+    },
+    {
+      "cid": 0,
+      "dataset": "flic_test",
+      "demo_global_indices": [
+        740,
+        782
+      ],
+      "demo_records": [
+        "flic:test:princess-diaries-2-00099551",
+        "flic:test:princess-diaries-2-00125071"
+      ],
+      "episode_pixels_sha256": "f5c507fa6c8e31a332c5c5735bb6ac320030a2c39ca9dc3585bc80dda8667fdf",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q0/demo_1_input.png",
+          "pixels_sha256": "c820195080b1773be9a2b0aa602aa3060d30ea2e4d47dd1d104183474be35df4",
+          "sha256": "cc48674756daec94fb6562b9f882fe5f65a90546225b0a28dca8be176242d478",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q0/demo_1_target.png",
+          "pixels_sha256": "25f3595647d981511da8da41b61b4973f0a5fc37e83f0de57b3a125511bf320d",
+          "sha256": "9f4d521ae8cd260de01bc27a2dc37a60eb6b929ddfeabcfbf53635c90e487810",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q0/demo_2_input.png",
+          "pixels_sha256": "f57e5c1decc7dec7221a75028758275fead201ba5d13166b5a6bdcc27335cd46",
+          "sha256": "2bc5455d096d85d25b0082ca4ab7402cd2b2883fee122cfaf54e24f48d004375",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q0/demo_2_target.png",
+          "pixels_sha256": "301f4ed3ffe05710aa1f25973c4ec5b7e99873f3fa86c5953cb552e0835e36ec",
+          "sha256": "0cf65b049518ecb7e09bfada56e6d6e62ffbca57f31a11df596631178fb46311",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "flic:test:12-oclock-high-special-edition-00171221",
+      "task": "human_pose_2d"
+    },
+    {
+      "cid": 0,
+      "dataset": "flic_test",
+      "demo_global_indices": [
+        328,
+        832
+      ],
+      "demo_records": [
+        "flic:test:collateral-disc1-00080121",
+        "flic:test:schindlers-list-00185811"
+      ],
+      "episode_pixels_sha256": "8562efa11a76c6e65c62bbfa7ab12138de708246dd8a4b35298b7fd293777fb7",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q1/demo_1_input.png",
+          "pixels_sha256": "1aa5f75f470b1cc450d5ffb032a423f4b5114ee8edc871047683d65e60e2c53a",
+          "sha256": "5d37e6bda9c464915aabc7de1e1d7935ff316ee5fe94eb42f0d753616850032a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q1/demo_1_target.png",
+          "pixels_sha256": "69855f5d8f926a004cc9dfba32c4cdbe6dbcbc31b1148955c65327bd5ad51ac0",
+          "sha256": "8b3a1bbbed9eb751890f8f77eba2b4f179be19cd9e271742bc3b63d1e87b7e2a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q1/demo_2_input.png",
+          "pixels_sha256": "3fb7e61353bb3f19907f4a9fdc8e73dd57c36820238593633cc0e6e35f28baea",
+          "sha256": "48d21953c3aa9482becd0f3cbebead5d210a77b967b8124aaad4164dcb7569b6",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q1/demo_2_target.png",
+          "pixels_sha256": "a26148031e6745d89096244dc9e7a19e48f68ad621edff7274880c834ced97a3",
+          "sha256": "5a80d8df7deb9d7ce11c26c46aa080f27dfee55271a1aeb63fcc56c6878e0bd0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "flic:test:12-oclock-high-special-edition-00171231",
+      "task": "human_pose_2d"
+    },
+    {
+      "cid": 0,
+      "dataset": "flic_test",
+      "demo_global_indices": [
+        449,
+        90
+      ],
+      "demo_records": [
+        "flic:test:giant-side-a-00153371",
+        "flic:test:along-came-polly-00115441"
+      ],
+      "episode_pixels_sha256": "f9d7b23b2adf2c02864dd0c0c8d3a05d4f40c7d13bd0e91721198263f51f2d5a",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q2/demo_1_input.png",
+          "pixels_sha256": "f31a5d095ed053f8e0fd9e8f0e6cca09df039acab7a5c6280e26f450571262a5",
+          "sha256": "32469663c12317116e559531f16bb437e6cb26280f62fda4df8d0243b3f8c281",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q2/demo_1_target.png",
+          "pixels_sha256": "ef6aa8806d2d22105df85fa569017e5ad1aafd9884185f452850f25822a6eada",
+          "sha256": "44cdfdbc9f948b6c2cffdf616485df48de6ed11c8d513688a953306c061380b0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q2/demo_2_input.png",
+          "pixels_sha256": "17fc79eb0b569bb5dea0442f58425a403c6c925a073d1d84fc8d34437894025d",
+          "sha256": "bfc534fafcf29e31fbfa951f381967aa450e11f5f485558531a39e1e8a909335",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/human_pose_2d/flic_test/human_pose_2d_q2/demo_2_target.png",
+          "pixels_sha256": "488207ebdb22d52a6515b568e500b1357a46c1c12b9d1667d1331dea54ff9c46",
+          "sha256": "1ce1547361e96d560641c12fa9024808e1bc92ca4324b901fcf67c9847d3b801",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "flic:test:12-oclock-high-special-edition-00171241",
+      "task": "human_pose_2d"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        49,
+        34
+      ],
+      "demo_records": [
+        "div2k:val:0850",
+        "div2k:val:0835"
+      ],
+      "episode_pixels_sha256": "7f3dfb7c3da38edc51b6fa5f6404dc7a0e995e4f15e22131a18f672e094f727c",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q0/demo_1_input.png",
+          "pixels_sha256": "3b83539c1824426c64f6828200880ecb086e081243cf588ecb73c19fa314a742",
+          "sha256": "69286e2aaa88c77fac1f53b6c37fbac7b222565f7471e01f23305f22f84f1304",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q0/demo_1_target.png",
+          "pixels_sha256": "f5f6a620b4c0987df8758f08c1812a3124120c817d20c631bf07b1626201f574",
+          "sha256": "1ab2ea397abc62278077ee3b4124a976a425e4a64f80ec93bda52a59c51bde04",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q0/demo_2_input.png",
+          "pixels_sha256": "0243822987268f4b8cd397187fe04e8b17a6f987aba257c7845a16d5d47cabd1",
+          "sha256": "f35a5def25359fad86067711b35ecb9de1d933867e7a2ecf9f3d809936fa98aa",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q0/demo_2_target.png",
+          "pixels_sha256": "7b048ee1f5496e7dc33614cddf7b3e121689888ff55127a1726b3c981216a3b1",
+          "sha256": "9072eb87d3522bbf5649ee7dbb62d45ed9bb2888b5ccd58f04bd759c3312cecf",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "div2k:val:0801",
+      "task": "inpainting"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        50,
+        58
+      ],
+      "demo_records": [
+        "div2k:val:0851",
+        "div2k:val:0859"
+      ],
+      "episode_pixels_sha256": "c80d9ae201a1d005a1e20c0752cd78a9b405c21210ef653ce17693dc0a2a7808",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_1_input.png",
+          "pixels_sha256": "a6a224fd8f717f686c112d850a2dab87c51191b913aa327462fb3f1f95525d98",
+          "sha256": "aac004ee3708760d76f11e97aacd29f744797af83dd8c24da289d0f04aff2d93",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_1_target.png",
+          "pixels_sha256": "b14c0dc30acab83b8bf55fc0a4a5ea70b610878d8545a1b76faf49dcf481b4f2",
+          "sha256": "dbe76f2fddf07452996b70904b41488ecca9d837300fa731b105a0df1b787f73",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_2_input.png",
+          "pixels_sha256": "822450d8fce4cc4705df33dc247867eae1ac3a2970e9970f752b5d92a9df4ec0",
+          "sha256": "e4c63a48736cab6f0d0b16343e697f0edeff57b515197f97258961bc62990016",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q1/demo_2_target.png",
+          "pixels_sha256": "87857d354bd69395402082d98914429ff40006d14b2161697e11bb27835897f1",
+          "sha256": "e1acc9693ef774940d976503cbda152486400907e9e188861000270f37fd2fde",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "div2k:val:0802",
+      "task": "inpainting"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        91,
+        26
+      ],
+      "demo_records": [
+        "div2k:val:0892",
+        "div2k:val:0827"
+      ],
+      "episode_pixels_sha256": "50dd9295296d05eece6911250b76af9023e5c682e150958b7d227228847e5da1",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q2/demo_1_input.png",
+          "pixels_sha256": "c5542395674b50e1925e49394ad97ccb3ceccadf6bc63176036aae0ee3218c90",
+          "sha256": "085627572f5af69f2e833ecd3318a5e81427ade57f7eaeb158b3a0cfb11c46b3",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q2/demo_1_target.png",
+          "pixels_sha256": "6d60e5e5530f7aa7f08871607b78ac57498d90949681cb98bc28e64a6c197251",
+          "sha256": "16d4b26b903bc8a03c7f46af2eb4f2e17cc98cb6f8965ca2c0606177461ef6e8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q2/demo_2_input.png",
+          "pixels_sha256": "622e475d8261bebb305ba5ce62b6dfd57d76cfc1c68b1d162a0105314acf1f9c",
+          "sha256": "9b2a99ee9cdbe094b9d3612581c56d348c9eed053e8e6663a5811e60541e6992",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/inpainting/div2k_val/inpainting_q2/demo_2_target.png",
+          "pixels_sha256": "bab230de24dfcdb78e46cea9b986744d9ecce632985e791f8da6cd4c79664775",
+          "sha256": "9c9f9fa4e1e17b2c37a9ca264096f449833c7c61f6119a5333577cdebf70566a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "div2k:val:0803",
+      "task": "inpainting"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        259,
+        537
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0634",
+        "nyu_depth_v2:1219"
+      ],
+      "episode_pixels_sha256": "3f4109f154c76cb1d3fbe72595314227e38f2dc4c065410fe36010b1b9156e49",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q0/demo_1_input.png",
+          "pixels_sha256": "e86d4bb3cd727f5101ad1baf195337b3f4c05ff2331ab2038b0f0e4fd82a552e",
+          "sha256": "890e8e31a6266744f3846277d7e2d2cbbe17f1ebbd5fc524ea45e84c8f53d464",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q0/demo_1_target.png",
+          "pixels_sha256": "f77c3624943e7f923ad720cd245c6fc59c2545e4c767a95180faa276f86473b4",
+          "sha256": "9800962e0f1de5bd9f12b7398b0455bd2bc4af8ec50ebee001b170db7fcaa6a9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q0/demo_2_input.png",
+          "pixels_sha256": "58caedcf0065516fb8224642ff75ea4146e932091ec4c5fa17dfc711e0225c17",
+          "sha256": "3298caa080f66ecfedcbffa0fefe4c2fc85a0506bf04197616034373b9fb3d10",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q0/demo_2_target.png",
+          "pixels_sha256": "3f3e41edb894198325fc5015c2cf08b9d2c8f9f45857a5e85b5a65fff80ba90f",
+          "sha256": "c71421820b8ba91872e1245c3ddbf0eeae04d8872f3a58c9e27d6b63d4c9f11f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "nyu_depth_v2:0001",
+      "task": "instance_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        572,
+        526
+      ],
+      "demo_records": [
+        "nyu_depth_v2:1288",
+        "nyu_depth_v2:1205"
+      ],
+      "episode_pixels_sha256": "a04845614cffcd614f62db1a0fc83246bdbb25ad8473323f5c605edfa688e4d5",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q1/demo_1_input.png",
+          "pixels_sha256": "e6ae69db4193edf8ed4e2402eb3c1d5bfc73a006e365a35088cb3b31befa39e4",
+          "sha256": "b6be0a53454d506604789bbc187f7b50e28f3155258a39461f9c4caf434aec27",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q1/demo_1_target.png",
+          "pixels_sha256": "eb2aa5c0559773d52aa9cfee41fef1ccc5aadafa9131c3cd486f276f3f7b6f05",
+          "sha256": "faca4f6a655901f16dd574a6b06c3d6969f9be4cfbeb183082c2a8b105685b04",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q1/demo_2_input.png",
+          "pixels_sha256": "4150372500b13601833e074d240a1bfd4283254c5e4fd22c83fdbed5fc16f39d",
+          "sha256": "1e9a2b6277c06288e42ef5c4f2cf5a7909e9ece919339be79b2c3f512193af3e",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q1/demo_2_target.png",
+          "pixels_sha256": "9a885ffe52de8a47589473b3172a57749ee163e74d3a14c84d8f175364eb934f",
+          "sha256": "4e296577e1e2a347a22ddac320a8d0fc7cccc3c7d90fc4558291c0a220813e2a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "nyu_depth_v2:0002",
+      "task": "instance_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        208,
+        537
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0524",
+        "nyu_depth_v2:1219"
+      ],
+      "episode_pixels_sha256": "3c5650a52142d829490dbab7694658aed11afaaad6975325ea611375a051ad0d",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q2/demo_1_input.png",
+          "pixels_sha256": "bb95b306368389de91fc7f80823e5f2594c9ff35f3580376711283b88a56b19c",
+          "sha256": "bed48e2cb7305b294cfe9235eed273297c76e9f186bc206d0d7eb4399c5d9ea1",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q2/demo_1_target.png",
+          "pixels_sha256": "e05db827bf2b766ce7f8b8383af04d58378fe7ec52530ba8d6e1a70948fb02e5",
+          "sha256": "455da02c703712b182fcc13ff156479d7110788832e0de1e9782fb5eaa849fe8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q2/demo_2_input.png",
+          "pixels_sha256": "58caedcf0065516fb8224642ff75ea4146e932091ec4c5fa17dfc711e0225c17",
+          "sha256": "3298caa080f66ecfedcbffa0fefe4c2fc85a0506bf04197616034373b9fb3d10",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/instance_segmentation/nyuv2_test/instance_segmentation_q2/demo_2_target.png",
+          "pixels_sha256": "9b32896d35841d8e0ca53d849be982013c079972951b8c476daf09837e110af2",
+          "sha256": "1576b8d947ce0ec699e4cc87ef4c44497f39814c411073224c1b1b5c82bbcc82",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "nyu_depth_v2:0009",
+      "task": "instance_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        22,
+        294
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0041",
+        "nyu_depth_v2:0699"
+      ],
+      "episode_pixels_sha256": "cf2535fa49158753ab5241e63d4a1886787ed61c87156798a20620059e51b3c7",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q0/demo_1_input.png",
+          "pixels_sha256": "1fd42acc6db9e15ecefe579b48e41034b113abf7e34c4da9eb17df309c3f3e16",
+          "sha256": "a1458e38ece8b13ace6de6bc5b18ba92f589cfde485aadefe958291c0a7e84b7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q0/demo_1_target.png",
+          "pixels_sha256": "e8c03f7e9e3355f95b5d7d8e6d46571e61015e53fb04c86b6adb34f84b864d1d",
+          "sha256": "ee064d0f9c17f55fb42dea33aedd5c57eaab7f4a873692a3f21be76282ff3fbd",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q0/demo_2_input.png",
+          "pixels_sha256": "330e8f41598af53421d32ba90aa4a233cbd6488b5ae71c89496ba591b862bbe7",
+          "sha256": "2a869124ed89eaa79aa6bde139e7855289daaf72a94dfca7fed99b222dc4b1f2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q0/demo_2_target.png",
+          "pixels_sha256": "8e25cef5b4a12d9aed5234ff20e4c192a58c5a0bb86da585aa1ec40caf5c88aa",
+          "sha256": "f3eb28b5827788b7b92985fa1e0a78cb9f8a7178985a481734bff285c5f39389",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "nyu_depth_v2:0001",
+      "task": "relative_depth"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        392,
+        125
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0928",
+        "nyu_depth_v2:0315"
+      ],
+      "episode_pixels_sha256": "48e15279249faea7bdb69638abb376d76c91a98b798e28a3394a19337835490e",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q1/demo_1_input.png",
+          "pixels_sha256": "3bda8c41122a58d2d579320df574082349becf718e42a5c37ba6720ba9a306cc",
+          "sha256": "7b7de1939af827941d62a5aa17544d6b743e20cc04c4092083b2510a03f0c2e5",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q1/demo_1_target.png",
+          "pixels_sha256": "44ee3f2339f17c72bb23a5a3e2c8db36325272229e096dadbc50e27d671531df",
+          "sha256": "d060bef1a901938a818da6ccd45dec6b704576e07232f55d22c8de66dcae1f24",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q1/demo_2_input.png",
+          "pixels_sha256": "8e219cab735b7f2344c37fa080c0e86edf916cf8dc2091ae24823d6135fae84d",
+          "sha256": "6e5c7081cc3afb6a092916a268c9e3657a6041edba45318f83232d9f3fbfb627",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q1/demo_2_target.png",
+          "pixels_sha256": "74a7f7f95670c8bdc7ec46802571ee94b386faf4cff00fc2bc5a103265942ff5",
+          "sha256": "479746d29e0e158731bc15476d16208c03a6cba89c569017e494e5f64fb79420",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "nyu_depth_v2:0002",
+      "task": "relative_depth"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test",
+      "demo_global_indices": [
+        137,
+        4
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0334",
+        "nyu_depth_v2:0015"
+      ],
+      "episode_pixels_sha256": "dcf1ffd422f9363d2d7565b38665588bd6142eadd8d8b67ba9645ba8915ca3f4",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q2/demo_1_input.png",
+          "pixels_sha256": "68381d163421ab4aaba13b97adcdbb02273288f08065daa6ca3a54c102b6d6ce",
+          "sha256": "2074e406ae17548c24406bfaf327446e3f43a0de180259d2788ea57055061597",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q2/demo_1_target.png",
+          "pixels_sha256": "f7b3df6d70585febf1fd1ada54ff8829578ca569d5bf27d8c10e3d7430ce095b",
+          "sha256": "4076cae8f28ca84a7f3b36c9c40b0a306e88e0d77ba68a2cad1f73ab97e71e57",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q2/demo_2_input.png",
+          "pixels_sha256": "b6df656f7d371441e3988115e9bd7baa561e39313a1f31ea89acbcea75cf20b5",
+          "sha256": "a05e34dabbb899ce23ef61054f4909c75ff32eeb78fdc6e3a62c9655ce532381",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/relative_depth/nyuv2_test/relative_depth_q2/demo_2_target.png",
+          "pixels_sha256": "ab34c99819928a2d954cdd1ac742cc902e6bf762f50221105efe53a301c10863",
+          "sha256": "d0f91037ed4654c2d20c6036c6cd2053d8828e793ec95d5e73399b26f985e6a8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "nyu_depth_v2:0009",
+      "task": "relative_depth"
+    },
+    {
+      "cid": 0,
+      "dataset": "ecssd",
+      "demo_global_indices": [
+        928,
+        506
+      ],
+      "demo_records": [
+        "ecssd:whole:0929",
+        "ecssd:whole:0507"
+      ],
+      "episode_pixels_sha256": "19e49eafcf7925d53d7069fa36d65f86f3ec4dcac58a835fd7ffe0725d260d11",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q0/demo_1_input.png",
+          "pixels_sha256": "56b063aa970a3cc9427f46169333180fbb3cb1cd15425acc2dc3672371d0bb63",
+          "sha256": "a0e1a050787a3cab022b9929ac6cb24110ff6750a621ab485168d29fafd76dd9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q0/demo_1_target.png",
+          "pixels_sha256": "c14b986fcbe11ff1f29e5c5fc1d9aa314cbb56097c7aac9066287cb7436ebc2b",
+          "sha256": "cc08e2894462c7cb7283ab872e77108c97d4684b6b84fe8bf951e1741ddc23e3",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q0/demo_2_input.png",
+          "pixels_sha256": "f6798e7065d7b33e95f7a65836aee3a47727a813a3e9bbe8f18009e3418be6d0",
+          "sha256": "a7d0dea86cb3044854b8353e1406c9c9921dfcc7ab7c1897eee9abd0ae7adbd7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q0/demo_2_target.png",
+          "pixels_sha256": "0be6b809ab2b8dd30853449888c3ad8bb28d5c7fdcf6d0c1b2882febe7303715",
+          "sha256": "0190bfd295dcdb6771259a0e716537ef98697413e2da1b1e286daa109290d8f8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "ecssd:whole:0001",
+      "task": "saliency_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "ecssd",
+      "demo_global_indices": [
+        522,
+        877
+      ],
+      "demo_records": [
+        "ecssd:whole:0523",
+        "ecssd:whole:0878"
+      ],
+      "episode_pixels_sha256": "1cf85e46dcb2dd3df19b7d4ab397f77b90d6850008a38f7f02b8ea8ab5f510fa",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q1/demo_1_input.png",
+          "pixels_sha256": "d0f2e94370c3247ee592f0b7efe441e0a71ba38e46b32c91eec642313e671272",
+          "sha256": "6c005ae0bf495e69943c3f12af1f4fd68a70ea12dd59448a063db96f4f6cbfe7",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q1/demo_1_target.png",
+          "pixels_sha256": "e3e0925dd3dfd6c76f18039b5a8ad66a7f0979476fc519fc740db9ec525667f0",
+          "sha256": "7f4fb0a43328b55bc77a227927f3420982499310890885f32ddb77b76d82ac6f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q1/demo_2_input.png",
+          "pixels_sha256": "ca8131fe1b3a61f0b8fac94b1f6cc9a90f192f3a72186b10c5ac50ce88b28a88",
+          "sha256": "22108c42767ee9ec63e0a044b18b3e33183723299ade25ba7d69bca5d0b9647a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q1/demo_2_target.png",
+          "pixels_sha256": "88ea1e59e06112823dd882cab877cee2958c8f64d1793df22dc1981277ca32c5",
+          "sha256": "cab2f8aaf454af8b9f34ed3474b31cd1304e5fa3a84aa339679aae3a2ea4ee65",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "ecssd:whole:0002",
+      "task": "saliency_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "ecssd",
+      "demo_global_indices": [
+        400,
+        550
+      ],
+      "demo_records": [
+        "ecssd:whole:0401",
+        "ecssd:whole:0551"
+      ],
+      "episode_pixels_sha256": "7f4c90af6508b65693c87c11390c23082cacf7a455f4273d451ece6e9e811db3",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q2/demo_1_input.png",
+          "pixels_sha256": "96f5c4095b7ced7e9a0647faae61a103d610b820826f3ab09679a19e602667c7",
+          "sha256": "fff672b5bc6796a30f76ed0baa84998405fb4057c53674fcf89c8bafcb47989d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q2/demo_1_target.png",
+          "pixels_sha256": "95a4e02ba043847c99ffe4df667394b3c58fda60a3cd9d90b4ee446168c88756",
+          "sha256": "3df21c484f0c6bb2e7d173e6665f60e29d315699489e846b6080b7d9c0b25ad2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q2/demo_2_input.png",
+          "pixels_sha256": "7de77c2f11b3c71e27a11e1da4f00311e86735984eff003be658c936de1c89db",
+          "sha256": "7bd43de50925e3d25cc2e83d25d7d28771329cd1421d9aaa41c237669cb2419f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/saliency_detection/ecssd/saliency_detection_q2/demo_2_target.png",
+          "pixels_sha256": "a5cce8c375a4d24d95b346c415b01884ef46cea2b96a8b1199cc67c31087878b",
+          "sha256": "d2a261031649a197cc4c0ff2340cef30b25c05ba28a63e703c84e6b1a8d44671",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "ecssd:whole:0003",
+      "task": "saliency_detection"
+    },
+    {
+      "cid": 0,
+      "dataset": "camvid_test",
+      "demo_global_indices": [
+        219,
+        198
+      ],
+      "demo_records": [
+        "camvid:test:Seq05VD_f04710",
+        "camvid:test:Seq05VD_f04080"
+      ],
+      "episode_pixels_sha256": "965c6c04db23f946d72b13b84ba8d1522f7cba6af83941bc915a941a75e7d105",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q0/demo_1_input.png",
+          "pixels_sha256": "a42e45fb0b2faa1a9e37aec042556879367103de8015b772043b5c78a3e82a7e",
+          "sha256": "140481ced7a571c3f56d52a04723d04439b1b070df2c686ce97ed9c5a10959c5",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q0/demo_1_target.png",
+          "pixels_sha256": "9928ced604138fd80c6633610fc473131a4e8721ee1d24ef7b8e78d3b8a8c0b9",
+          "sha256": "eb0a668544cdc6fc6e976b63d04366a1acb9a5234a8507aac809a0335ede8609",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q0/demo_2_input.png",
+          "pixels_sha256": "c8ca32c4682fc4942c837de107fb9a2d1d620c47ad75aff5e21c962804266673",
+          "sha256": "b91f3f4583d547b36ef29a8d77753c0b95f5ca8e6bfc1e705b9130937b8daf74",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q0/demo_2_target.png",
+          "pixels_sha256": "49696857b0cf900a33095dd2cf47283cb921a2777ec93b97574a14f9f543592d",
+          "sha256": "3ff3d4ea480abece5d6b8684450b7bef960e5d3d87cc7dd18b809dd7379a3a60",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "camvid:test:0001TP_008550",
+      "task": "semantic_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "camvid_test",
+      "demo_global_indices": [
+        136,
+        148
+      ],
+      "demo_records": [
+        "camvid:test:Seq05VD_f02220",
+        "camvid:test:Seq05VD_f02580"
+      ],
+      "episode_pixels_sha256": "636d77a315c6cf4a4e03bb84b64ef5c0e8af312ec37dd19d6cb9fb763903b68d",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q1/demo_1_input.png",
+          "pixels_sha256": "bbfcfd4631e0f9f59afc79bde145ddf7ac2d26d4a69d12c78e84eb1478b4c5fd",
+          "sha256": "a2a1491ded9e9b81508293ea5de06ca9df0d79d713c82bf1496a66d11a1677d1",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q1/demo_1_target.png",
+          "pixels_sha256": "0e1ab033f9a4e78a667a37cef53101cf1d5c7aed3860f6a4c0841ed5e767a3e1",
+          "sha256": "8c74caae6570e8751339b3f2530ec2d6d72a5148cfcc9265e5d345c72776471c",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q1/demo_2_input.png",
+          "pixels_sha256": "57e9cf635ecd3ae0a2007a2b511d9e6101572689c60c89abfffe506f503ccfd0",
+          "sha256": "556dc58e5f3f7c95b5a103f5b21a137c5f9e9849acbc64c9a8277691d26a074b",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q1/demo_2_target.png",
+          "pixels_sha256": "e99910c2d9eb6f888bca2594b3e718e4bf16989379470adaa16aedea2c8a63fa",
+          "sha256": "6a894b706ae698630936b736fd5323e8ded8d0bb2cb4035b24fb7e7775baf517",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "camvid:test:0001TP_008580",
+      "task": "semantic_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "camvid_test",
+      "demo_global_indices": [
+        144,
+        75
+      ],
+      "demo_records": [
+        "camvid:test:Seq05VD_f02460",
+        "camvid:test:Seq05VD_f00390"
+      ],
+      "episode_pixels_sha256": "e400ea9be2bebff7856af9490ed2ac74f49144c996f759ec1da734b343cb2b86",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q2/demo_1_input.png",
+          "pixels_sha256": "a68ba0b39a5b2fdccc88f434372d5fbe99cd7425722bc708ede595ec4493ab1a",
+          "sha256": "d8719ed3d8015814fe19ed27de57bc8b709191066efe296ee62af449dda23a89",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q2/demo_1_target.png",
+          "pixels_sha256": "3a9bad8d232816222507a5c3e60a4c792d5cb8ad2f79ba9b57486a66e1fbebff",
+          "sha256": "d43bb1e9f633c876221bbd1d35b2c73230136f087f2cdf65fa83a9499818cfe9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q2/demo_2_input.png",
+          "pixels_sha256": "1b4e9637e4bd04744f28236f8d234c7f1cc62ca98d696ecc1f69d220d7287807",
+          "sha256": "244008a6bab8233add8d24d08b84ac5ea2d7305f04b1ca9fc1007a6896f6cbe0",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/semantic_segmentation/camvid_test/semantic_segmentation_q2/demo_2_target.png",
+          "pixels_sha256": "4836d703a9b564725b0e5ca7f339cf8ab10c2e8e2be3c77402d2f66477b0cee0",
+          "sha256": "20b02b180c927d9522c502e6cf94afc3a99123b74a1303d276955dec7fab0984",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "camvid:test:0001TP_008610",
+      "task": "semantic_segmentation"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        62,
+        66
+      ],
+      "demo_records": [
+        "div2k:val:0863",
+        "div2k:val:0867"
+      ],
+      "episode_pixels_sha256": "a0cf6e25c598d2437f1022b22d3c5f40c13e20fe1f34f20fe2fe5dffb8f26499",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q0/demo_1_input.png",
+          "pixels_sha256": "9836c5e86fe49d79e0d6c65a5682c17a369f3e9c5b2db79feacbfae0629dfc7d",
+          "sha256": "e3faf910f411ce8406d49207718975c202ca7f8bad68f242bccb5ffb4cccad8d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q0/demo_1_target.png",
+          "pixels_sha256": "ac25db25b71536c6403c83ce6906c195b15f16962787832da6119adcfea6c4a2",
+          "sha256": "70a21442b9be8cdbdb73958fa65e50b3e8c1f2f6dac5f26a3bbc3b10873460b6",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q0/demo_2_input.png",
+          "pixels_sha256": "5bbc81676298e866fb3f32f3d7e564935107f0e9f784a3e276543157fc050e7e",
+          "sha256": "0c27ebde8ad0c4a3ef55c851df94f978cc9e4e280f1457ce1f3086c7c809f888",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q0/demo_2_target.png",
+          "pixels_sha256": "455f3ec3bfe2fb33b7a1d5b8c38ea1fa0329d103d0b2203e24a18055188671c7",
+          "sha256": "d82276b6fe8a31883054b8fc0e7d8110db7e46dd852cdfc0b708e5f24b61525f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "div2k:val:0801",
+      "task": "super_resolution"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        66,
+        31
+      ],
+      "demo_records": [
+        "div2k:val:0867",
+        "div2k:val:0832"
+      ],
+      "episode_pixels_sha256": "058ff3beeee6c1dbfb03f99203126811b9ec0d7f27b6ac782305ce5147c1b32b",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q1/demo_1_input.png",
+          "pixels_sha256": "5bbc81676298e866fb3f32f3d7e564935107f0e9f784a3e276543157fc050e7e",
+          "sha256": "0c27ebde8ad0c4a3ef55c851df94f978cc9e4e280f1457ce1f3086c7c809f888",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q1/demo_1_target.png",
+          "pixels_sha256": "455f3ec3bfe2fb33b7a1d5b8c38ea1fa0329d103d0b2203e24a18055188671c7",
+          "sha256": "d82276b6fe8a31883054b8fc0e7d8110db7e46dd852cdfc0b708e5f24b61525f",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q1/demo_2_input.png",
+          "pixels_sha256": "2effe8912d2462e59684028aef81af928158049ab3a9fd18ca7bc4867dae10f3",
+          "sha256": "3e04b5053f48cd274d2eb3b8516009f19d7039913f9bfce3d9768b0bd3a7c0c8",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q1/demo_2_target.png",
+          "pixels_sha256": "831914f74d2847ace1ac56165cf6203808662e13e9a18620d3f255fe2faf10d7",
+          "sha256": "9e632e16b04db0b41455a2c974787d208e7ac2eaa499eac4403d5cba4932807d",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "div2k:val:0802",
+      "task": "super_resolution"
+    },
+    {
+      "cid": 0,
+      "dataset": "div2k_val",
+      "demo_global_indices": [
+        3,
+        14
+      ],
+      "demo_records": [
+        "div2k:val:0804",
+        "div2k:val:0815"
+      ],
+      "episode_pixels_sha256": "afffaf06c25eb09a181a5a8a42be137d7f9d2298de32db986f323e6c22261d13",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q2/demo_1_input.png",
+          "pixels_sha256": "ee5b5ba87dcb3d2a25ee4a3f30fe5af9628a8cd77b218830142830411a08f57a",
+          "sha256": "4bb78596375e3b8476c2fd7c354fb2217348134c5192f1ecd67e0d4a1003cecc",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q2/demo_1_target.png",
+          "pixels_sha256": "5aefc8e7330e5d89d83f28f9fd9ccfe1a37f535aca68a55a4931c3200f6a2b60",
+          "sha256": "d8ded663296edf967e4ff5e329f380039aa7d63c9d9d43e6c736f4cea66ecdfa",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q2/demo_2_input.png",
+          "pixels_sha256": "0857acd9cb74994940a9d27a26facf375a6cf79649920b946870f8299544b1d2",
+          "sha256": "f69167cd98617d175a3c4dbcf1dc0000813062703111cb36b6f2db210a549c36",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/super_resolution/div2k_val/super_resolution_q2/demo_2_target.png",
+          "pixels_sha256": "6755b1ed68ef46578cafd2347e1743ff1d670902b0f7cc340dd835f065fbc6c1",
+          "sha256": "e1fe345c08af9e0ffdc892bb902ecade2c7fbf6d1db69194347d5359a59d14c6",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "div2k:val:0803",
+      "task": "super_resolution"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test_geonet",
+      "demo_global_indices": [
+        262,
+        84
+      ],
+      "demo_records": [
+        "nyu_depth_v2:0637",
+        "nyu_depth_v2:0193"
+      ],
+      "episode_pixels_sha256": "09b44ad06088536b1a327695f02d107293b9a1d423defd3499993816ab963a10",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q0/demo_1_input.png",
+          "pixels_sha256": "05c37cee74085553696251f9f0ba9f7f56c374540db8165b795f7f1ffdac3d7a",
+          "sha256": "affa1f2046e004b35d0d8467f9f101f0841d97d8b6da2cec5dae229a37acd5c2",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q0/demo_1_target.png",
+          "pixels_sha256": "8d9494559aeb8859ecc50fd8d46230a292cc2d23d3f2b775ea5fdeaf6370966c",
+          "sha256": "0f980434c7cd9f8c50d9a821cd257ae4bbd39cb59a5153670da1fc44108e7e5a",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q0/demo_2_input.png",
+          "pixels_sha256": "ab301de6ef32175e51d41302677a34fb63c03bb2c3d9af042a5603789b28e9b2",
+          "sha256": "eff4498559af7b14a1de049cbf43ca25f4a9314c9d32af0fb615131a32b36498",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q0/demo_2_target.png",
+          "pixels_sha256": "6531cf73cf75cef71f256f1eedfe5d9dfb8904b5e2cc32dbb3e197618417d410",
+          "sha256": "668b6f509fb8f2ffdb006d373d9a62a41f1777813b456a62f22ebdaa8f3734f9",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 0,
+      "query_record": "nyu_depth_v2:0001",
+      "task": "surface_normals"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test_geonet",
+      "demo_global_indices": [
+        594,
+        363
+      ],
+      "demo_records": [
+        "nyu_depth_v2:1331",
+        "nyu_depth_v2:0838"
+      ],
+      "episode_pixels_sha256": "ed9332c6d259ccc07dd94656f9000a9171959158db310ef0f5bd7fc80580684f",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q1/demo_1_input.png",
+          "pixels_sha256": "a749059a6e9b62f99f0dae372d380249b78fdaf386656aae1621692bde25fa2e",
+          "sha256": "21b680dce3a7ccdf151bfb4b950f48adfea107b803a8b23a859f446dc8595e94",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q1/demo_1_target.png",
+          "pixels_sha256": "b73e436a35f46eb1f6d65bf2fabc95df7ef9aadba29d761e8321d9c94bf5e1d6",
+          "sha256": "4c2ef97fa9112efbc7f1b1ab95f9210de5e15604a7b8f357a1bdcef94991fcef",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q1/demo_2_input.png",
+          "pixels_sha256": "bda29ee8a8651db8d47351dc4e1aa2dbf90d1c47a8c6beb6cd68ba43a4e56d1b",
+          "sha256": "eb65e4091c1bbfb3c3e06a16d275aeeef492e23c0567cd82ac32a3aacab61d21",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q1/demo_2_target.png",
+          "pixels_sha256": "4bc89ff93c54d0db03c57fba2576701c17ffb71d5842203b695bc4101d4d5eb9",
+          "sha256": "e890a7f5a160e9c83b84d42b9c8c37ec4f07b1aec9d95643bcc1a0367d48e467",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 1,
+      "query_record": "nyu_depth_v2:0002",
+      "task": "surface_normals"
+    },
+    {
+      "cid": 0,
+      "dataset": "nyuv2_test_geonet",
+      "demo_global_indices": [
+        475,
+        582
+      ],
+      "demo_records": [
+        "nyu_depth_v2:1124",
+        "nyu_depth_v2:1299"
+      ],
+      "episode_pixels_sha256": "bad16575c2ff192398745eff05dd0a4f6343473e60f576e05f888eb86890aca2",
+      "files": {
+        "demo_1_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q2/demo_1_input.png",
+          "pixels_sha256": "2fff4df7b3f133347c8dcf26394be45ad21656909fac4b11d868ea395afe804e",
+          "sha256": "d0f9d7c8dbf6169dd68a5604a8d5d8789e4fdd8add087100b5c6f8b66433c310",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_1_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q2/demo_1_target.png",
+          "pixels_sha256": "873f0554afaa132ff868f16803ed2dd97c236ade558eb2f66c6400787ca1f218",
+          "sha256": "f7f37fe5a3194e7d75c6a2d355d87727e791d05acfed4d95959f8ced7fb5a4ad",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_input.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q2/demo_2_input.png",
+          "pixels_sha256": "0d63b23cf37898850eff7caf5d535a8a2af31559e6bca9f18ba8b52f15ed5235",
+          "sha256": "41fc68f910704c41e569642a05d7b345f2ed0f193684bd45c981c7e705450dd5",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        },
+        "demo_2_target.png": {
+          "path": "assets/bench-v2-examples/surface_normals/nyuv2_test_geonet/surface_normals_q2/demo_2_target.png",
+          "pixels_sha256": "fc510c6467301846551aff411ca27c26637a3601bbd88c14edf7ab872bc33d26",
+          "sha256": "bfad008191c8065ff77890fc33ed4a8d06cd827bef0555e0fdf049d24979dfd3",
+          "shape": [
+            256,
+            256,
+            3
+          ]
+        }
+      },
+      "q": 2,
+      "query_record": "nyu_depth_v2:0009",
+      "task": "surface_normals"
+    }
+  ],
+  "schema": "bench_v2_visualcloze_p2_gallery_demos_v1",
+  "selection": "q0, q1, and q2 from one named test pack per task; no score-based selection",
+  "source_run": "gs://kmh-gcp-us-west4/kristine/eval_runs/2026-10-07/visualcloze_bench_v2_p2_paper_v5e8",
+  "tasks": 13
+}

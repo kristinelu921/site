@@ -1,0 +1,78 @@
+{
+  "status": "PASS_FULL_CHECKPOINT_CPU_TOKEN_REFERENCE",
+  "created_utc": "2026-10-31T04:44:55.245430+00:00",
+  "model": "InstaManip-17B-2shot",
+  "source_commit": "be992025e226211352cbb6c0734f5243fe1972c4",
+  "weight_revision": "c63e249238beba8cc09342782a63322f0833d282",
+  "backend": "CPU_FP32",
+  "threads": 8,
+  "full_llm_parameters": 13360732160,
+  "tolerances": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "cases": [
+    {
+      "case": 0,
+      "task_fixture": "edge_detection",
+      "generated_tokens": 72,
+      "exact_tokens": true,
+      "exact_text": true,
+      "same_image_count": true,
+      "all_float_checks_pass": true,
+      "cache_tensors_checked": 80,
+      "max_hidden_abs": 1.9669532775878906e-05,
+      "max_feature_abs": 9.059906005859375e-06,
+      "max_cache_abs": 2.193450927734375e-05,
+      "reference_seconds": 244.25990676193032,
+      "port_seconds": 65.89508636994287,
+      "speedup_ratio": 3.7068000091937976,
+      "reference_forward_calls": 72,
+      "port_forward_calls": 8
+    },
+    {
+      "case": 1,
+      "task_fixture": "human_pose_2d",
+      "generated_tokens": 72,
+      "exact_tokens": true,
+      "exact_text": true,
+      "same_image_count": true,
+      "all_float_checks_pass": true,
+      "cache_tensors_checked": 80,
+      "max_hidden_abs": 3.337860107421875e-05,
+      "max_feature_abs": 9.298324584960938e-06,
+      "max_cache_abs": 2.002716064453125e-05,
+      "reference_seconds": 295.15250104200095,
+      "port_seconds": 77.33534225798212,
+      "speedup_ratio": 3.8165280248893834,
+      "reference_forward_calls": 72,
+      "port_forward_calls": 8
+    }
+  ],
+  "clip_grouping": {
+    "cases": 2,
+    "images_per_batch": 5,
+    "max_abs": 7.62939453125e-06,
+    "allclose": true
+  },
+  "timing": {
+    "successful_attempt_seconds": 1008.3593887950992,
+    "asset_staging_seconds": 186.09093590802513,
+    "asset_bytes": 58637034581,
+    "full_llm_load_seconds": 47.51778098498471,
+    "qualification_repeated_both_paths": true,
+    "prior_diagnostic_failures": 2,
+    "prior_failure_causes": [
+      "Observation hooks were bypassed by direct PEFT forward calls.",
+      "The replacement observation wrapper did not preserve the signature inspected by generation."
+    ],
+    "interpretation": "Single observations on two synthetic cases, not a throughput benchmark. Verification runs both implementations and compares intermediates; ordinary inference need not do that."
+  },
+  "limitations": [
+    "CPU FP32 on the pinned port runtime does not qualify CUDA FP16 or TPU BF16/SPMD.",
+    "No SDXL sampling or benchmark scores in this stage.",
+    "The five-image CLIP check does not qualify the padded 80-image TPU batch."
+  ],
+  "benchmark_scores_changed": false,
+  "diagnosis_sha256": "16742c3ea22ae46cc32b4b7c5ea3863766f7500c13cc630b7e951c504101dd08"
+}

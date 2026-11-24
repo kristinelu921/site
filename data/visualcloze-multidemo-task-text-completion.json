@@ -1,0 +1,71 @@
+{
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "runs": [
+    {
+      "baseline_bindings": "PASS",
+      "episodes": 221,
+      "output_verification": "PASS",
+      "p": 1,
+      "plan_identity": "374305e1628dcb2ca34f37d62dee5445c3747470d12d325ea5e9077afba23b85",
+      "scored_episodes": 221,
+      "scored_results_sha256": "0ca8e8541a88f2e89bd8b9878280fd511a4436fa6a066eaee4ba6b1663b5379f",
+      "scoring_recovery": null,
+      "scoring_units_verified": 29,
+      "task_text_wins": 7,
+      "worker_exit_code": 0
+    },
+    {
+      "baseline_bindings": "PASS",
+      "episodes": 221,
+      "output_verification": "PASS",
+      "p": 4,
+      "plan_identity": "b79fcfcd99f0eceb0e2c88b1a53b6dd9a7e3a19ecfc550f94cf97ceac246c738",
+      "scored_episodes": 221,
+      "scored_results_sha256": "be44fb8c605c248f71c9296756e550ea8a8f73d381ef8b6f7ed53d697b9ddd4b",
+      "scoring_recovery": {
+        "episodes": 221,
+        "generation_rerun": false,
+        "original_failure": "Final checksums-only gcloud storage rsync rejected an incorrectly constructed object path after generation completed.",
+        "original_worker_exit_code": 1,
+        "plan_identity": "b79fcfcd99f0eceb0e2c88b1a53b6dd9a7e3a19ecfc550f94cf97ceac246c738",
+        "recovery_basis": "All 221 archived outputs passed file/pixel hashes, exact raw384-to-256 resizing, prompts, and query/demo bindings. The original exit code is preserved. Scoring and final archival run locally.",
+        "remote_log_evidence": "Received container .../p4/results/ that does not contain object .../visualcloze_bench_v2_p1_p4_p8_task_text_v1/p4/r11/VC_real_f30_raw384.png.",
+        "verified_utc": "2026-10-27T03:37:39.478138+00:00"
+      },
+      "scoring_units_verified": 29,
+      "task_text_wins": 11,
+      "worker_exit_code": 1
+    },
+    {
+      "baseline_bindings": "PASS",
+      "episodes": 221,
+      "output_verification": "PASS",
+      "p": 8,
+      "plan_identity": "669a2fb74052331c8834e9da4b19ee03c57b5bf9f33e1ab6e01072edb4c83256",
+      "scored_episodes": 221,
+      "scored_results_sha256": "92221f0f1f9f9fc82e327a567216c1345bf7fdea5c316e7590b16a8ae38ec028",
+      "scoring_recovery": {
+        "episodes": 221,
+        "generation_rerun": false,
+        "original_failure": "Final checksums-only gcloud storage rsync rejected an incorrectly constructed object path after generation completed.",
+        "original_worker_exit_code": 1,
+        "plan_identity": "669a2fb74052331c8834e9da4b19ee03c57b5bf9f33e1ab6e01072edb4c83256",
+        "recovery_basis": "All 221 archived outputs passed file/pixel hashes, exact raw384-to-256 resizing, prompts, and query/demo bindings. The original exit code is preserved. Scoring and final archival run locally.",
+        "remote_log_evidence": "Received container .../p8/results/ that does not contain object .../visualcloze_bench_v2_pviews/bench_v2_val/deblurring_q13/query_target.png.",
+        "verified_utc": "2026-10-27T03:22:28.364939+00:00"
+      },
+      "scoring_units_verified": 29,
+      "task_text_wins": 8,
+      "worker_exit_code": 1
+    }
+  ],
+  "scope": [
+    1,
+    4,
+    8
+  ],
+  "status": "PASS",
+  "total_outputs": 663,
+  "total_scored": 663,
+  "verified_utc": "2026-10-27T03:41:09.564804+00:00"
+}

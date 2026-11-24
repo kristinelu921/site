@@ -1,0 +1,315 @@
+{
+  "updated_utc": "2026-10-30T22:29:12.538981+00:00",
+  "table_sha256": "b918c5c27de5a6b22bf88fb8a0791ce0558f560ffa7bfa5c9654febcce4842c8",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "supervision_version": 6,
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "recipe_count": 21,
+  "family_count": 11,
+  "category_count": 273,
+  "query_score_count": 4641,
+  "raw_candidate_episode_count": 6188,
+  "checks": {
+    "published_source_hash": 14,
+    "episode_count": 28,
+    "data_pack_id": 28,
+    "data_supervision_version": 28,
+    "data_manifest_file_sha256": 28,
+    "protocol": 28,
+    "scoring_release": 28,
+    "score_complete": 28,
+    "unit_results_hash": 145,
+    "unit_manifest_hash": 145,
+    "unit_unique_episode": 1105,
+    "merged_unit_episode_equal": 1105,
+    "unit_complete_coverage": 5,
+    "episode_identity": 6188,
+    "demo_count": 6188,
+    "query_excluded_from_demos": 6188,
+    "unique_demos": 6188,
+    "same_source_demos": 6188,
+    "shared_query_identity": 6188,
+    "shared_nonpalette_target": 4284,
+    "artifact_manifest_binding": 6188,
+    "same_P_demo_binding": 6188,
+    "task_query_coverage": 364,
+    "finite_primary": 364,
+    "published_category_mean": 273,
+    "published_copy_mean": 182
+  },
+  "issues": [],
+  "palette_target_variations": 658,
+  "secondary_NaN_to_null_serialization": {
+    "/controls/copy/psnr": 544,
+    "/readouts/VC@f30/real/psnr": 544,
+    "/readouts/VC@f30/real/nme_matched": 22
+  },
+  "sources": {
+    "visualcloze-p1": {
+      "status": "complete authoritative corrected-v3 validation",
+      "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-27/visualcloze_bench_v2_p1_p4_p8_task_text_v1/p1/results/scoring_parallel/results.json",
+          "sha256": "0ca8e8541a88f2e89bd8b9878280fd511a4436fa6a066eaee4ba6b1663b5379f"
+        }
+      ],
+      "units_verified": 29
+    },
+    "painter-p1": {
+      "status": "PASS phase-gated validation",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/surface_normals_sample_table/archive/painter/scored_eval_v2/results.json",
+          "sha256": "972da4c40253d9e5ea82554b932a631fb6236150135417f8796b6947d41727b3"
+        }
+      ],
+      "units_verified": 0
+    },
+    "vict-p1": {
+      "status": "authoritative corrected-v3 validation complete",
+      "note": "60 encoder updates per query; TPU port",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-20/vict_bench_v2_native_p1_noaug_full_ttt_q2_kristine/scoring/units_validation_abs/bench_v2_val/scored_eval_v2/results.json",
+          "sha256": "020b20c7a688b54a9254f8e0d0104358ae6796cd70fecac21208d740924919f6"
+        }
+      ],
+      "units_verified": 0
+    },
+    "genlv-p1": {
+      "status": "PASS phase-gated validation",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/surface_normals_sample_table/archive/genlv/scored_eval_v2/results.json",
+          "sha256": "f3c38a4ad1d3263d0530dcce0ee86a39b9d3bc2beda6ee0bdbfb8a8a5ac12f48"
+        }
+      ],
+      "units_verified": 0
+    },
+    "lavin-dit-p1": {
+      "status": "complete corrected validation",
+      "note": "TPU-native; CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/lavin_visualcloze_p1_corrected_v3/grid_inputs/lavin_p1/results.json",
+          "sha256": "cb7660614c105214b2f007f239ae589cdb68ec60bb38a9024821b659d0b21649"
+        }
+      ],
+      "units_verified": 0
+    },
+    "prompt-diffusion-p1": {
+      "status": "authoritative corrected-v3 validation complete",
+      "note": "Task-text recipe: 3 author labels + 10 approved prompts; 221-query repeat verified",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/promptdiffusion_bench_v2_p1_task_text_v1_rerun2/results/scoring_parallel/results.json",
+          "sha256": "3b60f161dadf1d94558dddead903cd5ff2db77358e487b695fbceb91fd6a5806"
+        }
+      ],
+      "units_verified": 29
+    },
+    "relation-adapter-p1": {
+      "status": "authoritative corrected-v3 validation complete",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/surface_normals_sample_table/archive/relation_adapter/scored_eval_v2/results.json",
+          "sha256": "45f09fbfed04ad53492da3704c7148ad83b451b253d784dbcc46425e74461dde"
+        }
+      ],
+      "units_verified": 0
+    },
+    "instamanip-p1": {
+      "status": "complete corrected validation",
+      "note": "Task-text recipe; released demo-specific checkpoint; TPU port",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/instamanip_validation_review/p1/scored_eval_v2/results.json",
+          "sha256": "4ffccbb6a598569e4403faec82ae7402934e6e9da5dae3f18f107626124a2b6d"
+        }
+      ],
+      "units_verified": 0
+    },
+    "improv-p1": {
+      "status": "authoritative corrected-v3 validation complete",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/surface_normals_sample_table/archive/improv/scored_eval_v2/results.json",
+          "sha256": "cf975a5469acbfdf93e5269fc24d777964db42a9ef710a55e3263b3fa4b4940e"
+        }
+      ],
+      "units_verified": 0
+    },
+    "analogist-p1": {
+      "status": "authoritative corrected-v3 validation complete \u00b7 8-candidate mean",
+      "note": "8-candidate mean; current-vision prompts",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_0/scored_eval_v2/results.json",
+          "sha256": "6aceea23c1662651cfe82884f490d78895e54f9cd3530fdaf81c836cf5b7cdd0"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_1/scored_eval_v2/results.json",
+          "sha256": "383d841744135939343ff0bcfbf77988c54ee4a6b67d0f9bca5d25808156bf5b"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_2/scored_eval_v2/results.json",
+          "sha256": "8707090935d394935d9ad6d77afa997f8c28b5dbc801b5cb83782e221822e34f"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_3/scored_eval_v2/results.json",
+          "sha256": "c0e06ad6e82c48d2118f2f5e29c8edb031f40d5cb27ecfe3ed525a2cdca2d3c3"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_4/scored_eval_v2/results.json",
+          "sha256": "db2373958f45fc20a772b449b57abf588cdb9e62d77034dfab1e927927fd5eda"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_5/scored_eval_v2/results.json",
+          "sha256": "8a2578b2e9d08983c6b5ca0524e918315a4ef16455c633570c5bcbe5006dfea0"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_6/scored_eval_v2/results.json",
+          "sha256": "b8143141f3a156266a6698c64a3734b033bb87a61d80388f50ad1361efb7f2d3"
+        },
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-19/analogist_bench_v2_p1_current_vision_v5p16_q8/corrected_v3_parallel_candidates/candidate_7/scored_eval_v2/results.json",
+          "sha256": "0968c139cb813ae72d11daf8dc287ee9b201e2878db6cff399dc6969d35454bc"
+        }
+      ],
+      "units_verified": 0
+    },
+    "lvm-p1": {
+      "status": "complete corrected validation",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-21/lvm_bench_v2_scores_p1_p2_p4/units/p1/scored_eval_v2/results.json",
+          "sha256": "e0873d4b78d6a56ee499b1a7f9de0910e40dbc67aef2650930437103a061bcbf"
+        }
+      ],
+      "units_verified": 0
+    },
+    "visualcloze-p2": {
+      "status": "complete authoritative corrected-v3 validation",
+      "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/visualcloze_bench_v2_p2_task_text_v1/results/scoring_parallel/results.json",
+          "sha256": "216c3db199400d51be2c4d1798523b9946c1bfe26a9c9553794d6897c303aa04"
+        }
+      ],
+      "units_verified": 29
+    },
+    "lavin-dit-p2": {
+      "status": "complete corrected validation",
+      "note": "TPU-native; CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/lavin_visualcloze_p1_corrected_v3/grid_inputs/lavin_p2/results.json",
+          "sha256": "50762660901801118a4fade8a7679f1b5205751244850f85f2d6b4e4b09c3e2e"
+        }
+      ],
+      "units_verified": 0
+    },
+    "instamanip-p2": {
+      "status": "complete corrected validation",
+      "note": "Task-text recipe; released demo-specific checkpoint; TPU port",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/instamanip_validation_review/p2/scored_eval_v2/results.json",
+          "sha256": "a1824675363460240ab910d6716306df3f0053c27e103f39087ddeecc6620a9f"
+        }
+      ],
+      "units_verified": 0
+    },
+    "lvm-p2": {
+      "status": "complete corrected validation",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-21/lvm_bench_v2_scores_p1_p2_p4/units/p2/scored_eval_v2/results.json",
+          "sha256": "2c19eb005faacb51717372e68dd9112588ed15baa853640a48ecaa089b03ce96"
+        }
+      ],
+      "units_verified": 0
+    },
+    "visualcloze-p4": {
+      "status": "complete authoritative corrected-v3 validation",
+      "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-27/visualcloze_bench_v2_p1_p4_p8_task_text_v1/p4/results/scoring_parallel/results.json",
+          "sha256": "be44fb8c605c248f71c9296756e550ea8a8f73d381ef8b6f7ed53d697b9ddd4b"
+        }
+      ],
+      "units_verified": 29
+    },
+    "lavin-dit-p4": {
+      "status": "complete corrected validation",
+      "note": "TPU-native; CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/lavin_visualcloze_p1_corrected_v3/grid_inputs/lavin_p4/results.json",
+          "sha256": "5eb2ecd2d6d79c70d5326b5a604b8e1b8e6233e3fb89166b9fec01831722a117"
+        }
+      ],
+      "units_verified": 0
+    },
+    "lvm-p4": {
+      "status": "complete corrected validation",
+      "note": "Native recipe",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-21/lvm_bench_v2_scores_p1_p2_p4/units/p4/scored_eval_v2/results.json",
+          "sha256": "a706ba69c7d61e5b2e105b2ad2a9912db52e20fadfcd13da0deaf8ea47a0374f"
+        }
+      ],
+      "units_verified": 0
+    },
+    "visualcloze-p8": {
+      "status": "complete authoritative corrected-v3 validation",
+      "note": "13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-27/visualcloze_bench_v2_p1_p4_p8_task_text_v1/p8/results/scoring_parallel/results.json",
+          "sha256": "92221f0f1f9f9fc82e327a567216c1345bf7fdea5c316e7590b16a8ae38ec028"
+        }
+      ],
+      "units_verified": 29
+    },
+    "lavin-dit-p8": {
+      "status": "complete corrected validation",
+      "note": "TPU-native; CUDA parity not claimed",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/lavin_visualcloze_p1_corrected_v3/grid_inputs/lavin_p8/results.json",
+          "sha256": "35375a70837e4f134a9b4d109420d1e314998bb17dba876f8a3a7512c1f2bf7e"
+        }
+      ],
+      "units_verified": 0
+    },
+    "lvm-p7": {
+      "status": "diagnostic legacy-plan snapshot \u00b7 not a phase gate",
+      "note": "Diagnostic legacy-plan snapshot",
+      "sources": [
+        {
+          "path": "/kmh-nfs-ssd-us-mount/code/kristine/lvm/eval_runs/2026-10-26/surface_normals_sample_table/archive/lvm/scored_eval_v2/results.json",
+          "sha256": "7ab4783cafcf23fbcdf4c252af6cfcbc836281f086d36717978aac15ae96ba69"
+        }
+      ],
+      "units_verified": 0
+    }
+  },
+  "limitations": [
+    "Read-only recomputation from archived scorer outputs, not fresh image inference or rerunning every metric.",
+    "Palette targets can differ by P; same-P demo bindings are checked separately.",
+    "This does not establish CUDA/TPU activation parity.",
+    "LVM P7 retains its diagnostic legacy-plan status despite the corrected scorer reporting authoritative metrics."
+  ]
+}

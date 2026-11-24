@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "selected_queries": 260,
+  "datasets": 26,
+  "tasks": 13,
+  "completed_baselines": [
+    "genlv",
+    "improv",
+    "lvm",
+    "painter",
+    "prompt_diffusion",
+    "visualcloze",
+    "analogist"
+  ],
+  "saved_predictions": 1820,
+  "run_specific_demo_pairs": 2080,
+  "original_reference_demo_pairs": 208,
+  "benchmark": "bench_v2_test",
+  "supervision_version": 6,
+  "benchmark_manifest_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "validation": {
+    "source_selection_files_copied_byte_for_byte": 936,
+    "input_images_matched_pinned_benchmark_rows": 260,
+    "model_inputs_targets_predictions_matched_saved_file_and_pixel_hashes": 5460,
+    "demo_pairs_matched_saved_normalized_array_hashes": 2080,
+    "missing_predictions": 0,
+    "missing_demo_pairs": 0
+  },
+  "models": {
+    "genlv": {
+      "label": "GenLV",
+      "predictions": 260,
+      "demos_per_query": 1
+    },
+    "improv": {
+      "label": "Improv",
+      "predictions": 260,
+      "demos_per_query": 1
+    },
+    "lvm": {
+      "label": "LVM",
+      "predictions": 260,
+      "demos_per_query": 1
+    },
+    "painter": {
+      "label": "Painter",
+      "predictions": 260,
+      "demos_per_query": 1
+    },
+    "prompt_diffusion": {
+      "label": "Prompt Diffusion",
+      "predictions": 260,
+      "demos_per_query": 1
+    },
+    "visualcloze": {
+      "label": "VisualCloze",
+      "predictions": 260,
+      "demos_per_query": 2
+    },
+    "analogist": {
+      "label": "Analogist",
+      "predictions": 260,
+      "demos_per_query": 1
+    }
+  },
+  "unique_image_files": 1902,
+  "image_bytes": 194311119
+}

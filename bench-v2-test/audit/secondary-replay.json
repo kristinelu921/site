@@ -1,0 +1,222 @@
+{
+  "datasets": 132,
+  "scalar_checks": 2636,
+  "mismatches": [
+    {
+      "model": "genlv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 31.398124718995145,
+      "replay": 31.398180629861997,
+      "absolute_error": 5.591086685186042e-05
+    },
+    {
+      "model": "genlv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.9165307660638712,
+      "replay": 0.9165302614709493,
+      "absolute_error": 5.045929218905343e-07
+    },
+    {
+      "model": "genlv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "genlv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    },
+    {
+      "model": "painter",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 32.552810567255975,
+      "replay": 32.55284879791958,
+      "absolute_error": 3.8230663605531845e-05
+    },
+    {
+      "model": "painter",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.9235536456116158,
+      "replay": 0.9235521931891926,
+      "absolute_error": 1.452422423220412e-06
+    },
+    {
+      "model": "painter",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "painter",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    },
+    {
+      "model": "improv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 17.75396268268934,
+      "replay": 17.753990391537545,
+      "absolute_error": 2.7708848204355263e-05
+    },
+    {
+      "model": "improv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.3758612438931001,
+      "replay": 0.3758540700943764,
+      "absolute_error": 7.173798723725255e-06
+    },
+    {
+      "model": "improv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "improv",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    },
+    {
+      "model": "prompt_diffusion",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 11.192601355368918,
+      "replay": 11.192606200353485,
+      "absolute_error": 4.844984566432231e-06
+    },
+    {
+      "model": "prompt_diffusion",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.07483099716012001,
+      "replay": 0.07482543357179537,
+      "absolute_error": 5.563588324639102e-06
+    },
+    {
+      "model": "prompt_diffusion",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "prompt_diffusion",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    },
+    {
+      "model": "visualcloze",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 26.36685480701045,
+      "replay": 26.36683486029817,
+      "absolute_error": 1.9946712281893042e-05
+    },
+    {
+      "model": "visualcloze",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.831165071285295,
+      "replay": 0.8311662888848049,
+      "absolute_error": 1.217599509883982e-06
+    },
+    {
+      "model": "visualcloze",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "visualcloze",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    },
+    {
+      "model": "lvm",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "psnr_ecc",
+      "saved": 20.126722545884874,
+      "replay": 20.126679109736237,
+      "absolute_error": 4.3436148636999405e-05
+    },
+    {
+      "model": "lvm",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "model",
+      "metric": "ssim_ecc",
+      "saved": 0.541863558395051,
+      "replay": 0.541870220724385,
+      "absolute_error": 6.662329333995132e-06
+    },
+    {
+      "model": "lvm",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "psnr_ecc",
+      "saved": 33.847119737031505,
+      "replay": 33.84701207792112,
+      "absolute_error": 0.00010765911038390641
+    },
+    {
+      "model": "lvm",
+      "pack_rel": "bench_v2_test/deblurring/realblur_j_test",
+      "arm": "copy",
+      "metric": "ssim_ecc",
+      "saved": 0.9694500124700683,
+      "replay": 0.9694496181666965,
+      "absolute_error": 3.9430337184231945e-07
+    }
+  ]
+}

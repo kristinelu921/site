@@ -1,0 +1,131 @@
+model,task,metric,direction,q,published,paired_control,measured_variant,signed_improvement,relative_improvement_pct,variant,status
+VisualCloze,colorization,lpips,lower,,0.2765399248284452,0.2765399248284452,0.2774563282728195,-0.0009164034443743252,-0.33138196770062295,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,deblurring,lpips,lower,,0.17029323691830917,0.17029323691830917,0.17139006625203526,-0.001096829333726096,-0.6440827325704381,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,denoising,lpips,lower,,0.29495329059222164,0.29495329059222164,0.3006209222709431,-0.005667631678721474,-1.921535327624834,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,edge_detection,ois_f,higher,,0.6748856503441056,0.6748856503441056,0.6792948354629901,0.00440918511888444,0.6533232876764112,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,face_landmarks,nme,lower,,0.3684182880140934,0.3684182880140934,0.38475303967487245,-0.01633475166077908,-4.43375157862799,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,human_pose_2d,pck_torso_0.2,higher,,0.2946078431372549,0.2946078431372549,0.2867647058823529,-0.007843137254901988,-2.6622296173045017,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,inpainting,lpips,lower,,0.09033320323728464,0.09033320323728464,0.09215919936404508,-0.0018259961267604458,-2.021400837479406,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,instance_segmentation,pq,higher,,0.06480372415172311,0.06480372415172311,0.07444002989746043,0.009636305745737317,14.869987600058462,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,relative_depth,delta1,higher,,0.9437944418711592,0.9437944418711592,0.9391379119992459,-0.00465652987191334,-0.4933839049402899,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,saliency_detection,max_fbeta,higher,,0.46661687576953337,0.46661687576953337,0.474173776846805,0.007556901077271638,1.619508738257479,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,semantic_segmentation,miou,higher,,0.28920848811604943,0.28920848811604943,0.29667285875753996,0.007464370641490525,2.580965271840614,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,super_resolution,lpips,lower,,0.200871525441899,0.200871525441899,0.20694547672482097,-0.006073951282921958,-3.023799052434047,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+VisualCloze,surface_normals,mean_deg,lower,,49.54843177039548,49.54843177039548,50.21062626269116,-0.6621944922956757,-1.3364590333842372,C1 · corrected prompt,Numerical failure confirmed · trace interrupted by resource loss
+Painter,colorization,lpips,lower,,0.32998670988223133,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,deblurring,lpips,lower,,0.2518609543057049,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,denoising,lpips,lower,,0.20463511084809022,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,edge_detection,ois_f,higher,,0.23849314949352377,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,face_landmarks,nme,lower,,0.43561971811015826,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,human_pose_2d,pck_torso_0.2,higher,,0.08529411764705883,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,inpainting,lpips,lower,,0.14673071047838995,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,instance_segmentation,pq,higher,,0.049660075009624896,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,relative_depth,delta1,higher,,0.4392633112465151,0.43926331124651513,0.9812559105118356,0.5419925992653205,123.38672167436118,Native-depth bridge,Native pose comparison scored · normals and TPU checks open
+Painter,saliency_detection,max_fbeta,higher,,0.586200512732342,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,semantic_segmentation,miou,higher,,0.49720730260335294,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,super_resolution,lpips,lower,,0.48190174558583426,,,,,,Native pose comparison scored · normals and TPU checks open
+Painter,surface_normals,mean_deg,lower,,135.2659184137341,,,,,,Native pose comparison scored · normals and TPU checks open
+GenLV-101 Huge,colorization,lpips,lower,,0.2087745298357571,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,deblurring,lpips,lower,,0.1474284632679294,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,denoising,lpips,lower,,0.5457839886931812,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,edge_detection,ois_f,higher,,0.6906554677109334,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,face_landmarks,nme,lower,,0.39131315350095985,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,human_pose_2d,pck_torso_0.2,higher,,0.1769607843137255,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,inpainting,lpips,lower,,0.056496632723685575,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,instance_segmentation,pq,higher,,0.012830160430098403,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,relative_depth,delta1,higher,,0.4392011305910339,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,saliency_detection,max_fbeta,higher,,0.7396690821061449,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,semantic_segmentation,miou,higher,,0.19125298620290307,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,super_resolution,lpips,lower,,0.32244207227931304,,,,,,CPU reference comparison scored · all gains and regressions available
+GenLV-101 Huge,surface_normals,mean_deg,lower,,127.50787176968024,,,,,,CPU reference comparison scored · all gains and regressions available
+LaVin-DiT,colorization,lpips,lower,,0.1755120881340083,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,deblurring,lpips,lower,,0.08128800243139267,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,denoising,lpips,lower,,0.6871481870903688,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,edge_detection,ois_f,higher,,0.31516171781433316,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,face_landmarks,nme,lower,,0.4416839385775303,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,human_pose_2d,pck_torso_0.2,higher,,0.26225490196078427,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,inpainting,lpips,lower,,0.14760422838084838,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,instance_segmentation,pq,higher,,0.214736584638605,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,relative_depth,delta1,higher,,0.8337204783325759,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,saliency_detection,max_fbeta,higher,,0.44094496635602126,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,semantic_segmentation,miou,higher,,0.38381027460210404,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,super_resolution,lpips,lower,,0.40740759933696075,,,,,,Authorized resources unavailable · replacement required
+LaVin-DiT,surface_normals,mean_deg,lower,,62.39630445113923,,,,,,Authorized resources unavailable · replacement required
+PromptDiffusion,colorization,lpips,lower,,0.6290003762525671,0.6278766656623167,0.6190610685769249,0.008815597085391813,1.4040332389311947,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,deblurring,lpips,lower,,0.634367988390081,0.6332628621774561,0.6569807494387907,-0.023717887261334614,-3.74534631318523,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,denoising,lpips,lower,,1.1461936761351192,1.147908957565532,1.1499755277353174,-0.0020665701697855088,-0.18002910040603393,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,edge_detection,ois_f,higher,,0.6220895226861497,0.6209969415143336,0.6757201137210123,0.05472317220667866,8.812148425921928,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,face_landmarks,nme,lower,,0.34092045351335365,0.3446074793056789,0.331628910155332,0.012978569150346897,3.7661890497839283,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,human_pose_2d,pck_torso_0.2,higher,,0.10833333333333332,0.11813725490196078,0.057352941176470586,-0.060784313725490195,-51.45228215767635,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,inpainting,lpips,lower,,0.1535830028793391,0.15325543656945229,0.16934141516685486,-0.016085978597402573,-10.496187905290219,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,instance_segmentation,pq,higher,,0.09292980974021398,0.08700119849926628,0.1322106100603046,0.04520941156103832,51.964125024576056,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,relative_depth,delta1,higher,,0.6949414755935249,0.6946155512354283,0.7543935036991188,0.059777952463690553,8.60590471338725,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,saliency_detection,max_fbeta,higher,,0.5538360243021998,0.5505559972901325,0.5250500044486054,-0.025505992841527103,-4.632769957473723,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,semantic_segmentation,miou,higher,,0.33991547403799316,0.34317002046305484,0.3776478212273048,0.034477800764249944,10.046856866379962,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,super_resolution,lpips,lower,,0.8415121471180635,0.8405157362713533,0.8818664410535026,-0.041350704782149306,-4.9196824042327725,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+PromptDiffusion,surface_normals,mean_deg,lower,,84.32162035719327,83.8801201738963,84.23752708053122,-0.35740690663492103,-0.4260925066558821,"A1 · range [−1,1]",Full sampling comparison passes on CPU · TPU parity remains open
+RelationAdapter,colorization,lpips,lower,,0.2874273850637324,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,deblurring,lpips,lower,,0.21285451072103836,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,denoising,lpips,lower,,0.32727708360728097,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,edge_detection,ois_f,higher,,0.47251306857154524,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,face_landmarks,nme,lower,,0.3006916560621294,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,human_pose_2d,pck_torso_0.2,higher,,0.11813725490196078,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,inpainting,lpips,lower,,0.14731951408526478,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,instance_segmentation,pq,higher,,0.046302655866613,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,relative_depth,delta1,higher,,0.5489666924920725,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,saliency_detection,max_fbeta,higher,,0.48914074753297015,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,semantic_segmentation,miou,higher,,0.24871834527453132,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,super_resolution,lpips,lower,,0.44216936388436484,,,,,,CPU BF16 runtime exceeds cap · full parity open
+RelationAdapter,surface_normals,mean_deg,lower,,71.11764008469575,,,,,,CPU BF16 runtime exceeds cap · full parity open
+InstaManip,colorization,lpips,lower,,0.5102750694050509,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,deblurring,lpips,lower,,0.45878804343588214,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,denoising,lpips,lower,,0.6019508225076339,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,edge_detection,ois_f,higher,,0.3306024467280498,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,face_landmarks,nme,lower,,0.33280327202387755,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,human_pose_2d,pck_torso_0.2,higher,,0.15343137254901962,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,inpainting,lpips,lower,,0.17339559951249292,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,instance_segmentation,pq,higher,,0.03078724316764774,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,relative_depth,delta1,higher,,0.44627930809420624,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,saliency_detection,max_fbeta,higher,,0.447357014033693,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,semantic_segmentation,miou,higher,,0.26436576963179337,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,super_resolution,lpips,lower,,0.5877770010162803,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+InstaManip,surface_normals,mean_deg,lower,,87.74280437803546,,,,,,CPU tokens and full diffusion pass · TPU parity remains open
+IMProv,colorization,lpips,lower,,0.6256856655373293,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,deblurring,lpips,lower,,0.5815043817548191,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,denoising,lpips,lower,,0.46420437623472777,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,edge_detection,ois_f,higher,,0.12978780470367943,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,face_landmarks,nme,lower,,0.49208302782389135,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,human_pose_2d,pck_torso_0.2,higher,,0.034313725490196074,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,inpainting,lpips,lower,,0.11274909403394251,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,instance_segmentation,pq,higher,,0.0014837343490186603,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,relative_depth,delta1,higher,,0.4332110365233144,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,saliency_detection,max_fbeta,higher,,0.5008876338814471,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,semantic_segmentation,miou,higher,,0.17363533302318143,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,super_resolution,lpips,lower,,0.60123311772066,,,,,,CPU reference comparison scored · all gains and regressions available
+IMProv,surface_normals,mean_deg,lower,,86.7299555914386,,,,,,CPU reference comparison scored · all gains and regressions available
+Analogist,colorization,lpips,lower,,0.41228671119931865,,,,,,Qualification timeout incomplete
+Analogist,deblurring,lpips,lower,,0.3544120242928757,,,,,,Qualification timeout incomplete
+Analogist,denoising,lpips,lower,,0.6395768393926761,,,,,,Qualification timeout incomplete
+Analogist,edge_detection,ois_f,higher,,0.31991367577591406,,,,,,Qualification timeout incomplete
+Analogist,face_landmarks,nme,lower,,0.2905799777885676,,,,,,Qualification timeout incomplete
+Analogist,human_pose_2d,pck_torso_0.2,higher,,0.16930147058823528,,,,,,Qualification timeout incomplete
+Analogist,inpainting,lpips,lower,,0.12106505056897945,,,,,,Qualification timeout incomplete
+Analogist,instance_segmentation,pq,higher,,0.011644098516430912,,,,,,Qualification timeout incomplete
+Analogist,relative_depth,delta1,higher,,0.47385618317713396,,,,,,Qualification timeout incomplete
+Analogist,saliency_detection,max_fbeta,higher,,0.3889184000510166,,,,,,Qualification timeout incomplete
+Analogist,semantic_segmentation,miou,higher,,0.21858814628481416,,,,,,Qualification timeout incomplete
+Analogist,super_resolution,lpips,lower,,0.5388024026418433,,,,,,Qualification timeout incomplete
+Analogist,surface_normals,mean_deg,lower,,97.20558342902682,,,,,,Qualification timeout incomplete
+LVM 7B,colorization,lpips,lower,,0.3281887059702593,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,deblurring,lpips,lower,,0.37514936661019044,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,denoising,lpips,lower,,0.1648102161638877,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,edge_detection,ois_f,higher,,0.28562757249335063,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,face_landmarks,nme,lower,,0.3337153632154548,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,human_pose_2d,pck_torso_0.2,higher,,0.30686274509803924,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,inpainting,lpips,lower,,0.13958257853108294,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,instance_segmentation,pq,higher,,0.0647661703232646,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,relative_depth,delta1,higher,,0.876156181157147,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,saliency_detection,max_fbeta,higher,,0.5376519159448264,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,semantic_segmentation,miou,higher,,0.272468983109384,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,super_resolution,lpips,lower,,0.5359629830893349,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"
+LVM 7B,surface_normals,mean_deg,lower,,98.29433675530059,,,,,,"Codec diagnostics complete · native P7 prepared, inference pending"

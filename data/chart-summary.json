@@ -1,0 +1,1224 @@
+{
+  "schema": "visualcloze_eval_charts_v1",
+  "scope": "test_s64_px256_v5 \u00b7 15 tasks \u00b7 real condition unless noted",
+  "metric_note": "Each task keeps the primary metric used on its model page; perceptual restoration rows display LPIPS (AlexNet implementation).",
+  "p1_available": {
+    "VisualCloze": false,
+    "LVM": true
+  },
+  "prompt_benefit": [
+    {
+      "model": "VisualCloze",
+      "scrambled": 9,
+      "grey": 14,
+      "copy": 12,
+      "total": 15
+    },
+    {
+      "model": "LVM",
+      "scrambled": 12,
+      "grey": 13,
+      "copy": 8,
+      "total": 15
+    },
+    {
+      "model": "Painter",
+      "scrambled": 10,
+      "grey": 11,
+      "copy": 4,
+      "total": 15
+    },
+    {
+      "model": "GenLV",
+      "scrambled": 9,
+      "grey": 8,
+      "copy": 9,
+      "total": 15
+    },
+    {
+      "model": "Prompt Diffusion",
+      "scrambled": 7,
+      "grey": 9,
+      "copy": 4,
+      "total": 15
+    },
+    {
+      "model": "IMProv",
+      "scrambled": 13,
+      "grey": 9,
+      "copy": 4,
+      "total": 15
+    },
+    {
+      "model": "RelationAdapter",
+      "scrambled": 2,
+      "grey": 13,
+      "copy": 8,
+      "total": 15
+    }
+  ],
+  "task_prompt_benefit": {
+    "tasks": [
+      "relative_depth",
+      "surface_normals",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "panoptic_segmentation",
+      "edge_detection",
+      "saliency_detection",
+      "human_pose_2d",
+      "face_landmarks",
+      "object_keypoints",
+      "colorization",
+      "denoising",
+      "deblurring",
+      "inpainting",
+      "super_resolution"
+    ],
+    "rows": [
+      {
+        "model": "VisualCloze",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": false,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": true,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": true,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": false,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": false,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "LVM",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": true,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": true,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": false,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": false,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": true,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "Painter",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": false,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": false,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": false,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": true,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": false,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "GenLV",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": true,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": true,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": true,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": false,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": false,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": true,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "Prompt Diffusion",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": false,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": true,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": false,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": true,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": false,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "IMProv",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": true,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": true,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": true,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": true,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": true,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": true,
+            "metric": "lpips_alex"
+          }
+        }
+      },
+      {
+        "model": "RelationAdapter",
+        "tasks": {
+          "relative_depth": {
+            "real_beats_scrambled": false,
+            "metric": "delta1_aligned_ssc"
+          },
+          "surface_normals": {
+            "real_beats_scrambled": false,
+            "metric": "mean_deg"
+          },
+          "semantic_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "miou"
+          },
+          "instance_segmentation": {
+            "real_beats_scrambled": true,
+            "metric": "pq_novoid"
+          },
+          "panoptic_segmentation": {
+            "real_beats_scrambled": false,
+            "metric": "pq_novoid"
+          },
+          "edge_detection": {
+            "real_beats_scrambled": false,
+            "metric": "ois_f"
+          },
+          "saliency_detection": {
+            "real_beats_scrambled": false,
+            "metric": "max_fbeta"
+          },
+          "human_pose_2d": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "face_landmarks": {
+            "real_beats_scrambled": false,
+            "metric": "nme_bbox_matched"
+          },
+          "object_keypoints": {
+            "real_beats_scrambled": false,
+            "metric": "pck_bbox_reject"
+          },
+          "colorization": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "denoising": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "deblurring": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "inpainting": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          },
+          "super_resolution": {
+            "real_beats_scrambled": false,
+            "metric": "lpips_alex"
+          }
+        }
+      }
+    ]
+  },
+  "rank_heatmap": {
+    "tasks": [
+      "relative_depth",
+      "surface_normals",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "panoptic_segmentation",
+      "edge_detection",
+      "saliency_detection",
+      "human_pose_2d",
+      "face_landmarks",
+      "object_keypoints",
+      "colorization",
+      "denoising",
+      "deblurring",
+      "inpainting",
+      "super_resolution"
+    ],
+    "rows": [
+      {
+        "model": "VisualCloze",
+        "tasks": {
+          "relative_depth": {
+            "rank": 1,
+            "score": 0.5289716145593278
+          },
+          "surface_normals": {
+            "rank": 1,
+            "score": 59.443392440001645
+          },
+          "semantic_segmentation": {
+            "rank": 2,
+            "score": 0.04549376221791178
+          },
+          "instance_segmentation": {
+            "rank": 4,
+            "score": 0.06432114033531419
+          },
+          "panoptic_segmentation": {
+            "rank": 4,
+            "score": 0.0633829727114219
+          },
+          "edge_detection": {
+            "rank": 2,
+            "score": 0.717729953514733
+          },
+          "saliency_detection": {
+            "rank": 3,
+            "score": 0.5814422637054124
+          },
+          "human_pose_2d": {
+            "rank": 2,
+            "score": 0.015625
+          },
+          "face_landmarks": {
+            "rank": 1,
+            "score": 0.46049261133872427
+          },
+          "object_keypoints": {
+            "rank": 2,
+            "score": 0.015625
+          },
+          "colorization": {
+            "rank": 2,
+            "score": 0.3011171722318977
+          },
+          "denoising": {
+            "rank": 2,
+            "score": 0.2617360650910996
+          },
+          "deblurring": {
+            "rank": 2,
+            "score": 0.1778924346435815
+          },
+          "inpainting": {
+            "rank": 2,
+            "score": 0.12062469593365677
+          },
+          "super_resolution": {
+            "rank": 1,
+            "score": 0.2153034289367497
+          }
+        }
+      },
+      {
+        "model": "LVM",
+        "tasks": {
+          "relative_depth": {
+            "rank": 2,
+            "score": 0.44922085859848304
+          },
+          "surface_normals": {
+            "rank": 5,
+            "score": 103.77341933543097
+          },
+          "semantic_segmentation": {
+            "rank": 1,
+            "score": 0.057890743931161316
+          },
+          "instance_segmentation": {
+            "rank": 1,
+            "score": 0.10223312809205229
+          },
+          "panoptic_segmentation": {
+            "rank": 1,
+            "score": 0.0980989788382245
+          },
+          "edge_detection": {
+            "rank": 5,
+            "score": 0.2549788959257392
+          },
+          "saliency_detection": {
+            "rank": 4,
+            "score": 0.5470217317722076
+          },
+          "human_pose_2d": {
+            "rank": 1,
+            "score": 0.03820853625541125
+          },
+          "face_landmarks": {
+            "rank": 5,
+            "score": 0.6990136081992706
+          },
+          "object_keypoints": {
+            "rank": 5,
+            "score": 0.00703125
+          },
+          "colorization": {
+            "rank": 4,
+            "score": 0.31964196893386543
+          },
+          "denoising": {
+            "rank": 3,
+            "score": 0.27133117435732856
+          },
+          "deblurring": {
+            "rank": 5,
+            "score": 0.4063665959984064
+          },
+          "inpainting": {
+            "rank": 4,
+            "score": 0.34847259195521474
+          },
+          "super_resolution": {
+            "rank": 5,
+            "score": 0.49151312140747905
+          }
+        }
+      },
+      {
+        "model": "Painter",
+        "tasks": {
+          "relative_depth": {
+            "rank": 6,
+            "score": 0.2342312700321228
+          },
+          "surface_normals": {
+            "rank": 7,
+            "score": 122.92442366958883
+          },
+          "semantic_segmentation": {
+            "rank": 4,
+            "score": 0.02695791342182016
+          },
+          "instance_segmentation": {
+            "rank": 2,
+            "score": 0.0754913043788984
+          },
+          "panoptic_segmentation": {
+            "rank": 2,
+            "score": 0.08121761365268806
+          },
+          "edge_detection": {
+            "rank": 6,
+            "score": 0.21635861147955285
+          },
+          "saliency_detection": {
+            "rank": 2,
+            "score": 0.6261042318354422
+          },
+          "human_pose_2d": {
+            "rank": 5,
+            "score": 0.01171875
+          },
+          "face_landmarks": {
+            "rank": 6,
+            "score": 0.7351146305159381
+          },
+          "object_keypoints": {
+            "rank": 6,
+            "score": 0.005208333333333333
+          },
+          "colorization": {
+            "rank": 5,
+            "score": 0.33977588289417326
+          },
+          "denoising": {
+            "rank": 1,
+            "score": 0.1993468488799408
+          },
+          "deblurring": {
+            "rank": 4,
+            "score": 0.22396303905406967
+          },
+          "inpainting": {
+            "rank": 5,
+            "score": 0.460568796726875
+          },
+          "super_resolution": {
+            "rank": 4,
+            "score": 0.4870848339051008
+          }
+        }
+      },
+      {
+        "model": "GenLV",
+        "tasks": {
+          "relative_depth": {
+            "rank": 7,
+            "score": 0.23256318325073866
+          },
+          "surface_normals": {
+            "rank": 6,
+            "score": 116.30412549030294
+          },
+          "semantic_segmentation": {
+            "rank": 6,
+            "score": 0.019939727923036114
+          },
+          "instance_segmentation": {
+            "rank": 5,
+            "score": 0.030356883859572928
+          },
+          "panoptic_segmentation": {
+            "rank": 5,
+            "score": 0.031986311617372074
+          },
+          "edge_detection": {
+            "rank": 1,
+            "score": 0.7177434716672657
+          },
+          "saliency_detection": {
+            "rank": 1,
+            "score": 0.7537502347475205
+          },
+          "human_pose_2d": {
+            "rank": 3,
+            "score": 0.015625
+          },
+          "face_landmarks": {
+            "rank": 4,
+            "score": 0.5731628616662101
+          },
+          "object_keypoints": {
+            "rank": 3,
+            "score": 0.015625
+          },
+          "colorization": {
+            "rank": 1,
+            "score": 0.19555482250871137
+          },
+          "denoising": {
+            "rank": 4,
+            "score": 0.33046116889454424
+          },
+          "deblurring": {
+            "rank": 1,
+            "score": 0.14996023994171992
+          },
+          "inpainting": {
+            "rank": 1,
+            "score": 0.06575715216968092
+          },
+          "super_resolution": {
+            "rank": 2,
+            "score": 0.33333096699789166
+          }
+        }
+      },
+      {
+        "model": "Prompt Diffusion",
+        "tasks": {
+          "relative_depth": {
+            "rank": 4,
+            "score": 0.24778871434133903
+          },
+          "surface_normals": {
+            "rank": 4,
+            "score": 99.37097601134286
+          },
+          "semantic_segmentation": {
+            "rank": 7,
+            "score": 0.015712123951635223
+          },
+          "instance_segmentation": {
+            "rank": 7,
+            "score": 0.0037045028429078296
+          },
+          "panoptic_segmentation": {
+            "rank": 7,
+            "score": 0.0039003061435358395
+          },
+          "edge_detection": {
+            "rank": 4,
+            "score": 0.3247463129058709
+          },
+          "saliency_detection": {
+            "rank": 7,
+            "score": 0.33285680316219446
+          },
+          "human_pose_2d": {
+            "rank": 6,
+            "score": 0.0078125
+          },
+          "face_landmarks": {
+            "rank": 2,
+            "score": 0.5192517492323296
+          },
+          "object_keypoints": {
+            "rank": 1,
+            "score": 0.0234375
+          },
+          "colorization": {
+            "rank": 6,
+            "score": 0.5981374098919332
+          },
+          "denoising": {
+            "rank": 7,
+            "score": 0.9047723985277116
+          },
+          "deblurring": {
+            "rank": 6,
+            "score": 0.6115428511984646
+          },
+          "inpainting": {
+            "rank": 7,
+            "score": 0.6227382528595626
+          },
+          "super_resolution": {
+            "rank": 7,
+            "score": 0.7643668483942747
+          }
+        }
+      },
+      {
+        "model": "IMProv",
+        "tasks": {
+          "relative_depth": {
+            "rank": 5,
+            "score": 0.24490743091058595
+          },
+          "surface_normals": {
+            "rank": 3,
+            "score": 94.24044021396611
+          },
+          "semantic_segmentation": {
+            "rank": 3,
+            "score": 0.0273918754210348
+          },
+          "instance_segmentation": {
+            "rank": 6,
+            "score": 0.007553683950148083
+          },
+          "panoptic_segmentation": {
+            "rank": 6,
+            "score": 0.006675261330738785
+          },
+          "edge_detection": {
+            "rank": 7,
+            "score": 0.10966543651335649
+          },
+          "saliency_detection": {
+            "rank": 6,
+            "score": 0.4387127216421213
+          },
+          "human_pose_2d": {
+            "rank": 7,
+            "score": 0.0
+          },
+          "face_landmarks": {
+            "rank": 7,
+            "score": 1.108293174606194
+          },
+          "object_keypoints": {
+            "rank": 7,
+            "score": 0.0
+          },
+          "colorization": {
+            "rank": 7,
+            "score": 0.6536805648356676
+          },
+          "denoising": {
+            "rank": 6,
+            "score": 0.513367572450079
+          },
+          "deblurring": {
+            "rank": 7,
+            "score": 0.6433250750415027
+          },
+          "inpainting": {
+            "rank": 6,
+            "score": 0.6094983527436852
+          },
+          "super_resolution": {
+            "rank": 6,
+            "score": 0.622664893977344
+          }
+        }
+      },
+      {
+        "model": "RelationAdapter",
+        "tasks": {
+          "relative_depth": {
+            "rank": 3,
+            "score": 0.2871573514524809
+          },
+          "surface_normals": {
+            "rank": 2,
+            "score": 91.40825562052116
+          },
+          "semantic_segmentation": {
+            "rank": 5,
+            "score": 0.026253175345905783
+          },
+          "instance_segmentation": {
+            "rank": 3,
+            "score": 0.0654917529985455
+          },
+          "panoptic_segmentation": {
+            "rank": 3,
+            "score": 0.06627226589272309
+          },
+          "edge_detection": {
+            "rank": 3,
+            "score": 0.48367406304700233
+          },
+          "saliency_detection": {
+            "rank": 5,
+            "score": 0.4604141937134485
+          },
+          "human_pose_2d": {
+            "rank": 4,
+            "score": 0.0140625
+          },
+          "face_landmarks": {
+            "rank": 3,
+            "score": 0.5524179187484891
+          },
+          "object_keypoints": {
+            "rank": 4,
+            "score": 0.013020833333333332
+          },
+          "colorization": {
+            "rank": 3,
+            "score": 0.3016906756674871
+          },
+          "denoising": {
+            "rank": 5,
+            "score": 0.38074215163942426
+          },
+          "deblurring": {
+            "rank": 3,
+            "score": 0.21611083077732474
+          },
+          "inpainting": {
+            "rank": 3,
+            "score": 0.24075931473635137
+          },
+          "super_resolution": {
+            "rank": 3,
+            "score": 0.4844388987403363
+          }
+        }
+      }
+    ]
+  },
+  "prompt_scaling": [
+    {
+      "model": "VisualCloze",
+      "points": [
+        {
+          "p": 1,
+          "tested": false,
+          "median_index": null,
+          "q1": null,
+          "q3": null
+        },
+        {
+          "p": 2,
+          "tested": true,
+          "median_index": 100.0,
+          "q1": 100.0,
+          "q3": 100.0
+        },
+        {
+          "p": 4,
+          "tested": true,
+          "median_index": 48.859443443324885,
+          "q1": 31.050701909454745,
+          "q3": 59.79228531200049
+        }
+      ],
+      "tasks_improved_p4_vs_p2": 2,
+      "tasks_total": 15,
+      "task_indices": [
+        {
+          "task": "relative_depth",
+          "index": 55.435433138521844,
+          "improved": false
+        },
+        {
+          "task": "surface_normals",
+          "index": 73.3699618336597,
+          "improved": false
+        },
+        {
+          "task": "semantic_segmentation",
+          "index": 47.303304197344744,
+          "improved": false
+        },
+        {
+          "task": "instance_segmentation",
+          "index": 19.02024766559645,
+          "improved": false
+        },
+        {
+          "task": "panoptic_segmentation",
+          "index": 21.48250718807772,
+          "improved": false
+        },
+        {
+          "task": "edge_detection",
+          "index": 23.437983478864883,
+          "improved": false
+        },
+        {
+          "task": "saliency_detection",
+          "index": 62.69786585400737,
+          "improved": false
+        },
+        {
+          "task": "human_pose_2d",
+          "index": 133.33333333333331,
+          "improved": true
+        },
+        {
+          "task": "face_landmarks",
+          "index": 103.63374323094288,
+          "improved": true
+        },
+        {
+          "task": "object_keypoints",
+          "index": 0.0,
+          "improved": false
+        },
+        {
+          "task": "colorization",
+          "index": 38.6634203400446,
+          "improved": false
+        },
+        {
+          "task": "denoising",
+          "index": 48.86546553107517,
+          "improved": false
+        },
+        {
+          "task": "deblurring",
+          "index": 46.47980604656178,
+          "improved": false
+        },
+        {
+          "task": "inpainting",
+          "index": 48.859443443324885,
+          "improved": false
+        },
+        {
+          "task": "super_resolution",
+          "index": 56.8867047699936,
+          "improved": false
+        }
+      ]
+    },
+    {
+      "model": "LVM",
+      "points": [
+        {
+          "p": 1,
+          "tested": false,
+          "median_index": null,
+          "q1": null,
+          "q3": null
+        },
+        {
+          "p": 2,
+          "tested": true,
+          "median_index": 100.0,
+          "q1": 100.0,
+          "q3": 100.0
+        },
+        {
+          "p": 4,
+          "tested": true,
+          "median_index": 94.84275911593144,
+          "q1": 89.03464107693867,
+          "q3": 101.6792905128919
+        }
+      ],
+      "tasks_improved_p4_vs_p2": 5,
+      "tasks_total": 15,
+      "task_indices": [
+        {
+          "task": "relative_depth",
+          "index": 93.04266257117311,
+          "improved": false
+        },
+        {
+          "task": "surface_normals",
+          "index": 101.54513052300814,
+          "improved": true
+        },
+        {
+          "task": "semantic_segmentation",
+          "index": 74.08841764573552,
+          "improved": false
+        },
+        {
+          "task": "instance_segmentation",
+          "index": 91.56248886051632,
+          "improved": false
+        },
+        {
+          "task": "panoptic_segmentation",
+          "index": 107.34790488826756,
+          "improved": true
+        },
+        {
+          "task": "edge_detection",
+          "index": 101.81345050277565,
+          "improved": true
+        },
+        {
+          "task": "saliency_detection",
+          "index": 103.04128266298464,
+          "improved": true
+        },
+        {
+          "task": "human_pose_2d",
+          "index": 122.73216788375012,
+          "improved": true
+        },
+        {
+          "task": "face_landmarks",
+          "index": 94.84275911593144,
+          "improved": false
+        },
+        {
+          "task": "object_keypoints",
+          "index": 20.202020202020204,
+          "improved": false
+        },
+        {
+          "task": "colorization",
+          "index": 96.30726025223129,
+          "improved": false
+        },
+        {
+          "task": "denoising",
+          "index": 86.01184247758428,
+          "improved": false
+        },
+        {
+          "task": "deblurring",
+          "index": 86.50679329336103,
+          "improved": false
+        },
+        {
+          "task": "inpainting",
+          "index": 92.73013369178284,
+          "improved": false
+        },
+        {
+          "task": "super_resolution",
+          "index": 99.58318851264595,
+          "improved": false
+        }
+      ]
+    }
+  ]
+}

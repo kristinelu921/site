@@ -1,0 +1,188 @@
+[
+  {
+    "model": "genlv",
+    "task": "edge_detection",
+    "dataset": "nyudv2_test_hed",
+    "q": 115,
+    "query_record": "nyu_depth_v2:0296",
+    "score": 0.002751662462737904,
+    "copy": 0.5277917885604761,
+    "prediction_stats": {
+      "all_black": false,
+      "near_black": true,
+      "black_pixel_fraction": 0.999786376953125,
+      "dark_pixel_fraction": 0.9998626708984375,
+      "decoder_black_fraction": 0.99993896484375,
+      "mean_intensity": 0.004185994466145833,
+      "spatial_std": 0.41374615064570575,
+      "flat": true,
+      "max_intensity": 60
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.744720458984375,
+      "dark_pixel_fraction": 0.7551422119140625,
+      "decoder_black_fraction": 0.7772064208984375,
+      "mean_intensity": 37.21949768066406,
+      "spatial_std": 78.11628052177142,
+      "flat": false,
+      "max_intensity": 255
+    }
+  },
+  {
+    "model": "painter",
+    "task": "surface_normals",
+    "dataset": "diode_val",
+    "q": 517,
+    "query_record": "diode:00022_00196_outdoor_300_040",
+    "score": 180.0,
+    "copy": 63.47140880354509,
+    "prediction_stats": {
+      "all_black": true,
+      "near_black": true,
+      "black_pixel_fraction": 1.0,
+      "dark_pixel_fraction": 1.0,
+      "decoder_black_fraction": 1.0,
+      "mean_intensity": 0.0,
+      "spatial_std": 0.0,
+      "flat": true,
+      "max_intensity": 0
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.8477783203125,
+      "dark_pixel_fraction": 0.8477783203125,
+      "decoder_black_fraction": 0.8477783203125,
+      "mean_intensity": 28.001129150390625,
+      "spatial_std": 70.83135025424036,
+      "flat": false,
+      "max_intensity": 255
+    }
+  },
+  {
+    "model": "improv",
+    "task": "colorization",
+    "dataset": "div2k_val",
+    "q": 19,
+    "query_record": "div2k:val:0820",
+    "score": 0.718259334564209,
+    "copy": 0.11636175215244293,
+    "prediction_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.000579833984375,
+      "dark_pixel_fraction": 0.0034027099609375,
+      "decoder_black_fraction": 0.0700531005859375,
+      "mean_intensity": 129.47399393717447,
+      "spatial_std": 83.01632519395643,
+      "flat": false,
+      "max_intensity": 255
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.0,
+      "dark_pixel_fraction": 0.0,
+      "decoder_black_fraction": 0.0126800537109375,
+      "mean_intensity": 139.17349751790366,
+      "spatial_std": 78.91170081144574,
+      "flat": false,
+      "max_intensity": 255
+    }
+  },
+  {
+    "model": "prompt_diffusion",
+    "task": "denoising",
+    "dataset": "sidd_val",
+    "q": 148,
+    "query_record": "sidd:validation:04_20",
+    "score": 1.372496485710144,
+    "copy": 0.2757861316204071,
+    "prediction_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.0001068115234375,
+      "dark_pixel_fraction": 0.000244140625,
+      "decoder_black_fraction": 0.004638671875,
+      "mean_intensity": 92.93552144368489,
+      "spatial_std": 46.34496733833943,
+      "flat": false,
+      "max_intensity": 255
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.0,
+      "dark_pixel_fraction": 0.0,
+      "decoder_black_fraction": 0.0,
+      "mean_intensity": 164.30636596679688,
+      "spatial_std": 19.051433063218493,
+      "flat": false,
+      "max_intensity": 255
+    }
+  },
+  {
+    "model": "visualcloze",
+    "task": "face_landmarks",
+    "dataset": "300w_test",
+    "q": 9,
+    "query_record": "300w:indoor_010",
+    "score": 0.5,
+    "copy": 0.273009406231267,
+    "prediction_stats": {
+      "all_black": false,
+      "near_black": true,
+      "black_pixel_fraction": 0.9975738525390625,
+      "dark_pixel_fraction": 0.9987945556640625,
+      "decoder_black_fraction": 1.0,
+      "mean_intensity": 0.006195068359375,
+      "spatial_std": 0.49156268680880283,
+      "flat": true,
+      "max_intensity": 20
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.9269866943359375,
+      "dark_pixel_fraction": 0.9269866943359375,
+      "decoder_black_fraction": 0.9269866943359375,
+      "mean_intensity": 9.351348876953125,
+      "spatial_std": 43.847906728874335,
+      "flat": false,
+      "max_intensity": 255
+    }
+  },
+  {
+    "model": "lvm",
+    "task": "deblurring",
+    "dataset": "realblur_j_test",
+    "q": 412,
+    "query_record": "realblur_j:test:scene108:12",
+    "score": 1.0937135219573975,
+    "copy": 0.09485144168138504,
+    "prediction_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.0,
+      "dark_pixel_fraction": 1.52587890625e-05,
+      "decoder_black_fraction": 0.0304718017578125,
+      "mean_intensity": 124.20691426595052,
+      "spatial_std": 55.52034270624297,
+      "flat": false,
+      "max_intensity": 253
+    },
+    "target_stats": {
+      "all_black": false,
+      "near_black": false,
+      "black_pixel_fraction": 0.0,
+      "dark_pixel_fraction": 9.1552734375e-05,
+      "decoder_black_fraction": 0.014495849609375,
+      "mean_intensity": 107.95928446451823,
+      "spatial_std": 55.4783390673824,
+      "flat": false,
+      "max_intensity": 250
+    }
+  }
+]

@@ -1,0 +1,1546 @@
+{
+  "schema": "visualcloze_task_text_validation_receipt_v1",
+  "status": "complete authoritative corrected-v3 validation",
+  "run_id": "visualcloze_bench_v2_p2_task_text_v1",
+  "completed_utc": "2026-10-27T00:25:12Z",
+  "demonstrations": 2,
+  "episodes": 221,
+  "scored_pairs": 442,
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "supervision_version": 6,
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "readout": "VC@f30",
+  "plan_identity": "511cc284cb65bd182522d7f2a2e92958c3a8c0792507e6b504857fcf88ea1938",
+  "baseline_plan_identity": "dc53ea663fe67d183bf290434f53f31ce4f0659c44d5f1e41e9881f5a8617e5b",
+  "model_revision": "59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+  "scored_results_sha256": "216c3db199400d51be2c4d1798523b9946c1bfe26a9c9553794d6897c303aa04",
+  "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+  "units": [
+    {
+      "group": "edge_q15",
+      "episodes": 1,
+      "run_identity": "ee868e8c9a2ffa19480449916a0038baf06fd737f48573fb6febfba7fc50b21d",
+      "producer_sha256": "68b9f7cc9498702988565d15fccb7e6b3fbeea3102ec0f45607a358b7f24b4f0",
+      "scored_results_sha256": "f936c10d38776489675933d5705736d322cef6c6f6b94c6728f0e618d7596870",
+      "score_manifest_sha256": "ac9cd4706f62bf7928f648160ce72300c5c8fe785b2e8bbdf35f10b5262cc26e"
+    },
+    {
+      "group": "edge_q02",
+      "episodes": 1,
+      "run_identity": "bf3be84f62bfcc2d761b5e82997d8f3e8ec93e2a719873ac4c28d0a26796255f",
+      "producer_sha256": "80f75633763e5437ae2ac64c2dcfe229132cacc5892bc40d2721be1847a6c37f",
+      "scored_results_sha256": "03b7b5fb32b4553fe8abe7468b0a1b52cae4df2bc67c10681cff7d18207c24ca",
+      "score_manifest_sha256": "a2431d08f2e06738d9153d76f00325ae148b0003647ca85ad35ca47641e6df22"
+    },
+    {
+      "group": "edge_q01",
+      "episodes": 1,
+      "run_identity": "14b17379a8eaa96bb57ce75d28e03c9049ac26308362b786c9bd85009b5075f2",
+      "producer_sha256": "9c10a0d4030ac48b142dcf8aad2354e0c0605fd62ca396528f6b643fa7143ce1",
+      "scored_results_sha256": "43cc0c67781bb4d2854c08dfd94fe57ed1581bffccfb52bf9871d5e9c0f9b8d1",
+      "score_manifest_sha256": "50f79b26740bd80b4ecb1a9750f0cb0f4858cac4a93031034fe107a836a48ae3"
+    },
+    {
+      "group": "edge_q06",
+      "episodes": 1,
+      "run_identity": "c7b27810aa6048715b70c5bb21d44510e542997337a2f27e97feffa70f9c8586",
+      "producer_sha256": "7eb9426c5dfb04d3013cb36318a5f81606f10982c9ba86837874c0b7fb36d1f8",
+      "scored_results_sha256": "4ba1a888a882327349f08a945eccd5b6dc17c4b61e506af50b88fe3dc34f44c3",
+      "score_manifest_sha256": "0ab44af31982989f626340adf2ca6d8f619c80ee5d000771c6b2edfc559430ee"
+    },
+    {
+      "group": "edge_q09",
+      "episodes": 1,
+      "run_identity": "d06e7db9238d863f5fea724c3061884b58423ff46f88fabe20852e035ff98e8c",
+      "producer_sha256": "fbdadffda33518da7add842fa6c6b6bc2ab1f7975c8640b17fac43253949a5bd",
+      "scored_results_sha256": "c605105be73a29265ab6ed0fae20bee7d0ff80c3e2bbca7d128ec9620baea993",
+      "score_manifest_sha256": "0a112387b82cccb11abd5a352c1d1ab67ecf5666bc7e77a8a4ec73339c8ac311"
+    },
+    {
+      "group": "edge_q14",
+      "episodes": 1,
+      "run_identity": "3e32d1dba7c0f1b410dc7634c97a9f24dc632230cf57457e5548bbc759cd9dfd",
+      "producer_sha256": "aca0c2aee60818cb6dc46062f29eeeffdfb77d60bfd7873b35480c8057f29728",
+      "scored_results_sha256": "8b8c32b99f06a560c698ff8adc980bf9c6862acb91ac80e64659da19f9f45d4a",
+      "score_manifest_sha256": "74a646ecc75fa9a69671b9841f46ddd07069cf52eca1ff32135e85c4b03e0029"
+    },
+    {
+      "group": "edge_q08",
+      "episodes": 1,
+      "run_identity": "39c1d5dd9ef34ece33156d4df5b64cb8dfe471f5a1aa6a36a33615a4618235cc",
+      "producer_sha256": "bb966864ec4e052c79810cbb650f97e3c1376c7dcae2493fb17bf2f3a28e4258",
+      "scored_results_sha256": "b2585000c79c8fb2a367ff0bf666ff93238615258520846040debce5196c0adb",
+      "score_manifest_sha256": "f8db3e0543214e6d5873398fa8089dee2bf0dbddbe2e9c44c14952753128e241"
+    },
+    {
+      "group": "edge_q10",
+      "episodes": 1,
+      "run_identity": "3fdf7fe87f0d4670a298fe0bf8c1a1c488fd8e53b0d9ffad6c08c1767401133d",
+      "producer_sha256": "232c4291f71afab169dcdb8d647dcdb580dd02666c4e9bd4bc9d34bcf3eaf61a",
+      "scored_results_sha256": "49cd19bad178892a42f7d7ad5d61737533134418f09db2fed1614e876f3f8840",
+      "score_manifest_sha256": "c5b2f3f7fa621799b3581c520602c35f47ca05b6ae5db0a96cac8a82294dfb0e"
+    },
+    {
+      "group": "deblurring",
+      "episodes": 17,
+      "run_identity": "c3fad3f787e15c355639420b0f15d5940809082c294415b5553e8faf2a84738e",
+      "producer_sha256": "72f29c3accd4c05b3357240904cf2b7b610e2912b4940e16ca50d2bd3995a2e4",
+      "scored_results_sha256": "9c6db28dedf769ff9b1c50cdcf2487e4e3c3edadd86812dd71c514d2923a0949",
+      "score_manifest_sha256": "6473196388aee49cbe3efac3863284537e0b2b8c65795aa114ebfb0b71e19177"
+    },
+    {
+      "group": "colorization",
+      "episodes": 17,
+      "run_identity": "66266efe897ad3075c5cab327c7002ad3001f61042bb4515da6d393222e9ccfb",
+      "producer_sha256": "c9bd262003ff08c546e95c207bfdbc3fc1fc68b9e542782b3043d01e72cdb917",
+      "scored_results_sha256": "e9f1589a5366d47ff8d3741e325bbed48fa9be4e28c17fa8b6722600c4f5ffc6",
+      "score_manifest_sha256": "97bceeeb652a2fc120301d0d942a80f022a932aa3fd1164e23622cdfc9d9221f"
+    },
+    {
+      "group": "denoising",
+      "episodes": 17,
+      "run_identity": "27102049ed2e3df2e926864f234eb63970cbcfe5d0edc7f13155528adc6c1ea8",
+      "producer_sha256": "03bd4a43e93c81906b5e9eb44fe7bb44c47731917b4c89209be803bd5a9b1e31",
+      "scored_results_sha256": "2466a56033aebd97869aca93ceb63649532902b83251916ce81af2f552337bb9",
+      "score_manifest_sha256": "fb466a5e4203c6fdb677998cbb1c3b179cb2dc592742814d41bc2167ebaacfe8"
+    },
+    {
+      "group": "edge_q05",
+      "episodes": 1,
+      "run_identity": "ae418fb164f4180a242b8096ba4ea8c6d34c6e53d8e1aa0cd24a2d8a43e3ed75",
+      "producer_sha256": "ff9ec0c0df078861b2eb92b47538f7cf9ce4c6d2ea86d0d9ac1fdabce8bf82c7",
+      "scored_results_sha256": "2a127cf3f6f97fa6a66ec03730b1e9f4527cca8df179a0ab02209ef85156b5d4",
+      "score_manifest_sha256": "d017a86291e9b8ddda03c37c0216106d6e9064efa00d1ae758067eded9df8a44"
+    },
+    {
+      "group": "face_landmarks",
+      "episodes": 17,
+      "run_identity": "18032e52ee7195b3314df2e1b457b04b9c46c5badb7ac64f838a7b00e1279e98",
+      "producer_sha256": "033d9575761b6eb6731ccbf7dabf6d9a6693f4a0c384f54690cb017e2c2bfb81",
+      "scored_results_sha256": "4c87b1c9e82f82ce653bc28d9611738bfe25a4651081d910bd297bce6e042795",
+      "score_manifest_sha256": "4696f1304ba402a48c01a29f18a3c702b4041a23cc76eaba26f8c604d9079466"
+    },
+    {
+      "group": "human_pose_2d",
+      "episodes": 17,
+      "run_identity": "b9fd6138b42e47860e442aff5cb43162ecc2ea3b74320384b6e4ab5ba9b0c44c",
+      "producer_sha256": "3225fef0859a46708db6847b1b7397734da001a0412e3b01ec973507dd8970f0",
+      "scored_results_sha256": "d60a89e0c67f9987535dcc06bad46d7ab8b748ae20e1f9c8d535b5f4474cc7ab",
+      "score_manifest_sha256": "61f917dd57e4c21fb128b567cd6236934d8afbae76ebf75fe869e5f4f821975f"
+    },
+    {
+      "group": "relative_depth",
+      "episodes": 17,
+      "run_identity": "a33d0a2167e2451f7d6eae5f7c590e48ec884456348279f363d4aeb772464832",
+      "producer_sha256": "d500a0c2eca6fe6e4402a2de4741b3cee07ec359b007d973c4f10981c87a5f63",
+      "scored_results_sha256": "67b45d0aa498a8e1f47014b5e5ea12c726d18bcc9e83acc789660e5c2a6b9f9a",
+      "score_manifest_sha256": "f817af3966d40eb0ab60201db129db355dc6ffa462de9ab9360924fd37987220"
+    },
+    {
+      "group": "inpainting",
+      "episodes": 17,
+      "run_identity": "b27f0d8decda08417fd4c2753307aaf1671e15de43af4c2b8f366f2bba6ad41b",
+      "producer_sha256": "82fde6c3d5a513cf52cf4b6e9527025a5eb3bd29c5b0f427c2cf041885c44a9a",
+      "scored_results_sha256": "ea742d8043fe89a3ac338fb66b29ee75106aadbdc3d403ca750e29f6eed1337e",
+      "score_manifest_sha256": "fee3c4e27423999aae2ce33d25dd35d6950638a0053f618ad739368753956abf"
+    },
+    {
+      "group": "edge_q13",
+      "episodes": 1,
+      "run_identity": "d14d5da2bc1b2831182fb9386929f61f109db0bc99730af3b6f48727a3995c29",
+      "producer_sha256": "a9948a93e67ac07dab1de1fe675c05973e824a3018c5295c2ee5a6a2bd5d7f2e",
+      "scored_results_sha256": "66dcb83cbe7bc7ab04e04446727bb24f87240372904695bf5374ffad68595dbc",
+      "score_manifest_sha256": "7ab632c16ba925aee2e59ab018027a55d9eda199790f3ec777f3a68ee676fb5e"
+    },
+    {
+      "group": "edge_q12",
+      "episodes": 1,
+      "run_identity": "ce43f245acf8f085ece2426a80d8b5eadbb136376e0b604c1620b0bc4d9ce895",
+      "producer_sha256": "ca5f3c08776f44c71e7d5fd7cfaa1b8643556ac07733a0d904486d446643306a",
+      "scored_results_sha256": "05809f0a1237a1bc5b6a4d62d26ffebc31a8abbce52ea9d6c5d45f6b3fabc535",
+      "score_manifest_sha256": "7601b9a70a984cfb6a714f76f9dc0e93fdde48a5fbd2cd92b7e42c37a95aa23a"
+    },
+    {
+      "group": "saliency_detection",
+      "episodes": 17,
+      "run_identity": "90f8b6c1fc369726757ae53f64373171c04ce79ec9b36e04fed6b7691ab85817",
+      "producer_sha256": "5b399a0701bfaed054dca34848cf5585fb363dc5a08051a9febca0b8384726f5",
+      "scored_results_sha256": "7a6126654e9c08fcbcc94828e4e544e6294f7030ca61ebacc9a08740f13c541f",
+      "score_manifest_sha256": "964bfd469efd971b93e2664620a42cb81f66621903e95cd08a43f82c51e633c7"
+    },
+    {
+      "group": "surface_normals",
+      "episodes": 17,
+      "run_identity": "de53eacea3239f260f9f446b5f48b8d17d135536daf2b945f55061b6b1d3c5cf",
+      "producer_sha256": "60751cd6aac2a81896bf87e74455735379b77fa243314e3ff35b7e7eca63c9d1",
+      "scored_results_sha256": "5a3b1ae8a8ca0e1cdb4284d13b0d4ba36ef62574c112267e25362be614be9fb3",
+      "score_manifest_sha256": "e439aad786a11e03ab5100cbbba8bd29ec188a2b2347acb9235aec1d5ca8c98b"
+    },
+    {
+      "group": "super_resolution",
+      "episodes": 17,
+      "run_identity": "ab705bbf0a33d53b65b7f7f188e8a2efbc95f8734ce2e5451ecd50bfc6675515",
+      "producer_sha256": "815b0bffd1a3d225a08ecd21f58b330902cb7573818b2981b73072e3334b264f",
+      "scored_results_sha256": "c4af88d4f2de2bf3958c4099d1ae92f974b329f51493254f0007bbcc110d2aa2",
+      "score_manifest_sha256": "20b49a1dcc02689e2d95e438e0a6be6975bed15e68dd5e537c49b89029448043"
+    },
+    {
+      "group": "edge_q11",
+      "episodes": 1,
+      "run_identity": "9b97b5ec267490eae64fa18a92e83bced8ac429f64fd92d2279842c56597cc1f",
+      "producer_sha256": "a2b0787cb86e0b32b0c982f8cad9a1425a1b2cd5033ff749f0cf8924423a0b33",
+      "scored_results_sha256": "b2ae30915ec304af8f1c40eb0dc07ba9437d4b4da68046525ea87128b237634f",
+      "score_manifest_sha256": "744f7cb2a6b9492a52976b9c0cf8330bd2f920b5ddddf356bf187112b7e153b7"
+    },
+    {
+      "group": "edge_q07",
+      "episodes": 1,
+      "run_identity": "0fc620ac9de3fd60fef3f1b7d0a0bb8b093478d92732f362baf1f43f51f7828e",
+      "producer_sha256": "9ccf3b7c6f902e94e023074fff903b957aa04de0bb34fdb8077c416e440ef6e2",
+      "scored_results_sha256": "0b156dca3660ab5deb0cea031f006e9222860865becc634130353148216faf82",
+      "score_manifest_sha256": "f5d31361fd9fb2b4788749dcea0f6305ba69dd3299a147e8b9bd00f7a9573952"
+    },
+    {
+      "group": "instance_segmentation",
+      "episodes": 17,
+      "run_identity": "3d024d66de3181649f09b4313a4b322cba1f3596426cc9f3af35c3f26bf3ebc2",
+      "producer_sha256": "2788119de07071ebd7174dcd220bd1a44403b5f05eaa10fc07665c7853303051",
+      "scored_results_sha256": "5d8b5c6d1208c45ad60a73f2191a4255cc7552dc1d79101604d48fe5c856e01a",
+      "score_manifest_sha256": "ef4fa843a11896e2b740aa54f738801f7e862aac8a110a7db9e4f19da6a9ca22"
+    },
+    {
+      "group": "edge_q04",
+      "episodes": 1,
+      "run_identity": "61efb7f98f11e4df4fcbbdc23556762eef402fbd7f5f8b1d82ff7da65347d122",
+      "producer_sha256": "7c040ddfd3e2b0c10081b4c5e0440b19aba602385ff6da4123992d9bdff7d2dd",
+      "scored_results_sha256": "4d785e3b6198bcfdee23cd6432f9a0db605a82e24c4153ac3b76578f2a306930",
+      "score_manifest_sha256": "55d17db1d17f12128766f32c5e187002cde73772d8521de75b66328aef2894f1"
+    },
+    {
+      "group": "semantic_segmentation",
+      "episodes": 17,
+      "run_identity": "7762b97fd61a8d370c0515154f8b9f8ccfdb69f632bcfaa8b7d214b38f751d45",
+      "producer_sha256": "9e366c3c7f21a99a56bb8cb02bf8c11b5b84b66340572a41df51b165809e1b4f",
+      "scored_results_sha256": "2d4b74a2f74575fb92c6c909b52c8db7567af838b0989c2c5a16164875311d4f",
+      "score_manifest_sha256": "0376c7f5572a98e7e1468a6a2910971ef04f57e8c376afddd43bbc5f9bee4e50"
+    },
+    {
+      "group": "edge_q00",
+      "episodes": 1,
+      "run_identity": "2c75b9c7412a6bfd8b8726022c83c007b985eec2bbbad360669f718b4aa8eb08",
+      "producer_sha256": "7950930ae22d37b4a79620910ccb711a42650b7407cd9041421b7b8bcc21dac2",
+      "scored_results_sha256": "424060b1c34fa8cd669fa792444b812c6d6f36ca5fc291ba3dfc33282aa08858",
+      "score_manifest_sha256": "35f844a5af826604b1ef4194efaba3b7e6fae0e004db549dde0e1ea9dc5b1a45"
+    },
+    {
+      "group": "edge_q03",
+      "episodes": 1,
+      "run_identity": "29b4f6886d9af33a4e0e90aa4cb9bb881293b38d55c59b305bec0e7ed5b0ff15",
+      "producer_sha256": "2c020878f5df3fad445423bb36ef49aad8b5ee3260d79a06bc38b2170aa399b2",
+      "scored_results_sha256": "4cf072665752b413ac61760155904433033fdd26afac2325cec3eaf28207b82e",
+      "score_manifest_sha256": "1fd1ab53f8d3e9627bcfbe39a23905d42c148aef6b1a602a7189dfb9f6babdc9"
+    },
+    {
+      "group": "edge_q16",
+      "episodes": 1,
+      "run_identity": "3e27f9cee7305956e059d08c174b148890111c1acb636f682607d5214962d6bd",
+      "producer_sha256": "22d5096a8c89b8c0d21b6c2b2cbe1fc4ad5a8976b41f494c06418135e6b2566c",
+      "scored_results_sha256": "e2c879b850ceaf34d45078c8a8eca0a337ff6bb6b27c9d7da506b43220c1b9a7",
+      "score_manifest_sha256": "bc2b9caee3380b907ba876e898f50e613201589470ce351ae69a6c74d4bcf5dc"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "colorization",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.2765399248284452,
+      "copy_score": 0.26197738792089853,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a grayscale photograph to [IMAGE2] a naturally colored photograph of the same scene.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "div2k:val:0852",
+          "score": 0.23673921823501587
+        },
+        {
+          "q": 1,
+          "query_record": "div2k:val:0815",
+          "score": 0.16634808480739594
+        },
+        {
+          "q": 2,
+          "query_record": "div2k:val:0891",
+          "score": 0.1804564893245697
+        },
+        {
+          "q": 3,
+          "query_record": "div2k:val:0806",
+          "score": 0.10472219437360764
+        },
+        {
+          "q": 4,
+          "query_record": "div2k:val:0801",
+          "score": 0.3575705289840698
+        },
+        {
+          "q": 5,
+          "query_record": "div2k:val:0866",
+          "score": 0.29206418991088867
+        },
+        {
+          "q": 6,
+          "query_record": "div2k:val:0869",
+          "score": 0.2095593810081482
+        },
+        {
+          "q": 7,
+          "query_record": "div2k:val:0868",
+          "score": 0.6513729691505432
+        },
+        {
+          "q": 8,
+          "query_record": "div2k:val:0854",
+          "score": 0.2017352432012558
+        },
+        {
+          "q": 9,
+          "query_record": "div2k:val:0826",
+          "score": 0.2282511442899704
+        },
+        {
+          "q": 10,
+          "query_record": "div2k:val:0898",
+          "score": 0.31959742307662964
+        },
+        {
+          "q": 11,
+          "query_record": "div2k:val:0846",
+          "score": 0.14206647872924805
+        },
+        {
+          "q": 12,
+          "query_record": "div2k:val:0851",
+          "score": 0.17011085152626038
+        },
+        {
+          "q": 13,
+          "query_record": "div2k:val:0817",
+          "score": 0.3729182779788971
+        },
+        {
+          "q": 14,
+          "query_record": "div2k:val:0856",
+          "score": 0.407649427652359
+        },
+        {
+          "q": 15,
+          "query_record": "div2k:val:0865",
+          "score": 0.1654207855463028
+        },
+        {
+          "q": 16,
+          "query_record": "div2k:val:0812",
+          "score": 0.49459603428840637
+        }
+      ]
+    },
+    {
+      "task": "deblurring",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.17029323691830917,
+      "copy_score": 0.20889017424162695,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a blurred photograph to [IMAGE2] a sharp photograph of the same scene.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "gopro:train:GOPR0881_11_00:000077",
+          "score": 0.2399832010269165
+        },
+        {
+          "q": 1,
+          "query_record": "gopro:train:GOPR0857_11_00:000008",
+          "score": 0.11486156284809113
+        },
+        {
+          "q": 2,
+          "query_record": "gopro:train:GOPR0871_11_01:000235",
+          "score": 0.06828532367944717
+        },
+        {
+          "q": 3,
+          "query_record": "gopro:train:GOPR0384_11_01:000970",
+          "score": 0.18162046372890472
+        },
+        {
+          "q": 4,
+          "query_record": "gopro:train:GOPR0884_11_00:000230",
+          "score": 0.18725869059562683
+        },
+        {
+          "q": 5,
+          "query_record": "gopro:train:GOPR0385_11_00:000171",
+          "score": 0.12797781825065613
+        },
+        {
+          "q": 6,
+          "query_record": "gopro:train:GOPR0868_11_02:000721",
+          "score": 0.4188894033432007
+        },
+        {
+          "q": 7,
+          "query_record": "gopro:train:GOPR0386_11_00:000297",
+          "score": 0.10633673518896103
+        },
+        {
+          "q": 8,
+          "query_record": "gopro:train:GOPR0374_11_02:000633",
+          "score": 0.10604093968868256
+        },
+        {
+          "q": 9,
+          "query_record": "gopro:train:GOPR0372_07_00:000068",
+          "score": 0.14133034646511078
+        },
+        {
+          "q": 10,
+          "query_record": "gopro:train:GOPR0378_13_00:000088",
+          "score": 0.12038743495941162
+        },
+        {
+          "q": 11,
+          "query_record": "gopro:train:GOPR0379_11_00:000224",
+          "score": 0.11317501962184906
+        },
+        {
+          "q": 12,
+          "query_record": "gopro:train:GOPR0380_11_00:000177",
+          "score": 0.3361058533191681
+        },
+        {
+          "q": 13,
+          "query_record": "gopro:train:GOPR0477_11_00:000021",
+          "score": 0.19714407622814178
+        },
+        {
+          "q": 14,
+          "query_record": "gopro:train:GOPR0384_11_03:002116",
+          "score": 0.1166960597038269
+        },
+        {
+          "q": 15,
+          "query_record": "gopro:train:GOPR0384_11_02:001354",
+          "score": 0.1112387552857399
+        },
+        {
+          "q": 16,
+          "query_record": "gopro:train:GOPR0868_11_01:000285",
+          "score": 0.20765334367752075
+        }
+      ]
+    },
+    {
+      "task": "denoising",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.29495329059222164,
+      "copy_score": 0.7446603214039522,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a noisy photograph to [IMAGE2] a clean photograph of the same scene.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "sidd:validation:02_05",
+          "score": 0.3587125539779663
+        },
+        {
+          "q": 1,
+          "query_record": "sidd:validation:06_21",
+          "score": 0.12066517770290375
+        },
+        {
+          "q": 2,
+          "query_record": "sidd:validation:20_20",
+          "score": 0.1884106695652008
+        },
+        {
+          "q": 3,
+          "query_record": "sidd:validation:32_10",
+          "score": 0.7465691566467285
+        },
+        {
+          "q": 4,
+          "query_record": "sidd:validation:21_22",
+          "score": 0.22038161754608154
+        },
+        {
+          "q": 5,
+          "query_record": "sidd:validation:26_17",
+          "score": 0.11668933928012848
+        },
+        {
+          "q": 6,
+          "query_record": "sidd:validation:27_01",
+          "score": 0.7096574306488037
+        },
+        {
+          "q": 7,
+          "query_record": "sidd:validation:01_02",
+          "score": 0.5738754868507385
+        },
+        {
+          "q": 8,
+          "query_record": "sidd:validation:00_12",
+          "score": 0.4828145205974579
+        },
+        {
+          "q": 9,
+          "query_record": "sidd:validation:25_28",
+          "score": 0.13862070441246033
+        },
+        {
+          "q": 10,
+          "query_record": "sidd:validation:28_26",
+          "score": 0.21107007563114166
+        },
+        {
+          "q": 11,
+          "query_record": "sidd:validation:37_15",
+          "score": 0.4184301793575287
+        },
+        {
+          "q": 12,
+          "query_record": "sidd:validation:03_14",
+          "score": 0.07767848670482635
+        },
+        {
+          "q": 13,
+          "query_record": "sidd:validation:31_11",
+          "score": 0.23267030715942383
+        },
+        {
+          "q": 14,
+          "query_record": "sidd:validation:09_28",
+          "score": 0.10420011729001999
+        },
+        {
+          "q": 15,
+          "query_record": "sidd:validation:16_25",
+          "score": 0.23302006721496582
+        },
+        {
+          "q": 16,
+          "query_record": "sidd:validation:19_15",
+          "score": 0.0807400494813919
+        }
+      ]
+    },
+    {
+      "task": "edge_detection",
+      "metric": "ois_f",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.6748856503441056,
+      "copy_score": 0.34398811965422754,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an edge map showing object and region boundaries.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "bsds500:78098",
+          "score": 0.7189664097506905
+        },
+        {
+          "q": 1,
+          "query_record": "bsds500:14085",
+          "score": 0.5447155238265888
+        },
+        {
+          "q": 2,
+          "query_record": "bsds500:71076",
+          "score": 0.0
+        },
+        {
+          "q": 3,
+          "query_record": "bsds500:250087",
+          "score": 0.7368358668608863
+        },
+        {
+          "q": 4,
+          "query_record": "bsds500:258089",
+          "score": 0.7448239065737143
+        },
+        {
+          "q": 5,
+          "query_record": "bsds500:196062",
+          "score": 0.8432393463855897
+        },
+        {
+          "q": 6,
+          "query_record": "bsds500:302022",
+          "score": 0.7031716773660459
+        },
+        {
+          "q": 7,
+          "query_record": "bsds500:217090",
+          "score": 0.8253780229155737
+        },
+        {
+          "q": 8,
+          "query_record": "bsds500:105027",
+          "score": 0.7772083066725906
+        },
+        {
+          "q": 9,
+          "query_record": "bsds500:346016",
+          "score": 0.6360655110762671
+        },
+        {
+          "q": 10,
+          "query_record": "bsds500:103029",
+          "score": 0.7180835897736042
+        },
+        {
+          "q": 11,
+          "query_record": "bsds500:384022",
+          "score": 0.8798884430553454
+        },
+        {
+          "q": 12,
+          "query_record": "bsds500:226043",
+          "score": 0.7865550202368554
+        },
+        {
+          "q": 13,
+          "query_record": "bsds500:51084",
+          "score": 0.8819330317262257
+        },
+        {
+          "q": 14,
+          "query_record": "bsds500:207038",
+          "score": 0.496379512660144
+        },
+        {
+          "q": 15,
+          "query_record": "bsds500:43033",
+          "score": 0.4052597469743709
+        },
+        {
+          "q": 16,
+          "query_record": "bsds500:145059",
+          "score": 0.7745521399953034
+        }
+      ]
+    },
+    {
+      "task": "face_landmarks",
+      "metric": "nme",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.3684182880140934,
+      "copy_score": 0.3324706153556117,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a face photograph to [IMAGE2] a facial-landmark point map using the examples' landmark and color convention.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "300w:indoor_253",
+          "score": 0.5
+        },
+        {
+          "q": 1,
+          "query_record": "300w:outdoor_242",
+          "score": 0.3078664560597475
+        },
+        {
+          "q": 2,
+          "query_record": "300w:indoor_115",
+          "score": 0.40190850091091573
+        },
+        {
+          "q": 3,
+          "query_record": "300w:indoor_050",
+          "score": 0.20632921518485386
+        },
+        {
+          "q": 4,
+          "query_record": "300w:outdoor_252",
+          "score": 0.3354543903516195
+        },
+        {
+          "q": 5,
+          "query_record": "300w:outdoor_082",
+          "score": 0.3588570901430959
+        },
+        {
+          "q": 6,
+          "query_record": "300w:outdoor_291",
+          "score": 0.3478668519860198
+        },
+        {
+          "q": 7,
+          "query_record": "300w:outdoor_182",
+          "score": 0.27652802125038284
+        },
+        {
+          "q": 8,
+          "query_record": "300w:outdoor_187",
+          "score": 0.26567214770430114
+        },
+        {
+          "q": 9,
+          "query_record": "300w:indoor_237",
+          "score": 0.41791628208554976
+        },
+        {
+          "q": 10,
+          "query_record": "300w:indoor_158",
+          "score": 0.4159881686292866
+        },
+        {
+          "q": 11,
+          "query_record": "300w:indoor_116",
+          "score": 0.5
+        },
+        {
+          "q": 12,
+          "query_record": "300w:outdoor_171",
+          "score": 0.5
+        },
+        {
+          "q": 13,
+          "query_record": "300w:outdoor_007",
+          "score": 0.37052168431731597
+        },
+        {
+          "q": 14,
+          "query_record": "300w:outdoor_109",
+          "score": 0.3015400839518434
+        },
+        {
+          "q": 15,
+          "query_record": "300w:indoor_084",
+          "score": 0.49378770569126057
+        },
+        {
+          "q": 16,
+          "query_record": "300w:outdoor_115",
+          "score": 0.26287429797339484
+        }
+      ]
+    },
+    {
+      "task": "human_pose_2d",
+      "metric": "pck_torso_0.2",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.2946078431372549,
+      "copy_score": 0.15735294117647058,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph of a person to [IMAGE2] a body-joint marker map using the examples' joint and color convention.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "mpii:084118871",
+          "score": 0.0
+        },
+        {
+          "q": 1,
+          "query_record": "mpii:070913699",
+          "score": 0.625
+        },
+        {
+          "q": 2,
+          "query_record": "mpii:071883975",
+          "score": 0.3333333333333333
+        },
+        {
+          "q": 3,
+          "query_record": "mpii:088163535",
+          "score": 0.5
+        },
+        {
+          "q": 4,
+          "query_record": "mpii:097011689",
+          "score": 0.5833333333333334
+        },
+        {
+          "q": 5,
+          "query_record": "mpii:070403145",
+          "score": 0.25
+        },
+        {
+          "q": 6,
+          "query_record": "mpii:026665966",
+          "score": 0.16666666666666666
+        },
+        {
+          "q": 7,
+          "query_record": "mpii:023371208",
+          "score": 0.3
+        },
+        {
+          "q": 8,
+          "query_record": "mpii:037047210",
+          "score": 0.5
+        },
+        {
+          "q": 9,
+          "query_record": "mpii:048018352",
+          "score": 0.25
+        },
+        {
+          "q": 10,
+          "query_record": "mpii:044823885",
+          "score": 0.16666666666666666
+        },
+        {
+          "q": 11,
+          "query_record": "mpii:063405506",
+          "score": 0.3333333333333333
+        },
+        {
+          "q": 12,
+          "query_record": "mpii:034233408",
+          "score": 0.0
+        },
+        {
+          "q": 13,
+          "query_record": "mpii:064869504",
+          "score": 0.25
+        },
+        {
+          "q": 14,
+          "query_record": "mpii:097607833",
+          "score": 0.0
+        },
+        {
+          "q": 15,
+          "query_record": "mpii:054163421",
+          "score": 0.5833333333333334
+        },
+        {
+          "q": 16,
+          "query_record": "mpii:041119152",
+          "score": 0.16666666666666666
+        }
+      ]
+    },
+    {
+      "task": "inpainting",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.09033320323728464,
+      "copy_score": 0.1530421016847386,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph with missing regions to [IMAGE2] a complete photograph with those regions filled consistently with the surrounding scene.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "div2k:val:0846",
+          "score": 0.13697388768196106
+        },
+        {
+          "q": 1,
+          "query_record": "div2k:val:0841",
+          "score": 0.1262235939502716
+        },
+        {
+          "q": 2,
+          "query_record": "div2k:val:0843",
+          "score": 0.2195184975862503
+        },
+        {
+          "q": 3,
+          "query_record": "div2k:val:0813",
+          "score": 0.04848495125770569
+        },
+        {
+          "q": 4,
+          "query_record": "div2k:val:0871",
+          "score": 0.057249367237091064
+        },
+        {
+          "q": 5,
+          "query_record": "div2k:val:0812",
+          "score": 0.03694102540612221
+        },
+        {
+          "q": 6,
+          "query_record": "div2k:val:0860",
+          "score": 0.11011816561222076
+        },
+        {
+          "q": 7,
+          "query_record": "div2k:val:0888",
+          "score": 0.12214411050081253
+        },
+        {
+          "q": 8,
+          "query_record": "div2k:val:0802",
+          "score": 0.1261289119720459
+        },
+        {
+          "q": 9,
+          "query_record": "div2k:val:0847",
+          "score": 0.04487058147788048
+        },
+        {
+          "q": 10,
+          "query_record": "div2k:val:0863",
+          "score": 0.035115208476781845
+        },
+        {
+          "q": 11,
+          "query_record": "div2k:val:0857",
+          "score": 0.04830826073884964
+        },
+        {
+          "q": 12,
+          "query_record": "div2k:val:0811",
+          "score": 0.1633085459470749
+        },
+        {
+          "q": 13,
+          "query_record": "div2k:val:0899",
+          "score": 0.014263258315622807
+        },
+        {
+          "q": 14,
+          "query_record": "div2k:val:0837",
+          "score": 0.06279678642749786
+        },
+        {
+          "q": 15,
+          "query_record": "div2k:val:0864",
+          "score": 0.16588018834590912
+        },
+        {
+          "q": 16,
+          "query_record": "div2k:val:0853",
+          "score": 0.017339114099740982
+        }
+      ]
+    },
+    {
+      "task": "instance_segmentation",
+      "metric": "pq",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.06480372415172311,
+      "copy_score": 0.054150348883660084,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an instance segmentation map with separate object regions using the examples' colors.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:1154",
+          "score": 0.028488487613512303
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0770",
+          "score": 0.04777289428297534
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1129",
+          "score": 0.0694295918671963
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:1409",
+          "score": 0.05288650116409987
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:0852",
+          "score": 0.0
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1353",
+          "score": 0.026816962464269428
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:0211",
+          "score": 0.0340185775210576
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:0762",
+          "score": 0.09338774609075032
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0965",
+          "score": 0.22317755852484894
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0592",
+          "score": 0.09399410094860704
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0537",
+          "score": 0.0
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1390",
+          "score": 0.07240211763940105
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1287",
+          "score": 0.0
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:0844",
+          "score": 0.09975815659979012
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0517",
+          "score": 0.02627944644937626
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1093",
+          "score": 0.12878122477235082
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:0298",
+          "score": 0.10446994464105755
+        }
+      ]
+    },
+    {
+      "task": "relative_depth",
+      "metric": "delta1",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.9437944418711592,
+      "copy_score": 0.46488994998791755,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a grayscale relative-depth map using the examples' depth direction and intensity convention.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "score": 0.8915552572206373
+        },
+        {
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "score": 0.9720485472600221
+        },
+        {
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "score": 0.9998897403384972
+        },
+        {
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "score": 0.9760999177631579
+        },
+        {
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "score": 0.963685955717189
+        },
+        {
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "score": 0.913967840069535
+        },
+        {
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "score": 0.9783321807897584
+        },
+        {
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "score": 0.9940201976405976
+        },
+        {
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "score": 0.9455567326857123
+        },
+        {
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "score": 0.8928260642556302
+        },
+        {
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "score": 0.8613112585149559
+        },
+        {
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "score": 0.8921133552309735
+        },
+        {
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "score": 0.9034058790276993
+        },
+        {
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "score": 0.957935092724679
+        },
+        {
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "score": 0.9658084113839367
+        },
+        {
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "score": 0.9360038097331356
+        },
+        {
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "score": 0.9999452714535902
+        }
+      ]
+    },
+    {
+      "task": "saliency_detection",
+      "metric": "max_fbeta",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.46661687576953337,
+      "copy_score": 0.4135276662170504,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a salient-foreground mask using the examples' foreground and background colors.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "dut_omron:sun_bgruczgdxsknninj",
+          "score": 0.221009895965491
+        },
+        {
+          "q": 1,
+          "query_record": "dut_omron:sun_axdlpjguznudiftw",
+          "score": 0.2851566585642386
+        },
+        {
+          "q": 2,
+          "query_record": "dut_omron:sun_aaooosasuiphyaqx",
+          "score": 0.4480318051176866
+        },
+        {
+          "q": 3,
+          "query_record": "dut_omron:sun_anaelgmijldqnhvh",
+          "score": 0.5331942572924598
+        },
+        {
+          "q": 4,
+          "query_record": "dut_omron:sun_ahmagclbyykethra",
+          "score": 0.5876504203306225
+        },
+        {
+          "q": 5,
+          "query_record": "dut_omron:sun_anrkwvcheoerbhqm",
+          "score": 0.357771334299855
+        },
+        {
+          "q": 6,
+          "query_record": "dut_omron:sun_bvobxesquwowokjh",
+          "score": 0.6062265523586723
+        },
+        {
+          "q": 7,
+          "query_record": "dut_omron:sun_amtcnaryvbagsatb",
+          "score": 0.9357126167037477
+        },
+        {
+          "q": 8,
+          "query_record": "dut_omron:sun_aqhjqnnzsawxvvvd",
+          "score": 0.3956381454977559
+        },
+        {
+          "q": 9,
+          "query_record": "dut_omron:sun_adbdqzigzwipuipr",
+          "score": 0.7337491058655221
+        },
+        {
+          "q": 10,
+          "query_record": "dut_omron:sun_aemjuwgxmiyllqkw",
+          "score": 0.7100648300496422
+        },
+        {
+          "q": 11,
+          "query_record": "dut_omron:sun_bcdlvrkvodarohwm",
+          "score": 0.10111126912215834
+        },
+        {
+          "q": 12,
+          "query_record": "dut_omron:sun_bfjlxzoixszyvmpf",
+          "score": 0.4963802548115184
+        },
+        {
+          "q": 13,
+          "query_record": "dut_omron:sun_apcmzwzlwlaifwlo",
+          "score": 0.10501835985312118
+        },
+        {
+          "q": 14,
+          "query_record": "dut_omron:img_812503560",
+          "score": 0.48399871911331277
+        },
+        {
+          "q": 15,
+          "query_record": "dut_omron:sun_aipfmfdoxumqmjxg",
+          "score": 0.5594488858649431
+        },
+        {
+          "q": 16,
+          "query_record": "dut_omron:sun_aepjhziukqmxktip",
+          "score": 0.3723237772713198
+        }
+      ]
+    },
+    {
+      "task": "semantic_segmentation",
+      "metric": "miou",
+      "direction": "higher",
+      "n": 17,
+      "score": 0.28920848811604943,
+      "copy_score": 0.26335281273431277,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a semantic segmentation map using the examples' class colors.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "ade20k:ADE_val_00000606",
+          "score": 0.2604140010413291
+        },
+        {
+          "q": 1,
+          "query_record": "ade20k:ADE_val_00000895",
+          "score": 0.24018297047767168
+        },
+        {
+          "q": 2,
+          "query_record": "ade20k:ADE_val_00000361",
+          "score": 0.3613723043665924
+        },
+        {
+          "q": 3,
+          "query_record": "ade20k:ADE_val_00001441",
+          "score": 0.8869249000606632
+        },
+        {
+          "q": 4,
+          "query_record": "ade20k:ADE_val_00000992",
+          "score": 0.2756756750001923
+        },
+        {
+          "q": 5,
+          "query_record": "ade20k:ADE_val_00000735",
+          "score": 0.1975292565232723
+        },
+        {
+          "q": 6,
+          "query_record": "ade20k:ADE_val_00000212",
+          "score": 0.16620139838400702
+        },
+        {
+          "q": 7,
+          "query_record": "ade20k:ADE_val_00001256",
+          "score": 0.31499664004711064
+        },
+        {
+          "q": 8,
+          "query_record": "ade20k:ADE_val_00001243",
+          "score": 0.33965665523427335
+        },
+        {
+          "q": 9,
+          "query_record": "ade20k:ADE_val_00000199",
+          "score": 0.20933784159484436
+        },
+        {
+          "q": 10,
+          "query_record": "ade20k:ADE_val_00000302",
+          "score": 0.262849957890972
+        },
+        {
+          "q": 11,
+          "query_record": "ade20k:ADE_val_00001065",
+          "score": 0.17823648326328034
+        },
+        {
+          "q": 12,
+          "query_record": "ade20k:ADE_val_00000600",
+          "score": 0.2763074829345995
+        },
+        {
+          "q": 13,
+          "query_record": "ade20k:ADE_val_00001677",
+          "score": 0.16803712819178998
+        },
+        {
+          "q": 14,
+          "query_record": "ade20k:ADE_val_00001081",
+          "score": 0.2769392182186236
+        },
+        {
+          "q": 15,
+          "query_record": "ade20k:ADE_val_00000934",
+          "score": 0.1912764747000651
+        },
+        {
+          "q": 16,
+          "query_record": "ade20k:ADE_val_00000623",
+          "score": 0.31060591004355315
+        }
+      ]
+    },
+    {
+      "task": "super_resolution",
+      "metric": "lpips",
+      "direction": "lower",
+      "n": 17,
+      "score": 0.200871525441899,
+      "copy_score": 0.4340166712508482,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a low-resolution photograph to [IMAGE2] a higher-resolution photograph of the same scene with faithful fine detail.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "div2k:val:0858",
+          "score": 0.20614492893218994
+        },
+        {
+          "q": 1,
+          "query_record": "div2k:val:0889",
+          "score": 0.20890173316001892
+        },
+        {
+          "q": 2,
+          "query_record": "div2k:val:0872",
+          "score": 0.20656535029411316
+        },
+        {
+          "q": 3,
+          "query_record": "div2k:val:0888",
+          "score": 0.17646725475788116
+        },
+        {
+          "q": 4,
+          "query_record": "div2k:val:0851",
+          "score": 0.1109953224658966
+        },
+        {
+          "q": 5,
+          "query_record": "div2k:val:0868",
+          "score": 0.15998852252960205
+        },
+        {
+          "q": 6,
+          "query_record": "div2k:val:0864",
+          "score": 0.21982534229755402
+        },
+        {
+          "q": 7,
+          "query_record": "div2k:val:0840",
+          "score": 0.31442791223526
+        },
+        {
+          "q": 8,
+          "query_record": "div2k:val:0881",
+          "score": 0.17933914065361023
+        },
+        {
+          "q": 9,
+          "query_record": "div2k:val:0827",
+          "score": 0.18194808065891266
+        },
+        {
+          "q": 10,
+          "query_record": "div2k:val:0838",
+          "score": 0.21980637311935425
+        },
+        {
+          "q": 11,
+          "query_record": "div2k:val:0805",
+          "score": 0.26989567279815674
+        },
+        {
+          "q": 12,
+          "query_record": "div2k:val:0853",
+          "score": 0.14327070116996765
+        },
+        {
+          "q": 13,
+          "query_record": "div2k:val:0856",
+          "score": 0.2973935008049011
+        },
+        {
+          "q": 14,
+          "query_record": "div2k:val:0834",
+          "score": 0.14322586357593536
+        },
+        {
+          "q": 15,
+          "query_record": "div2k:val:0841",
+          "score": 0.21773743629455566
+        },
+        {
+          "q": 16,
+          "query_record": "div2k:val:0850",
+          "score": 0.15888279676437378
+        }
+      ]
+    },
+    {
+      "task": "surface_normals",
+      "metric": "mean_deg",
+      "direction": "lower",
+      "n": 17,
+      "score": 49.54843177039548,
+      "copy_score": 113.58410577159289,
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an RGB surface-normal map using the examples' coordinate and color convention.",
+      "content_prompt": "",
+      "per_query": [
+        {
+          "q": 0,
+          "query_record": "diode:00023_00200_outdoor_020_030",
+          "score": 54.68042401340115
+        },
+        {
+          "q": 1,
+          "query_record": "diode:00022_00194_outdoor_180_010",
+          "score": 37.07849957372338
+        },
+        {
+          "q": 2,
+          "query_record": "diode:00019_00183_indoors_180_030",
+          "score": 53.78073900754671
+        },
+        {
+          "q": 3,
+          "query_record": "diode:00020_00186_indoors_040_020",
+          "score": 98.79494211124317
+        },
+        {
+          "q": 4,
+          "query_record": "diode:00024_00202_outdoor_140_000",
+          "score": 45.37334486158621
+        },
+        {
+          "q": 5,
+          "query_record": "diode:00021_00188_indoors_130_020",
+          "score": 26.012244741727677
+        },
+        {
+          "q": 6,
+          "query_record": "diode:00023_00199_outdoor_010_000",
+          "score": 49.51044497297365
+        },
+        {
+          "q": 7,
+          "query_record": "diode:00022_00196_outdoor_250_010",
+          "score": 35.314946337382665
+        },
+        {
+          "q": 8,
+          "query_record": "diode:00020_00185_indoors_080_010",
+          "score": 48.43155465423313
+        },
+        {
+          "q": 9,
+          "query_record": "diode:00024_00201_outdoor_340_000",
+          "score": 44.56598276973276
+        },
+        {
+          "q": 10,
+          "query_record": "diode:00022_00197_outdoor_290_000",
+          "score": 30.301208699409603
+        },
+        {
+          "q": 11,
+          "query_record": "diode:00021_00189_indoors_000_000",
+          "score": 63.09186704876424
+        },
+        {
+          "q": 12,
+          "query_record": "diode:00022_00195_outdoor_270_000",
+          "score": 35.93302274619472
+        },
+        {
+          "q": 13,
+          "query_record": "diode:00021_00192_indoors_010_010",
+          "score": 65.21339044141585
+        },
+        {
+          "q": 14,
+          "query_record": "diode:00022_00193_outdoor_070_030",
+          "score": 46.08471197370239
+        },
+        {
+          "q": 15,
+          "query_record": "diode:00020_00187_indoors_240_010",
+          "score": 36.061842564668105
+        },
+        {
+          "q": 16,
+          "query_record": "diode:00021_00191_indoors_220_000",
+          "score": 72.09417357901773
+        }
+      ]
+    }
+  ],
+  "note": "VisualCloze P2 uses the completed 221-query task-text rerun with 13 task-specific prompts and empty content captions. Demonstrations, seeds, weights and sampling settings match the original run; the TPU changed from v5e to v6e. Full reference-versus-TPU numerical parity is not established.",
+  "previous_run": {
+    "model": {
+      "key": "visualcloze-p2",
+      "label": "VisualCloze",
+      "model_revision": "59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+      "plan_identity": "dc53ea663fe67d183bf290434f53f31ce4f0659c44d5f1e41e9881f5a8617e5b",
+      "prompt_pairs": 2,
+      "status": "complete corrected validation",
+      "value_field": "visualcloze_p2"
+    },
+    "scores": {
+      "colorization": 0.27830371918047175,
+      "deblurring": 0.17415655842598746,
+      "denoising": 0.2975901869290015,
+      "edge_detection": 0.6736053088696248,
+      "face_landmarks": 0.3989191462989101,
+      "human_pose_2d": 0.14950980392156862,
+      "inpainting": 0.08864702623994912,
+      "instance_segmentation": 0.08619441768957607,
+      "relative_depth": 0.9304884208036771,
+      "saliency_detection": 0.5241488615166139,
+      "semantic_segmentation": 0.2701419967970047,
+      "super_resolution": 0.19678178517257466,
+      "surface_normals": 55.47284666186515
+    },
+    "metric_identity_sha256": "34ed640d556d9abf2e1ae73ef6203b1de2252cdea864ac33193c4ebb2b9dce3b",
+    "pooled_edge_supplement": 0.7073005775100287
+  }
+}

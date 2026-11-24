@@ -1,0 +1,195 @@
+{
+  "updated_utc": "2026-10-31T12:54:50.337143+00:00",
+  "benchmark_scores_changed": false,
+  "tpu_qualified": false,
+  "relation_adapter": {
+    "status": "STOPPED_LOCAL_CPU_RUNTIME_INFEASIBLE",
+    "completed_steps": 2,
+    "planned_steps": 384,
+    "observed_later_step_seconds": 232.18021025299095,
+    "estimated_remaining_hours": 24.63690008795626,
+    "estimate_is_extrapolation": true,
+    "cap_hours": 4.0,
+    "cpu_dtype_probe": {
+      "cpu_capability": "AVX2",
+      "native_x86_bf16_flag_present": false,
+      "measurements": [
+        {
+          "shape": [
+            256,
+            3072,
+            3072
+          ],
+          "dtype": "torch.float32",
+          "seconds": [
+            0.016453529009595513,
+            0.013513048994354904,
+            0.012732079019770026
+          ],
+          "median_seconds": 0.013513048994354904
+        },
+        {
+          "shape": [
+            256,
+            3072,
+            3072
+          ],
+          "dtype": "torch.bfloat16",
+          "seconds": [
+            0.07527246593963355,
+            0.07508931495249271,
+            0.0745803159661591
+          ],
+          "median_seconds": 0.07508931495249271
+        },
+        {
+          "shape": [
+            256,
+            3072,
+            12288
+          ],
+          "dtype": "torch.float32",
+          "seconds": [
+            0.06572468497324735,
+            0.06387568602804095,
+            0.06540093605872244
+          ],
+          "median_seconds": 0.06540093605872244
+        },
+        {
+          "shape": [
+            256,
+            3072,
+            12288
+          ],
+          "dtype": "torch.bfloat16",
+          "seconds": [
+            0.3061816110275686,
+            0.29407256201375276,
+            0.29469332098960876
+          ],
+          "median_seconds": 0.29469332098960876
+        }
+      ],
+      "limits": "Synthetic CPU linear operations only. No model accuracy, full runtime or TPU throughput claim."
+    },
+    "scope": "The CPU BF16 comparison stopped after two finite reference steps. Setup took 111.2 seconds; the next sampling step took 232.18 seconds. At that rate, 382 remaining steps would take 24.64 hours, exceeding the four-hour total cap. This CPU lacks native BF16 support; two representative matrix-operation probes ran 4.5\u20135.6 times slower in BF16 than FP32. Full reference parity and TPU runtime qualification remain open. No precision substitution or speedup is claimed.",
+    "receipt_sha256": "b7f25cd56aca7ae152888529f1537153332594847805ead2c3a01ed5f09d835a"
+  },
+  "painter_pose": {
+    "status": "COMPLETE_PAIRED_NATIVE_POSE_COMPARISON",
+    "source_records": 13,
+    "episodes": 17,
+    "successful_attempt_seconds": 139.43185313499998,
+    "query_targets_used_for_conditioning": false,
+    "scope": "Native pose changes mean PCK from 0.085294 to 0.620588 (+0.535294; +627.6%): 15 queries improve, 0 worsen and 2 tie. This separate condition uses demonstration joint metadata and an external image-only person detector. All 17 fresh generic controls match the earlier CPU outputs exactly. The other 12 categories were not rerun. Surface-normal model failures and TPU numerical qualification remain unresolved.",
+    "metadata_assisted": true,
+    "external_query_image_detector": true,
+    "comparison": {
+      "before_label": "Released-arithmetic RGB-only CPU control",
+      "after_label": "Native pose CPU adapter with input-only detector",
+      "scope": "Same CPU backend and frozen queries. Support joint metadata, image-only query person detector, native crop/heatmap/flip decoding and prediction-only episode recoding change together.",
+      "task": "human_pose_2d",
+      "metric": "pck_torso_0.2",
+      "lower_is_better": false,
+      "aggregation": "mean_per_query",
+      "n": 17,
+      "before": 0.08529411764705884,
+      "after": 0.6205882352941177,
+      "raw_delta": 0.5352941176470588,
+      "improvement": 0.5352941176470588,
+      "relative_improvement_pct": 627.5862068965516,
+      "wins": 15,
+      "losses": 0,
+      "ties": 2,
+      "gain_contribution": 0.5352941176470588,
+      "loss_contribution": 0.0,
+      "largest_gain": {
+        "q": 1,
+        "query_record": "mpii:070913699",
+        "metric": "pck_torso_0.2",
+        "lower_is_better": false,
+        "before": 0.0,
+        "after": 1.0,
+        "raw_delta": 1.0,
+        "improvement": 1.0,
+        "relative_improvement_pct": null
+      },
+      "largest_regression": {
+        "q": 8,
+        "query_record": "mpii:037047210",
+        "metric": "pck_torso_0.2",
+        "lower_is_better": false,
+        "before": 0.125,
+        "after": 0.125,
+        "raw_delta": 0.0,
+        "improvement": 0.0,
+        "relative_improvement_pct": 0.0
+      }
+    },
+    "details_url": "/bench-v2-painter-pose/",
+    "receipt_sha256": "41c5310b047c69aa2d2c7313b34febdc8f5e930309b6b131eff0e18f0fd96886"
+  },
+  "vict": {
+    "status": "PASS_THREE_SEQUENTIAL_DETERMINISTIC_CPU_TRAJECTORIES",
+    "completed_updates": 360,
+    "cases": [
+      {
+        "case": 0,
+        "steps_per_arm": 60,
+        "exact_checks": {
+          "losses": true,
+          "model_state_hashes": true,
+          "optimizer_state_hashes": true,
+          "raw_sha256": true,
+          "pixels_sha256": true,
+          "rng_sha256": true
+        },
+        "model_state_tensors": 352,
+        "optimizer_state_parameters": 344,
+        "result_sha256": {
+          "released": "2106f19b726fb9f7c661543b3ccf281f3b8c8e145a5862c25b6d764bdcea8698",
+          "port": "e25b0e5f073157e62897ae01c41be99a72defd29a4eb63051b0a6e3401e8c01a"
+        }
+      },
+      {
+        "case": 1,
+        "steps_per_arm": 60,
+        "exact_checks": {
+          "losses": true,
+          "model_state_hashes": true,
+          "optimizer_state_hashes": true,
+          "raw_sha256": true,
+          "pixels_sha256": true,
+          "rng_sha256": true
+        },
+        "model_state_tensors": 352,
+        "optimizer_state_parameters": 344,
+        "result_sha256": {
+          "released": "095df5899b4a8e29e1fd9b04bacb2e735f20bdb096fa231568f68c75faeebe85",
+          "port": "774215ef8c8ecf6d4927be9d48f79e76c84da4e1b2b928c5773fa5eaad23b943"
+        }
+      },
+      {
+        "case": 2,
+        "steps_per_arm": 60,
+        "exact_checks": {
+          "losses": true,
+          "model_state_hashes": true,
+          "optimizer_state_hashes": true,
+          "raw_sha256": true,
+          "pixels_sha256": true,
+          "rng_sha256": true
+        },
+        "model_state_tensors": 352,
+        "optimizer_state_parameters": 344,
+        "result_sha256": {
+          "released": "657044e29e87f08d75177937dd0456e57190864d60f9781be0ccae641e9e5ed3",
+          "port": "3af6f2fdef8d8a7a4b36810e9998330adbbde92d82988aa5b1abcf2cfeb22d95"
+        }
+      }
+    ],
+    "scope": "Three sequential 60-update CPU FP32 cases pass exact losses, final model and optimizer states, raw outputs, pixels and continuing random state with deterministic algorithms. The earlier failed comparison is preserved. TPU precision, optimizer and device checks, native depth, appendix settings and a paired corrected-output benchmark remain open.",
+    "receipt_sha256": "e0a4d9ae98eba8fd7cd212c0bb6ee2ed3aae4171b5e622c4bd1c0ad05adae920"
+  }
+}

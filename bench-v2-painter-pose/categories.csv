@@ -1,0 +1,4 @@
+contrast,before_label,after_label,task,metric,n,before,after,raw_delta,improvement,relative_improvement_pct,wins,losses,ties,gain_contribution,loss_contribution
+0,Released-arithmetic RGB-only CPU control,Native pose CPU adapter with input-only detector,human_pose_2d,pck_torso_0.2,17,0.08529411764705884,0.6205882352941177,0.5352941176470588,0.5352941176470588,627.5862068965516,15,0,2,0.5352941176470588,0.0
+1,Archived RGB-only TPU,Released-arithmetic RGB-only CPU control,human_pose_2d,pck_torso_0.2,17,0.08529411764705884,0.08529411764705884,0.0,0.0,0.0,1,1,15,0.004901960784313725,-0.004901960784313725
+2,Archived RGB-only TPU,Native pose CPU adapter with input-only detector,human_pose_2d,pck_torso_0.2,17,0.08529411764705884,0.6205882352941177,0.5352941176470588,0.5352941176470588,627.5862068965516,15,0,2,0.5352941176470588,0.0

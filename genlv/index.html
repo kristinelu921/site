@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GenLV results on the VisualCloze test and validation evaluation packs.">
+  <title>GenLV · VisualCloze evaluations</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>window.MODEL_PAGE = {"name":"GenLV","sheets":[{"image":"../assets/genlv/test-samples-01.png","title":"Geometry & parsing","tasks":"Relative Depth \u00b7 Surface Normals \u00b7 Semantic Segmentation","count":3,"alt":"GenLV sample outputs for Relative Depth \u00b7 Surface Normals \u00b7 Semantic Segmentation"},{"image":"../assets/genlv/test-samples-02.png","title":"Masks & boundaries","tasks":"Instance Segmentation \u00b7 Panoptic Segmentation \u00b7 Edge Detection","count":3,"alt":"GenLV sample outputs for Instance Segmentation \u00b7 Panoptic Segmentation \u00b7 Edge Detection"},{"image":"../assets/genlv/test-samples-03.png","title":"People & attention","tasks":"Saliency Detection \u00b7 Human Pose 2D \u00b7 Face Landmarks","count":3,"alt":"GenLV sample outputs for Saliency Detection \u00b7 Human Pose 2D \u00b7 Face Landmarks"},{"image":"../assets/genlv/test-samples-04.png","title":"Keypoints & restoration","tasks":"Object Keypoints \u00b7 Colorization \u00b7 Denoising","count":3,"alt":"GenLV sample outputs for Object Keypoints \u00b7 Colorization \u00b7 Denoising"},{"image":"../assets/genlv/test-samples-05.png","title":"Image restoration","tasks":"Deblurring \u00b7 Inpainting \u00b7 Super Resolution","count":3,"alt":"GenLV sample outputs for Deblurring \u00b7 Inpainting \u00b7 Super Resolution"}],"validationImage":"../assets/genlv/validation-samples.png","testCsv":"../data/genlv-test.csv","validationCsv":"../data/genlv-validation.csv"};</script>
+  <script src="../model.js" defer></script>
+  <script src="../genlv-bench-v2.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#bench-v2-validation">Skip to latest results</a>
+  <header class="masthead">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>VisualCloze <b>/ model evals</b></span></a>
+    <nav><a href="../#models">All models</a><a href="#bench-v2-validation">bench_v2</a><a href="#results">Legacy test</a><a href="#validation">Legacy validation</a><a href="#method">Protocol</a></nav>
+  </header>
+  <main id="top">
+    <section class="overview model-overview" id="test">
+      <div class="overview-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Corrected bench_v2 validation complete</p>
+        <h1>GenLV</h1>
+        <p class="lede">GenLV-101 Huge evaluated with its native one-pair contract on all 221 bench_v2 validation queries. The earlier supervision-v5 P=2 adapter study remains below as a separate legacy result.</p>
+        <p class="model-badge">bench_v2 · native P=1 · corrected V3</p>
+        <a class="model-script-link" href="../scripts/genlv/evaluation-scripts.zip" download>Download evaluation scripts</a>
+      </div>
+      <dl class="run-facts"><div><dt>bench_v2 tasks</dt><dd>13</dd></div><div><dt>Validation queries</dt><dd>221</dd></div><div><dt>Scored pairs</dt><dd>442</dd></div><div><dt>Gate</dt><dd>PASS</dd></div></dl>
+    </section>
+
+    <section class="bench-v2-section genlv-bench-v2-section" id="bench-v2-validation">
+      <div class="section-heading">
+        <div><p class="section-number">01 / BENCH_V2 VALIDATION</p><h2>Native P=1, corrected-V3 scores</h2></div>
+        <p>One frozen same-source demonstration per query, one native forward, and no prompt averaging or task-specific tuning. Every row is bound to the authoritative corrected score receipt.</p>
+      </div>
+      <aside class="bench-v2-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <div><strong>Validation gate passed</strong><p>221 / 221 episodes and 442 model/copy comparisons scored. GenLV beats the copy-input baseline on 8 of 13 task primaries. Test inference has not been launched.</p></div>
+      </aside>
+      <dl class="run-facts bench-v2-facts">
+        <div><dt>Tasks</dt><dd>13</dd></div>
+        <div><dt>Queries per task</dt><dd>17</dd></div>
+        <div><dt>Prompt pairs</dt><dd>P=1</dd></div>
+        <div><dt>Protocol</dt><dd>V3</dd></div>
+      </dl>
+      <div class="finding-grid genlv-bench-v2-findings">
+        <article><span class="finding-value">8 / 13</span><p>Task primaries better than copying the query input.</p></article>
+        <article><span class="finding-value">221 / 221</span><p>Validation predictions authenticated and scored.</p></article>
+        <article class="finding-note"><span class="finding-value">0</span><p>bench_v2 test queries launched for this run.</p></article>
+      </div>
+      <div class="validation-table-heading">
+        <div><h3>Task-level primary metrics</h3><p>Positive Δ always favors GenLV. Edge detection uses the required corrected pooled OIS readout.</p></div>
+        <a class="download-link" href="../data/genlv-bench-v2-validation.json" download>Download JSON ↓</a>
+      </div>
+      <div class="table-shell">
+        <table class="genlv-bench-v2-table">
+          <thead><tr><th>Task / primary metric</th><th>GenLV</th><th>Copy input</th><th>Directional Δ</th><th>vs. copy</th></tr></thead>
+          <tbody id="genlv-bench-v2-body"><tr><td colspan="5" class="loading-cell">Loading corrected validation scores…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-footnote">All non-edge values are means over 17 validation queries. Metrics have different scales and directions, so no cross-task scalar average is reported.</p>
+
+      <div class="genlv-edge-heading"><div><p class="chart-kicker">BSDS500 / pooled corrected readout</p><h3>Edge detection</h3></div><p>FIRST duplicate-recall AP policy, seed-1 CSA matching.</p></div>
+      <div class="genlv-edge-readout" id="genlv-edge-readout" aria-live="polite"><p>Loading pooled edge metrics…</p></div>
+
+      <div class="provenance bench-v2-provenance genlv-bench-v2-provenance">
+        <div><p class="provenance-label">Model revision</p><p>GenLV-101 Huge</p><code title="686c5c21c2aedb9768fa18f3d5148212b039d2d2">686c5c21c2ae…</code></div>
+        <div><p class="provenance-label">Plan</p><p>bench_v2 validation</p><code title="f5110d7f425dc6e9a1c339f8ed780245c325e5199f099c1dabcc769a3da52e73">f5110d7f425d…</code></div>
+        <div><p class="provenance-label">Corrected release</p><p>PP2 / CSA / FIRST AP</p><code title="bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792">bd08e05f1d0e…</code></div>
+        <div><p class="provenance-label">Scored results</p><p>221 episodes</p><code title="983df0c1b3cfa9d61b0dc6be3b3823ee61b2b4b1efe84b18eea5c61319ab0f4c">983df0c1b3cf…</code></div>
+      </div>
+      <aside class="caution bench-v2-caution"><strong>Protocol boundary</strong><p>These are bench_v2 supervision-v6 validation scores for native P=1. They are not the older P=2 mean-of-two adapter results shown below, and no bench_v2 test score is implied.</p></aside>
+    </section>
+
+    <section class="sample-workbench">
+      <div class="section-heading"><div><p class="section-number">02 / LEGACY TEST OUTPUTS</p><h2>Representative predictions</h2></div><p>Earlier supervision-v5 P=2 adapter study: one median-scoring real-arm query per task, shown against all four evaluation conditions.</p></div>
+      <div class="viewer">
+        <div class="viewer-bar"><div><span class="sheet-kicker" id="sheet-kicker">Sheet 01</span><h3 id="sheet-title">Geometry &amp; parsing</h3></div><div class="viewer-actions"><button class="icon-button" id="previous-sheet" type="button">←</button><span class="sheet-count" id="sheet-count">1 / 5</span><button class="icon-button" id="next-sheet" type="button">→</button></div></div>
+        <button class="image-frame" id="open-image" type="button"><img id="sample-image" src="../assets/genlv/test-samples-01.png" alt="GenLV sample outputs for Relative Depth · Surface Normals · Semantic Segmentation"><span class="zoom-hint">Open full size ↗</span></button>
+        <div class="sheet-tabs" id="sheet-tabs" role="tablist"></div>
+      </div>
+    </section>
+
+    <section class="results-section" id="results">
+      <div class="section-heading"><div><p class="section-number">03 / LEGACY TEST SCORES</p><h2>Task-level results</h2></div><p>Earlier supervision-v5 P=2 adapter study. Positive Δ means real beats scrambled after accounting for metric direction.</p></div>
+      <div class="finding-grid"><article><span class="finding-value">9 / 15</span><p>Real beats copying the query input.</p></article><article><span class="finding-value">9 / 15</span><p>Real is directionally better than scrambled.</p></article><article class="finding-note"><span class="finding-value">6 / 15</span><p>Oracle is the best arm.</p></article></div>
+      <div class="table-toolbar"><label class="search-field"><span>Find a task</span><input id="task-search" type="search" placeholder="e.g. depth or segmentation"></label><label class="sort-field"><span>Order by</span><select id="sort-results"><option value="task">Task</option><option value="gap-desc">Real advantage</option><option value="real-desc">Real score, high to low</option></select></label><a class="download-link" href="../data/genlv-test.csv" download>Download CSV ↓</a></div>
+      
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Task / primary metric</th><th>Real</th><th>Scrambled</th><th>Grey</th><th>Oracle</th><th>Copy input</th><th>Real Δ</th></tr></thead>
+          <tbody id="results-body"><tr><td colspan="7" class="loading-cell">Loading results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No tasks match that search.</p>
+      <p class="table-footnote">Means over 64 queries per task and condition. Confidence intervals come from the archived scorer.</p>
+    </section>
+
+    <section class="validation-section" id="validation">
+      <div class="section-heading"><div><p class="section-number">04 / LEGACY VALIDATION</p><h2>Four-task validation</h2></div><p>The earlier separate 128-record validation pack uses four native task metrics and the same four conditions.</p></div>
+      <dl class="run-facts validation-facts"><div><dt>Tasks</dt><dd>4</dd></div><div><dt>Queries per task</dt><dd>32</dd></div><div><dt>Scored episodes</dt><dd>512</dd></div><div><dt>Conditions</dt><dd>4</dd></div></dl>
+      <div class="viewer validation-viewer"><div class="viewer-bar"><div><span class="sheet-kicker">Validation · representative queries</span><h3>Depth, normals, segmentation &amp; panoptic</h3></div><span class="sheet-count">1 / 1</span></div><button class="image-frame" id="open-validation-image" type="button"><img src="../assets/genlv/validation-samples.png" alt="Representative GenLV validation outputs"><span class="zoom-hint">Open full size ↗</span></button></div>
+      <div class="finding-grid validation-findings"><article><span class="finding-value">0 / 4</span><p>Real beats copying the query input.</p></article><article><span class="finding-value">3 / 4</span><p>Real is directionally better than scrambled.</p></article><article class="finding-note validation-oracle"><span class="finding-value">0 / 4</span><p>Oracle is the best arm.</p></article></div>
+      <div class="validation-table-heading"><div><h3>Native primary metrics</h3><p>Arrows show whether lower or higher values are better.</p></div><a class="download-link" href="../data/genlv-validation.csv" download>Download CSV ↓</a></div>
+      
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Task / primary metric</th><th>Real</th><th>Scrambled</th><th>Grey</th><th>Oracle</th><th>Copy input</th><th>Real Δ</th></tr></thead>
+          <tbody id="validation-results-body"><tr><td colspan="7" class="loading-cell">Loading results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-footnote">Means over 32 queries per task and condition.</p>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-heading"><div><p class="section-number">05 / LEGACY EVALUATION CONTRACT</p><h2>How the earlier run was adapted</h2></div><p>For the archived supervision-v5 study, each P=2 episode was evaluated as two native P=1 forwards, then averaged before scoring. The bench_v2 result above does not use this adapter.</p></div>
+      <div class="method-grid"><article><span class="condition-tag real">Real</span><h3>True demonstrations</h3><p>Two demonstrations drawn from the query's source and coded with the query target.</p></article><article><span class="condition-tag scrambled">Scrambled</span><h3>Broken pairing</h3><p>Demonstration relationships are disrupted; palette outputs use the corrected control.</p></article><article><span class="condition-tag grey">Grey</span><h3>Content removed</h3><p>A low-information negative control for visual-prompt use.</p></article><article><span class="condition-tag oracle">Oracle</span><h3>Upper bound</h3><p>A positive control that exposes target structure.</p></article></div>
+      <div class="provenance"><div><p class="provenance-label">Model</p><p>GenLV</p><code>686c5c21c2aedb9768fa</code></div><div><p class="provenance-label">Test pack</p><p>test_s64_px256_v5</p><code>48e062452574ff0d…</code></div><div><p class="provenance-label">Scored</p><p>2026-09-29</p><code>p2_mean_of_two_native_genlv_prompts_v1</code></div></div>
+      <aside class="caution"><strong>Adapter disclosure</strong><p>GenLV is natively single-prompt. Each P=2 episode is evaluated as two native P=1 forwards, then the two predictions are averaged before scoring.</p></aside>
+    </section>
+  </main>
+  <footer><p>GenLV · corrected bench_v2 validation + archived legacy evaluation</p><a href="#top">Back to top ↑</a></footer>
+  <dialog id="image-dialog"><div class="dialog-bar"><h2 id="dialog-title">Sample outputs</h2><button id="close-dialog" type="button">Close ×</button></div><img id="dialog-image" src="../assets/genlv/test-samples-01.png" alt=""></dialog>
+</body></html>

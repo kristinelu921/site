@@ -1,0 +1,40 @@
+model,demos,task,metric,direction,n,score,copy_score,status,note
+VisualCloze,8,colorization,lpips,lower,17,0.727963668458602,0.26197738792089853,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,deblurring,lpips,lower,17,0.6102403244551491,0.20889017424162695,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,denoising,lpips,lower,17,0.7484057878746706,0.7446603214039522,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,edge_detection,ois_f,higher,17,0.27247576058065426,0.34398811965422754,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,face_landmarks,nme,lower,17,0.28813266785479263,0.33247227232640914,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,human_pose_2d,pck_torso_0.2,higher,17,0.23676470588235296,0.15735294117647058,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,inpainting,lpips,lower,17,0.0986369933713885,0.1530421016847386,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,instance_segmentation,pq,higher,17,0.0,0.054150348883660084,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,relative_depth,delta1,higher,17,0.6618791585983621,0.46488994998791755,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,saliency_detection,max_fbeta,higher,17,0.3249624199476559,0.4135276662170504,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,semantic_segmentation,miou,higher,17,0.13300805733505242,0.26335281273431277,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,super_resolution,lpips,lower,17,0.6403646451585433,0.4340166712508482,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+VisualCloze,8,surface_normals,mean_deg,lower,17,53.72365524927969,113.58410577159289,complete authoritative corrected-v3 validation,"13 task-specific prompts; empty content captions; TPU-native, CUDA parity not claimed"
+LaVin-DiT,8,colorization,lpips,lower,17,0.17698324647019892,0.26197738792089853,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,deblurring,lpips,lower,17,0.08200799651882228,0.20889017424162695,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,denoising,lpips,lower,17,0.6869426334605497,0.7446603214039522,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,edge_detection,ois_f,higher,17,0.29046147115714627,0.34398811965422754,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,face_landmarks,nme,lower,17,0.43892826875489976,0.33247227232640914,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,human_pose_2d,pck_torso_0.2,higher,17,0.23039215686274508,0.15735294117647058,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,inpainting,lpips,lower,17,0.14755452227066546,0.1530421016847386,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,instance_segmentation,pq,higher,17,0.21942567854961026,0.054150348883660084,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,relative_depth,delta1,higher,17,0.9444541352540757,0.46488994998791755,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,saliency_detection,max_fbeta,higher,17,0.39236466388509955,0.4135276662170504,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,semantic_segmentation,miou,higher,17,0.4349701470106961,0.26335281273431277,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,super_resolution,lpips,lower,17,0.39852608302060294,0.4340166712508482,complete corrected validation,TPU-native; CUDA parity not claimed
+LaVin-DiT,8,surface_normals,mean_deg,lower,17,57.95507196479726,113.58410577159289,complete corrected validation,TPU-native; CUDA parity not claimed
+LVM 7B,7,colorization,lpips,lower,17,0.3281887059702593,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,deblurring,lpips,lower,17,0.37514936661019044,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,denoising,lpips,lower,17,0.1648102161638877,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,edge_detection,ois_f,higher,17,0.28562757249335063,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,face_landmarks,nme,lower,17,0.3337153632154548,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,human_pose_2d,pck_torso_0.2,higher,17,0.30686274509803924,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,inpainting,lpips,lower,17,0.13958257853108294,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,instance_segmentation,pq,higher,17,0.0647661703232646,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,relative_depth,delta1,higher,17,0.876156181157147,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,saliency_detection,max_fbeta,higher,17,0.5376519159448264,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,semantic_segmentation,miou,higher,17,0.272468983109384,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,super_resolution,lpips,lower,17,0.5359629830893349,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot
+LVM 7B,7,surface_normals,mean_deg,lower,17,98.29433675530059,,diagnostic legacy-plan snapshot · not a phase gate,Diagnostic legacy-plan snapshot

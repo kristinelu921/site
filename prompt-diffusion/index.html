@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prompt Diffusion results on the VisualCloze test and validation evaluation packs.">
+  <title>Prompt Diffusion · VisualCloze evaluations</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>window.MODEL_PAGE = {"name":"Prompt Diffusion","sheets":[{"image":"../assets/prompt-diffusion/test-samples-01.webp","title":"Geometry & parsing","tasks":"Relative Depth \u00b7 Surface Normals \u00b7 Semantic Segmentation","count":3,"alt":"Prompt Diffusion sample outputs for Relative Depth \u00b7 Surface Normals \u00b7 Semantic Segmentation"},{"image":"../assets/prompt-diffusion/test-samples-02.webp","title":"Masks & boundaries","tasks":"Instance Segmentation \u00b7 Panoptic Segmentation \u00b7 Edge Detection","count":3,"alt":"Prompt Diffusion sample outputs for Instance Segmentation \u00b7 Panoptic Segmentation \u00b7 Edge Detection"},{"image":"../assets/prompt-diffusion/test-samples-03.webp","title":"People & attention","tasks":"Saliency Detection \u00b7 Human Pose 2D \u00b7 Face Landmarks","count":3,"alt":"Prompt Diffusion sample outputs for Saliency Detection \u00b7 Human Pose 2D \u00b7 Face Landmarks"},{"image":"../assets/prompt-diffusion/test-samples-04.webp","title":"Keypoints & restoration","tasks":"Object Keypoints \u00b7 Colorization \u00b7 Denoising","count":3,"alt":"Prompt Diffusion sample outputs for Object Keypoints \u00b7 Colorization \u00b7 Denoising"},{"image":"../assets/prompt-diffusion/test-samples-05.webp","title":"Image restoration","tasks":"Deblurring \u00b7 Inpainting \u00b7 Super Resolution","count":3,"alt":"Prompt Diffusion sample outputs for Deblurring \u00b7 Inpainting \u00b7 Super Resolution"}],"validationImage":"../assets/prompt-diffusion/validation-samples.webp","testCsv":"../data/prompt-diffusion-test.csv","validationCsv":"../data/prompt-diffusion-validation.csv"};</script>
+  <script src="../model.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+  <header class="masthead">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>VisualCloze <b>/ model evals</b></span></a>
+    <nav><a href="../#models">All models</a><a href="../#comparison">Compare</a><a href="../#scripts">Scripts</a><a href="#test">Test</a><a href="#validation">Validation</a></nav>
+  </header>
+  <main id="top">
+    <section class="overview model-overview" id="test">
+      <div class="overview-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Complete scored evaluation</p>
+        <h1>Prompt Diffusion</h1>
+        <p class="lede">visual in-context diffusion model. Full-pack results across real, scrambled, grey, and oracle conditions.</p>
+        <p class="model-badge">Multi-prompt support · P=1 ensemble</p>
+        <a class="model-script-link" href="../scripts/prompt-diffusion/evaluation-scripts.zip" download>Download evaluation scripts</a>
+      </div>
+      <dl class="run-facts"><div><dt>Test tasks</dt><dd>15</dd></div><div><dt>Test episodes</dt><dd>3,840</dd></div><div><dt>Val tasks</dt><dd>4</dd></div><div><dt>Total predictions</dt><dd>4,352</dd></div></dl>
+    </section>
+
+    <section class="sample-workbench">
+      <div class="section-heading"><div><p class="section-number">01 / TEST OUTPUTS</p><h2>Representative predictions</h2></div><p>One median-scoring real-arm query per task, shown against all four evaluation conditions.</p></div>
+      <div class="viewer">
+        <div class="viewer-bar"><div><span class="sheet-kicker" id="sheet-kicker">Sheet 01</span><h3 id="sheet-title">Geometry &amp; parsing</h3></div><div class="viewer-actions"><button class="icon-button" id="previous-sheet" type="button">←</button><span class="sheet-count" id="sheet-count">1 / 5</span><button class="icon-button" id="next-sheet" type="button">→</button></div></div>
+        <button class="image-frame" id="open-image" type="button"><img id="sample-image" src="../assets/prompt-diffusion/test-samples-01.webp" alt="Prompt Diffusion sample outputs for Relative Depth · Surface Normals · Semantic Segmentation"><span class="zoom-hint">Open full size ↗</span></button>
+        <div class="sheet-tabs" id="sheet-tabs" role="tablist"></div>
+      </div>
+    </section>
+
+    <section class="results-section" id="results">
+      <div class="section-heading"><div><p class="section-number">02 / TEST SCORES</p><h2>Task-level results</h2></div><p>Primary metric per task. Positive Δ means real beats scrambled after accounting for metric direction.</p></div>
+      <div class="finding-grid"><article><span class="finding-value">4 / 15</span><p>Real beats copying the query input.</p></article><article><span class="finding-value">7 / 15</span><p>Real is directionally better than scrambled.</p></article><article class="finding-note"><span class="finding-value">15 / 15</span><p>Oracle is the best arm.</p></article></div>
+      <div class="table-toolbar"><label class="search-field"><span>Find a task</span><input id="task-search" type="search" placeholder="e.g. depth or segmentation"></label><label class="sort-field"><span>Order by</span><select id="sort-results"><option value="task">Task</option><option value="gap-desc">Real advantage</option><option value="real-desc">Real score, high to low</option></select></label><a class="download-link" href="../data/prompt-diffusion-test.csv" download>Download CSV ↓</a></div>
+      
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Task / primary metric</th><th>Real</th><th>Scrambled</th><th>Grey</th><th>Oracle</th><th>Copy input</th><th>Real Δ</th></tr></thead>
+          <tbody id="results-body"><tr><td colspan="7" class="loading-cell">Loading results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No tasks match that search.</p>
+      <p class="table-footnote">Means over 64 queries per task and condition. Confidence intervals come from the archived scorer.</p>
+    </section>
+
+    <section class="validation-section" id="validation">
+      <div class="section-heading"><div><p class="section-number">03 / VALIDATION</p><h2>Four-task validation</h2></div><p>The separate 128-record validation pack uses four native task metrics and the same four conditions.</p></div>
+      <dl class="run-facts validation-facts"><div><dt>Tasks</dt><dd>4</dd></div><div><dt>Queries per task</dt><dd>32</dd></div><div><dt>Scored episodes</dt><dd>512</dd></div><div><dt>Conditions</dt><dd>4</dd></div></dl>
+      <div class="viewer validation-viewer"><div class="viewer-bar"><div><span class="sheet-kicker">Validation · representative queries</span><h3>Depth, normals, segmentation &amp; panoptic</h3></div><span class="sheet-count">1 / 1</span></div><button class="image-frame" id="open-validation-image" type="button"><img src="../assets/prompt-diffusion/validation-samples.webp" alt="Representative Prompt Diffusion validation outputs"><span class="zoom-hint">Open full size ↗</span></button></div>
+      <div class="finding-grid validation-findings"><article><span class="finding-value">0 / 4</span><p>Real beats copying the query input.</p></article><article><span class="finding-value">3 / 4</span><p>Real is directionally better than scrambled.</p></article><article class="finding-note validation-oracle"><span class="finding-value">4 / 4</span><p>Oracle is the best arm.</p></article></div>
+      <div class="validation-table-heading"><div><h3>Native primary metrics</h3><p>Arrows show whether lower or higher values are better.</p></div><a class="download-link" href="../data/prompt-diffusion-validation.csv" download>Download CSV ↓</a></div>
+      
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>Task / primary metric</th><th>Real</th><th>Scrambled</th><th>Grey</th><th>Oracle</th><th>Copy input</th><th>Real Δ</th></tr></thead>
+          <tbody id="validation-results-body"><tr><td colspan="7" class="loading-cell">Loading results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-footnote">Means over 32 queries per task and condition.</p>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-heading"><div><p class="section-number">04 / EVALUATION CONTRACT</p><h2>How this run was adapted</h2></div><p>Prompt Diffusion is natively single-prompt. Each P=2 episode is evaluated as two native P=1 forwards, then the two predictions are averaged before scoring.</p></div>
+      <div class="method-grid"><article><span class="condition-tag real">Real</span><h3>True demonstrations</h3><p>Two demonstrations drawn from the query's source and coded with the query target.</p></article><article><span class="condition-tag scrambled">Scrambled</span><h3>Broken pairing</h3><p>Demonstration relationships are disrupted; palette outputs use the corrected control.</p></article><article><span class="condition-tag grey">Grey</span><h3>Content removed</h3><p>A low-information negative control for visual-prompt use.</p></article><article><span class="condition-tag oracle">Oracle</span><h3>Upper bound</h3><p>A positive control that exposes target structure.</p></article></div>
+      <div class="provenance"><div><p class="provenance-label">Model</p><p>Prompt Diffusion</p><code>60ea7b6cc48d08487f95</code></div><div><p class="provenance-label">Test pack</p><p>test_s64_px256_v5</p><code>48e062452574ff0d…</code></div><div><p class="provenance-label">Scored</p><p>2026-09-27</p><code>p2_mean_of_two_native_prompt_diffusion_p1_v1</code></div></div>
+      <aside class="caution"><strong>Adapter disclosure</strong><p>Prompt Diffusion is natively single-prompt. Each P=2 episode is evaluated as two native P=1 forwards, then the two predictions are averaged before scoring.</p></aside>
+    </section>
+  </main>
+  <footer><p>Prompt Diffusion · test + validation · scored artifact</p><a href="#top">Back to top ↑</a></footer>
+  <dialog id="image-dialog"><div class="dialog-bar"><h2 id="dialog-title">Sample outputs</h2><button id="close-dialog" type="button">Close ×</button></div><img id="dialog-image" src="../assets/prompt-diffusion/test-samples-01.webp" alt=""></dialog>
+</body></html>

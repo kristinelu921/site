@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ten exact-artifact model evaluations on the same Bench v2 validation set, with fully rank-colored task scores.">
+  <title>visualcloze_v2_p2</title>
+  <link rel="stylesheet" href="visualcloze-v2-p2.css?v=57">
+  <script src="visualcloze-v2.js?v=66" defer></script>
+  <script src="bench-v2-examples.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="#top">visualcloze_v2_p2</a>
+    <nav aria-label="Page sections">
+      <a href="index.html">All results</a>
+      <a href="#new-pack">New pack</a>
+      <a href="#old-pack">Old pack</a>
+      <a href="#demos">Demos</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">BENCH_V2 · NATIVE MODEL DEFAULTS · CORRECTED METRICS</p>
+      <h1 id="page-title">visualcloze_<span>v2_p2</span></h1>
+      <p class="dek">A focused results page for VisualCloze, Painter, GenLV, and LVM on the same rebuilt <code>bench_v2</code> validation pack, plus the established supervision-v5 comparison.</p>
+      <dl class="hero-facts" id="run-facts">
+        <div><dt>New pack scored</dt><dd>Loading…</dd></div>
+        <div><dt>VisualCloze recipe</dt><dd>P=2 · 30 steps</dd></div>
+        <div><dt>Validation comparison</dt><dd>VC · Painter · GenLV · LVM</dd></div>
+      </dl>
+    </section>
+
+    <section class="results-section" id="new-pack" aria-labelledby="new-pack-title">
+      <header class="section-heading">
+        <div>
+          <p class="section-index">01 / NEW PACK</p>
+          <h2 id="new-pack-title">Models on <code>bench_v2</code></h2>
+        </div>
+        <p>VisualCloze’s full test result stays intact. The 221-row validation pack now places VisualCloze, Painter, GenLV, PromptDiffusion, RelationAdapter, and LVM side by side under the same corrected scoring protocol, each with its native prompt count.</p>
+      </header>
+
+      <div class="status-strip" id="new-pack-status" aria-live="polite">
+        <div><span>Score-complete packs</span><strong>Loading…</strong></div>
+        <div><span>Score-complete queries</span><strong>Loading…</strong></div>
+        <div><span>Inference</span><strong>17,732 / 17,732</strong></div>
+        <div><span>Protocol</span><strong>PP2 / CSA / AP FIRST</strong></div>
+      </div>
+
+      <section class="task-summary" aria-labelledby="task-summary-title">
+        <header class="task-summary-heading">
+          <div>
+            <p class="summary-kicker">COMBINED TASK READOUT</p>
+            <h3 id="task-summary-title">Test plus aligned validation</h3>
+          </div>
+          <p>Test dataset packs are combined by query count. Validation uses the identical 17 queries per task for all ten models in this focused exact-artifact view.</p>
+        </header>
+        <div class="split-summary-grid split-summary-single" aria-live="polite">
+          <article class="split-panel">
+            <header class="split-panel-heading"><strong>Test</strong><span>17,511 queries · 26 packs</span></header>
+            <div class="task-score-table-shell">
+              <table class="task-score-table">
+                <thead><tr><th scope="col">Task</th><th scope="col">Combined score</th></tr></thead>
+                <tbody id="new-pack-test-task-rows"><tr><td colspan="2">Loading test scores…</td></tr></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+        <section class="validation-comparison" aria-labelledby="validation-comparison-title">
+          <header class="validation-comparison-heading">
+            <div><strong id="validation-comparison-title">Validation · same 221 rows</strong><span>13 tasks × 17 queries · pack <code>8e139f91…</code></span></div>
+            <p>Native defaults: VisualCloze P=2 · Painter P=1 · GenLV P=1 · LaVin-DiT P=4 · PromptDiffusion P=1 · RelationAdapter P=1 · InstaManip P=2 · IMProv P=1 · VICT P=1 · LVM P=7</p>
+          </header>
+          <div class="validation-model-status" id="validation-model-status" aria-label="Validation result status"></div>
+          <p class="table-note"><strong>October 31 correction:</strong> VICT’s pooled edge OIS is 0.2176. The old 0.1087 value was ODS under an OIS label. Predictions and individual query scores are unchanged. <a href="data/vict-edge-aggregation-correction.json">Authenticated correction evidence ↓</a></p>
+          <div class="table-shell validation-table-shell">
+            <table class="validation-comparison-table">
+              <thead><tr><th scope="col">Task / metric</th><th scope="col">VisualCloze<br><span>P=2</span></th><th scope="col">Painter<br><span>P=1</span></th><th scope="col">GenLV<br><span>P=1</span></th><th scope="col">LaVin-DiT<br><span>P=4</span></th><th scope="col">PromptDiffusion<br><span>P=1</span></th><th scope="col">RelationAdapter<br><span>P=1</span></th><th scope="col">InstaManip<br><span>P=2</span></th><th scope="col">LVM<br><span>P=7</span></th></tr></thead>
+              <tbody id="validation-comparison-body"><tr><td colspan="9" class="loading-cell">Loading aligned validation scores…</td></tr></tbody>
+            </table>
+          </div>
+          <p class="table-note">All columns use <code>bench_v2_PP2_CSA_seed1_AP_FIRST_v1</code>. Edge detection uses corrected pooled BSDS500 OIS for every model; other rows use the mean per-query primary metric. VICT, LaVin-DiT, PromptDiffusion, RelationAdapter, InstaManip, and IMProv have completed scored-validation receipts. LVM is a corrected diagnostic snapshot from the legacy combined plan. The qualified VICT, LaVin-DiT, RelationAdapter, and InstaManip TPU ports retain their disclosed CUDA-parity caveats. <a href="data/bench-v2-validation-comparison.json">Exact comparison receipt ↓</a></p>
+        </section>
+      </section>
+
+      <p class="detail-label">Test dataset-pack detail</p>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th scope="col">Task / dataset</th><th scope="col">Queries</th><th scope="col">Primary metric</th><th scope="col">VisualCloze P=2</th></tr></thead>
+          <tbody id="new-pack-body"><tr><td colspan="4" class="loading-cell">Loading <code>bench_v2</code> results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-note">Validation task scores are shown separately above. The detailed rows here cover the 26 test packs only. <a href="data/bench-v2-visualcloze-p2-complete.json">Download the exact final snapshot ↓</a></p>
+    </section>
+
+    <section class="results-section old-pack-section" id="old-pack" aria-labelledby="old-pack-title">
+      <header class="section-heading">
+        <div>
+          <p class="section-index">02 / ESTABLISHED PACK</p>
+          <h2 id="old-pack-title">New pack beside the established baselines</h2>
+        </div>
+        <p>The completed <code>bench_v2</code> VisualCloze result now sits beside VisualCloze and JFlux on pack <code>48e0624…</code>. Each cell carries its own metric and sample count because several task contracts changed between packs.</p>
+      </header>
+
+      <div class="model-key" aria-label="Model evaluation scopes">
+        <article><span class="key-dot new-vc-dot"></span><div><strong>VisualCloze · new pack</strong><p>Native P=2 · complete <code>bench_v2</code> test set; task means weight every query equally</p></div></article>
+        <article><span class="key-dot vc-dot"></span><div><strong>VisualCloze · old pack</strong><p>Native P=2 · nominally 15 × 64; table shows valid scored n</p></div></article>
+        <article><span class="key-dot jf-dot"></span><div><strong>JFlux T3EZ</strong><p>TTT · P=16 · 200 steps · q0 only, one query per task</p></div></article>
+      </div>
+
+      <div class="scope-warning"><strong>No <code>bench_v2</code> JFlux artifact was found.</strong> The JFlux column therefore remains on the old pack. Read each cell’s metric label before comparing values; changed contracts are intentionally not normalized together.</div>
+
+      <div class="table-shell">
+        <table class="comparison-table">
+          <thead><tr><th scope="col">Task</th><th scope="col"><span class="column-title">New pack</span><span class="column-subtitle">VisualCloze P=2</span></th><th scope="col"><span class="column-title">Old pack</span><span class="column-subtitle">VisualCloze P=2</span></th><th scope="col"><span class="column-title">Old pack</span><span class="column-subtitle">JFlux T3EZ</span></th></tr></thead>
+          <tbody id="old-pack-body"><tr><td colspan="4" class="loading-cell">Loading side-by-side results…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-note">New-pack task values are query-count-weighted means across that task’s dataset packs. They are shown beside—not merged with—the old-pack results. JFlux remains one fixed q0 episode per task. <a href="data/bench-v2-visualcloze-p2-complete.json">New-pack snapshot ↓</a> · <a href="data/all-eval-scores.csv">Old-pack ledger ↓</a></p>
+    </section>
+
+    <section class="demos-section" id="demos" aria-labelledby="bench-v2-examples-title">
+      <header class="section-heading">
+        <div>
+          <p class="section-index">03 / EXACT EPISODES</p>
+          <h2 id="bench-v2-examples-title">Same query, native model prompts</h2>
+        </div>
+        <p>Three fixed q0 validation queries. Switch models to see the actual prompt each received—P=2 for VisualCloze, P=1 for GenLV, and P=7 for LVM—followed by that model’s output and episode-coded target.</p>
+      </header>
+
+      <div class="bench-v2-example-viewer">
+        <div class="viewer-bar">
+          <div>
+            <span class="viewer-kicker" id="bench-v2-example-dataset">bench_v2 validation · shared q0</span>
+            <h3 id="bench-v2-example-task">Semantic segmentation</h3>
+          </div>
+          <div class="viewer-actions">
+            <button class="icon-button" id="bench-v2-example-previous" type="button" aria-label="Previous task">←</button>
+            <span id="bench-v2-example-count" aria-live="polite">1 / 3</span>
+            <button class="icon-button" id="bench-v2-example-next" type="button" aria-label="Next task">→</button>
+          </div>
+        </div>
+        <div class="model-example-tabs" id="model-example-tabs" role="tablist" aria-label="Example models"></div>
+        <div class="bench-v2-example-stage" id="bench-v2-example-stage" aria-live="polite"></div>
+        <div class="bench-v2-example-tabs" id="bench-v2-example-tabs" role="tablist" aria-label="Example task families"></div>
+      </div>
+      <p class="table-note">All 30 displayed demonstration pairs were replayed from the frozen pack and checked against each model’s saved episode journal. The three model tabs share the same query record within each task; palette-coded targets correctly follow each model’s own demonstration sequence. <a href="data/bench-v2-validation-model-examples.json">Open the gallery manifest ↗</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>visualcloze_v2_p2</strong> · focused evaluation record</p>
+    <p id="snapshot-time">Loading snapshot time…</p>
+  </footer>
+
+  <dialog id="image-dialog">
+    <div class="dialog-bar"><h2 id="dialog-title">Example image</h2><button type="button" onclick="this.closest('dialog').close()">Close</button></div>
+    <img id="dialog-image" alt="">
+  </dialog>
+</body>
+</html>

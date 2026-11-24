@@ -1,0 +1,135 @@
+{
+  "status": "SCORING_AUDIT_PASS",
+  "p": 16,
+  "query_count": 221,
+  "task_count": 13,
+  "model_pairs": 221,
+  "copy_pairs": 221,
+  "inputs_identity": "62be2e46f3475cac216b431939d4c508c98f84aab31dcde7e267cd5b51dd9b11",
+  "score_manifest_sha256": "a3c7d4325f335ea47c7614e4f3b40f4f1c7185e324cc7357ce28c7d05d937eef",
+  "audited_utc": "2026-11-02T23:22:26.783588+00:00",
+  "durable_archive_verified": false,
+  "mixed_hardware": true,
+  "preserved_original_predictions": 183,
+  "continuation_predictions": 38,
+  "cross_hardware_bitwise_equivalence": false,
+  "aggregates": {
+    "colorization": {
+      "count": 17,
+      "native_name": "lpips",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.9737245720975539,
+      "mean_per_query_copy": 0.26197738792089853
+    },
+    "deblurring": {
+      "count": 17,
+      "native_name": "lpips",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.9495708100935992,
+      "mean_per_query_copy": 0.20889017424162695
+    },
+    "denoising": {
+      "count": 17,
+      "native_name": "lpips",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.8871681059108061,
+      "mean_per_query_copy": 0.7446603214039522
+    },
+    "edge_detection": {
+      "count": 17,
+      "native_name": "ois_f",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.3176912073927916,
+      "mean_per_query_copy": 0.3439881196542276,
+      "dataset_readouts": {
+        "bsds500": {
+          "model": {
+            "ods": 0.3144034884159639,
+            "ods_threshold_index": 2,
+            "ois": 0.3246201481085758,
+            "ap": 0.11046292552429496,
+            "ap_frozen": 0.12046292552429495,
+            "ap_last_diagnostic": 0.11046292552429496,
+            "ap_policy": "collect_eval_bdry_AP_FIRST_R2013a_plus_101samples_div100",
+            "matcher_policy": "BSDS500_2013_original_CSA_reseed1_each_pair_outlier100",
+            "qualification": "AP-specific collector alignment with explicit modern FIRST duplicates. Historical MATLAB runtime/RNG and full toolbox parity remain uncertified."
+          },
+          "copy": {
+            "ods": 0.31047714258132336,
+            "ods_threshold_index": 19,
+            "ois": 0.3537630806605557,
+            "ap": 0.10176946972095509,
+            "ap_frozen": 0.10363938842014207,
+            "ap_last_diagnostic": 0.10176946972095509,
+            "ap_policy": "collect_eval_bdry_AP_FIRST_R2013a_plus_101samples_div100",
+            "matcher_policy": "BSDS500_2013_original_CSA_reseed1_each_pair_outlier100",
+            "qualification": "AP-specific collector alignment with explicit modern FIRST duplicates. Historical MATLAB runtime/RNG and full toolbox parity remain uncertified."
+          }
+        }
+      }
+    },
+    "face_landmarks": {
+      "count": 17,
+      "native_name": "nme",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.3731545866603911,
+      "mean_per_query_copy": 0.3324722723264091
+    },
+    "human_pose_2d": {
+      "count": 17,
+      "native_name": "pck_torso_0.2",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.1122549019607843,
+      "mean_per_query_copy": 0.15735294117647058
+    },
+    "inpainting": {
+      "count": 17,
+      "native_name": "lpips",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.1279671534019358,
+      "mean_per_query_copy": 0.1530421016847386
+    },
+    "instance_segmentation": {
+      "count": 17,
+      "native_name": "pq",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.00419217460739952,
+      "mean_per_query_copy": 0.054150348883660084
+    },
+    "relative_depth": {
+      "count": 17,
+      "native_name": "delta1",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.6753405360936207,
+      "mean_per_query_copy": 0.46488994998791755
+    },
+    "saliency_detection": {
+      "count": 17,
+      "native_name": "max_fbeta",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.2878778866766374,
+      "mean_per_query_copy": 0.4135276662170504
+    },
+    "semantic_segmentation": {
+      "count": 17,
+      "native_name": "miou",
+      "lower_is_better": false,
+      "mean_per_query_model": 0.13584257116829543,
+      "mean_per_query_copy": 0.26335281273431277
+    },
+    "super_resolution": {
+      "count": 17,
+      "native_name": "lpips",
+      "lower_is_better": true,
+      "mean_per_query_model": 0.9488286972045898,
+      "mean_per_query_copy": 0.4340166712508482
+    },
+    "surface_normals": {
+      "count": 17,
+      "native_name": "mean_deg",
+      "lower_is_better": true,
+      "mean_per_query_model": 77.53243033181381,
+      "mean_per_query_copy": 113.58410577159287
+    }
+  }
+}

@@ -1,0 +1,3796 @@
+{
+  "baseline_plan_identity": "c2b174503afc7a35fcc055758fc09e331dcc74be638ea53bff2f7fff9691aea1",
+  "completed_utc": "2026-10-27T03:24:53Z",
+  "demonstrations": 8,
+  "episodes": 221,
+  "manifest_file_sha256": "89f2501aa722cd121da12e33a24ac9037d5cf50df7627911b7f6ce22fcd6c49d",
+  "metric_identity_sha256": "bb44043d6693221f0f2d1931b7e06f484fa54ed9ae9e6552bef1cb36be771c70",
+  "model_revision": "59c469d2772d927ffe55f3543c4d3bd556fd46a4",
+  "note": "Same 13 task-specific prompts as the P2 rerun; empty content captions. Demo pairs, queries, seeds, weights, steps and guidance match the original run at this demo count. TPU hardware and model sharding changed; numerical parity with the CUDA reference is not established.",
+  "pack_id": "8e139f91b083e0ae73b2ed81d8e235460ac2f37d",
+  "plan_identity": "669a2fb74052331c8834e9da4b19ee03c57b5bf9f33e1ab6e01072edb4c83256",
+  "previous_run": {
+    "copy_scores": {
+      "colorization": 0.26197738792089853,
+      "deblurring": 0.20889017424162695,
+      "denoising": 0.7446603214039522,
+      "edge_detection": 0.34398811965422754,
+      "face_landmarks": 0.33247227232640914,
+      "human_pose_2d": 0.15735294117647058,
+      "inpainting": 0.1530421016847386,
+      "instance_segmentation": 0.054150348883660084,
+      "relative_depth": 0.46488994998791755,
+      "saliency_detection": 0.4135276662170504,
+      "semantic_segmentation": 0.26335281273431277,
+      "super_resolution": 0.4340166712508482,
+      "surface_normals": 113.58410577159289
+    },
+    "key": "visualcloze-p8",
+    "label": "VisualCloze",
+    "model": "visualcloze",
+    "note": "TPU-native; CUDA parity not claimed",
+    "p": 8,
+    "provenance": {
+      "episodes": 221,
+      "metric_identity_sha256": "878d961b0acdb8a83005f3eca38647ca67e86b91243a6755c87d4e2974c9e9d3",
+      "score_manifest_sha256": "65f8b8622a975d18c012df59bf336548f5d319341d470084f1fb44731b50aaba",
+      "scored_pairs": 442,
+      "scored_results_sha256": "b5bbfff642023065784993955452d4c123735957d289ceee7399ea0a5b977f74"
+    },
+    "scores": {
+      "colorization": 0.7452547970940085,
+      "deblurring": 0.75778908589307,
+      "denoising": 0.7400761211619657,
+      "edge_detection": 0.2805246020049525,
+      "face_landmarks": 0.3199734093192919,
+      "human_pose_2d": 0.13725490196078433,
+      "inpainting": 0.09788792437928565,
+      "instance_segmentation": 0.0,
+      "relative_depth": 0.6601971614527677,
+      "saliency_detection": 0.3304261274537211,
+      "semantic_segmentation": 0.12783596125095475,
+      "super_resolution": 0.7013534342541414,
+      "surface_normals": 69.52245832278373
+    },
+    "status": "complete corrected validation"
+  },
+  "protocol": "bench_v2_PP2_CSA_seed1_AP_FIRST_v1",
+  "readout": "VC@f30",
+  "release_sha256": "bd08e05f1d0e9dd077db683f4f124ac49a2c45cd0ec5728653bd1ad66cc13792",
+  "run_id": "visualcloze_bench_v2_p1_p4_p8_task_text_v1/p8",
+  "schema": "visualcloze_task_text_validation_receipt_v1",
+  "scored_pairs": 442,
+  "scored_results_sha256": "92221f0f1f9f9fc82e327a567216c1345bf7fdea5c316e7590b16a8ae38ec028",
+  "scoring_recovery": {
+    "episodes": 221,
+    "generation_rerun": false,
+    "original_failure": "Final checksums-only gcloud storage rsync rejected an incorrectly constructed object path after generation completed.",
+    "original_worker_exit_code": 1,
+    "plan_identity": "669a2fb74052331c8834e9da4b19ee03c57b5bf9f33e1ab6e01072edb4c83256",
+    "recovery_basis": "All 221 archived outputs passed file/pixel hashes, exact raw384-to-256 resizing, prompts, and query/demo bindings. The original exit code is preserved. Scoring and final archival run locally.",
+    "remote_log_evidence": "Received container .../p8/results/ that does not contain object .../visualcloze_bench_v2_pviews/bench_v2_val/deblurring_q13/query_target.png.",
+    "verified_utc": "2026-10-27T03:22:28.364939+00:00"
+  },
+  "status": "complete authoritative corrected-v3 validation",
+  "supervision_version": 6,
+  "tasks": [
+    {
+      "content_prompt": "",
+      "copy_score": 0.26197738792089853,
+      "direction": "lower",
+      "generic_text_score": 0.7452547970940085,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0801",
+            "div2k:val:0806",
+            "div2k:val:0846",
+            "div2k:val:0869",
+            "div2k:val:0865",
+            "div2k:val:0866",
+            "div2k:val:0817",
+            "div2k:val:0854"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0852",
+          "score": 0.8450018167495728
+        },
+        {
+          "demo_records": [
+            "div2k:val:0869",
+            "div2k:val:0866",
+            "div2k:val:0852",
+            "div2k:val:0868",
+            "div2k:val:0856",
+            "div2k:val:0854",
+            "div2k:val:0817",
+            "div2k:val:0846"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0815",
+          "score": 0.7116750478744507
+        },
+        {
+          "demo_records": [
+            "div2k:val:0854",
+            "div2k:val:0869",
+            "div2k:val:0812",
+            "div2k:val:0815",
+            "div2k:val:0865",
+            "div2k:val:0851",
+            "div2k:val:0817",
+            "div2k:val:0866"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0891",
+          "score": 0.7209312915802002
+        },
+        {
+          "demo_records": [
+            "div2k:val:0846",
+            "div2k:val:0801",
+            "div2k:val:0852",
+            "div2k:val:0868",
+            "div2k:val:0866",
+            "div2k:val:0865",
+            "div2k:val:0869",
+            "div2k:val:0856"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0806",
+          "score": 0.7652787566184998
+        },
+        {
+          "demo_records": [
+            "div2k:val:0869",
+            "div2k:val:0817",
+            "div2k:val:0815",
+            "div2k:val:0852",
+            "div2k:val:0866",
+            "div2k:val:0826",
+            "div2k:val:0846",
+            "div2k:val:0898"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0801",
+          "score": 0.5425277948379517
+        },
+        {
+          "demo_records": [
+            "div2k:val:0854",
+            "div2k:val:0852",
+            "div2k:val:0891",
+            "div2k:val:0846",
+            "div2k:val:0815",
+            "div2k:val:0868",
+            "div2k:val:0869",
+            "div2k:val:0851"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0866",
+          "score": 0.6263746619224548
+        },
+        {
+          "demo_records": [
+            "div2k:val:0898",
+            "div2k:val:0852",
+            "div2k:val:0856",
+            "div2k:val:0866",
+            "div2k:val:0854",
+            "div2k:val:0865",
+            "div2k:val:0817",
+            "div2k:val:0801"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0869",
+          "score": 0.652009129524231
+        },
+        {
+          "demo_records": [
+            "div2k:val:0801",
+            "div2k:val:0815",
+            "div2k:val:0854",
+            "div2k:val:0869",
+            "div2k:val:0856",
+            "div2k:val:0851",
+            "div2k:val:0898",
+            "div2k:val:0866"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0868",
+          "score": 0.9098691940307617
+        },
+        {
+          "demo_records": [
+            "div2k:val:0806",
+            "div2k:val:0852",
+            "div2k:val:0826",
+            "div2k:val:0815",
+            "div2k:val:0812",
+            "div2k:val:0846",
+            "div2k:val:0801",
+            "div2k:val:0817"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0854",
+          "score": 0.6167997121810913
+        },
+        {
+          "demo_records": [
+            "div2k:val:0846",
+            "div2k:val:0865",
+            "div2k:val:0891",
+            "div2k:val:0817",
+            "div2k:val:0866",
+            "div2k:val:0898",
+            "div2k:val:0854",
+            "div2k:val:0806"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0826",
+          "score": 0.7314949035644531
+        },
+        {
+          "demo_records": [
+            "div2k:val:0854",
+            "div2k:val:0865",
+            "div2k:val:0866",
+            "div2k:val:0815",
+            "div2k:val:0812",
+            "div2k:val:0846",
+            "div2k:val:0806",
+            "div2k:val:0856"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0898",
+          "score": 0.8000495433807373
+        },
+        {
+          "demo_records": [
+            "div2k:val:0806",
+            "div2k:val:0812",
+            "div2k:val:0856",
+            "div2k:val:0851",
+            "div2k:val:0854",
+            "div2k:val:0817",
+            "div2k:val:0866",
+            "div2k:val:0852"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0846",
+          "score": 0.6849465370178223
+        },
+        {
+          "demo_records": [
+            "div2k:val:0817",
+            "div2k:val:0815",
+            "div2k:val:0868",
+            "div2k:val:0866",
+            "div2k:val:0869",
+            "div2k:val:0826",
+            "div2k:val:0865",
+            "div2k:val:0846"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0851",
+          "score": 0.8986774682998657
+        },
+        {
+          "demo_records": [
+            "div2k:val:0866",
+            "div2k:val:0891",
+            "div2k:val:0826",
+            "div2k:val:0868",
+            "div2k:val:0869",
+            "div2k:val:0851",
+            "div2k:val:0815",
+            "div2k:val:0812"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0817",
+          "score": 0.7081077098846436
+        },
+        {
+          "demo_records": [
+            "div2k:val:0869",
+            "div2k:val:0846",
+            "div2k:val:0826",
+            "div2k:val:0817",
+            "div2k:val:0852",
+            "div2k:val:0868",
+            "div2k:val:0815",
+            "div2k:val:0806"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0856",
+          "score": 0.7455199360847473
+        },
+        {
+          "demo_records": [
+            "div2k:val:0806",
+            "div2k:val:0846",
+            "div2k:val:0898",
+            "div2k:val:0868",
+            "div2k:val:0869",
+            "div2k:val:0812",
+            "div2k:val:0856",
+            "div2k:val:0815"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0865",
+          "score": 0.7282844185829163
+        },
+        {
+          "demo_records": [
+            "div2k:val:0852",
+            "div2k:val:0866",
+            "div2k:val:0869",
+            "div2k:val:0891",
+            "div2k:val:0865",
+            "div2k:val:0851",
+            "div2k:val:0854",
+            "div2k:val:0826"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0812",
+          "score": 0.6878344416618347
+        }
+      ],
+      "score": 0.727963668458602,
+      "task": "colorization",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a grayscale photograph to [IMAGE2] a naturally colored photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.20889017424162695,
+      "direction": "lower",
+      "generic_text_score": 0.75778908589307,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0379_11_00:000224"
+          ],
+          "q": 0,
+          "query_record": "gopro:train:GOPR0881_11_00:000077",
+          "score": 0.5707478523254395
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0372_07_00:000068",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0374_11_02:000633"
+          ],
+          "q": 1,
+          "query_record": "gopro:train:GOPR0857_11_00:000008",
+          "score": 0.6085778474807739
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0857_11_00:000008",
+            "gopro:train:GOPR0385_11_00:000171",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0379_11_00:000224",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0372_07_00:000068",
+            "gopro:train:GOPR0881_11_00:000077"
+          ],
+          "q": 2,
+          "query_record": "gopro:train:GOPR0871_11_01:000235",
+          "score": 0.6925419569015503
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0385_11_00:000171",
+            "gopro:train:GOPR0386_11_00:000297",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0378_13_00:000088"
+          ],
+          "q": 3,
+          "query_record": "gopro:train:GOPR0384_11_01:000970",
+          "score": 0.5453629493713379
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0379_11_00:000224",
+            "gopro:train:GOPR0372_07_00:000068",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0384_11_03:002116"
+          ],
+          "q": 4,
+          "query_record": "gopro:train:GOPR0884_11_00:000230",
+          "score": 0.5900464057922363
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0379_11_00:000224"
+          ],
+          "q": 5,
+          "query_record": "gopro:train:GOPR0385_11_00:000171",
+          "score": 0.5932085514068604
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0857_11_00:000008"
+          ],
+          "q": 6,
+          "query_record": "gopro:train:GOPR0868_11_02:000721",
+          "score": 0.9682909250259399
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0379_11_00:000224"
+          ],
+          "q": 7,
+          "query_record": "gopro:train:GOPR0386_11_00:000297",
+          "score": 0.46111223101615906
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0372_07_00:000068",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0857_11_00:000008"
+          ],
+          "q": 8,
+          "query_record": "gopro:train:GOPR0374_11_02:000633",
+          "score": 0.6321662068367004
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0884_11_00:000230"
+          ],
+          "q": 9,
+          "query_record": "gopro:train:GOPR0372_07_00:000068",
+          "score": 0.6864955425262451
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0379_11_00:000224",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0385_11_00:000171",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0372_07_00:000068",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0386_11_00:000297"
+          ],
+          "q": 10,
+          "query_record": "gopro:train:GOPR0378_13_00:000088",
+          "score": 0.3749766945838928
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0857_11_00:000008",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0372_07_00:000068"
+          ],
+          "q": 11,
+          "query_record": "gopro:train:GOPR0379_11_00:000224",
+          "score": 0.5203090906143188
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0386_11_00:000297",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0374_11_02:000633",
+            "gopro:train:GOPR0857_11_00:000008"
+          ],
+          "q": 12,
+          "query_record": "gopro:train:GOPR0380_11_00:000177",
+          "score": 0.7927817702293396
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0385_11_00:000171",
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0871_11_01:000235",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0378_13_00:000088"
+          ],
+          "q": 13,
+          "query_record": "gopro:train:GOPR0477_11_00:000021",
+          "score": 0.6074398159980774
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0379_11_00:000224",
+            "gopro:train:GOPR0477_11_00:000021",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0384_11_02:001354",
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0386_11_00:000297",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0380_11_00:000177"
+          ],
+          "q": 14,
+          "query_record": "gopro:train:GOPR0384_11_03:002116",
+          "score": 0.5798066258430481
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0380_11_00:000177",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0857_11_00:000008",
+            "gopro:train:GOPR0386_11_00:000297",
+            "gopro:train:GOPR0379_11_00:000224",
+            "gopro:train:GOPR0868_11_01:000285",
+            "gopro:train:GOPR0881_11_00:000077"
+          ],
+          "q": 15,
+          "query_record": "gopro:train:GOPR0384_11_02:001354",
+          "score": 0.5963042378425598
+        },
+        {
+          "demo_records": [
+            "gopro:train:GOPR0881_11_00:000077",
+            "gopro:train:GOPR0868_11_02:000721",
+            "gopro:train:GOPR0384_11_03:002116",
+            "gopro:train:GOPR0385_11_00:000171",
+            "gopro:train:GOPR0884_11_00:000230",
+            "gopro:train:GOPR0378_13_00:000088",
+            "gopro:train:GOPR0384_11_01:000970",
+            "gopro:train:GOPR0374_11_02:000633"
+          ],
+          "q": 16,
+          "query_record": "gopro:train:GOPR0868_11_01:000285",
+          "score": 0.5539168119430542
+        }
+      ],
+      "score": 0.6102403244551491,
+      "task": "deblurring",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a blurred photograph to [IMAGE2] a sharp photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.7446603214039522,
+      "direction": "lower",
+      "generic_text_score": 0.7400761211619657,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "sidd:validation:32_10",
+            "sidd:validation:26_17",
+            "sidd:validation:16_25",
+            "sidd:validation:09_28",
+            "sidd:validation:31_11",
+            "sidd:validation:20_20",
+            "sidd:validation:21_22",
+            "sidd:validation:06_21"
+          ],
+          "q": 0,
+          "query_record": "sidd:validation:02_05",
+          "score": 0.510701596736908
+        },
+        {
+          "demo_records": [
+            "sidd:validation:16_25",
+            "sidd:validation:37_15",
+            "sidd:validation:03_14",
+            "sidd:validation:28_26",
+            "sidd:validation:02_05",
+            "sidd:validation:20_20",
+            "sidd:validation:26_17",
+            "sidd:validation:09_28"
+          ],
+          "q": 1,
+          "query_record": "sidd:validation:06_21",
+          "score": 0.8283281326293945
+        },
+        {
+          "demo_records": [
+            "sidd:validation:31_11",
+            "sidd:validation:16_25",
+            "sidd:validation:27_01",
+            "sidd:validation:19_15",
+            "sidd:validation:21_22",
+            "sidd:validation:32_10",
+            "sidd:validation:00_12",
+            "sidd:validation:06_21"
+          ],
+          "q": 2,
+          "query_record": "sidd:validation:20_20",
+          "score": 0.8190328478813171
+        },
+        {
+          "demo_records": [
+            "sidd:validation:27_01",
+            "sidd:validation:20_20",
+            "sidd:validation:31_11",
+            "sidd:validation:19_15",
+            "sidd:validation:09_28",
+            "sidd:validation:02_05",
+            "sidd:validation:28_26",
+            "sidd:validation:01_02"
+          ],
+          "q": 3,
+          "query_record": "sidd:validation:32_10",
+          "score": 0.7300766110420227
+        },
+        {
+          "demo_records": [
+            "sidd:validation:06_21",
+            "sidd:validation:27_01",
+            "sidd:validation:09_28",
+            "sidd:validation:16_25",
+            "sidd:validation:32_10",
+            "sidd:validation:37_15",
+            "sidd:validation:28_26",
+            "sidd:validation:02_05"
+          ],
+          "q": 4,
+          "query_record": "sidd:validation:21_22",
+          "score": 1.1474030017852783
+        },
+        {
+          "demo_records": [
+            "sidd:validation:31_11",
+            "sidd:validation:28_26",
+            "sidd:validation:32_10",
+            "sidd:validation:00_12",
+            "sidd:validation:06_21",
+            "sidd:validation:20_20",
+            "sidd:validation:02_05",
+            "sidd:validation:01_02"
+          ],
+          "q": 5,
+          "query_record": "sidd:validation:26_17",
+          "score": 0.9757034778594971
+        },
+        {
+          "demo_records": [
+            "sidd:validation:31_11",
+            "sidd:validation:19_15",
+            "sidd:validation:02_05",
+            "sidd:validation:25_28",
+            "sidd:validation:01_02",
+            "sidd:validation:03_14",
+            "sidd:validation:32_10",
+            "sidd:validation:06_21"
+          ],
+          "q": 6,
+          "query_record": "sidd:validation:27_01",
+          "score": 1.0847104787826538
+        },
+        {
+          "demo_records": [
+            "sidd:validation:21_22",
+            "sidd:validation:26_17",
+            "sidd:validation:32_10",
+            "sidd:validation:31_11",
+            "sidd:validation:28_26",
+            "sidd:validation:37_15",
+            "sidd:validation:09_28",
+            "sidd:validation:20_20"
+          ],
+          "q": 7,
+          "query_record": "sidd:validation:01_02",
+          "score": 0.7090864181518555
+        },
+        {
+          "demo_records": [
+            "sidd:validation:21_22",
+            "sidd:validation:25_28",
+            "sidd:validation:20_20",
+            "sidd:validation:06_21",
+            "sidd:validation:28_26",
+            "sidd:validation:19_15",
+            "sidd:validation:09_28",
+            "sidd:validation:37_15"
+          ],
+          "q": 8,
+          "query_record": "sidd:validation:00_12",
+          "score": 0.4591149091720581
+        },
+        {
+          "demo_records": [
+            "sidd:validation:09_28",
+            "sidd:validation:32_10",
+            "sidd:validation:26_17",
+            "sidd:validation:03_14",
+            "sidd:validation:28_26",
+            "sidd:validation:01_02",
+            "sidd:validation:06_21",
+            "sidd:validation:27_01"
+          ],
+          "q": 9,
+          "query_record": "sidd:validation:25_28",
+          "score": 0.7274367213249207
+        },
+        {
+          "demo_records": [
+            "sidd:validation:00_12",
+            "sidd:validation:26_17",
+            "sidd:validation:25_28",
+            "sidd:validation:06_21",
+            "sidd:validation:02_05",
+            "sidd:validation:01_02",
+            "sidd:validation:03_14",
+            "sidd:validation:16_25"
+          ],
+          "q": 10,
+          "query_record": "sidd:validation:28_26",
+          "score": 0.4201933741569519
+        },
+        {
+          "demo_records": [
+            "sidd:validation:26_17",
+            "sidd:validation:16_25",
+            "sidd:validation:27_01",
+            "sidd:validation:31_11",
+            "sidd:validation:28_26",
+            "sidd:validation:09_28",
+            "sidd:validation:20_20",
+            "sidd:validation:06_21"
+          ],
+          "q": 11,
+          "query_record": "sidd:validation:37_15",
+          "score": 0.7207993268966675
+        },
+        {
+          "demo_records": [
+            "sidd:validation:25_28",
+            "sidd:validation:37_15",
+            "sidd:validation:09_28",
+            "sidd:validation:02_05",
+            "sidd:validation:27_01",
+            "sidd:validation:00_12",
+            "sidd:validation:31_11",
+            "sidd:validation:32_10"
+          ],
+          "q": 12,
+          "query_record": "sidd:validation:03_14",
+          "score": 0.5582855343818665
+        },
+        {
+          "demo_records": [
+            "sidd:validation:01_02",
+            "sidd:validation:25_28",
+            "sidd:validation:02_05",
+            "sidd:validation:21_22",
+            "sidd:validation:37_15",
+            "sidd:validation:03_14",
+            "sidd:validation:19_15",
+            "sidd:validation:09_28"
+          ],
+          "q": 13,
+          "query_record": "sidd:validation:31_11",
+          "score": 0.7709351181983948
+        },
+        {
+          "demo_records": [
+            "sidd:validation:02_05",
+            "sidd:validation:00_12",
+            "sidd:validation:20_20",
+            "sidd:validation:19_15",
+            "sidd:validation:03_14",
+            "sidd:validation:25_28",
+            "sidd:validation:21_22",
+            "sidd:validation:27_01"
+          ],
+          "q": 14,
+          "query_record": "sidd:validation:09_28",
+          "score": 0.8243879079818726
+        },
+        {
+          "demo_records": [
+            "sidd:validation:19_15",
+            "sidd:validation:03_14",
+            "sidd:validation:06_21",
+            "sidd:validation:27_01",
+            "sidd:validation:20_20",
+            "sidd:validation:00_12",
+            "sidd:validation:02_05",
+            "sidd:validation:28_26"
+          ],
+          "q": 15,
+          "query_record": "sidd:validation:16_25",
+          "score": 0.43262216448783875
+        },
+        {
+          "demo_records": [
+            "sidd:validation:25_28",
+            "sidd:validation:28_26",
+            "sidd:validation:20_20",
+            "sidd:validation:09_28",
+            "sidd:validation:01_02",
+            "sidd:validation:26_17",
+            "sidd:validation:32_10",
+            "sidd:validation:00_12"
+          ],
+          "q": 16,
+          "query_record": "sidd:validation:19_15",
+          "score": 1.0040807723999023
+        }
+      ],
+      "score": 0.7484057878746706,
+      "task": "denoising",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a noisy photograph to [IMAGE2] a clean photograph of the same scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.34398811965422754,
+      "direction": "higher",
+      "generic_text_score": 0.2805246020049525,
+      "metric": "ois_f",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "bsds500:14085",
+            "bsds500:51084",
+            "bsds500:258089",
+            "bsds500:250087",
+            "bsds500:71076",
+            "bsds500:346016",
+            "bsds500:43033",
+            "bsds500:302022"
+          ],
+          "q": 0,
+          "query_record": "bsds500:78098",
+          "score": 0.27047117584630853
+        },
+        {
+          "demo_records": [
+            "bsds500:226043",
+            "bsds500:71076",
+            "bsds500:302022",
+            "bsds500:207038",
+            "bsds500:346016",
+            "bsds500:145059",
+            "bsds500:51084",
+            "bsds500:217090"
+          ],
+          "q": 1,
+          "query_record": "bsds500:14085",
+          "score": 0.320790195436512
+        },
+        {
+          "demo_records": [
+            "bsds500:145059",
+            "bsds500:196062",
+            "bsds500:250087",
+            "bsds500:103029",
+            "bsds500:302022",
+            "bsds500:258089",
+            "bsds500:78098",
+            "bsds500:384022"
+          ],
+          "q": 2,
+          "query_record": "bsds500:71076",
+          "score": 0.17926499975425836
+        },
+        {
+          "demo_records": [
+            "bsds500:14085",
+            "bsds500:258089",
+            "bsds500:105027",
+            "bsds500:145059",
+            "bsds500:302022",
+            "bsds500:43033",
+            "bsds500:103029",
+            "bsds500:196062"
+          ],
+          "q": 3,
+          "query_record": "bsds500:250087",
+          "score": 0.309736249729881
+        },
+        {
+          "demo_records": [
+            "bsds500:51084",
+            "bsds500:346016",
+            "bsds500:103029",
+            "bsds500:226043",
+            "bsds500:71076",
+            "bsds500:14085",
+            "bsds500:145059",
+            "bsds500:302022"
+          ],
+          "q": 4,
+          "query_record": "bsds500:258089",
+          "score": 0.275635873418467
+        },
+        {
+          "demo_records": [
+            "bsds500:250087",
+            "bsds500:258089",
+            "bsds500:302022",
+            "bsds500:346016",
+            "bsds500:105027",
+            "bsds500:78098",
+            "bsds500:145059",
+            "bsds500:384022"
+          ],
+          "q": 5,
+          "query_record": "bsds500:196062",
+          "score": 0.26193463090685964
+        },
+        {
+          "demo_records": [
+            "bsds500:207038",
+            "bsds500:196062",
+            "bsds500:226043",
+            "bsds500:103029",
+            "bsds500:78098",
+            "bsds500:384022",
+            "bsds500:217090",
+            "bsds500:43033"
+          ],
+          "q": 6,
+          "query_record": "bsds500:302022",
+          "score": 0.23483944253903913
+        },
+        {
+          "demo_records": [
+            "bsds500:14085",
+            "bsds500:384022",
+            "bsds500:196062",
+            "bsds500:103029",
+            "bsds500:71076",
+            "bsds500:43033",
+            "bsds500:302022",
+            "bsds500:250087"
+          ],
+          "q": 7,
+          "query_record": "bsds500:217090",
+          "score": 0.3163980056892913
+        },
+        {
+          "demo_records": [
+            "bsds500:14085",
+            "bsds500:51084",
+            "bsds500:207038",
+            "bsds500:103029",
+            "bsds500:346016",
+            "bsds500:226043",
+            "bsds500:71076",
+            "bsds500:217090"
+          ],
+          "q": 8,
+          "query_record": "bsds500:105027",
+          "score": 0.20536795371989777
+        },
+        {
+          "demo_records": [
+            "bsds500:43033",
+            "bsds500:196062",
+            "bsds500:302022",
+            "bsds500:226043",
+            "bsds500:71076",
+            "bsds500:105027",
+            "bsds500:78098",
+            "bsds500:103029"
+          ],
+          "q": 9,
+          "query_record": "bsds500:346016",
+          "score": 0.2046260305608977
+        },
+        {
+          "demo_records": [
+            "bsds500:217090",
+            "bsds500:207038",
+            "bsds500:384022",
+            "bsds500:302022",
+            "bsds500:105027",
+            "bsds500:346016",
+            "bsds500:258089",
+            "bsds500:14085"
+          ],
+          "q": 10,
+          "query_record": "bsds500:103029",
+          "score": 0.2781165875328331
+        },
+        {
+          "demo_records": [
+            "bsds500:43033",
+            "bsds500:226043",
+            "bsds500:217090",
+            "bsds500:207038",
+            "bsds500:51084",
+            "bsds500:302022",
+            "bsds500:103029",
+            "bsds500:258089"
+          ],
+          "q": 11,
+          "query_record": "bsds500:384022",
+          "score": 0.29704103497999307
+        },
+        {
+          "demo_records": [
+            "bsds500:103029",
+            "bsds500:217090",
+            "bsds500:196062",
+            "bsds500:51084",
+            "bsds500:71076",
+            "bsds500:384022",
+            "bsds500:145059",
+            "bsds500:78098"
+          ],
+          "q": 12,
+          "query_record": "bsds500:226043",
+          "score": 0.4507145071603437
+        },
+        {
+          "demo_records": [
+            "bsds500:226043",
+            "bsds500:103029",
+            "bsds500:384022",
+            "bsds500:14085",
+            "bsds500:196062",
+            "bsds500:43033",
+            "bsds500:78098",
+            "bsds500:71076"
+          ],
+          "q": 13,
+          "query_record": "bsds500:51084",
+          "score": 0.2598723270537694
+        },
+        {
+          "demo_records": [
+            "bsds500:258089",
+            "bsds500:51084",
+            "bsds500:105027",
+            "bsds500:302022",
+            "bsds500:103029",
+            "bsds500:196062",
+            "bsds500:145059",
+            "bsds500:384022"
+          ],
+          "q": 14,
+          "query_record": "bsds500:207038",
+          "score": 0.19504171894280758
+        },
+        {
+          "demo_records": [
+            "bsds500:103029",
+            "bsds500:258089",
+            "bsds500:384022",
+            "bsds500:207038",
+            "bsds500:217090",
+            "bsds500:14085",
+            "bsds500:226043",
+            "bsds500:145059"
+          ],
+          "q": 15,
+          "query_record": "bsds500:43033",
+          "score": 0.322647917875729
+        },
+        {
+          "demo_records": [
+            "bsds500:103029",
+            "bsds500:226043",
+            "bsds500:250087",
+            "bsds500:196062",
+            "bsds500:78098",
+            "bsds500:51084",
+            "bsds500:14085",
+            "bsds500:71076"
+          ],
+          "q": 16,
+          "query_record": "bsds500:145059",
+          "score": 0.24958927872423398
+        }
+      ],
+      "score": 0.27247576058065426,
+      "task": "edge_detection",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an edge map showing object and region boundaries."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.33247227232640914,
+      "direction": "lower",
+      "generic_text_score": 0.3199734093192919,
+      "metric": "nme",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "300w:indoor_115",
+            "300w:outdoor_242",
+            "300w:indoor_084",
+            "300w:outdoor_291",
+            "300w:outdoor_082",
+            "300w:outdoor_252",
+            "300w:outdoor_007",
+            "300w:indoor_237"
+          ],
+          "q": 0,
+          "query_record": "300w:indoor_253",
+          "score": 0.26984547544215653
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_115",
+            "300w:outdoor_082",
+            "300w:outdoor_291",
+            "300w:outdoor_171",
+            "300w:outdoor_187",
+            "300w:outdoor_007",
+            "300w:indoor_253",
+            "300w:indoor_116"
+          ],
+          "q": 1,
+          "query_record": "300w:outdoor_242",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_182",
+            "300w:outdoor_291",
+            "300w:outdoor_171",
+            "300w:indoor_116",
+            "300w:indoor_050",
+            "300w:outdoor_252",
+            "300w:indoor_158",
+            "300w:outdoor_115"
+          ],
+          "q": 2,
+          "query_record": "300w:indoor_115",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_242",
+            "300w:outdoor_291",
+            "300w:indoor_237",
+            "300w:outdoor_252",
+            "300w:indoor_116",
+            "300w:indoor_158",
+            "300w:indoor_253",
+            "300w:outdoor_182"
+          ],
+          "q": 3,
+          "query_record": "300w:indoor_050",
+          "score": 0.17425586728254935
+        },
+        {
+          "demo_records": [
+            "300w:indoor_116",
+            "300w:indoor_050",
+            "300w:indoor_158",
+            "300w:outdoor_082",
+            "300w:outdoor_007",
+            "300w:indoor_253",
+            "300w:indoor_084",
+            "300w:outdoor_242"
+          ],
+          "q": 4,
+          "query_record": "300w:outdoor_252",
+          "score": 0.21937590962858575
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_171",
+            "300w:outdoor_115",
+            "300w:indoor_116",
+            "300w:outdoor_187",
+            "300w:outdoor_109",
+            "300w:indoor_237",
+            "300w:outdoor_182",
+            "300w:indoor_084"
+          ],
+          "q": 5,
+          "query_record": "300w:outdoor_082",
+          "score": 0.16419529157433627
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_171",
+            "300w:outdoor_109",
+            "300w:outdoor_007",
+            "300w:indoor_050",
+            "300w:outdoor_187",
+            "300w:indoor_115",
+            "300w:outdoor_252",
+            "300w:outdoor_182"
+          ],
+          "q": 6,
+          "query_record": "300w:outdoor_291",
+          "score": 0.22914562599869734
+        },
+        {
+          "demo_records": [
+            "300w:indoor_084",
+            "300w:outdoor_082",
+            "300w:indoor_158",
+            "300w:outdoor_171",
+            "300w:indoor_116",
+            "300w:outdoor_242",
+            "300w:indoor_115",
+            "300w:outdoor_252"
+          ],
+          "q": 7,
+          "query_record": "300w:outdoor_182",
+          "score": 0.1805410061372656
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_242",
+            "300w:outdoor_291",
+            "300w:indoor_050",
+            "300w:outdoor_082",
+            "300w:outdoor_171",
+            "300w:outdoor_115",
+            "300w:indoor_116",
+            "300w:outdoor_182"
+          ],
+          "q": 8,
+          "query_record": "300w:outdoor_187",
+          "score": 0.22298319339788408
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_007",
+            "300w:indoor_115",
+            "300w:outdoor_242",
+            "300w:indoor_158",
+            "300w:outdoor_109",
+            "300w:outdoor_182",
+            "300w:indoor_050",
+            "300w:indoor_253"
+          ],
+          "q": 9,
+          "query_record": "300w:indoor_237",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:indoor_084",
+            "300w:outdoor_115",
+            "300w:outdoor_082",
+            "300w:indoor_050",
+            "300w:outdoor_171",
+            "300w:indoor_253",
+            "300w:outdoor_182",
+            "300w:outdoor_109"
+          ],
+          "q": 10,
+          "query_record": "300w:indoor_158",
+          "score": 0.21273906997801328
+        },
+        {
+          "demo_records": [
+            "300w:indoor_237",
+            "300w:outdoor_109",
+            "300w:outdoor_291",
+            "300w:indoor_158",
+            "300w:outdoor_187",
+            "300w:outdoor_171",
+            "300w:outdoor_115",
+            "300w:outdoor_182"
+          ],
+          "q": 11,
+          "query_record": "300w:indoor_116",
+          "score": 0.15298429616347128
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_109",
+            "300w:indoor_116",
+            "300w:outdoor_115",
+            "300w:indoor_237",
+            "300w:indoor_084",
+            "300w:indoor_158",
+            "300w:outdoor_182",
+            "300w:outdoor_082"
+          ],
+          "q": 12,
+          "query_record": "300w:outdoor_171",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_242",
+            "300w:outdoor_171",
+            "300w:indoor_237",
+            "300w:indoor_116",
+            "300w:outdoor_182",
+            "300w:indoor_084",
+            "300w:outdoor_187",
+            "300w:outdoor_291"
+          ],
+          "q": 13,
+          "query_record": "300w:outdoor_007",
+          "score": 0.1951079439756812
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_182",
+            "300w:indoor_158",
+            "300w:indoor_050",
+            "300w:indoor_116",
+            "300w:outdoor_242",
+            "300w:outdoor_252",
+            "300w:outdoor_171",
+            "300w:outdoor_115"
+          ],
+          "q": 14,
+          "query_record": "300w:outdoor_109",
+          "score": 0.21816035086949292
+        },
+        {
+          "demo_records": [
+            "300w:outdoor_115",
+            "300w:indoor_237",
+            "300w:indoor_116",
+            "300w:outdoor_242",
+            "300w:indoor_115",
+            "300w:indoor_050",
+            "300w:outdoor_171",
+            "300w:outdoor_082"
+          ],
+          "q": 15,
+          "query_record": "300w:indoor_084",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "300w:indoor_084",
+            "300w:outdoor_082",
+            "300w:indoor_115",
+            "300w:outdoor_291",
+            "300w:outdoor_007",
+            "300w:outdoor_182",
+            "300w:indoor_253",
+            "300w:outdoor_109"
+          ],
+          "q": 16,
+          "query_record": "300w:outdoor_115",
+          "score": 0.15892132308334106
+        }
+      ],
+      "score": 0.28813266785479263,
+      "task": "face_landmarks",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a face photograph to [IMAGE2] a facial-landmark point map using the examples' landmark and color convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.15735294117647058,
+      "direction": "higher",
+      "generic_text_score": 0.13725490196078433,
+      "metric": "pck_torso_0.2",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "mpii:041119152",
+            "mpii:097607833",
+            "mpii:070913699",
+            "mpii:071883975",
+            "mpii:064869504",
+            "mpii:026665966",
+            "mpii:063405506",
+            "mpii:070403145"
+          ],
+          "q": 0,
+          "query_record": "mpii:084118871",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "mpii:070403145",
+            "mpii:037047210",
+            "mpii:097011689",
+            "mpii:097607833",
+            "mpii:054163421",
+            "mpii:044823885",
+            "mpii:041119152",
+            "mpii:034233408"
+          ],
+          "q": 1,
+          "query_record": "mpii:070913699",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "mpii:048018352",
+            "mpii:070403145",
+            "mpii:097607833",
+            "mpii:044823885",
+            "mpii:064869504",
+            "mpii:037047210",
+            "mpii:070913699",
+            "mpii:023371208"
+          ],
+          "q": 2,
+          "query_record": "mpii:071883975",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "mpii:070913699",
+            "mpii:070403145",
+            "mpii:064869504",
+            "mpii:034233408",
+            "mpii:063405506",
+            "mpii:071883975",
+            "mpii:023371208",
+            "mpii:097607833"
+          ],
+          "q": 3,
+          "query_record": "mpii:088163535",
+          "score": 0.4166666666666667
+        },
+        {
+          "demo_records": [
+            "mpii:063405506",
+            "mpii:044823885",
+            "mpii:064869504",
+            "mpii:037047210",
+            "mpii:071883975",
+            "mpii:041119152",
+            "mpii:070913699",
+            "mpii:023371208"
+          ],
+          "q": 4,
+          "query_record": "mpii:097011689",
+          "score": 0.08333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:097011689",
+            "mpii:048018352",
+            "mpii:023371208",
+            "mpii:041119152",
+            "mpii:034233408",
+            "mpii:097607833",
+            "mpii:044823885",
+            "mpii:054163421"
+          ],
+          "q": 5,
+          "query_record": "mpii:070403145",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:064869504",
+            "mpii:097011689",
+            "mpii:034233408",
+            "mpii:084118871",
+            "mpii:054163421",
+            "mpii:088163535",
+            "mpii:070913699",
+            "mpii:071883975"
+          ],
+          "q": 6,
+          "query_record": "mpii:026665966",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:037047210",
+            "mpii:084118871",
+            "mpii:088163535",
+            "mpii:054163421",
+            "mpii:026665966",
+            "mpii:064869504",
+            "mpii:097607833",
+            "mpii:070403145"
+          ],
+          "q": 7,
+          "query_record": "mpii:023371208",
+          "score": 0.4
+        },
+        {
+          "demo_records": [
+            "mpii:048018352",
+            "mpii:097011689",
+            "mpii:084118871",
+            "mpii:071883975",
+            "mpii:063405506",
+            "mpii:044823885",
+            "mpii:088163535",
+            "mpii:070403145"
+          ],
+          "q": 8,
+          "query_record": "mpii:037047210",
+          "score": 0.375
+        },
+        {
+          "demo_records": [
+            "mpii:054163421",
+            "mpii:070913699",
+            "mpii:071883975",
+            "mpii:041119152",
+            "mpii:044823885",
+            "mpii:084118871",
+            "mpii:037047210",
+            "mpii:097607833"
+          ],
+          "q": 9,
+          "query_record": "mpii:048018352",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:071883975",
+            "mpii:088163535",
+            "mpii:063405506",
+            "mpii:097607833",
+            "mpii:026665966",
+            "mpii:037047210",
+            "mpii:034233408",
+            "mpii:023371208"
+          ],
+          "q": 10,
+          "query_record": "mpii:044823885",
+          "score": 0.25
+        },
+        {
+          "demo_records": [
+            "mpii:064869504",
+            "mpii:070403145",
+            "mpii:084118871",
+            "mpii:044823885",
+            "mpii:048018352",
+            "mpii:088163535",
+            "mpii:023371208",
+            "mpii:071883975"
+          ],
+          "q": 11,
+          "query_record": "mpii:063405506",
+          "score": 0.08333333333333333
+        },
+        {
+          "demo_records": [
+            "mpii:097607833",
+            "mpii:037047210",
+            "mpii:097011689",
+            "mpii:026665966",
+            "mpii:048018352",
+            "mpii:084118871",
+            "mpii:063405506",
+            "mpii:071883975"
+          ],
+          "q": 12,
+          "query_record": "mpii:034233408",
+          "score": 0.25
+        },
+        {
+          "demo_records": [
+            "mpii:097607833",
+            "mpii:084118871",
+            "mpii:071883975",
+            "mpii:026665966",
+            "mpii:070913699",
+            "mpii:070403145",
+            "mpii:041119152",
+            "mpii:097011689"
+          ],
+          "q": 13,
+          "query_record": "mpii:064869504",
+          "score": 0.16666666666666666
+        },
+        {
+          "demo_records": [
+            "mpii:044823885",
+            "mpii:054163421",
+            "mpii:064869504",
+            "mpii:023371208",
+            "mpii:041119152",
+            "mpii:063405506",
+            "mpii:088163535",
+            "mpii:037047210"
+          ],
+          "q": 14,
+          "query_record": "mpii:097607833",
+          "score": 0.4166666666666667
+        },
+        {
+          "demo_records": [
+            "mpii:071883975",
+            "mpii:097607833",
+            "mpii:048018352",
+            "mpii:070913699",
+            "mpii:037047210",
+            "mpii:034233408",
+            "mpii:070403145",
+            "mpii:041119152"
+          ],
+          "q": 15,
+          "query_record": "mpii:054163421",
+          "score": 0.5
+        },
+        {
+          "demo_records": [
+            "mpii:097607833",
+            "mpii:097011689",
+            "mpii:070913699",
+            "mpii:064869504",
+            "mpii:088163535",
+            "mpii:071883975",
+            "mpii:070403145",
+            "mpii:037047210"
+          ],
+          "q": 16,
+          "query_record": "mpii:041119152",
+          "score": 0.08333333333333333
+        }
+      ],
+      "score": 0.23676470588235296,
+      "task": "human_pose_2d",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph of a person to [IMAGE2] a body-joint marker map using the examples' joint and color convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.1530421016847386,
+      "direction": "lower",
+      "generic_text_score": 0.09788792437928565,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0802",
+            "div2k:val:0812",
+            "div2k:val:0899",
+            "div2k:val:0811",
+            "div2k:val:0847",
+            "div2k:val:0888",
+            "div2k:val:0860",
+            "div2k:val:0837"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0846",
+          "score": 0.08594226092100143
+        },
+        {
+          "demo_records": [
+            "div2k:val:0863",
+            "div2k:val:0813",
+            "div2k:val:0857",
+            "div2k:val:0811",
+            "div2k:val:0843",
+            "div2k:val:0847",
+            "div2k:val:0888",
+            "div2k:val:0802"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0841",
+          "score": 0.13070997595787048
+        },
+        {
+          "demo_records": [
+            "div2k:val:0802",
+            "div2k:val:0857",
+            "div2k:val:0888",
+            "div2k:val:0813",
+            "div2k:val:0853",
+            "div2k:val:0860",
+            "div2k:val:0841",
+            "div2k:val:0864"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0843",
+          "score": 0.1558241993188858
+        },
+        {
+          "demo_records": [
+            "div2k:val:0857",
+            "div2k:val:0847",
+            "div2k:val:0846",
+            "div2k:val:0837",
+            "div2k:val:0802",
+            "div2k:val:0843",
+            "div2k:val:0841",
+            "div2k:val:0864"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0813",
+          "score": 0.048245951533317566
+        },
+        {
+          "demo_records": [
+            "div2k:val:0813",
+            "div2k:val:0812",
+            "div2k:val:0837",
+            "div2k:val:0857",
+            "div2k:val:0899",
+            "div2k:val:0841",
+            "div2k:val:0863",
+            "div2k:val:0802"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0871",
+          "score": 0.1045493483543396
+        },
+        {
+          "demo_records": [
+            "div2k:val:0863",
+            "div2k:val:0899",
+            "div2k:val:0871",
+            "div2k:val:0888",
+            "div2k:val:0846",
+            "div2k:val:0837",
+            "div2k:val:0843",
+            "div2k:val:0853"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0812",
+          "score": 0.10073726624250412
+        },
+        {
+          "demo_records": [
+            "div2k:val:0888",
+            "div2k:val:0802",
+            "div2k:val:0843",
+            "div2k:val:0871",
+            "div2k:val:0857",
+            "div2k:val:0813",
+            "div2k:val:0841",
+            "div2k:val:0812"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0860",
+          "score": 0.10278715193271637
+        },
+        {
+          "demo_records": [
+            "div2k:val:0811",
+            "div2k:val:0843",
+            "div2k:val:0863",
+            "div2k:val:0847",
+            "div2k:val:0846",
+            "div2k:val:0837",
+            "div2k:val:0860",
+            "div2k:val:0871"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0888",
+          "score": 0.16679051518440247
+        },
+        {
+          "demo_records": [
+            "div2k:val:0847",
+            "div2k:val:0864",
+            "div2k:val:0812",
+            "div2k:val:0899",
+            "div2k:val:0860",
+            "div2k:val:0888",
+            "div2k:val:0871",
+            "div2k:val:0843"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0802",
+          "score": 0.11800875514745712
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853",
+            "div2k:val:0811",
+            "div2k:val:0813",
+            "div2k:val:0888",
+            "div2k:val:0857",
+            "div2k:val:0841",
+            "div2k:val:0812",
+            "div2k:val:0863"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0847",
+          "score": 0.06702180206775665
+        },
+        {
+          "demo_records": [
+            "div2k:val:0843",
+            "div2k:val:0811",
+            "div2k:val:0857",
+            "div2k:val:0853",
+            "div2k:val:0847",
+            "div2k:val:0871",
+            "div2k:val:0888",
+            "div2k:val:0846"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0863",
+          "score": 0.08878651261329651
+        },
+        {
+          "demo_records": [
+            "div2k:val:0843",
+            "div2k:val:0812",
+            "div2k:val:0899",
+            "div2k:val:0837",
+            "div2k:val:0846",
+            "div2k:val:0863",
+            "div2k:val:0853",
+            "div2k:val:0888"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0857",
+          "score": 0.04155140370130539
+        },
+        {
+          "demo_records": [
+            "div2k:val:0863",
+            "div2k:val:0812",
+            "div2k:val:0847",
+            "div2k:val:0864",
+            "div2k:val:0841",
+            "div2k:val:0888",
+            "div2k:val:0837",
+            "div2k:val:0813"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0811",
+          "score": 0.06886110454797745
+        },
+        {
+          "demo_records": [
+            "div2k:val:0863",
+            "div2k:val:0860",
+            "div2k:val:0888",
+            "div2k:val:0841",
+            "div2k:val:0802",
+            "div2k:val:0864",
+            "div2k:val:0811",
+            "div2k:val:0847"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0899",
+          "score": 0.03136425092816353
+        },
+        {
+          "demo_records": [
+            "div2k:val:0811",
+            "div2k:val:0899",
+            "div2k:val:0871",
+            "div2k:val:0863",
+            "div2k:val:0864",
+            "div2k:val:0888",
+            "div2k:val:0802",
+            "div2k:val:0853"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0837",
+          "score": 0.14883282780647278
+        },
+        {
+          "demo_records": [
+            "div2k:val:0841",
+            "div2k:val:0811",
+            "div2k:val:0899",
+            "div2k:val:0871",
+            "div2k:val:0802",
+            "div2k:val:0857",
+            "div2k:val:0813",
+            "div2k:val:0812"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0864",
+          "score": 0.1004580482840538
+        },
+        {
+          "demo_records": [
+            "div2k:val:0802",
+            "div2k:val:0860",
+            "div2k:val:0864",
+            "div2k:val:0813",
+            "div2k:val:0841",
+            "div2k:val:0857",
+            "div2k:val:0837",
+            "div2k:val:0843"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0853",
+          "score": 0.11635751277208328
+        }
+      ],
+      "score": 0.0986369933713885,
+      "task": "inpainting",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph with missing regions to [IMAGE2] a complete photograph with those regions filled consistently with the surrounding scene."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.054150348883660084,
+      "direction": "higher",
+      "generic_text_score": 0.0,
+      "metric": "pq",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:0211",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:0537"
+          ],
+          "q": 0,
+          "query_record": "nyu_depth_v2:1154",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:0211",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:1154"
+          ],
+          "q": 1,
+          "query_record": "nyu_depth_v2:0770",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:0211",
+            "nyu_depth_v2:1154",
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:1093"
+          ],
+          "q": 2,
+          "query_record": "nyu_depth_v2:1129",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:1154",
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:1129"
+          ],
+          "q": 3,
+          "query_record": "nyu_depth_v2:1409",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0537"
+          ],
+          "q": 4,
+          "query_record": "nyu_depth_v2:0852",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:0762",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1093"
+          ],
+          "q": 5,
+          "query_record": "nyu_depth_v2:1353",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0965",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1154"
+          ],
+          "q": 6,
+          "query_record": "nyu_depth_v2:0211",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:0965",
+            "nyu_depth_v2:0298"
+          ],
+          "q": 7,
+          "query_record": "nyu_depth_v2:0762",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:0844"
+          ],
+          "q": 8,
+          "query_record": "nyu_depth_v2:0965",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:0211",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:1287",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:0965"
+          ],
+          "q": 9,
+          "query_record": "nyu_depth_v2:0592",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1154",
+            "nyu_depth_v2:1409",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:1287",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:0762"
+          ],
+          "q": 10,
+          "query_record": "nyu_depth_v2:0537",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0762",
+            "nyu_depth_v2:0211",
+            "nyu_depth_v2:0965",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0844"
+          ],
+          "q": 11,
+          "query_record": "nyu_depth_v2:1390",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1154",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0762",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:1409"
+          ],
+          "q": 12,
+          "query_record": "nyu_depth_v2:1287",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1287",
+            "nyu_depth_v2:0762",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:0517"
+          ],
+          "q": 13,
+          "query_record": "nyu_depth_v2:0844",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1154",
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0298",
+            "nyu_depth_v2:0965",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:0770",
+            "nyu_depth_v2:0592"
+          ],
+          "q": 14,
+          "query_record": "nyu_depth_v2:0517",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0965",
+            "nyu_depth_v2:0762",
+            "nyu_depth_v2:0537",
+            "nyu_depth_v2:1129",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:0592",
+            "nyu_depth_v2:1154"
+          ],
+          "q": 15,
+          "query_record": "nyu_depth_v2:1093",
+          "score": 0.0
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1093",
+            "nyu_depth_v2:0852",
+            "nyu_depth_v2:0844",
+            "nyu_depth_v2:1287",
+            "nyu_depth_v2:1390",
+            "nyu_depth_v2:1353",
+            "nyu_depth_v2:0517",
+            "nyu_depth_v2:1129"
+          ],
+          "q": 16,
+          "query_record": "nyu_depth_v2:0298",
+          "score": 0.0
+        }
+      ],
+      "score": 0.0,
+      "task": "instance_segmentation",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an instance segmentation map with separate object regions using the examples' colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.46488994998791755,
+      "direction": "higher",
+      "generic_text_score": 0.6601971614527677,
+      "metric": "delta1",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:0220",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:0744"
+          ],
+          "q": 0,
+          "query_record": "nyu_depth_v2:0396",
+          "score": 0.769107419216498
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1096",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:1166"
+          ],
+          "q": 1,
+          "query_record": "nyu_depth_v2:0220",
+          "score": 0.6988230967267378
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:1096",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1314"
+          ],
+          "q": 2,
+          "query_record": "nyu_depth_v2:1166",
+          "score": 0.8277192789018137
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:0220",
+            "nyu_depth_v2:1166",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:1082",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1247"
+          ],
+          "q": 3,
+          "query_record": "nyu_depth_v2:0043",
+          "score": 0.7698739035087719
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1096",
+            "nyu_depth_v2:1181",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:1247"
+          ],
+          "q": 4,
+          "query_record": "nyu_depth_v2:1082",
+          "score": 0.8567582985702571
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1082",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1181",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:1166"
+          ],
+          "q": 5,
+          "query_record": "nyu_depth_v2:1247",
+          "score": 0.4497696653628857
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:1166"
+          ],
+          "q": 6,
+          "query_record": "nyu_depth_v2:1314",
+          "score": 0.7040268099366987
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:1166",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:0396"
+          ],
+          "q": 7,
+          "query_record": "nyu_depth_v2:1076",
+          "score": 0.8838364677614583
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:1181",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:1076"
+          ],
+          "q": 8,
+          "query_record": "nyu_depth_v2:0569",
+          "score": 0.5698586845271228
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1181",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1082",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:1146"
+          ],
+          "q": 9,
+          "query_record": "nyu_depth_v2:0272",
+          "score": 0.6046677573183891
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:1096"
+          ],
+          "q": 10,
+          "query_record": "nyu_depth_v2:0744",
+          "score": 0.5533425113085766
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1082",
+            "nyu_depth_v2:1166",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:0272",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1146"
+          ],
+          "q": 11,
+          "query_record": "nyu_depth_v2:1329",
+          "score": 0.6960129988119366
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:1082",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0569"
+          ],
+          "q": 12,
+          "query_record": "nyu_depth_v2:1181",
+          "score": 0.6413934426229508
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1076",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:0220",
+            "nyu_depth_v2:1181"
+          ],
+          "q": 13,
+          "query_record": "nyu_depth_v2:1146",
+          "score": 0.5667261055634807
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:1096",
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0744",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:1181"
+          ],
+          "q": 14,
+          "query_record": "nyu_depth_v2:0838",
+          "score": 0.6479043865041768
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0043",
+            "nyu_depth_v2:0569",
+            "nyu_depth_v2:1329",
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:1181",
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0220",
+            "nyu_depth_v2:1082"
+          ],
+          "q": 15,
+          "query_record": "nyu_depth_v2:1424",
+          "score": 0.4458303569793212
+        },
+        {
+          "demo_records": [
+            "nyu_depth_v2:0838",
+            "nyu_depth_v2:0220",
+            "nyu_depth_v2:1247",
+            "nyu_depth_v2:1314",
+            "nyu_depth_v2:1424",
+            "nyu_depth_v2:0396",
+            "nyu_depth_v2:1146",
+            "nyu_depth_v2:1181"
+          ],
+          "q": 16,
+          "query_record": "nyu_depth_v2:1096",
+          "score": 0.56629451255108
+        }
+      ],
+      "score": 0.6618791585983621,
+      "task": "relative_depth",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a grayscale relative-depth map using the examples' depth direction and intensity convention."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.4135276662170504,
+      "direction": "higher",
+      "generic_text_score": 0.3304261274537211,
+      "metric": "max_fbeta",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_apcmzwzlwlaifwlo"
+          ],
+          "q": 0,
+          "query_record": "dut_omron:sun_bgruczgdxsknninj",
+          "score": 0.029837845690109128
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_apcmzwzlwlaifwlo"
+          ],
+          "q": 1,
+          "query_record": "dut_omron:sun_axdlpjguznudiftw",
+          "score": 0.14434736872863277
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_amtcnaryvbagsatb"
+          ],
+          "q": 2,
+          "query_record": "dut_omron:sun_aaooosasuiphyaqx",
+          "score": 0.2366714627175282
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_bvobxesquwowokjh",
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:sun_aepjhziukqmxktip"
+          ],
+          "q": 3,
+          "query_record": "dut_omron:sun_anaelgmijldqnhvh",
+          "score": 0.7105113323732195
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_anaelgmijldqnhvh",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:sun_bfjlxzoixszyvmpf"
+          ],
+          "q": 4,
+          "query_record": "dut_omron:sun_ahmagclbyykethra",
+          "score": 0.6389938191749318
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_anaelgmijldqnhvh",
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_bfjlxzoixszyvmpf"
+          ],
+          "q": 5,
+          "query_record": "dut_omron:sun_anrkwvcheoerbhqm",
+          "score": 0.09650570576526675
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:sun_anrkwvcheoerbhqm"
+          ],
+          "q": 6,
+          "query_record": "dut_omron:sun_bvobxesquwowokjh",
+          "score": 0.6005092993232987
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:sun_adbdqzigzwipuipr"
+          ],
+          "q": 7,
+          "query_record": "dut_omron:sun_amtcnaryvbagsatb",
+          "score": 0.23837492600962118
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_anaelgmijldqnhvh",
+            "dut_omron:sun_axdlpjguznudiftw"
+          ],
+          "q": 8,
+          "query_record": "dut_omron:sun_aqhjqnnzsawxvvvd",
+          "score": 0.4186116354150479
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_anaelgmijldqnhvh",
+            "dut_omron:sun_aemjuwgxmiyllqkw"
+          ],
+          "q": 9,
+          "query_record": "dut_omron:sun_adbdqzigzwipuipr",
+          "score": 0.12075425797972546
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_aepjhziukqmxktip"
+          ],
+          "q": 10,
+          "query_record": "dut_omron:sun_aemjuwgxmiyllqkw",
+          "score": 0.3714213244188921
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:img_812503560",
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_bvobxesquwowokjh",
+            "dut_omron:sun_anaelgmijldqnhvh"
+          ],
+          "q": 11,
+          "query_record": "dut_omron:sun_bcdlvrkvodarohwm",
+          "score": 0.24646580037126947
+        },
+        {
+          "demo_records": [
+            "dut_omron:img_812503560",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_apcmzwzlwlaifwlo",
+            "dut_omron:sun_amtcnaryvbagsatb"
+          ],
+          "q": 12,
+          "query_record": "dut_omron:sun_bfjlxzoixszyvmpf",
+          "score": 0.22220905633787238
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_anaelgmijldqnhvh",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_adbdqzigzwipuipr",
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_aepjhziukqmxktip"
+          ],
+          "q": 13,
+          "query_record": "dut_omron:sun_apcmzwzlwlaifwlo",
+          "score": 0.028065829056804104
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_bfjlxzoixszyvmpf",
+            "dut_omron:sun_aipfmfdoxumqmjxg",
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_aqhjqnnzsawxvvvd"
+          ],
+          "q": 14,
+          "query_record": "dut_omron:img_812503560",
+          "score": 0.3254508684306716
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_bvobxesquwowokjh",
+            "dut_omron:sun_amtcnaryvbagsatb",
+            "dut_omron:sun_bcdlvrkvodarohwm",
+            "dut_omron:sun_aepjhziukqmxktip",
+            "dut_omron:sun_ahmagclbyykethra"
+          ],
+          "q": 15,
+          "query_record": "dut_omron:sun_aipfmfdoxumqmjxg",
+          "score": 0.5685379702846952
+        },
+        {
+          "demo_records": [
+            "dut_omron:sun_aemjuwgxmiyllqkw",
+            "dut_omron:sun_anrkwvcheoerbhqm",
+            "dut_omron:sun_bgruczgdxsknninj",
+            "dut_omron:sun_aaooosasuiphyaqx",
+            "dut_omron:sun_aqhjqnnzsawxvvvd",
+            "dut_omron:sun_ahmagclbyykethra",
+            "dut_omron:sun_axdlpjguznudiftw",
+            "dut_omron:sun_adbdqzigzwipuipr"
+          ],
+          "q": 16,
+          "query_record": "dut_omron:sun_aepjhziukqmxktip",
+          "score": 0.5270926370325636
+        }
+      ],
+      "score": 0.3249624199476559,
+      "task": "saliency_detection",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a salient-foreground mask using the examples' foreground and background colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.26335281273431277,
+      "direction": "higher",
+      "generic_text_score": 0.12783596125095475,
+      "metric": "miou",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000895",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000302"
+          ],
+          "q": 0,
+          "query_record": "ade20k:ADE_val_00000606",
+          "score": 0.17177974454432468
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00001065",
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000992"
+          ],
+          "q": 1,
+          "query_record": "ade20k:ADE_val_00000895",
+          "score": 0.06362165830675881
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00001081"
+          ],
+          "q": 2,
+          "query_record": "ade20k:ADE_val_00000361",
+          "score": 0.2890213461834507
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00001256"
+          ],
+          "q": 3,
+          "query_record": "ade20k:ADE_val_00001441",
+          "score": 0.24889944498296523
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000895",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00001243"
+          ],
+          "q": 4,
+          "query_record": "ade20k:ADE_val_00000992",
+          "score": 0.17223650506397858
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00000895"
+          ],
+          "q": 5,
+          "query_record": "ade20k:ADE_val_00000735",
+          "score": 0.1193116842369126
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00001065",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00000895",
+            "ade20k:ADE_val_00001677"
+          ],
+          "q": 6,
+          "query_record": "ade20k:ADE_val_00000212",
+          "score": 0.11577301119515121
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00001081"
+          ],
+          "q": 7,
+          "query_record": "ade20k:ADE_val_00001256",
+          "score": 0.09736682781533437
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00000606",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00000212"
+          ],
+          "q": 8,
+          "query_record": "ade20k:ADE_val_00001243",
+          "score": 0.026567972902495424
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00000606"
+          ],
+          "q": 9,
+          "query_record": "ade20k:ADE_val_00000199",
+          "score": 0.17775009432775452
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000606",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00001081"
+          ],
+          "q": 10,
+          "query_record": "ade20k:ADE_val_00000302",
+          "score": 0.06947435239890677
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00000895"
+          ],
+          "q": 11,
+          "query_record": "ade20k:ADE_val_00001065",
+          "score": 0.09682683966507935
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000895",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00001256",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00001065"
+          ],
+          "q": 12,
+          "query_record": "ade20k:ADE_val_00000600",
+          "score": 0.13779742675620116
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00000606",
+            "ade20k:ADE_val_00001441",
+            "ade20k:ADE_val_00001081",
+            "ade20k:ADE_val_00000623",
+            "ade20k:ADE_val_00000600"
+          ],
+          "q": 13,
+          "query_record": "ade20k:ADE_val_00001677",
+          "score": 0.049803412862856146
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00001677",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000302"
+          ],
+          "q": 14,
+          "query_record": "ade20k:ADE_val_00001081",
+          "score": 0.13084531464373578
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000895",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00000361",
+            "ade20k:ADE_val_00000606",
+            "ade20k:ADE_val_00001065",
+            "ade20k:ADE_val_00000735",
+            "ade20k:ADE_val_00001677"
+          ],
+          "q": 15,
+          "query_record": "ade20k:ADE_val_00000934",
+          "score": 0.11416779902873664
+        },
+        {
+          "demo_records": [
+            "ade20k:ADE_val_00000992",
+            "ade20k:ADE_val_00000934",
+            "ade20k:ADE_val_00000199",
+            "ade20k:ADE_val_00000302",
+            "ade20k:ADE_val_00001243",
+            "ade20k:ADE_val_00000600",
+            "ade20k:ADE_val_00000212",
+            "ade20k:ADE_val_00001441"
+          ],
+          "q": 16,
+          "query_record": "ade20k:ADE_val_00000623",
+          "score": 0.17989353978124908
+        }
+      ],
+      "score": 0.13300805733505242,
+      "task": "semantic_segmentation",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] a semantic segmentation map using the examples' class colors."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 0.4340166712508482,
+      "direction": "lower",
+      "generic_text_score": 0.7013534342541414,
+      "metric": "lpips",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "div2k:val:0827",
+            "div2k:val:0889",
+            "div2k:val:0856",
+            "div2k:val:0805",
+            "div2k:val:0888",
+            "div2k:val:0841",
+            "div2k:val:0838",
+            "div2k:val:0851"
+          ],
+          "q": 0,
+          "query_record": "div2k:val:0858",
+          "score": 0.6591225862503052
+        },
+        {
+          "demo_records": [
+            "div2k:val:0838",
+            "div2k:val:0864",
+            "div2k:val:0881",
+            "div2k:val:0850",
+            "div2k:val:0805",
+            "div2k:val:0851",
+            "div2k:val:0840",
+            "div2k:val:0834"
+          ],
+          "q": 1,
+          "query_record": "div2k:val:0889",
+          "score": 0.8257259130477905
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889",
+            "div2k:val:0840",
+            "div2k:val:0841",
+            "div2k:val:0858",
+            "div2k:val:0838",
+            "div2k:val:0834",
+            "div2k:val:0850",
+            "div2k:val:0856"
+          ],
+          "q": 2,
+          "query_record": "div2k:val:0872",
+          "score": 0.561508297920227
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889",
+            "div2k:val:0840",
+            "div2k:val:0834",
+            "div2k:val:0853",
+            "div2k:val:0868",
+            "div2k:val:0864",
+            "div2k:val:0881",
+            "div2k:val:0851"
+          ],
+          "q": 3,
+          "query_record": "div2k:val:0888",
+          "score": 0.678288996219635
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889",
+            "div2k:val:0850",
+            "div2k:val:0858",
+            "div2k:val:0864",
+            "div2k:val:0827",
+            "div2k:val:0856",
+            "div2k:val:0853",
+            "div2k:val:0838"
+          ],
+          "q": 4,
+          "query_record": "div2k:val:0851",
+          "score": 0.3865545988082886
+        },
+        {
+          "demo_records": [
+            "div2k:val:0872",
+            "div2k:val:0856",
+            "div2k:val:0840",
+            "div2k:val:0850",
+            "div2k:val:0841",
+            "div2k:val:0827",
+            "div2k:val:0864",
+            "div2k:val:0853"
+          ],
+          "q": 5,
+          "query_record": "div2k:val:0868",
+          "score": 0.7694530487060547
+        },
+        {
+          "demo_records": [
+            "div2k:val:0853",
+            "div2k:val:0840",
+            "div2k:val:0827",
+            "div2k:val:0838",
+            "div2k:val:0872",
+            "div2k:val:0868",
+            "div2k:val:0805",
+            "div2k:val:0856"
+          ],
+          "q": 6,
+          "query_record": "div2k:val:0864",
+          "score": 0.6939331293106079
+        },
+        {
+          "demo_records": [
+            "div2k:val:0841",
+            "div2k:val:0856",
+            "div2k:val:0881",
+            "div2k:val:0888",
+            "div2k:val:0850",
+            "div2k:val:0872",
+            "div2k:val:0858",
+            "div2k:val:0827"
+          ],
+          "q": 7,
+          "query_record": "div2k:val:0840",
+          "score": 0.7808971405029297
+        },
+        {
+          "demo_records": [
+            "div2k:val:0868",
+            "div2k:val:0872",
+            "div2k:val:0827",
+            "div2k:val:0889",
+            "div2k:val:0838",
+            "div2k:val:0864",
+            "div2k:val:0853",
+            "div2k:val:0841"
+          ],
+          "q": 8,
+          "query_record": "div2k:val:0881",
+          "score": 0.3946087062358856
+        },
+        {
+          "demo_records": [
+            "div2k:val:0834",
+            "div2k:val:0858",
+            "div2k:val:0889",
+            "div2k:val:0868",
+            "div2k:val:0805",
+            "div2k:val:0888",
+            "div2k:val:0856",
+            "div2k:val:0840"
+          ],
+          "q": 9,
+          "query_record": "div2k:val:0827",
+          "score": 0.6961284875869751
+        },
+        {
+          "demo_records": [
+            "div2k:val:0881",
+            "div2k:val:0834",
+            "div2k:val:0864",
+            "div2k:val:0868",
+            "div2k:val:0840",
+            "div2k:val:0856",
+            "div2k:val:0850",
+            "div2k:val:0853"
+          ],
+          "q": 10,
+          "query_record": "div2k:val:0838",
+          "score": 0.8736677169799805
+        },
+        {
+          "demo_records": [
+            "div2k:val:0889",
+            "div2k:val:0840",
+            "div2k:val:0834",
+            "div2k:val:0841",
+            "div2k:val:0868",
+            "div2k:val:0858",
+            "div2k:val:0888",
+            "div2k:val:0838"
+          ],
+          "q": 11,
+          "query_record": "div2k:val:0805",
+          "score": 0.5793302059173584
+        },
+        {
+          "demo_records": [
+            "div2k:val:0864",
+            "div2k:val:0851",
+            "div2k:val:0805",
+            "div2k:val:0827",
+            "div2k:val:0888",
+            "div2k:val:0840",
+            "div2k:val:0872",
+            "div2k:val:0856"
+          ],
+          "q": 12,
+          "query_record": "div2k:val:0853",
+          "score": 0.6875621676445007
+        },
+        {
+          "demo_records": [
+            "div2k:val:0864",
+            "div2k:val:0889",
+            "div2k:val:0840",
+            "div2k:val:0850",
+            "div2k:val:0805",
+            "div2k:val:0841",
+            "div2k:val:0872",
+            "div2k:val:0851"
+          ],
+          "q": 13,
+          "query_record": "div2k:val:0856",
+          "score": 0.6449981927871704
+        },
+        {
+          "demo_records": [
+            "div2k:val:0827",
+            "div2k:val:0888",
+            "div2k:val:0840",
+            "div2k:val:0851",
+            "div2k:val:0858",
+            "div2k:val:0856",
+            "div2k:val:0805",
+            "div2k:val:0864"
+          ],
+          "q": 14,
+          "query_record": "div2k:val:0834",
+          "score": 0.6205294132232666
+        },
+        {
+          "demo_records": [
+            "div2k:val:0864",
+            "div2k:val:0853",
+            "div2k:val:0888",
+            "div2k:val:0850",
+            "div2k:val:0805",
+            "div2k:val:0834",
+            "div2k:val:0872",
+            "div2k:val:0827"
+          ],
+          "q": 15,
+          "query_record": "div2k:val:0841",
+          "score": 0.6021134257316589
+        },
+        {
+          "demo_records": [
+            "div2k:val:0827",
+            "div2k:val:0856",
+            "div2k:val:0838",
+            "div2k:val:0858",
+            "div2k:val:0851",
+            "div2k:val:0864",
+            "div2k:val:0868",
+            "div2k:val:0841"
+          ],
+          "q": 16,
+          "query_record": "div2k:val:0850",
+          "score": 0.4317769408226013
+        }
+      ],
+      "score": 0.6403646451585433,
+      "task": "super_resolution",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a low-resolution photograph to [IMAGE2] a higher-resolution photograph of the same scene with faithful fine detail."
+    },
+    {
+      "content_prompt": "",
+      "copy_score": 113.58410577159289,
+      "direction": "lower",
+      "generic_text_score": 69.52245832278373,
+      "metric": "mean_deg",
+      "n": 17,
+      "per_query": [
+        {
+          "demo_records": [
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00019_00183_indoors_180_030",
+            "diode:00021_00191_indoors_220_000",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00024_00201_outdoor_340_000",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00020_00186_indoors_040_020"
+          ],
+          "q": 0,
+          "query_record": "diode:00023_00200_outdoor_020_030",
+          "score": 88.10014403302851
+        },
+        {
+          "demo_records": [
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00020_00186_indoors_040_020",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00021_00189_indoors_000_000"
+          ],
+          "q": 1,
+          "query_record": "diode:00022_00194_outdoor_180_010",
+          "score": 79.4064559167077
+        },
+        {
+          "demo_records": [
+            "diode:00021_00188_indoors_130_020",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00020_00187_indoors_240_010",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00021_00192_indoors_010_010"
+          ],
+          "q": 2,
+          "query_record": "diode:00019_00183_indoors_180_030",
+          "score": 52.62475847491567
+        },
+        {
+          "demo_records": [
+            "diode:00020_00187_indoors_240_010",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00024_00201_outdoor_340_000",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00021_00188_indoors_130_020",
+            "diode:00021_00191_indoors_220_000",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00022_00194_outdoor_180_010"
+          ],
+          "q": 3,
+          "query_record": "diode:00020_00186_indoors_040_020",
+          "score": 46.25318147992668
+        },
+        {
+          "demo_records": [
+            "diode:00021_00192_indoors_010_010",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00021_00191_indoors_220_000",
+            "diode:00020_00187_indoors_240_010"
+          ],
+          "q": 4,
+          "query_record": "diode:00024_00202_outdoor_140_000",
+          "score": 56.4945568448586
+        },
+        {
+          "demo_records": [
+            "diode:00020_00187_indoors_240_010",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00020_00186_indoors_040_020",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00020_00185_indoors_080_010"
+          ],
+          "q": 5,
+          "query_record": "diode:00021_00188_indoors_130_020",
+          "score": 42.43367094592728
+        },
+        {
+          "demo_records": [
+            "diode:00021_00188_indoors_130_020",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00019_00183_indoors_180_030",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00020_00185_indoors_080_010"
+          ],
+          "q": 6,
+          "query_record": "diode:00023_00199_outdoor_010_000",
+          "score": 46.26380584361234
+        },
+        {
+          "demo_records": [
+            "diode:00019_00183_indoors_180_030",
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00020_00187_indoors_240_010",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00024_00201_outdoor_340_000"
+          ],
+          "q": 7,
+          "query_record": "diode:00022_00196_outdoor_250_010",
+          "score": 40.190192398897125
+        },
+        {
+          "demo_records": [
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00020_00187_indoors_240_010",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00021_00191_indoors_220_000",
+            "diode:00020_00186_indoors_040_020",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00019_00183_indoors_180_030",
+            "diode:00023_00200_outdoor_020_030"
+          ],
+          "q": 8,
+          "query_record": "diode:00020_00185_indoors_080_010",
+          "score": 29.131065234525536
+        },
+        {
+          "demo_records": [
+            "diode:00019_00183_indoors_180_030",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00021_00188_indoors_130_020"
+          ],
+          "q": 9,
+          "query_record": "diode:00024_00201_outdoor_340_000",
+          "score": 78.2195687663772
+        },
+        {
+          "demo_records": [
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00020_00187_indoors_240_010",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00019_00183_indoors_180_030"
+          ],
+          "q": 10,
+          "query_record": "diode:00022_00197_outdoor_290_000",
+          "score": 72.72214559147432
+        },
+        {
+          "demo_records": [
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00022_00194_outdoor_180_010",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00021_00191_indoors_220_000"
+          ],
+          "q": 11,
+          "query_record": "diode:00021_00189_indoors_000_000",
+          "score": 54.66004186420592
+        },
+        {
+          "demo_records": [
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00024_00201_outdoor_340_000",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00022_00194_outdoor_180_010"
+          ],
+          "q": 12,
+          "query_record": "diode:00022_00195_outdoor_270_000",
+          "score": 34.124906773646146
+        },
+        {
+          "demo_records": [
+            "diode:00020_00185_indoors_080_010",
+            "diode:00024_00201_outdoor_340_000",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00021_00191_indoors_220_000",
+            "diode:00021_00188_indoors_130_020",
+            "diode:00023_00199_outdoor_010_000",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00021_00189_indoors_000_000"
+          ],
+          "q": 13,
+          "query_record": "diode:00021_00192_indoors_010_010",
+          "score": 53.21673171676445
+        },
+        {
+          "demo_records": [
+            "diode:00021_00191_indoors_220_000",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00022_00196_outdoor_250_010",
+            "diode:00020_00186_indoors_040_020",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00019_00183_indoors_180_030"
+          ],
+          "q": 14,
+          "query_record": "diode:00022_00193_outdoor_070_030",
+          "score": 54.09380666415638
+        },
+        {
+          "demo_records": [
+            "diode:00021_00191_indoors_220_000",
+            "diode:00022_00193_outdoor_070_030",
+            "diode:00020_00185_indoors_080_010",
+            "diode:00020_00186_indoors_040_020",
+            "diode:00021_00188_indoors_130_020",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00023_00200_outdoor_020_030",
+            "diode:00022_00196_outdoor_250_010"
+          ],
+          "q": 15,
+          "query_record": "diode:00020_00187_indoors_240_010",
+          "score": 37.822988139797985
+        },
+        {
+          "demo_records": [
+            "diode:00020_00186_indoors_040_020",
+            "diode:00024_00202_outdoor_140_000",
+            "diode:00022_00197_outdoor_290_000",
+            "diode:00021_00188_indoors_130_020",
+            "diode:00021_00189_indoors_000_000",
+            "diode:00021_00192_indoors_010_010",
+            "diode:00022_00195_outdoor_270_000",
+            "diode:00022_00194_outdoor_180_010"
+          ],
+          "q": 16,
+          "query_record": "diode:00021_00191_indoors_220_000",
+          "score": 47.544118548932865
+        }
+      ],
+      "score": 53.72365524927969,
+      "task": "surface_normals",
+      "task_prompt": "Each row shows the transformation from [IMAGE1] a photograph to [IMAGE2] an RGB surface-normal map using the examples' coordinate and color convention."
+    }
+  ],
+  "units": [
+    {
+      "episodes": 1,
+      "group": "edge_q06",
+      "producer_sha256": "1c49608bf6eb0a3aadcf18d9dd1694f3eb29815f991f36863c0cdfacfa947e45",
+      "run_identity": "d9b62f92b107c931febd868893d5eaa99f1814f1574e45f2d9bbf44e4c2365e9",
+      "score_manifest_sha256": "78442dde68af6ab91d1dfc5b2043b8e0708038b879c240b01c9ab0e0645803ee",
+      "scored_results_sha256": "0777cde399e07319061e28ebc7c75e1a82cc430e3feb2070294b6e589ee11d1d"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q01",
+      "producer_sha256": "1930b2ee2e874f29a811ab92e11000382666c6c01ce6a66d14b56a33da6e912b",
+      "run_identity": "41314ee5537ec9678d4d0eb1ebae8348f181782c0831c391c84d00e98552f161",
+      "score_manifest_sha256": "84fbf7d300c56a3ae5a7c128fbc27f3bd03a2dda9d30368d8efc6e26a7addaf5",
+      "scored_results_sha256": "639a16e66d26d58ca8bc59fdb8fc116c5dacb3d0f3b715188b4e5b83a2353381"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q05",
+      "producer_sha256": "54f92a4564427db055bd22c5c6026f172dc90071413ba3006f34ad1c89466884",
+      "run_identity": "51761ebc536ff9e280a198ea379a766f2ae1375fb7d3f19a0bc8779000ddd075",
+      "score_manifest_sha256": "1deaecae89343803d414ae3ddc7144c414be424d0f97a23909c2f6773e52dabf",
+      "scored_results_sha256": "4bd8b93c7bd9cea35a0377f77ffe725787587488703478abb80acf32bbb39376"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q02",
+      "producer_sha256": "6923ab17569584fc880e43d8e91b6945ba8e5c65815fa80b08ea22cddb00f6aa",
+      "run_identity": "ac6d77d403228983e984dce04fa6b7ddd9f8f401f36e4dc8d8dffc20587bd185",
+      "score_manifest_sha256": "d64e2d5267dba885199a62513a996f751c51a514bef4fc4ba8efb3dba7cc6a05",
+      "scored_results_sha256": "490d1c1d5dbdc5dc49106cc3c1b3ef5e8e7a4664b1ef93a08a50113464be179a"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q03",
+      "producer_sha256": "ba1be7827f91c917009940360c4286b905e70a17a6d39db4a96e617787173ca7",
+      "run_identity": "c3216240b18500956080ee97927573f1ce39eb2e0a6ccf2a6bc1972d6eb8de82",
+      "score_manifest_sha256": "bd66b05d63bf50b1614dd70a769b9074f449603a5a8498ee05ffb79576c14a44",
+      "scored_results_sha256": "8dc61d8f1675bb95f319622a9041a5e6adfb930e8d70caae559057384180a910"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q04",
+      "producer_sha256": "09cbe2e801cbea87301a0dcd59442bf89e83a2f085450cc8dfb46bed192365a6",
+      "run_identity": "29202b7bfa71ea699bfa591141566baa87cffb9660b31d2ea0409a9c1e6a2c59",
+      "score_manifest_sha256": "1ebb79404a95e7d6ece93e78f0dd280463772fb2ec4a4a3c64485d7af342b763",
+      "scored_results_sha256": "bf9c2fcf05c5a45d1308aed60596361fdabe1fd456e51ca4f603a159f3fb7329"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q07",
+      "producer_sha256": "304c178aeb415a9d8796022937d8130d2261d8e5e6d0f629ce3eaff5748a7632",
+      "run_identity": "06f7f0045ca5d2615da9c3f34d6b06cf3f7eab8f2a75af2fc4d6421eb597071a",
+      "score_manifest_sha256": "0d3de5fba5ff4223bd980bb0b7760032fcb10066e272a5a789bdc148d9ada4e4",
+      "scored_results_sha256": "452eb7348617b3005751c4b201ff19275240731075628a5dfb3572411d52cf63"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q00",
+      "producer_sha256": "bf9906e6984f1b3e2b76da9499915929401766b1eb27de50749f251f458aa4a6",
+      "run_identity": "2cbf9c69525a25b40d15c24d0fbc1aa5155960366ec8b0e686de78e7f235b009",
+      "score_manifest_sha256": "daae9264094b8def084a4dae339065389d73ec6b249374331352238cf73786ed",
+      "scored_results_sha256": "762f2f2835335cb8443292568cdc7a04ff17f35b54c7448d575a549aa5e5bf75"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q08",
+      "producer_sha256": "3e0bee2687012747ac169a215e4e97e3581bb0b98a334e82b6cdbdfd25051880",
+      "run_identity": "1adaa726e98215ac1511f0116060f3165d9af4dd08c7aad1ff86ad5f9bf7dce8",
+      "score_manifest_sha256": "a3750ff58818001bed8638ae3701786b620f8f873504a40ae9084196e8ff9c9c",
+      "scored_results_sha256": "d6b68fb8fa688d7bad1af68dfaf296dc35077e65c458334e65576c6bb089ced2"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q09",
+      "producer_sha256": "4605f60618aaa22e34930bd1422514f734aa9eea10d0201d86c56110d4b26c70",
+      "run_identity": "9e996b438131148b22b59d396267ca03612f9e414d6fcb26f30f673bfeab2356",
+      "score_manifest_sha256": "419b3babc386835b028ae1409fe9b70b69eabad3221cb2bfa6e74cc8b62b450d",
+      "scored_results_sha256": "5c02b6d93cb27de3afa7afba5e6d7978581b74dea887de7be16dbeebeae595f3"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q10",
+      "producer_sha256": "4b902710e8684e73d4d8ce82a555ca88b486d1a4f0e183577565bb980c0d5e2d",
+      "run_identity": "bb3aceb6fc310cdd63d14583edb4901513334c5f5a5f604dd7533b03be094e68",
+      "score_manifest_sha256": "20b830f37f833e4b4aaaf497c5b7736ab8cbcd6daa5eda75b3b372dd3aa4a23b",
+      "scored_results_sha256": "730baaefc2106fb2cc99633da462cf283e40b9eceec70868f2e22f964c4533f3"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q11",
+      "producer_sha256": "605a81c4ba46cd272af9f59f3ff3a483d81de4c44bd1199701356ca9baea2c08",
+      "run_identity": "f8c2ba6d01dda562f5f4ede0d453f5f5d7962ae0fac4ea92721fda00919d00d4",
+      "score_manifest_sha256": "d707718f31ac28432b89701b8e707ab85a43079972a50ebbcbf1d00b93f66e54",
+      "scored_results_sha256": "d57642658b2250e9d252b6ff302af7c470383ea1eda0bd73b00e17ea7dceabd4"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q15",
+      "producer_sha256": "5839fab64520de72639b02b958177bdf8a67a88837bab0e5797303f9a9669843",
+      "run_identity": "25932b0c293e5657c69949dd36f6fb061c3b58dcdcea23c0bfa043140f4ebfce",
+      "score_manifest_sha256": "039acae870839de1d4de90e24cf7b5ba65a51053380b19947e60671d5a55b5b6",
+      "scored_results_sha256": "cd88f20379b7154320fc26d811e65f731955170e3be5e13cfebc21a42e952bd7"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q14",
+      "producer_sha256": "694a49efe660152de2e5b8747be4bc187b32733925003869ca0a69c42e1958df",
+      "run_identity": "52b9e8bc249a8eca98d042dd10677f478299e2eb3ae2d967324bdc6394172633",
+      "score_manifest_sha256": "17a68ee57720d37e1032b92ae46cb3f09df80e54e5d1567d485ad4140db868af",
+      "scored_results_sha256": "2777ac2a04842bd1fadd52bdb0f66b3b25f4bc9d068ba243d857be7677183b63"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q13",
+      "producer_sha256": "225c7c3176fbe893f3ba72c4194419111553ae98b236805abcab704c5725796d",
+      "run_identity": "2a7272e0d625ea9d736c894770644c83d00dc6f05a4ce1b3d98272bc4ef8ec5b",
+      "score_manifest_sha256": "0ffc2d2f914d6ec51a6f83a693cac803acd923c058d8191a2b4a239ac2e06866",
+      "scored_results_sha256": "448ce892550f6d9f99caf919517f2701a2320e88c8727498bf03cb060bb09d5c"
+    },
+    {
+      "episodes": 17,
+      "group": "deblurring",
+      "producer_sha256": "02ece7ef3ab67094e71228ceaed8ffd7879f4a8edcb72c71dfbc1af107a82655",
+      "run_identity": "b0d5487249a7015f25df21d99a3f02a89c96daed465e18da8d2d7b9351e984a9",
+      "score_manifest_sha256": "b40f56f6abebc72581f97a8d3eacaeaba0340ded8670956e6dee8b8a2634aa71",
+      "scored_results_sha256": "d7b86c0d5bfc20220c16fe1f9e88235648fc9891198f20a4d6f9be14ea96d906"
+    },
+    {
+      "episodes": 17,
+      "group": "colorization",
+      "producer_sha256": "8ff0404f7f31709c66d2a37203831ba2f4b1ab983afe9f43dd836e935ecf9566",
+      "run_identity": "f415b8813f3636ab6cb27b87fe37c46793bf2eecc68a4dafc4cdfad6e05db1e9",
+      "score_manifest_sha256": "5c373b1cd436f99e33e926642cc65925ce5315d23a1ea300a970304880f73d38",
+      "scored_results_sha256": "87001d17dbe76c7f49ce67e2d720f9845ed5405825b886741e5504b8d79729fe"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q12",
+      "producer_sha256": "666773126688e3a2ff0c66bfae7772b3283d9e42b7e751334d252c3836163e7a",
+      "run_identity": "2841318cd4fe1f1831af20f9f4b13433450be96c7a6d4bb9ee064136b973ec59",
+      "score_manifest_sha256": "a325f765d0936a8b4ff64c9dcdf0312e1fb66ed89f719bd0a87e9fe1ff1faf8b",
+      "scored_results_sha256": "486c754d8fb7fb12d3649892307bc34e57b81fecca00e6781bd619d1b35b2b1b"
+    },
+    {
+      "episodes": 1,
+      "group": "edge_q16",
+      "producer_sha256": "709f354488e0e225bdd6076071363220bb768e7a37c757f780bee6b675665383",
+      "run_identity": "92186c9bbeab55b466840c03394cf8ddfbd4c051ddfa605cb134b433dd2ee5a5",
+      "score_manifest_sha256": "b5d1a2a947eba7e42ea9dd698d35bd10c74fd50497cea4e6bfe5d0a98b066ecc",
+      "scored_results_sha256": "1da53e5305db2fa99df406c2ce44b0e558a57e94b664ba79c190990488fd496c"
+    },
+    {
+      "episodes": 17,
+      "group": "denoising",
+      "producer_sha256": "69f3fca2504a908b9bffe72e8ca9120d925accb74347b0a948e1ceb8cce31ee9",
+      "run_identity": "2781cdf5223407fe8f333476352428fce1e38b2a6245ba7348960ee4750862cb",
+      "score_manifest_sha256": "ea985570bc3ff7df9fa697a2a8127211192f0e6a32d291e7e8c3821b84f37f7b",
+      "scored_results_sha256": "fa074865584ad7bee9e6201fe83826d15c863d0b636b83c7db1d5c08cf9490f9"
+    },
+    {
+      "episodes": 17,
+      "group": "human_pose_2d",
+      "producer_sha256": "ba7f76ca74e9e45e16eface4b953eae8e64f8db39279ea4f2191c012e0a548df",
+      "run_identity": "3015d49602d11e97d26ebcb5ca260a5319f2a64f0ed960d6303ea70e372b3a9f",
+      "score_manifest_sha256": "403dd7640fbbfc2d6153532e5ee0e9150373aca4a42eb8c3b8d1a3aa98eed90f",
+      "scored_results_sha256": "afd8c3a861368a566429ad0447e6170ec443f2a9fe55fc12e96c74253a4c1d97"
+    },
+    {
+      "episodes": 17,
+      "group": "inpainting",
+      "producer_sha256": "48477c0b263e575ad0ea434b384148e2363579f83cca89a959f9893b20b1c6f1",
+      "run_identity": "2bf2df58e118618d701d169600a6bbe52b34814abf9a0c3e72d125dc98f10404",
+      "score_manifest_sha256": "17d258265f7e9519578e72d7fca537974a433f62f65856ad321d5349843d4c1c",
+      "scored_results_sha256": "102146ff18530e1309359735373fad9130da1a3cc0d2c94bbee12c5ba7957170"
+    },
+    {
+      "episodes": 17,
+      "group": "face_landmarks",
+      "producer_sha256": "baf321869240a8d640c92fc9e9b469c32fd6052dd0ed805a96523561ffe053ac",
+      "run_identity": "82281b40b769575244db87e1faa575757421c86bc50c55f1ccf2a7343ac6bb42",
+      "score_manifest_sha256": "4b207f1f6d7b622cdc491be3a2a3d947060228a926bc1a60d89cd315edd2ce9f",
+      "scored_results_sha256": "ff2e310e64a30fbc7740c6c5f602920922aaea50a0a68a2d607ee54248d5a3df"
+    },
+    {
+      "episodes": 17,
+      "group": "relative_depth",
+      "producer_sha256": "da500bec3062c69f555ad12023ea0c2fbbc9af2e5c997dc1f7bb82d35d21bcc7",
+      "run_identity": "7f87e47cc0d72497b38338e8327652dd5c2128bba38d7edf927446a03170b72c",
+      "score_manifest_sha256": "1223019b4580f7bc988c543efc010e84e20d6db626ebb7f34aa5a7b78de92c12",
+      "scored_results_sha256": "41aef82546fd60bc46fc74408377fba051ffdb6cc3755034c5eafe3f12d37cff"
+    },
+    {
+      "episodes": 17,
+      "group": "saliency_detection",
+      "producer_sha256": "50a26b37afd0bedc96fb142b5ff6818fffb71b3d8a0eb5f4952c469523719728",
+      "run_identity": "e9c3dd9710d431a3744b3d1823afafaafd16c49b405790940eb1daa516be4ff0",
+      "score_manifest_sha256": "65e100d7626544b71c4e48fb19f492633f734d89b8a928138b5662a7f6c23828",
+      "scored_results_sha256": "1c2121256fdeb9cb776ad7567e269c8504509789a65717b320d42a04e43c7020"
+    },
+    {
+      "episodes": 17,
+      "group": "super_resolution",
+      "producer_sha256": "ad48fc8411ed64829b0fb3afa394f3d4486d0cfe2164efb5d1c7ee16c7a21013",
+      "run_identity": "e6b127edd4a710ef225437ba05c12f5cf6861c8e9e47ee05bf4f2aebfa92b106",
+      "score_manifest_sha256": "f0c8d04ed1e2f087bb020a5c750898a4ed37e16017ac82fb86f938f3d9fd1ad6",
+      "scored_results_sha256": "a697fdb71d8aa0ca5fa5b3d5b3c482d45d767cb80e59aac392af130f8e496738"
+    },
+    {
+      "episodes": 17,
+      "group": "surface_normals",
+      "producer_sha256": "325cfeb95b986652d5ab8ba70fa5b5d42380a49b603144cb58a4d054d9cf74fa",
+      "run_identity": "068805f29ecda87812ed96d695d87aa10b8cbabeb6a08e3fbb72821a5dff5955",
+      "score_manifest_sha256": "cedb21a32b484b0d5a695334de2fb971e5ba71e17481e00068d7f8349fe22cd8",
+      "scored_results_sha256": "d15770927345cdf53b23bd4c78bec90c57567ed59ef92634c27c81bab3139e9e"
+    },
+    {
+      "episodes": 17,
+      "group": "instance_segmentation",
+      "producer_sha256": "ace71d8318dcface509d4432207a7ea0b870f51a42cb9d06cc3eae77c4c2cddb",
+      "run_identity": "1649addd2a8eed9ff94a50aaac51be03026df898b6eb77e3a8ed552d08d2488d",
+      "score_manifest_sha256": "fa69298c95cf85c85d6f567d9797b7002f98a1d2ad60f5fcad5733cbdc04f108",
+      "scored_results_sha256": "fa01fc6aed9e23bedab638d246c7e5b55dcb0f8143e5ea5a9994f481b94fec1c"
+    },
+    {
+      "episodes": 17,
+      "group": "semantic_segmentation",
+      "producer_sha256": "166dfaa5b8d033f5315e402bcbe68dcc45ca3d999c701fdd979e9e6f784068e2",
+      "run_identity": "68eb29c21609e6d7e3a7808149731fab81fe7ed4d6d61b97c496e54edad2e58a",
+      "score_manifest_sha256": "7fffc6f13dbb35fda346f1132ba3c64f3cad81944b31ed723184c64948714f1c",
+      "scored_results_sha256": "34435cf67a90ee7c91b7503a9938afef52c7146f353570f5f697d763794bfd0b"
+    }
+  ]
+}
